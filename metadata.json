@@ -1,0 +1,8 @@
+{
+  "name": "SIF Sentinel",
+  "description": "AI/NLP Engine for Serious Injury & Fatality Precursor Detection for Oil India Limited (SIH26165)",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
