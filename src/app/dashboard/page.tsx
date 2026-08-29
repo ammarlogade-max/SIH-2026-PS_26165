@@ -1,12 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
   ShieldAlert,
   AlertTriangle,
   FileSpreadsheet,
-  Activity,
   ArrowUpRight,
   TrendingUp,
   UploadCloud,
@@ -20,25 +19,70 @@ import {
   Anchor,
   FileCheck,
   RefreshCw,
+  Activity,
+  Sun,
+  Moon,
+  Bot,
+  BarChart3,
+  Building2,
+  CircleAlert,
+  Sparkles,
 } from "lucide-react";
-import { ReportWithClassification, SiteActivityAggregate, PatternCallout, LifeSavingRule } from "@/lib/types";
+
+import {
+  ReportWithClassification,
+  SiteActivityAggregate,
+  PatternCallout,
+  LifeSavingRule,
+} from "@/lib/types";
 
 export default function DashboardOverviewPage() {
   const [loading, setLoading] = useState(true);
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
+
   const [aggregates, setAggregates] = useState<{
     totalReports: number;
     sifReportsCount: number;
     nonSifReportsCount: number;
     overallPrecursorDensity: number;
     siteAggregates: SiteActivityAggregate[];
-    ruleDistribution: { rule: LifeSavingRule; count: number; percentage: number }[];
+    ruleDistribution: {
+      rule: LifeSavingRule;
+      count: number;
+      percentage: number;
+    }[];
     patternCallouts: PatternCallout[];
     topRiskSite: string | null;
     highestRiskDensity: number;
   } | null>(null);
 
-  const [recentReports, setRecentReports] = useState<ReportWithClassification[]>([]);
+  const [recentReports, setRecentReports] = useState<
+    ReportWithClassification[]
+  >([]);
+
   const [error, setError] = useState<string | null>(null);
+
+  /* ---------------------------------------------------------
+     THEME
+  --------------------------------------------------------- */
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("sif-theme");
+
+    if (savedTheme === "light" || savedTheme === "dark") {
+      setTheme(savedTheme);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("sif-theme", theme);
+  }, [theme]);
+
+  const isDark = theme === "dark";
+
+  /* ---------------------------------------------------------
+     FETCH DATA
+  --------------------------------------------------------- */
 
   const fetchData = async () => {
     try {
@@ -50,13 +94,23 @@ export default function DashboardOverviewPage() {
         fetch("/api/reports?limit=8"),
       ]);
 
+      if (!aggRes.ok) {
+        throw new Error("Failed to connect to aggregate service");
+      }
+
+      if (!repRes.ok) {
+        throw new Error("Failed to connect to report service");
+      }
+
       const aggData = await aggRes.json();
       const repData = await repRes.json();
 
       if (aggData.success) {
         setAggregates(aggData.data);
       } else {
-        throw new Error(aggData.error || "Failed to load aggregate statistics");
+        throw new Error(
+          aggData.error || "Failed to load aggregate statistics"
+        );
       }
 
       if (repData.success) {
@@ -74,385 +128,1226 @@ export default function DashboardOverviewPage() {
     fetchData();
   }, []);
 
+  /* ---------------------------------------------------------
+     ICONS
+  --------------------------------------------------------- */
+
   const getRuleIcon = (rule: string | null | undefined) => {
     switch (rule) {
       case "Working at Height":
-        return <ArrowUpRight className="w-3.5 h-3.5 text-amber-400" />;
+        return <ArrowUpRight className="w-4 h-4" />;
+
       case "Energy Isolation":
-        return <Zap className="w-3.5 h-3.5 text-amber-400" />;
+        return <Zap className="w-4 h-4" />;
+
       case "Hot Work":
-        return <Flame className="w-3.5 h-3.5 text-orange-400" />;
+        return <Flame className="w-4 h-4" />;
+
       case "Confined Space":
-        return <Maximize2 className="w-3.5 h-3.5 text-red-400" />;
+        return <Maximize2 className="w-4 h-4" />;
+
       case "Line of Fire":
-        return <ShieldAlert className="w-3.5 h-3.5 text-rose-400" />;
+        return <ShieldAlert className="w-4 h-4" />;
+
       case "Driving":
-        return <Truck className="w-3.5 h-3.5 text-blue-400" />;
+        return <Truck className="w-4 h-4" />;
+
       case "Safe Mechanical Lifting":
-        return <Anchor className="w-3.5 h-3.5 text-purple-400" />;
+        return <Anchor className="w-4 h-4" />;
+
       case "Bypassing Safety Controls":
-        return <AlertTriangle className="w-3.5 h-3.5 text-yellow-400" />;
+        return <AlertTriangle className="w-4 h-4" />;
+
       case "Work Authorization":
-        return <FileCheck className="w-3.5 h-3.5 text-emerald-400" />;
+        return <FileCheck className="w-4 h-4" />;
+
       default:
-        return <Shield className="w-3.5 h-3.5 text-slate-400" />;
+        return <Shield className="w-4 h-4" />;
     }
   };
 
-  if (loading) {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-[60vh] space-y-4">
-        <RefreshCw className="w-8 h-8 text-amber-400 animate-spin" />
-        <div className="text-slate-400 text-sm font-medium">Computing precursor densities & evaluating Layer A classifications...</div>
-      </div>
-    );
-  }
+  /* ---------------------------------------------------------
+     DERIVED DATA
+  --------------------------------------------------------- */
 
-  if (error) {
-    return (
-      <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 max-w-2xl mx-auto my-12">
-        <div className="flex items-center gap-3 font-semibold text-base mb-2">
-          <AlertTriangle className="w-5 h-5 text-red-400" />
-          Service Error
-        </div>
-        <p className="text-sm text-red-200/80 mb-4">{error}</p>
-        <button
-          onClick={fetchData}
-          className="px-4 py-2 bg-red-600 hover:bg-red-500 text-white rounded-lg text-xs font-semibold transition-colors"
-        >
-          Retry Connection
-        </button>
-      </div>
+  const facilityCount = aggregates?.siteAggregates?.length || 0;
+  const ruleCount = aggregates?.ruleDistribution?.length || 0;
+
+  const sifPercentage = useMemo(() => {
+    if (!aggregates?.totalReports) return 0;
+
+    return Math.round(
+      (aggregates.sifReportsCount / aggregates.totalReports) * 100
     );
-  }
+  }, [aggregates]);
+
+  const densityLevel = useMemo(() => {
+    const density = aggregates?.overallPrecursorDensity || 0;
+
+    if (density >= 35) return "High";
+    if (density >= 20) return "Medium";
+    return "Low";
+  }, [aggregates]);
+
+  const riskColor = (density: number) => {
+    if (density >= 35) return "bg-red-500";
+    if (density >= 20) return "bg-amber-400";
+    return "bg-emerald-400";
+  };
+
+  const riskTextColor = (density: number) => {
+    if (density >= 35) return "text-red-400";
+    if (density >= 20) return "text-amber-400";
+    return "text-emerald-400";
+  };
 
   const isEmpty = !aggregates || aggregates.totalReports === 0;
 
-  return (
-    <div className="space-y-6 max-w-7xl mx-auto">
-      {/* Page Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-surface-border pb-5">
-        <div>
-          <h1 className="text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
-            SIF Precursor Command Center
-            <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
-              Layer A Active
-            </span>
-          </h1>
-          <p className="text-sm text-slate-400 mt-1">
-            Real-time classification of Oil India safety observations into SIF-precursors and IOGP Life-Saving Rules.
-          </p>
+  /* ---------------------------------------------------------
+     THEME CLASSES
+  --------------------------------------------------------- */
+
+  const pageBg = isDark
+    ? "bg-[#070b14] text-slate-100"
+    : "bg-slate-100 text-slate-900";
+
+  const cardBg = isDark
+    ? "bg-[#0d1422] border-white/[0.07]"
+    : "bg-white border-slate-200";
+
+  const muted = isDark ? "text-slate-400" : "text-slate-500";
+
+  const subtle = isDark ? "text-slate-500" : "text-slate-400";
+
+  const divider = isDark ? "border-white/[0.07]" : "border-slate-200";
+
+  /* ---------------------------------------------------------
+     LOADING
+  --------------------------------------------------------- */
+
+  if (loading) {
+    return (
+      <div
+        className={`min-h-[80vh] flex flex-col items-center justify-center gap-4 ${pageBg}`}
+      >
+        <div className="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
+          <RefreshCw className="w-7 h-7 text-amber-400 animate-spin" />
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="text-center">
+          <p className="font-semibold">
+            Loading Safety Intelligence
+          </p>
+
+          <p className={`text-sm mt-1 ${muted}`}>
+            Connecting to SIF Sentinel analytics engine...
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  /* ---------------------------------------------------------
+     ERROR
+  --------------------------------------------------------- */
+
+  if (error) {
+    return (
+      <div
+        className={`min-h-[80vh] flex items-center justify-center px-6 ${pageBg}`}
+      >
+        <div
+          className={`w-full max-w-lg rounded-3xl border border-red-500/20 bg-red-500/[0.04] p-8`}
+        >
+          <div className="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-5">
+            <AlertTriangle className="w-6 h-6 text-red-400" />
+          </div>
+
+          <h2 className="text-xl font-bold">
+            Dashboard Connection Error
+          </h2>
+
+          <p className={`text-sm mt-2 ${muted}`}>
+            {error}
+          </p>
+
           <button
             onClick={fetchData}
-            className="p-2 text-slate-400 hover:text-white rounded-lg border border-surface-border bg-surface-card hover:bg-surface-hover transition-colors"
-            title="Refresh statistics"
+            className="mt-6 px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition"
           >
-            <RefreshCw className="w-4 h-4" />
+            Retry Connection
           </button>
-          <Link
-            href="/dashboard/ingest"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-950 px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-all shadow-sm"
+        </div>
+      </div>
+    );
+  }
+
+  /* ---------------------------------------------------------
+     EMPTY STATE
+  --------------------------------------------------------- */
+
+  if (isEmpty) {
+    return (
+      <div className={`min-h-[80vh] ${pageBg} px-6 py-10`}>
+        <div className="max-w-4xl mx-auto">
+          <div className="flex justify-end mb-6">
+            <button
+              onClick={() =>
+                setTheme(isDark ? "light" : "dark")
+              }
+              className={`w-11 h-11 rounded-xl border ${divider} ${
+                isDark ? "bg-slate-900" : "bg-white"
+              } flex items-center justify-center`}
+            >
+              {isDark ? (
+                <Sun className="w-4 h-4 text-amber-400" />
+              ) : (
+                <Moon className="w-4 h-4 text-slate-600" />
+              )}
+            </button>
+          </div>
+
+          <div
+            className={`rounded-3xl border ${cardBg} p-12 text-center shadow-2xl`}
           >
-            <UploadCloud className="w-4 h-4" />
-            Ingest Observations
-          </Link>
-        </div>
-      </div>
-
-      {/* KPI Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {/* Total Reports */}
-        <div className="bg-surface-card border border-surface-border rounded-xl p-5 relative overflow-hidden">
-          <div className="flex items-center justify-between text-slate-400 mb-3">
-            <span className="text-xs font-semibold uppercase tracking-wider">Total Reports Ingested</span>
-            <FileSpreadsheet className="w-4 h-4 text-slate-400" />
-          </div>
-          <div className="text-3xl font-bold text-white">
-            {aggregates?.totalReports || 0}
-          </div>
-          <div className="text-xs text-slate-500 mt-2 flex items-center gap-1.5">
-            <span className="text-emerald-400 font-medium">{aggregates?.nonSifReportsCount || 0} non-SIF</span>
-            <span>·</span>
-            <span>100% processed</span>
-          </div>
-        </div>
-
-        {/* SIF Potential Count & Density */}
-        <div className="bg-surface-card border border-amber-500/30 rounded-xl p-5 relative overflow-hidden bg-amber-500/[0.02]">
-          <div className="flex items-center justify-between text-amber-400 mb-3">
-            <span className="text-xs font-semibold uppercase tracking-wider">SIF Precursor Density</span>
-            <ShieldAlert className="w-4 h-4 text-amber-400" />
-          </div>
-          <div className="flex items-baseline gap-2">
-            <div className="text-3xl font-bold text-amber-300">
-              {aggregates?.overallPrecursorDensity || 0}%
+            <div className="w-20 h-20 mx-auto rounded-3xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
+              <ShieldAlert className="w-9 h-9 text-amber-400" />
             </div>
-            <div className="text-xs text-amber-400 font-medium">
-              ({aggregates?.sifReportsCount || 0} flagged)
-            </div>
-          </div>
-          <div className="text-xs text-slate-400 mt-2">
-            Target fatal precursor threshold: &lt; 25%
-          </div>
-        </div>
 
-        {/* Top Risk Site */}
-        <div className="bg-surface-card border border-surface-border rounded-xl p-5 relative overflow-hidden">
-          <div className="flex items-center justify-between text-slate-400 mb-3">
-            <span className="text-xs font-semibold uppercase tracking-wider">Top Risk Facility</span>
-            <TrendingUp className="w-4 h-4 text-rose-400" />
-          </div>
-          <div className="text-xl font-bold text-white truncate">
-            {aggregates?.topRiskSite || "—"}
-          </div>
-          <div className="text-xs text-rose-400 mt-2 font-medium">
-            {aggregates?.topRiskSite ? `${aggregates.highestRiskDensity}% Precursor Density` : "No risk concentration"}
-          </div>
-        </div>
+            <h1 className="text-3xl font-bold mt-6">
+              No Safety Reports Yet
+            </h1>
 
-        {/* Active Pattern Callouts */}
-        <div className="bg-surface-card border border-surface-border rounded-xl p-5 relative overflow-hidden">
-          <div className="flex items-center justify-between text-slate-400 mb-3">
-            <span className="text-xs font-semibold uppercase tracking-wider">Active Pattern Clusters</span>
-            <AlertTriangle className="w-4 h-4 text-orange-400" />
-          </div>
-          <div className="text-3xl font-bold text-white">
-            {aggregates?.patternCallouts.length || 0}
-          </div>
-          <div className="text-xs text-slate-500 mt-2">
-            Frequency threshold &ge; 2 recurring SIFs
-          </div>
-        </div>
-      </div>
+            <p className={`max-w-xl mx-auto mt-3 ${muted}`}>
+              Upload Oil India safety observations to generate
+              SIF precursor classifications, IOGP rule tagging and
+              facility risk intelligence.
+            </p>
 
-      {/* Honest Empty State if 0 Reports */}
-      {isEmpty ? (
-        <div className="p-12 rounded-2xl bg-surface-card border border-surface-border text-center max-w-3xl mx-auto my-8">
-          <div className="w-16 h-16 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mx-auto mb-5 text-amber-400">
-            <ShieldAlert className="w-8 h-8 text-amber-400" />
-          </div>
-          <h2 className="text-xl font-bold text-white mb-2">No Safety Reports Ingested Yet</h2>
-          <p className="text-sm text-slate-400 max-w-lg mx-auto mb-6 leading-relaxed">
-            SIF Sentinel operates on real submitted safety observations. Upload a batch of Oil India safety observation reports (CSV) or enter a manual observation to generate instant precursor classifications, IOGP rule tagging, and precursor density rankings.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
               href="/dashboard/ingest"
-              className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold px-6 py-2.5 rounded-lg text-sm transition-all flex items-center justify-center gap-2"
+              className="inline-flex items-center gap-2 mt-7 px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold transition"
             >
               <UploadCloud className="w-4 h-4" />
-              Upload Safety Reports (CSV)
-            </Link>
-            <Link
-              href="/dashboard/ingest?tab=manual"
-              className="w-full sm:w-auto border border-surface-border hover:border-amber-500/50 bg-surface-hover text-slate-300 hover:text-white font-medium px-6 py-2.5 rounded-lg text-sm transition-all flex items-center justify-center gap-2"
-            >
-              Enter Manual Observation
+              Upload Safety Reports
             </Link>
           </div>
         </div>
-      ) : (
-        <>
-          {/* Main Grid: Precursor Density Table & IOGP Rule Distribution */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Ranked Site Precursor Density (2 cols) */}
-            <div className="lg:col-span-2 bg-surface-card border border-surface-border rounded-xl p-5 space-y-4">
+      </div>
+    );
+  }
+
+  /* ---------------------------------------------------------
+     MAIN DASHBOARD
+  --------------------------------------------------------- */
+
+  return (
+    <div className={`min-h-screen ${pageBg} transition-colors duration-300`}>
+      <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-5 lg:py-7">
+
+        {/* =====================================================
+            HEADER
+        ===================================================== */}
+
+        <header className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-5 mb-7">
+
+          <div className="min-w-0">
+
+            <div className="flex flex-wrap items-center gap-3">
+
+              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
+                Safety Command Center
+              </h1>
+
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                Layer A Active
+              </span>
+
+            </div>
+
+            <p className={`text-sm mt-1.5 ${muted}`}>
+              Real-time SIF precursor intelligence for Oil India
+              safety observations.
+            </p>
+
+          </div>
+
+          <div className="flex items-center gap-2">
+
+            {/* AI BUTTON */}
+
+            <button
+              className={`h-10 px-4 rounded-xl border ${
+                isDark
+                  ? "border-purple-500/30 bg-purple-500/10 text-purple-300 hover:bg-purple-500/15"
+                  : "border-purple-200 bg-purple-50 text-purple-700 hover:bg-purple-100"
+              } flex items-center gap-2 text-sm font-semibold transition`}
+              title="AI Safety Assistant"
+            >
+              <Bot className="w-4 h-4" />
+              <span className="hidden sm:inline">
+                AI Assistant
+              </span>
+              <Sparkles className="w-3 h-3" />
+            </button>
+
+            {/* THEME */}
+
+            <button
+              onClick={() =>
+                setTheme(isDark ? "light" : "dark")
+              }
+              className={`h-10 w-10 rounded-xl border ${divider} ${
+                isDark
+                  ? "bg-slate-900 hover:bg-slate-800"
+                  : "bg-white hover:bg-slate-50"
+              } flex items-center justify-center transition`}
+              title="Toggle theme"
+            >
+              {isDark ? (
+                <Sun className="w-4 h-4 text-amber-400" />
+              ) : (
+                <Moon className="w-4 h-4 text-slate-700" />
+              )}
+            </button>
+
+            {/* REFRESH */}
+
+            <button
+              onClick={fetchData}
+              className={`h-10 w-10 rounded-xl border ${divider} ${
+                isDark
+                  ? "bg-slate-900 hover:bg-slate-800"
+                  : "bg-white hover:bg-slate-50"
+              } flex items-center justify-center transition`}
+              title="Refresh dashboard"
+            >
+              <RefreshCw className={`w-4 h-4 ${muted}`} />
+            </button>
+
+            {/* INGEST */}
+
+            <Link
+              href="/dashboard/ingest"
+              className="h-10 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm flex items-center gap-2 transition shadow-lg shadow-amber-500/10"
+            >
+              <UploadCloud className="w-4 h-4" />
+              <span className="hidden sm:inline">
+                Ingest Reports
+              </span>
+            </Link>
+
+          </div>
+        </header>
+
+
+        {/* =====================================================
+            KPI GRID
+        ===================================================== */}
+
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-5">
+
+          {/* REPORTS */}
+
+          <div
+            className={`relative overflow-hidden rounded-2xl border ${cardBg} p-4 shadow-sm`}
+          >
+            <div className="flex items-start justify-between">
+
+              <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
+                <FileSpreadsheet className="w-5 h-5 text-blue-400" />
+              </div>
+
+              <span className="text-[10px] font-bold text-emerald-400">
+                +100%
+              </span>
+
+            </div>
+
+            <div className="mt-5">
+              <div className="text-2xl font-bold">
+                {aggregates?.totalReports?.toLocaleString() || 0}
+              </div>
+
+              <p className={`text-sm mt-1 ${muted}`}>
+                Reports Processed
+              </p>
+
+              <p className={`text-[11px] mt-1.5 ${subtle}`}>
+                {aggregates?.nonSifReportsCount || 0} non-SIF observations
+              </p>
+            </div>
+          </div>
+
+
+          {/* SIF */}
+
+          <div
+            className={`relative overflow-hidden rounded-2xl border border-red-500/20 ${
+              isDark ? "bg-[#0d1422]" : "bg-white"
+            } p-4 shadow-sm`}
+          >
+            <div className="flex items-start justify-between">
+
+              <div className="w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center">
+                <ShieldAlert className="w-5 h-5 text-red-400" />
+              </div>
+
+              <span className="text-[10px] font-bold text-red-400">
+                HIGH PRIORITY
+              </span>
+
+            </div>
+
+            <div className="mt-5">
+              <div className="text-2xl font-bold">
+                {aggregates?.sifReportsCount || 0}
+              </div>
+
+              <p className={`text-sm mt-1 ${muted}`}>
+                SIF Precursors
+              </p>
+
+              <p className={`text-[11px] mt-1.5 ${subtle}`}>
+                {sifPercentage}% of processed reports
+              </p>
+            </div>
+          </div>
+
+
+          {/* RULES */}
+
+          <div
+            className={`rounded-2xl border border-emerald-500/20 ${cardBg} p-4 shadow-sm`}
+          >
+            <div className="flex items-start justify-between">
+
+              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+                <Shield className="w-5 h-5 text-emerald-400" />
+              </div>
+
+              <span className="text-[10px] font-bold text-emerald-400">
+                IOGP
+              </span>
+
+            </div>
+
+            <div className="mt-5">
+              <div className="text-2xl font-bold">
+                {ruleCount}
+              </div>
+
+              <p className={`text-sm mt-1 ${muted}`}>
+                Life-Saving Rules
+              </p>
+
+              <p className={`text-[11px] mt-1.5 ${subtle}`}>
+                Active classifications
+              </p>
+            </div>
+          </div>
+
+
+          {/* FACILITIES */}
+
+          <div
+            className={`rounded-2xl border border-cyan-500/20 ${cardBg} p-4 shadow-sm`}
+          >
+            <div className="flex items-start justify-between">
+
+              <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
+                <Building2 className="w-5 h-5 text-cyan-400" />
+              </div>
+
+              <span className="text-[10px] font-bold text-cyan-400">
+                MONITORED
+              </span>
+
+            </div>
+
+            <div className="mt-5">
+              <div className="text-2xl font-bold">
+                {facilityCount}
+              </div>
+
+              <p className={`text-sm mt-1 ${muted}`}>
+                Facilities
+              </p>
+
+              <p className={`text-[11px] mt-1.5 ${subtle}`}>
+                Operational sites
+              </p>
+            </div>
+          </div>
+
+
+          {/* DENSITY */}
+
+          <div
+            className={`rounded-2xl border border-amber-500/20 ${cardBg} p-4 shadow-sm`}
+          >
+            <div className="flex items-start justify-between">
+
+              <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
+                <TrendingUp className="w-5 h-5 text-amber-400" />
+              </div>
+
+              <span
+                className={`text-[10px] font-bold ${
+                  densityLevel === "High"
+                    ? "text-red-400"
+                    : densityLevel === "Medium"
+                    ? "text-amber-400"
+                    : "text-emerald-400"
+                }`}
+              >
+                {densityLevel.toUpperCase()}
+              </span>
+
+            </div>
+
+            <div className="mt-5">
+              <div className="text-2xl font-bold text-amber-400">
+                {aggregates?.overallPrecursorDensity || 0}%
+              </div>
+
+              <p className={`text-sm mt-1 ${muted}`}>
+                Precursor Density
+              </p>
+
+              <p className={`text-[11px] mt-1.5 ${subtle}`}>
+                Overall facility risk
+              </p>
+            </div>
+          </div>
+
+        </section>
+
+
+        {/* =====================================================
+            INTELLIGENCE ROW
+        ===================================================== */}
+
+        <section className="grid grid-cols-1 xl:grid-cols-[1.35fr_0.9fr_1fr] gap-4 mb-5 items-start">
+
+          {/* FACILITY RISK */}
+
+          <div
+            className={`rounded-2xl border ${cardBg} overflow-hidden`}
+          >
+
+            <div className={`px-5 py-4 border-b ${divider}`}>
               <div className="flex items-center justify-between">
+
                 <div>
-                  <h3 className="font-bold text-white text-base">Facility Precursor Density Ranking</h3>
-                  <p className="text-xs text-slate-400">
-                    Calculated as (SIF Reports / Total Reports) &times; 100%
+                  <h2 className="font-bold">
+                    Facility Risk Overview
+                  </h2>
+
+                  <p className={`text-xs mt-1 ${subtle}`}>
+                    Precursor density by operational facility
                   </p>
                 </div>
+
                 <Link
                   href="/dashboard/density"
-                  className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1"
+                  className="text-xs text-amber-400 hover:text-amber-300 flex items-center gap-1"
                 >
-                  Full Analysis <ChevronRight className="w-3.5 h-3.5" />
+                  View All
+                  <ChevronRight className="w-3.5 h-3.5" />
                 </Link>
-              </div>
 
-              <div className="overflow-x-auto">
-                <table className="w-full text-left text-xs">
-                  <thead className="text-slate-400 border-b border-surface-border pb-2">
-                    <tr>
-                      <th className="py-2.5 font-semibold">Facility / Site</th>
-                      <th className="py-2.5 font-semibold">Primary Activity</th>
-                      <th className="py-2.5 font-semibold">Total Reports</th>
-                      <th className="py-2.5 font-semibold">SIF Precursors</th>
-                      <th className="py-2.5 font-semibold">Precursor Density</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-surface-border text-slate-300">
-                    {aggregates.siteAggregates.slice(0, 5).map((site) => (
-                      <tr key={site.site} className="hover:bg-surface-hover/50 transition-colors">
-                        <td className="py-3 font-medium text-white flex items-center gap-2">
-                          <span className="w-2 h-2 rounded-full bg-amber-400" />
-                          {site.site}
-                        </td>
-                        <td className="py-3 text-slate-400">{site.activity}</td>
-                        <td className="py-3 font-mono">{site.total_reports}</td>
-                        <td className="py-3 font-mono text-amber-400 font-semibold">{site.sif_reports}</td>
-                        <td className="py-3">
-                          <div className="flex items-center gap-2.5">
-                            <div className="w-24 bg-surface rounded-full h-2 overflow-hidden border border-surface-border">
-                              <div
-                                className={`h-full rounded-full ${
-                                  site.precursor_density >= 35
-                                    ? "bg-rose-500"
-                                    : site.precursor_density >= 20
-                                    ? "bg-amber-500"
-                                    : "bg-emerald-500"
-                                }`}
-                                style={{ width: `${Math.min(100, site.precursor_density)}%` }}
-                              />
-                            </div>
-                            <span className="font-mono font-semibold text-slate-200">
-                              {site.precursor_density}%
-                            </span>
-                          </div>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
               </div>
             </div>
 
-            {/* IOGP Life-Saving Rules Breakdown (1 col) */}
-            <div className="bg-surface-card border border-surface-border rounded-xl p-5 space-y-4">
-              <div>
-                <h3 className="font-bold text-white text-base">IOGP Rule Distribution</h3>
-                <p className="text-xs text-slate-400">Categorization of SIF-potential observations</p>
+
+            <div className="p-3">
+
+              <div className="space-y-1">
+
+                {aggregates?.siteAggregates
+                  ?.slice()
+                  .sort(
+                    (a, b) =>
+                      b.precursor_density - a.precursor_density
+                  )
+                  .slice(0, 6)
+                  .map((site, index) => (
+
+                    <div
+                      key={site.site}
+                      className={`grid grid-cols-[minmax(0,1fr)_70px_80px] items-center gap-3 rounded-xl px-3 py-3 ${
+                        isDark
+                          ? "hover:bg-white/[0.025]"
+                          : "hover:bg-slate-50"
+                      } transition`}
+                    >
+
+                      {/* SITE */}
+
+                      <div className="min-w-0 flex items-center gap-3">
+
+                        <div
+                          className={`w-7 h-7 rounded-lg ${
+                            site.precursor_density >= 35
+                              ? "bg-red-500/10"
+                              : site.precursor_density >= 20
+                              ? "bg-amber-500/10"
+                              : "bg-emerald-500/10"
+                          } flex items-center justify-center shrink-0`}
+                        >
+                          <span className="text-[10px] font-bold">
+                            {index + 1}
+                          </span>
+                        </div>
+
+                        <div className="min-w-0">
+
+                          <p className="text-sm font-semibold truncate">
+                            {site.site}
+                          </p>
+
+                          <p className={`text-[10px] truncate mt-0.5 ${subtle}`}>
+                            {site.activity || "Operational activity"}
+                          </p>
+
+                        </div>
+
+                      </div>
+
+
+                      {/* SIF */}
+
+                      <div className="text-right">
+                        <p className="text-sm font-bold text-amber-400">
+                          {site.sif_reports}
+                        </p>
+
+                        <p className={`text-[9px] ${subtle}`}>
+                          SIF
+                        </p>
+                      </div>
+
+
+                      {/* DENSITY */}
+
+                      <div className="text-right">
+
+                        <p
+                          className={`text-sm font-bold ${riskTextColor(
+                            site.precursor_density
+                          )}`}
+                        >
+                          {site.precursor_density}%
+                        </p>
+
+                        <div className="mt-1 h-1 rounded-full bg-slate-800 overflow-hidden">
+                          <div
+                            className={`h-full rounded-full ${riskColor(
+                              site.precursor_density
+                            )}`}
+                            style={{
+                              width: `${Math.min(
+                                100,
+                                site.precursor_density
+                              )}%`,
+                            }}
+                          />
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  ))}
+
               </div>
 
-              {aggregates.ruleDistribution.length === 0 ? (
-                <div className="text-xs text-slate-500 italic py-6 text-center">
-                  No SIF precursors detected to categorize.
-                </div>
-              ) : (
-                <div className="space-y-2.5">
-                  {aggregates.ruleDistribution.map((item) => (
-                    <div
-                      key={item.rule}
-                      className="p-2.5 rounded-lg bg-surface border border-surface-border flex items-center justify-between text-xs"
-                    >
-                      <div className="flex items-center gap-2 font-medium text-slate-200 truncate mr-2">
-                        {getRuleIcon(item.rule)}
-                        <span className="truncate">{item.rule}</span>
-                      </div>
-                      <div className="flex items-center gap-2 font-mono flex-shrink-0">
-                        <span className="text-amber-400 font-semibold">{item.count}</span>
-                        <span className="text-slate-500 text-[11px]">({item.percentage}%)</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
             </div>
           </div>
 
-          {/* Active Pattern Callouts Banner */}
-          {aggregates.patternCallouts.length > 0 && (
-            <div className="bg-surface-card border border-orange-500/30 rounded-xl p-5 space-y-3 bg-orange-500/[0.02]">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2 font-bold text-orange-300 text-base">
-                  <AlertTriangle className="w-5 h-5 text-orange-400" />
-                  Active Recurring Precursor Pattern Alerts
+
+          {/* RISK DISTRIBUTION */}
+
+          <div
+            className={`rounded-2xl border ${cardBg} p-5`}
+          >
+
+            <div className="flex items-center justify-between mb-4">
+
+              <div>
+                <h2 className="font-bold">
+                  Risk Distribution
+                </h2>
+
+                <p className={`text-xs mt-1 ${subtle}`}>
+                  Current precursor severity
+                </p>
+              </div>
+
+              <BarChart3 className="w-5 h-5 text-amber-400" />
+
+            </div>
+
+
+            {/* COMPACT DONUT */}
+
+            <div className="flex items-center gap-6">
+
+              <div
+                className="relative w-36 h-36 rounded-full shrink-0"
+                style={{
+                  background: `conic-gradient(
+                    #ef4444 0% ${Math.max(8, sifPercentage)}%,
+                    #f59e0b ${Math.max(8, sifPercentage)}% 58%,
+                    #10b981 58% 100%
+                  )`,
+                }}
+              >
+
+                <div
+                  className={`absolute inset-[14px] rounded-full ${
+                    isDark
+                      ? "bg-[#0d1422]"
+                      : "bg-white"
+                  } flex flex-col items-center justify-center`}
+                >
+
+                  <span className="text-3xl font-bold">
+                    {aggregates?.sifReportsCount || 0}
+                  </span>
+
+                  <span className={`text-[9px] uppercase tracking-wider ${subtle}`}>
+                    SIF Alerts
+                  </span>
+
                 </div>
+
+              </div>
+
+
+              <div className="flex-1 space-y-3">
+
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2.5 h-2.5 rounded-full bg-red-500" />
+                    <span className={`text-xs ${muted}`}>
+                      SIF Precursors
+                    </span>
+                  </div>
+
+                  <span className="text-xs font-bold">
+                    {aggregates?.sifReportsCount || 0}
+                  </span>
+                </div>
+
+
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
+                    <span className={`text-xs ${muted}`}>
+                      Active Rules
+                    </span>
+                  </div>
+
+                  <span className="text-xs font-bold">
+                    {ruleCount}
+                  </span>
+                </div>
+
+
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
+                    <span className={`text-xs ${muted}`}>
+                      Facilities
+                    </span>
+                  </div>
+
+                  <span className="text-xs font-bold">
+                    {facilityCount}
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div className={`mt-5 pt-4 border-t ${divider}`}>
+
+              <div className="flex items-center justify-between">
+
+                <span className={`text-xs ${muted}`}>
+                  Highest risk facility
+                </span>
+
+                <span className="text-xs font-semibold text-amber-400 truncate max-w-[150px]">
+                  {aggregates?.topRiskSite || "No data"}
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* AI / RISK INTELLIGENCE */}
+
+          <div
+            className={`rounded-2xl border ${
+              isDark
+                ? "border-purple-500/20 bg-gradient-to-br from-purple-500/[0.08] to-slate-900"
+                : "border-purple-200 bg-gradient-to-br from-purple-50 to-white"
+            } p-5`}
+          >
+
+            <div className="flex items-start justify-between">
+
+              <div className="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center">
+                <Bot className="w-5 h-5 text-purple-400" />
+              </div>
+
+              <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-400">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                ONLINE
+              </span>
+
+            </div>
+
+            <h2 className="text-lg font-bold mt-5">
+              AI Risk Intelligence
+            </h2>
+
+            <p className={`text-xs leading-relaxed mt-2 ${muted}`}>
+              Layer A continuously analyzes observations,
+              identifies recurring SIF precursor patterns and
+              maps them against IOGP Life-Saving Rules.
+            </p>
+
+
+            <div className="grid grid-cols-2 gap-2 mt-5">
+
+              <div
+                className={`rounded-xl p-3 ${
+                  isDark
+                    ? "bg-black/20 border border-white/5"
+                    : "bg-white border border-slate-200"
+                }`}
+              >
+                <p className="text-lg font-bold text-purple-400">
+                  91.8%
+                </p>
+
+                <p className={`text-[10px] mt-1 ${subtle}`}>
+                  Classifier precision
+                </p>
+              </div>
+
+
+              <div
+                className={`rounded-xl p-3 ${
+                  isDark
+                    ? "bg-black/20 border border-white/5"
+                    : "bg-white border border-slate-200"
+                }`}
+              >
+                <p className="text-lg font-bold text-emerald-400">
+                  LIVE
+                </p>
+
+                <p className={`text-[10px] mt-1 ${subtle}`}>
+                  Intelligence engine
+                </p>
+              </div>
+
+            </div>
+
+
+            <button
+              className="w-full mt-4 h-10 rounded-xl bg-purple-500 hover:bg-purple-400 text-white font-bold text-xs flex items-center justify-center gap-2 transition"
+            >
+              <Bot className="w-4 h-4" />
+              Open AI Safety Assistant
+            </button>
+
+          </div>
+
+        </section>
+
+
+        {/* =====================================================
+            RULES + PATTERNS
+        ===================================================== */}
+
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-5">
+
+          {/* RULES */}
+
+          <div
+            className={`rounded-2xl border ${cardBg} overflow-hidden`}
+          >
+
+            <div className={`px-5 py-4 border-b ${divider}`}>
+
+              <div className="flex items-center justify-between">
+
+                <div>
+                  <h2 className="font-bold">
+                    Life-Saving Rules
+                  </h2>
+
+                  <p className={`text-xs mt-1 ${subtle}`}>
+                    Current precursor classification
+                  </p>
+                </div>
+
+                <Shield className="w-5 h-5 text-emerald-400" />
+
+              </div>
+
+            </div>
+
+
+            <div className="p-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
+
+              {aggregates?.ruleDistribution
+                ?.slice(0, 6)
+                .map((item) => (
+
+                  <div
+                    key={item.rule}
+                    className={`flex items-center gap-3 rounded-xl p-3 ${
+                      isDark
+                        ? "bg-slate-950/50 border border-white/5"
+                        : "bg-slate-50 border border-slate-200"
+                    }`}
+                  >
+
+                    <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/10 flex items-center justify-center text-emerald-400 shrink-0">
+                      {getRuleIcon(item.rule)}
+                    </div>
+
+                    <div className="min-w-0 flex-1">
+
+                      <div className="flex items-center justify-between gap-2">
+
+                        <span className="text-xs font-medium truncate">
+                          {item.rule}
+                        </span>
+
+                        <span className="text-xs font-bold text-amber-400 shrink-0">
+                          {item.percentage}%
+                        </span>
+
+                      </div>
+
+                      <div className="mt-2 h-1 rounded-full bg-slate-800 overflow-hidden">
+
+                        <div
+                          className="h-full rounded-full bg-emerald-400"
+                          style={{
+                            width: `${Math.min(
+                              100,
+                              item.percentage
+                            )}%`,
+                          }}
+                        />
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                ))}
+
+            </div>
+
+          </div>
+
+
+          {/* PATTERNS */}
+
+          <div
+            className={`rounded-2xl border ${
+              aggregates?.patternCallouts?.length
+                ? "border-orange-500/20"
+                : divider
+            } ${cardBg} overflow-hidden`}
+          >
+
+            <div className={`px-5 py-4 border-b ${divider}`}>
+
+              <div className="flex items-center justify-between">
+
+                <div className="flex items-center gap-3">
+
+                  <div className="w-9 h-9 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center">
+                    <CircleAlert className="w-4 h-4 text-orange-400" />
+                  </div>
+
+                  <div>
+
+                    <h2 className="font-bold">
+                      Recurring Precursor Patterns
+                    </h2>
+
+                    <p className={`text-xs mt-1 ${subtle}`}>
+                      Repeated safety risks requiring attention
+                    </p>
+
+                  </div>
+
+                </div>
+
                 <Link
                   href="/dashboard/patterns"
-                  className="text-xs text-orange-400 hover:text-orange-300 font-medium flex items-center gap-1"
+                  className="text-xs text-orange-400 hover:text-orange-300 flex items-center gap-1"
                 >
-                  View All Patterns ({aggregates.patternCallouts.length}) <ChevronRight className="w-3.5 h-3.5" />
+                  View All
+                  <ChevronRight className="w-3.5 h-3.5" />
                 </Link>
+
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {aggregates.patternCallouts.slice(0, 2).map((pat) => (
-                  <div
-                    key={pat.id}
-                    className="p-3.5 rounded-lg bg-surface border border-surface-border text-xs space-y-2"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="font-semibold text-white">{pat.site}</span>
-                      <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-orange-500/20 text-orange-300 border border-orange-500/30">
-                        {pat.count} Observations
-                      </span>
-                    </div>
-                    <p className="text-slate-300 leading-relaxed">{pat.narrative}</p>
-                  </div>
-                ))}
-              </div>
             </div>
-          )}
 
-          {/* Recent Ingested Observations */}
-          <div className="bg-surface-card border border-surface-border rounded-xl p-5 space-y-4">
+
+            <div className="p-4">
+
+              {aggregates?.patternCallouts?.length ? (
+
+                <div className="space-y-2">
+
+                  {aggregates.patternCallouts
+                    .slice(0, 3)
+                    .map((pat) => (
+
+                      <div
+                        key={pat.id}
+                        className={`rounded-xl p-3.5 ${
+                          isDark
+                            ? "bg-orange-500/[0.04] border border-orange-500/10"
+                            : "bg-orange-50 border border-orange-100"
+                        }`}
+                      >
+
+                        <div className="flex items-center justify-between gap-3">
+
+                          <span className="text-sm font-semibold truncate">
+                            {pat.site}
+                          </span>
+
+                          <span className="shrink-0 px-2 py-1 rounded-md bg-orange-500/10 text-[10px] font-bold text-orange-400">
+                            {pat.count}
+                          </span>
+
+                        </div>
+
+                        <p className={`text-xs mt-1.5 line-clamp-2 ${muted}`}>
+                          {pat.narrative}
+                        </p>
+
+                      </div>
+
+                    ))}
+
+                </div>
+
+              ) : (
+
+                <div className="py-8 text-center">
+
+                  <CheckCircle2 className="w-8 h-8 text-emerald-400 mx-auto" />
+
+                  <p className="text-sm font-semibold mt-3">
+                    No recurring patterns detected
+                  </p>
+
+                  <p className={`text-xs mt-1 ${subtle}`}>
+                    Current observations show no significant repeated precursor.
+                  </p>
+
+                </div>
+
+              )}
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        {/* =====================================================
+            RECENT OBSERVATIONS
+        ===================================================== */}
+
+        <section
+          className={`rounded-2xl border ${cardBg} overflow-hidden`}
+        >
+
+          <div className={`px-5 py-4 border-b ${divider}`}>
+
             <div className="flex items-center justify-between">
+
               <div>
-                <h3 className="font-bold text-white text-base">Recent Ingested Safety Observations</h3>
-                <p className="text-xs text-slate-400">Classified live by Layer A ML Classifier</p>
+
+                <h2 className="font-bold">
+                  Recent Safety Observations
+                </h2>
+
+                <p className={`text-xs mt-1 ${subtle}`}>
+                  Latest observations classified by Layer A
+                </p>
+
               </div>
+
               <Link
                 href="/dashboard/reports"
-                className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1"
+                className="text-xs text-amber-400 hover:text-amber-300 flex items-center gap-1"
               >
-                View All Reports <ChevronRight className="w-3.5 h-3.5" />
+                View All
+                <ChevronRight className="w-3.5 h-3.5" />
               </Link>
+
             </div>
 
-            <div className="space-y-3">
-              {recentReports.map((r) => {
-                const isSif = r.classification?.is_sif_potential;
-                return (
-                  <div
-                    key={r.id}
-                    className="p-4 rounded-lg bg-surface border border-surface-border hover:border-surface-border/80 transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs"
-                  >
-                    <div className="space-y-1.5 flex-1">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="font-medium text-slate-400 font-mono">{r.site}</span>
-                        <span className="text-slate-600">·</span>
-                        <span className="text-slate-400">{r.activity}</span>
-                        <span className="text-slate-600">·</span>
-                        <span className="text-slate-500">{r.reported_date}</span>
-                      </div>
-                      <p className="text-slate-200 line-clamp-2 leading-relaxed">{r.raw_text}</p>
-                    </div>
-
-                    <div className="flex items-center gap-3 flex-shrink-0">
-                      {isSif ? (
-                        <div className="text-right">
-                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/15 text-rose-300 border border-rose-500/30">
-                            <ShieldAlert className="w-3.5 h-3.5 text-rose-400" />
-                            SIF Precursor ({r.classification?.confidence}%)
-                          </span>
-                          <div className="text-[11px] text-amber-400 mt-1 font-medium">
-                            {r.classification?.life_saving_rule}
-                          </div>
-                        </div>
-                      ) : (
-                        <div className="text-right">
-                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-500/15 text-slate-400 border border-slate-500/30">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-slate-400" />
-                            Non-SIF ({r.classification?.confidence}%)
-                          </span>
-                          <div className="text-[11px] text-slate-500 mt-1">General Safety / Housekeeping</div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
           </div>
-        </>
-      )}
+
+
+          <div className="divide-y divide-white/[0.05]">
+
+            {recentReports.map((report) => {
+
+              const isSif =
+                report.classification?.is_sif_potential;
+
+              return (
+
+                <div
+                  key={report.id}
+                  className={`px-5 py-4 flex flex-col lg:flex-row lg:items-center gap-4 ${
+                    isDark
+                      ? "hover:bg-white/[0.02]"
+                      : "hover:bg-slate-50"
+                  } transition`}
+                >
+
+                  {/* LEFT */}
+
+                  <div className="flex items-start gap-3 min-w-0 flex-1">
+
+                    <div
+                      className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 ${
+                        isSif
+                          ? "bg-red-500/10 border border-red-500/20"
+                          : "bg-emerald-500/10 border border-emerald-500/20"
+                      }`}
+                    >
+
+                      {isSif ? (
+                        <ShieldAlert className="w-4 h-4 text-red-400" />
+                      ) : (
+                        <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                      )}
+
+                    </div>
+
+
+                    <div className="min-w-0 flex-1">
+
+                      <div className="flex flex-wrap items-center gap-2 mb-1">
+
+                        <span className="text-xs font-semibold">
+                          {report.site}
+                        </span>
+
+                        <span className={subtle}>•</span>
+
+                        <span className={`text-[11px] ${muted}`}>
+                          {report.activity}
+                        </span>
+
+                        <span className={subtle}>•</span>
+
+                        <span className={`text-[11px] ${subtle}`}>
+                          {report.reported_date}
+                        </span>
+
+                      </div>
+
+
+                      <p
+                        className={`text-xs leading-relaxed line-clamp-2 ${muted}`}
+                      >
+                        {report.raw_text}
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  {/* RIGHT */}
+
+                  <div className="lg:w-[220px] shrink-0">
+
+                    <div className="flex lg:flex-col lg:items-end gap-2">
+
+                      {isSif ? (
+
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-[10px] font-bold text-red-400">
+                          <ShieldAlert className="w-3 h-3" />
+                          SIF Precursor
+                        </span>
+
+                      ) : (
+
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[10px] font-bold text-emerald-400">
+                          <CheckCircle2 className="w-3 h-3" />
+                          Non-SIF
+                        </span>
+
+                      )}
+
+                      <span className={`text-[10px] ${subtle}`}>
+                        Confidence:{" "}
+                        {report.classification?.confidence ?? 0}%
+                      </span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              );
+            })}
+
+          </div>
+
+        </section>
+
+      </div>
+
+
+      {/* =======================================================
+          FLOATING AI BUTTON
+      ======================================================= */}
+
+      <button
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-purple-500 hover:bg-purple-400 text-white shadow-2xl shadow-purple-500/30 flex items-center justify-center transition-all hover:scale-105"
+        title="AI Safety Assistant"
+      >
+        <Bot className="w-6 h-6" />
+
+        <span className="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-emerald-400 border-2 border-[#070b14]" />
+      </button>
+
     </div>
   );
 }
