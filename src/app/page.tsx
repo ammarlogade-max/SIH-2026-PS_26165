@@ -305,11 +305,11 @@ export default function LandingPage() {
             />
 
             {/* Video overlays */}
-            <div className="absolute inset-0 bg-[#06101f]/55" />
+            <div className="absolute inset-0 bg-[#06101f]/12" />
 
-            <div className="absolute inset-0 bg-gradient-to-r from-[#06101f]/95 via-[#06101f]/70 to-[#06101f]/35" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#06101f]/80 via-[#06101f]/25 to-transparent" />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-[#06101f] via-transparent to-[#06101f]/40" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#06101f]/55 via-transparent to-[#06101f]/15" />
 
             {/* Hero content */}
             <div className="relative z-10 min-h-[430px] p-7 sm:p-10 xl:p-12 flex flex-col justify-center">
@@ -356,53 +356,34 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              {/* Hero status card */}
-              <div className="absolute hidden xl:flex right-8 bottom-8 w-[275px] rounded-2xl border border-white/[0.10] bg-[#07101d]/75 backdrop-blur-xl p-5">
-                <div className="w-full">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-[10px] uppercase tracking-[0.15em] text-slate-500 font-bold">
-                      Today's Overview
-                    </span>
+            </div>
+          </section>
 
-                    <Activity className="w-4 h-4 text-amber-400" />
-                  </div>
+          {/* Today's overview is kept below the video so the footage remains unobstructed. */}
+          <section className="rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
+            <div className="flex items-center gap-2 mb-4">
+              <Activity className="w-4 h-4 text-amber-400" />
+              <span className="text-[10px] uppercase tracking-[0.15em] text-slate-500 font-bold">
+                Today's Overview
+              </span>
+            </div>
 
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-slate-400">
-                        Reports Processed
-                      </span>
-                      <span className="font-bold text-white">1,248</span>
-                    </div>
-
-                    <div className="h-px bg-white/[0.06]" />
-
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-slate-400">
-                        Active Alerts
-                      </span>
-                      <span className="font-bold text-red-400">17</span>
-                    </div>
-
-                    <div className="h-px bg-white/[0.06]" />
-
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-slate-400">
-                        Life-Saving Rules
-                      </span>
-                      <span className="font-bold text-emerald-400">12</span>
-                    </div>
-
-                    <div className="h-px bg-white/[0.06]" />
-
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-slate-400">
-                        System Uptime
-                      </span>
-                      <span className="font-bold text-white">99.9%</span>
-                    </div>
-                  </div>
-                </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div>
+                <div className="text-xs text-slate-500">Reports Processed</div>
+                <div className="mt-1 text-xl font-bold text-white">1,248</div>
+              </div>
+              <div>
+                <div className="text-xs text-slate-500">Active Alerts</div>
+                <div className="mt-1 text-xl font-bold text-red-400">17</div>
+              </div>
+              <div>
+                <div className="text-xs text-slate-500">Life-Saving Rules</div>
+                <div className="mt-1 text-xl font-bold text-emerald-400">12</div>
+              </div>
+              <div>
+                <div className="text-xs text-slate-500">System Uptime</div>
+                <div className="mt-1 text-xl font-bold text-white">99.9%</div>
               </div>
             </div>
           </section>
