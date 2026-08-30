@@ -364,7 +364,7 @@ export default function LandingPage() {
             <div className="flex items-center gap-2 mb-4">
               <Activity className="w-4 h-4 text-amber-400" />
               <span className="text-[10px] uppercase tracking-[0.15em] text-slate-500 font-bold">
-                Today's Overview
+                Today&apos;s Overview
               </span>
             </div>
 
