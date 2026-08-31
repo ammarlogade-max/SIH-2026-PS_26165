@@ -97,7 +97,7 @@ export default function DashboardOverviewPage() {
       }
 
       if (repData.success) {
-        setRecentReports(repData.reports.slice(0, 6));
+        setRecentReports(repData.reports);
       }
     } catch (err: any) {
       console.error("Dashboard fetch error:", err);
@@ -185,6 +185,22 @@ export default function DashboardOverviewPage() {
   };
 
   const isEmpty = !aggregates || aggregates.totalReports === 0;
+
+  const alertTrend = useMemo(() => {
+    const byDate = new Map<string, { date: string; total: number; sif: number }>();
+
+    recentReports.forEach((report) => {
+      const date = report.reported_date || report.created_at.slice(0, 10);
+      const point = byDate.get(date) || { date, total: 0, sif: 0 };
+      point.total += 1;
+      if (report.classification?.is_sif_potential) point.sif += 1;
+      byDate.set(date, point);
+    });
+
+    return Array.from(byDate.values()).sort((a, b) => a.date.localeCompare(b.date)).slice(-7);
+  }, [recentReports]);
+
+  const trendMax = Math.max(1, ...alertTrend.map((point) => point.total));
 
   /* ---------------------------------------------------------
      THEME CLASSES
@@ -613,6 +629,82 @@ export default function DashboardOverviewPage() {
             </div>
           </div>
 
+        </section>
+
+
+        {/* =====================================================
+            ALERT TREND
+        ===================================================== */}
+
+        <section id="analytics" className="grid grid-cols-1 lg:grid-cols-[1.45fr_1fr] gap-4 mb-5 scroll-mt-6">
+          <div className={`rounded-2xl border ${cardBg} p-5`}>
+            <div className="flex items-start justify-between gap-4 mb-5">
+              <div>
+                <h2 className="font-bold">SIF Alert Trend</h2>
+                <p className={`text-xs mt-1 ${subtle}`}>Actual report volume and SIF precursor signals by reporting date.</p>
+              </div>
+              <Link href="/dashboard/reports" className="shrink-0 text-xs text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                View reports <ChevronRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            {alertTrend.length ? (
+              <div className="h-48 rounded-xl border border-white/[0.05] px-3 pt-4 pb-2">
+                <div className="flex h-full items-end gap-2 sm:gap-3">
+                  {alertTrend.map((point) => {
+                    const height = Math.max(12, Math.round((point.total / trendMax) * 100));
+                    return (
+                      <div key={point.date} className="group flex h-full min-w-0 flex-1 flex-col justify-end gap-2">
+                        <div className="relative flex flex-1 items-end rounded-t-lg bg-slate-800/60">
+                          <div
+                            className={`w-full rounded-t-lg transition-all duration-500 ${
+                              point.sif > 0 ? "bg-gradient-to-t from-red-500 to-red-400" : "bg-gradient-to-t from-sky-600 to-sky-400"
+                            }`}
+                            style={{ height: `${height}%` }}
+                            title={`${point.total} reports, ${point.sif} SIF precursors on ${point.date}`}
+                          />
+                          <span className="pointer-events-none absolute -top-6 left-1/2 hidden -translate-x-1/2 whitespace-nowrap rounded bg-slate-950 px-1.5 py-1 text-[9px] font-bold text-white shadow-lg group-hover:block">
+                            {point.total} reports · {point.sif} SIF
+                          </span>
+                        </div>
+                        <span className={`truncate text-center text-[9px] ${subtle}`}>{point.date.slice(5)}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ) : (
+              <div className={`flex h-48 items-center justify-center rounded-xl border border-dashed ${divider}`}>
+                <p className={`text-xs ${muted}`}>Upload safety reports to populate the alert trend.</p>
+              </div>
+            )}
+          </div>
+
+          <div className={`rounded-2xl border ${cardBg} p-5`}>
+            <div className="flex items-center gap-3">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-500/20 bg-emerald-500/10">
+                <Activity className="h-5 w-5 text-emerald-400" />
+              </span>
+              <div>
+                <h2 className="font-bold">Operational Status</h2>
+                <p className={`text-xs mt-1 ${subtle}`}>Live data services and classifier availability.</p>
+              </div>
+            </div>
+            <div className="mt-5 space-y-3">
+              <div className="flex items-center justify-between text-xs">
+                <span className={muted}>Aggregate intelligence</span>
+                <span className="inline-flex items-center gap-1.5 font-bold text-emerald-400"><span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />Online</span>
+              </div>
+              <div className="flex items-center justify-between text-xs">
+                <span className={muted}>Layer A classifier</span>
+                <span className="font-bold text-emerald-400">Operational</span>
+              </div>
+              <div className="flex items-center justify-between text-xs">
+                <span className={muted}>Processed reports</span>
+                <span className="font-bold text-amber-400">{aggregates?.totalReports?.toLocaleString() || 0}</span>
+              </div>
+            </div>
+          </div>
         </section>
 
 
@@ -1213,7 +1305,7 @@ export default function DashboardOverviewPage() {
 
           <div className="divide-y divide-white/[0.05]">
 
-            {recentReports.map((report) => {
+            {recentReports.slice(0, 6).map((report) => {
 
               const isSif =
                 report.classification?.is_sif_potential;
