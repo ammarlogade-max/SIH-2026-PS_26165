@@ -1,21 +1,41 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "IndusMind AI — Industrial Knowledge Intelligence",
+  title: "SIF Sentinel — Industrial Safety Intelligence",
   description:
-    "AI-powered platform for industrial document intelligence. Query manuals, SOPs, maintenance records, and compliance documents instantly.",
+    "AI-powered industrial knowledge intelligence for serious injury and fatality prevention.",
 };
+
+const themeBootstrapScript = `
+  (() => {
+    try {
+      const storedTheme = localStorage.getItem("sif-theme");
+      const theme = storedTheme === "light" || storedTheme === "dark"
+        ? storedTheme
+        : window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.classList.toggle("dark", theme === "dark");
+      document.documentElement.style.colorScheme = theme;
+    } catch (_) {}
+  })();
+`;
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-surface text-slate-200 antialiased">
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeBootstrapScript }} />
+      </head>
+      <body className="min-h-screen antialiased" suppressHydrationWarning>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

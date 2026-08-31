@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import {
   ShieldAlert,
   Home,
@@ -25,7 +26,12 @@ import {
   Zap,
   Layers3,
   Target,
+  Moon,
+  Sun,
+  X,
+  RefreshCw,
 } from "lucide-react";
+import { useTheme } from "@/components/ThemeProvider";
 
 const stats = [
   {
@@ -105,6 +111,51 @@ const riskCategories = [
   { name: "Other", value: 9 },
 ];
 
+const weeklyAlertVolume = [
+  { day: "M", value: 34 },
+  { day: "T", value: 52 },
+  { day: "W", value: 41 },
+  { day: "T", value: 76 },
+  { day: "F", value: 63 },
+  { day: "S", value: 46 },
+  { day: "S", value: 58 },
+];
+
+type LiveSnapshot = {
+  reports: string;
+  activeAlerts: number;
+  rules: number;
+  facilities: number;
+  density: "Low" | "Medium" | "High";
+  riskCategories: typeof riskCategories;
+  weeklyAlertVolume: typeof weeklyAlertVolume;
+};
+
+function createLiveSnapshot(): LiveSnapshot {
+  const riskProfiles = [
+    [38, 24, 16, 13, 9],
+    [31, 29, 18, 14, 8],
+    [35, 22, 20, 12, 11],
+  ];
+  const profile = riskProfiles[Math.floor(Math.random() * riskProfiles.length)];
+
+  return {
+    reports: (11800 + Math.floor(Math.random() * 2600)).toLocaleString("en-IN"),
+    activeAlerts: 18 + Math.floor(Math.random() * 17),
+    rules: 9 + Math.floor(Math.random() * 4),
+    facilities: 42 + Math.floor(Math.random() * 13),
+    density: ["Low", "Medium", "High"][Math.floor(Math.random() * 3)] as LiveSnapshot["density"],
+    riskCategories: riskCategories.map((category, index) => ({
+      ...category,
+      value: profile[index],
+    })),
+    weeklyAlertVolume: weeklyAlertVolume.map((point) => ({
+      ...point,
+      value: 30 + Math.floor(Math.random() * 58),
+    })),
+  };
+}
+
 const sidebarItems = [
   { name: "Home", icon: Home, href: "/" },
   { name: "Command Center", icon: LayoutDashboard, href: "/dashboard" },
@@ -142,8 +193,47 @@ function StatIcon({
 }
 
 export default function LandingPage() {
+  const { isDark, toggleTheme } = useTheme();
+  const [notificationsOpen, setNotificationsOpen] = useState(false);
+  const [trendRange, setTrendRange] = useState("Last 7 Days");
+  const [liveSnapshot, setLiveSnapshot] = useState<LiveSnapshot | null>(null);
+  const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
+
+  useEffect(() => {
+    setLiveSnapshot(createLiveSnapshot());
+    setLastUpdated(new Date());
+  }, []);
+
+  const refreshLiveSnapshot = () => {
+    setLiveSnapshot(createLiveSnapshot());
+    setLastUpdated(new Date());
+  };
+
+  const displayedStats = stats.map((stat) => {
+    if (!liveSnapshot) return stat;
+
+    const liveValues: Record<string, string> = {
+      "Reports Processed": liveSnapshot.reports,
+      "Active Alerts": String(liveSnapshot.activeAlerts),
+      "Life-Saving Rules": String(liveSnapshot.rules),
+      "Facilities Monitored": String(liveSnapshot.facilities),
+      "Facility Density Index": liveSnapshot.density,
+    };
+
+    return { ...stat, value: liveValues[stat.label] ?? stat.value };
+  });
+  const displayedRiskCategories = liveSnapshot?.riskCategories ?? riskCategories;
+  const displayedWeeklyAlertVolume = liveSnapshot?.weeklyAlertVolume ?? weeklyAlertVolume;
+  const donutColors = ["#3b82f6", "#ef4444", "#f59e0b", "#10b981", "#64748b"];
+  let donutProgress = 0;
+  const donutGradient = `conic-gradient(${displayedRiskCategories.map((category, index) => {
+    const start = donutProgress;
+    donutProgress += category.value * 3.6;
+    return `${donutColors[index]} ${start}deg ${donutProgress}deg`;
+  }).join(", ")})`;
+
   return (
-    <div className="min-h-screen bg-[#070b13] text-slate-100 flex overflow-x-hidden">
+    <div className="landing-page min-h-screen bg-[#070b13] text-slate-100 flex overflow-x-hidden">
       {/* =========================================================
           SIDEBAR
       ========================================================= */}
@@ -241,7 +331,7 @@ export default function LandingPage() {
         {/* =======================================================
             TOP HEADER
         ======================================================= */}
-        <header className="h-[88px] sticky top-0 z-40 border-b border-white/[0.07] bg-[#070b13]/85 backdrop-blur-2xl">
+        <header className="landing-header h-[88px] sticky top-0 z-40 border-b border-white/[0.07] bg-[#070b13]/85 backdrop-blur-2xl">
           <div className="h-full px-6 xl:px-8 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="hidden sm:flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.025] px-4 py-2.5">
@@ -257,9 +347,16 @@ export default function LandingPage() {
                   Serious Injury & Fatality Precursor Detection
                 </span>
               </div>
+
+              <div className="live-snapshot hidden xl:flex items-center gap-2 rounded-full border border-sky-400/15 bg-sky-400/[0.055] px-3 py-2 text-[10px] font-medium text-slate-400">
+                <Activity className="h-3.5 w-3.5 text-sky-400" />
+                <span>
+                  {lastUpdated ? `Snapshot updated ${lastUpdated.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}` : "Updating snapshot"}
+                </span>
+              </div>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <Link
                 href="/dashboard"
                 className="hidden sm:flex text-sm text-slate-400 hover:text-white transition-colors"
@@ -276,7 +373,30 @@ export default function LandingPage() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
 
-              <button className="relative w-11 h-11 rounded-xl border border-white/[0.08] bg-white/[0.025] flex items-center justify-center text-slate-400 hover:text-white transition-colors">
+              <button
+                onClick={toggleTheme}
+                className="w-11 h-11 rounded-xl border border-white/[0.08] bg-white/[0.025] flex items-center justify-center text-slate-400 hover:text-white transition-colors"
+                title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+                aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              >
+                {isDark ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5" />}
+              </button>
+
+              <button
+                onClick={refreshLiveSnapshot}
+                className="w-11 h-11 rounded-xl border border-white/[0.08] bg-white/[0.025] flex items-center justify-center text-slate-400 hover:text-sky-300 transition-colors"
+                title="Refresh live dashboard values"
+                aria-label="Refresh live dashboard values"
+              >
+                <RefreshCw className="w-4 h-4" />
+              </button>
+
+              <button
+                onClick={() => setNotificationsOpen((open) => !open)}
+                aria-expanded={notificationsOpen}
+                aria-controls="notification-panel"
+                className="relative w-11 h-11 rounded-xl border border-white/[0.08] bg-white/[0.025] flex items-center justify-center text-slate-400 hover:text-white transition-colors"
+              >
                 <Bell className="w-5 h-5" />
                 <span className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-amber-500 text-slate-950 text-[10px] font-bold flex items-center justify-center">
                   3
@@ -286,6 +406,48 @@ export default function LandingPage() {
           </div>
         </header>
 
+        {notificationsOpen && (
+          <section
+            id="notification-panel"
+            aria-label="Notifications"
+            className="fixed right-5 top-[96px] z-[60] w-[min(24rem,calc(100vw-2.5rem))] rounded-2xl border border-white/[0.10] bg-[#0b111d]/95 p-3 shadow-2xl backdrop-blur-xl"
+          >
+            <div className="flex items-center justify-between px-2 pb-2">
+              <div>
+                <p className="text-sm font-bold text-white">Notifications</p>
+                <p className="text-[11px] text-slate-500">3 alerts need your review</p>
+              </div>
+              <button
+                onClick={() => setNotificationsOpen(false)}
+                className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 hover:bg-white/[0.06] hover:text-white"
+                aria-label="Close notifications"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+            <div className="space-y-1">
+              {alerts.slice(0, 3).map((alert) => (
+                <Link
+                  key={alert.title}
+                  href="/dashboard/patterns"
+                  onClick={() => setNotificationsOpen(false)}
+                  className="block rounded-xl p-3 transition hover:bg-white/[0.05]"
+                >
+                  <p className="truncate text-xs font-semibold text-slate-200">{alert.title}</p>
+                  <p className="mt-1 text-[10px] text-slate-500">{alert.facility} · {alert.time}</p>
+                </Link>
+              ))}
+            </div>
+            <Link
+              href="/dashboard/patterns"
+              onClick={() => setNotificationsOpen(false)}
+              className="mt-2 flex items-center justify-center gap-1 rounded-xl bg-amber-500 px-3 py-2.5 text-xs font-bold text-slate-950 transition hover:bg-amber-400"
+            >
+              Review all alerts <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </section>
+        )}
+
         {/* =======================================================
             PAGE CONTENT
         ======================================================= */}
@@ -293,7 +455,7 @@ export default function LandingPage() {
           {/* =====================================================
               HERO
           ===================================================== */}
-          <section className="relative min-h-[430px] rounded-3xl overflow-hidden border border-white/[0.08]">
+          <section className="landing-hero relative min-h-[430px] rounded-3xl overflow-hidden border border-white/[0.08]">
             {/* Video */}
             <video
               className="absolute inset-0 w-full h-full object-cover"
@@ -360,7 +522,7 @@ export default function LandingPage() {
           </section>
 
           {/* Today's overview is kept below the video so the footage remains unobstructed. */}
-          <section className="rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
+          <section className="command-summary rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
             <div className="flex items-center gap-2 mb-4">
               <Activity className="w-4 h-4 text-amber-400" />
               <span className="text-[10px] uppercase tracking-[0.15em] text-slate-500 font-bold">
@@ -392,13 +554,13 @@ export default function LandingPage() {
               KPI CARDS
           ===================================================== */}
           <section className="grid grid-cols-2 xl:grid-cols-5 gap-4">
-            {stats.map((stat) => {
+            {displayedStats.map((stat) => {
               const Icon = stat.icon;
 
               return (
                 <div
                   key={stat.label}
-                  className="group relative rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 hover:bg-[#0e1624] hover:border-amber-500/20 transition-all p-5 overflow-hidden"
+                  className="premium-card group relative rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 hover:bg-[#0e1624] hover:border-amber-500/20 transition-all p-5 overflow-hidden"
                 >
                   <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-amber-500/[0.025] blur-2xl group-hover:bg-amber-500/[0.06] transition-all" />
 
@@ -420,7 +582,7 @@ export default function LandingPage() {
                     </div>
 
                     <div className="mt-5">
-                      <div className="text-2xl font-bold text-white tracking-tight">
+                      <div className="premium-value text-2xl font-bold text-white tracking-tight">
                         {stat.value}
                       </div>
 
@@ -443,7 +605,7 @@ export default function LandingPage() {
           ===================================================== */}
           <section className="grid xl:grid-cols-[1.5fr_1fr_1.15fr] gap-5">
             {/* Alerts Trend */}
-            <div className="rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
+            <div className="premium-card h-full rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
               <div className="flex items-center justify-between mb-6">
                 <div>
                   <div className="text-sm font-bold text-white">
@@ -454,14 +616,19 @@ export default function LandingPage() {
                   </div>
                 </div>
 
-                <select className="bg-[#101725] border border-white/[0.08] rounded-lg px-3 py-2 text-xs text-slate-400 outline-none">
+                <select
+                  value={trendRange}
+                  onChange={(event) => setTrendRange(event.target.value)}
+                  className="bg-[#101725] border border-white/[0.08] rounded-lg px-3 py-2 text-xs text-slate-400 outline-none"
+                  aria-label="Alert trend time range"
+                >
                   <option>Last 7 Days</option>
                   <option>Last 30 Days</option>
                 </select>
               </div>
 
               {/* Chart */}
-              <div className="h-[220px] relative">
+              <div className="h-[220px] relative chart-shell">
                 {/* horizontal grid */}
                 <div className="absolute inset-0 flex flex-col justify-between">
                   {[40, 30, 20, 10, 0].map((n) => (
@@ -480,9 +647,9 @@ export default function LandingPage() {
                 {/* Area */}
                 <div className="absolute left-8 right-0 top-3 bottom-5">
                   <svg
-                    viewBox="0 0 700 200"
+                    viewBox="-6 -6 712 212"
                     preserveAspectRatio="none"
-                    className="w-full h-full"
+                    className="w-full h-full overflow-visible"
                   >
                     <defs>
                       <linearGradient
@@ -540,7 +707,7 @@ export default function LandingPage() {
                   </svg>
                 </div>
 
-                <div className="absolute left-8 right-0 bottom-0 flex justify-between text-[10px] text-slate-700">
+                  <div className="absolute left-8 right-2 bottom-0 flex justify-between text-[10px] text-slate-700">
                   <span>May 15</span>
                   <span>May 16</span>
                   <span>May 17</span>
@@ -553,7 +720,7 @@ export default function LandingPage() {
             </div>
 
             {/* Risk Categories */}
-            <div className="rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
+            <div className="premium-card flex h-full flex-col rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
               <div className="flex items-center justify-between mb-5">
                 <div>
                   <div className="text-sm font-bold text-white">
@@ -572,13 +739,12 @@ export default function LandingPage() {
                 <div
                   className="relative w-32 h-32 rounded-full shrink-0"
                   style={{
-                    background:
-                      "conic-gradient(#3b82f6 0deg 126deg, #ef4444 126deg 219.6deg, #f59e0b 219.6deg 280.8deg, #10b981 280.8deg 327.6deg, #64748b 327.6deg 360deg)",
+                    background: donutGradient,
                   }}
                 >
                   <div className="absolute inset-[18px] rounded-full bg-[#0b111d] flex flex-col items-center justify-center">
                     <span className="text-2xl font-bold text-white">
-                      23
+                      {liveSnapshot?.activeAlerts ?? 23}
                     </span>
                     <span className="text-[9px] text-slate-600 uppercase">
                       Total Alerts
@@ -588,7 +754,7 @@ export default function LandingPage() {
 
                 {/* Legend */}
                 <div className="flex-1 space-y-3">
-                  {riskCategories.map((risk, index) => {
+                  {displayedRiskCategories.map((risk, index) => {
                     const dots = [
                       "bg-blue-400",
                       "bg-red-400",
@@ -619,10 +785,33 @@ export default function LandingPage() {
                   })}
                 </div>
               </div>
+
+              <div className="mt-auto border-t border-white/[0.06] pt-4">
+                <div className="mb-3 flex items-center justify-between">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-500">
+                    Weekly alert volume
+                  </span>
+                  <span className="text-[10px] text-emerald-400">+15% this week</span>
+                </div>
+                <div className="flex h-16 items-end justify-between gap-1.5">
+                  {displayedWeeklyAlertVolume.map((point, index) => (
+                    <div key={`${point.day}-${index}`} className="flex h-full flex-1 flex-col items-center justify-end gap-1.5">
+                      <div className="group relative flex w-full flex-1 items-end rounded-md bg-white/[0.035]">
+                        <span
+                          className="w-full rounded-md bg-gradient-to-t from-amber-500 to-amber-300 transition-transform duration-200 group-hover:scale-y-105"
+                          style={{ height: `${point.value}%` }}
+                          title={`${point.value} alerts`}
+                        />
+                      </div>
+                      <span className="text-[9px] text-slate-600">{point.day}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
             {/* Recent Alerts */}
-            <div className="rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
+            <div className="premium-card h-full rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
               <div className="flex items-center justify-between mb-5">
                 <div>
                   <div className="text-sm font-bold text-white">
@@ -823,9 +1012,14 @@ export default function LandingPage() {
       </main>
 
       {/* Floating action */}
-      <button className="fixed bottom-5 left-5 lg:left-[278px] z-50 w-11 h-11 rounded-full border border-white/10 bg-[#0c1420]/90 backdrop-blur-xl text-white flex items-center justify-center shadow-xl hover:border-amber-500/30 transition-all">
+      <Link
+        href="/dashboard/ingest"
+        className="fixed bottom-5 left-5 lg:left-[278px] z-50 w-11 h-11 rounded-full border border-white/10 bg-[#0c1420]/90 backdrop-blur-xl text-white flex items-center justify-center shadow-xl hover:border-amber-500/30 transition-all"
+        aria-label="Quickly ingest a safety report"
+        title="Ingest a safety report"
+      >
         <Zap className="w-5 h-5 text-amber-400" />
-      </button>
+      </Link>
     </div>
   );
 }

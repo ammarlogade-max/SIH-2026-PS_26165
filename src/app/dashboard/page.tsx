@@ -28,6 +28,7 @@ import {
   CircleAlert,
   Sparkles,
 } from "lucide-react";
+import { useTheme } from "@/components/ThemeProvider";
 
 import {
   ReportWithClassification,
@@ -38,7 +39,7 @@ import {
 
 export default function DashboardOverviewPage() {
   const [loading, setLoading] = useState(true);
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const { isDark, toggleTheme } = useTheme();
 
   const [aggregates, setAggregates] = useState<{
     totalReports: number;
@@ -61,24 +62,6 @@ export default function DashboardOverviewPage() {
   >([]);
 
   const [error, setError] = useState<string | null>(null);
-
-  /* ---------------------------------------------------------
-     THEME
-  --------------------------------------------------------- */
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("sif-theme");
-
-    if (savedTheme === "light" || savedTheme === "dark") {
-      setTheme(savedTheme);
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("sif-theme", theme);
-  }, [theme]);
-
-  const isDark = theme === "dark";
 
   /* ---------------------------------------------------------
      FETCH DATA
@@ -292,9 +275,7 @@ export default function DashboardOverviewPage() {
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-end mb-6">
             <button
-              onClick={() =>
-                setTheme(isDark ? "light" : "dark")
-              }
+              onClick={toggleTheme}
               className={`w-11 h-11 rounded-xl border ${divider} ${
                 isDark ? "bg-slate-900" : "bg-white"
               } flex items-center justify-center`}
@@ -378,6 +359,7 @@ export default function DashboardOverviewPage() {
             {/* AI BUTTON */}
 
             <button
+              onClick={() => window.dispatchEvent(new Event("open-ai-assistant"))}
               className={`h-10 px-4 rounded-xl border ${
                 isDark
                   ? "border-purple-500/30 bg-purple-500/10 text-purple-300 hover:bg-purple-500/15"
@@ -395,9 +377,7 @@ export default function DashboardOverviewPage() {
             {/* THEME */}
 
             <button
-              onClick={() =>
-                setTheme(isDark ? "light" : "dark")
-              }
+              onClick={toggleTheme}
               className={`h-10 w-10 rounded-xl border ${divider} ${
                 isDark
                   ? "bg-slate-900 hover:bg-slate-800"
@@ -967,6 +947,7 @@ export default function DashboardOverviewPage() {
 
 
             <button
+              onClick={() => window.dispatchEvent(new Event("open-ai-assistant"))}
               className="w-full mt-4 h-10 rounded-xl bg-purple-500 hover:bg-purple-400 text-white font-bold text-xs flex items-center justify-center gap-2 transition"
             >
               <Bot className="w-4 h-4" />
@@ -1340,6 +1321,7 @@ export default function DashboardOverviewPage() {
       ======================================================= */}
 
       <button
+        onClick={() => window.dispatchEvent(new Event("open-ai-assistant"))}
         className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-purple-500 hover:bg-purple-400 text-white shadow-2xl shadow-purple-500/30 flex items-center justify-center transition-all hover:scale-105"
         title="AI Safety Assistant"
       >

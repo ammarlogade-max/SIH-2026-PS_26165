@@ -4,68 +4,40 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import {
-  ShieldAlert,
-  LayoutDashboard,
-  BarChart3,
-  FileSpreadsheet,
-  Layers,
-  UploadCloud,
-  FileText,
   Activity,
   AlertTriangle,
-  Sun,
-  Moon,
+  BarChart3,
   Bot,
-  X,
+  FileSpreadsheet,
+  FileText,
+  Layers,
+  LayoutDashboard,
+  Moon,
+  ShieldAlert,
   Sparkles,
+  Sun,
+  UploadCloud,
+  X,
 } from "lucide-react";
 import clsx from "clsx";
+import { useTheme } from "@/components/ThemeProvider";
 
 const navSections = [
   {
-    label: "Safety Intelligence",
+    label: "Safety intelligence",
     items: [
-      {
-        href: "/dashboard",
-        icon: LayoutDashboard,
-        label: "Overview & KPIs",
-        exact: true,
-      },
-      {
-        href: "/dashboard/density",
-        icon: BarChart3,
-        label: "Precursor Density",
-      },
-      {
-        href: "/dashboard/reports",
-        icon: FileSpreadsheet,
-        label: "Safety Reports",
-      },
-      {
-        href: "/dashboard/patterns",
-        icon: AlertTriangle,
-        label: "Pattern Callouts",
-      },
+      { href: "/dashboard", icon: LayoutDashboard, label: "Overview & KPIs", exact: true },
+      { href: "/dashboard/density", icon: BarChart3, label: "Precursor density" },
+      { href: "/dashboard/reports", icon: FileSpreadsheet, label: "Safety reports" },
+      { href: "/dashboard/patterns", icon: AlertTriangle, label: "Pattern callouts" },
     ],
   },
   {
-    label: "Ingestion & Analysis",
+    label: "Ingestion & analysis",
     items: [
-      {
-        href: "/dashboard/ingest",
-        icon: UploadCloud,
-        label: "Ingest Reports",
-      },
-      {
-        href: "/dashboard/digest",
-        icon: FileText,
-        label: "Weekly HSE Digest",
-      },
-      {
-        href: "/dashboard/models",
-        icon: Layers,
-        label: "Model Metrics & A/B",
-      },
+      { href: "/dashboard/ingest", icon: UploadCloud, label: "Ingest reports" },
+      { href: "/dashboard/digest", icon: FileText, label: "Weekly HSE digest" },
+      { href: "/dashboard/models", icon: Layers, label: "Model metrics & A/B" },
     ],
   },
 ];
@@ -76,119 +48,46 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const { isDark, toggleTheme } = useTheme();
   const [aiOpen, setAiOpen] = useState(false);
-
-  /* ---------------------------------------------
-     GLOBAL THEME
-  --------------------------------------------- */
+  const [assistantResponse, setAssistantResponse] = useState<string | null>(null);
 
   useEffect(() => {
-    const saved = localStorage.getItem("sif-theme");
-
-    if (saved === "light" || saved === "dark") {
-      setTheme(saved);
-    }
+    const openAssistant = () => setAiOpen(true);
+    window.addEventListener("open-ai-assistant", openAssistant);
+    return () => window.removeEventListener("open-ai-assistant", openAssistant);
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem("sif-theme", theme);
-
-    document.documentElement.classList.toggle(
-      "dark",
-      theme === "dark"
-    );
-
-    document.documentElement.setAttribute(
-      "data-theme",
-      theme
-    );
-  }, [theme]);
-
-  const isDark = theme === "dark";
-
-  /* ---------------------------------------------
-     THEME CLASSES
-  --------------------------------------------- */
-
-  const pageBg = isDark
-    ? "bg-[#070b14] text-slate-100"
-    : "bg-[#f5f7fb] text-slate-900";
-
-  const sidebarBg = isDark
-    ? "bg-[#0b111d] border-white/[0.07]"
-    : "bg-white border-slate-200";
-
-  const headerBg = isDark
-    ? "bg-[#0b111d]/90 border-white/[0.07]"
-    : "bg-white/90 border-slate-200";
-
-  /* ---------------------------------------------
-     RENDER
-  --------------------------------------------- */
-
   return (
-    <div
-      className={`flex h-screen overflow-hidden ${pageBg} transition-colors duration-300`}
-    >
-      {/* =================================================
-          SIDEBAR
-      ================================================= */}
+    <div className="dashboard-frame flex h-screen min-w-0 overflow-hidden">
+      <aside className="hidden w-72 shrink-0 border-r border-surface-border bg-surface-card/95 lg:flex lg:flex-col">
+        <div className="min-h-0 flex-1 overflow-y-auto px-3 py-4">
+          <Link
+            href="/dashboard"
+            className="mb-8 flex items-center gap-3 rounded-2xl px-3 py-2 transition hover:bg-surface-hover"
+          >
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-amber-500/25 bg-amber-500/10 shadow-sm">
+              <ShieldAlert className="h-5 w-5 text-amber-400" />
+            </span>
+            <span className="min-w-0">
+              <span className="font-display flex items-center gap-2 text-[15px] font-bold text-slate-100">
+                SIF Sentinel
+                <span className="rounded-md border border-amber-500/25 bg-amber-500/10 px-1.5 py-0.5 text-[9px] font-bold tracking-[0.16em] text-amber-400">
+                  OIL
+                </span>
+              </span>
+              <span className="mt-0.5 block text-[11px] text-slate-500">
+                SIH26165 · Safety intelligence
+              </span>
+            </span>
+          </Link>
 
-      <aside
-        className={`w-64 flex-shrink-0 border-r ${sidebarBg} flex flex-col justify-between`}
-      >
-        <div className="min-h-0">
-
-          {/* LOGO */}
-
-          <div className="p-5 border-b border-inherit">
-            <Link
-              href="/dashboard"
-              className="flex items-center gap-3 group"
-            >
-              <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/25 flex items-center justify-center transition-transform group-hover:scale-105">
-                <ShieldAlert className="w-5 h-5 text-amber-400" />
-              </div>
-
-              <div>
-                <div className="font-bold text-base tracking-tight flex items-center gap-1.5">
-                  SIF Sentinel
-
-                  <span className="text-[9px] bg-amber-500/15 text-amber-300 font-bold px-1.5 py-0.5 rounded border border-amber-500/25">
-                    OIL
-                  </span>
-                </div>
-
-                <div
-                  className={`text-[11px] ${
-                    isDark
-                      ? "text-slate-500"
-                      : "text-slate-400"
-                  }`}
-                >
-                  SIH26165 · Safety AI
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          {/* NAVIGATION */}
-
-          <nav className="p-3 space-y-7 overflow-y-auto">
+          <nav className="space-y-7" aria-label="Dashboard navigation">
             {navSections.map((section) => (
               <div key={section.label}>
-                <div
-                  className={`text-[10px] font-bold uppercase tracking-[0.15em] px-3 mb-2 ${
-                    isDark
-                      ? "text-slate-600"
-                      : "text-slate-400"
-                  }`}
-                >
+                <p className="mb-2 px-3 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">
                   {section.label}
-                </div>
-
+                </p>
                 <div className="space-y-1">
                   {section.items.map((item) => {
                     const isActive = item.exact
@@ -200,26 +99,19 @@ export default function DashboardLayout({
                         key={item.href}
                         href={item.href}
                         className={clsx(
-                          "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all",
+                          "group flex items-center gap-3 rounded-xl px-3 py-2.5 text-[13px] font-semibold transition-all duration-200",
                           isActive
-                            ? "bg-amber-500/10 text-amber-400 border border-amber-500/20"
-                            : isDark
-                            ? "text-slate-400 hover:text-slate-200 hover:bg-white/[0.035]"
-                            : "text-slate-500 hover:text-slate-900 hover:bg-slate-100"
+                            ? "border border-sky-400/20 bg-sky-400/10 text-sky-400 shadow-sm"
+                            : "border border-transparent text-slate-400 hover:border-surface-border hover:bg-surface-hover hover:text-slate-100"
                         )}
                       >
                         <item.icon
                           className={clsx(
-                            "w-4 h-4",
-                            isActive
-                              ? "text-amber-400"
-                              : isDark
-                              ? "text-slate-500"
-                              : "text-slate-400"
+                            "h-4 w-4 shrink-0 transition-colors",
+                            isActive ? "text-sky-400" : "text-slate-500 group-hover:text-slate-300"
                           )}
                         />
-
-                        {item.label}
+                        <span>{item.label}</span>
                       </Link>
                     );
                   })}
@@ -229,277 +121,142 @@ export default function DashboardLayout({
           </nav>
         </div>
 
-        {/* =================================================
-            SIDEBAR FOOTER
-        ================================================= */}
-
-        <div
-          className={`p-3 border-t ${
-            isDark
-              ? "border-white/[0.07]"
-              : "border-slate-200"
-          }`}
-        >
-          <div
-            className={`rounded-xl p-3 border ${
-              isDark
-                ? "bg-[#080d17] border-white/[0.06]"
-                : "bg-slate-50 border-slate-200"
-            }`}
-          >
-            <div className="flex items-center justify-between">
-              <span className="text-xs flex items-center gap-1.5">
-                <Activity className="w-3.5 h-3.5 text-emerald-400" />
-                Layer A Engine
+        <div className="border-t border-surface-border p-3">
+          <div className="rounded-2xl border border-surface-border bg-surface/55 p-3.5">
+            <div className="flex items-center justify-between gap-3">
+              <span className="flex items-center gap-2 text-xs font-semibold text-slate-300">
+                <Activity className="h-3.5 w-3.5 text-emerald-400" />
+                Layer A engine
               </span>
-
-              <span className="text-[9px] text-emerald-400 font-mono font-bold">
-                ACTIVE
+              <span className="inline-flex items-center gap-1.5 text-[9px] font-bold tracking-[0.14em] text-emerald-400">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                LIVE
               </span>
             </div>
-
-            <div
-              className={`flex justify-between mt-2 text-[10px] ${
-                isDark
-                  ? "text-slate-600"
-                  : "text-slate-400"
-              }`}
-            >
+            <div className="mt-3 flex items-center justify-between text-[10px] text-slate-500">
               <span>Classifier</span>
-              <span>TF-IDF + LogReg</span>
+              <span className="font-mono text-slate-400">TF-IDF + LogReg</span>
             </div>
-
-            <div
-              className={`flex justify-between mt-1 text-[10px] ${
-                isDark
-                  ? "text-slate-600"
-                  : "text-slate-400"
-              }`}
-            >
+            <div className="mt-1.5 flex items-center justify-between text-[10px] text-slate-500">
               <span>Standard</span>
-              <span className="text-amber-400">
-                IOGP 9-Rules
-              </span>
+              <span className="font-medium text-amber-400">IOGP 9-Rules</span>
             </div>
           </div>
         </div>
       </aside>
 
-      {/* =================================================
-          MAIN
-      ================================================= */}
-
-      <main className="flex-1 min-w-0 flex flex-col overflow-hidden">
-
-        {/* TOP BAR */}
-
-        <header
-          className={`h-16 flex-shrink-0 px-6 flex items-center justify-between border-b backdrop-blur-xl ${headerBg}`}
-        >
+      <main className="flex min-w-0 flex-1 flex-col overflow-hidden">
+        <header className="flex h-[72px] shrink-0 items-center justify-between border-b border-surface-border bg-surface-card/80 px-4 backdrop-blur-xl sm:px-6">
           <div className="min-w-0">
-            <div className="flex items-center gap-2 text-sm">
-              <span className="font-semibold">
-                Oil India Limited
-              </span>
-
-              <span className="text-slate-500">/</span>
-
-              <span className="text-amber-400 truncate">
-                HSSE Serious Injury & Fatality Intelligence
-              </span>
-            </div>
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-500">
+              Oil India Limited
+            </p>
+            <p className="mt-0.5 truncate font-display text-sm font-semibold text-slate-100 sm:text-[15px]">
+              HSSE Serious Injury & Fatality Intelligence
+            </p>
           </div>
 
-          <div className="flex items-center gap-2">
-
-            {/* AI */}
-
+          <div className="flex items-center gap-2 sm:gap-3">
             <button
               onClick={() => setAiOpen(true)}
-              className={`h-10 px-3.5 rounded-xl border flex items-center gap-2 text-xs font-bold transition ${
-                isDark
-                  ? "border-purple-500/25 bg-purple-500/10 text-purple-300 hover:bg-purple-500/15"
-                  : "border-purple-200 bg-purple-50 text-purple-700 hover:bg-purple-100"
-              }`}
+              className="inline-flex h-10 items-center gap-2 rounded-xl border border-violet-400/25 bg-violet-500/10 px-3 text-xs font-bold text-violet-300 transition hover:bg-violet-500/16"
             >
-              <Bot className="w-4 h-4" />
-              <span className="hidden sm:inline">
-                AI Assistant
-              </span>
-              <Sparkles className="w-3 h-3" />
+              <Bot className="h-4 w-4" />
+              <span className="hidden sm:inline">AI assistant</span>
+              <Sparkles className="hidden h-3.5 w-3.5 sm:block" />
             </button>
-
-            {/* THEME */}
 
             <button
-              onClick={() =>
-                setTheme(isDark ? "light" : "dark")
-              }
-              className={`w-10 h-10 rounded-xl border flex items-center justify-center transition ${
-                isDark
-                  ? "bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06]"
-                  : "bg-slate-50 border-slate-200 hover:bg-slate-100"
-              }`}
-              title={
-                isDark
-                  ? "Switch to light mode"
-                  : "Switch to dark mode"
-              }
+              onClick={toggleTheme}
+              className="flex h-10 w-10 items-center justify-center rounded-xl border border-surface-border bg-surface-card text-slate-400 transition hover:bg-surface-hover hover:text-slate-100"
+              title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
             >
-              {isDark ? (
-                <Sun className="w-4 h-4 text-amber-400" />
-              ) : (
-                <Moon className="w-4 h-4 text-slate-700" />
-              )}
+              {isDark ? <Sun className="h-4 w-4 text-amber-400" /> : <Moon className="h-4 w-4" />}
             </button>
 
-            {/* LIVE */}
-
-            <div
-              className={`hidden md:flex items-center gap-2 ml-2 pl-3 border-l ${
-                isDark
-                  ? "border-white/[0.07]"
-                  : "border-slate-200"
-              }`}
-            >
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-
-              <span
-                className={`text-xs ${
-                  isDark
-                    ? "text-slate-400"
-                    : "text-slate-500"
-                }`}
-              >
-                Live System
-              </span>
+            <div className="hidden items-center gap-2 border-l border-surface-border pl-3 md:flex">
+              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="text-xs font-medium text-slate-400">Live system</span>
             </div>
           </div>
         </header>
 
-        {/* VIEWPORT */}
-
-        <div
-          className={`flex-1 overflow-y-auto ${
-            isDark
-              ? "bg-[#070b14]"
-              : "bg-[#f5f7fb]"
-          } transition-colors duration-300`}
-        >
-          {children}
+        <div className="flex-1 overflow-y-auto">
+          <div className="dashboard-content">{children}</div>
         </div>
       </main>
 
-      {/* =================================================
-          AI ASSISTANT
-      ================================================= */}
-
       {aiOpen && (
-        <div className="fixed inset-0 z-[100] pointer-events-none">
-
-          <div
-            className="absolute inset-0 bg-black/30 backdrop-blur-[2px] pointer-events-auto"
+        <div className="fixed inset-0 z-[100]">
+          <button
+            className="absolute inset-0 cursor-default bg-slate-950/45 backdrop-blur-[2px]"
             onClick={() => setAiOpen(false)}
+            aria-label="Close AI assistant"
           />
-
-          <div
-            className={`absolute right-6 top-20 w-[380px] max-w-[calc(100vw-32px)] rounded-2xl border shadow-2xl pointer-events-auto overflow-hidden ${
-              isDark
-                ? "bg-[#0d1422] border-purple-500/20"
-                : "bg-white border-purple-200"
-            }`}
-          >
-
-            {/* AI HEADER */}
-
-            <div className="p-4 border-b border-inherit flex items-center justify-between">
-
+          <section className="absolute right-4 top-4 w-[min(25rem,calc(100vw-2rem))] overflow-hidden rounded-3xl border border-surface-border bg-surface-card shadow-2xl sm:right-6 sm:top-6">
+            <div className="flex items-center justify-between border-b border-surface-border px-5 py-4">
               <div className="flex items-center gap-3">
-
-                <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center">
-                  <Bot className="w-5 h-5 text-purple-400" />
-                </div>
-
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-violet-400/25 bg-violet-500/10">
+                  <Bot className="h-5 w-5 text-violet-400" />
+                </span>
                 <div>
-                  <h3 className="font-bold text-sm">
-                    AI Safety Assistant
-                  </h3>
-
-                  <p className="text-[10px] text-emerald-400">
-                    ● Intelligence engine online
-                  </p>
+                  <h2 className="font-display text-sm font-bold text-slate-100">AI safety assistant</h2>
+                  <p className="mt-0.5 text-[10px] font-medium text-emerald-400">● Intelligence engine online</p>
                 </div>
-
               </div>
-
               <button
                 onClick={() => setAiOpen(false)}
-                className="w-8 h-8 rounded-lg hover:bg-white/5 flex items-center justify-center"
+                className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition hover:bg-surface-hover hover:text-slate-100"
+                aria-label="Close AI assistant"
               >
-                <X className="w-4 h-4" />
+                <X className="h-4 w-4" />
               </button>
-
             </div>
 
-            {/* AI BODY */}
-
             <div className="p-5">
-
-              <div
-                className={`rounded-xl p-4 ${
-                  isDark
-                    ? "bg-purple-500/[0.06]"
-                    : "bg-purple-50"
-                }`}
-              >
+              <div className="rounded-2xl border border-violet-400/15 bg-violet-500/[0.07] p-4">
                 <div className="flex gap-3">
-
-                  <Bot className="w-4 h-4 text-purple-400 mt-0.5 shrink-0" />
-
-                  <p
-                    className={`text-xs leading-relaxed ${
-                      isDark
-                        ? "text-slate-300"
-                        : "text-slate-600"
-                    }`}
-                  >
-                    I can analyze SIF precursor trends,
-                    identify recurring safety patterns and
-                    explain high-risk observations.
+                  <Bot className="mt-0.5 h-4 w-4 shrink-0 text-violet-400" />
+                  <p className="text-xs leading-relaxed text-slate-300">
+                    I can analyze SIF precursor trends, identify recurring safety patterns, and explain high-risk observations.
                   </p>
-
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 gap-2 mt-4">
-
-                <button className="text-left p-3 rounded-xl border border-inherit text-xs hover:bg-purple-500/5 transition">
-                  🔎 Analyze current risk
-                </button>
-
-                <button className="text-left p-3 rounded-xl border border-inherit text-xs hover:bg-purple-500/5 transition">
-                  📊 Explain precursor trends
-                </button>
-
-                <button className="text-left p-3 rounded-xl border border-inherit text-xs hover:bg-purple-500/5 transition">
-                  ⚠️ Find recurring safety patterns
-                </button>
-
+              <div className="mt-4 grid gap-2">
+                {[
+                  "Analyze current risk",
+                  "Explain precursor trends",
+                  "Find recurring safety patterns",
+                ].map((label) => (
+                  <button
+                    key={label}
+                    onClick={() => setAssistantResponse(
+                      label === "Analyze current risk"
+                        ? "Open Facility Density to compare current precursor exposure across sites."
+                        : label === "Explain precursor trends"
+                        ? "Open the overview and use the trend controls to review alert movement over time."
+                        : "Open Pattern Callouts to review repeated safety risks requiring attention."
+                    )}
+                    className="rounded-xl border border-surface-border bg-surface/45 px-3.5 py-3 text-left text-xs font-semibold text-slate-300 transition hover:border-violet-400/25 hover:bg-violet-500/[0.06] hover:text-slate-100"
+                  >
+                    {label}
+                  </button>
+                ))}
               </div>
 
-              <div
-                className={`mt-4 text-[10px] ${
-                  isDark
-                    ? "text-slate-600"
-                    : "text-slate-400"
-                }`}
-              >
-                AI recommendations are generated from
-                current SIF Sentinel dashboard intelligence.
-              </div>
+              {assistantResponse && (
+                <p className="mt-3 rounded-xl border border-emerald-400/20 bg-emerald-400/[0.06] p-3 text-xs leading-relaxed text-slate-300">
+                  {assistantResponse}
+                </p>
+              )}
 
+              <p className="mt-4 text-[10px] leading-relaxed text-slate-500">
+                AI recommendations are generated from current SIF Sentinel dashboard intelligence.
+              </p>
             </div>
-          </div>
+          </section>
         </div>
       )}
     </div>
