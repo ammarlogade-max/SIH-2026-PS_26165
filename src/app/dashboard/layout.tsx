@@ -7,15 +7,21 @@ import {
   Activity,
   AlertTriangle,
   BarChart3,
+  Bell,
   Bot,
+  BrainCircuit,
   FileSpreadsheet,
   FileText,
   Layers,
   LayoutDashboard,
+  Menu,
   Moon,
+  Settings,
   ShieldAlert,
+  ShieldCheck,
   Sparkles,
   Sun,
+  TrendingUp,
   UploadCloud,
   X,
 } from "lucide-react";
@@ -24,20 +30,22 @@ import { useTheme } from "@/components/ThemeProvider";
 
 const navSections = [
   {
-    label: "Safety intelligence",
+    label: "Operations",
     items: [
-      { href: "/dashboard", icon: LayoutDashboard, label: "Overview & KPIs", exact: true },
-      { href: "/dashboard/density", icon: BarChart3, label: "Precursor density" },
-      { href: "/dashboard/reports", icon: FileSpreadsheet, label: "Safety reports" },
-      { href: "/dashboard/patterns", icon: AlertTriangle, label: "Pattern callouts" },
+      { href: "/dashboard", icon: LayoutDashboard, label: "Command Center", exact: true },
+      { href: "/dashboard/ingest", icon: UploadCloud, label: "Report Ingestion" },
+      { href: "/dashboard/patterns", icon: BrainCircuit, label: "Risk Intelligence" },
+      { href: "/dashboard/density", icon: BarChart3, label: "Facility Density" },
+      { href: "/dashboard/reports", icon: Bell, label: "Alerts & Notifications" },
     ],
   },
   {
-    label: "Ingestion & analysis",
+    label: "Analysis & configuration",
     items: [
-      { href: "/dashboard/ingest", icon: UploadCloud, label: "Ingest reports" },
-      { href: "/dashboard/digest", icon: FileText, label: "Weekly HSE digest" },
-      { href: "/dashboard/models", icon: Layers, label: "Model metrics & A/B" },
+      { href: "/dashboard#life-saving-rules", icon: ShieldCheck, label: "Life-Saving Rules" },
+      { href: "/dashboard/digest", icon: TrendingUp, label: "Analytics" },
+      { href: "/dashboard/models", icon: Layers, label: "AI model metrics" },
+      { href: "/dashboard/settings", icon: Settings, label: "Settings" },
     ],
   },
 ];
@@ -51,6 +59,7 @@ export default function DashboardLayout({
   const { isDark, toggleTheme } = useTheme();
   const [aiOpen, setAiOpen] = useState(false);
   const [assistantResponse, setAssistantResponse] = useState<string | null>(null);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   useEffect(() => {
     const openAssistant = () => setAiOpen(true);
@@ -152,11 +161,30 @@ export default function DashboardLayout({
               Oil India Limited
             </p>
             <p className="mt-0.5 truncate font-display text-sm font-semibold text-slate-100 sm:text-[15px]">
-              HSSE Serious Injury & Fatality Intelligence
+              SIF Sentinel · HSSE Serious Injury & Fatality Intelligence
             </p>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3">
+            <button
+              onClick={() => setMobileNavOpen((open) => !open)}
+              className="flex h-10 w-10 items-center justify-center rounded-xl border border-surface-border bg-surface-card text-slate-400 transition hover:bg-surface-hover hover:text-slate-100 lg:hidden"
+              aria-label={mobileNavOpen ? "Close dashboard navigation" : "Open dashboard navigation"}
+              aria-expanded={mobileNavOpen}
+            >
+              {mobileNavOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+            </button>
+
+            <Link
+              href="/dashboard/reports"
+              className="relative flex h-10 w-10 items-center justify-center rounded-xl border border-surface-border bg-surface-card text-slate-400 transition hover:bg-surface-hover hover:text-slate-100"
+              title="Alerts and notifications"
+              aria-label="Alerts and notifications"
+            >
+              <Bell className="h-4 w-4" />
+              <span className="absolute right-1.5 top-1.5 h-1.5 w-1.5 rounded-full bg-amber-400" />
+            </Link>
+
             <button
               onClick={() => setAiOpen(true)}
               className="inline-flex h-10 items-center gap-2 rounded-xl border border-violet-400/25 bg-violet-500/10 px-3 text-xs font-bold text-violet-300 transition hover:bg-violet-500/16"
@@ -181,6 +209,35 @@ export default function DashboardLayout({
             </div>
           </div>
         </header>
+
+        {mobileNavOpen && (
+          <nav className="absolute left-3 right-3 top-[84px] z-50 max-h-[calc(100vh-6rem)] overflow-y-auto rounded-2xl border border-surface-border bg-surface-card p-3 shadow-2xl lg:hidden" aria-label="Mobile dashboard navigation">
+            {navSections.map((section) => (
+              <div key={section.label} className="mb-4 last:mb-0">
+                <p className="mb-2 px-2 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">{section.label}</p>
+                <div className="space-y-1">
+                  {section.items.map((item) => {
+                    const isActive = item.exact ? pathname === item.href : pathname.startsWith(item.href);
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setMobileNavOpen(false)}
+                        className={clsx(
+                          "flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-semibold transition",
+                          isActive ? "bg-sky-400/10 text-sky-400" : "text-slate-300 hover:bg-surface-hover"
+                        )}
+                      >
+                        <item.icon className="h-4 w-4" />
+                        {item.label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+          </nav>
+        )}
 
         <div className="flex-1 overflow-y-auto">
           <div className="dashboard-content">{children}</div>

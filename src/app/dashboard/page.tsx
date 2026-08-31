@@ -426,7 +426,18 @@ export default function DashboardOverviewPage() {
             KPI GRID
         ===================================================== */}
 
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-5">
+        <section id="today-overview" aria-labelledby="today-overview-heading" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-5 scroll-mt-6">
+
+          <div className="sm:col-span-2 lg:col-span-5 flex flex-wrap items-end justify-between gap-2 mb-0.5">
+            <div>
+              <h2 id="today-overview-heading" className="font-display text-lg font-bold">Today&apos;s Overview</h2>
+              <p className={`text-xs mt-1 ${subtle}`}>Live operational summary from processed safety observations.</p>
+            </div>
+            <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-emerald-400">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              Live data
+            </span>
+          </div>
 
           {/* REPORTS */}
 
@@ -609,7 +620,7 @@ export default function DashboardOverviewPage() {
             INTELLIGENCE ROW
         ===================================================== */}
 
-        <section className="grid grid-cols-1 xl:grid-cols-[1.35fr_0.9fr_1fr] gap-4 mb-5 items-start">
+        <section id="risk-intelligence" className="grid grid-cols-1 xl:grid-cols-[1.35fr_0.9fr_1fr] gap-4 mb-5 items-start scroll-mt-6">
 
           {/* FACILITY RISK */}
 
@@ -963,7 +974,7 @@ export default function DashboardOverviewPage() {
             RULES + PATTERNS
         ===================================================== */}
 
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-5">
+        <section id="life-saving-rules" className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-5 scroll-mt-6">
 
           {/* RULES */}
 
@@ -1178,11 +1189,11 @@ export default function DashboardOverviewPage() {
               <div>
 
                 <h2 className="font-bold">
-                  Recent Safety Observations
+                  Active &amp; High-Priority Reports
                 </h2>
 
                 <p className={`text-xs mt-1 ${subtle}`}>
-                  Latest observations classified by Layer A
+                  Latest safety observations classified by Layer A
                 </p>
 
               </div>
@@ -1206,6 +1217,7 @@ export default function DashboardOverviewPage() {
 
               const isSif =
                 report.classification?.is_sif_potential;
+              const lifeSavingRule = report.classification?.life_saving_rule;
 
               return (
 
@@ -1240,6 +1252,10 @@ export default function DashboardOverviewPage() {
 
 
                     <div className="min-w-0 flex-1">
+
+                      <p className="text-sm font-semibold truncate mb-1">
+                        {report.activity || "Safety observation"}
+                      </p>
 
                       <div className="flex flex-wrap items-center gap-2 mb-1">
 
@@ -1293,6 +1309,12 @@ export default function DashboardOverviewPage() {
                           Non-SIF
                         </span>
 
+                      )}
+
+                      {lifeSavingRule && (
+                        <span className="inline-flex max-w-full truncate px-2.5 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-[10px] font-bold text-sky-400">
+                          {lifeSavingRule}
+                        </span>
                       )}
 
                       <span className={`text-[10px] ${subtle}`}>

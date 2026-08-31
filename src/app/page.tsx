@@ -1,1025 +1,149 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import {
-  ShieldAlert,
-  Home,
-  LayoutDashboard,
-  UploadCloud,
-  BrainCircuit,
-  BarChart3,
-  Bell,
-  ShieldCheck,
-  Settings,
-  FileText,
-  AlertTriangle,
-  Activity,
-  Factory,
-  TrendingUp,
-  ArrowUpRight,
   ArrowRight,
+  BrainCircuit,
   ChevronRight,
-  CheckCircle2,
-  Clock3,
-  CircleAlert,
-  Zap,
-  Layers3,
-  Target,
   Moon,
+  ShieldAlert,
+  ShieldCheck,
+  Sparkles,
   Sun,
-  X,
-  RefreshCw,
+  UploadCloud,
 } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
 
-const stats = [
+const capabilities = [
   {
-    label: "Reports Processed",
-    value: "12,842",
-    change: "+24%",
-    sub: "This Month",
-    icon: FileText,
-    type: "blue",
+    icon: BrainCircuit,
+    title: "Explainable intelligence",
+    description: "Turns safety observations into clear, reviewable precursor insight.",
   },
   {
-    label: "Active Alerts",
-    value: "23",
-    change: "+15%",
-    sub: "High Priority",
-    icon: CircleAlert,
-    type: "red",
-  },
-  {
-    label: "Life-Saving Rules",
-    value: "12",
-    change: "IOGP",
-    sub: "Rules Covered",
     icon: ShieldCheck,
-    type: "green",
+    title: "IOGP aligned",
+    description: "Maps reports to Life-Saving Rules for consistent action.",
   },
   {
-    label: "Facilities Monitored",
-    value: "48",
-    change: "Across India",
-    sub: "Operational Sites",
-    icon: Factory,
-    type: "purple",
-  },
-  {
-    label: "Facility Density Index",
-    value: "Medium",
-    change: "Stable",
-    sub: "Overall Risk Level",
-    icon: Activity,
-    type: "gold",
+    icon: Sparkles,
+    title: "Built for prevention",
+    description: "Surfaces early warning signals before high-risk incidents occur.",
   },
 ];
-
-const alerts = [
-  {
-    title: "Bypass of Safety Instrumented Function",
-    facility: "Digboi Refinery",
-    time: "2m ago",
-    level: "High",
-  },
-  {
-    title: "Loss of Primary Containment",
-    facility: "Bongaigaon Terminal",
-    time: "15m ago",
-    level: "High",
-  },
-  {
-    title: "Gas Leak Detected",
-    facility: "Numaligarh Refinery",
-    time: "32m ago",
-    level: "Medium",
-  },
-  {
-    title: "Hot Work without Permit",
-    facility: "Paradip Terminal",
-    time: "1h ago",
-    level: "Medium",
-  },
-];
-
-const riskCategories = [
-  { name: "Process Safety", value: 35 },
-  { name: "Mechanical Integrity", value: 26 },
-  { name: "Work Practices", value: 17 },
-  { name: "Asset Integrity", value: 13 },
-  { name: "Other", value: 9 },
-];
-
-const weeklyAlertVolume = [
-  { day: "M", value: 34 },
-  { day: "T", value: 52 },
-  { day: "W", value: 41 },
-  { day: "T", value: 76 },
-  { day: "F", value: 63 },
-  { day: "S", value: 46 },
-  { day: "S", value: 58 },
-];
-
-type LiveSnapshot = {
-  reports: string;
-  activeAlerts: number;
-  rules: number;
-  facilities: number;
-  density: "Low" | "Medium" | "High";
-  riskCategories: typeof riskCategories;
-  weeklyAlertVolume: typeof weeklyAlertVolume;
-};
-
-function createLiveSnapshot(): LiveSnapshot {
-  const riskProfiles = [
-    [38, 24, 16, 13, 9],
-    [31, 29, 18, 14, 8],
-    [35, 22, 20, 12, 11],
-  ];
-  const profile = riskProfiles[Math.floor(Math.random() * riskProfiles.length)];
-
-  return {
-    reports: (11800 + Math.floor(Math.random() * 2600)).toLocaleString("en-IN"),
-    activeAlerts: 18 + Math.floor(Math.random() * 17),
-    rules: 9 + Math.floor(Math.random() * 4),
-    facilities: 42 + Math.floor(Math.random() * 13),
-    density: ["Low", "Medium", "High"][Math.floor(Math.random() * 3)] as LiveSnapshot["density"],
-    riskCategories: riskCategories.map((category, index) => ({
-      ...category,
-      value: profile[index],
-    })),
-    weeklyAlertVolume: weeklyAlertVolume.map((point) => ({
-      ...point,
-      value: 30 + Math.floor(Math.random() * 58),
-    })),
-  };
-}
-
-const sidebarItems = [
-  { name: "Home", icon: Home, href: "/" },
-  { name: "Command Center", icon: LayoutDashboard, href: "/dashboard" },
-  { name: "Report Ingestion", icon: UploadCloud, href: "/dashboard/ingest" },
-  { name: "Risk Intelligence", icon: BrainCircuit, href: "/dashboard" },
-  { name: "Facility Density", icon: BarChart3, href: "/dashboard" },
-  { name: "Alerts & Notifications", icon: Bell, href: "/dashboard" },
-  { name: "Life-Saving Rules", icon: ShieldCheck, href: "/dashboard" },
-  { name: "Analytics", icon: TrendingUp, href: "/dashboard" },
-  { name: "Settings", icon: Settings, href: "/dashboard" },
-];
-
-function StatIcon({
-  type,
-  icon: Icon,
-}: {
-  type: string;
-  icon: React.ElementType;
-}) {
-  const styles: Record<string, string> = {
-    blue: "bg-blue-500/10 text-blue-400 border-blue-500/20",
-    red: "bg-red-500/10 text-red-400 border-red-500/20",
-    green: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-    purple: "bg-purple-500/10 text-purple-400 border-purple-500/20",
-    gold: "bg-amber-500/10 text-amber-400 border-amber-500/20",
-  };
-
-  return (
-    <div
-      className={`w-12 h-12 rounded-2xl border flex items-center justify-center ${styles[type]}`}
-    >
-      <Icon className="w-6 h-6" />
-    </div>
-  );
-}
 
 export default function LandingPage() {
   const { isDark, toggleTheme } = useTheme();
-  const [notificationsOpen, setNotificationsOpen] = useState(false);
-  const [trendRange, setTrendRange] = useState("Last 7 Days");
-  const [liveSnapshot, setLiveSnapshot] = useState<LiveSnapshot | null>(null);
-  const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
-
-  useEffect(() => {
-    setLiveSnapshot(createLiveSnapshot());
-    setLastUpdated(new Date());
-  }, []);
-
-  const refreshLiveSnapshot = () => {
-    setLiveSnapshot(createLiveSnapshot());
-    setLastUpdated(new Date());
-  };
-
-  const displayedStats = stats.map((stat) => {
-    if (!liveSnapshot) return stat;
-
-    const liveValues: Record<string, string> = {
-      "Reports Processed": liveSnapshot.reports,
-      "Active Alerts": String(liveSnapshot.activeAlerts),
-      "Life-Saving Rules": String(liveSnapshot.rules),
-      "Facilities Monitored": String(liveSnapshot.facilities),
-      "Facility Density Index": liveSnapshot.density,
-    };
-
-    return { ...stat, value: liveValues[stat.label] ?? stat.value };
-  });
-  const displayedRiskCategories = liveSnapshot?.riskCategories ?? riskCategories;
-  const displayedWeeklyAlertVolume = liveSnapshot?.weeklyAlertVolume ?? weeklyAlertVolume;
-  const donutColors = ["#3b82f6", "#ef4444", "#f59e0b", "#10b981", "#64748b"];
-  let donutProgress = 0;
-  const donutGradient = `conic-gradient(${displayedRiskCategories.map((category, index) => {
-    const start = donutProgress;
-    donutProgress += category.value * 3.6;
-    return `${donutColors[index]} ${start}deg ${donutProgress}deg`;
-  }).join(", ")})`;
 
   return (
-    <div className="landing-page min-h-screen bg-[#070b13] text-slate-100 flex overflow-x-hidden">
-      {/* =========================================================
-          SIDEBAR
-      ========================================================= */}
-      <aside className="hidden lg:flex w-[260px] shrink-0 min-h-screen fixed left-0 top-0 bottom-0 z-50 flex-col border-r border-white/[0.07] bg-[#07101d]/95 backdrop-blur-2xl">
-        {/* Logo */}
-        <div className="h-[88px] px-6 flex items-center border-b border-white/[0.06]">
-          <div className="w-12 h-12 rounded-2xl bg-amber-500/[0.08] border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-lg shadow-amber-500/5">
-            <ShieldAlert className="w-6 h-6" />
-          </div>
+    <div className="landing-page min-h-screen overflow-x-hidden bg-[#070b13] text-slate-100">
+      <header className="landing-header fixed inset-x-0 top-0 z-50 border-b border-white/[0.07] bg-[#070b13]/80 backdrop-blur-2xl">
+        <div className="mx-auto flex h-[76px] w-full max-w-[1440px] items-center justify-between px-4 sm:px-6 lg:px-8">
+          <Link href="/" className="flex min-w-0 items-center gap-3" aria-label="SIF Sentinel home">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/[0.10] shadow-lg shadow-amber-500/10">
+              <ShieldAlert className="h-5 w-5 text-amber-400" />
+            </span>
+            <span className="min-w-0">
+              <span className="block truncate font-display text-[15px] font-bold tracking-tight text-white sm:text-base">SIF Sentinel</span>
+              <span className="mt-0.5 block text-[9px] font-bold uppercase tracking-[0.16em] text-amber-400">Oil India Limited</span>
+            </span>
+          </Link>
 
-          <div className="ml-3">
-            <div className="font-bold text-white text-[17px] tracking-tight">
-              SIF SENTINEL
-            </div>
-            <div className="inline-flex mt-1 px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/20 text-[9px] text-amber-400 font-bold tracking-wide">
-              OIL INDIA LIMITED
-            </div>
-          </div>
-        </div>
-
-        {/* Navigation */}
-        <div className="flex-1 px-4 py-6 overflow-y-auto">
-          <div className="text-[10px] uppercase tracking-[0.18em] text-slate-600 font-bold px-3 mb-3">
-            Safety Intelligence
-          </div>
-
-          <nav className="space-y-1">
-            {sidebarItems.map((item, index) => {
-              const Icon = item.icon;
-              const active = index === 0;
-
-              return (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`relative flex items-center gap-3 px-3 py-3 rounded-xl text-sm transition-all group ${
-                    active
-                      ? "bg-amber-500/[0.10] text-amber-400 border border-amber-500/[0.08]"
-                      : "text-slate-400 hover:text-white hover:bg-white/[0.035]"
-                  }`}
-                >
-                  {active && (
-                    <span className="absolute left-0 top-2 bottom-2 w-[3px] rounded-r-full bg-amber-400" />
-                  )}
-
-                  <Icon
-                    className={`w-[18px] h-[18px] ${
-                      active
-                        ? "text-amber-400"
-                        : "text-slate-500 group-hover:text-slate-300"
-                    }`}
-                  />
-
-                  <span>{item.name}</span>
-                </Link>
-              );
-            })}
-          </nav>
-        </div>
-
-        {/* System status */}
-        <div className="px-4 pb-5">
-          <div className="rounded-2xl border border-white/[0.07] bg-white/[0.025] p-4">
-            <div className="text-[10px] uppercase tracking-[0.16em] text-slate-600 font-bold mb-3">
-              System Status
-            </div>
-
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-lg shadow-emerald-400/40 animate-pulse" />
-              <span className="text-sm font-semibold text-emerald-400">
-                Operational
-              </span>
-            </div>
-
-            <div className="text-xs text-slate-500 mt-2">
-              All systems normal
-            </div>
-          </div>
-
-          <div className="mt-5 px-2 flex items-center gap-2 text-xs text-slate-600">
-            <ShieldAlert className="w-4 h-4" />
-            SIF Sentinel v2.0.0
-          </div>
-
-          <div className="px-2 mt-2 text-[10px] text-slate-700">
-            © 2026 Oil India Limited
-          </div>
-        </div>
-      </aside>
-
-      {/* =========================================================
-          MAIN AREA
-      ========================================================= */}
-      <main className="lg:ml-[260px] flex-1 min-w-0">
-        {/* =======================================================
-            TOP HEADER
-        ======================================================= */}
-        <header className="landing-header h-[88px] sticky top-0 z-40 border-b border-white/[0.07] bg-[#070b13]/85 backdrop-blur-2xl">
-          <div className="h-full px-6 xl:px-8 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="hidden sm:flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.025] px-4 py-2.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-
-                <span className="text-xs text-slate-400">
-                  SIH26165
-                </span>
-
-                <span className="text-slate-700">•</span>
-
-                <span className="text-xs text-slate-500">
-                  Serious Injury & Fatality Precursor Detection
-                </span>
-              </div>
-
-              <div className="live-snapshot hidden xl:flex items-center gap-2 rounded-full border border-sky-400/15 bg-sky-400/[0.055] px-3 py-2 text-[10px] font-medium text-slate-400">
-                <Activity className="h-3.5 w-3.5 text-sky-400" />
-                <span>
-                  {lastUpdated ? `Snapshot updated ${lastUpdated.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}` : "Updating snapshot"}
-                </span>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <Link
-                href="/dashboard"
-                className="hidden sm:flex text-sm text-slate-400 hover:text-white transition-colors"
-              >
-                Command Center
-              </Link>
-
-              <Link
-                href="/dashboard/ingest"
-                className="flex items-center gap-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm px-5 py-3 transition-all shadow-lg shadow-amber-500/10"
-              >
-                <UploadCloud className="w-4 h-4" />
-                Ingest Reports
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-
-              <button
-                onClick={toggleTheme}
-                className="w-11 h-11 rounded-xl border border-white/[0.08] bg-white/[0.025] flex items-center justify-center text-slate-400 hover:text-white transition-colors"
-                title={isDark ? "Switch to light mode" : "Switch to dark mode"}
-                aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-              >
-                {isDark ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5" />}
-              </button>
-
-              <button
-                onClick={refreshLiveSnapshot}
-                className="w-11 h-11 rounded-xl border border-white/[0.08] bg-white/[0.025] flex items-center justify-center text-slate-400 hover:text-sky-300 transition-colors"
-                title="Refresh live dashboard values"
-                aria-label="Refresh live dashboard values"
-              >
-                <RefreshCw className="w-4 h-4" />
-              </button>
-
-              <button
-                onClick={() => setNotificationsOpen((open) => !open)}
-                aria-expanded={notificationsOpen}
-                aria-controls="notification-panel"
-                className="relative w-11 h-11 rounded-xl border border-white/[0.08] bg-white/[0.025] flex items-center justify-center text-slate-400 hover:text-white transition-colors"
-              >
-                <Bell className="w-5 h-5" />
-                <span className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-amber-500 text-slate-950 text-[10px] font-bold flex items-center justify-center">
-                  3
-                </span>
-              </button>
-            </div>
-          </div>
-        </header>
-
-        {notificationsOpen && (
-          <section
-            id="notification-panel"
-            aria-label="Notifications"
-            className="fixed right-5 top-[96px] z-[60] w-[min(24rem,calc(100vw-2.5rem))] rounded-2xl border border-white/[0.10] bg-[#0b111d]/95 p-3 shadow-2xl backdrop-blur-xl"
-          >
-            <div className="flex items-center justify-between px-2 pb-2">
-              <div>
-                <p className="text-sm font-bold text-white">Notifications</p>
-                <p className="text-[11px] text-slate-500">3 alerts need your review</p>
-              </div>
-              <button
-                onClick={() => setNotificationsOpen(false)}
-                className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 hover:bg-white/[0.06] hover:text-white"
-                aria-label="Close notifications"
-              >
-                <X className="h-4 w-4" />
-              </button>
-            </div>
-            <div className="space-y-1">
-              {alerts.slice(0, 3).map((alert) => (
-                <Link
-                  key={alert.title}
-                  href="/dashboard/patterns"
-                  onClick={() => setNotificationsOpen(false)}
-                  className="block rounded-xl p-3 transition hover:bg-white/[0.05]"
-                >
-                  <p className="truncate text-xs font-semibold text-slate-200">{alert.title}</p>
-                  <p className="mt-1 text-[10px] text-slate-500">{alert.facility} · {alert.time}</p>
-                </Link>
-              ))}
-            </div>
+          <div className="flex items-center gap-2 sm:gap-3">
             <Link
-              href="/dashboard/patterns"
-              onClick={() => setNotificationsOpen(false)}
-              className="mt-2 flex items-center justify-center gap-1 rounded-xl bg-amber-500 px-3 py-2.5 text-xs font-bold text-slate-950 transition hover:bg-amber-400"
+              href="/dashboard"
+              className="hidden items-center gap-2 rounded-xl border border-white/[0.10] bg-white/[0.035] px-3.5 py-2.5 text-xs font-semibold text-slate-300 transition hover:border-sky-400/25 hover:bg-sky-400/[0.08] hover:text-white sm:inline-flex"
             >
-              Review all alerts <ArrowRight className="h-3.5 w-3.5" />
+              Command Center
+              <ChevronRight className="h-3.5 w-3.5" />
             </Link>
-          </section>
-        )}
+            <button
+              onClick={toggleTheme}
+              className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/[0.10] bg-white/[0.035] text-slate-400 transition hover:bg-white/[0.08] hover:text-white"
+              title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+            >
+              {isDark ? <Sun className="h-4 w-4 text-amber-400" /> : <Moon className="h-4 w-4" />}
+            </button>
+          </div>
+        </div>
+      </header>
 
-        {/* =======================================================
-            PAGE CONTENT
-        ======================================================= */}
-        <div className="p-5 sm:p-6 xl:p-8 space-y-6">
-          {/* =====================================================
-              HERO
-          ===================================================== */}
-          <section className="landing-hero relative min-h-[430px] rounded-3xl overflow-hidden border border-white/[0.08]">
-            {/* Video */}
-            <video
-              className="absolute inset-0 w-full h-full object-cover"
-              src="/SIH.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
+      <main>
+        <section className="landing-hero relative isolate flex min-h-[680px] items-center overflow-hidden border-b border-white/[0.08] pt-[76px] sm:min-h-[720px]">
+          <video
+            className="absolute inset-0 -z-20 h-full w-full object-cover"
+            src="/SIH.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 -z-10 bg-[#06101f]/30" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#06101f]/95 via-[#06101f]/65 to-[#06101f]/20" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#06101f]/75 via-transparent to-[#06101f]/35" />
 
-            {/* Video overlays */}
-            <div className="absolute inset-0 bg-[#06101f]/12" />
-
-            <div className="absolute inset-0 bg-gradient-to-r from-[#06101f]/80 via-[#06101f]/25 to-transparent" />
-
-            <div className="absolute inset-0 bg-gradient-to-t from-[#06101f]/55 via-transparent to-[#06101f]/15" />
-
-            {/* Hero content */}
-            <div className="relative z-10 min-h-[430px] p-7 sm:p-10 xl:p-12 flex flex-col justify-center">
-              <div className="max-w-4xl">
-                {/* Badge */}
-                <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/25 bg-amber-500/[0.07] backdrop-blur-md px-4 py-2 text-xs font-semibold text-amber-300 mb-7">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  Serious Injury & Fatality Intelligence Platform
-                </div>
-
-                {/* Heading */}
-                <h1 className="text-4xl sm:text-5xl xl:text-6xl font-bold tracking-tight leading-[1.05] text-white">
-                  Predict & Prevent Fatalities
-                  <span className="block text-amber-400 mt-2">
-                    Before High-Risk Incidents Occur
-                  </span>
-                </h1>
-
-                <p className="mt-6 max-w-3xl text-sm sm:text-base xl:text-lg leading-7 text-slate-300">
-                  SIF Sentinel transforms unstructured safety observations,
-                  near-miss reports and plant hazard cards into explainable
-                  precursor intelligence, IOGP Life-Saving Rule classifications
-                  and actionable facility risk insights.
-                </p>
-
-                {/* Buttons */}
-                <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                  <Link
-                    href="/dashboard"
-                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3.5 text-sm transition-all shadow-xl shadow-amber-500/15"
-                  >
-                    Launch Safety Command Center
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-
-                  <Link
-                    href="/dashboard/ingest"
-                    className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/[0.06] hover:bg-white/[0.10] backdrop-blur-md text-white font-semibold px-6 py-3.5 text-sm transition-all"
-                  >
-                    <UploadCloud className="w-4 h-4" />
-                    Upload / Ingest Reports
-                    <ChevronRight className="w-4 h-4" />
-                  </Link>
-                </div>
+          <div className="mx-auto w-full max-w-[1440px] px-5 py-20 sm:px-8 lg:px-12 xl:px-16">
+            <div className="max-w-3xl animate-fade-in">
+              <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-amber-400/25 bg-amber-500/[0.10] px-4 py-2 text-xs font-semibold text-amber-200 backdrop-blur-md">
+                <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-lg shadow-emerald-400/50" />
+                Serious Injury &amp; Fatality Intelligence Platform
               </div>
 
-            </div>
-          </section>
+              <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.22em] text-sky-200/80">
+                Safety intelligence for Oil India Limited
+              </p>
+              <h1 className="font-display text-4xl font-bold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+                Predict &amp; Prevent Fatalities
+                <span className="mt-2 block text-amber-400">Before High-Risk Incidents Occur</span>
+              </h1>
+              <p className="mt-7 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg sm:leading-8">
+                SIF Sentinel transforms safety observations, near misses and plant hazard reports into explainable precursor intelligence, helping teams identify serious risk before it becomes an incident.
+              </p>
 
-          {/* Today's overview is kept below the video so the footage remains unobstructed. */}
-          <section className="command-summary rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
-            <div className="flex items-center gap-2 mb-4">
-              <Activity className="w-4 h-4 text-amber-400" />
-              <span className="text-[10px] uppercase tracking-[0.15em] text-slate-500 font-bold">
-                Today&apos;s Overview
-              </span>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div>
-                <div className="text-xs text-slate-500">Reports Processed</div>
-                <div className="mt-1 text-xl font-bold text-white">1,248</div>
-              </div>
-              <div>
-                <div className="text-xs text-slate-500">Active Alerts</div>
-                <div className="mt-1 text-xl font-bold text-red-400">17</div>
-              </div>
-              <div>
-                <div className="text-xs text-slate-500">Life-Saving Rules</div>
-                <div className="mt-1 text-xl font-bold text-emerald-400">12</div>
-              </div>
-              <div>
-                <div className="text-xs text-slate-500">System Uptime</div>
-                <div className="mt-1 text-xl font-bold text-white">99.9%</div>
-              </div>
-            </div>
-          </section>
-
-          {/* =====================================================
-              KPI CARDS
-          ===================================================== */}
-          <section className="grid grid-cols-2 xl:grid-cols-5 gap-4">
-            {displayedStats.map((stat) => {
-              const Icon = stat.icon;
-
-              return (
-                <div
-                  key={stat.label}
-                  className="premium-card group relative rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 hover:bg-[#0e1624] hover:border-amber-500/20 transition-all p-5 overflow-hidden"
-                >
-                  <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-amber-500/[0.025] blur-2xl group-hover:bg-amber-500/[0.06] transition-all" />
-
-                  <div className="relative">
-                    <div className="flex items-start justify-between">
-                      <StatIcon type={stat.type} icon={Icon} />
-
-                      {stat.type === "red" ? (
-                        <span className="text-xs text-red-400 flex items-center gap-1">
-                          <TrendingUp className="w-3 h-3" />
-                          {stat.change}
-                        </span>
-                      ) : (
-                        <span className="text-xs text-emerald-400 flex items-center gap-1">
-                          <TrendingUp className="w-3 h-3" />
-                          {stat.change}
-                        </span>
-                      )}
-                    </div>
-
-                    <div className="mt-5">
-                      <div className="premium-value text-2xl font-bold text-white tracking-tight">
-                        {stat.value}
-                      </div>
-
-                      <div className="text-xs text-slate-400 mt-1">
-                        {stat.label}
-                      </div>
-
-                      <div className="text-[10px] text-slate-600 mt-1">
-                        {stat.sub}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </section>
-
-          {/* =====================================================
-              ANALYTICS ROW
-          ===================================================== */}
-          <section className="grid xl:grid-cols-[1.5fr_1fr_1.15fr] gap-5">
-            {/* Alerts Trend */}
-            <div className="premium-card h-full rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
-              <div className="flex items-center justify-between mb-6">
-                <div>
-                  <div className="text-sm font-bold text-white">
-                    Alerts Trend
-                  </div>
-                  <div className="text-xs text-slate-500 mt-1">
-                    High-priority precursor alerts
-                  </div>
-                </div>
-
-                <select
-                  value={trendRange}
-                  onChange={(event) => setTrendRange(event.target.value)}
-                  className="bg-[#101725] border border-white/[0.08] rounded-lg px-3 py-2 text-xs text-slate-400 outline-none"
-                  aria-label="Alert trend time range"
-                >
-                  <option>Last 7 Days</option>
-                  <option>Last 30 Days</option>
-                </select>
-              </div>
-
-              {/* Chart */}
-              <div className="h-[220px] relative chart-shell">
-                {/* horizontal grid */}
-                <div className="absolute inset-0 flex flex-col justify-between">
-                  {[40, 30, 20, 10, 0].map((n) => (
-                    <div
-                      key={n}
-                      className="flex items-center gap-3"
-                    >
-                      <span className="w-5 text-[10px] text-slate-700 text-right">
-                        {n}
-                      </span>
-                      <div className="h-px bg-white/[0.045] flex-1" />
-                    </div>
-                  ))}
-                </div>
-
-                {/* Area */}
-                <div className="absolute left-8 right-0 top-3 bottom-5">
-                  <svg
-                    viewBox="-6 -6 712 212"
-                    preserveAspectRatio="none"
-                    className="w-full h-full overflow-visible"
-                  >
-                    <defs>
-                      <linearGradient
-                        id="chartGradient"
-                        x1="0"
-                        y1="0"
-                        x2="0"
-                        y2="1"
-                      >
-                        <stop
-                          offset="0%"
-                          stopColor="#f59e0b"
-                          stopOpacity="0.28"
-                        />
-                        <stop
-                          offset="100%"
-                          stopColor="#f59e0b"
-                          stopOpacity="0"
-                        />
-                      </linearGradient>
-                    </defs>
-
-                    <path
-                      d="M0,145 C35,135 55,80 100,85 C145,90 150,130 190,120 C230,110 235,50 280,62 C325,74 315,115 360,110 C405,105 405,92 445,95 C485,98 480,115 520,110 C560,105 555,65 600,68 C640,70 650,105 700,55 L700,200 L0,200 Z"
-                      fill="url(#chartGradient)"
-                    />
-
-                    <path
-                      d="M0,145 C35,135 55,80 100,85 C145,90 150,130 190,120 C230,110 235,50 280,62 C325,74 315,115 360,110 C405,105 405,92 445,95 C485,98 480,115 520,110 C560,105 555,65 600,68 C640,70 650,105 700,55"
-                      fill="none"
-                      stroke="#f59e0b"
-                      strokeWidth="3"
-                    />
-
-                    {[
-                      [100, 85],
-                      [190, 120],
-                      [280, 62],
-                      [360, 110],
-                      [445, 95],
-                      [520, 110],
-                      [600, 68],
-                      [700, 55],
-                    ].map(([x, y], i) => (
-                      <circle
-                        key={i}
-                        cx={x}
-                        cy={y}
-                        r="4"
-                        fill="#f59e0b"
-                        stroke="#0b111d"
-                        strokeWidth="3"
-                      />
-                    ))}
-                  </svg>
-                </div>
-
-                  <div className="absolute left-8 right-2 bottom-0 flex justify-between text-[10px] text-slate-700">
-                  <span>May 15</span>
-                  <span>May 16</span>
-                  <span>May 17</span>
-                  <span>May 18</span>
-                  <span>May 19</span>
-                  <span>May 20</span>
-                  <span>May 21</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Risk Categories */}
-            <div className="premium-card flex h-full flex-col rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
-              <div className="flex items-center justify-between mb-5">
-                <div>
-                  <div className="text-sm font-bold text-white">
-                    Top Risk Categories
-                  </div>
-                  <div className="text-xs text-slate-500 mt-1">
-                    Distribution of current alerts
-                  </div>
-                </div>
-
-                <BarChart3 className="w-4 h-4 text-slate-500" />
-              </div>
-
-              <div className="flex items-center gap-6">
-                {/* Donut */}
-                <div
-                  className="relative w-32 h-32 rounded-full shrink-0"
-                  style={{
-                    background: donutGradient,
-                  }}
-                >
-                  <div className="absolute inset-[18px] rounded-full bg-[#0b111d] flex flex-col items-center justify-center">
-                    <span className="text-2xl font-bold text-white">
-                      {liveSnapshot?.activeAlerts ?? 23}
-                    </span>
-                    <span className="text-[9px] text-slate-600 uppercase">
-                      Total Alerts
-                    </span>
-                  </div>
-                </div>
-
-                {/* Legend */}
-                <div className="flex-1 space-y-3">
-                  {displayedRiskCategories.map((risk, index) => {
-                    const dots = [
-                      "bg-blue-400",
-                      "bg-red-400",
-                      "bg-amber-400",
-                      "bg-emerald-400",
-                      "bg-slate-500",
-                    ];
-
-                    return (
-                      <div
-                        key={risk.name}
-                        className="flex items-center justify-between gap-2"
-                      >
-                        <div className="flex items-center gap-2 min-w-0">
-                          <span
-                            className={`w-2 h-2 rounded-full shrink-0 ${dots[index]}`}
-                          />
-                          <span className="text-[10px] text-slate-400 truncate">
-                            {risk.name}
-                          </span>
-                        </div>
-
-                        <span className="text-[10px] font-bold text-slate-300">
-                          {risk.value}%
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="mt-auto border-t border-white/[0.06] pt-4">
-                <div className="mb-3 flex items-center justify-between">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-500">
-                    Weekly alert volume
-                  </span>
-                  <span className="text-[10px] text-emerald-400">+15% this week</span>
-                </div>
-                <div className="flex h-16 items-end justify-between gap-1.5">
-                  {displayedWeeklyAlertVolume.map((point, index) => (
-                    <div key={`${point.day}-${index}`} className="flex h-full flex-1 flex-col items-center justify-end gap-1.5">
-                      <div className="group relative flex w-full flex-1 items-end rounded-md bg-white/[0.035]">
-                        <span
-                          className="w-full rounded-md bg-gradient-to-t from-amber-500 to-amber-300 transition-transform duration-200 group-hover:scale-y-105"
-                          style={{ height: `${point.value}%` }}
-                          title={`${point.value} alerts`}
-                        />
-                      </div>
-                      <span className="text-[9px] text-slate-600">{point.day}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Recent Alerts */}
-            <div className="premium-card h-full rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
-              <div className="flex items-center justify-between mb-5">
-                <div>
-                  <div className="text-sm font-bold text-white">
-                    Recent High Priority Alerts
-                  </div>
-                  <div className="text-xs text-slate-500 mt-1">
-                    Live precursor intelligence
-                  </div>
-                </div>
-
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/dashboard"
-                  className="text-[11px] text-amber-400 hover:text-amber-300 flex items-center gap-1"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-amber-500 px-6 py-3.5 text-sm font-bold text-slate-950 shadow-xl shadow-amber-500/20 transition hover:bg-amber-400 hover:shadow-amber-500/30"
                 >
-                  View All
-                  <ArrowUpRight className="w-3 h-3" />
+                  Launch Safety Command Center
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  href="/dashboard/ingest"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/[0.08] px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition hover:bg-white/[0.14]"
+                >
+                  <UploadCloud className="h-4 w-4" />
+                  Upload / Ingest Reports
                 </Link>
               </div>
-
-              <div className="space-y-1">
-                {alerts.map((alert) => (
-                  <div
-                    key={alert.title}
-                    className="flex items-center gap-3 rounded-xl p-3 hover:bg-white/[0.025] transition-colors"
-                  >
-                    <div
-                      className={`w-9 h-9 rounded-xl shrink-0 flex items-center justify-center ${
-                        alert.level === "High"
-                          ? "bg-red-500/10 text-red-400"
-                          : "bg-amber-500/10 text-amber-400"
-                      }`}
-                    >
-                      {alert.level === "High" ? (
-                        <CircleAlert className="w-4 h-4" />
-                      ) : (
-                        <AlertTriangle className="w-4 h-4" />
-                      )}
-                    </div>
-
-                    <div className="min-w-0 flex-1">
-                      <div className="text-[11px] font-semibold text-slate-200 truncate">
-                        {alert.title}
-                      </div>
-
-                      <div className="flex items-center gap-2 mt-1">
-                        <span className="text-[9px] text-slate-500 truncate">
-                          {alert.facility}
-                        </span>
-                        <span className="text-slate-700">•</span>
-                        <span className="text-[9px] text-slate-600">
-                          {alert.time}
-                        </span>
-                      </div>
-                    </div>
-
-                    <span
-                      className={`text-[9px] font-bold px-2 py-1 rounded-md border ${
-                        alert.level === "High"
-                          ? "text-red-400 border-red-500/20 bg-red-500/5"
-                          : "text-amber-400 border-amber-500/20 bg-amber-500/5"
-                      }`}
-                    >
-                      {alert.level}
-                    </span>
-                  </div>
-                ))}
-              </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* =====================================================
-              INTELLIGENCE MODULES
-          ===================================================== */}
-          <section>
-            <div className="flex items-end justify-between mb-4">
-              <div>
-                <div className="text-lg font-bold text-white">
-                  Safety Intelligence Engine
-                </div>
-                <div className="text-xs text-slate-500 mt-1">
-                  Core analytical capabilities powering SIF Sentinel
-                </div>
-              </div>
-
-              <Link
-                href="/dashboard"
-                className="hidden sm:flex items-center gap-1 text-xs text-slate-500 hover:text-amber-400 transition-colors"
-              >
-                Open Command Center
-                <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
-
-            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
-              <div className="rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5 hover:border-amber-500/20 transition-all">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-4">
-                  <Target className="w-5 h-5" />
-                </div>
-
-                <div className="text-sm font-bold text-white">
-                  SIF Precursor Detection
-                </div>
-
-                <p className="text-xs text-slate-500 leading-5 mt-2">
-                  Identifies observations containing potential serious injury
-                  and fatality precursors.
-                </p>
-
-                <div className="mt-4 flex items-center gap-2 text-[10px] text-emerald-400">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  Layer A Active
-                </div>
-              </div>
-
-              <div className="rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5 hover:border-amber-500/20 transition-all">
-                <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-4">
-                  <Layers3 className="w-5 h-5" />
-                </div>
-
-                <div className="text-sm font-bold text-white">
-                  IOGP Life-Saving Rules
-                </div>
-
-                <p className="text-xs text-slate-500 leading-5 mt-2">
-                  Maps safety observations to relevant Life-Saving Rule
-                  categories for compliance intelligence.
-                </p>
-
-                <div className="mt-4 flex items-center gap-2 text-[10px] text-emerald-400">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  9 Rules Covered
-                </div>
-              </div>
-
-              <div className="rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5 hover:border-amber-500/20 transition-all">
-                <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-4">
-                  <BrainCircuit className="w-5 h-5" />
-                </div>
-
-                <div className="text-sm font-bold text-white">
-                  Explainable AI
-                </div>
-
-                <p className="text-xs text-slate-500 leading-5 mt-2">
-                  Provides transparent mathematical reasoning behind safety
-                  classifications and precursor predictions.
-                </p>
-
-                <div className="mt-4 flex items-center gap-2 text-[10px] text-emerald-400">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  Auditable Results
-                </div>
-              </div>
-
-              <div className="rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5 hover:border-amber-500/20 transition-all">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4">
-                  <Zap className="w-5 h-5" />
-                </div>
-
-                <div className="text-sm font-bold text-white">
-                  Pattern Intelligence
-                </div>
-
-                <p className="text-xs text-slate-500 leading-5 mt-2">
-                  Detects recurring safety patterns and highlights facilities
-                  requiring immediate attention.
-                </p>
-
-                <div className="mt-4 flex items-center gap-2 text-[10px] text-emerald-400">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  Continuous Monitoring
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* =====================================================
-              FOOTER
-          ===================================================== */}
-          <footer className="pt-3 pb-5 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-white/[0.05]">
-            <div className="flex items-center gap-2 text-xs text-slate-600">
-              <ShieldAlert className="w-4 h-4 text-amber-500/60" />
-              <span>SIF Sentinel · Oil India Limited</span>
-            </div>
-
-            <div className="flex items-center gap-4 text-[10px] text-slate-700">
-              <span>SIH26165</span>
-              <span>•</span>
-              <span>Safety Intelligence Platform</span>
-              <span>•</span>
-              <span className="flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                Operational
+        <section className="mx-auto grid w-full max-w-[1440px] gap-4 px-5 py-10 sm:grid-cols-3 sm:px-8 lg:px-12 xl:px-16">
+          {capabilities.map((capability) => (
+            <article key={capability.title} className="premium-card rounded-2xl border border-white/[0.07] bg-[#0b111d]/80 p-5">
+              <span className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-sky-400/20 bg-sky-400/[0.09]">
+                <capability.icon className="h-5 w-5 text-sky-400" />
               </span>
-            </div>
-          </footer>
-        </div>
+              <h2 className="font-display text-sm font-bold text-white">{capability.title}</h2>
+              <p className="mt-2 text-xs leading-5 text-slate-400">{capability.description}</p>
+            </article>
+          ))}
+        </section>
       </main>
 
-      {/* Floating action */}
-      <Link
-        href="/dashboard/ingest"
-        className="fixed bottom-5 left-5 lg:left-[278px] z-50 w-11 h-11 rounded-full border border-white/10 bg-[#0c1420]/90 backdrop-blur-xl text-white flex items-center justify-center shadow-xl hover:border-amber-500/30 transition-all"
-        aria-label="Quickly ingest a safety report"
-        title="Ingest a safety report"
-      >
-        <Zap className="w-5 h-5 text-amber-400" />
-      </Link>
+      <footer className="border-t border-white/[0.06] px-5 py-6 sm:px-8 lg:px-12 xl:px-16">
+        <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center justify-between gap-3 text-center sm:flex-row sm:text-left">
+          <span className="flex items-center gap-2 text-xs text-slate-500">
+            <ShieldAlert className="h-4 w-4 text-amber-400" />
+            SIF Sentinel · Oil India Limited
+          </span>
+          <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-slate-600">Safety intelligence · SIH26165</span>
+        </div>
+      </footer>
     </div>
   );
 }
