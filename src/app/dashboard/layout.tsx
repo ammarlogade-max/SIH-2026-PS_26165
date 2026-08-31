@@ -59,7 +59,6 @@ export default function DashboardLayout({
   const { isDark, toggleTheme } = useTheme();
   const [aiOpen, setAiOpen] = useState(false);
   const [assistantResponse, setAssistantResponse] = useState<string | null>(null);
-  const [assistantAction, setAssistantAction] = useState<{ href: string; label: string } | null>(null);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   useEffect(() => {
@@ -290,18 +289,13 @@ export default function DashboardLayout({
                 ].map((label) => (
                   <button
                     key={label}
-                    onClick={() => {
-                      if (label === "Analyze current risk") {
-                        setAssistantResponse("Facility Density shows the current precursor exposure for each operational site.");
-                        setAssistantAction({ href: "/dashboard/density", label: "Open Facility Density" });
-                      } else if (label === "Explain precursor trends") {
-                        setAssistantResponse("The command center visualizes actual report volume and SIF precursor signals by reporting date.");
-                        setAssistantAction({ href: "/dashboard#analytics", label: "Open Alert Trend" });
-                      } else {
-                        setAssistantResponse("Pattern Callouts identifies repeated safety risks and the facilities that need attention.");
-                        setAssistantAction({ href: "/dashboard/patterns", label: "Open Pattern Callouts" });
-                      }
-                    }}
+                    onClick={() => setAssistantResponse(
+                      label === "Analyze current risk"
+                        ? "Open Facility Density to compare current precursor exposure across sites."
+                        : label === "Explain precursor trends"
+                        ? "Open the overview and use the trend controls to review alert movement over time."
+                        : "Open Pattern Callouts to review repeated safety risks requiring attention."
+                    )}
                     className="rounded-xl border border-surface-border bg-surface/45 px-3.5 py-3 text-left text-xs font-semibold text-slate-300 transition hover:border-violet-400/25 hover:bg-violet-500/[0.06] hover:text-slate-100"
                   >
                     {label}
@@ -310,18 +304,9 @@ export default function DashboardLayout({
               </div>
 
               {assistantResponse && (
-                <div className="mt-3 rounded-xl border border-emerald-400/20 bg-emerald-400/[0.06] p-3">
-                  <p className="text-xs leading-relaxed text-slate-300">{assistantResponse}</p>
-                  {assistantAction && (
-                    <Link
-                      href={assistantAction.href}
-                      onClick={() => setAiOpen(false)}
-                      className="mt-3 inline-flex items-center gap-1 text-xs font-bold text-emerald-400 hover:text-emerald-300"
-                    >
-                      {assistantAction.label} <span aria-hidden="true">→</span>
-                    </Link>
-                  )}
-                </div>
+                <p className="mt-3 rounded-xl border border-emerald-400/20 bg-emerald-400/[0.06] p-3 text-xs leading-relaxed text-slate-300">
+                  {assistantResponse}
+                </p>
               )}
 
               <p className="mt-4 text-[10px] leading-relaxed text-slate-500">
