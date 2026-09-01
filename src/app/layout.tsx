@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { AIAssistantProvider } from "@/context/AIAssistantContext";
+import AIAssistantDrawer from "@/components/AIAssistantDrawer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -35,7 +37,12 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeBootstrapScript }} />
       </head>
       <body className="min-h-screen antialiased" suppressHydrationWarning>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <AIAssistantProvider>
+            {children}
+            <AIAssistantDrawer />
+          </AIAssistantProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
