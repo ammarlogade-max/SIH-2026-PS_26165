@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server";
-import { groq } from "@/lib/groq";
+import Groq from "groq-sdk";
+
+const groq = new Groq({
+  apiKey: process.env.GROQ_API_KEY,
+});
 
 const SYSTEM_PROMPT = `
 You are the AI Safety Assistant for Oil India Limited's SIF Sentinel (HSSE Serious Injury & Fatality Precursor Intelligence Dashboard).
@@ -31,6 +35,13 @@ export async function POST(req: Request) {
   try {
     const { message, history } = await req.json();
 
+    if (!process.env.GROQ_API_KEY) {
+      return NextResponse.json(
+        { reply: "API Key missing. Please set GROQ_API_KEY in your .env.local file." },
+        { status: 500 }
+      );
+    }
+
     const formattedHistory = (history || [])
       .slice(-6)
       .map((msg: { role: string; content: string }) => ({
@@ -52,7 +63,7 @@ export async function POST(req: Request) {
     const reply = completion.choices[0]?.message?.content || "No response generated.";
     return NextResponse.json({ reply });
   } catch (error) {
-    console.error("Assistant API Error:", error);
+    console.error("Groq API Error:", error);
     return NextResponse.json(
       { reply: "Unable to connect to AI engine. Please verify your connection or API key." },
       { status: 500 }
