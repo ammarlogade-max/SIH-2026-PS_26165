@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   Bot,
@@ -10,6 +10,7 @@ import {
   CircleAlert,
 } from "lucide-react";
 import AIAssistantDrawer from "@/components/AIAssistantDrawer";
+import { useTheme } from "@/components/ThemeProvider";
 
 interface PatternCallout {
   id: string | number;
@@ -43,24 +44,67 @@ interface Aggregates {
   patternCallouts?: PatternCallout[];
 }
 
-interface DashboardPageProps {
-  aggregates?: Aggregates;
-  recentReports?: Report[];
-  isDark?: boolean;
-}
-
-export default function DashboardPage({
-  aggregates = {
+export default function DashboardPage() {
+  const { isDark } = useTheme();
+  const [isAiDrawerOpen, setIsAiDrawerOpen] = useState(false);
+  const [aggregates, setAggregates] = useState<Aggregates>({
     categoryBreakdown: [
       { name: "PPE Compliance", percentage: 85 },
       { name: "Working at Heights", percentage: 62 },
+      { name: "Energy Isolation (LOTO)", percentage: 74 },
+      { name: "Safe Mechanical Lifting", percentage: 58 },
     ],
     patternCallouts: [],
-  },
-  recentReports = [],
-  isDark = true,
-}: DashboardPageProps) {
-  const [isAiDrawerOpen, setIsAiDrawerOpen] = useState(false);
+  });
+  const [recentReports, setRecentReports] = useState<Report[]>([]);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const [aggRes, repRes] = await Promise.all([
+          fetch("/api/aggregates"),
+          fetch("/api/reports?limit=6"),
+        ]);
+
+        if (aggRes.ok) {
+          const aggData = await aggRes.json();
+          if (aggData.success && aggData.data) {
+            const ruleDist = aggData.data.ruleDistribution || [];
+            const breakdown =
+              ruleDist.length > 0
+                ? ruleDist
+                    .slice(0, 4)
+                    .map((r: any) => ({
+                      name: r.rule,
+                      percentage: r.percentage,
+                    }))
+                : [
+                    { name: "PPE Compliance", percentage: 85 },
+                    { name: "Working at Heights", percentage: 62 },
+                    { name: "Energy Isolation (LOTO)", percentage: 74 },
+                    { name: "Safe Mechanical Lifting", percentage: 58 },
+                  ];
+
+            setAggregates({
+              categoryBreakdown: breakdown,
+              patternCallouts: aggData.data.patternCallouts || [],
+            });
+          }
+        }
+
+        if (repRes.ok) {
+          const repData = await repRes.json();
+          if (repData.success && repData.reports) {
+            setRecentReports(repData.reports.slice(0, 6));
+          }
+        }
+      } catch (err) {
+        console.error("Dashboard overview data loading error:", err);
+      }
+    }
+
+    loadData();
+  }, []);
 
   const cardBg = isDark
     ? "bg-[#0b1220] text-white"

@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 import clsx from "clsx";
 import { useTheme } from "@/components/ThemeProvider";
+import { useAIAssistant } from "@/context/AIAssistantContext";
 
 const navSections = [
   {
@@ -57,15 +58,8 @@ export default function DashboardLayout({
 }) {
   const pathname = usePathname();
   const { isDark, toggleTheme } = useTheme();
-  const [aiOpen, setAiOpen] = useState(false);
-  const [assistantResponse, setAssistantResponse] = useState<string | null>(null);
+  const { openAssistant } = useAIAssistant();
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-
-  useEffect(() => {
-    const openAssistant = () => setAiOpen(true);
-    window.addEventListener("open-ai-assistant", openAssistant);
-    return () => window.removeEventListener("open-ai-assistant", openAssistant);
-  }, []);
 
   return (
     <div className="dashboard-frame flex h-screen min-w-0 overflow-hidden">
@@ -186,8 +180,8 @@ export default function DashboardLayout({
             </Link>
 
             <button
-              onClick={() => setAiOpen(true)}
-              className="inline-flex h-10 items-center gap-2 rounded-xl border border-violet-400/25 bg-violet-500/10 px-3 text-xs font-bold text-violet-300 transition hover:bg-violet-500/16"
+              onClick={openAssistant}
+              className="inline-flex h-10 items-center gap-2 rounded-xl border border-violet-400/25 bg-violet-500/10 px-3 text-xs font-bold text-violet-300 transition hover:bg-violet-500/16 cursor-pointer"
             >
               <Bot className="h-4 w-4" />
               <span className="hidden sm:inline">AI assistant</span>
@@ -243,79 +237,6 @@ export default function DashboardLayout({
           <div className="dashboard-content">{children}</div>
         </div>
       </main>
-
-      {aiOpen && (
-        <div className="fixed inset-0 z-[100]">
-          <button
-            className="absolute inset-0 cursor-default bg-slate-950/45 backdrop-blur-[2px]"
-            onClick={() => setAiOpen(false)}
-            aria-label="Close AI assistant"
-          />
-          <section className="absolute right-4 top-4 w-[min(25rem,calc(100vw-2rem))] overflow-hidden rounded-3xl border border-surface-border bg-surface-card shadow-2xl sm:right-6 sm:top-6">
-            <div className="flex items-center justify-between border-b border-surface-border px-5 py-4">
-              <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-violet-400/25 bg-violet-500/10">
-                  <Bot className="h-5 w-5 text-violet-400" />
-                </span>
-                <div>
-                  <h2 className="font-display text-sm font-bold text-slate-100">AI safety assistant</h2>
-                  <p className="mt-0.5 text-[10px] font-medium text-emerald-400">● Intelligence engine online</p>
-                </div>
-              </div>
-              <button
-                onClick={() => setAiOpen(false)}
-                className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition hover:bg-surface-hover hover:text-slate-100"
-                aria-label="Close AI assistant"
-              >
-                <X className="h-4 w-4" />
-              </button>
-            </div>
-
-            <div className="p-5">
-              <div className="rounded-2xl border border-violet-400/15 bg-violet-500/[0.07] p-4">
-                <div className="flex gap-3">
-                  <Bot className="mt-0.5 h-4 w-4 shrink-0 text-violet-400" />
-                  <p className="text-xs leading-relaxed text-slate-300">
-                    I can analyze SIF precursor trends, identify recurring safety patterns, and explain high-risk observations.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-4 grid gap-2">
-                {[
-                  "Analyze current risk",
-                  "Explain precursor trends",
-                  "Find recurring safety patterns",
-                ].map((label) => (
-                  <button
-                    key={label}
-                    onClick={() => setAssistantResponse(
-                      label === "Analyze current risk"
-                        ? "Open Facility Density to compare current precursor exposure across sites."
-                        : label === "Explain precursor trends"
-                        ? "Open the overview and use the trend controls to review alert movement over time."
-                        : "Open Pattern Callouts to review repeated safety risks requiring attention."
-                    )}
-                    className="rounded-xl border border-surface-border bg-surface/45 px-3.5 py-3 text-left text-xs font-semibold text-slate-300 transition hover:border-violet-400/25 hover:bg-violet-500/[0.06] hover:text-slate-100"
-                  >
-                    {label}
-                  </button>
-                ))}
-              </div>
-
-              {assistantResponse && (
-                <p className="mt-3 rounded-xl border border-emerald-400/20 bg-emerald-400/[0.06] p-3 text-xs leading-relaxed text-slate-300">
-                  {assistantResponse}
-                </p>
-              )}
-
-              <p className="mt-4 text-[10px] leading-relaxed text-slate-500">
-                AI recommendations are generated from current SIF Sentinel dashboard intelligence.
-              </p>
-            </div>
-          </section>
-        </div>
-      )}
     </div>
   );
 }
