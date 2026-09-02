@@ -1,16 +1,23 @@
 import { NextResponse } from "next/server";
-import { memoryDb } from "@/lib/supabase";
 import { computeAggregates } from "@/lib/aggregation-engine";
+import { getSafetySnapshot } from "@/lib/safety-store";
+
+export const runtime = "nodejs";
 
 export async function GET() {
   try {
-    const aggregates = computeAggregates(memoryDb.reports, memoryDb.classifications);
+    const snapshot = await getSafetySnapshot();
+    const aggregates = computeAggregates(snapshot.reports, snapshot.classifications);
     return NextResponse.json({
       success: true,
       total: aggregates.patternCallouts.length,
       patterns: aggregates.patternCallouts,
+      storage: snapshot.storage,
+      generatedAt: new Date().toISOString(),
     });
-  } catch (error: any) {
-    return NextResponse.json({ success: false, error: error.message || "Failed to fetch patterns" }, { status: 500 });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Failed to calculate recurring patterns.";
+    console.error("Pattern calculation error:", error);
+    return NextResponse.json({ success: false, error: message }, { status: 500 });
   }
 }

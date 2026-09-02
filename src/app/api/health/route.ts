@@ -1,19 +1,26 @@
 import { NextResponse } from "next/server";
-import { memoryDb } from "@/lib/supabase";
+import { getSafetySnapshot } from "@/lib/safety-store";
+
+export const runtime = "nodejs";
 
 export async function GET() {
-  return NextResponse.json({
-    status: "healthy",
-    service: "SIF Sentinel (SIH26165) API",
-    version: "3.0.0",
-    layer_a_classifier: "operational (TF-IDF + Logistic Regression)",
-    layer_b_transformer: "ready (DistilBERT / Camber Cloud GPU)",
-    database_records: {
-      reports: memoryDb.reports.length,
-      classifications: memoryDb.classifications.length,
-      site_aggregates: memoryDb.site_activity_aggregates.length,
-      pattern_callouts: memoryDb.pattern_callouts.length,
-    },
-    timestamp: new Date().toISOString(),
-  });
+  try {
+    const snapshot = await getSafetySnapshot();
+    return NextResponse.json({
+      status: "healthy",
+      service: "SIF Sentinel (SIH26165) API",
+      version: "3.1.0",
+      layer_a_classifier: "operational (TF-IDF + Logistic Regression)",
+      layer_b_transformer: "not started — Layer A sign-off required",
+      storage: snapshot.storage,
+      database_records: {
+        reports: snapshot.reports.length,
+        classifications: snapshot.classifications.length,
+      },
+      timestamp: new Date().toISOString(),
+    });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Storage health check failed.";
+    return NextResponse.json({ status: "unhealthy", error: message, timestamp: new Date().toISOString() }, { status: 503 });
+  }
 }

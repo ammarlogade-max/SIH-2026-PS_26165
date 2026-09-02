@@ -1,4 +1,4 @@
-import { groq, GROQ_FAST_MODEL } from "./groq";
+import { groq, GROQ_FAST_MODEL, hasConfiguredAIProvider } from "./groq";
 import { LifeSavingRule, WeeklyHseDigest } from "./types";
 import { AggregationResult } from "./aggregation-engine";
 import { v4 as uuidv4 } from "uuid";
@@ -29,7 +29,7 @@ export async function generateReasoningNarrative(params: {
   const fallbackNarrative = `Classified as SIF-potential precursor under IOGP Life-Saving Rule '${rule}': driven by key risk indicators [${topPositiveTerms || "hazardous condition"}] presenting high fatal consequence probability if barrier fails.`;
 
   // Try optional Groq phrasing if available
-  try {
+  if (hasConfiguredAIProvider) try {
     const prompt = `You are an HSE Safety Officer. Convert these real model classification weights into a concise 1-2 sentence professional explanation. Do NOT change the verdict or rule.
 
 Report text: "${text.slice(0, 300)}"
@@ -89,7 +89,7 @@ export async function generateWeeklyHseDigest(aggregates: AggregationResult): Pr
   }
 
   // Try optional Groq narration if available
-  if (aggregates.totalReports > 0) {
+  if (aggregates.totalReports > 0 && hasConfiguredAIProvider) {
     try {
       const statsSummary = `Total Reports: ${aggregates.totalReports}, SIF Precursors: ${aggregates.sifReportsCount} (${aggregates.overallPrecursorDensity}%), Top Site: ${aggregates.topRiskSite} (${aggregates.highestRiskDensity}%), Active Patterns: ${aggregates.patternCallouts.length}. Top Rules: ${aggregates.ruleDistribution.slice(0, 3).map((r) => `${r.rule} (${r.count})`).join(", ")}.`;
       

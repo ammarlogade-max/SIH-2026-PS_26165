@@ -244,19 +244,29 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-const isSupabaseConfigured = Boolean(
+export const isSupabaseConfigured = Boolean(
   supabaseUrl &&
   supabaseUrl.startsWith("http") &&
   supabaseAnonKey &&
   supabaseAnonKey.length > 10
 );
 
+// Report data is written only through the server-side service role client.
+// A public anon key is sufficient for browser reads in other projects, but is
+// not a safe persistence configuration for this server API.
+export const isSupabasePersistenceConfigured = Boolean(
+  supabaseUrl &&
+  supabaseUrl.startsWith("http") &&
+  supabaseServiceKey &&
+  supabaseServiceKey.length > 10
+);
+
 export const supabase: any = isSupabaseConfigured
   ? createClient(supabaseUrl!, supabaseAnonKey!)
   : createInMemoryClient();
 
-export const supabaseAdmin: any = isSupabaseConfigured && supabaseServiceKey
-  ? createClient(supabaseUrl!, supabaseServiceKey, {
+export const supabaseAdmin: any = isSupabasePersistenceConfigured
+  ? createClient(supabaseUrl!, supabaseServiceKey!, {
       auth: { autoRefreshToken: false, persistSession: false },
     })
   : createInMemoryClient();

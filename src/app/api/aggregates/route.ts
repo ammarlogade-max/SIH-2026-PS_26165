@@ -1,13 +1,20 @@
 import { NextResponse } from "next/server";
-import { memoryDb } from "@/lib/supabase";
 import { computeAggregates } from "@/lib/aggregation-engine";
+import { getSafetySnapshot } from "@/lib/safety-store";
+
+export const runtime = "nodejs";
 
 export async function GET() {
   try {
-    const aggregates = computeAggregates(memoryDb.reports, memoryDb.classifications);
+    const snapshot = await getSafetySnapshot();
+    const aggregates = computeAggregates(snapshot.reports, snapshot.classifications);
+
     return NextResponse.json({
       success: true,
       data: aggregates,
+      storage: snapshot.storage,
+      generatedAt: new Date().toISOString(),
+      // Compatibility fields retained for existing pages and v3 API consumers.
       aggregates: aggregates.siteAggregates,
       totalReports: aggregates.totalReports,
       sifReportsCount: aggregates.sifReportsCount,
@@ -20,7 +27,9 @@ export async function GET() {
       topRiskSite: aggregates.topRiskSite,
       highestRiskDensity: aggregates.highestRiskDensity,
     });
-  } catch (error: any) {
-    return NextResponse.json({ success: false, error: error.message || "Failed to compute aggregates" }, { status: 500 });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Failed to compute safety aggregates.";
+    console.error("Aggregate computation error:", error);
+    return NextResponse.json({ success: false, error: message }, { status: 500 });
   }
 }

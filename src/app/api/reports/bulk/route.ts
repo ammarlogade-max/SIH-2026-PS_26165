@@ -1,89 +1,112 @@
 import { NextRequest, NextResponse } from "next/server";
-import { memoryDb } from "@/lib/supabase";
+import { v4 as uuidv4 } from "uuid";
+import { computeAggregates } from "@/lib/aggregation-engine";
 import { generateLayerAClassification } from "@/lib/layer-a-classifier";
 import { generateReasoningNarrative } from "@/lib/narrative-engine";
-import { computeAggregates } from "@/lib/aggregation-engine";
-import { Report, Classification } from "@/lib/types";
-import { v4 as uuidv4 } from "uuid";
+import { appendSafetyRecords } from "@/lib/safety-store";
+import type { Classification, Report } from "@/lib/types";
 
-interface BulkReportInput {
-  raw_text: string;
-  site?: string;
-  activity?: string;
-  reported_date?: string;
-  submitting_role?: string;
+export const runtime = "nodejs";
+
+type BulkReportInput = {
+  raw_text?: unknown;
+  site?: unknown;
+  activity?: unknown;
+  reported_date?: unknown;
+  submitting_role?: unknown;
+};
+
+const MAX_BATCH_SIZE = 500;
+const MAX_OBSERVATION_LENGTH = 12000;
+
+function validDate(value: unknown): value is string {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  return !Number.isNaN(new Date(`${value}T00:00:00`).getTime());
 }
 
-export async function POST(req: NextRequest) {
-  try {
-    const body = await req.json();
-    const { reports } = body;
+function cleanText(value: unknown, fallback: string, maximum = 160): string {
+  if (typeof value !== "string") return fallback;
+  const cleaned = value.trim().replace(/\s+/g, " ");
+  return cleaned ? cleaned.slice(0, maximum) : fallback;
+}
 
-    if (!reports || !Array.isArray(reports) || reports.length === 0) {
+export async function POST(request: NextRequest) {
+  try {
+    const body: unknown = await request.json();
+    const items = body && typeof body === "object" ? (body as { reports?: unknown }).reports : undefined;
+
+    if (!Array.isArray(items) || !items.length) {
       return NextResponse.json({ success: false, error: "An array of reports is required for bulk ingestion." }, { status: 400 });
+    }
+    if (items.length > MAX_BATCH_SIZE) {
+      return NextResponse.json({ success: false, error: `Bulk ingestion accepts at most ${MAX_BATCH_SIZE} reports at a time.` }, { status: 400 });
     }
 
     const insertedReports: Report[] = [];
     const insertedClassifications: Classification[] = [];
-
-    let sifCount = 0;
+    const skippedRows: { row: number; reason: string }[] = [];
     const ruleDistribution: Record<string, number> = {};
+    let sifCount = 0;
 
-    for (const item of reports as BulkReportInput[]) {
-      if (!item.raw_text || typeof item.raw_text !== "string" || item.raw_text.trim().length === 0) {
-        continue; // skip invalid rows
+    for (const [index, item] of (items as BulkReportInput[]).entries()) {
+      const rawText = typeof item.raw_text === "string" ? item.raw_text.trim() : "";
+      if (!rawText) {
+        skippedRows.push({ row: index + 1, reason: "Missing observation text" });
+        continue;
+      }
+      if (rawText.length > MAX_OBSERVATION_LENGTH) {
+        skippedRows.push({ row: index + 1, reason: `Observation exceeds ${MAX_OBSERVATION_LENGTH} characters` });
+        continue;
+      }
+      if (item.reported_date !== undefined && !validDate(item.reported_date)) {
+        skippedRows.push({ row: index + 1, reason: "reported_date must use YYYY-MM-DD" });
+        continue;
       }
 
-      const reportId = `rep-${uuidv4()}`;
-      const newReport: Report = {
-        id: reportId,
-        raw_text: item.raw_text.trim(),
-        site: item.site?.trim() || "General Facility",
-        activity: item.activity?.trim() || "General Operations",
-        reported_date: item.reported_date || new Date().toISOString().split("T")[0],
-        submitting_role: item.submitting_role?.trim() || "Field Observer",
+      const report: Report = {
+        id: `rep-${uuidv4()}`,
+        raw_text: rawText,
+        site: cleanText(item.site, "General Facility"),
+        activity: cleanText(item.activity, "General Operations"),
+        reported_date: validDate(item.reported_date) ? item.reported_date : new Date().toISOString().slice(0, 10),
+        submitting_role: cleanText(item.submitting_role, "Field Observer", 100),
         source: "bulk_upload",
         created_at: new Date().toISOString(),
       };
-
-      // Classify with Layer A
-      const classification = generateLayerAClassification(reportId, newReport.raw_text);
-
-      // Fast deterministic narrative for batch
-      const narrative = await generateReasoningNarrative({
-        text: newReport.raw_text,
+      const classification = generateLayerAClassification(report.id, report.raw_text);
+      classification.reasoning_narrative = await generateReasoningNarrative({
+        text: report.raw_text,
         isSif: classification.is_sif_potential,
         rule: classification.life_saving_rule,
         terms: classification.reasoning_terms,
       });
-      classification.reasoning_narrative = narrative;
 
+      insertedReports.push(report);
+      insertedClassifications.push(classification);
       if (classification.is_sif_potential) {
-        sifCount++;
+        sifCount += 1;
         if (classification.life_saving_rule) {
           ruleDistribution[classification.life_saving_rule] = (ruleDistribution[classification.life_saving_rule] || 0) + 1;
         }
       }
-
-      insertedReports.push(newReport);
-      insertedClassifications.push(classification);
     }
 
-    if (insertedReports.length === 0) {
-      return NextResponse.json({ success: false, error: "No valid safety report rows were found in the uploaded data." }, { status: 400 });
+    if (!insertedReports.length) {
+      return NextResponse.json({
+        success: false,
+        error: "No valid safety report rows were found in the uploaded data.",
+        skippedRows,
+      }, { status: 400 });
     }
 
-    // Persist all records
-    memoryDb.reports.unshift(...insertedReports);
-    memoryDb.classifications.unshift(...insertedClassifications);
-
-    // Recompute all aggregates & pattern callouts
-    const aggregates = computeAggregates(memoryDb.reports, memoryDb.classifications);
-    memoryDb.site_activity_aggregates = aggregates.siteAggregates;
-    memoryDb.pattern_callouts = aggregates.patternCallouts;
+    const snapshot = await appendSafetyRecords(insertedReports, insertedClassifications);
+    const aggregates = computeAggregates(snapshot.reports, snapshot.classifications);
+    const precursorDensity = Number(((sifCount / insertedReports.length) * 100).toFixed(1));
 
     return NextResponse.json({
       success: true,
+      storage: snapshot.storage,
+      skippedRows,
       batchSummary: {
         total_processed: insertedReports.length,
         totalIngested: insertedReports.length,
@@ -91,15 +114,16 @@ export async function POST(req: NextRequest) {
         sifCount,
         non_sif_count: insertedReports.length - sifCount,
         nonSifCount: insertedReports.length - sifCount,
-        precursor_density: Number(((sifCount / insertedReports.length) * 100).toFixed(1)),
-        precursorDensity: Number(((sifCount / insertedReports.length) * 100).toFixed(1)),
+        precursor_density: precursorDensity,
+        precursorDensity,
         ruleBreakdown: ruleDistribution,
-        totalDatabaseReports: memoryDb.reports.length,
+        totalDatabaseReports: snapshot.reports.length,
         activePatternsDetected: aggregates.patternCallouts.length,
       },
-    });
-  } catch (error: any) {
-    console.error("Error during bulk ingestion:", error);
-    return NextResponse.json({ success: false, error: error.message || "Failed to process bulk upload" }, { status: 500 });
+    }, { status: 201 });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Failed to process bulk upload.";
+    console.error("Bulk safety ingestion error:", error);
+    return NextResponse.json({ success: false, error: message }, { status: 500 });
   }
 }

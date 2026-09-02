@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
   Activity,
   AlertTriangle,
@@ -29,27 +29,36 @@ import {
   TriangleAlert,
   UploadCloud,
   X,
+  ArrowLeft,
 } from "lucide-react";
 import clsx from "clsx";
 import { useTheme } from "@/components/ThemeProvider";
+import { useAIAssistant } from "@/context/AIAssistantContext";
 
 const navSections = [
   {
-    label: "Operations",
+    label: "Safety intelligence",
     items: [
       { href: "/dashboard", icon: LayoutDashboard, label: "Command Center", exact: true },
-      { href: "/dashboard/ingest", icon: UploadCloud, label: "Report Ingestion" },
+      { href: "/dashboard/ingest?tab=manual", icon: ShieldAlert, label: "SIF Precursor Detection" },
       { href: "/dashboard/patterns", icon: BrainCircuit, label: "Risk Intelligence" },
       { href: "/dashboard/density", icon: BarChart3, label: "Facility Density" },
-      { href: "/dashboard/reports", icon: Bell, label: "Alerts & Notifications" },
+      { href: "/dashboard#life-saving-rules", icon: ShieldCheck, label: "Life-Saving Rules" },
     ],
   },
   {
-    label: "Analysis & configuration",
+    label: "Operations",
     items: [
-      { href: "/dashboard#life-saving-rules", icon: ShieldCheck, label: "Life-Saving Rules" },
-      { href: "/dashboard/digest", icon: TrendingUp, label: "Analytics" },
-      { href: "/dashboard/models", icon: Layers, label: "AI model metrics" },
+      { href: "/dashboard/ingest", icon: UploadCloud, label: "Report Ingestion" },
+      { href: "/dashboard/reports", icon: FileText, label: "Safety Reports & Alerts" },
+      { href: "/dashboard/digest", icon: TrendingUp, label: "Weekly HSE Digest" },
+    ],
+  },
+  {
+    label: "AI & system",
+    items: [
+      { href: "/dashboard/ingest?tab=manual", icon: Sparkles, label: "Explainable AI" },
+      { href: "/dashboard/models", icon: Layers, label: "Model Metrics" },
       { href: "/dashboard/settings", icon: Settings, label: "Settings" },
     ],
   },
@@ -70,7 +79,11 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
+  const router = useRouter();
   const { isDark, toggleTheme } = useTheme();
+  const { openAssistant } = useAIAssistant();
+  // Retained state keeps the legacy panel dormant while the shared assistant drawer
+  // is now the single user-facing AI experience.
   const [aiOpen, setAiOpen] = useState(false);
   const [assistantResponse, setAssistantResponse] = useState<string | null>(null);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -80,12 +93,6 @@ export default function DashboardLayout({
   const [emergencyPanelOpen, setEmergencyPanelOpen] = useState(false);
   const ambulanceProgress = emergencyStatus ? Math.max(0, Math.min(100, (1 - emergencyStatus.ambulanceEtaMinutes / 8) * 100)) : 0;
   const fireBrigadeProgress = emergencyStatus ? Math.max(0, Math.min(100, (1 - emergencyStatus.fireBrigadeEtaMinutes / 11) * 100)) : 0;
-
-  useEffect(() => {
-    const openAssistant = () => setAiOpen(true);
-    window.addEventListener("open-ai-assistant", openAssistant);
-    return () => window.removeEventListener("open-ai-assistant", openAssistant);
-  }, []);
 
   const triggerEmergencyResponse = async () => {
     setEmergencyLoading(true);
@@ -195,9 +202,10 @@ export default function DashboardLayout({
                 </p>
                 <div className="space-y-1">
                   {section.items.map((item) => {
+                    const routeHref = item.href.split(/[?#]/)[0];
                     const isActive = item.exact
-                      ? pathname === item.href
-                      : pathname.startsWith(item.href);
+                      ? pathname === routeHref
+                      : pathname.startsWith(routeHref);
 
                     return (
                       <Link
@@ -282,7 +290,7 @@ export default function DashboardLayout({
             </Link>
 
             <button
-              onClick={() => setAiOpen(true)}
+              onClick={openAssistant}
               className="inline-flex h-10 items-center gap-2 rounded-xl border border-violet-400/25 bg-violet-500/10 px-3 text-xs font-bold text-violet-300 transition hover:bg-violet-500/16"
             >
               <Bot className="h-4 w-4" />
@@ -313,7 +321,8 @@ export default function DashboardLayout({
                 <p className="mb-2 px-2 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">{section.label}</p>
                 <div className="space-y-1">
                   {section.items.map((item) => {
-                    const isActive = item.exact ? pathname === item.href : pathname.startsWith(item.href);
+                    const routeHref = item.href.split(/[?#]/)[0];
+                    const isActive = item.exact ? pathname === routeHref : pathname.startsWith(routeHref);
                     return (
                       <Link
                         key={item.href}
@@ -336,6 +345,17 @@ export default function DashboardLayout({
         )}
 
         <div className="flex-1 overflow-y-auto">
+          {pathname !== "/dashboard" && (
+            <div className="flex h-14 items-end px-4 pb-2 sm:px-6">
+              <button
+                onClick={() => router.back()}
+                className="inline-flex h-8 items-center gap-1.5 rounded-lg border border-surface-border bg-surface-card/95 px-2.5 text-[11px] font-semibold text-slate-400 shadow-sm transition hover:bg-surface-hover hover:text-slate-100"
+                aria-label="Go back"
+              >
+                <ArrowLeft className="h-3.5 w-3.5" /> Back
+              </button>
+            </div>
+          )}
           <div className="dashboard-content">{children}</div>
         </div>
       </main>
@@ -435,7 +455,7 @@ export default function DashboardLayout({
         ))}
       </section>
 
-      {aiOpen && (
+      {false && (
         <div className="fixed inset-0 z-[100]">
           <button
             className="absolute inset-0 cursor-default bg-slate-950/45 backdrop-blur-[2px]"

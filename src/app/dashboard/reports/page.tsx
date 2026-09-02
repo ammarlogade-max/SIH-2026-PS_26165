@@ -28,15 +28,19 @@ import { ReportWithClassification, LifeSavingRule, IOGP_LIFE_SAVING_RULES } from
 function ReportsTriagePageContent() {
   const searchParams = useSearchParams();
   const initialSite = searchParams.get("site") || "all";
+  const initialSearch = searchParams.get("search") || "";
+  const initialSif = searchParams.get("sif") === "sif" || searchParams.get("sif") === "non_sif"
+    ? searchParams.get("sif")!
+    : "all";
 
   const [loading, setLoading] = useState(true);
   const [reports, setReports] = useState<ReportWithClassification[]>([]);
   const [selectedReport, setSelectedReport] = useState<ReportWithClassification | null>(null);
 
   // Filters
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(initialSearch);
   const [siteFilter, setSiteFilter] = useState(initialSite);
-  const [sifFilter, setSifFilter] = useState("all");
+  const [sifFilter, setSifFilter] = useState(initialSif);
   const [ruleFilter, setRuleFilter] = useState("all");
 
   const fetchReports = useCallback(async () => {

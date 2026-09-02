@@ -1,135 +1,141 @@
 import { NextRequest, NextResponse } from "next/server";
-import { memoryDb, supabase } from "@/lib/supabase";
+import { v4 as uuidv4 } from "uuid";
+import { computeAggregates } from "@/lib/aggregation-engine";
 import { generateLayerAClassification } from "@/lib/layer-a-classifier";
 import { generateReasoningNarrative } from "@/lib/narrative-engine";
-import { computeAggregates } from "@/lib/aggregation-engine";
-import { Report, Classification, ReportWithClassification } from "@/lib/types";
-import { v4 as uuidv4 } from "uuid";
+import { appendSafetyRecords, getSafetySnapshot } from "@/lib/safety-store";
+import type { Classification, Report, ReportWithClassification } from "@/lib/types";
 
-export async function GET(req: NextRequest) {
+export const runtime = "nodejs";
+
+const MAX_OBSERVATION_LENGTH = 12000;
+
+function validDate(value: unknown): value is string {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  return !Number.isNaN(new Date(`${value}T00:00:00`).getTime());
+}
+
+function cleanOptionalText(value: unknown, fallback: string, maximum = 160): string {
+  if (typeof value !== "string") return fallback;
+  const cleaned = value.trim().replace(/\s+/g, " ");
+  return cleaned ? cleaned.slice(0, maximum) : fallback;
+}
+
+function buildClassifiedReports(reports: Report[], classifications: Classification[]): ReportWithClassification[] {
+  const classMap = new Map<string, Classification>();
+  for (const classification of classifications) {
+    if (classification.layer === "A" || !classMap.has(classification.report_id)) {
+      classMap.set(classification.report_id, classification);
+    }
+  }
+  return reports.map((report) => ({ ...report, classification: classMap.get(report.id) }));
+}
+
+export async function GET(request: NextRequest) {
   try {
-    const { searchParams } = new URL(req.url);
+    const { searchParams } = new URL(request.url);
     const site = searchParams.get("site");
     const rule = searchParams.get("rule");
-    const sifStatus = searchParams.get("sif"); // "sif", "non_sif", "all"
-    const search = searchParams.get("search");
+    const sifStatus = searchParams.get("sif");
+    const search = searchParams.get("search")?.trim().toLowerCase();
+    const requestedLimit = Number.parseInt(searchParams.get("limit") || "", 10);
+    const limit = Number.isFinite(requestedLimit) && requestedLimit > 0
+      ? Math.min(requestedLimit, 500)
+      : undefined;
 
-    // Fetch reports and classifications
-    const reports: Report[] = memoryDb.reports;
-    const classifications: Classification[] = memoryDb.classifications;
+    const snapshot = await getSafetySnapshot();
+    let combined = buildClassifiedReports(snapshot.reports, snapshot.classifications);
 
-    const classMap = new Map<string, Classification>();
-    for (const cls of classifications) {
-      if (cls.layer === "A" || !classMap.has(cls.report_id)) {
-        classMap.set(cls.report_id, cls);
-      }
-    }
-
-    let combined: ReportWithClassification[] = reports.map((r) => ({
-      ...r,
-      classification: classMap.get(r.id),
-    }));
-
-    // Filter by site
     if (site && site !== "all") {
-      combined = combined.filter((r) => r.site.toLowerCase() === site.toLowerCase());
+      combined = combined.filter((report) => report.site.toLowerCase() === site.toLowerCase());
     }
-
-    // Filter by SIF status
     if (sifStatus === "sif") {
-      combined = combined.filter((r) => r.classification?.is_sif_potential === true);
+      combined = combined.filter((report) => report.classification?.is_sif_potential === true);
     } else if (sifStatus === "non_sif") {
-      combined = combined.filter((r) => r.classification?.is_sif_potential === false);
+      combined = combined.filter((report) => report.classification?.is_sif_potential === false);
     }
-
-    // Filter by Life-Saving Rule
     if (rule && rule !== "all") {
-      combined = combined.filter((r) => r.classification?.life_saving_rule === rule);
+      combined = combined.filter((report) => report.classification?.life_saving_rule === rule);
     }
-
-    // Filter by search query
-    if (search && search.trim().length > 0) {
-      const q = search.toLowerCase();
-      combined = combined.filter(
-        (r) =>
-          r.raw_text.toLowerCase().includes(q) ||
-          r.site.toLowerCase().includes(q) ||
-          r.activity.toLowerCase().includes(q) ||
-          (r.classification?.life_saving_rule && r.classification.life_saving_rule.toLowerCase().includes(q))
+    if (search) {
+      combined = combined.filter((report) =>
+        report.id.toLowerCase().includes(search) ||
+        report.raw_text.toLowerCase().includes(search) ||
+        report.site.toLowerCase().includes(search) ||
+        report.activity.toLowerCase().includes(search) ||
+        Boolean(report.classification?.life_saving_rule?.toLowerCase().includes(search))
       );
     }
 
-    // Sort newest first
     combined.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+    const total = combined.length;
 
     return NextResponse.json({
       success: true,
-      total: combined.length,
-      reports: combined,
+      total,
+      reports: limit ? combined.slice(0, limit) : combined,
+      storage: snapshot.storage,
     });
-  } catch (error: any) {
-    console.error("Error fetching reports:", error);
-    return NextResponse.json({ success: false, error: error.message || "Failed to fetch reports" }, { status: 500 });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Failed to fetch safety reports.";
+    console.error("Safety report read error:", error);
+    return NextResponse.json({ success: false, error: message }, { status: 500 });
   }
 }
 
-export async function POST(req: NextRequest) {
+export async function POST(request: NextRequest) {
   try {
-    const body = await req.json();
-    const { raw_text, site, activity, reported_date, submitting_role } = body;
+    const body: unknown = await request.json();
+    const input = body && typeof body === "object" ? body as Record<string, unknown> : {};
+    const rawText = typeof input.raw_text === "string" ? input.raw_text.trim() : "";
 
-    if (!raw_text || typeof raw_text !== "string" || raw_text.trim().length === 0) {
+    if (!rawText) {
       return NextResponse.json({ success: false, error: "Observation text is required." }, { status: 400 });
+    }
+    if (rawText.length > MAX_OBSERVATION_LENGTH) {
+      return NextResponse.json({ success: false, error: `Observation text must not exceed ${MAX_OBSERVATION_LENGTH} characters.` }, { status: 400 });
+    }
+    if (input.reported_date !== undefined && !validDate(input.reported_date)) {
+      return NextResponse.json({ success: false, error: "reported_date must use YYYY-MM-DD." }, { status: 400 });
     }
 
     const reportId = `rep-${uuidv4()}`;
-    const newReport: Report = {
+    const report: Report = {
       id: reportId,
-      raw_text: raw_text.trim(),
-      site: site?.trim() || "General Facility",
-      activity: activity?.trim() || "General Operations",
-      reported_date: reported_date || new Date().toISOString().split("T")[0],
-      submitting_role: submitting_role?.trim() || "Field Staff",
+      raw_text: rawText,
+      site: cleanOptionalText(input.site, "General Facility"),
+      activity: cleanOptionalText(input.activity, "General Operations"),
+      reported_date: validDate(input.reported_date) ? input.reported_date : new Date().toISOString().slice(0, 10),
+      submitting_role: cleanOptionalText(input.submitting_role, "Field Staff", 100),
       source: "manual",
       created_at: new Date().toISOString(),
     };
 
-    // Run Layer A Classifier immediately
-    const classification = generateLayerAClassification(reportId, newReport.raw_text);
-
-    // Generate explanatory narrative
-    const narrative = await generateReasoningNarrative({
-      text: newReport.raw_text,
+    const classification = generateLayerAClassification(report.id, report.raw_text);
+    classification.reasoning_narrative = await generateReasoningNarrative({
+      text: report.raw_text,
       isSif: classification.is_sif_potential,
       rule: classification.life_saving_rule,
       terms: classification.reasoning_terms,
     });
-    classification.reasoning_narrative = narrative;
 
-    // Save report & classification
-    memoryDb.reports.unshift(newReport);
-    memoryDb.classifications.unshift(classification);
-
-    // Recompute aggregates
-    const aggregates = computeAggregates(memoryDb.reports, memoryDb.classifications);
-    memoryDb.site_activity_aggregates = aggregates.siteAggregates;
-    memoryDb.pattern_callouts = aggregates.patternCallouts;
+    const snapshot = await appendSafetyRecords([report], [classification]);
+    const aggregates = computeAggregates(snapshot.reports, snapshot.classifications);
 
     return NextResponse.json({
       success: true,
-      report: {
-        ...newReport,
-        classification,
-      },
+      report: { ...report, classification },
       classification,
+      storage: snapshot.storage,
       aggregatesSummary: {
         totalReports: aggregates.totalReports,
         sifReportsCount: aggregates.sifReportsCount,
         overallPrecursorDensity: aggregates.overallPrecursorDensity,
       },
-    });
-  } catch (error: any) {
-    console.error("Error creating report:", error);
-    return NextResponse.json({ success: false, error: error.message || "Failed to process observation" }, { status: 500 });
+    }, { status: 201 });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Failed to process observation.";
+    console.error("Safety report write error:", error);
+    return NextResponse.json({ success: false, error: message }, { status: 500 });
   }
 }

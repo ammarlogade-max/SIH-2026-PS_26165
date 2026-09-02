@@ -7,6 +7,10 @@ export const GROQ_FAST_MODEL = "llama-3.1-8b-instant";
 const hasGroqKey = Boolean(process.env.GROQ_API_KEY && process.env.GROQ_API_KEY.length > 5 && process.env.GROQ_API_KEY !== "missing-key");
 const hasGeminiKey = Boolean(process.env.GEMINI_API_KEY && process.env.GEMINI_API_KEY.length > 5);
 
+// Consumers that need factual deterministic fallbacks can use this instead of
+// treating the generic offline heuristic as an LLM response.
+export const hasConfiguredAIProvider = hasGroqKey || hasGeminiKey;
+
 let realGroqClient: Groq | null = null;
 if (hasGroqKey) {
   realGroqClient = new Groq({

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { AIAssistantProvider } from "@/context/AIAssistantContext";
-import AIAssistantDrawer from "@/components/AIAssistantDrawer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function RootLayout({
         <ThemeProvider>
           <AIAssistantProvider>
             {children}
-            <AIAssistantDrawer />
           </AIAssistantProvider>
         </ThemeProvider>
       </body>

@@ -1,248 +1,193 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
-import { X, Send, Bot, Sparkles, HelpCircle } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { Bot, ChevronRight, Send, Sparkles, X } from "lucide-react";
+import { useAIAssistant } from "@/context/AIAssistantContext";
 
-interface Message {
-  role: "user" | "assistant";
-  content: string;
-}
+type Message = { role: "user" | "assistant"; content: string };
+type PrototypePrompt = { id: string; label: string; question: string };
 
-// -------------------------------------------------------------
-// 8 HOW-TO & FEATURE GUIDE PRESET QUESTIONS:
-// -------------------------------------------------------------
-const PRESET_QUESTIONS = [
-  "How do I use this dashboard to track SIF risks?",
-  "How do I ingest and analyze a new near-miss report?",
-  "How does real-time risk tracking and monitoring work?",
-  "Where can I view PPE compliance and category analytics?",
-  "How do I set up alerts for high-risk observations?",
-  "What are Life Saving Rules (LSR) and how are they flagged?",
-  "How do I track recurring safety patterns across sites?",
-  "How does the AI model evaluate facility density risks?",
+const prototypePrompts: PrototypePrompt[] = [
+  { id: "overview", label: "How does SIF Sentinel work?", question: "Explain how the SIF Sentinel prototype detects and prioritizes serious injury and fatality precursors." },
+  { id: "classify", label: "Classify a near-miss", question: "How do I classify a new near-miss or safety observation using the SIF Sentinel prototype?" },
+  { id: "density", label: "Interpret risk density", question: "How should an HSE manager interpret precursor density and facility risk ranking in this prototype?" },
+  { id: "patterns", label: "Investigate patterns", question: "How does SIF Sentinel identify recurring precursor patterns and what should an HSE manager do next?" },
+  { id: "rules", label: "Understand IOGP rules", question: "How are IOGP Life-Saving Rules used to classify safety observations in SIF Sentinel?" },
+  { id: "xai", label: "Explain an AI decision", question: "How can I understand why SIF Sentinel flagged an observation as a SIF precursor?" },
+  { id: "action", label: "Plan HSE action", question: "What actions should an HSE manager take after SIF Sentinel identifies a high-priority precursor?" },
 ];
 
-export default function AIAssistantDrawer({
-  isOpen: propIsOpen,
-  onClose: propOnClose,
-}: {
-  isOpen?: boolean;
-  onClose?: () => void;
-}) {
-  const [eventOpen, setEventOpen] = useState(false);
+export default function AIAssistantDrawer() {
+  const { isOpen, closeAssistant } = useAIAssistant();
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isThinking, setIsThinking] = useState(false);
+  const [selectedPromptId, setSelectedPromptId] = useState<string | null>(null);
+  const endRef = useRef<HTMLDivElement>(null);
 
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const hasAssistantResponse = messages.some((message) => message.role === "assistant");
+  const remainingPrompts = useMemo(
+    () => prototypePrompts.filter((prompt) => prompt.id !== selectedPromptId),
+    [selectedPromptId]
+  );
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    endRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, isThinking]);
 
-  useEffect(() => {
-    const handleOpen = () => setEventOpen(true);
-    window.addEventListener("open-ai-assistant", handleOpen);
-    return () => window.removeEventListener("open-ai-assistant", handleOpen);
-  }, []);
+  const send = async (suggestion?: PrototypePrompt) => {
+    const message = (suggestion?.question ?? input).trim();
+    if (!message || isThinking) return;
 
-  const visible = propIsOpen ?? eventOpen;
-
-  const handleClose = () => {
-    if (propOnClose) propOnClose();
-    setEventOpen(false);
-  };
-
-  if (!visible) return null;
-
-  const handleSend = (textQuery?: string) => {
-    const query = (textQuery || input).trim();
-    if (!query) return;
-
-    // 1. Instantly post user question
-    const userMsg: Message = { role: "user", content: query };
-    setMessages((prev) => [...prev, userMsg]);
+    if (suggestion) setSelectedPromptId(suggestion.id);
+    setMessages((current) => [...current, { role: "user", content: message }]);
     setInput("");
     setIsThinking(true);
 
-    // 2. Feature Guide AI Responses
-    setTimeout(() => {
-      let response = `Here is guidance for: "${query}"`;
-      const lower = query.toLowerCase();
-
-      if (lower.includes("use this dashboard") || lower.includes("track sif")) {
-        response =
-          "📌 Command Center Overview:\n\n" +
-          "1. Dashboard Overview displays live SIF risk scores, category breakdowns, and high-priority reports.\n" +
-          "2. Navigation Menu on the left lets you jump between Report Ingestion, Risk Intelligence, Facility Density, and Alerts.\n" +
-          "3. Use this AI Assistant anytime for quick system guidance and risk analysis.";
-      } else if (lower.includes("ingest") || lower.includes("near-miss")) {
-        response =
-          "📥 Report Ingestion Guide:\n\n" +
-          "1. Go to 'Report Ingestion' in the left menu.\n" +
-          "2. Upload raw incident logs (PDF/CSV) or type observation details.\n" +
-          "3. The NLP engine auto-classifies SIF precursors, severity, and root causes.";
-      } else if (lower.includes("real-time") || lower.includes("monitoring")) {
-        response =
-          "📡 Risk Intelligence & Live Monitoring:\n\n" +
-          "• Open 'Risk Intelligence' to see live operational heatmaps.\n" +
-          "• Risk levels update automatically as new site observations are submitted.\n" +
-          "• Track exposure scores categorized by High, Medium, and Low risk thresholds.";
-      } else if (lower.includes("ppe") || lower.includes("category")) {
-        response =
-          "📊 PPE Compliance & Category Analytics:\n\n" +
-          "1. View the 'Category Analysis' section on your dashboard.\n" +
-          "2. Check compliance percentages for Working at Heights, LOTO, and Machinery Safety.\n" +
-          "3. Click any category bar to filter underlying observation logs.";
-      } else if (lower.includes("alert") || lower.includes("notifications")) {
-        response =
-          "🔔 Alerts & Notifications Setup:\n\n" +
-          "1. Select 'Alerts & Notifications' from the left sidebar.\n" +
-          "2. Configure threshold rules (e.g., alert when SIF risk score > 75%).\n" +
-          "3. High-risk precursor flags immediately highlight on your dashboard.";
-      } else if (lower.includes("life saving") || lower.includes("lsr")) {
-        response =
-          "🛡️ Life Saving Rules (LSR):\n\n" +
-          "• The LSR module maps site reports to standardized safety rules.\n" +
-          "• Instantly tracks compliance for Energy Isolation, Work Permits, and Fall Protection.\n" +
-          "• Flags repeat violations before severe incidents happen.";
-      } else if (lower.includes("recurring") || lower.includes("pattern")) {
-        response =
-          "🔁 Tracking Recurring Safety Patterns:\n\n" +
-          "1. Look at the 'Recurring Patterns' card on your main dashboard.\n" +
-          "2. The AI aggregates repeated unsafe acts across different shifts or sites.\n" +
-          "3. Focus preventive audits on repeat high-precursor patterns.";
-      } else if (lower.includes("facility density") || lower.includes("model")) {
-        response =
-          "🏢 Facility Density Evaluation:\n\n" +
-          "1. Access 'Facility Density' to analyze high-consequence work zones.\n" +
-          "2. Combines equipment density, worker headcount, and historical flags.\n" +
-          "3. Generates localized risk density heatmaps for targeted intervention.";
-      }
-
-      setMessages((prev) => [...prev, { role: "assistant", content: response }]);
+    try {
+      const response = await fetch("/api/assistant", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message, history: messages }),
+      });
+      const payload = await response.json();
+      setMessages((current) => [
+        ...current,
+        {
+          role: "assistant",
+          content: payload.reply || "The AI service did not return a response.",
+        },
+      ]);
+    } catch {
+      setMessages((current) => [
+        ...current,
+        {
+          role: "assistant",
+          content: "The AI service is unavailable. Please check the configured AI connection and try again.",
+        },
+      ]);
+    } finally {
       setIsThinking(false);
-    }, 600);
+    }
   };
 
-  return (
-    <div className="fixed inset-0 z-[9999] flex justify-end bg-black/60 backdrop-blur-sm">
-      {/* Backdrop */}
-      <div className="flex-1" onClick={handleClose} />
+  if (!isOpen) return null;
 
-      {/* Slide-over Drawer */}
-      <div className="w-full max-w-md bg-[#0b1220] border-l border-white/10 text-white h-full flex flex-col shadow-2xl relative z-10">
-        
-        {/* Header */}
-        <div className="p-4 border-b border-white/10 flex items-center justify-between bg-[#070b14]">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-purple-500/20 border border-purple-500/30 flex items-center justify-center">
-              <Bot className="w-4 h-4 text-purple-400" />
-            </div>
-            <div>
-              <h3 className="font-semibold text-sm flex items-center gap-1.5">
-                AI safety assistant <Sparkles className="w-3.5 h-3.5 text-purple-400" />
-              </h3>
-              <p className="text-[11px] text-emerald-400 flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                Intelligence engine online
+  const showPrompts = messages.length === 0 || (hasAssistantResponse && !isThinking);
+  const visiblePrompts = messages.length === 0 ? prototypePrompts : remainingPrompts;
+
+  return (
+    <div
+      className="fixed inset-0 z-[200] flex justify-end bg-slate-950/45 backdrop-blur-sm"
+      role="dialog"
+      aria-modal="true"
+      aria-label="AI safety assistant"
+    >
+      <button
+        className="flex-1 cursor-default"
+        onClick={closeAssistant}
+        aria-label="Close AI assistant"
+      />
+
+      <section className="ai-assistant-drawer flex h-full w-full max-w-md flex-col border-l border-surface-border bg-surface-card shadow-2xl">
+        <header className="flex items-center justify-between border-b border-surface-border px-5 py-4">
+          <div className="flex min-w-0 items-center gap-3">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-violet-400/25 bg-violet-500/10">
+              <Bot className="h-5 w-5 text-violet-400" />
+            </span>
+            <div className="min-w-0">
+              <h2 className="font-display text-sm font-bold text-slate-100">AI safety assistant</h2>
+              <p className="mt-0.5 flex items-center gap-1.5 text-[10px] font-semibold text-emerald-400">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                Connected to the safety AI service
               </p>
             </div>
           </div>
           <button
-            type="button"
-            onClick={handleClose}
-            className="p-1.5 rounded-lg hover:bg-white/10 text-slate-400 hover:text-white transition cursor-pointer"
+            onClick={closeAssistant}
+            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-slate-400 transition hover:bg-surface-hover hover:text-slate-100"
+            aria-label="Close"
           >
-            <X className="w-5 h-5" />
+            <X className="h-4 w-4" />
           </button>
-        </div>
+        </header>
 
-        {/* Chat Body */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-4 text-xs">
-          <div className="p-3.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-slate-300 flex items-start gap-3">
-            <HelpCircle className="w-5 h-5 text-purple-400 shrink-0 mt-0.5" />
-            <p className="leading-relaxed">
-              Welcome! I can guide you on how to use every feature on this SIF Sentinel dashboard. Click any question below to get started.
-            </p>
+        <div className="flex-1 overflow-y-auto p-4">
+          <div className="rounded-xl border border-violet-400/20 bg-violet-500/[0.07] p-3.5 text-xs leading-relaxed text-slate-300">
+            Ask about the real SIF Sentinel workflow, classification logic, IOGP framework, or how to act on safety intelligence.
           </div>
 
-          {/* 8 How-To / Feature Preset Buttons */}
-          {messages.length === 0 && (
-            <div className="space-y-2 pt-1">
-              <p className="text-[11px] font-semibold text-slate-400 px-1">
-                How-To & Dashboard Features Guide
+          <div className="mt-4 space-y-3">
+            {messages.map((message, index) => (
+              <div
+                key={`${message.role}-${index}`}
+                className={message.role === "user" ? "flex justify-end" : "flex justify-start"}
+              >
+                <p
+                  className={
+                    message.role === "user"
+                      ? "max-w-[88%] rounded-2xl rounded-br-sm bg-violet-600 px-3.5 py-2.5 text-xs leading-relaxed text-white"
+                      : "ai-assistant-response max-w-[88%] whitespace-pre-wrap rounded-2xl rounded-bl-sm border border-surface-border bg-surface px-3.5 py-2.5 text-xs leading-relaxed text-slate-300"
+                  }
+                >
+                  {message.content}
+                </p>
+              </div>
+            ))}
+            {isThinking && (
+              <div className="ai-assistant-response rounded-2xl rounded-bl-sm border border-surface-border bg-surface px-3.5 py-2.5 text-xs text-violet-400">
+                Analyzing safety context…
+              </div>
+            )}
+          </div>
+
+          {showPrompts && (
+            <section className="mt-5 border-t border-surface-border pt-4" aria-label="Suggested assistant questions">
+              <p className="mb-2 px-1 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-500">
+                {messages.length === 0 ? "Explore the prototype" : "Continue exploring"}
               </p>
-              <div className="grid grid-cols-1 gap-2">
-                {PRESET_QUESTIONS.map((q, idx) => (
+              <div className="space-y-2">
+                {visiblePrompts.map((prompt) => (
                   <button
-                    key={idx}
-                    type="button"
-                    onClick={() => handleSend(q)}
-                    className="w-full text-left p-2.5 rounded-xl bg-white/[0.03] hover:bg-purple-500/10 border border-white/10 hover:border-purple-500/30 font-medium transition text-slate-200 cursor-pointer flex items-center justify-between group"
+                    key={prompt.id}
+                    onClick={() => void send(prompt)}
+                    className="ai-assistant-prompt flex w-full items-center justify-between gap-3 rounded-xl border border-surface-border bg-surface/55 px-3.5 py-3 text-left text-xs font-medium text-slate-300 transition hover:border-violet-400/30 hover:bg-violet-500/[0.07] hover:text-slate-100"
                   >
-                    <span className="pr-2 text-[11px]">{q}</span>
-                    <Sparkles className="w-3 h-3 text-slate-500 group-hover:text-purple-400 shrink-0 transition" />
+                    <span>{prompt.label}</span>
+                    <ChevronRight className="h-3.5 w-3.5 shrink-0 text-violet-400" />
                   </button>
                 ))}
               </div>
-            </div>
+            </section>
           )}
-
-          {/* Chat Stream */}
-          {messages.map((msg, i) => (
-            <div
-              key={i}
-              className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
-            >
-              <div
-                className={`max-w-[85%] rounded-2xl px-4 py-2.5 leading-relaxed whitespace-pre-line ${
-                  msg.role === "user"
-                    ? "bg-purple-600 text-white rounded-br-none"
-                    : "bg-white/[0.05] border border-white/10 text-slate-200 rounded-bl-none"
-                }`}
-              >
-                {msg.content}
-              </div>
-            </div>
-          ))}
-
-          {isThinking && (
-            <div className="flex justify-start">
-              <div className="bg-white/[0.05] border border-white/10 text-purple-400 rounded-2xl px-4 py-2.5 text-xs animate-pulse">
-                Fetching feature guide details...
-              </div>
-            </div>
-          )}
-
-          <div ref={messagesEndRef} />
+          <div ref={endRef} />
         </div>
 
-        {/* Input Form */}
-        <div className="p-4 border-t border-white/10 bg-[#070b14]">
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              handleSend();
-            }}
-            className="relative flex items-center"
-          >
+        <form
+          onSubmit={(event) => {
+            event.preventDefault();
+            void send();
+          }}
+          className="border-t border-surface-border p-4"
+        >
+          <div className="flex items-center gap-2 rounded-xl border border-surface-border bg-surface px-2">
             <input
-              type="text"
               value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask how to use any dashboard feature..."
-              className="w-full pl-3 pr-10 py-2.5 text-xs bg-white/[0.05] border border-white/10 rounded-xl text-white placeholder:text-slate-500 focus:outline-none focus:border-purple-500/50"
+              onChange={(event) => setInput(event.target.value)}
+              placeholder="Ask about SIF safety intelligence…"
+              className="ai-assistant-input min-w-0 flex-1 bg-transparent px-2 py-3 text-xs text-slate-100 outline-none placeholder:text-slate-500"
             />
             <button
               type="submit"
-              className="absolute right-2 p-1.5 rounded-lg bg-purple-500 hover:bg-purple-400 text-white transition cursor-pointer"
+              disabled={!input.trim() || isThinking}
+              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-violet-600 text-white transition hover:bg-violet-500 disabled:opacity-45"
+              aria-label="Send message"
             >
-              <Send className="w-3.5 h-3.5" />
+              <Send className="h-3.5 w-3.5" />
             </button>
-          </form>
-        </div>
-      </div>
+          </div>
+        </form>
+      </section>
     </div>
   );
 }
