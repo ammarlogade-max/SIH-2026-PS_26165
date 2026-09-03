@@ -1,7 +1,9 @@
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { Classification, Report } from "@/lib/types";
+import { Classification, Report, CorrectiveAction, AuditLogEntry, UserRole } from "@/lib/types";
 import { isSupabasePersistenceConfigured, supabaseAdmin } from "@/lib/supabase";
+import { buildBenchmarkDataset } from "@/lib/benchmark-seeder";
+import { v4 as uuidv4 } from "uuid";
 
 export type SafetyStorageKind = "supabase" | "local-file";
 
@@ -15,6 +17,8 @@ export type SafetyStorageInfo = {
 export type SafetySnapshot = {
   reports: Report[];
   classifications: Classification[];
+  actions: CorrectiveAction[];
+  auditLogs: AuditLogEntry[];
   storage: SafetyStorageInfo;
 };
 
@@ -23,11 +27,11 @@ type LocalStoreDocument = {
   updated_at: string;
   reports: Report[];
   classifications: Classification[];
+  actions: CorrectiveAction[];
+  auditLogs: AuditLogEntry[];
 };
 
 declare global {
-  // The cache prevents overlapping development-route requests from reading stale
-  // file contents. The file remains the durable source across server restarts.
   // eslint-disable-next-line no-var
   var sifLocalStoreCache: LocalStoreDocument | undefined;
   // eslint-disable-next-line no-var
@@ -57,18 +61,25 @@ function supabaseStorageInfo(): SafetyStorageInfo {
 }
 
 function emptyLocalDocument(): LocalStoreDocument {
+  const benchmark = buildBenchmarkDataset();
   return {
     version: 1,
     updated_at: new Date().toISOString(),
-    reports: [],
-    classifications: [],
+    reports: benchmark.reports,
+    classifications: benchmark.classifications,
+    actions: benchmark.actions,
+    auditLogs: benchmark.auditLogs,
   };
 }
 
 function isLocalDocument(value: unknown): value is LocalStoreDocument {
   if (!value || typeof value !== "object") return false;
   const document = value as Partial<LocalStoreDocument>;
-  return document.version === 1 && Array.isArray(document.reports) && Array.isArray(document.classifications);
+  return (
+    document.version === 1 &&
+    Array.isArray(document.reports) &&
+    Array.isArray(document.classifications)
+  );
 }
 
 async function loadLocalDocument(): Promise<LocalStoreDocument> {
@@ -82,12 +93,20 @@ async function loadLocalDocument(): Promise<LocalStoreDocument> {
       if (!isLocalDocument(parsed)) {
         throw new Error("The local safety data file has an unsupported format.");
       }
+      // Ensure actions and auditLogs arrays exist if migrating an older file
+      if (!Array.isArray(parsed.actions)) {
+        parsed.actions = buildBenchmarkDataset().actions;
+      }
+      if (!Array.isArray(parsed.auditLogs)) {
+        parsed.auditLogs = buildBenchmarkDataset().auditLogs;
+      }
       globalThis.sifLocalStoreCache = parsed;
       return parsed;
     } catch (error) {
       const code = (error as NodeJS.ErrnoException).code;
       if (code === "ENOENT") {
         const document = emptyLocalDocument();
+        await writeLocalDocument(document);
         globalThis.sifLocalStoreCache = document;
         return document;
       }
@@ -112,6 +131,8 @@ function cloneSnapshot(document: LocalStoreDocument): SafetySnapshot {
   return {
     reports: [...document.reports],
     classifications: [...document.classifications],
+    actions: [...(document.actions || [])],
+    auditLogs: [...(document.auditLogs || [])],
     storage: localStorageInfo(),
   };
 }
@@ -130,9 +151,14 @@ async function loadSupabaseSnapshot(): Promise<SafetySnapshot> {
   if (reportsResult.error) throw asStoreError("read", reportsResult.error);
   if (classificationsResult.error) throw asStoreError("read", classificationsResult.error);
 
+  // For Supabase, actions and audit logs fallback gracefully if tables don't exist yet
+  const localDoc = await loadLocalDocument();
+
   return {
     reports: (reportsResult.data || []) as Report[],
     classifications: (classificationsResult.data || []) as Classification[],
+    actions: localDoc.actions || [],
+    auditLogs: localDoc.auditLogs || [],
     storage: supabaseStorageInfo(),
   };
 }
@@ -148,7 +174,8 @@ export async function getSafetySnapshot(): Promise<SafetySnapshot> {
 
 export async function appendSafetyRecords(
   reports: Report[],
-  classifications: Classification[]
+  classifications: Classification[],
+  auditEvent?: { actor_name: string; actor_role: UserRole; details: string }
 ): Promise<SafetySnapshot> {
   if (!reports.length) return getSafetySnapshot();
 
@@ -158,22 +185,37 @@ export async function appendSafetyRecords(
 
     const classificationsInsert = await supabaseAdmin.from("sif_classifications").insert(classifications);
     if (classificationsInsert.error) {
-      // Avoid leaving orphaned reports when a classification insert fails.
       await supabaseAdmin.from("sif_reports").delete().in("id", reports.map((report) => report.id));
       throw asStoreError("write", classificationsInsert.error);
     }
-
-    return getSafetySnapshot();
   }
 
   let result: SafetySnapshot | undefined;
   const pendingWrite = (globalThis.sifLocalStoreWriteQueue || Promise.resolve()).then(async () => {
     const current = await loadLocalDocument();
+    
+    const newAuditLogs: AuditLogEntry[] = [...(current.auditLogs || [])];
+    if (auditEvent) {
+      newAuditLogs.unshift({
+        id: `aud-${uuidv4().slice(0, 8)}`,
+        timestamp: new Date().toISOString(),
+        actor_name: auditEvent.actor_name,
+        actor_role: auditEvent.actor_role,
+        action: "OBSERVATION_INGESTED",
+        entity_type: "observation",
+        entity_id: reports[0]?.id || "batch",
+        details: auditEvent.details,
+        status: "success",
+      });
+    }
+
     const next: LocalStoreDocument = {
       version: 1,
       updated_at: new Date().toISOString(),
       reports: [...reports, ...current.reports],
       classifications: [...classifications, ...current.classifications],
+      actions: current.actions || [],
+      auditLogs: newAuditLogs,
     };
     await writeLocalDocument(next);
     result = cloneSnapshot(next);
@@ -182,4 +224,157 @@ export async function appendSafetyRecords(
   globalThis.sifLocalStoreWriteQueue = pendingWrite.catch(() => undefined);
   await pendingWrite;
   return result!;
+}
+
+export async function saveCorrectiveAction(
+  action: CorrectiveAction,
+  actor: { name: string; role: UserRole }
+): Promise<CorrectiveAction> {
+  const current = await loadLocalDocument();
+  const nextActions = [action, ...(current.actions || [])];
+  
+  const auditEntry: AuditLogEntry = {
+    id: `aud-${uuidv4().slice(0, 8)}`,
+    timestamp: new Date().toISOString(),
+    actor_name: actor.name,
+    actor_role: actor.role,
+    action: "CAPA_CREATED",
+    entity_type: "action",
+    entity_id: action.id,
+    details: `Created CAPA '${action.title}' for ${action.site} (${action.life_saving_rule}, Priority: ${action.priority}). Assigned to ${action.assigned_to}.`,
+    status: "success",
+  };
+
+  const next: LocalStoreDocument = {
+    ...current,
+    updated_at: new Date().toISOString(),
+    actions: nextActions,
+    auditLogs: [auditEntry, ...(current.auditLogs || [])],
+  };
+
+  await writeLocalDocument(next);
+  return action;
+}
+
+export async function updateCorrectiveAction(
+  id: string,
+  updates: Partial<CorrectiveAction>,
+  actor: { name: string; role: UserRole }
+): Promise<CorrectiveAction> {
+  const current = await loadLocalDocument();
+  const actions = current.actions || [];
+  const index = actions.findIndex((a) => a.id === id);
+  if (index === -1) {
+    throw new Error(`Corrective Action with ID '${id}' not found.`);
+  }
+
+  const existing = actions[index];
+  const updated: CorrectiveAction = {
+    ...existing,
+    ...updates,
+  };
+
+  if (updates.status === "completed" && !updated.completed_at) {
+    updated.completed_at = new Date().toISOString();
+  }
+  if (updates.status === "verified") {
+    if (!updated.verified_at) updated.verified_at = new Date().toISOString();
+    if (!updated.verified_by) updated.verified_by = `${actor.name} (${actor.role})`;
+  }
+
+  actions[index] = updated;
+
+  const auditEntry: AuditLogEntry = {
+    id: `aud-${uuidv4().slice(0, 8)}`,
+    timestamp: new Date().toISOString(),
+    actor_name: actor.name,
+    actor_role: actor.role,
+    action: updates.status === "verified" ? "CAPA_VERIFIED" : updates.status === "completed" ? "CAPA_COMPLETED" : "CAPA_UPDATED",
+    entity_type: "action",
+    entity_id: id,
+    details: `Updated action '${updated.title}' to status '${updated.status}'. ${updates.evidence_notes ? `Notes: ${updates.evidence_notes}` : ""}`,
+    status: "success",
+  };
+
+  const next: LocalStoreDocument = {
+    ...current,
+    updated_at: new Date().toISOString(),
+    actions: [...actions],
+    auditLogs: [auditEntry, ...(current.auditLogs || [])],
+  };
+
+  await writeLocalDocument(next);
+  return updated;
+}
+
+export async function logAuditEvent(
+  entry: Omit<AuditLogEntry, "id" | "timestamp">
+): Promise<AuditLogEntry> {
+  const current = await loadLocalDocument();
+  const newEntry: AuditLogEntry = {
+    ...entry,
+    id: `aud-${uuidv4().slice(0, 8)}`,
+    timestamp: new Date().toISOString(),
+  };
+
+  const next: LocalStoreDocument = {
+    ...current,
+    updated_at: new Date().toISOString(),
+    auditLogs: [newEntry, ...(current.auditLogs || [])],
+  };
+
+  await writeLocalDocument(next);
+  return newEntry;
+}
+
+export async function resetSafetyStore(seedBenchmark = true): Promise<SafetySnapshot> {
+  let doc: LocalStoreDocument;
+  if (seedBenchmark) {
+    const benchmark = buildBenchmarkDataset();
+    doc = {
+      version: 1,
+      updated_at: new Date().toISOString(),
+      reports: benchmark.reports,
+      classifications: benchmark.classifications,
+      actions: benchmark.actions,
+      auditLogs: [
+        {
+          id: `aud-${uuidv4().slice(0, 8)}`,
+          timestamp: new Date().toISOString(),
+          actor_name: "Admin User",
+          actor_role: "Admin",
+          action: "BENCHMARK_RESET",
+          entity_type: "system",
+          entity_id: "reset",
+          details: "Restored authentic synthetic industrial safety benchmark dataset (48 observations, 8 CAPA actions).",
+          status: "success",
+        },
+        ...benchmark.auditLogs,
+      ],
+    };
+  } else {
+    doc = {
+      version: 1,
+      updated_at: new Date().toISOString(),
+      reports: [],
+      classifications: [],
+      actions: [],
+      auditLogs: [
+        {
+          id: `aud-${uuidv4().slice(0, 8)}`,
+          timestamp: new Date().toISOString(),
+          actor_name: "Admin User",
+          actor_role: "Admin",
+          action: "WORKSPACE_CLEARED",
+          entity_type: "system",
+          entity_id: "clear",
+          details: "Cleared all observations and actions. Safety workspace initialized to blank state.",
+          status: "warning",
+        },
+      ],
+    };
+  }
+
+  await writeLocalDocument(doc);
+  return cloneSnapshot(doc);
 }

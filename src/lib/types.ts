@@ -108,9 +108,20 @@ export interface Classification {
   created_at: string;
 }
 
+export interface HumanReview {
+  status: "Pending" | "Confirmed" | "Overridden";
+  reviewed_by?: string;
+  reviewed_at?: string;
+  notes?: string;
+  override_sif?: boolean;
+  override_rule?: LifeSavingRule | null;
+}
+
 export interface ReportWithClassification extends Report {
   classification?: Classification;
   layer_b_classification?: Classification;
+  human_review?: HumanReview;
+  action_status?: "No Action" | "Action Drafted" | "Action Assigned" | "Verified";
 }
 
 export interface SiteActivityAggregate {
@@ -136,6 +147,62 @@ export interface PatternCallout {
   count: number;
   activity_summary: string;
   severity: "critical" | "high" | "medium";
+}
+
+export type UserRole =
+  | "Field Observer"
+  | "HSE Officer"
+  | "Supervisor"
+  | "Plant Manager"
+  | "Admin";
+
+export interface CorrectiveAction {
+  id: string;
+  report_id?: string;
+  pattern_id?: string;
+  site: string;
+  life_saving_rule: LifeSavingRule;
+  title: string;
+  description: string;
+  assigned_to: string;
+  assigned_role: UserRole;
+  priority: "immediate" | "high" | "medium" | "low";
+  status: "open" | "in_progress" | "overdue" | "completed" | "verified";
+  due_date: string;
+  created_at: string;
+  completed_at?: string;
+  verified_by?: string;
+  verified_at?: string;
+  evidence_notes?: string;
+}
+
+export interface AuditLogEntry {
+  id: string;
+  timestamp: string;
+  actor_name: string;
+  actor_role: UserRole;
+  action: string;
+  entity_type: "observation" | "classification" | "pattern" | "action" | "system" | "model";
+  entity_id: string;
+  details: string;
+  status: "success" | "warning" | "error";
+}
+
+export interface FacilitySummary {
+  id: string;
+  name: string;
+  code: string;
+  type: string;
+  location: string;
+  total_reports: number;
+  sif_reports: number;
+  precursor_density: number;
+  primary_rule: LifeSavingRule | null;
+  active_patterns_count: number;
+  open_actions_count: number;
+  safety_score: number; // 0 - 100
+  risk_level: "critical" | "elevated" | "controlled";
+  trend_direction: "increasing" | "stable" | "decreasing";
 }
 
 export interface ModelMetrics {

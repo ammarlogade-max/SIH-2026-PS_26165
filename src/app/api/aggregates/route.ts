@@ -26,6 +26,10 @@ export async function GET() {
       patternCallouts: aggregates.patternCallouts,
       topRiskSite: aggregates.topRiskSite,
       highestRiskDensity: aggregates.highestRiskDensity,
+      openActionsCount: snapshot.actions.filter((a) => a.status !== "verified").length,
+      verifiedActionsCount: snapshot.actions.filter((a) => a.status === "verified").length,
+      totalActionsCount: snapshot.actions.length,
+      totalAuditLogsCount: snapshot.auditLogs.length,
     });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Failed to compute safety aggregates.";

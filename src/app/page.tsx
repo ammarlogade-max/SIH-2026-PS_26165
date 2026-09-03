@@ -146,9 +146,9 @@ export default function LandingPage() {
             </p>
           </div>
           <div className="rounded-xl border border-white/[0.08] bg-[#0b111d]/75 backdrop-blur-md p-3 sm:p-3.5">
-            <p className="font-display text-lg sm:text-xl font-bold text-amber-400">98%</p>
+            <p className="font-display text-lg sm:text-xl font-bold text-amber-400">&lt;10ms</p>
             <p className="mt-0.5 text-[10px] sm:text-[11px] leading-tight text-slate-400">
-              Precursor Detection Accuracy
+              Sub-10ms Layer A Inference
             </p>
           </div>
         </section>

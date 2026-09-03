@@ -311,6 +311,16 @@ export const groq = {
   },
 };
 
+export async function groqChat(messages: ChatMessageParam[]): Promise<string> {
+  const res = await groq.chat.completions.create({
+    model: GROQ_MODEL,
+    messages,
+    temperature: 0.2,
+    max_tokens: 1024,
+  });
+  return res.choices[0]?.message?.content || "";
+}
+
 // Safely extract JSON from AI responses that may include preamble text
 function extractJSON(raw: string | null | undefined): unknown {
   if (!raw) return null;

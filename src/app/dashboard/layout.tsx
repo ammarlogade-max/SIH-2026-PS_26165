@@ -11,14 +11,18 @@ import {
   Bell,
   Bot,
   BrainCircuit,
+  Building2,
+  ClipboardCheck,
   FileSpreadsheet,
   FileText,
   Flame,
+  History,
   Layers,
   LayoutDashboard,
   Menu,
   Moon,
   RefreshCw,
+  Search,
   Settings,
   ShieldAlert,
   ShieldCheck,
@@ -28,38 +32,51 @@ import {
   TrendingUp,
   TriangleAlert,
   UploadCloud,
+  User,
   X,
   ArrowLeft,
+  CheckCircle2,
+  ChevronDown,
 } from "lucide-react";
 import clsx from "clsx";
 import { useTheme } from "@/components/ThemeProvider";
 import { useAIAssistant } from "@/context/AIAssistantContext";
+import AIAssistantDrawer from "@/components/AIAssistantDrawer";
+import { UserRole } from "@/lib/types";
 
 const navSections = [
   {
-    label: "Safety intelligence",
+    label: "Safety Intelligence",
     items: [
-      { href: "/dashboard", icon: LayoutDashboard, label: "Command Center", exact: true },
-      { href: "/dashboard/ingest?tab=manual", icon: ShieldAlert, label: "SIF Precursor Detection" },
-      { href: "/dashboard/patterns", icon: BrainCircuit, label: "Risk Intelligence" },
-      { href: "/dashboard/density", icon: BarChart3, label: "Facility Density" },
-      { href: "/dashboard#life-saving-rules", icon: ShieldCheck, label: "Life-Saving Rules" },
+      { id: "01", href: "/dashboard", icon: LayoutDashboard, label: "Command Center", exact: true },
+      { id: "02", href: "/dashboard/reports", icon: FileText, label: "Report Intelligence", exact: true },
+      { id: "03", href: "/dashboard/reports?status=sif", icon: ShieldAlert, label: "SIF Exposures" },
+      { id: "04", href: "/dashboard/patterns", icon: BrainCircuit, label: "Precursor Patterns" },
+      { id: "05", href: "/dashboard/rules", icon: ShieldCheck, label: "Life-Saving Rules" },
+      { id: "06", href: "/dashboard/actions", icon: ClipboardCheck, label: "Corrective Actions" },
+    ],
+  },
+  {
+    label: "Analytics & ML",
+    items: [
+      { id: "07", href: "/dashboard/density", icon: BarChart3, label: "Precursor Density" },
+      { id: "08", href: "/dashboard/models", icon: Layers, label: "Model Performance" },
+      { id: "09", href: "/dashboard/investigate", icon: Search, label: "Investigation" },
+      { id: "10", href: "/dashboard/digest", icon: TrendingUp, label: "Executive Digest" },
     ],
   },
   {
     label: "Operations",
     items: [
-      { href: "/dashboard/ingest", icon: UploadCloud, label: "Report Ingestion" },
-      { href: "/dashboard/reports", icon: FileText, label: "Safety Reports & Alerts" },
-      { href: "/dashboard/digest", icon: TrendingUp, label: "Weekly HSE Digest" },
+      { id: "11", href: "/dashboard/facilities", icon: Building2, label: "Facilities" },
+      { id: "12", href: "/dashboard/ingest", icon: UploadCloud, label: "Ingest Reports" },
     ],
   },
   {
-    label: "AI & system",
+    label: "System & Governance",
     items: [
-      { href: "/dashboard/ingest?tab=manual", icon: Sparkles, label: "Explainable AI" },
-      { href: "/dashboard/models", icon: Layers, label: "Model Metrics" },
-      { href: "/dashboard/settings", icon: Settings, label: "Settings" },
+      { id: "13", href: "/dashboard/audit", icon: History, label: "Audit Trail" },
+      { id: "14", href: "/dashboard/settings", icon: Settings, label: "Settings" },
     ],
   },
 ];
@@ -82,15 +99,41 @@ export default function DashboardLayout({
   const router = useRouter();
   const { isDark, toggleTheme } = useTheme();
   const { openAssistant } = useAIAssistant();
-  // Retained state keeps the legacy panel dormant while the shared assistant drawer
-  // is now the single user-facing AI experience.
-  const [aiOpen, setAiOpen] = useState(false);
-  const [assistantResponse, setAssistantResponse] = useState<string | null>(null);
+  const [activeRole, setActiveRole] = useState<UserRole>("HSE Officer");
+  const [roleMenuOpen, setRoleMenuOpen] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [emergencyStatus, setEmergencyStatus] = useState<EmergencyResponseStatus | null>(null);
   const [emergencyError, setEmergencyError] = useState<string | null>(null);
   const [emergencyLoading, setEmergencyLoading] = useState(false);
   const [emergencyPanelOpen, setEmergencyPanelOpen] = useState(false);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("sif_user_role") as UserRole | null;
+      if (saved) setActiveRole(saved);
+
+      const handleRoleUpdate = () => {
+        const updated = localStorage.getItem("sif_user_role") as UserRole | null;
+        if (updated) setActiveRole(updated);
+      };
+
+      window.addEventListener("sif_role_changed", handleRoleUpdate);
+      window.addEventListener("storage", handleRoleUpdate);
+      return () => {
+        window.removeEventListener("sif_role_changed", handleRoleUpdate);
+        window.removeEventListener("storage", handleRoleUpdate);
+      };
+    } catch (_) {}
+  }, []);
+
+  const switchRole = (newRole: UserRole) => {
+    setActiveRole(newRole);
+    try {
+      localStorage.setItem("sif_user_role", newRole);
+      window.dispatchEvent(new Event("sif_role_changed"));
+    } catch (_) {}
+    setRoleMenuOpen(false);
+  };
   const ambulanceProgress = emergencyStatus ? Math.max(0, Math.min(100, (1 - emergencyStatus.ambulanceEtaMinutes / 8) * 100)) : 0;
   const fireBrigadeProgress = emergencyStatus ? Math.max(0, Math.min(100, (1 - emergencyStatus.fireBrigadeEtaMinutes / 11) * 100)) : 0;
 
@@ -172,35 +215,39 @@ export default function DashboardLayout({
 
   return (
     <div className="dashboard-frame flex h-screen min-w-0 overflow-hidden">
-      <aside className="hidden w-72 shrink-0 border-r border-surface-border bg-surface-card/95 lg:flex lg:flex-col">
-        <div className="min-h-0 flex-1 overflow-y-auto px-3 py-4">
+      <aside className="hidden w-64 shrink-0 border-r border-surface-border bg-surface-card lg:flex lg:flex-col">
+        <div className="min-h-0 flex-1 overflow-y-auto px-2.5 py-3">
+          {/* Industrial Brand Header */}
           <Link
             href="/dashboard"
-            className="mb-8 flex items-center gap-3 rounded-2xl px-3 py-2 transition hover:bg-surface-hover"
+            className="mb-4 flex items-center gap-2.5 border-b border-surface-border/80 px-2 pb-3.5 transition hover:bg-surface-hover rounded-sm"
           >
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-amber-500/25 bg-amber-500/10 shadow-sm">
-              <ShieldAlert className="h-5 w-5 text-amber-400" />
-            </span>
-            <span className="min-w-0">
-              <span className="font-display flex items-center gap-2 text-[15px] font-bold text-slate-100">
-                SIF Sentinel
-                <span className="rounded-md border border-amber-500/25 bg-amber-500/10 px-1.5 py-0.5 text-[9px] font-bold tracking-[0.16em] text-amber-400">
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded border border-amber-500/40 bg-amber-500/10 text-amber-400">
+              <ShieldAlert className="h-4 w-4" />
+            </div>
+            <div className="min-w-0">
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-100">
+                  SIF Sentinel
+                </span>
+                <span className="font-mono rounded border border-amber-500/40 bg-amber-500/10 px-1 py-0.2 text-[9px] font-bold text-amber-400">
                   OIL
                 </span>
+              </div>
+              <span className="block text-[10px] font-medium tracking-tight text-slate-400">
+                Oil India Limited · HSE Command
               </span>
-              <span className="mt-0.5 block text-[11px] text-slate-500">
-                SIH26165 · Safety intelligence
-              </span>
-            </span>
+            </div>
           </Link>
 
-          <nav className="space-y-7" aria-label="Dashboard navigation">
+          {/* Industrial Numbered Nav */}
+          <nav className="space-y-4" aria-label="Dashboard navigation">
             {navSections.map((section) => (
               <div key={section.label}>
-                <p className="mb-2 px-3 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">
+                <p className="mb-1.5 px-2 text-[9px] font-bold uppercase tracking-[0.14em] text-slate-400">
                   {section.label}
                 </p>
-                <div className="space-y-1">
+                <div className="space-y-0.5">
                   {section.items.map((item) => {
                     const routeHref = item.href.split(/[?#]/)[0];
                     const isActive = item.exact
@@ -212,19 +259,22 @@ export default function DashboardLayout({
                         key={item.href}
                         href={item.href}
                         className={clsx(
-                          "group flex items-center gap-3 rounded-xl px-3 py-2.5 text-[13px] font-semibold transition-all duration-200",
+                          "group flex items-center gap-2.5 rounded-sm px-2 py-1.5 text-xs font-medium transition-colors",
                           isActive
-                            ? "border border-sky-400/20 bg-sky-400/10 text-sky-400 shadow-sm"
-                            : "border border-transparent text-slate-400 hover:border-surface-border hover:bg-surface-hover hover:text-slate-100"
+                            ? "border-l-2 border-amber-400 bg-surface-raised font-semibold text-amber-400"
+                            : "border-l-2 border-transparent text-slate-400 hover:bg-surface-hover hover:text-slate-100"
                         )}
                       >
+                        <span className="font-mono text-[10px] font-bold opacity-60 group-hover:opacity-100">
+                          {item.id}
+                        </span>
                         <item.icon
                           className={clsx(
-                            "h-4 w-4 shrink-0 transition-colors",
-                            isActive ? "text-sky-400" : "text-slate-500 group-hover:text-slate-300"
+                            "h-3.5 w-3.5 shrink-0 transition-colors",
+                            isActive ? "text-amber-400" : "text-slate-500 group-hover:text-slate-300"
                           )}
                         />
-                        <span>{item.label}</span>
+                        <span className="truncate">{item.label}</span>
                       </Link>
                     );
                   })}
@@ -234,92 +284,131 @@ export default function DashboardLayout({
           </nav>
         </div>
 
-        <div className="border-t border-surface-border p-3">
-          <div className="rounded-2xl border border-surface-border bg-surface/55 p-3.5">
-            <div className="flex items-center justify-between gap-3">
-              <span className="flex items-center gap-2 text-xs font-semibold text-slate-300">
-                <Activity className="h-3.5 w-3.5 text-emerald-400" />
-                Layer A engine
+        {/* Operational Engine Telemetry Panel */}
+        <div className="border-t border-surface-border p-2.5">
+          <div className="rounded border border-surface-border bg-surface-raised/80 p-2 text-[10px] space-y-1">
+            <div className="flex items-center justify-between font-semibold">
+              <span className="flex items-center gap-1.5 text-slate-300">
+                <Activity className="h-3 w-3 text-emerald-400" />
+                Inference Engine
               </span>
-              <span className="inline-flex items-center gap-1.5 text-[9px] font-bold tracking-[0.14em] text-emerald-400">
+              <span className="font-mono flex items-center gap-1 text-[9px] font-bold text-emerald-400">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                LIVE
+                ONLINE
               </span>
             </div>
-            <div className="mt-3 flex items-center justify-between text-[10px] text-slate-500">
-              <span>Classifier</span>
-              <span className="font-mono text-slate-400">TF-IDF + LogReg</span>
+            <div className="flex items-center justify-between text-slate-400 font-mono text-[9px]">
+              <span>Layer A:</span>
+              <span className="text-slate-300">TF-IDF + LR (CPU)</span>
             </div>
-            <div className="mt-1.5 flex items-center justify-between text-[10px] text-slate-500">
-              <span>Standard</span>
-              <span className="font-medium text-amber-400">IOGP 9-Rules</span>
+            <div className="flex items-center justify-between text-slate-400 font-mono text-[9px]">
+              <span>Taxonomy:</span>
+              <span className="text-amber-400 font-medium">9 IOGP Rules</span>
             </div>
           </div>
         </div>
       </aside>
 
       <main className="flex min-w-0 flex-1 flex-col overflow-hidden">
-        <header className="flex h-[72px] shrink-0 items-center justify-between border-b border-surface-border bg-surface-card/80 px-4 backdrop-blur-xl sm:px-6">
-          <div className="min-w-0">
-            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-500">
-              Oil India Limited
-            </p>
-            <p className="mt-0.5 truncate font-display text-sm font-semibold text-slate-100 sm:text-[15px]">
-              SIF Sentinel · HSSE Serious Injury & Fatality Intelligence
-            </p>
-          </div>
-
-          <div className="flex items-center gap-2 sm:gap-3">
+        <header className="flex h-12 shrink-0 items-center justify-between border-b border-surface-border bg-surface-card px-3 sm:px-4">
+          <div className="flex items-center gap-3 min-w-0">
             <button
               onClick={() => setMobileNavOpen((open) => !open)}
-              className="flex h-10 w-10 items-center justify-center rounded-xl border border-surface-border bg-surface-card text-slate-400 transition hover:bg-surface-hover hover:text-slate-100 lg:hidden"
+              className="flex h-8 w-8 items-center justify-center rounded border border-surface-border bg-surface text-slate-400 transition hover:bg-surface-hover hover:text-slate-100 lg:hidden"
               aria-label={mobileNavOpen ? "Close dashboard navigation" : "Open dashboard navigation"}
               aria-expanded={mobileNavOpen}
             >
               {mobileNavOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
             </button>
+            <div className="min-w-0">
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-bold tracking-tight text-slate-100 truncate">
+                  OIL INDIA LIMITED
+                </span>
+                <span className="hidden sm:inline-block text-[10px] text-slate-500 font-mono">/</span>
+                <span className="hidden sm:inline-block text-[11px] text-slate-400 font-medium truncate">
+                  Safety Intelligence Command Center
+                </span>
+              </div>
+            </div>
+          </div>
 
-            <Link
-              href="/dashboard/reports"
-              className="relative flex h-10 w-10 items-center justify-center rounded-xl border border-surface-border bg-surface-card text-slate-400 transition hover:bg-surface-hover hover:text-slate-100"
-              title="Alerts and notifications"
-              aria-label="Alerts and notifications"
-            >
-              <Bell className="h-4 w-4" />
-              <span className="absolute right-1.5 top-1.5 h-1.5 w-1.5 rounded-full bg-amber-400" />
-            </Link>
+          <div className="flex items-center gap-2">
+            {/* System Status Telemetry */}
+            <div className="hidden xl:flex items-center gap-2 border-r border-surface-border pr-3">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+              <span className="font-mono text-[10px] text-slate-400">TELEMETRY: LIVE</span>
+            </div>
 
+            {/* Active Role Selector */}
+            <div className="relative">
+              <button
+                onClick={() => setRoleMenuOpen((prev) => !prev)}
+                className="inline-flex h-7 items-center gap-1.5 rounded border border-surface-border bg-surface px-2 text-[11px] font-semibold text-slate-200 transition hover:border-amber-400/40 hover:bg-surface-hover"
+                title="Switch active user role simulation"
+                aria-label="Switch active user role simulation"
+                aria-expanded={roleMenuOpen}
+              >
+                <User className="h-3 w-3 text-amber-400" />
+                <span className="hidden md:inline text-slate-400 font-normal">Role:</span>
+                <span className="font-bold text-slate-100 truncate max-w-[80px] sm:max-w-none">{activeRole}</span>
+                <ChevronDown className="h-2.5 w-2.5 text-slate-400" />
+              </button>
+
+              {roleMenuOpen && (
+                <>
+                  <div className="fixed inset-0 z-40" onClick={() => setRoleMenuOpen(false)} />
+                  <div className="absolute right-0 top-9 z-50 w-52 rounded border border-surface-border bg-surface-card p-1.5 shadow-xl">
+                    <div className="px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-slate-400 border-b border-surface-border mb-1">
+                      Select User Persona
+                    </div>
+                    {(["HSE Officer", "Supervisor", "Plant Manager", "Field Observer", "Admin"] as UserRole[]).map((r) => (
+                      <button
+                        key={r}
+                        onClick={() => switchRole(r)}
+                        className={clsx(
+                          "flex w-full items-center justify-between rounded px-2.5 py-1.5 text-xs transition text-left",
+                          activeRole === r
+                            ? "bg-amber-500/15 text-amber-300 font-bold"
+                            : "text-slate-300 hover:bg-surface-hover hover:text-white"
+                        )}
+                      >
+                        <span>{r}</span>
+                        {activeRole === r && <CheckCircle2 className="h-3 w-3 text-amber-400" />}
+                      </button>
+                    ))}
+                  </div>
+                </>
+              )}
+            </div>
+
+            {/* AI Assistant Button */}
             <button
               onClick={openAssistant}
-              className="inline-flex h-10 items-center gap-2 rounded-xl border border-violet-400/25 bg-violet-500/10 px-3 text-xs font-bold text-violet-300 transition hover:bg-violet-500/16"
+              className="inline-flex h-7 items-center gap-1.5 rounded border border-amber-500/30 bg-amber-500/10 px-2.5 text-[11px] font-semibold text-amber-300 transition hover:bg-amber-500/20"
             >
-              <Bot className="h-4 w-4" />
-              <span className="hidden sm:inline">AI assistant</span>
-              <Sparkles className="hidden h-3.5 w-3.5 sm:block" />
+              <Bot className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">Safety Assistant</span>
             </button>
 
+            {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="flex h-10 w-10 items-center justify-center rounded-xl border border-surface-border bg-surface-card text-slate-400 transition hover:bg-surface-hover hover:text-slate-100"
+              className="flex h-7 w-7 items-center justify-center rounded border border-surface-border bg-surface text-slate-400 transition hover:bg-surface-hover hover:text-slate-100"
               title={isDark ? "Switch to light mode" : "Switch to dark mode"}
               aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
             >
-              {isDark ? <Sun className="h-4 w-4 text-amber-400" /> : <Moon className="h-4 w-4" />}
+              {isDark ? <Sun className="h-3.5 w-3.5 text-amber-400" /> : <Moon className="h-3.5 w-3.5" />}
             </button>
-
-            <div className="hidden items-center gap-2 border-l border-surface-border pl-3 md:flex">
-              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-xs font-medium text-slate-400">Live system</span>
-            </div>
           </div>
         </header>
 
         {mobileNavOpen && (
-          <nav className="absolute left-3 right-3 top-[84px] z-50 max-h-[calc(100vh-6rem)] overflow-y-auto rounded-2xl border border-surface-border bg-surface-card p-3 shadow-2xl lg:hidden" aria-label="Mobile dashboard navigation">
+          <nav className="absolute left-2 right-2 top-14 z-50 max-h-[calc(100vh-4.5rem)] overflow-y-auto rounded border border-surface-border bg-surface-card p-2.5 shadow-2xl lg:hidden" aria-label="Mobile dashboard navigation">
             {navSections.map((section) => (
-              <div key={section.label} className="mb-4 last:mb-0">
-                <p className="mb-2 px-2 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">{section.label}</p>
-                <div className="space-y-1">
+              <div key={section.label} className="mb-3 last:mb-0">
+                <p className="mb-1 px-2 text-[9px] font-bold uppercase tracking-[0.14em] text-slate-400">{section.label}</p>
+                <div className="space-y-0.5">
                   {section.items.map((item) => {
                     const routeHref = item.href.split(/[?#]/)[0];
                     const isActive = item.exact ? pathname === routeHref : pathname.startsWith(routeHref);
@@ -329,12 +418,13 @@ export default function DashboardLayout({
                         href={item.href}
                         onClick={() => setMobileNavOpen(false)}
                         className={clsx(
-                          "flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-semibold transition",
-                          isActive ? "bg-sky-400/10 text-sky-400" : "text-slate-300 hover:bg-surface-hover"
+                          "flex items-center gap-2.5 rounded-sm px-2 py-2 text-xs transition",
+                          isActive ? "border-l-2 border-amber-400 bg-surface-raised font-bold text-amber-400" : "text-slate-300 hover:bg-surface-hover"
                         )}
                       >
-                        <item.icon className="h-4 w-4" />
-                        {item.label}
+                        <span className="font-mono text-[10px] text-slate-500">{item.id}</span>
+                        <item.icon className="h-3.5 w-3.5" />
+                        <span>{item.label}</span>
                       </Link>
                     );
                   })}
@@ -455,78 +545,8 @@ export default function DashboardLayout({
         ))}
       </section>
 
-      {false && (
-        <div className="fixed inset-0 z-[100]">
-          <button
-            className="absolute inset-0 cursor-default bg-slate-950/45 backdrop-blur-[2px]"
-            onClick={() => setAiOpen(false)}
-            aria-label="Close AI assistant"
-          />
-          <section className="absolute right-4 top-4 w-[min(25rem,calc(100vw-2rem))] overflow-hidden rounded-3xl border border-surface-border bg-surface-card shadow-2xl sm:right-6 sm:top-6">
-            <div className="flex items-center justify-between border-b border-surface-border px-5 py-4">
-              <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-violet-400/25 bg-violet-500/10">
-                  <Bot className="h-5 w-5 text-violet-400" />
-                </span>
-                <div>
-                  <h2 className="font-display text-sm font-bold text-slate-100">AI safety assistant</h2>
-                  <p className="mt-0.5 text-[10px] font-medium text-emerald-400">● Intelligence engine online</p>
-                </div>
-              </div>
-              <button
-                onClick={() => setAiOpen(false)}
-                className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition hover:bg-surface-hover hover:text-slate-100"
-                aria-label="Close AI assistant"
-              >
-                <X className="h-4 w-4" />
-              </button>
-            </div>
-
-            <div className="p-5">
-              <div className="rounded-2xl border border-violet-400/15 bg-violet-500/[0.07] p-4">
-                <div className="flex gap-3">
-                  <Bot className="mt-0.5 h-4 w-4 shrink-0 text-violet-400" />
-                  <p className="text-xs leading-relaxed text-slate-300">
-                    I can analyze SIF precursor trends, identify recurring safety patterns, and explain high-risk observations.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-4 grid gap-2">
-                {[
-                  "Analyze current risk",
-                  "Explain precursor trends",
-                  "Find recurring safety patterns",
-                ].map((label) => (
-                  <button
-                    key={label}
-                    onClick={() => setAssistantResponse(
-                      label === "Analyze current risk"
-                        ? "Open Facility Density to compare current precursor exposure across sites."
-                        : label === "Explain precursor trends"
-                        ? "Open the overview and use the trend controls to review alert movement over time."
-                        : "Open Pattern Callouts to review repeated safety risks requiring attention."
-                    )}
-                    className="rounded-xl border border-surface-border bg-surface/45 px-3.5 py-3 text-left text-xs font-semibold text-slate-300 transition hover:border-violet-400/25 hover:bg-violet-500/[0.06] hover:text-slate-100"
-                  >
-                    {label}
-                  </button>
-                ))}
-              </div>
-
-              {assistantResponse && (
-                <p className="mt-3 rounded-xl border border-emerald-400/20 bg-emerald-400/[0.06] p-3 text-xs leading-relaxed text-slate-300">
-                  {assistantResponse}
-                </p>
-              )}
-
-              <p className="mt-4 text-[10px] leading-relaxed text-slate-500">
-                AI recommendations are generated from current SIF Sentinel dashboard intelligence.
-              </p>
-            </div>
-          </section>
-        </div>
-      )}
+      {/* Global AI Safety Assistant Drawer */}
+      <AIAssistantDrawer />
     </div>
   );
 }

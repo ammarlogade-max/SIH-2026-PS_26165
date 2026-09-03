@@ -33,14 +33,14 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["Space Grotesk", "Inter", "system-ui", "sans-serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
+        display: ["Inter", "system-ui", "sans-serif"],
+        sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
         mono: ["JetBrains Mono", "ui-monospace", "monospace"],
       },
       boxShadow: {
-        card: "0 1px 2px rgb(15 23 42 / 0.04), 0 12px 32px rgb(15 23 42 / 0.06)",
-        "card-dark": "0 1px 1px rgb(0 0 0 / 0.28), 0 18px 45px rgb(0 0 0 / 0.2)",
-        glow: "0 0 0 1px rgb(59 130 246 / 0.12), 0 16px 40px rgb(37 99 235 / 0.14)",
+        card: "0 1px 2px rgb(0 0 0 / 0.04), 0 2px 5px rgb(0 0 0 / 0.03)",
+        "card-dark": "0 1px 2px rgb(0 0 0 / 0.24), 0 4px 12px rgb(0 0 0 / 0.16)",
+        panel: "0 0 0 1px rgb(var(--surface-border)), 0 1px 3px rgb(0 0 0 / 0.12)",
       },
       backgroundImage: {
         "dashboard-grid":

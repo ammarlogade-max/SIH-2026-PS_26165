@@ -4,9 +4,14 @@ import { AIAssistantProvider } from "@/context/AIAssistantContext";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SIF Sentinel — Industrial Safety Intelligence",
+  title: "SIF Sentinel | Oil India Limited",
   description:
-    "AI-powered industrial knowledge intelligence for serious injury and fatality prevention.",
+    "AI/NLP Engine for Serious Injury & Fatality Precursor Detection for Oil India Limited (SIH26165)",
+  openGraph: {
+    title: "SIF Sentinel | Oil India Limited",
+    description:
+      "AI/NLP Engine for Serious Injury & Fatality Precursor Detection for Oil India Limited (SIH26165)",
+  },
 };
 
 const themeBootstrapScript = `
