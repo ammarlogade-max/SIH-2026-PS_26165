@@ -1,5 +1,6 @@
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
+import os from "node:os";
 import { Classification, Report, CorrectiveAction, AuditLogEntry, UserRole } from "@/lib/types";
 import { isSupabasePersistenceConfigured, supabaseAdmin } from "@/lib/supabase";
 import { buildBenchmarkDataset } from "@/lib/benchmark-seeder";
@@ -46,14 +47,23 @@ declare global {
   var sifLocalStoreWriteQueue: Promise<void> | undefined;
 }
 
-const localStorePath = path.join(process.cwd(), ".data", "sif-sentinel.json");
+function getLocalStorePath(): string {
+  // In Vercel and AWS Lambda, the root project directory (/var/task) is read-only.
+  // os.tmpdir() (/tmp) is the only writable directory in serverless functions.
+  if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || process.env.NOW_REGION) {
+    return path.join(os.tmpdir(), "sif-sentinel.json");
+  }
+  return path.join(process.cwd(), ".data", "sif-sentinel.json");
+}
 
 function localStorageInfo(): SafetyStorageInfo {
   return {
     kind: "local-file",
     persistent: !process.env.VERCEL,
     deploymentSafe: false,
-    label: "Persisted local workspace (development)",
+    label: process.env.VERCEL
+      ? "Ephemeral serverless store (/tmp)"
+      : "Persisted local workspace (development)",
   };
 }
 
@@ -94,7 +104,8 @@ async function loadLocalDocument(): Promise<LocalStoreDocument> {
 
   globalThis.sifLocalStoreLoad = (async () => {
     try {
-      const raw = await readFile(localStorePath, "utf8");
+      const storePath = getLocalStorePath();
+      const raw = await readFile(storePath, "utf8");
       const parsed: unknown = JSON.parse(raw);
       if (!isLocalDocument(parsed)) {
         throw new Error("The local safety data file has an unsupported format.");
@@ -108,15 +119,14 @@ async function loadLocalDocument(): Promise<LocalStoreDocument> {
       }
       globalThis.sifLocalStoreCache = parsed;
       return parsed;
-    } catch (error) {
-      const code = (error as NodeJS.ErrnoException).code;
-      if (code === "ENOENT") {
-        const document = emptyLocalDocument();
-        await writeLocalDocument(document);
-        globalThis.sifLocalStoreCache = document;
-        return document;
-      }
-      throw error;
+    } catch {
+      // If the file does not exist, cannot be read, or directory is read-only:
+      // initialize in-memory store with the comprehensive benchmark safety dataset.
+      const document = emptyLocalDocument();
+      globalThis.sifLocalStoreCache = document;
+      // Best-effort write to disk (/tmp in Vercel, .data locally)
+      await writeLocalDocument(document);
+      return document;
     } finally {
       globalThis.sifLocalStoreLoad = undefined;
     }
@@ -126,11 +136,20 @@ async function loadLocalDocument(): Promise<LocalStoreDocument> {
 }
 
 async function writeLocalDocument(document: LocalStoreDocument) {
-  await mkdir(path.dirname(localStorePath), { recursive: true });
-  const temporaryPath = `${localStorePath}.${process.pid}.tmp`;
-  await writeFile(temporaryPath, JSON.stringify(document, null, 2), "utf8");
-  await rename(temporaryPath, localStorePath);
+  // Always update in-memory cache first so operations continue uninterrupted
   globalThis.sifLocalStoreCache = document;
+
+  try {
+    const storePath = getLocalStorePath();
+    await mkdir(path.dirname(storePath), { recursive: true });
+    const temporaryPath = `${storePath}.${process.pid}.${Date.now()}.tmp`;
+    await writeFile(temporaryPath, JSON.stringify(document, null, 2), "utf8");
+    await rename(temporaryPath, storePath);
+  } catch (error) {
+    // If the filesystem is read-only (e.g. Vercel serverless /var/task), catch the error
+    // gracefully. The in-memory cache remains active and serves all queries and calculations.
+    console.warn("Safety store disk write bypassed; running in-memory:", error);
+  }
 }
 
 function enrichRecordsWithSafetyScience(
