@@ -3,6 +3,12 @@ import path from "node:path";
 import { Classification, Report, CorrectiveAction, AuditLogEntry, UserRole } from "@/lib/types";
 import { isSupabasePersistenceConfigured, supabaseAdmin } from "@/lib/supabase";
 import { buildBenchmarkDataset } from "@/lib/benchmark-seeder";
+import {
+  analyzeEnergyWheel,
+  evaluateBarrierStatus,
+  evaluateCampbellGates,
+  detectShiftAndCircadianRisk,
+} from "@/lib/safety-science-engine";
 import { v4 as uuidv4 } from "uuid";
 
 export type SafetyStorageKind = "supabase" | "local-file";
@@ -127,10 +133,80 @@ async function writeLocalDocument(document: LocalStoreDocument) {
   globalThis.sifLocalStoreCache = document;
 }
 
+function enrichRecordsWithSafetyScience(
+  reports: Report[],
+  classifications: Classification[]
+): { reports: Report[]; classifications: Classification[] } {
+  const reportMap = new Map(reports.map((r) => [r.id, r]));
+
+  const enrichedReports = reports.map((r) => {
+    if (!r.shift_timing || !r.circadian_risk_tier) {
+      const shift = detectShiftAndCircadianRisk(r.reported_date || r.created_at);
+      return {
+        ...r,
+        shift_timing: r.shift_timing || shift.shift_timing,
+        circadian_risk_tier: r.circadian_risk_tier || shift.circadian_risk_tier,
+      };
+    }
+    return r;
+  });
+
+  const enrichedClassifications = classifications.map((cls) => {
+    const parentReport = reportMap.get(cls.report_id);
+    const text = parentReport?.raw_text || "";
+
+    let energyCategory = cls.energy_category;
+    let energyMagnitude = cls.energy_magnitude;
+    let energySourceDetails = cls.energy_source_details;
+    let barrierAssessment = cls.barrier_assessment;
+    let campbellGates = cls.campbell_gates;
+    let shiftMultiplier = cls.shift_risk_multiplier;
+
+    if (!energyCategory || !energyMagnitude) {
+      const e = analyzeEnergyWheel(text, cls.life_saving_rule);
+      energyCategory = e.category;
+      energyMagnitude = e.magnitude;
+      energySourceDetails = e.sourceDetails;
+    }
+
+    if (!barrierAssessment) {
+      barrierAssessment = evaluateBarrierStatus(text, cls.is_sif_potential);
+    }
+
+    if (!campbellGates) {
+      campbellGates = evaluateCampbellGates(
+        text,
+        cls.is_sif_potential,
+        energyCategory,
+        energyMagnitude,
+        barrierAssessment
+      );
+    }
+
+    if (!shiftMultiplier && parentReport) {
+      const s = detectShiftAndCircadianRisk(parentReport.reported_date || parentReport.created_at);
+      shiftMultiplier = s.risk_multiplier;
+    }
+
+    return {
+      ...cls,
+      energy_category: energyCategory,
+      energy_magnitude: energyMagnitude,
+      energy_source_details: energySourceDetails,
+      barrier_assessment: barrierAssessment,
+      campbell_gates: campbellGates,
+      shift_risk_multiplier: shiftMultiplier || 1.0,
+    };
+  });
+
+  return { reports: enrichedReports, classifications: enrichedClassifications };
+}
+
 function cloneSnapshot(document: LocalStoreDocument): SafetySnapshot {
+  const enriched = enrichRecordsWithSafetyScience(document.reports, document.classifications);
   return {
-    reports: [...document.reports],
-    classifications: [...document.classifications],
+    reports: [...enriched.reports],
+    classifications: [...enriched.classifications],
     actions: [...(document.actions || [])],
     auditLogs: [...(document.auditLogs || [])],
     storage: localStorageInfo(),
@@ -142,33 +218,63 @@ function asStoreError(operation: string, error: unknown): Error {
   return new Error(`Safety data ${operation} failed: ${message}`);
 }
 
+let supabaseOperational: boolean | null = null;
+
 async function loadSupabaseSnapshot(): Promise<SafetySnapshot> {
-  const [reportsResult, classificationsResult] = await Promise.all([
-    supabaseAdmin.from("sif_reports").select("*").order("created_at", { ascending: false }),
-    supabaseAdmin.from("sif_classifications").select("*").order("created_at", { ascending: false }),
-  ]);
+  if (supabaseOperational === false) {
+    return cloneSnapshot(await loadLocalDocument());
+  }
 
-  if (reportsResult.error) throw asStoreError("read", reportsResult.error);
-  if (classificationsResult.error) throw asStoreError("read", classificationsResult.error);
+  try {
+    const [reportsResult, classificationsResult] = await Promise.all([
+      supabaseAdmin.from("sif_reports").select("*").order("created_at", { ascending: false }),
+      supabaseAdmin.from("sif_classifications").select("*").order("created_at", { ascending: false }),
+    ]);
 
-  // For Supabase, actions and audit logs fallback gracefully if tables don't exist yet
-  const localDoc = await loadLocalDocument();
+    if (reportsResult.error || classificationsResult.error) {
+      supabaseOperational = false;
+      return cloneSnapshot(await loadLocalDocument());
+    }
 
-  return {
-    reports: (reportsResult.data || []) as Report[],
-    classifications: (classificationsResult.data || []) as Classification[],
-    actions: localDoc.actions || [],
-    auditLogs: localDoc.auditLogs || [],
-    storage: supabaseStorageInfo(),
-  };
+    supabaseOperational = true;
+    const localDoc = await loadLocalDocument();
+    const rawReports = (reportsResult.data || []) as Report[];
+    const rawClassifications = (classificationsResult.data || []) as Classification[];
+
+    // If Supabase returned empty tables, fall back to local benchmark store
+    if (rawReports.length === 0) {
+      return cloneSnapshot(localDoc);
+    }
+
+    const enriched = enrichRecordsWithSafetyScience(rawReports, rawClassifications);
+
+    return {
+      reports: enriched.reports,
+      classifications: enriched.classifications,
+      actions: localDoc.actions || [],
+      auditLogs: localDoc.auditLogs || [],
+      storage: supabaseStorageInfo(),
+    };
+  } catch {
+    supabaseOperational = false;
+    return cloneSnapshot(await loadLocalDocument());
+  }
 }
 
 export function getSafetyStorageInfo(): SafetyStorageInfo {
-  return isSupabasePersistenceConfigured ? supabaseStorageInfo() : localStorageInfo();
+  return isSupabasePersistenceConfigured && supabaseOperational !== false
+    ? supabaseStorageInfo()
+    : localStorageInfo();
 }
 
 export async function getSafetySnapshot(): Promise<SafetySnapshot> {
-  if (isSupabasePersistenceConfigured) return loadSupabaseSnapshot();
+  if (isSupabasePersistenceConfigured) {
+    try {
+      return await loadSupabaseSnapshot();
+    } catch {
+      return cloneSnapshot(await loadLocalDocument());
+    }
+  }
   return cloneSnapshot(await loadLocalDocument());
 }
 
@@ -179,14 +285,16 @@ export async function appendSafetyRecords(
 ): Promise<SafetySnapshot> {
   if (!reports.length) return getSafetySnapshot();
 
-  if (isSupabasePersistenceConfigured) {
-    const reportsInsert = await supabaseAdmin.from("sif_reports").insert(reports);
-    if (reportsInsert.error) throw asStoreError("write", reportsInsert.error);
-
-    const classificationsInsert = await supabaseAdmin.from("sif_classifications").insert(classifications);
-    if (classificationsInsert.error) {
-      await supabaseAdmin.from("sif_reports").delete().in("id", reports.map((report) => report.id));
-      throw asStoreError("write", classificationsInsert.error);
+  if (isSupabasePersistenceConfigured && supabaseOperational !== false) {
+    try {
+      const reportsInsert = await supabaseAdmin.from("sif_reports").insert(reports);
+      if (!reportsInsert.error) {
+        await supabaseAdmin.from("sif_classifications").insert(classifications);
+      } else {
+        supabaseOperational = false;
+      }
+    } catch {
+      supabaseOperational = false;
     }
   }
 

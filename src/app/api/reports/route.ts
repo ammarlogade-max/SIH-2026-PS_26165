@@ -4,7 +4,8 @@ import { computeAggregates } from "@/lib/aggregation-engine";
 import { generateLayerAClassification } from "@/lib/layer-a-classifier";
 import { generateReasoningNarrative } from "@/lib/narrative-engine";
 import { appendSafetyRecords, getSafetySnapshot } from "@/lib/safety-store";
-import type { Classification, Report, ReportWithClassification } from "@/lib/types";
+import { detectShiftAndCircadianRisk } from "@/lib/safety-science-engine";
+import type { Classification, Report, ReportWithClassification, ShiftTiming } from "@/lib/types";
 
 export const runtime = "nodejs";
 
@@ -37,6 +38,8 @@ export async function GET(request: NextRequest) {
     const site = searchParams.get("site");
     const rule = searchParams.get("rule");
     const sifStatus = searchParams.get("sif");
+    const energy = searchParams.get("energy");
+    const shift = searchParams.get("shift");
     const search = searchParams.get("search")?.trim().toLowerCase();
     const requestedLimit = Number.parseInt(searchParams.get("limit") || "", 10);
     const limit = Number.isFinite(requestedLimit) && requestedLimit > 0
@@ -57,13 +60,20 @@ export async function GET(request: NextRequest) {
     if (rule && rule !== "all") {
       combined = combined.filter((report) => report.classification?.life_saving_rule === rule);
     }
+    if (energy && energy !== "all") {
+      combined = combined.filter((report) => report.classification?.energy_category === energy);
+    }
+    if (shift && shift !== "all") {
+      combined = combined.filter((report) => report.shift_timing === shift);
+    }
     if (search) {
       combined = combined.filter((report) =>
         report.id.toLowerCase().includes(search) ||
         report.raw_text.toLowerCase().includes(search) ||
         report.site.toLowerCase().includes(search) ||
         report.activity.toLowerCase().includes(search) ||
-        Boolean(report.classification?.life_saving_rule?.toLowerCase().includes(search))
+        Boolean(report.classification?.life_saving_rule?.toLowerCase().includes(search)) ||
+        Boolean(report.classification?.energy_category?.toLowerCase().includes(search))
       );
     }
 
@@ -100,18 +110,24 @@ export async function POST(request: NextRequest) {
     }
 
     const reportId = `rep-${uuidv4()}`;
+    const reportedDate = validDate(input.reported_date) ? input.reported_date : new Date().toISOString().slice(0, 10);
+    const shiftInfo = detectShiftAndCircadianRisk(reportedDate);
+    const shiftTiming = typeof input.shift_timing === "string" ? (input.shift_timing as ShiftTiming) : shiftInfo.shift_timing;
+
     const report: Report = {
       id: reportId,
       raw_text: rawText,
       site: cleanOptionalText(input.site, "General Facility"),
       activity: cleanOptionalText(input.activity, "General Operations"),
-      reported_date: validDate(input.reported_date) ? input.reported_date : new Date().toISOString().slice(0, 10),
+      reported_date: reportedDate,
+      shift_timing: shiftTiming,
+      circadian_risk_tier: shiftInfo.circadian_risk_tier,
       submitting_role: cleanOptionalText(input.submitting_role, "Field Staff", 100),
       source: "manual",
       created_at: new Date().toISOString(),
     };
 
-    const classification = generateLayerAClassification(report.id, report.raw_text);
+    const classification = generateLayerAClassification(report.id, report.raw_text, report.reported_date);
     classification.reasoning_narrative = await generateReasoningNarrative({
       text: report.raw_text,
       isSif: classification.is_sif_potential,

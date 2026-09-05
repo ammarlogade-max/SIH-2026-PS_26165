@@ -74,7 +74,7 @@ export default function PatternsPage() {
 
   // Contributing reports for the selected pattern
   const contributingReports = selectedPattern
-    ? reports.filter((r) => selectedPattern.report_ids.includes(r.id))
+    ? reports.filter((r) => Array.isArray(selectedPattern.report_ids) && selectedPattern.report_ids.includes(r.id))
     : [];
 
   const getRuleDetails = (ruleName: string | null | undefined) => {

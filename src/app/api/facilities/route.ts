@@ -44,6 +44,7 @@ export async function GET() {
 
     // Combine known facilities and any dynamic sites from reports
     const facilityMap = new Map<string, FacilitySummary>();
+    const ceiMap = new Map(aggregates.facilityCeiSummaries.map((c) => [c.site.toLowerCase(), c]));
 
     for (const fac of KNOWN_FACILITIES) {
       const agg = siteAggMap.get(fac.name.toLowerCase());
@@ -52,11 +53,13 @@ export async function GET() {
       const density = agg?.precursor_density || 0;
       const patCount = patternCountMap.get(fac.name.toLowerCase()) || 0;
       const openActs = actionCountMap.get(fac.name.toLowerCase()) || 0;
+      const ceiInfo = ceiMap.get(fac.name.toLowerCase());
 
-      // Risk score: 100 is best, penalize high density and recurring patterns
-      const rawScore = Math.max(15, Math.min(100, Math.round(100 - density * 1.1 - patCount * 8)));
+      // Risk score: 100 is best, penalize high density, CEI, and recurring patterns
+      const ceiScore = ceiInfo?.cei || 0;
+      const rawScore = Math.max(15, Math.min(100, Math.round(100 - (density * 0.7 + ceiScore * 0.4) - patCount * 6)));
       const riskLevel: "critical" | "elevated" | "controlled" =
-        density >= 35 || patCount >= 2 ? "critical" : density >= 15 ? "elevated" : "controlled";
+        density >= 35 || patCount >= 2 || ceiScore >= 65 ? "critical" : density >= 15 || ceiScore >= 35 ? "elevated" : "controlled";
 
       facilityMap.set(fac.name.toLowerCase(), {
         id: `fac-${fac.code.toLowerCase()}`,
@@ -73,6 +76,15 @@ export async function GET() {
         safety_score: rawScore,
         risk_level: riskLevel,
         trend_direction: density > 30 ? "increasing" : density > 15 ? "stable" : "decreasing",
+        cumulative_exposure_index: ceiScore,
+        cei: ceiScore,
+        cei_status: ceiInfo?.status || "controlled",
+        velocity_14d: ceiInfo?.velocity14d || 0,
+        precursor_cluster_storm: ceiInfo?.clusterStorm || false,
+        cluster_storm: ceiInfo?.clusterStorm || false,
+        dominant_energy_category: ceiInfo?.dominantEnergy || null,
+        dominant_energy: ceiInfo?.dominantEnergy || null,
+        direct_barrier_failure_rate: ceiInfo?.directBarrierFailureRate || 0,
       });
     }
 
@@ -83,9 +95,11 @@ export async function GET() {
         const patCount = patternCountMap.get(k) || 0;
         const openActs = actionCountMap.get(k) || 0;
         const density = siteAgg.precursor_density;
-        const rawScore = Math.max(15, Math.min(100, Math.round(100 - density * 1.1 - patCount * 8)));
+        const ceiInfo = ceiMap.get(k);
+        const ceiScore = ceiInfo?.cei || 0;
+        const rawScore = Math.max(15, Math.min(100, Math.round(100 - (density * 0.7 + ceiScore * 0.4) - patCount * 6)));
         const riskLevel: "critical" | "elevated" | "controlled" =
-          density >= 35 || patCount >= 2 ? "critical" : density >= 15 ? "elevated" : "controlled";
+          density >= 35 || patCount >= 2 || ceiScore >= 65 ? "critical" : density >= 15 || ceiScore >= 35 ? "elevated" : "controlled";
 
         facilityMap.set(k, {
           id: `fac-${k.replace(/\s+/g, "-")}`,
@@ -102,6 +116,15 @@ export async function GET() {
           safety_score: rawScore,
           risk_level: riskLevel,
           trend_direction: density > 30 ? "increasing" : density > 15 ? "stable" : "decreasing",
+          cumulative_exposure_index: ceiScore,
+          cei: ceiScore,
+          cei_status: ceiInfo?.status || "controlled",
+          velocity_14d: ceiInfo?.velocity14d || 0,
+          precursor_cluster_storm: ceiInfo?.clusterStorm || false,
+          cluster_storm: ceiInfo?.clusterStorm || false,
+          dominant_energy_category: ceiInfo?.dominantEnergy || null,
+          dominant_energy: ceiInfo?.dominantEnergy || null,
+          direct_barrier_failure_rate: ceiInfo?.directBarrierFailureRate || 0,
         });
       }
     }

@@ -1,10 +1,23 @@
-import { LifeSavingRule, IOGP_LIFE_SAVING_RULES, Classification } from "./types";
+import {
+  LifeSavingRule,
+  IOGP_LIFE_SAVING_RULES,
+  Classification,
+  EnergyCategory,
+  BarrierAssessment,
+  CampbellGateEvaluation,
+} from "./types";
 import {
   TRAINED_LAYER_A_MODEL,
   extractTokensAndNgrams,
   sigmoid,
   TrainedModelArtifact,
 } from "./model-trainer";
+import {
+  analyzeEnergyWheel,
+  evaluateBarrierStatus,
+  evaluateCampbellGates,
+  detectShiftAndCircadianRisk,
+} from "./safety-science-engine";
 import { v4 as uuidv4 } from "uuid";
 
 export interface LayerAClassificationResult {
@@ -15,6 +28,13 @@ export interface LayerAClassificationResult {
   raw_score: number;
   rule_scores: { rule: LifeSavingRule; score: number }[];
   model_version: string;
+  // Research-backed extensions
+  energy_category: EnergyCategory;
+  energy_magnitude: "High-Energy" | "Low-Energy";
+  energy_source_details: string;
+  barrier_assessment: BarrierAssessment;
+  campbell_gates: CampbellGateEvaluation;
+  shift_risk_multiplier: number;
 }
 
 /**
@@ -71,6 +91,15 @@ export function classifyReportLayerA(
   model: TrainedModelArtifact = TRAINED_LAYER_A_MODEL
 ): LayerAClassificationResult {
   if (!text || typeof text !== "string" || text.trim().length === 0) {
+    const energyResult = analyzeEnergyWheel("", null);
+    const barrierAssessment = evaluateBarrierStatus("", false);
+    const campbellGates = evaluateCampbellGates(
+      "",
+      false,
+      energyResult.category,
+      energyResult.magnitude,
+      barrierAssessment
+    );
     return {
       is_sif_potential: false,
       confidence: 50.0,
@@ -79,6 +108,12 @@ export function classifyReportLayerA(
       raw_score: 0,
       rule_scores: [],
       model_version: "SIF-Sentinel-LayerA-TFIDF-LogReg-v1.0",
+      energy_category: energyResult.category,
+      energy_magnitude: energyResult.magnitude,
+      energy_source_details: energyResult.sourceDetails,
+      barrier_assessment: barrierAssessment,
+      campbell_gates: campbellGates,
+      shift_risk_multiplier: 1.0,
     };
   }
 
@@ -152,6 +187,24 @@ export function classifyReportLayerA(
   const rawConfidence = is_sif_potential ? sifProbability * 100 : (1 - sifProbability) * 100;
   const clampedConfidence = Math.max(60.0, Math.min(99.0, Number(rawConfidence.toFixed(1))));
 
+  // Research-backed Energy Wheel analysis
+  const energyResult = analyzeEnergyWheel(text, bestRule);
+
+  // Direct vs. Administrative Barrier scoring
+  const barrierAssessment = evaluateBarrierStatus(text, is_sif_potential);
+
+  // Campbell Institute 3-Gate SIF Decision Tree
+  const campbellGates = evaluateCampbellGates(
+    text,
+    is_sif_potential,
+    energyResult.category,
+    energyResult.magnitude,
+    barrierAssessment
+  );
+
+  // Shift & Circadian fatigue risk
+  const shiftAssessment = detectShiftAndCircadianRisk(new Date().toISOString());
+
   return {
     is_sif_potential,
     confidence: clampedConfidence,
@@ -160,14 +213,25 @@ export function classifyReportLayerA(
     raw_score: Number(logit.toFixed(3)),
     rule_scores: ruleScoresList,
     model_version: "SIF-Sentinel-LayerA-TFIDF-LogReg-v1.0",
+    energy_category: energyResult.category,
+    energy_magnitude: energyResult.magnitude,
+    energy_source_details: energyResult.sourceDetails,
+    barrier_assessment: barrierAssessment,
+    campbell_gates: campbellGates,
+    shift_risk_multiplier: shiftAssessment.risk_multiplier,
   };
 }
 
 /**
  * Creates a Classification record for a given report.
  */
-export function generateLayerAClassification(reportId: string, text: string): Classification {
+export function generateLayerAClassification(
+  reportId: string,
+  text: string,
+  reportedDate?: string
+): Classification {
   const result = classifyReportLayerA(text);
+  const shiftAssessment = detectShiftAndCircadianRisk(reportedDate || new Date().toISOString());
 
   return {
     id: `cls-a-${uuidv4()}`,
@@ -180,5 +244,11 @@ export function generateLayerAClassification(reportId: string, text: string): Cl
     reasoning_narrative: null,
     model_version: result.model_version,
     created_at: new Date().toISOString(),
+    energy_category: result.energy_category,
+    energy_magnitude: result.energy_magnitude,
+    energy_source_details: result.energy_source_details,
+    barrier_assessment: result.barrier_assessment,
+    campbell_gates: result.campbell_gates,
+    shift_risk_multiplier: shiftAssessment.risk_multiplier,
   };
 }

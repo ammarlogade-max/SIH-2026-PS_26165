@@ -1,7 +1,55 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSafetySnapshot, saveCorrectiveAction } from "@/lib/safety-store";
-import { CorrectiveAction, UserRole, LifeSavingRule } from "@/lib/types";
+import { CorrectiveAction, UserRole, LifeSavingRule, ControlHierarchyLevel } from "@/lib/types";
 import { v4 as uuidv4 } from "uuid";
+
+function inferControlHierarchy(
+  title: string,
+  desc: string,
+  providedLevel?: ControlHierarchyLevel
+): { level: ControlHierarchyLevel; isWeak: boolean } {
+  if (providedLevel) {
+    const isWeak = providedLevel === "Administrative" || providedLevel === "PPE";
+    return { level: providedLevel, isWeak };
+  }
+
+  const combined = `${title} ${desc}`.toLowerCase();
+  if (combined.includes("eliminate") || combined.includes("remove process") || combined.includes("decommission")) {
+    return { level: "Elimination", isWeak: false };
+  }
+  if (combined.includes("substitute") || combined.includes("replace with non-hazardous")) {
+    return { level: "Substitution", isWeak: false };
+  }
+  if (
+    combined.includes("barrier") ||
+    combined.includes("interlock") ||
+    combined.includes("loto") ||
+    combined.includes("lockout") ||
+    combined.includes("isolation") ||
+    combined.includes("guard") ||
+    combined.includes("guardrail") ||
+    combined.includes("anchor") ||
+    combined.includes("relief valve") ||
+    combined.includes("physical") ||
+    combined.includes("engineered") ||
+    combined.includes("stanchion") ||
+    combined.includes("whip check")
+  ) {
+    return { level: "Engineering / Direct Control", isWeak: false };
+  }
+  if (
+    combined.includes("ppe") ||
+    combined.includes("gloves") ||
+    combined.includes("helmet") ||
+    combined.includes("glasses") ||
+    combined.includes("earplugs")
+  ) {
+    return { level: "PPE", isWeak: true };
+  }
+
+  // Default to Administrative for instructions, training, procedures, audits
+  return { level: "Administrative", isWeak: true };
+}
 
 export async function GET(request: NextRequest) {
   try {
@@ -62,6 +110,7 @@ export async function POST(request: NextRequest) {
       due_date,
       report_id,
       pattern_id,
+      control_hierarchy,
       actor_name = "Safety Lead",
       actor_role = "HSE Officer",
     } = body;
@@ -72,6 +121,15 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
+
+    const { level, isWeak } = inferControlHierarchy(title, description || "", control_hierarchy);
+    const rankMap: Record<ControlHierarchyLevel, number> = {
+      Elimination: 1,
+      Substitution: 2,
+      "Engineering / Direct Control": 3,
+      Administrative: 4,
+      PPE: 5,
+    };
 
     const newAction: CorrectiveAction = {
       id: `act-${uuidv4().slice(0, 8)}`,
@@ -86,6 +144,9 @@ export async function POST(request: NextRequest) {
       priority,
       status: "open",
       due_date,
+      control_hierarchy: level,
+      control_rank: rankMap[level] || 3,
+      weak_control_warning: isWeak,
       created_at: new Date().toISOString(),
     };
 

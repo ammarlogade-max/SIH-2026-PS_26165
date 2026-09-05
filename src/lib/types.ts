@@ -83,12 +83,173 @@ export const IOGP_LIFE_SAVING_RULES: {
   }
 ];
 
+// ─── Research-Backed Energy Wheel (CSRA / Dr. Matthew Hallowell) ────────────
+
+export type EnergyCategory =
+  | "Gravity"
+  | "Motion"
+  | "Mechanical"
+  | "Electrical"
+  | "Pressure"
+  | "Temperature"
+  | "Chemical"
+  | "Radiation"
+  | "Sound"
+  | "Biological";
+
+export interface EnergyWheelItem {
+  id: EnergyCategory;
+  name: string;
+  description: string;
+  icon: string;
+  highThreshold: string;
+  highEnergyThreshold?: string;
+  color: string;
+  typicalSources: string[];
+}
+
+export const CSRA_ENERGY_WHEEL: EnergyWheelItem[] = [
+  {
+    id: "Gravity",
+    name: "Gravity",
+    description: "Elevation falls (>1.8m), dropped drill collars, scaffold structural collapse, elevated rigging loads.",
+    icon: "ArrowDownCircle",
+    highThreshold: "Elevation > 1.8m (6 ft) or suspended objects > 20 kg overhead",
+    color: "#f43f5e",
+    typicalSources: ["Scaffolding", "Rig mast", "Crane hook", "Elevated grating", "Ladders", "Derrick", "Monkey board"]
+  },
+  {
+    id: "Pressure",
+    name: "Pressure",
+    description: "High-pressure mud lines (>100 psi), pneumatic hoses, compressed gas cylinders, steam discharge.",
+    icon: "Gauge",
+    highThreshold: "Piping or hoses > 100 psi, steam lines, or compressed gas cylinders",
+    color: "#ec4899",
+    typicalSources: ["Mud pumps", "Manifold piping", "Gas cylinders", "Choke lines", "Hydraulic accumulators", "Test separators"]
+  },
+  {
+    id: "Motion",
+    name: "Motion",
+    description: "Mobile cranes, forklift traffic, pipe haulers, drill stem movement, equipment transit in blind spots.",
+    icon: "Activity",
+    highThreshold: "Moving vehicles > 5 km/h, mobile crane swing radius, pipe transfer in transit",
+    color: "#f97316",
+    typicalSources: ["Pipe haulers", "Forklifts", "Crane booms", "Rig trucks", "Supply vehicles", "Mud agitators"]
+  },
+  {
+    id: "Mechanical",
+    name: "Mechanical",
+    description: "Rotary table draw-in, cathead winches, unguarded drive belts, reciprocating pumps, pinch points.",
+    icon: "Cog",
+    highThreshold: "Rotating equipment with draw-in pinch hazard or stored mechanical tension",
+    color: "#eab308",
+    typicalSources: ["Rotary table", "Cathead winch", "Drive belts", "Agitators", "Drawworks", "Kelly bushing"]
+  },
+  {
+    id: "Electrical",
+    name: "Electrical",
+    description: "High-voltage switchgear, arc flash boundaries, energized MCC panels, damaged feeder cables.",
+    icon: "Zap",
+    highThreshold: "AC voltage > 50V, DC > 100V, or potential arc flash boundary",
+    color: "#8b5cf6",
+    typicalSources: ["MCC room", "Substation panels", "Generator skids", "High-voltage cabling", "Transformers"]
+  },
+  {
+    id: "Temperature",
+    name: "Temperature",
+    description: "Thermal extremes, uninsulated steam lines, flare tip radiation, molten slag, cryogenic fluids.",
+    icon: "Flame",
+    highThreshold: "Surfaces > 60°C (140°F) or < -20°C (cryogenic), flare thermal radiation",
+    color: "#ef4444",
+    typicalSources: ["Boiler lines", "Turbine exhausts", "Flare headers", "Steam purges", "Welding arcs"]
+  },
+  {
+    id: "Chemical",
+    name: "Chemical",
+    description: "Toxic H2S sour gas, hydrocarbon vapor (LEL), acid stimulation fluid, caustic drilling mud.",
+    icon: "FlaskConical",
+    highThreshold: "Atmospheric LEL > 10%, H2S > 10 ppm, or corrosive acid splashing",
+    color: "#10b981",
+    typicalSources: ["Separator gas", "Drilling fluid tanks", "H2S sour wells", "Solvents", "Corrosion inhibitors"]
+  },
+  {
+    id: "Radiation",
+    name: "Radiation",
+    description: "Pipeline weld radiography (Ir-192/Co-60), wireline logging sources, NORM scale deposits.",
+    icon: "Radio",
+    highThreshold: "Industrial radiography gamma sources or unshielded NORM scale in vessels",
+    color: "#06b6d4",
+    typicalSources: ["Pipeline X-ray NDT", "Wireline logging tools", "Separator vessel scale"]
+  },
+  {
+    id: "Sound",
+    name: "Sound",
+    description: "Acoustic trauma, high-pressure emergency depressurization vents, gas compressor manifolds.",
+    icon: "Volume2",
+    highThreshold: "Acoustic pressure > 115 dB peak or continuous > 85 dB without suppression",
+    color: "#6366f1",
+    typicalSources: ["Emergency blowdown vents", "Gas compressors", "Turbines", "Grit blasting"]
+  },
+  {
+    id: "Biological",
+    name: "Biological",
+    description: "Remote jungle wellhead fauna (venomous snakes), waterborne vectors in remote Assam fields.",
+    icon: "ShieldAlert",
+    highThreshold: "Venomous fauna in jungle wellhead perimeters or potable water contamination",
+    color: "#84cc16",
+    typicalSources: ["Remote Assam jungle wellheads", "Camp water supply", "Sewage treatment units"]
+  }
+];
+
+// ─── Hierarchy of Controls & Direct Barrier Assessment ───────────────────────
+
+export type ControlHierarchyLevel =
+  | "Elimination"
+  | "Substitution"
+  | "Engineering / Direct Control"
+  | "Administrative"
+  | "PPE";
+
+export type DirectControlStatus = "absent" | "failed" | "bypassed" | "intact";
+
+export interface BarrierAssessment {
+  compromised_level: ControlHierarchyLevel;
+  direct_control_status: DirectControlStatus;
+  barrier_description: string;
+  identified_barrier?: string;
+  reliability_score: number; // 0 to 100
+  control_reliability?: number;
+  hierarchy_rank: number; // 1 (best: Elimination) to 5 (weakest: PPE)
+  weak_control_flag?: boolean;
+  recommended_direct_control?: string;
+}
+
+// ─── Campbell Institute 3-Gate SIF Decision Model ───────────────────────────
+
+export interface CampbellGateEvaluation {
+  gate1_high_energy: boolean;
+  gate1_details: string;
+  gate2_direct_control_compromised: boolean;
+  gate2_details: string;
+  gate3_line_of_fire_intersected: boolean;
+  gate3_details: string;
+  decision_verdict: "Non-SIF" | "SIF Precursor" | "Actual SIF / Major Event";
+  diagnostic_confidence?: number;
+}
+
+// ─── Shift Handover & Circadian Fatigue Risk ────────────────────────────────
+
+export type ShiftTiming = "morning_handover" | "day_shift" | "evening_handover" | "night_shift";
+export type CircadianRiskTier = "circadian_low" | "handover_window" | "standard";
+
 export interface Report {
   id: string;
   raw_text: string;
   site: string;
   activity: string;
   reported_date: string;
+  shift_timing?: ShiftTiming;
+  circadian_risk_tier?: CircadianRiskTier;
   submitting_role: string | null;
   source: "manual" | "bulk_upload";
   embedding?: number[];
@@ -106,11 +267,19 @@ export interface Classification {
   reasoning_narrative?: string | null;
   model_version: string;
   created_at: string;
+  // Research-backed features:
+  energy_category?: EnergyCategory | null;
+  energy_magnitude?: "High-Energy" | "Low-Energy";
+  energy_source_details?: string;
+  barrier_assessment?: BarrierAssessment;
+  campbell_gates?: CampbellGateEvaluation;
+  shift_risk_multiplier?: number;
 }
 
 export interface HumanReview {
   status: "Pending" | "Confirmed" | "Overridden";
   reviewed_by?: string;
+  reviewer_name?: string;
   reviewed_at?: string;
   notes?: string;
   override_sif?: boolean;
@@ -174,6 +343,11 @@ export interface CorrectiveAction {
   verified_by?: string;
   verified_at?: string;
   evidence_notes?: string;
+  // Research-backed control hierarchy & barrier engineering:
+  control_hierarchy?: ControlHierarchyLevel;
+  control_rank?: number;
+  direct_control_type?: string;
+  weak_control_warning?: boolean; // Set to true if SIF precursor is assigned weak Level 4/5 Administrative or PPE control
 }
 
 export interface AuditLogEntry {
@@ -203,6 +377,17 @@ export interface FacilitySummary {
   safety_score: number; // 0 - 100
   risk_level: "critical" | "elevated" | "controlled";
   trend_direction: "increasing" | "stable" | "decreasing";
+  // Research-backed Cumulative Exposure Index (CEI - EPRI model):
+  cumulative_exposure_index: number; // 0 to 100 CEI score
+  cei?: number;
+  cei_status: "controlled" | "elevated" | "critical_storm";
+  velocity_14d: number; // Number of SIF precursor reports in rolling 14 days
+  precursor_cluster_storm: boolean; // True if >= 3 precursors detected in 14 days
+  cluster_storm?: boolean;
+  dominant_energy_category?: EnergyCategory | null;
+  dominant_energy?: EnergyCategory | null;
+  direct_barrier_failure_rate?: number; // Percentage of precursors where an engineered control failed
+  weak_control_count?: number;
 }
 
 export interface ModelMetrics {

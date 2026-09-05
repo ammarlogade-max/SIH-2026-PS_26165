@@ -1,4 +1,15 @@
-import { Report, Classification, SiteActivityAggregate, PatternCallout, LifeSavingRule } from "./types";
+import {
+  Report,
+  Classification,
+  SiteActivityAggregate,
+  PatternCallout,
+  LifeSavingRule,
+  EnergyCategory,
+  CSRA_ENERGY_WHEEL,
+  ControlHierarchyLevel,
+  ShiftTiming,
+} from "./types";
+import { calculateFacilityCEI } from "./safety-science-engine";
 import { v4 as uuidv4 } from "uuid";
 
 export interface AggregationResult {
@@ -12,6 +23,52 @@ export interface AggregationResult {
   patternCallouts: PatternCallout[];
   topRiskSite: string | null;
   highestRiskDensity: number;
+  // Research additions:
+  energyDistribution: {
+    category: EnergyCategory;
+    count: number;
+    percentage: number;
+    highEnergyCount: number;
+    color: string;
+  }[];
+  barrierDistribution: {
+    level: ControlHierarchyLevel;
+    count: number;
+    percentage: number;
+    rank: number;
+  }[];
+  directControlBreakdown: {
+    absent: number;
+    failed: number;
+    bypassed: number;
+    intact: number;
+  };
+  shiftDistribution: {
+    timing: ShiftTiming;
+    shift: ShiftTiming;
+    label: string;
+    riskMultiplier: number;
+    count: number;
+    sifCount: number;
+    density: number;
+  }[];
+  campbellGateSummary: {
+    gate1HighEnergy: number;
+    gate2BarrierFailed: number;
+    gate3LineOfFire: number;
+    actualSif: number;
+    precursorSif: number;
+    nonSif: number;
+  };
+  facilityCeiSummaries: {
+    site: string;
+    cei: number;
+    status: "controlled" | "elevated" | "critical_storm";
+    velocity14d: number;
+    clusterStorm: boolean;
+    dominantEnergy: EnergyCategory | null;
+    directBarrierFailureRate: number;
+  }[];
 }
 
 /**
@@ -35,6 +92,19 @@ export function computeAggregates(
       patternCallouts: [],
       topRiskSite: null,
       highestRiskDensity: 0,
+      energyDistribution: [],
+      barrierDistribution: [],
+      directControlBreakdown: { absent: 0, failed: 0, bypassed: 0, intact: 0 },
+      shiftDistribution: [],
+      campbellGateSummary: {
+        gate1HighEnergy: 0,
+        gate2BarrierFailed: 0,
+        gate3LineOfFire: 0,
+        actualSif: 0,
+        precursorSif: 0,
+        nonSif: 0,
+      },
+      facilityCeiSummaries: [],
     };
   }
 
@@ -50,6 +120,37 @@ export function computeAggregates(
   const siteMap = new Map<string, { total: number; sif: number; rules: Map<LifeSavingRule, number>; activities: Map<string, number> }>();
   const activityMap = new Map<string, { total: number; sif: number }>();
   const ruleCounts = new Map<LifeSavingRule, number>();
+
+  // Research metrics counters
+  const energyCounts = new Map<EnergyCategory, { total: number; high: number }>();
+  for (const w of CSRA_ENERGY_WHEEL) {
+    energyCounts.set(w.id, { total: 0, high: 0 });
+  }
+
+  const barrierCounts = new Map<ControlHierarchyLevel, number>([
+    ["Elimination", 0],
+    ["Substitution", 0],
+    ["Engineering / Direct Control", 0],
+    ["Administrative", 0],
+    ["PPE", 0],
+  ]);
+
+  const directBreakdown = { absent: 0, failed: 0, bypassed: 0, intact: 0 };
+  const shiftCounts = new Map<ShiftTiming, { total: number; sif: number }>([
+    ["morning_handover", { total: 0, sif: 0 }],
+    ["day_shift", { total: 0, sif: 0 }],
+    ["evening_handover", { total: 0, sif: 0 }],
+    ["night_shift", { total: 0, sif: 0 }],
+  ]);
+
+  const campbellGateCounters = {
+    gate1HighEnergy: 0,
+    gate2BarrierFailed: 0,
+    gate3LineOfFire: 0,
+    actualSif: 0,
+    precursorSif: 0,
+    nonSif: 0,
+  };
 
   // Pattern detection tracker: key = `${site}:::${rule}`
   const patternTracker = new Map<string, { site: string; rule: LifeSavingRule; reportIds: string[]; activities: Set<string> }>();
@@ -78,6 +179,46 @@ export function computeAggregates(
         pGroup.reportIds.push(report.id);
         if (report.activity) pGroup.activities.add(report.activity);
       }
+    }
+
+    // Energy Wheel Tracking
+    if (cls?.energy_category) {
+      const eObj = energyCounts.get(cls.energy_category) || { total: 0, high: 0 };
+      eObj.total++;
+      if (cls.energy_magnitude === "High-Energy") eObj.high++;
+      energyCounts.set(cls.energy_category, eObj);
+    }
+
+    // Barrier Hierarchy Tracking
+    if (cls?.barrier_assessment) {
+      const bLevel = cls.barrier_assessment.compromised_level;
+      barrierCounts.set(bLevel, (barrierCounts.get(bLevel) || 0) + 1);
+      const st = cls.barrier_assessment.direct_control_status;
+      if (st === "absent") directBreakdown.absent++;
+      else if (st === "failed") directBreakdown.failed++;
+      else if (st === "bypassed") directBreakdown.bypassed++;
+      else directBreakdown.intact++;
+    }
+
+    // Shift Tracking
+    const sTiming = report.shift_timing || "day_shift";
+    const sObj = shiftCounts.get(sTiming) || { total: 0, sif: 0 };
+    sObj.total++;
+    if (isSif) sObj.sif++;
+    shiftCounts.set(sTiming, sObj);
+
+    // Campbell Gates Tracking
+    if (cls?.campbell_gates) {
+      if (cls.campbell_gates.gate1_high_energy) campbellGateCounters.gate1HighEnergy++;
+      if (cls.campbell_gates.gate2_direct_control_compromised) campbellGateCounters.gate2BarrierFailed++;
+      if (cls.campbell_gates.gate3_line_of_fire_intersected) campbellGateCounters.gate3LineOfFire++;
+
+      if (cls.campbell_gates.decision_verdict === "Actual SIF / Major Event") campbellGateCounters.actualSif++;
+      else if (cls.campbell_gates.decision_verdict === "SIF Precursor") campbellGateCounters.precursorSif++;
+      else campbellGateCounters.nonSif++;
+    } else {
+      if (isSif) campbellGateCounters.precursorSif++;
+      else campbellGateCounters.nonSif++;
     }
 
     // Site aggregation
@@ -112,8 +253,7 @@ export function computeAggregates(
   // Build ranked site aggregates
   const siteAggregates: SiteActivityAggregate[] = Array.from(siteMap.entries()).map(([site, data]) => {
     const density = data.total > 0 ? Number(((data.sif / data.total) * 100).toFixed(1)) : 0;
-    
-    // Find top primary rule for this site
+
     let topRule: LifeSavingRule | null = null;
     let maxRuleCount = 0;
     for (const [r, count] of data.rules.entries()) {
@@ -123,7 +263,6 @@ export function computeAggregates(
       }
     }
 
-    // Find most frequent activity for this site
     let topActivity = "General Operations";
     let maxActCount = 0;
     for (const [act, count] of data.activities.entries()) {
@@ -169,7 +308,7 @@ export function computeAggregates(
       const actList = Array.from(pData.activities).join(", ") || "General Operations";
       const count = pData.reportIds.length;
       const severity = count >= 4 ? "critical" : count >= 3 ? "high" : "medium";
-      
+
       patternCallouts.push({
         id: `pat-${uuidv4().slice(0, 8)}`,
         site: pData.site,
@@ -184,10 +323,74 @@ export function computeAggregates(
     }
   }
 
-  // Sort pattern callouts by report count descending
   patternCallouts.sort((a, b) => b.count - a.count);
 
   const topSiteObj = siteAggregates[0] || null;
+
+  // Energy distribution formatted
+  const totalObs = reports.length;
+  const energyDistribution = CSRA_ENERGY_WHEEL.map((w) => {
+    const data = energyCounts.get(w.id) || { total: 0, high: 0 };
+    return {
+      category: w.id,
+      count: data.total,
+      percentage: totalObs > 0 ? Number(((data.total / totalObs) * 100).toFixed(1)) : 0,
+      highEnergyCount: data.high,
+      color: w.color,
+    };
+  }).sort((a, b) => b.count - a.count);
+
+  // Barrier hierarchy distribution formatted
+  const barrierHierarchyRanks: Record<ControlHierarchyLevel, number> = {
+    Elimination: 1,
+    Substitution: 2,
+    "Engineering / Direct Control": 3,
+    Administrative: 4,
+    PPE: 5,
+  };
+  const barrierDistribution = Array.from(barrierCounts.entries()).map(([level, count]) => ({
+    level,
+    count,
+    percentage: totalObs > 0 ? Number(((count / totalObs) * 100).toFixed(1)) : 0,
+    rank: barrierHierarchyRanks[level],
+  })).sort((a, b) => a.rank - b.rank);
+
+  // Shift timing distribution formatted
+  const shiftLabels: Record<ShiftTiming, string> = {
+    morning_handover: "Morning Handover (06:00 - 08:00)",
+    day_shift: "Standard Day Shift (08:00 - 18:00)",
+    evening_handover: "Evening Handover (18:00 - 20:00)",
+    night_shift: "Night & Circadian Low (20:00 - 06:00)",
+  };
+  const shiftMultipliers: Record<ShiftTiming, number> = {
+    morning_handover: 1.35,
+    evening_handover: 1.35,
+    night_shift: 1.4,
+    day_shift: 1.0,
+  };
+  const shiftDistribution = Array.from(shiftCounts.entries()).map(([timing, data]) => ({
+    timing,
+    shift: timing,
+    label: shiftLabels[timing] || timing,
+    riskMultiplier: shiftMultipliers[timing] ?? 1.0,
+    count: data.total,
+    sifCount: data.sif,
+    density: data.total > 0 ? Number(((data.sif / data.total) * 100).toFixed(1)) : 0,
+  }));
+
+  // Calculate CEI for each site
+  const facilityCeiSummaries = siteAggregates.map((s) => {
+    const ceiResult = calculateFacilityCEI(reports, classifications, s.site);
+    return {
+      site: s.site,
+      cei: ceiResult.cei,
+      status: ceiResult.status,
+      velocity14d: ceiResult.velocity14d,
+      clusterStorm: ceiResult.clusterStorm,
+      dominantEnergy: ceiResult.dominantEnergy,
+      directBarrierFailureRate: ceiResult.directBarrierFailureRate,
+    };
+  }).sort((a, b) => b.cei - a.cei);
 
   return {
     totalReports: reports.length,
@@ -200,5 +403,11 @@ export function computeAggregates(
     patternCallouts,
     topRiskSite: topSiteObj ? topSiteObj.site : null,
     highestRiskDensity: topSiteObj ? topSiteObj.precursor_density : 0,
+    energyDistribution,
+    barrierDistribution,
+    directControlBreakdown: directBreakdown,
+    shiftDistribution,
+    campbellGateSummary: campbellGateCounters,
+    facilityCeiSummaries,
   };
 }

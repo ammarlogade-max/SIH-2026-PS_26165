@@ -20,9 +20,14 @@ import {
   BrainCircuit,
   MapPin,
   X,
+  Zap,
+  Wind,
+  Layers,
+  Sliders,
 } from "lucide-react";
 import clsx from "clsx";
 import { FacilitySummary, LifeSavingRule, Report, Classification, CorrectiveAction } from "@/lib/types";
+import CumulativeExposureIndexCard from "@/components/safety-science/CumulativeExposureIndexCard";
 
 export default function FacilitiesPage() {
   const [facilities, setFacilities] = useState<FacilitySummary[]>([]);
@@ -90,7 +95,8 @@ export default function FacilitiesPage() {
           fac.code.toLowerCase().includes(q) ||
           fac.type.toLowerCase().includes(q) ||
           fac.location.toLowerCase().includes(q) ||
-          (fac.primary_rule && fac.primary_rule.toLowerCase().includes(q))
+          (fac.primary_rule && fac.primary_rule.toLowerCase().includes(q)) ||
+          (fac.dominant_energy && fac.dominant_energy.toLowerCase().includes(q))
         );
       }
       return true;
@@ -103,23 +109,24 @@ export default function FacilitiesPage() {
       critical: facilities.filter((f) => f.risk_level === "critical").length,
       elevated: facilities.filter((f) => f.risk_level === "elevated").length,
       controlled: facilities.filter((f) => f.risk_level === "controlled").length,
+      clusterStorms: facilities.filter((f) => f.cluster_storm || f.cei_status === "critical_storm").length,
     };
   }, [facilities]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 max-w-[1440px] mx-auto px-3 py-4 sm:px-5 sm:py-5 lg:px-6">
       {/* Header */}
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between border-b border-surface-border pb-4">
         <div>
           <div className="flex items-center gap-2 text-xs font-semibold text-amber-400">
             <Building2 className="h-4 w-4" />
             Asset &amp; Production Site Intelligence
           </div>
-          <h1 className="font-display text-2xl font-bold tracking-tight text-slate-100 sm:text-3xl">
-            Facility Risk Matrix
+          <h1 className="font-display text-2xl font-bold tracking-tight text-slate-100 sm:text-3xl mt-0.5">
+            Facility Risk Matrix &amp; Cumulative Exposure (CEI)
           </h1>
           <p className="mt-1 text-xs text-slate-400">
-            Real-time precursor density rankings, safety scores, and active barrier integrity across Oil India Limited assets.
+            Real-time precursor density rankings, EPRI Cumulative Exposure Index (CEI), CSRA dominant physical energy, and barrier integrity across Oil India Limited assets.
           </p>
         </div>
 
@@ -130,7 +137,7 @@ export default function FacilitiesPage() {
             className="inline-flex h-9 items-center gap-1.5 rounded-xl border border-surface-border bg-surface-card px-3 text-xs font-semibold text-slate-300 transition hover:bg-surface-hover hover:text-white"
           >
             <RefreshCw className={clsx("h-3.5 w-3.5", refreshing && "animate-spin")} />
-            Refresh
+            Refresh Telemetry
           </button>
           <Link
             href="/dashboard/investigate"
@@ -143,34 +150,34 @@ export default function FacilitiesPage() {
       </div>
 
       {/* KPI Overview */}
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <div className="rounded-2xl border border-surface-border bg-surface-card/80 p-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
+        <div className="rounded-xl border border-surface-border bg-surface-card p-3.5">
           <span className="text-[11px] font-semibold text-slate-400">Monitored Facilities</span>
           <p className="font-display text-2xl font-bold text-slate-100 mt-1">{summary.total}</p>
-          <p className="text-[10px] text-slate-500 mt-0.5">Assam asset exploration &amp; production</p>
+          <p className="text-[10px] text-slate-500 mt-0.5">Assam asset E&amp;P fields</p>
         </div>
 
         <button
           onClick={() => setRiskFilter(riskFilter === "critical" ? "all" : "critical")}
           className={clsx(
-            "rounded-2xl border p-4 text-left transition",
+            "rounded-xl border p-3.5 text-left transition",
             riskFilter === "critical"
-              ? "border-red-400/40 bg-red-500/10 shadow-sm"
-              : "border-surface-border bg-surface-card/80 hover:bg-surface-card"
+              ? "border-red-400/40 bg-red-500/15 shadow-sm"
+              : "border-surface-border bg-surface-card hover:bg-surface-hover"
           )}
         >
           <span className="text-[11px] font-semibold text-red-400">Critical Risk Sites</span>
           <p className="font-display text-2xl font-bold text-red-400 mt-1">{summary.critical}</p>
-          <p className="text-[10px] text-red-300/80 mt-0.5">SIF density &gt; 35% or active pattern</p>
+          <p className="text-[10px] text-red-300/80 mt-0.5">SIF density &gt; 35%</p>
         </button>
 
         <button
           onClick={() => setRiskFilter(riskFilter === "elevated" ? "all" : "elevated")}
           className={clsx(
-            "rounded-2xl border p-4 text-left transition",
+            "rounded-xl border p-3.5 text-left transition",
             riskFilter === "elevated"
-              ? "border-amber-400/40 bg-amber-500/10 shadow-sm"
-              : "border-surface-border bg-surface-card/80 hover:bg-surface-card"
+              ? "border-amber-400/40 bg-amber-500/15 shadow-sm"
+              : "border-surface-border bg-surface-card hover:bg-surface-hover"
           )}
         >
           <span className="text-[11px] font-semibold text-amber-400">Elevated Risk Sites</span>
@@ -181,28 +188,37 @@ export default function FacilitiesPage() {
         <button
           onClick={() => setRiskFilter(riskFilter === "controlled" ? "all" : "controlled")}
           className={clsx(
-            "rounded-2xl border p-4 text-left transition",
+            "rounded-xl border p-3.5 text-left transition",
             riskFilter === "controlled"
-              ? "border-emerald-400/40 bg-emerald-500/10 shadow-sm"
-              : "border-surface-border bg-surface-card/80 hover:bg-surface-card"
+              ? "border-emerald-400/40 bg-emerald-500/15 shadow-sm"
+              : "border-surface-border bg-surface-card hover:bg-surface-hover"
           )}
         >
           <span className="text-[11px] font-semibold text-emerald-400">Controlled Operations</span>
           <p className="font-display text-2xl font-bold text-emerald-400 mt-1">{summary.controlled}</p>
           <p className="text-[10px] text-emerald-300/80 mt-0.5">Precursor density &lt; 15%</p>
         </button>
+
+        <div className="rounded-xl border border-rose-500/30 bg-rose-500/10 p-3.5">
+          <div className="flex items-center gap-1.5 text-[11px] font-semibold text-rose-400">
+            <Wind className="h-3.5 w-3.5 animate-spin" />
+            <span>Precursor Storms</span>
+          </div>
+          <p className="font-display text-2xl font-bold text-rose-300 mt-1">{summary.clusterStorms}</p>
+          <p className="text-[10px] text-rose-300/80 mt-0.5">Accelerating 14d velocity</p>
+        </div>
       </div>
 
       {/* Search & Filter */}
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between rounded-2xl border border-surface-border bg-surface-card/85 p-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between rounded-xl border border-surface-border bg-surface-card p-3.5">
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Filter facilities by name, code, type, or Life-Saving Rule..."
-            className="h-10 w-full rounded-xl border border-surface-border bg-surface/75 pl-9 pr-4 text-xs text-slate-200 placeholder-slate-500 focus:border-amber-400 focus:outline-none"
+            placeholder="Filter facilities by name, code, type, dominant energy, or Life-Saving Rule..."
+            className="h-9 w-full rounded-lg border border-surface-border bg-surface pl-9 pr-4 text-xs text-slate-200 placeholder-slate-500 focus:border-amber-400 focus:outline-none"
           />
         </div>
 
@@ -210,7 +226,7 @@ export default function FacilitiesPage() {
           <select
             value={riskFilter}
             onChange={(e) => setRiskFilter(e.target.value)}
-            className="h-10 rounded-xl border border-surface-border bg-surface/75 px-3 text-xs font-medium text-slate-300 focus:border-amber-400 focus:outline-none"
+            className="h-9 rounded-lg border border-surface-border bg-surface px-3 text-xs font-medium text-slate-300 focus:border-amber-400 focus:outline-none font-mono"
           >
             <option value="all">All Risk Levels</option>
             <option value="critical">Critical Risk</option>
@@ -222,38 +238,50 @@ export default function FacilitiesPage() {
 
       {/* Facilities Grid */}
       {loading ? (
-        <div className="flex h-64 flex-col items-center justify-center gap-3 rounded-2xl border border-surface-border bg-surface-card">
+        <div className="flex h-64 flex-col items-center justify-center gap-3 rounded-xl border border-surface-border bg-surface-card">
           <RefreshCw className="h-6 w-6 animate-spin text-amber-400" />
           <p className="text-xs text-slate-400">Loading facility intelligence...</p>
         </div>
       ) : filteredFacilities.length === 0 ? (
-        <div className="flex h-64 flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-surface-border bg-surface-card/50 p-6 text-center">
+        <div className="flex h-64 flex-col items-center justify-center gap-3 rounded-xl border border-dashed border-surface-border bg-surface-card/50 p-6 text-center">
           <Building2 className="h-8 w-8 text-slate-500" />
-          <p className="text-sm font-medium text-slate-300">No facilities found</p>
+          <p className="text-sm font-medium text-slate-300">No facilities found matching your criteria</p>
         </div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filteredFacilities.map((fac) => {
+            const hasStorm = fac.cluster_storm || fac.cei_status === "critical_storm";
+
             return (
               <div
                 key={fac.id}
                 onClick={() => openFacilityDrilldown(fac)}
                 className={clsx(
-                  "group cursor-pointer rounded-2xl border p-5 transition-all duration-200 hover:scale-[1.01] hover:shadow-xl",
-                  fac.risk_level === "critical"
-                    ? "border-red-500/35 bg-surface-card/95 hover:border-red-500/60"
+                  "group relative cursor-pointer rounded-xl border p-4 transition-all duration-200 hover:scale-[1.01] hover:shadow-xl",
+                  hasStorm
+                    ? "border-rose-500/50 bg-rose-950/20 shadow-[0_0_15px_rgba(244,63,94,0.1)]"
+                    : fac.risk_level === "critical"
+                    ? "border-red-500/35 bg-surface-card hover:border-red-500/60"
                     : fac.risk_level === "elevated"
-                    ? "border-amber-500/35 bg-surface-card/95 hover:border-amber-500/60"
-                    : "border-surface-border bg-surface-card/90 hover:border-emerald-500/50"
+                    ? "border-amber-500/35 bg-surface-card hover:border-amber-500/60"
+                    : "border-surface-border bg-surface-card hover:border-emerald-500/50"
                 )}
               >
+                {hasStorm && (
+                  <div className="absolute right-3 top-3">
+                    <span className="flex items-center gap-1 rounded bg-rose-500/20 px-2 py-0.5 font-mono text-[9px] font-bold text-rose-300 border border-rose-500/40">
+                      <Wind className="h-3 w-3 animate-spin text-rose-400" /> STORM
+                    </span>
+                  </div>
+                )}
+
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <div className="flex items-center gap-2">
                       <span className="font-mono text-[10px] font-bold text-slate-400">{fac.code}</span>
                       <span
                         className={clsx(
-                          "rounded-md px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider",
+                          "rounded-md px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider font-mono",
                           fac.risk_level === "critical"
                             ? "bg-red-500/15 text-red-300 border border-red-500/30"
                             : fac.risk_level === "elevated"
@@ -274,7 +302,7 @@ export default function FacilitiesPage() {
                   <div className="flex flex-col items-center">
                     <div
                       className={clsx(
-                        "flex h-12 w-12 items-center justify-center rounded-2xl font-display text-base font-bold shadow-md",
+                        "flex h-11 w-11 items-center justify-center rounded-xl font-display text-base font-bold shadow-md font-mono",
                         fac.safety_score < 60
                           ? "border border-red-500/40 bg-red-500/15 text-red-300"
                           : fac.safety_score < 80
@@ -284,14 +312,14 @@ export default function FacilitiesPage() {
                     >
                       {fac.safety_score}
                     </div>
-                    <span className="text-[9px] font-medium text-slate-400 mt-1">Safety Score</span>
+                    <span className="text-[9px] font-medium text-slate-400 mt-0.5">Safety Score</span>
                   </div>
                 </div>
 
                 {/* Precursor Density Bar */}
-                <div className="mt-4 space-y-1.5">
+                <div className="mt-3.5 space-y-1">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="text-slate-400">SIF Precursor Density</span>
+                    <span className="text-slate-400">Precursor Density</span>
                     <span
                       className={clsx(
                         "font-mono font-bold",
@@ -305,7 +333,7 @@ export default function FacilitiesPage() {
                       {fac.precursor_density.toFixed(1)}%
                     </span>
                   </div>
-                  <div className="h-2 w-full overflow-hidden rounded-full bg-surface-border">
+                  <div className="h-1.5 w-full overflow-hidden rounded-full bg-surface-border">
                     <div
                       className={clsx(
                         "h-full rounded-full transition-all duration-500",
@@ -320,20 +348,49 @@ export default function FacilitiesPage() {
                   </div>
                   <div className="flex items-center justify-between text-[10px] text-slate-500">
                     <span>{fac.sif_reports} SIF precursors</span>
-                    <span>{fac.total_reports} total observations</span>
+                    <span>{fac.total_reports} observations</span>
+                  </div>
+                </div>
+
+                {/* Research metrics row: CEI & Dominant Energy */}
+                <div className="mt-3 grid grid-cols-2 gap-2 rounded bg-surface/60 p-2 text-xs border border-surface-border">
+                  <div>
+                    <span className="text-[9px] uppercase tracking-wider text-slate-400 font-mono block">
+                      CEI Index
+                    </span>
+                    <div className="flex items-baseline gap-1 mt-0.5">
+                      <span className="font-mono font-bold text-amber-300">{fac.cei || 0}</span>
+                      <span className="text-[9px] text-slate-400">/ 100</span>
+                      {fac.velocity_14d !== undefined && (
+                        <span className="ml-auto font-mono text-[9px] text-slate-400">
+                          {fac.velocity_14d} v/d
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-[9px] uppercase tracking-wider text-slate-400 font-mono block">
+                      Dominant Energy
+                    </span>
+                    <div className="flex items-center gap-1 mt-0.5">
+                      <Zap className="h-3 w-3 text-amber-400" />
+                      <span className="font-mono text-xs font-bold text-slate-200 truncate">
+                        {fac.dominant_energy || "Gravity"}
+                      </span>
+                    </div>
                   </div>
                 </div>
 
                 {/* Tags & Drilldown preview */}
-                <div className="mt-4 flex flex-wrap items-center gap-1.5 border-t border-surface-border/60 pt-3">
+                <div className="mt-3 flex flex-wrap items-center gap-1.5 border-t border-surface-border/60 pt-2.5">
                   {fac.primary_rule && (
                     <span className="rounded-md border border-white/10 bg-white/5 px-2 py-0.5 text-[10px] font-semibold text-slate-300">
                       Rule: {fac.primary_rule}
                     </span>
                   )}
-                  {fac.active_patterns_count > 0 && (
-                    <span className="rounded-md border border-amber-500/30 bg-amber-500/10 px-2 py-0.5 text-[10px] font-bold text-amber-300">
-                      {fac.active_patterns_count} Patterns
+                  {fac.direct_barrier_failure_rate !== undefined && fac.direct_barrier_failure_rate > 0 && (
+                    <span className="rounded-md border border-rose-500/30 bg-rose-500/10 px-2 py-0.5 text-[10px] font-bold text-rose-300">
+                      {fac.direct_barrier_failure_rate}% Barrier Fail
                     </span>
                   )}
                   {fac.open_actions_count > 0 && (
@@ -343,8 +400,8 @@ export default function FacilitiesPage() {
                   )}
                 </div>
 
-                <div className="mt-3 flex items-center justify-between text-xs font-semibold text-amber-400/90 group-hover:text-amber-300">
-                  <span>Inspect facility details</span>
+                <div className="mt-2.5 flex items-center justify-between text-xs font-semibold text-amber-400/90 group-hover:text-amber-300">
+                  <span>Inspect facility details &amp; CEI</span>
                   <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>
               </div>
@@ -360,14 +417,14 @@ export default function FacilitiesPage() {
             className="fixed inset-0 bg-slate-950/70 backdrop-blur-sm"
             onClick={() => setSelectedFacility(null)}
           />
-          <div className="relative flex h-full w-full max-w-2xl flex-col border-l border-surface-border bg-surface-card shadow-2xl overflow-y-auto p-6 sm:p-8">
-            <div className="flex items-start justify-between border-b border-surface-border pb-5">
+          <div className="relative flex h-full w-full max-w-2xl flex-col border-l border-surface-border bg-surface-card shadow-2xl overflow-y-auto p-6 sm:p-8 space-y-6">
+            <div className="flex items-start justify-between border-b border-surface-border pb-4">
               <div>
                 <div className="flex items-center gap-2">
                   <span className="font-mono text-xs font-bold text-slate-400">{selectedFacility.code}</span>
                   <span
                     className={clsx(
-                      "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider",
+                      "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider font-mono",
                       selectedFacility.risk_level === "critical"
                         ? "bg-red-500/15 text-red-300 border border-red-500/30"
                         : selectedFacility.risk_level === "elevated"
@@ -393,8 +450,21 @@ export default function FacilitiesPage() {
               </button>
             </div>
 
+            {/* EPRI Cumulative Exposure Index (CEI) Card */}
+            <div>
+              <CumulativeExposureIndexCard
+                cei={selectedFacility.cei || 0}
+                status={selectedFacility.cei_status || "controlled"}
+                velocity14d={selectedFacility.velocity_14d || 0}
+                clusterStorm={Boolean(selectedFacility.cluster_storm || selectedFacility.cei_status === "critical_storm")}
+                dominantEnergy={selectedFacility.dominant_energy}
+                directBarrierFailureRate={selectedFacility.direct_barrier_failure_rate || 0}
+                siteName={selectedFacility.name}
+              />
+            </div>
+
             {/* Quick Actions */}
-            <div className="mt-5 flex flex-wrap gap-2.5">
+            <div className="flex flex-wrap gap-2.5">
               <Link
                 href={`/dashboard/investigate?site=${encodeURIComponent(selectedFacility.name)}`}
                 className="inline-flex items-center gap-1.5 rounded-xl bg-amber-500 px-3.5 py-2 text-xs font-bold text-slate-950 shadow-md shadow-amber-500/20 hover:bg-amber-400"
@@ -412,10 +482,10 @@ export default function FacilitiesPage() {
             </div>
 
             {/* Metrics Breakdown */}
-            <div className="mt-6 grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-3 gap-3">
               <div className="rounded-xl border border-surface-border bg-surface/50 p-3.5">
                 <span className="text-[10px] text-slate-400">Precursor Density</span>
-                <p className="font-display text-xl font-bold text-amber-400 mt-1">
+                <p className="font-display text-xl font-bold text-amber-400 mt-1 font-mono">
                   {selectedFacility.precursor_density.toFixed(1)}%
                 </p>
                 <p className="text-[10px] text-slate-500">{selectedFacility.sif_reports} SIF / {selectedFacility.total_reports} total</p>
@@ -425,7 +495,7 @@ export default function FacilitiesPage() {
                 <span className="text-[10px] text-slate-400">Facility Safety Score</span>
                 <p
                   className={clsx(
-                    "font-display text-xl font-bold mt-1",
+                    "font-display text-xl font-bold mt-1 font-mono",
                     selectedFacility.safety_score < 60
                       ? "text-red-400"
                       : selectedFacility.safety_score < 80
@@ -448,7 +518,7 @@ export default function FacilitiesPage() {
             </div>
 
             {/* Observations at this facility */}
-            <div className="mt-8 space-y-4">
+            <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <h3 className="font-display text-sm font-bold text-slate-200">
                   Recent Observations at {selectedFacility.name}
@@ -464,7 +534,7 @@ export default function FacilitiesPage() {
                 <p className="text-xs text-slate-500">No field observations recorded for this facility.</p>
               ) : (
                 <div className="space-y-2.5">
-                  {facilityReports.slice(0, 6).map((rep) => (
+                  {facilityReports.slice(0, 5).map((rep) => (
                     <div key={rep.id} className="rounded-xl border border-surface-border bg-surface/50 p-3 text-xs">
                       <div className="flex items-center justify-between text-[10px] text-slate-400 mb-1">
                         <span>{rep.activity}</span>
@@ -478,7 +548,7 @@ export default function FacilitiesPage() {
             </div>
 
             {/* Active CAPA actions */}
-            <div className="mt-8 space-y-4">
+            <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <h3 className="font-display text-sm font-bold text-slate-200">
                   Assigned CAPA Actions at this Facility
