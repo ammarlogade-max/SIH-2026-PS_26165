@@ -1,0 +1,70 @@
+
+
+ 
+Safety Alert No. 402                               Contact: Jason Mathews       
+October 16, 2020                                        Phone: (504) 731-1496 
+ 
+ 
+ Deficiencies in Process Piping Cause Gas Release Incidents
+  
+ 
+                                                              
+An increased number of gas release incidents have occurred in the Gulf of Mexico Region 
+due to leaks from cracked welds, ring gaskets, flange gaskets, inlet nozzles, pipeline risers, 
+suction headers,   pressure safety valves (PSVs), and fuel gas lines.  
+ 
+ 
+These  gas  release  incidents  involve  deficiencies  in  Quality  Assurance  and  Mechanical  
+Integrity (QAMI) programs and are caused by corrosion of process piping and deterioration 
+of flanges and gaskets. Below are details on a few recent incidents: 
+•    A cracked weld on a compressor suction bottle triggered a gas detector alarm. Prior 
+stabilization modifications as well as fatigue caused by the vibrations of the 
+machinery over time may have contributed to the failure of the weld. 
+•    A ring gasket on a test separator outlet developed a leak during well testing. The 
+well test required the separator to operate in High Pressure mode, which had not 
+been recently performed. 
+•    An operator noticed water and ice forming on a fuel gas line and shut-in the facility 
+after hearing gas leaking from the line. The insulation on the line allowed moisture to 
+accumulate, which caused external corrosion and eventually caused a pinhole leak.  
+ 
+SAFETY ALERT 
+ 
+ 
+A leak was found in this 2” vent line during compressor blow down. 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+ 
+•    Ensure the design, installation, inspection, repair, testing, and maintenance of    all 
+valves, fittings, flanges, wellhead piping accessories, risers, flowline piping 
+accessories, production manifold (headers) piping, pressure vessel piping, and 
+pressure relief systems are included within the operator’s QAMI Program;  
+•    Verify the QAMI program incorporates all requirements from American Petroleum 
+Institute (API) Recommended Practice (RP) 14 E – Design/Installation of Production 
+Platform Piping Systems and API 570 – Piping Inspection Code: In-service 
+Inspection, Rating, Repair, and Alteration of Piping Systems; 
+•    Confirm leak detection methods include primary protection, secondary protection, 
+and location of safety device requirements from API 14C - Recommended Practice 
+for Analysis, Design, Installation of Basic Surface Safety Systems for Offshore 
+Production Platforms (7
+th
+ Edition, 2001); 
+•    Review daily pollution inspection records to ensure all gas releases that initiate 
+equipment or process shutdown are reported to BSEE per 30 CFR 250.188(b)(2); 
+• Ensure personnel are trained in gas detection practices and reporting 
+requirements;   
+• Exercise care when pressurizing piping that has been out of service; 
+• Verify that pulsation dampeners and other vibration dampening equipment are 
+functioning properly and maintained. Bladder type dampeners may need to be 
+periodically re-pressurized; 
+• Verify that compressors and other equipment that produce vibration are properly 
+maintained. Poorly maintained or malfunctioning compressors may produce 
+excessive vibration which may damage piping; and, 
+• Thoroughly investigate the root causes of leaks to identify potential management 
+system deficiencies. 
+ 
+--BSEE-- 

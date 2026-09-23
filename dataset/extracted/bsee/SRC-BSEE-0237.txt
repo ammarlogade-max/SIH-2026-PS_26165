@@ -1,0 +1,58 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 279 	Contact:  Glynn T. Breaux 
+14 April 2009 	(504) 736-2560 
+Nylon Sling Failure 
+Recently a 2-inch nylon web sling parted while being used to support an e-line lubricator, 
+resulting in the lubricator and tool string striking the platform’s grated deck prior to entering the 
+Gulf of Mexico. All material was recovered with no reports of injuries or pollution. 
+An MMS investigation into this incident revealed that: (1) personnel utilized improper rigging 
+practice for lifting the lubricator. The lubricator was equipped with a lifting bracket for use with 
+a two part sling, but the decision was made to utilize a nylon sling cinched in a choker type 
+manner just below the lifting bracket, and (2) personnel failed to provide suitable protection 
+between the nylon sling and the lifting bracket on the lubricator. The nylon sling was cinched in 
+a manner that allowed the sharp edge of the lubricator’s lifting bracket to chafe the nylon 
+material at a point that was not visible to personnel involved in the task.  
+MMS, therefore, recommends that: 
+•	 When handling specialty equipment such as wireline/e-line lubricators, operators should 
+use the lifting equipment (lifting bracket) that is provided in the manner in which it was 
+designed and intended for use. When this is not possible, a hazards analysis should be 
+conducted before deviating from the intended procedure to identify all potential failures 
+of the alternative method and possible mitigations to those failures. 
+•	 Operators review the general guidelines on the proper use of slings located in API RP 2D 
+– Operations and Maintenance of Offshore Cranes, Fifth Edition, June 2003, with 
+specific attention to: 
+o	 Section 5.2.1 – Sling Use and Inspection; 
+o	 Appendix B, Section C.3.2.2c – Sling Use Guidelines; and, 
+o	 Appendix G, Section C.5.2.1 – Use of Slings. 
+•	 Operators review Safety Alert #257 issued on January 10, 2008, and titled Three Crane 
+Accidents Caused by Improper Rigging for additional information. 
+--MMS--GOMR--
+www.gomr.mms.gov 

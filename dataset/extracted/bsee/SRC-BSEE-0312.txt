@@ -1,0 +1,71 @@
+Safety Alert No. 207-Rentqal Crane Bracing Failure in Fatalityhttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_207...
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 207Contact: Jack Williams
+De
+cember 18, 2002(504) 731-3012
+Rental Crane Bracing Failure Results in Fatality
+Recently, an operator hired a construction/rental crane contractor to remove an 18,000-lb.
+flare boom from a platform. The rental crane was installed and the old flare boom was cut
+loose. During the swinging of the load to begin lowering it onto the boat, the base of the
+east-west brace attaching the rental crane to the platform failed. This caused the crane to
+be torn suddenly from the platform and pulled overboard into the Gulf of Mexico. The
+movement of the crane overboard caused the death of a crewmember who was in the path
+of the falling crane.
+This Safety Alert serves as a follow-up toSafety Alert No. 202, issued on June 20, 2002.
+Cause
+1.The failure of the crane brace was directly caused by a fault in the fundamental
+design of the way the crane was attached to the platform. The crane was held in
+place by two braces welded to the platform, one oriented east-west and one north-
+south. When attaching the east-west crane brace to the platform, the contractor first
+welded the brace to a small I-beam. Then, the I-beam was welded to the platform
+skid beam in such a manner that the I-beam/brace attachment was outboard of the
+I-beam/skid beam weld and the I-beam ends were unsupported. This created a
+cantilever effect that multiplied the forces on the I-beam to the point that the I-beam
+failed when exposed to the full load of the lift.
+2.The deficient fundamental design was allowed because of organizational failures as
+follows:
+No engineering calculations were required or employed by the Operator or
+Contractor to ensure the adequacy of the attachment design;
+No written procedure for installing the crane was required or employed by the
+Operator or Contractor to ensure competent review of field modifications of
+standard installation procedures.
+3. No written Job Safety Analysis (JSA) or Job Hazard Analysis (JHA) was required or
+created by the Operator or Contractor. A JSA analysis of the operation could
+reasonably have been expected to have identified the hazard of positioning a
+crewmember within a zone that would place him at risk in the event of a crane failure.
+1 of 22/21/2012 4:37 PM
+
+4. The load testing of the crane prior to conducting the operation did not reveal the
+structural flaws of the installation. This failure indicates the standard method for load
+testing cranes of this type with the boom oriented only in one direction does not
+provide a true indication of the ability of the crane to perform safely the full range of
+motion required to complete a job.
+5. The supervisors overseeing the operation failed to recognize the structural deficiency
+of the installation. The supervisor installing the crane failed to recognize that the
+cantilever method of using an I-beam as the base for the E-W brace was significantly
+different from other methods of using an I-beam as a connector. This likely caused a
+failure to discuss and review the installation method with company management.
+Possibly Contributing to the Failure
+6.Possibly contributing to the fatal accident was the lack of a formal, written procedure
+provided by the Contractor or Operator that defined the steps and checkpoints of the
+construction job as a whole.
+7.Verbal communication misunderstandings between the supervisors and on-shore
+management also possibly contributed to the accident.
+Recommendations to Operators
+The MMS recommends to the operators that they thoroughly review the engineering of
+attaching any rental crane to a structure. The MMS also recommends to the operators that
+they thoroughly prepare a written procedure that defines the circumstances requiring
+supervisor, management or engineering review of operations during the course of
+construction activities.  The MMS recommends that formal JSA/JHA’s be employed to
+identify risks to personnel prior to major construction activities.
+For details of the accident, seeOCS Report MMS 2002-076. Copies of the report may be
+obtained from the MMS Public Information Office located at 1201 Elmwood Park Boulevard,
+New Orleans, Louisiana 70123 (1-800-200-GULF or local 504-736-2519).
+—MMS—GOMR—
+ww
+w.gomr.mms.gov
+Visit our Safety Information Website
+Safety Alert No. 207-Rentqal Crane Bracing Failure in Fatalityhttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_207...
+2 of 22/21/2012 4:37 PM

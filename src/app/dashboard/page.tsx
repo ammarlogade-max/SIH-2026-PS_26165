@@ -421,7 +421,7 @@ export default function DashboardPage() {
               <span className="text-slate-600">•</span>
               <span>LAST ANALYSIS: <strong className="text-slate-200">{refreshedAt ? refreshedAt.toLocaleTimeString() : "Synchronized"}</strong></span>
               <span className="text-slate-600">•</span>
-              <span>SCIENTIFIC FRAMEWORK: <strong className="text-amber-400">CSRA Wheel · Campbell 3-Gate · EPRI CEI</strong></span>
+              <span>SCIENTIFIC FRAMEWORK: <strong className="text-amber-400">CSRA Wheel · SIF Decision Gates · EPRI CEI</strong></span>
               <span className="text-slate-600">•</span>
               <span>STORAGE: <strong className="text-slate-300 truncate max-w-[200px] inline-block align-bottom">{storageLabel}</strong></span>
             </div>
@@ -546,7 +546,7 @@ export default function DashboardPage() {
         />
       </section>
 
-      {/* 5. RESEARCH FEATURES 2, 4 & 5: Scientific Trio (Barrier Hierarchy, Shift Bias, Campbell Gates) */}
+      {/* 5. RESEARCH FEATURES 2, 4 & 5: Scientific Trio (Barrier Hierarchy, Shift Bias, SIF Decision Gates) */}
       <section className="grid gap-3 lg:grid-cols-3">
         {/* RESEARCH FEATURE 2: Direct vs Administrative Barrier Reliability */}
         <article className="rounded border border-surface-border bg-surface-card p-4 space-y-3">
@@ -648,17 +648,17 @@ export default function DashboardPage() {
           </div>
         </article>
 
-        {/* RESEARCH FEATURE 5: Campbell 3-Gate SIF Funnel Summary */}
+        {/* RESEARCH FEATURE 5: SIF Decision Gates Funnel Summary */}
         <article className="rounded border border-surface-border bg-surface-card p-4 space-y-3">
           <div className="flex items-center justify-between border-b border-surface-border pb-2">
             <div className="flex items-center gap-2">
               <span className="flex h-5 w-5 items-center justify-center rounded bg-sky-500/20 text-sky-400">
                 <GitFork className="h-3 w-3" />
               </span>
-              <h3 className="text-xs font-bold text-slate-100">Campbell 3-Gate Audit Funnel</h3>
+              <h3 className="text-xs font-bold text-slate-100">SIF 3-Gate Decision Funnel</h3>
             </div>
             <span className="rounded border border-sky-500/30 bg-sky-500/10 px-1.5 py-0.2 font-mono text-[9px] font-bold text-sky-300">
-              Campbell / NSC
+              Energy · Barrier · Line-of-Fire
             </span>
           </div>
 

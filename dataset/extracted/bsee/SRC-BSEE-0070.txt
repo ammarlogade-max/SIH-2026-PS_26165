@@ -1,0 +1,142 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+Temporary Equipment as a Potential Source of 
+Ignition on Offshore Facilities 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bureau of Safety and Environmental Enforcement field personnel have indicated a need 
+for increased operator awareness when using temporary equipment (TE). Some TE 
+may be a potential ignition source and can range from small items such as portable 
+welding sets to large skid-mounted packages (e.g., temporary generators, air 
+compressors, hydraulic power packs, well-testing equipment, process equipment, etc.)   
+Recent examples of unsafe (potential ignition sources) use of TE include: 
+Figure 1 -Welding Machine  
+Figure 2 - Process Skid  
+Figure 3 - Explosion-proof Junction Box  
+SAFETY ALERT 
+ 
+ 
+Safety Alert No. 449 
+September 7, 2022 
+
+• An incident of noncompliance (INC) was reported on a portable air compressor 
+powered by a diesel engine not rated for a hazardous area. It was running in the 
+Class 1, Division 2
+1
+ area next to an in-line heater treater. The heater was in 
+service and treating hydrocarbons. The air compressor had the potential to ignite 
+the hydrocarbons if an incident (a leak) was to occur.  
+• A diesel engine-driven power pack (hydraulic supply) was used to operate the 
+temporary power tongs. The power pack was in a hazardous classified area 
+above the shakers and within 10 feet of the drilling fluid return flowline. The shale 
+shakers and drilling fluid return flowline had the potential to contain and release 
+flammable gases and vapors.  
+• A portable fan was not rated for use in the Class 1, Division 2 area. It was 
+operating next to the sand trap tank located under the gas buster and adjacent to 
+the mud tank. The fan was connected to a power source with a non-explosion-
+proof extension cord. 
+ 
+BSEE recommends operators and contractors consider the following:  
+TE should be held to the same standards as the permanent equipment it is replacing or 
+supporting. When using TE, ensure that ignition sources are identified and controlled 
+using proper hazard analysis, ignition prevention devices and/or Emergency Shutdown 
+System (ESD)
+2
+. BSEE stresses, as a minimum, the following preventive measures be 
+considered:  
+• Inspecting and reviewing maintenance records and certificates of TE before it 
+arrives at the facility. TE rated for use in hazardous classified areas may be 
+unsafe if enclosures are damaged or wiring is exposed, damaged, or improperly 
+modified.  
+• Requesting approval from BSEE for installation and use of TE on production 
+platforms that handle hydrocarbons or other Class 1 gases or vapors. Seek 
+further clarification from BSEE if any TE may affect BSEE-approved drawings in 
+accordance with 30 CFR 250.867 “Temporary Quarters and Temporary 
+Equipment.” 
+• Ensuring your Safety and Environmental Management System program 
+addresses TE requirements and safely returns to normal operation following the 
+removal of the TE. 
+ 
+1
+ Class 1 Division 2 locations refer to an area where ignitable concentrations of flammable gases, vapors or liquids are not likely 
+to exist under normal operating conditions. In this area the gas, vapor or liquids would only be present under abnormal 
+conditions (most often leaks occur under abnormal conditions). 
+2
+ Emergency Shutdown System (ESD) is designed to minimize the consequences of emergency situations, related to typically uncontrolled 
+flooding, escape of hydrocarbons, or outbreak of fire in hydrocarbon carrying areas or areas which may otherwise be hazardous. 
+
+• In accordance with 30 CFR 250.1917, conducting a Pre-Startup Safety Review 
+3
+ 
+before TE is implemented to prevent unforeseen hazards from causing a 
+significant safety incident. 
+• In accordance  with 30  CFR  250.1912, ensuring personnel follow the company’s 
+Management of Change
+4
+ policy and procedures before installing and operating TE 
+on the facility. 
+• Before introducing and installing TE to the facility, completing and documenting a 
+risk assessment of all the equipment involved (permanent and TE).  Implement 
+mitigation of potential hazards resulting from the TE’s addition, use, failure, and 
+removal.  
+• Establishing safety guidelines, procedures, and training addressing the TE (e.g., 
+new gas detectors, updated alarm and ESD logic diagrams, additional means of 
+firefighting, etc.)   
+• Ensuring the potential impacts of the TE’s installation on existing safety systems 
+and barriers are identified, publicized, and coordinated, and area classification 
+drawings, egress routes, etc. are updated. 
+• Updating existing engineering drawings and documents to reflect all operational 
+changes and informing all appropriate personnel.  
+• Ensuring policies and procedures include requirements for installation, training, 
+removal, testing, maintenance, and hazard control using the TE.  
+• Ensuring responsibilities are assigned to individuals with clearly defined lines of 
+communication between various parties (e.g., operator and contractors). 
+   
+ 
+– BSEE – 
+ 
+ 
+ 
+ 
+ 
+3
+ Pre-Startup Safety Review (PSSR) – a technical review and inspection of equipment modification prior to startup to ensure that the 
+modification has been installed in accordance with the approved design standards, that procedures are in place and adequate, and that training 
+of affected personnel has been completed. 
+4
+ A MOC is used to ensure that the environmental, health, and safety risks are carefully evaluated and controlled prior to implementing 
+significant changes. The MOC process gives lessees and operators a chance to identify potential new hazards that could result from these 
+changes. 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Equipment  

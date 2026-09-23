@@ -1,0 +1,265 @@
+
+
+                       
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Safety Alert No. 234 	Contact: Sean Verret
+  December 9, 2005 	(281) 873-1856 
+Potential Obstructions to Mariners and Offshore Operators 
+This safety alert amends Safety Alert No. 233 with additional platform entries, modified 
+platform locations, and modified USCG Regulations. 
+Following Hurricanes Katrina and Rita, 115 platforms were found to be destroyed by hurricane force 
+winds and waves. These platforms have become potential obstructions to offshore operators and mariners 
+in the Gulf of Mexico. Over the past month, there have been three separate incidents of vessels striking 
+submerged platforms. One of the vessels sank, while all incidents resulted in potential pollution events.   
+To prevent any future incidents in regard to collisions with submerged or destroyed platforms, the 
+Minerals Management Service is providing the location of all facilities that were destroyed by both 
+hurricanes. (See attached).  This information will be posted on the MMS website and updated as 
+appropriate. 
+MMS therefore recommends that:  
+1. Mariners and offshore operators exercise appropriate caution when operating in the vicinity of these 
+damaged and submerged facilities. 
+2. OCS Lessees and Operators review and comply with 30 CFR 250.1741 (c) while performing any site 
+clearances within the Outer Continental Shelf of the Gulf of Mexico. 
+3. All obstructions to navigation must be marked in accordance with the USCG regulation 33 CFR 64.  If 
+the owner cannot accomplish this within a reasonable amount of time, then they must contact the USCG 
+District Commander in New Orleans. 
+Notes: 
+1.	 Platforms included in the attachments do not necessarily indicate platforms are partially 
+
+submerged. 
+
+2.	 Latitude and Longitude columns in attachments are in NAD 27 decimal degrees and not in 
+degrees, minutes, and seconds. 
+3.	 Water depth columns in attachments gives water depth of location and not water depth above 
+submerged obstacle. 
+4.	 Platforms listed in attachments could potentially be removed from the attachment after further 
+damage assessment is conducted. 
+5.	 Single asterisks indicate new entries.  Double asterisks indicate platform location modification. 
+—MMS—GOMR— 
+www.gomr.mms.gov 
+
+ 
+ 
+ 
+     
+  
+ 
+Attachments 
+Katrina Destroyed Platforms that are Potential Obstructions to 
+Mariners (12/9/2005) 
+Area     Block     
+Platform 
+Name 
+Latitude 
+(Decimal 
+Degrees) 
+Longitude 
+(Decimal 
+Degrees) 
+Water 
+Depth 
+(ft) 
+GI         32         J         29.01037         -89.8576         106         
+GI         40         B         28.97133         -90.0357         83         
+GI         40         F         28.96915         -90.021         86         
+GI         41         A         28.98449         -89.9623         91         
+GI         47         C         28.9604         -90.0235         88         
+GI         48         D         28.96041         -90.0436         86         
+MP       138       A       29.33916       -88.8028       158       
+MP       270       A       29.33379       -88.5271       205       
+MP       298       B-VALVE       29.26973       -88.7168       222       
+MP       306       D       29.22492       -88.5526       255       
+MP       312       JA       29.17999       -88.765       248       
+PL         20         39         28.89818         -90.7053         30         
+SP        62        A        29.07952        -88.7439        340        
+SP        62        B        29.09237        -88.7214        322        
+ST         21         75         28.99462         -90.2472         47         
+ST         21         71         28.99214         -90.242         48         
+ST         21         67         28.99559         -90.2479         46         
+ST         21         1         29.01449         -90.272         37         
+ST         21         22         29.02297         -90.2595         36         
+ST         21         27         29.01468         -90.2564         40         
+ST         21         66         29.00162         -90.247         45         
+ST         21         25         29.01127         -90.2579         40         
+ST         21         E         29.02434         -90.2594         40         
+ST         21         31         29.02346         -90.2665         36         
+ST        135        M        28.63503        -90.2819        116        
+ST        151        O        28.61544        -90.2524        137        
+ST        151        I        28.62567        -90.2722        128        
+ST        151        G        28.61718        -90.2494        137        
+ST        161        B        28.55322        -90.4261        120        
+ST        161        A        28.56931        -90.409        117        
+ST        176        A        28.51053        -90.3857        140        
+WD        69        C        28.97967        -89.8435        121        
+WD        69        K        28.96442        -89.8356        134        
+WD        70        H        28.94485        -89.8098        141        
+WD        94        G        28.93363        -89.7791        153        
+WD       103       B       28.8655       -89.6441       228       
+WD       103       A       28.86195       -89.6568       223       
+WD       104       C       28.86144       -89.632       228       
+WD       117       D       28.81888       -89.7899       195       
+WD       117       E       28.81351       -89.7846       208       
+WD       117       C       28.80957       -89.788       214       
+WD       117       QRT       28.80888       -89.7871       214       
+WD       117       F       28.81031       -89.7923       200       
+WD       133       
+B       28.73155       -89.693       285       
+WD       137       A       28.70332       -89.8278       310       
+WD        95        #5        Well        28.90581        -89.8207        150        
+
+     
+  
+ 
+*
+* 
+** 
+** 
+* 
+* 
+Rita Destroyed Platforms that are Potential Obstructions to Mariners 
+(12/9/2005) 
+Area     Block     
+Platform 
+Name 
+Latitude 
+(Decimal 
+Degrees) 
+Longitude 
+(Decimal 
+Degrees) 
+Water 
+Depth 
+(ft) 
+EC         71         8         29.3468         -92.7158         53         
+EC 
+151                C                28.97605                -92.8565                80                
+EC 
+160            A-Aux            28.93935            -92.7468            85            
+EC        160        C        28.95079        -92.7388        84        
+EC        161        A        28.94855        -92.7244        85        
+EC 
+195                A                28.75639                -92.8027                103                
+EC        222        D        28.63444        -92.7714        123        
+EC 222 A - PROD 28.6479 -92.7907 110 
+EC        254        B        28.4799        -92.637        164        
+EC        272        A-AUX1        28.41847        -92.6285        182        
+EC        272        A        28.41894        -92.6285        182        
+EC        286        B        28.38508        -92.7504        186        
+EC        322        A        28.19854        -92.7191        230        
+EI        276        D        28.42849        -91.4658        176        
+EI        276        B-PRD        28.44477        -91.4715        172        
+EI        294        A        28.3667        -91.6301        204        
+EI        313        B        28.25741        -91.7937        240        
+EI        313        C        28.28695        -91.7945        230        
+EI        314        F        28.27875        -91.7272        230        
+EI        314        J        28.27916        -91.7275        230        
+EI        
+330        S        28.22654        -91.6843        254        
+EI        333        A        28.25671        -91.8081        231        
+EI        338        A        28.20684        -91.6858        253        
+EI        271        
+A-Typhoon 
+TLP – 
+Approx. Final 
+Location 
+28.42309       -91.7999       
+Approx. 
+180 
+HI 
+A 467 D 28.29372 -93.9761 187 
+SM        11        K        28.96373        -91.9764        68        
+SM        11        B        28.96182        -91.9838        68        
+SM        11        J        28.96508        -91.9967        68        
+SM        49        B        28.74861        -91.864        98        
+SM        66        A        28.64449        -91.9484        128        
+SM        66        E        28.61159        -91.9697        134        
+SM        76        B        28.59642        -91.9615        140        
+SM        90        A        28.51395        -92.0358        163        
+SM       108       D       28.42356       -91.9569       183       
+SM 
+128            A-PRD            28.31712            -91.909            228            
+SS         69         16         28.97293         -90.8399         28         
+SS        148        H        28.73566        -91.1864        44        
+SS        169        A        28.66005        -91.0084        54        
+SS        177        C        28.59793        -91.2498        92        
+SS        181        K        28.61683        -91.0883        67        
+SS        193        B        28.56956        -91.0094        86        
+SS        218        D        28.50902        -91.0717        112        
+SS        219        C        
+28.51249        -91.1172        113        
+SS        253        A-AUX        28.37417        -91.0736        165        
+SS        269        A        28.33145        -91.2049        170        
+ST         51         CH         28.87273         -90.4753         62         
+ST        146        A        28.59608        -90.4801        96        
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ST        161        D        28.55298        -90.4267        120        
+VR        131        5        29.06804        -92.1725        56        
+VR        131        CF        29.06539        -92.1756        57        
+VR        201        A        28.78788        -92.6085        83        
+VR        217        A        28.69121        -92.4114        121        
+VR        245        B        28.58514        -92.4499        126        
+VR 245 C - DRILL 28.57583 -92.4612 131 
+VR        255        B        28.54102        -92.3178        152        
+VR        255        A        28.53466        -92.3305        158        
+VR        273        A        28.47178        -92.2103        185        
+VR        340        JA        28.20471        -92.4457        227        
+WC        45        5        29.67626        -93.6036        28        
+WC        56        CAIS.#15        29.64355        -93.5867        34        
+WC       110       3       29.50914       -93.2648       40       
+WC       110       9       29.50911       -93.2764       41       
+WC 
+110               10               29.50456               -93.2771               40               
+WC       110       1       29.50564       -93.2787       40       
+WC       168       CAIS.#2       29.40027       -93.3871       
+44 
+WC       172       E       29.40717       -93.2435       47       
+WC       176       2       29.38968       -93.0146       49       
+WC       229       A       29.1367       -93.2903       65       
+WC       313       1       29.19479       -93.5624       59       
+* 
+* 

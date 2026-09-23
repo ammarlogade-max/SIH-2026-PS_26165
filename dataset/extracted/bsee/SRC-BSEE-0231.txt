@@ -1,0 +1,60 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 285 	Contact:  Glynn T. Breaux 
+15 December 2009 	(504) 736-2560 
+Compressor Starter Exhaust Flash Fire 
+Recently personnel were diagnosing problems with the fuel/air management system on a gas 
+compressor.  When the compressor’s starter would not turn rapidly enough to start the engine, 
+one of the mechanics believed there may be excessive pressure from a restriction in the exhaust 
+piping and he disconnected the exhaust piping from the starter.  Fuel gas was being used as the 
+starting media.  The mechanic then attempted to start the compressor utilizing a manual starter 
+valve.  When the start valve was opened, gas vented from the disconnected starter exhaust vent.  
+A flash fire occurred, burning the mechanic’s face and right hand.  
+A Minerals Management Service (MMS) investigation into this incident revealed the following 
+findings: 
+Evidence indicates that a possible ignition source was a spark generated from the 
+
+engagement of the starter bendix and the engine flywheel.  
+
+A Job Safety Analysis (JSA) was prepared by one of the mechanics; however, the JSA 
+did not identify any site-specific hazards and only addressed diagnosing the fuel/air 
+management system problem; the JSA did not address the disconnection of the starter 
+exhaust piping. 
+Personnel involved in the compressor project failed to exercise Stop Work Authority 
+(SWA) when the job scope changed from diagnosing the fuel/air management system 
+problem to diagnosing the starter problem. 
+Therefore, the MMS recommends the following: 
+When using fuel gas to start prime movers, always ensure that the exhaust gas is vented 
+to a safe location. 
+Site-specific JSAs should be conducted that accurately reflect the job at hand.  When the 
+scope of work changes, the JSA should be reviewed and changed accordingly.  Refer to 
+Safety Alert #276 for additional information regarding JSAs.  
+--MMS--GOMR--
+www.gomr.mms.gov 

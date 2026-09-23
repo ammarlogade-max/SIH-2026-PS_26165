@@ -1,0 +1,63 @@
+
+
+   
+ 
+   
+ 
+ 
+                                                                
+Safety Alert No. 400                                Contact: Nicholas Fraiche 
+ October 9, 2020                                        Phone: (504) 736-7631                                                   
+ 
+Trapped Pressure Ejects Rod From Chamber and Strikes 
+Subsea Technician in   the Face 
+ 
+ 
+ 
+ 
+ 
+During blow-out preventer equipment pressure testing operations, a subsea technician 
+sustained an injury while removing the Hands-Free Goose Neck (HFGN) locking cylinder 
+assembly bolts. The technician was performing a work-around procedure when a sheared 
+indicator rod ejected
+ from the back side of the HFGN cartridge operator, striking the 
+technician’s safety glasses and face. The rod then continued to travel past two 
+supervisors and landed on the upper moon pool platform. 
+An investigation indicated that the choke and kill stab locks would not retract because 
+both the indicator rods sheared. The contractor’s maintenance records showed the 
+indicator rods sheared several months earlier but were not repaired or replaced. Instead 
+of fixing the sheared indicator rods, the subsea team performed a work-around procedure 
+to retract the choke and kill stab locks. This work-around did not note the hazard of 
+indicator rods loose inside the cartridge operator flange after both sheared from the de-
+coupling segments.  
+BSEE recommends that operators and contractors consider the following:  
+• Maintain equipment in accordance with OEM specifications; 
+• Follow proper procedures when performing work orders; 
+• Do not use “Out of Service” equipment; 
+• Do not create work-around procedures for “Out of Service” equipment; and,  
+SAFETY ALERT 
+ 
+ 
+Sheared Indicator rod ejected from Hands-Free Goose Neck (HFGN) cartridge operator striking a subsea technician’s safety 
+glasses. 
+
+   
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.  
+ 
+• Always be cognizant of potential trapped pressure and note this as a hazard on 
+procedures and Job Safety Analysis.     
+ 
+--BSEE-- 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  

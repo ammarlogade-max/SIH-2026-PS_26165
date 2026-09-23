@@ -1,0 +1,48 @@
+
+
+ 
+ 
+Safety Alert No. 370                                Contact: Stephen Harris 
+November 8, 2019                               Phone: (504) 736-3249 
+ 
+ 
+ 
+Overcharged Battery in Non-V entilated Box  
+Lead to Explosion of Remote Terminal Unit Panel 
+ 
+On February 14, 2019, a Remote Terminal Unit (RTU) panel (used for sending gas sales 
+data to shore) exploded. Projectiles from the components landed over 40 feet away. There 
+were no injuries and no damage to nearby equipment.   
+The investigation found evidence that a 12 Volt battery inside the panel was overcharged. 
+This produced enough hydrogen gas to create an explosive mixture within the panel. The 
+hydrogen gas was likely ignited by an electrical component within the panel that was not 
+rated for the Area Classification in which it was installed.  
+American Petroleum Institute (API) Recommended Practice (RP) 14F (incorporated by 
+reference in 30 CFR 250.198) states, “[a]ll rechargeable type batteries release hydrogen 
+to the atmosphere in varying degrees” ... “[a]ll rechargeable battery systems should be 
+installed such that hydrogen cannot collect in sufficient quantity to create a hazard.”  
+The overcharged battery was installed in a non-ventilated panel, creating a Class 1 
+Division 1 location as defined in API RP 500. The components inside the panel were not 
+rated for use in a Class 1 Division 1 location, so one of these non-rated components may 
+have been the ignition source for the explosion.  
+ 
+ 
+SAFETY ALERT 
+ 
+ 
+Remote Terminal Unit Panel 
+Overcharged 12 Volt Battery 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+Therefore, BSEE recommends that operators consider the following: 
+•    Ensure battery enclosures comply with API RP 500; 
+•    Confirm all rechargeable battery systems are installed properly to prevent the level 
+of    hydrogen collection that can create a hazard. Refer to API RP 14 F section 4 for 
+protection methods; and, 
+•    Verify all electrical components are rated for the area classification in which they 
+are installed. Pay attention to  third party installations, especially when a third party 
+may not be familiar with the facility’s Area Classification layout drawings.  
+--BSEE-- 
+ 

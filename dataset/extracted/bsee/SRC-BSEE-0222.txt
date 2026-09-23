@@ -1,0 +1,56 @@
+
+
+ 
+ 
+U.S. Department of the Interior 
+Bureau of Ocean Energy Management, 
+Regulation and Enforcement 
+Gulf of Mexico OCS Region  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BOEMRE 
+Safety 
+Alert 
+ Blowout Preventer Automatic Mode (Deadman) Activation 
+Safety Alert No. 294 Contact:  Lance Labiche 
+April 14, 2011 (504) 736-2433 
+Following the Deepwater Horizon incident in April 2010, BOEMRE promulgated the “Increased 
+Safety Measures” rule with an effective date of October 14, 2010.  This rule, in part, requires 
+operators 
+to submit (as part of the drilling permit process) schematic drawings of all blowout 
+preventer equipment including all control systems and pods.  This rule further requires operators 
+to conduct a test of the automatic mode (deadman) activation system during the initial BOP test 
+on the seafloor.  During the Bureau’s review process of one of the drilling permits, it was 
+determined through discussions with an operator that in the event of a deadman activation, the 
+blind shear ram may open up immediately upon re-establishing power to the BOP stack.   
+In light of this discovery, BOEMRE recommends that operators and drilling contractors review 
+their deadman activation procedures and control logic to ensure that the inadvertent opening of 
+the blind shear does not occur when power is re-established to the BOP stack.  One operator has 
+presented a possible mitigation procedure that places the blind shear ram opening function in the 
+“block” position prior to re-establishing power to the stack.   
+Further, BOEMRE will be reviewing all deadman testing procedures and control logic as part of 
+the permit approval process to ensure that this recommendation has been taken into consideration 
+and addressed.  Failure to address this issue and recommendation may delay the permit approval.  
+For further information, please direct all calls to the individual identified above. 
+--BOEMRE--GOMR--
+www.gomr.boemre.gov 
+A Safety Alert is a tool used by BOEMRE to inform the offshore oil and 
+gas industry of the circumstances surrounding an accident or a near miss. It 
+also contains recommendations that should help prevent the recurrence of 
+such an incident on the Outer Continental Shelf. 

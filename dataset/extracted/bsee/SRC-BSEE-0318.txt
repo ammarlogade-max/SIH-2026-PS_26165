@@ -1,0 +1,43 @@
+Safety Alert No. 201http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_201...
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 201Contact: Jack Williams
+June 19, 2002(504) 731-3012
+Viton "O"-Rings Failure
+Recently, an operator took a controlled shutdown at a major deep-water production platform
+following six observed gas leaks to atmosphere in similar circumstances, all from valves in the HP and
+IP service (600 psi or greater). The valve failures included 10- and 12-inch valves– five with trace
+leakage and one with significant (8 mcf) leakage.
+Following an investigation, the operator reports the failure mechanism to be explosive decompression
+(ED) of High Flourine and Flourocarbon (commonly referred to as "Viton family") elastomer o-ring
+seals. Explosive decompression is a process in which gases that have been trapped within the given
+material are rapidly expanded, causing seals to blister, crack, and fail. The Viton elastomer is
+commonly found in ball valves, check valves, rotating equipment seals, and pressure safety valves.
+Of concern to the operator are the following elastomers: (1) High Flourine FKM (such as Viton GF)
+elastomers, used in "o"-ring seals and which are apparently not explosive-decompression resistant at
+certain operating pressures; (2) Flourocarbon FKM (such as Viton A & B) elastomer, unless quality
+controlled with regard to hardness and other properties.
+The operator inspected more than 100 components following the above failures. Over 70 percent of
+the Viton elements inspected are possibly defective or questionable, suffering some degree of
+explosive decompression. High Flourine FKM was more susceptible to ED than other elastomers.
+The operator concluded that some FKM elastomers are not resistant to explosive decompression at
+certain operating pressures. In addition, some laboratory analysis to date demonstrates that some
+elastomers exhibit hardness (a key quality regarding ED resistance) below the product specification
+range. The operator concluded that some Flourocarbon FKM used in more recently commissioned
+projects are less ED resistant than samples taken from earlier construction.
+The operator has recommended that inventories of the subject elastomers be checked to ensure that
+they are of the required quality and specification for an operation. These include materials that may
+have been obtained over the last 36 months. The operator also recommends that inventories be
+checked to ensure that elastomers are not being inappropriately used in pressures for which they do
+not meet the design criteria. The elastomer materials in question may have been used in valves
+constructed by several manufacturers within the last 36 months.
+The MMS has not carried out independent tests to confirm the above data for the purpose of this
+Safety Alert. However, the MMS believes the data presented are of importance to the industry and
+recommends operators review their individual use of the above materials.
+1 of 22/21/2012 4:34 PM
+
+—GOMR—MMS—
+Visit our Safety Information Website
+Safety Alert No. 201http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_201...
+2 of 22/21/2012 4:34 PM

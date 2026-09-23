@@ -1,0 +1,79 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+BSEE Investigation: Failure to Properly Identify and Restrict Access 
+to Faulty Grating Poses Serious Risk of Worker Injury or Fatality 
+ 
+ 
+The Bureau of Safety and Environmental Enforcement (BSEE) recently investigated an 
+incident at a Gulf production facility that could potentially have resulted in a worker 
+injury or fatality. During a facility walkthrough, operator personnel had identified grating 
+near a skid as a hazard due to corrosion and installed hard barricades to prevent 
+access. However, shortly thereafter, operator personnel installed two scaffolding boards 
+on top of the previously identified grating hazard and removed the hard barricades so 
+work could proceed (Figure 1). A worker tasked with installing a pump in the skid above 
+the unsafe grating was kneeling on the scaffolding boards with the tip of his boots 
+resting on the grating when the corroded section of grating suddenly gave way (Figure 
+2). The worker was able to quickly react, grabbing hold of a nearby section of piping to 
+support himself. Upon further inspection, the worker later realized the 36 by 36-inch 
+piece of grating beneath the scaffolding boards he was kneeling on had collapsed and 
+fallen into the water. 
+Following the incident, operator personnel placed additional boards over the resulting 
+open hole in the grating but did not install hard barricades or identify the area as a 
+hazard.  
+Hard barricades were later reinstalled, and the grating was subsequently replaced. 
+ 
+  
+ 
+Safety Alert No. 496 
+March 6, 2025 
+Figure 1: Faulty grating covered in scaffold 
+boards (right). 
+Figure 2: Operator’s body position at time of 
+incident. 
+
+ 
+ 
+BSEE recommends that operators and their contractors, where appropriate, do 
+the following: 
+• Review BSEE Notice to Lessees No. 2024-N03 Restricting Access to Unsafe 
+Areas Due to Corrosion NOTE: Lessees and Operators are required to comply 
+with 30 CFR 250.107, What must I do to protect health, safety, property, and the 
+environment by  “maintaining all equipment and work areas in a safe condition.” 
+30 CFR 250.107(a)(2). 
+• Review in conjunction with this Safety Alert, BSEE Safety Alert 416 - 
+Investigation into Grating Failure Fatality Reveals Deficiencies, and BSEE Safety 
+Alert 365 - BSEE Identified Grating and Open Hole Hazards During Risk Based 
+Inspections.  
+• Conduct a thorough walkthrough of the facility to identify open holes and check 
+that potentially unsafe surfaces can safely support the weight of individuals 
+working on or around them. If such an area or open hole is identified, ensure it 
+has been properly barricaded and/or covered. 
+• Review internal and contractor Safe Work Practices to ensure that operations 
+personnel clearly understand the requirements and expectations for the use of 
+barricades. Effective hard barricades should be rigid, immovable structures that 
+create a barrier to restrict access to hazardous or unsafe areas.  
+• Review and adhere to 30 CFR 250.1909 (h): Ensure that management of safety 
+hazards and environmental impacts is an integral part of the design, construction, 
+maintenance, operation, and monitoring of each facility. 
+• Review and adhere to 30 CFR 250.1914 (f): You must inform your contractors of 
+any known hazards at the facility they are working on, including but not limited to 
+fires, explosions, slips, trips, falls, other injuries, and hazards associated with 
+lifting operations. 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: General; Grating/Open Holes 

@@ -1,0 +1,53 @@
+
+
+ 
+Safety Alert No. 397                               Contact: Jason Mathews 
+October 2, 2020                                         Phone: (504) 731-1496 
+ 
+ Fire Tube Hazards Increase Risk of Flame Migration  
+ 
+                                                              
+In October 2019, BSEE inspectors identified deficiencies associated with the fire tubes of 
+multiple vessels during an annual inspection of a production platform. The problem resulted 
+in the issuance of Incidents of Noncompliance. 
+               
+ 
+The failures occurred because the flange faces of the flame arrestor housings   were not 
+flush, which is essential to its function. The resulting gap allowed the potential for flame 
+migration to occur from the firing chamber to the Class I Division 2 Hazardous 
+environment directly outside the process component. 
+The fire tubes for both the Heater Treater and Glycol Reboiler units were removed, 
+inspected, and reinstalled a month prior to the arrival of BSEE inspectors. The fasteners 
+(i.e. nuts and bolts) used for the reinstallation in September 2019 were not Original 
+Equipment Manufacturer (OEM) parts and therefore, not compatible with the vessels. 
+Despite the improper reinstallation, the vessels were brought back online and production 
+continued.  
+At the time of BSEE’s inspection, the flange faces were visibly warped and a gap in the 
+flange created a path for flame migration due to the insufficient fastener assembly. 
+ 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+•    Create a fit for purpose Pre-Startup Review when disassembling equipment for 
+routine maintenance to verify that proper reinstallation procedures are implemented 
+SAFETY ALERT 
+ 
+ 
+Improper bolts on a Glycol Reboiler      A warped Reboiler flange         A gap in a Heater Treater flange is shown with no Gasket 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+appropriately prior to returning equipment online; 
+•    Ensure only OEM recommended parts are applied to their associated equipment 
+rated for a specific service; 
+• Increase visual inspection frequencies of flame arrestors to ensure an adequate 
+flange face seal is intact; 
+• Examine the fit and make-up of all parts around the flame arrestor housing during 
+any maintenance that disturbs OEM connections in order to eliminate any flow path 
+around the fired component that would negate its efficacy; and, 
+• Review this Safety Alert in conjunction with Safety Bulletin No. 012 to prevent gaps 
+in    a flange face. 
+ 
+--BSEE-- 
+ 

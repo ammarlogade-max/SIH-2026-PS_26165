@@ -1,0 +1,135 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+Flash Fire from Oxygen Regulator Leads to Burn Injury 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+During the process of decommissioning a platform, a    derrick barge crew member 
+sustained first-  and second-degree burns on his left wrist when he reached out to grab 
+an oxygen bottle valve, even though he was wearing rigging gloves and a fire-retardant 
+shirt ( Figure 1). This happened because an oxygen bottle regulator ( refer to Figure 2) 
+suddenly burst, starting a    flash fire while the crew member was turning   the valve to 
+supply oxygen for welding. The crewmember’s wounds were treated with b urn gel.      
+ 
+When dealing with oxygen systems, it is crucial to understand the interconnection of the 
+three elements of the fire triangle
+1
+: the oxidizing agent (oxygen); system components 
+(valves, regulators, fittings, cylinders etc.) serving as the fuel source; and the interaction 
+among system components to create the potential ignition source. 
+ 
+ 
+1
+ The fire triangle or combustion triangle is a simple model for understanding the necessary ingredients for most fires. 
+The triangle illustrates the three elements a fire needs to ignite: heat, fuel, and an oxidizing agent. A fire naturally 
+occurs when the elements are present and combined in the right mixture
+. 
+  
+ 
+Safety Alert No. 475 
+Nov. 14, 2023 
+Figure 1: Burn injury to wrist of operator. Figure 2: Damage to aluminum fitting on regulator. 
+
+ 
+ 
+During the incident, the aluminum regulator attached to the oxygen bottle was directly 
+exposed to the high-pressure environment and a flow of oxygen-rich gas, creating a 
+susceptible chain for potential ignition. Ignition sources in an oxygen system can 
+include:  
+1.) Heat: produced at a point of a striking blow. 
+2.) Impact:  from high velocity particle flow.  
+3.) Friction:  from two solid materials rubbing together. 
+4.) Compression –   Expansion Heating:
+2
+ Rapid pressure changes,  such as the 
+quick opening of a valve, can lead to compression-expansion heating of gas, 
+potentially causing ignition. 
+ 
+Therefore, BSEE recommends that operators and their contractors, where 
+appropriate, consider the following: 
+ 
+• Ensuring proper training and awareness of oxygen system safety among all 
+personnel. 
+•    Exercising caution to prevent exposure of skin w hen handling oxygen bottles and 
+equipment. 
+• Regularly inspecting and maintaining oxygen system components to identify and 
+address potential issues. 
+• Following manufacturer guidelines and industry best practices for the safe 
+handling and use of oxygen equipment. 
+• Maintaining a safe distance from oxygen systems during operations to reduce the 
+risk of exposure to potential ignition sources. 
+•    Using oxygen bottle regulators constructed with brass fittings rather than 
+aluminum. Aluminum easily ignites in high-pressure oxygen, burns rapidly, and 
+has very high heats of combustion. 
+• Adhering to the following guidelines to ensure safety during valve operations: 
+o Opening v alves slowly: When operating valves, particularly those 
+connected to oxygen systems, always open them slowly. Rapid valve 
+ 
+2
+Compression– Expansion Heating:  also called “adiabatic heating” refers to an increase in temperature that 
+happens when air or gas is compressed (squeezed) and then expands without any heat being added or taken away 
+from the surroundings.  It’s the result of changes in pressure and volume without heat exchange with the 
+environment.  
+
+ 
+ 
+opening can subject passageways to a rapid compression, leading to a 
+rise in temperature and the possibility of ignition. 
+o Positioning v alves away from the operator: Ensuring that valves are 
+positioned away from the operator’s body. This positioning minimizes the 
+risk of exposure to any unexpected release of gases or potential ignition 
+sources. 
+o P
+reventing p article introduction: F ast valve opening can introduce 
+particles into the flow path of the regulator. These particles, when 
+released, could ignite large materials within the system. To mitigate this 
+risk, open valves in a controlled manner. 
+• Ensuring warning labels are in adequate condition and clearly legible on valve 
+regulators as applicable. 
+•    Ensuring oxygen refilling stations,  and maintenance areas where oxygen 
+equipment is serviced, are clean and free of dirt, oils, and grease to prevent 
+valves from collecting any residual contaminants.  
+ 
+• Ensuring proper Personnel Protective Equipment (PPE)
+3
+ is    always worn during 
+the operation or maintenance of an oxygen regulator, including well-fitting shirt 
+sleeves that will not ride up upon movement. 
+ 
+ 
+– BSEE – 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3
+ Personal protective equipment, commonly referred to as "PPE", is equipment worn to minimize 
+exposure to hazards that cause serious workplace injuries and illnesses. These injuries and illnesses may 
+result from contact with chemical, radiological, physical, electrical, mechanical, or other workplace 
+hazards. 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that could 
+assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Fire; Personnel Safety 

@@ -1,0 +1,5 @@
+event_type,count,percentage
+NEAR_MISS,1524,50.48%
+INCIDENT,1438,47.63%
+UC,33,1.09%
+UA,24,0.79%

@@ -1,0 +1,144 @@
+
+
+ 
+ 
+  Figure 2 - Part of casing protruding out of well drive-pipe.                                                                                      
+                                                                                                        
+Figure 1 - Deformed grating above casing deck.                
+   
+Fatality Caused by Failure to Use Safety 
+Devices with Temporary Test Equipment  
+    
+ 
+On May 15, 2021, an incident resulted in the fatality of an offshore worker when two 
+production personnel were pressure testing a 16-inch well surface casing and an 
+explosion occurred. The explosion entailed a high-pressure release with no signs of 
+ignition. 
+Information obtained by BSEE during the subsequent investigation determined that 
+personnel were using a high-pressure well to supply the pressure to the well casing. 
+They installed temporary test equipment that included a high-pressure hose and a 
+digital pressure gauge, but they did not use the pressure-regulating device and pressure 
+safety valve during the pressure test. 
+The personnel first opened the surface safety valve to begin the casing pressure test on 
+the 16-inch casing. They then opened the needle valve on the top of the source well 
+Safety Alert No. 476 
+Nov. 21, 2023 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: 800.200.4853 
+Bureau of  
+Safety and  
+Environmental 
+Enforcement 
+SAFETY ALERT 
+
+ 
+ 
+and the needle valve on the receiving well’s 16-inch casing. The target test pressure 
+was 250 pounds per square inch gauge (psig)
+1
+. Also, at the time of the test, the 
+production personnel were unaware of the pressure rating for the 16-inch casing. As 
+they were monitoring the test pressure, the 16-inch well casing exploded, releasing fluid 
+through a 1½-inch opening between the 36-inch drive pipe and the wellhead base plate. 
+The resulting surface casing failed due to overpressure, fatally injuring the worker.  
+The section of grating above the casing deck was disfigured and blown upwards from 
+the explosion (Figure 1). Oil residue was observed on handrails, piping, and platform 
+structure beams. The force was so powerful that the surrounding area handrails were 
+disfigured; a section of the handrail was blown off the platform and never recovered. 
+The paint on the surrounding structure beams was blasted down to the bare metal. On 
+the casing deck, the force from the explosion created a slight bend upward of the 
+wellhead 1-inch-thick base plate (Figure 2). 
+BSEE’s investigation identified the following:  
+• The production personnel conducted a pressure test using temporary test 
+equipment without using a pressure regulator and pressure safety valve, which 
+resulted in the overpressure and subsequent explosion of the well’s 16-inch 
+casing. 
+• The operator failed to develop and/or implement a hazards analysis (facility level) 
+and a Job Safety Analysis (operations/task level) for the activities on May 15, 
+2021, as required within its Safety and Environmental Management Systems 
+(SEMS) manual. 
+• The production personnel failed to follow the Pre-job Planning Safe Work 
+Practice, as required within its SEMS manual. By neglecting to follow this 
+practice, the operator compromised the safety of personnel and deviated from 
+the established protocols outlined in the SEMS manual. 
+• The ability to switch between output modes on the digital gauge created a 
+potential scenario where the production operator could have inadvertently read 
+the pressure displayed in units of bars instead of pounds per square inch. 
+• The operator neglected to carry out the necessary Management of Change 
+(MOC) process before installing and utilizing temporary equipment, as explicitly 
+ 
+1
+ PSIG is the term for pressure specified by a gauge or other pressure measurement device. It gives the 
+difference between the pressure in a pipe or tank and the pressure of the atmosphere (atm). Gauge 
+pressure is measured relative to ambient atmospheric pressure. 
+
+ 
+ 
+outlined in its SEMS manual. This failure to adhere to established procedures 
+posed a significant risk to personnel safety and operations integrity.  
+BSEE therefore, recommends that operators and their contractors consider: 
+• Ensuring that the pressure rating for all temporary equipment is verified to be 
+compatible to specific application prior to use. 
+• Utilizing a pressure regulating device and a pressure safety valve to protect 
+against overpressure anytime temporary equipment is utilized where the source 
+pressure is greater than any downstream components’ existing pressure rating.   
+• Implementing training sessions and raising awareness among personnel to 
+enhance their proficiency in utilizing, interpreting, and accurately reading units of 
+measurement recorded by all gauges and measurement devices. Proper 
+understanding of how measurement devices are used is essential for maintaining 
+safety protocols.   
+• Ensuring that a hazard analysis is thoroughly evaluated during the development 
+of pressure testing procedures. This analysis should consider all potential 
+hazards associated with the pressure testing operation. Furthermore, it is 
+imperative to include the implementation of all necessary hazard mitigation 
+measures.   
+• Establishing and documenting comprehensive procedures for assessing the 
+potential hazards and risks associated with individual inactive wells. The 
+outcome of this assessment should then be utilized to prioritize the abandonment 
+process.   
+• Ensuring that all operations and contract personnel engaged in any pressure 
+testing activities attend and actively participate in a pre-job meeting or toolbox 
+talk. It is also essential to document the proceedings of these meetings. 
+Furthermore, all operations and contract personnel should review the Job Safety 
+Analysis (JSA) and ensure all hazards are acknowledged and policies, 
+procedures, guidelines, contingencies, and communications are understood. 
+BSEE reminds industry of the following:  
+• The need to comply with 30 CFR § 250.867(c), “Temporary equipment 
+associated with the production process system, including equipment used for the 
+well testing and/or well clean-up, must be approved by the District Manager.” 
+Following this regulation will ensure that BSEE has an opportunity to review the 
+temporary piping or equipment and help ensure that the temporary piping or 
+
+ 
+ 
+equipment complies with API Recommended Practice 14C, as well as all 
+applicable production safety system regulations. 
+ 
+• The need to comply with 30 CFR § 250.1914 for safe work practices and 
+contractor safety management. Specifically, paragraph (b) states that operators 
+are responsible for ensuring and documenting that employees are 
+“knowledgeable and experienced in the work practices necessary to perform their 
+job in a safe and environmentally sound manner.”   
+ 
+• The need to comply with 30 CFR § Subpart S, 250.1900-1933 – Safety and 
+Environmental Management Systems (SEMS). The requirements include, but are 
+not limited to, understanding hazards before starting a job, communicating those 
+hazards, ensuring personnel are competent to manage the hazards through 
+proper mitigation methods, ensuring that equipment is capable of and suitable for 
+managing and mitigating hazards, and that all personnel understand the use of 
+and need for Stop Work Authority for any reason. 
+ 
+• The need to comply with 30 CFR § 250.1912 – that all individuals follow the 
+company’s MOC policy and procedures when it comes to the installation and 
+operation of temporary equipment. Furthermore, before initiating any pressure 
+testing activities on the facility, workers should take the necessary precautions 
+identified during the assessment and management of any changes made to the 
+existing procedures or equipment as specified in mentioned policies and 
+procedures. 
+ 
+Additional information is included in BSEE Panel Report 2023-004. 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist in avoiding potential incidents on the Outer Continental Shelf. 
+Category: Fatality, Explosion 

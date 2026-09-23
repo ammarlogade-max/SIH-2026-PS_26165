@@ -1,0 +1,86 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+ 
+ 
+BSEE Identifies Dropped Object Hazards During  
+Risk-Based Inspections 
+    
+                                     Crane lifting a bundle of drill pipe while BSEE engineer observes the activity. 
+ 
+A recent data analysis pointed to risks associated with dropped objects on both 
+production and well operations. During the time frame reviewed, multiple high potential 
+incidents related to lifting equipment (cranes, elevators, top drives, pipe racking 
+systems, etc.) occurred throughout the GOMR. BSEE developed a unique inspection 
+protocol that focused on reducing the likelihood of similar incidents and compliance 
+issues Gulf-wide. After the inspections, BSEE concluded: 
+• The majority of inspected production facilities did not have an implemented 
+dropped object prevention program. However, deep-water drilling rigs did appear 
+to have programs in place that identified and mitigated hazards associated with 
+objects that have the potential to fall from height.  
+• Most of the facilities inspected had some version of a Hazard Hunt, but only a 
+limited portion focused on the potential of dropped objects. Additionally, BSEE 
+found little documentation for most Hazard Hunts and observed that previous 
+Hazard Hunts did not include hazards identified by BSEE during these 
+inspections.  
+• BSEE identified good practices of barrier management while lifts were taking 
+place and in the presence of moving equipment on the rig floor. On lifts not 
+associated with the rig floor and work above decks on production facilities, 
+restricted access areas need improvement. 
+  
+ 
+Safety Alert No. 426 
+September 14, 2021  
+SAFETY ALERT 
+ 
+ 
+
+• The majority of operators did not have specific training requirements to prevent 
+dropped objects for the offshore personnel at the facilities.  
+• Job Safety Analyses (JSAs) were completed; however, BSEE identified multiple 
+gaps that need improvement. For example, JSAs were not conducted at the 
+worksite to visually inspect for hazards; JSAs had pre-printed text without further 
+analysis; and JSAs with lifts, e.g., Pick-up Pipe from V-door, completely negated 
+the potential for dropped object potential. 
+• On those applicable facilities, offshore personnel were aware of the hazards 
+associated with pipe handling. Most of the contractors had programs to ensure a 
+correctly sized tubular running system. 
+• Multiple good practices were in place with the coordination and lifting of. These 
+included communication with shore bases and platforms, color and shape 
+marking labels, assessment of slings and rigging in pre-use inspections, and pre-
+lift inspections of cargo (container, tubulars, or other loads). 
+• All inspected facilities had a Management of Change (MOC) program; however, 
+no recent MOCs (in the last six months) encompassed mounting new fixtures to 
+existing structures or equipment, including additional secondary securing 
+methods or installing new equipment at height. 
+Therefore, BSEE recommends that operators and contractors consider: 
+• Reviewing the inspection results and use them as a basis for conducting focused 
+Hazard Hunts on their facilities to reduce the likelihood of similar incidents. 
+• Developing a Prevention of Dropped Objects strategy and action plan to identify 
+and assess individual work areas and activities for dropped object potential.  
+• Establishing regular inspection frequencies for identifying any potential dropped 
+objects and record the results within a work order register.  
+• Developing standalone training requirements for those individuals exposed to or 
+undertaking the inspection of potential dropped objects. 
+• Evaluating all lifting JSAs to ensure they address the control of objects with the 
+potential to fall. 
+• Ensuring all new equipment or structures added to their facilities trigger the MOC 
+process to address newly introduced hazards resulting from the change. 
+ 
+− BSEE −  
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: General, Dropped Objects, Lifting  

@@ -1,0 +1,88 @@
+
+
+ 
+Safety Alert No. 519 
+Date: July 1, 2026 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+Verify Riser Fin Retention Systems Before Prompts 
+Riser-Handling Operations 
+ 
+   
+                                                                                 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Background: 
+The Bureau of Safety and Environmental Enforcement recently investigated a near miss 
+incident during riser‑handling operations. While rig personnel were pulling a slick riser 
+joint and lowering it toward the riser skate, a thermoplastic riser fin detached and fell 
+approximately 70 feet, striking the spider platform on the drill floor.  
+The crew stopped riser movement and conducted an immediate safety assessment. 
+During the assessment, the crew found that the impact had displaced the hole cover. A 
+drill crew member re-entered the area and repositioned the hole cover to restore open 
+hole protection.  
+After the hole cover was secured and the drill floor was cleared, riser-handling operations 
+resumed. As the driller continued to lower the slick joint to the riser skate, a second 
+thermoplastic riser fin detached and fell onto the riser skate.  
+Resting spot of one  fallen fin. 
+Impact location on drill floor. 
+
+No personnel were in the drop zone during either event; however, crew members had 
+been in the area less than one minute before the second fin detached. Each fin weighed 
+approximately 61 pounds, and each fall involved an estimated 4,276 foot‑pounds, or 
+5,798 joules, of kinetic energy. This amount of force could have caused a fatal injury if 
+personnel had been in the impact area.  
+Findings:  
+• The fin retention system was not tensioned to Original Equipment Manufacturer, or 
+OEM, specifications, and required torque verification steps were not completed or 
+documented before use.  
+• Post-i  nstallation verification, including the required 48-hour re-torque, was not 
+performed, leaving the retention system vulnerable during riser handling operations.  
+• Refurbishment work performed during condition-based maintenance did not meet 
+Original Equipment Manufacturer requirements. The deficiencies were not clearly 
+communicated or detected during acceptance checks.  
+• The legacy single-bolt tensioner system remained in service despite previous 
+recommendations to replace it with an upgraded design.  
+• Entering the red zone to reposition the displaced hole cover immediately after the first 
+dropped fin momentarily exposed personnel to a second dropped-object hazard.  
+• Checklist use and adherence to procedures were inconsistent. Missing 
+documentation, including unsigned or incomplete verification checklists, meant 
+critical installation steps could not be confirmed.  
+• Previous dropped-fin events in 2016, 2020, and 2025 occurred across multiple rigs, 
+indicating a recurring industrywide vulnerability.  
+To help prevent similar incidents in the future, the Bureau of Safety and 
+Environmental Enforcement recommends that operators and their contractors, 
+where appropriate, do the following: 
+• Verify and document torque values for all riser-fin securing systems according to 
+Original Equipment Manufacturer specifications, and ensure all required verification 
+steps, including the 48-hour post-installation re-torque, are completed before 
+deployment or handling.  
+• Implement manufacturer-recommended design improvements when performance 
+concerns or upgrade advisories are issued.  
+• Reinforce procedural discipline by consistently applying established work practices 
+and verification requirements.  
+
+• Strengthen vendor quality assurance and acceptance controls to ensure 
+refurbishment and maintenance activities meet Original Equipment Manufacturer 
+requirements before equipment is accepted and placed into service.  
+• Integrate dropped object risk assessments into riser-handling operations and verify 
+that all attached components are properly installed and secured before lifting, 
+lowering, or transferring equipment.  
+• Review previous dropped-fin events across all rigs and apply lessons learned to 
+strengthen fleetwide procedures and vendor oversight. 
+ 
+–   BSEE – 
+ 
+Category: Personnel Safety, Cranes/Lifting 
+A   Safety Alert is a tool used by BSEE to inform the offshore oil    and gas industry of the circumstances 
+surrounding a potential safety issue. It also contains recommendations that could assist avoiding 
+potential incidents on the Outer Continental Shelf. 

@@ -1,0 +1,105 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+Bypass of Emergency Shutdown in Rented Equipment 
+Results in Additional Risk to Personnel and the Environment 
+                      
+ 
+Figure 2: ESD for rental generator/light plant found in 
+bypass. 
+During a BSEE offshore regulatory inspection of a coiled tubing unit (CTU) layout and 
+rig up, inspectors discovered a concerning issue with the rental generator/light plant 
+powering the CTU. Specifically, they found evidence of tampering with the emergency 
+shutdown (ESD) and spark arrestor system. The ESD had been bypassed by removing 
+the air intake hose, which had become clogged with black soot, causing it to collapse 
+and leading to issues such as sputtering, smoking, and eventually engine failure. T he 
+air intake hose was never re-installed, resulting in the continued bypass of the ESD. In 
+addition, the inside of the generator/light plant was coated with black soot due to a 
+damaged muffler. 
+ 
+In response to these findings, the inspection team requested that the operator 
+(personnel on duty) test the ESD to confirm its functionality. The test revealed the ESD 
+failed to properly shut down the power-generating unit, as designed. 
+ 
+ 
+  
+ 
+Safety Alert No. 470 
+Oct. 23, 2023 
+Figure 1: Rental generator/light plant. 
+
+ 
+ 
+It is crucial to note that ESD systems are specifically designed to prevent unsafe 
+operations by automatically shutting down equipment and offshore facility systems in 
+the event of unsafe conditions. In this case, the ESD for the rental generator/ light was 
+configured to shut down both the generator/light plant itself and the CTU.  
+ 
+The ESD system bypass placed personnel at additional risk for various hazards, 
+including fire, explosion, inhalation, rotating equipment, moving equipment, pinch points, 
+unexpected pressure releases, and dropped objects. Immediate corrective actions 
+should be taken to rectify these safety concerns and ensure the proper functioning of 
+the ESD system to mitigate risks effectively. 
+ 
+In addition, BSEE recommends that operators and their contractors, where 
+appropriate, consider doing the following: 
+• Ensuring reviewed and approved Management of Change or Lock Out Tag Out 
+procedures are in place, offering protection for the system or piece of equipment 
+if the ESD must be placed in bypass for maintenance, testing, or troubleshooting 
+purposes. 
+• Examining rental equipment arriving onsite for obvious signs of damage, lack of 
+maintenance, improper operation, over-heating, or over-pressure. Stopping the 
+job until all such issues have been resolved, equipment has been successfully 
+function tested, and is fully functional for operations. 
+• Reviewing preventative maintenance records and ensuring adequate inspection 
+and functional performance of rental equipment before use. 
+• Providing instructions, training, competency assessment, and proper supervision 
+to operators and maintenance personnel.  
+• Ensuring compliance with 30 CFR 250.867 (a), (c), and (d) (Temporary quarters 
+and temporary equipment)  and 250.842(a)(2) and (3) ( Approval of safety 
+systems design and installation features). 
+• Inspecting generators and critical equipment in accordance with BSEE 
+regulations, ensuring all meet the minimum safety requirements and the 
+recommendations provided by manufacturers. These inspections should be 
+documented to maintain a clear record of equipment integrity and performance. 
+Each inspection and test should verify: 
+1.  Inspections Were Performed at Appropriate Intervals:  Inspecting 
+generators and critical equipment at intervals specified by BSEE 
+
+ 
+ 
+regulations and manufacturer guidelines to guarantee compliance and 
+optimal functionality. 
+2.  Proper Documentation is Provided:  Maintaining comprehensive records of 
+each inspection and test, including: 
+a.  Date of Inspection and Test: Clearly note the date when the 
+inspection and testing took place. 
+b.  Equipment Identifier: Include the serial number or any unique 
+identifier associated with the specific equipment that underwent 
+inspection or testing. 
+c. Description: Provide a detailed description of the inspection or test 
+procedures conducted to ensure clarity and accountability. 
+d.  Inspection Results: Document the outcomes and findings of the 
+inspection or test, including any issues, concerns, or areas that 
+require corrective action. 
+• Reviewing Safety Alert 432
+ BSEE Identifies Maintenance and Certification Issues 
+of Rental Generators. 
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Other  

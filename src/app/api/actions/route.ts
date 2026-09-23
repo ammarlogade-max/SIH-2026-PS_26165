@@ -1,55 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSafetySnapshot, saveCorrectiveAction } from "@/lib/safety-store";
 import { CorrectiveAction, UserRole, LifeSavingRule, ControlHierarchyLevel } from "@/lib/types";
+import { inferControlHierarchy } from "@/lib/safety-science-engine";
 import { v4 as uuidv4 } from "uuid";
-
-function inferControlHierarchy(
-  title: string,
-  desc: string,
-  providedLevel?: ControlHierarchyLevel
-): { level: ControlHierarchyLevel; isWeak: boolean } {
-  if (providedLevel) {
-    const isWeak = providedLevel === "Administrative" || providedLevel === "PPE";
-    return { level: providedLevel, isWeak };
-  }
-
-  const combined = `${title} ${desc}`.toLowerCase();
-  if (combined.includes("eliminate") || combined.includes("remove process") || combined.includes("decommission")) {
-    return { level: "Elimination", isWeak: false };
-  }
-  if (combined.includes("substitute") || combined.includes("replace with non-hazardous")) {
-    return { level: "Substitution", isWeak: false };
-  }
-  if (
-    combined.includes("barrier") ||
-    combined.includes("interlock") ||
-    combined.includes("loto") ||
-    combined.includes("lockout") ||
-    combined.includes("isolation") ||
-    combined.includes("guard") ||
-    combined.includes("guardrail") ||
-    combined.includes("anchor") ||
-    combined.includes("relief valve") ||
-    combined.includes("physical") ||
-    combined.includes("engineered") ||
-    combined.includes("stanchion") ||
-    combined.includes("whip check")
-  ) {
-    return { level: "Engineering / Direct Control", isWeak: false };
-  }
-  if (
-    combined.includes("ppe") ||
-    combined.includes("gloves") ||
-    combined.includes("helmet") ||
-    combined.includes("glasses") ||
-    combined.includes("earplugs")
-  ) {
-    return { level: "PPE", isWeak: true };
-  }
-
-  // Default to Administrative for instructions, training, procedures, audits
-  return { level: "Administrative", isWeak: true };
-}
 
 export async function GET(request: NextRequest) {
   try {
@@ -85,6 +38,7 @@ export async function GET(request: NextRequest) {
         overdue: actions.filter((a) => a.status === "overdue").length,
         completed: actions.filter((a) => a.status === "completed").length,
         verified: actions.filter((a) => a.status === "verified").length,
+        recurred_post_closure: actions.filter((a) => a.effectiveness_status === "recurred_post_closure").length,
       },
     });
   } catch (error) {
@@ -144,9 +98,14 @@ export async function POST(request: NextRequest) {
       priority,
       status: "open",
       due_date,
+      hierarchy_level: level,
       control_hierarchy: level,
       control_rank: rankMap[level] || 3,
       weak_control_warning: isWeak,
+      monitoring_window_days: 30,
+      post_closure_monitoring_active: false,
+      recurrence_detected: false,
+      effectiveness_status: "pending_verification",
       created_at: new Date().toISOString(),
     };
 

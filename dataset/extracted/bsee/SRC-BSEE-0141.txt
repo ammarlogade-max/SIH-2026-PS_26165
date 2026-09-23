@@ -1,0 +1,64 @@
+
+
+ 
+Safety Alert No. 376                             Contact: Jason Mathews 
+February 12, 2020                    Phone: (504) 731-1496 
+ 
+ 
+Rig Floorman Pinned by Moving Equipment 
+ 
+ 
+ Storage location of the Iron Roughneck  The pinch point between the control panel,  
+                                                                      Iron Roughneck and the construction floor 
+guide roller assembly 
+ 
+On November 9, 2019, a rig floorman was in the process of moving an Iron Roughneck 
+control panel (control panel) from its temporary storage position to its standard operating 
+position when he was pinned between the control panel and the construction floor guide 
+roller assembly, resulting in a major lost time injury. 
+ 
+The floorman and two others tried but could not move the control panel manually, so they 
+instead moved it toward well center using the Horizontal Travel Selector Switch. In doing 
+so, the floorman placed himself in a pinch point between the control panel and the 
+construction floor guide roller assembly. When the switch failed to return to default/neutral, 
+as designed, the control panel continued moving toward well center, pinning the floorman.  
+ 
+Therefore, BSEE recommends operators and contractors consider the following: 
+ 
+•    Research options for modifying the design of all Iron Roughneck, or similar moving 
+equipment, control panels to allow greater storage location flexibility; 
+SAFETY ALERT 
+ 
+ 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.  
+ 
+•    Review equipment layout and operational design to reduce the likelihood human 
+error and to identify potential pinch point areas near equipment;  
+•    Consider reviewing the design and location of moving equipment and/or stationary 
+structures; 
+•    Ensure functionality of all selections on a control panel before, during, and after use; 
+•    Evaluate the installation of proximity switches that would prevent moving equipment 
+from impacting personnel or other equipment; 
+•    Delineate areas of the facility that are unsafe for operating equipment; and, 
+•    Emphasize work safety and identify potential environmental hazards with all 
+personnel
+. 
+--BSEE-- 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  

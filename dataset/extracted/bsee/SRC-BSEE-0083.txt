@@ -1,0 +1,71 @@
+
+
+Contact: Megan Elliott 
+Phone: (703) 994-5606 
+Figure 1. Screen capture of the CISA website designed to provide guidance and tools to improve U.S. 
+private sector cyber defenses. 
+Check your Cybersecurity Readiness 
+On March 21, 2020, President Biden stated, “This is a critical moment to accelerate our work to 
+improve domestic cybersecurity and bolster our national resilience.” Accordingly, this Safety Alert 
+is directed  to energy  operators  on  the Outer Continental  Shelf (OCS) to strengthen and 
+systematize their  cybersecurity  defenses  and  regularly  monitor  the  guidance  issued  by the 
+Cybersecurity & Infrastructure Security Agency (CISA). 
+Therefore, based on the potential for increased threats to U.S. infrastructure associated 
+with the situation in Ukraine, BSEE urges all operators and contractors working on the U.S. 
+OCS to immediately: 
+·Review the information found on https://www.cisa.gov/shields-up and monitor it for
+frequent updates.
+·Ensure all known cyber vulnerabilities (https://www.cisa.gov/known-exploited-
+vulnerabilities-catalog) are being addressed or monitored.
+Safety Alert No. 434 
+March 21, 2022 
+SAFETY ALERT 
+
+· Prepare the workforce for hyper-vigilance to detect abnormal network behavior and 
+Industrial Control System (ICS) malfunction. 
+· Test backup manual control equipment and processes and ensure they are workable in 
+the event of any automated ICS compromise. 
+· Report all suspicious and malicious cyber activity to CISA at report@cisa.gov or (888) 
+282-0870 (note: over-reporting is recommended as it could mitigate widespread 
+damage from an attack). 
+· Inform BSEE via the Safety and Incident Investigation Division (SIID) Hotline at (877) 
+440-0173 of any threats or compromises to OCS safety and environmental control 
+systems associated with a cyber incident. In addition, notify the appropriate BSEE 
+District office(s) if any offshore facilities are affected by the incident. 
+Region District Contact Numbers 
+National SIID Hotline 
+(877) 440-0173 
+Alaska All 
+(907) 334-5300 (office) 
+(855) 277-2733 (after-hours) 
+Gulf of Mexico New Orleans 
+(504) 734-6740 
+(504) 734-6742 (alternate) 
+Houma 
+(985) 853-5884            
+(985) 853-5890 (alternate) 
+Lafayette 
+(337) 289-5100 
+(337) 289-5102 (alternate) 
+Lake Charles 
+(337) 437-4600 
+(337) 437-4601 (alternate) 
+Lake Jackson 
+(713) 286-2300 
+(713) 286-2305 (alternate) 
+Pipelines 
+(504) 736-2814 
+(504) 736-2895 (alternate) 
+Pacific Drilling and Production 
+(805) 384-6370 (office) 
+(805) 400-9700 (after-hours) 
+Pipeline and Structures (805) 384-6325 (office) 
+(805) 504-7780 (after-hours) 
+Flaring, Venting, and Production 
+Measurement 
+(805) 384-6300 (office) 
+(805) 586-5011 (after-hours) 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that could 
+assist avoiding potential incidents on the Outer Continental Shelf. 
+Category: Cybersecurity 

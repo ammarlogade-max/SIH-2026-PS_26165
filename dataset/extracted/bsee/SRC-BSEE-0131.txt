@@ -1,0 +1,74 @@
+
+
+ 
+Safety Alert No. 386                                               Contact: Altan Aydin       
+May 19, 2020                                    Phone: (703) 787-1561 
+ 
+ 
+ Turbo and Exhaust Manifold Fires Related to Engines
+  
+ 
+There have been more than 20 compressor and generator fire incidents caused by high 
+temperature components associated with turbochargers and engine exhaust systems. 
+ 
+ 
+Nearly all of the reported incidents included at least one the following common factors:  
+• Inadequate maintenance resulting in worn or defective mechanical components, 
+which allows   materials, such as hydraulic fluid, engine oil, and coolant, to ignite on 
+a hot surface like an engine exhaust manifold/pipe or turbocharger casing.  
+• Failure of flexible rubberized fuel lines and hydraulic hoses due to 1) fatigue and 
+vibration, 2) improper support, and 3) exposure to high temperature heat sources. 
+• Loose electrical connections at terminals resulting in excessive heat, which causes 
+cable insulation to melt and ignite. 
+• Oil feeds directly into the exhaust system and ignites   because the turbocharger oil 
+seal fails, which causes excessive high temperatures and increases the risk of 
+igniting nearby components. 
+• The ratio of hydrocarbons in the air/fuel mixture and the potential for combustion is 
+increased when oil is introduced indirectly in the booster compressor system. 
+ 
+ 
+SAFETY ALERT 
+ 
+ 
+Examples of common fire-causing incidents related to turbochargers and engine exhaust systems.  
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+All offshore operators and lessees are advised to review the occurrence of these incidents 
+at their facility and to review prevention, monitoring and contingency controls to ensure the 
+risk from turbocharger and gas/diesel generator fires is adequately controlled.                                                                 
+Therefore, BSEE recommends that operators and contractors consider the following: 
+•    Establish procedures to monitor and eliminate the above-mentioned risk factors; 
+•    Ensure all insulation blankets on an exhaust system/pipe are maintained and tight; 
+•    Check that spray shielding is kept in place where used and consider adding 
+shielding around gasketed flanges and other areas if helpful; 
+•    Minimize the use of nonmetallic flexible hoses in systems carrying flammable liquids, 
+particularly in engine areas where failures may ignite the fluids;  
+•    Consult with Original Equipment Manufacturers (OEM) modifications as needed to 
+minimize the risk of fuel spray fires; 
+•    Identify hot spots and examine all heat sources with respect to engine exhausts;  
+•    Check for system vulnerabilities, such as loose or missing pipe clamps and securing 
+devices, that may impact hoses, and piping or tubing;  
+•    Ensure plastic piping is not near hot spots; 
+•    Examine fuel supply pumps, noting shaft sealing for leakages and bearings when 
+fitted, for overheating and indications of wear;  
+•    Properly shield and/or insulate areas where exhaust systems penetrate bulkheads 
+and decks using non-flammable materials; 
+•    Provide sensors, such as cylinder head and discharge air temperature sensors, that 
+automatically shut down a turbo booster when temperatures are exceeded;  
+•    Review fire and gas detection to ensure effective monitoring of    enclosed areas for 
+hazardous conditions and provide a timely shut down in response to significant leaks 
+or loss of containment; 
+•    Maintain additional pressure safety devices, such as burst discs, in addition to 
+pressure relief valves (PRV) to safely vent in event of internal combustion. PRVs are 
+not designed for such sudden occurrences. 
+•    Provide adequate instruction, training, assessment of competency and supervision 
+to equipment operators and maintainers. 
+•    Ensure compliance with 30 CFR 250.858
+ – Gas compressors; and, 
+•    Ensure that proper submittals for plan review are made and documented with BSEE, 
+including re-engineering projects where engines are replaced with different types of 
+engines or engine manufacturers. 
+--BSEE-- 

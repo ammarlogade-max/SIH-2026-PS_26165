@@ -1,0 +1,78 @@
+
+
+CATEGORY: Contractor Management, Gas Release, Well Operations 
+ 
+Safety Alert No. 508 
+Contact: bseepublicaffairs@bsee.gov 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Review anchor-handling plans now: Incident 
+damages subsea equipment, triggers gas release 
+ 
+Incident: The Bureau of Safety and Environmental Enforcement’s Gulf of America Region 
+(GOAR) investigated a gas-release incident involving a diver support vessel (DSV) that was 
+marking a pipeline ahead of a jack-up rig’s subsea well recompletion. The DSV was 
+recovering two bow anchors from the seafloor. 
+ 
+As the DSV approached the subsea well site, the vessel moved down current, and the No. 
+1 bow-anchor wire became entangled in the well. The DSV backed away, but the wire 
+remained snagged and multiple attempts to free it failed. During the final attempt, the wire 
+caught the annulus-valve assembly, shearing several studs and detaching the valve from 
+the tubing spool. A strong gas plume surfaced. The DSV retreated about 1,900 feet, and an 
+emergency response began. 
+ 
+During mobilization and execution, the lease operator overlooked several critical 
+preparation steps. 
+ 
+Findings:  
+ 
+• Planning and coordination were inadequate. The operator and contractor did not 
+conduct simultaneous operations (SIMOPS) meeting or a hazard assessment. 
+• The Safety and Environmental Management System (SEMS) plan did not clearly 
+specify which operations require SIMOPS planning and a hazard assessment. 
+• Communication between the DSV and the operator was lacking. Key personnel 
+were not notified when the job began or what work was being performed. 
+• The absence of an anchor tug limited the vessel’s ability to hold position, increasing 
+difficulty and risk. 
+• Drawings were not readily available during the emergency response. 
+Date: Sept. 30, 2025 
+Phone: (800) 200-4853 
+
+CATEGORY: Contractor Management, Gas Release, Well Operations 
+ 
+• The replacement valve was not configured for diver handling, delaying efforts to 
+secure the release. 
+ 
+To help prevent similar incidents in the future, BSEE recommends that operators and 
+their contractors, where appropriate, consider the following:  
+ 
+• Implement a pre-job checklist that verifies all preparatory steps, including 
+pipeline marking and weather or delay considerations. 
+• Establish a contingency-planning protocol to validate all critical steps before 
+mobilization. If delays occur (e.g., weather), reconfirm critical steps before 
+remobilizing. 
+• Coordinate among internal teams and third-party contractors to ensure a 
+shared understanding of job-readiness requirements. 
+• Hold a formal pre-mobilization review with all stakeholders to confirm scope, 
+readiness and safety measures. 
+• Provide refresher training for personnel involved in offshore planning and 
+execution to reinforce procedural compliance and communication. 
+• Ensure anchor-handling plans account for strong currents and vessel drift. 
+• Maintain clear communication with all stakeholders. 
+• Confirm that critical documentation is on board and accessible before 
+mobilization. 
+• Include divers in preparation for subsea installation or repair activities. 
+• Review SEMS protocols to clarify SIMOPS and hazard-assessment 
+requirements. 
+ 
+ 
+– BSEE – 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 

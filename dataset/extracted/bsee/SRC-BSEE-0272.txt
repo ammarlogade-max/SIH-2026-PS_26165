@@ -1,0 +1,81 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+Safety Alert No. 243 Contact: Glenn Woltman
+September 6, 2006 (504) 736-2438 
+Unplanned Riser Disconnect Results in Spill 
+An unplanned disconnect of the Lower Marine Riser Package from the subsea blowout preventer 
+equipment was recently initiated on a semi-submersible rig engaged in exploratory activities, during a 
+time of shifting loop currents coupled with quickly deteriorating met-ocean conditions from tropical 
+storm developments, the total of which pushed the rig’s DP system capability to the limits, leading to 
+an unacceptable loss of rig position. 
+While the riser volume was being displaced with seawater in preparation for the disconnect operation, 
+the rig was no longer able to maintain station.  As a result, the riser was disconnected from the Lower 
+Marine Riser Package, and 710 barrels of synthetic mud was released into the Gulf of Mexico.  
+An MMS investigation concluded in part that the inability of the rig to maintain station adequately, 
+resulting in the subsequent release of synthetic mud into the Gulf, was primarily the result of 
+inappropriate DP rig selection for the environment in which it was to operate.  Procedures onboard 
+the vessel at the time of this incident did not adequately take into account the proper watch areas and 
+appropriate T-times for certain action items to be taken during deteriorating sea conditions.  These 
+procedures were revised after the incident to reflect loop currents and associated eddies in the Gulf of 
+Mexico better. 
+
+ 
+  
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+To ensure that industry adopts similar best practices, the following are recommended with respect to 
+dynamically positioned drilling rigs: 
+1) Lessees and operators should review the adequacy of their policies/plan regarding planned and 
+unplanned riser disconnects. 
+2) Riser disconnect policies/plans should address at a minimum the following:  
+a.	 A site-specific riser disconnect /policy plan per location as a complement to a general 
+plan. 
+b.	 The obtaining of site-specific environmental/oceanographic data for the purpose of 
+position holding and riser angle minimization considerations. 
+c.	 The criteria for the initiation of riser disconnect operations as a function of impending 
+tropical storm conditions. 
+d.	 The routine review of T-time estimates during storm seasons. 
+—MMS—GOMR— 
+Visit our Safety Information Website 
+A complete account of the accident is available on the MMS website at 
+http://www.gomr.mms.gov/homepg/offshore/safety/acc_repo/accindex.html 

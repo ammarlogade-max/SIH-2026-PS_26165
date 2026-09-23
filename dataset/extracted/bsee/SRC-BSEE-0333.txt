@@ -1,0 +1,40 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 186
+March 3, 2000
+Contact: Joe Gordon
+504-736-2923
+Accidental Disconnect of Marine Drilling Risers
+Recently, an incident occurred on a drillship that had the potential for causing a serious well-control event. An
+employee was attempting to conduct a function test of the blind-shear rams. However, he inadvertently pushed
+the lower marine riser package (LMRP) button instead of the blind-shear ram button on the control panel. Since
+the LMRP button was not part of the primary or emergency disconnect sequence, the pod stabs did not retract
+and the blind-shear rams did not close. The disconnect allowed the release of drilling mud from the riser.
+Fortunately, the wellbore was cased, and a well-control event caused by a loss of riser hydrostatics did not
+occur.
+As a result of the aforementioned incident, Notice to Lessees and Operators (NTL) No. 2000-G07 was issued
+regarding the accidental disconnecting of marine drilling risers. The NTL clarifies 30 CFR 250.107 (a) and
+250.400 by prescribing the necessary measures to be taken to prevent the accidental disconnect of the lower
+marine drilling risers while conducting operations from floating drilling rigs.
+Since the issuance of the NTL, a second incident occurred in which the LMRP was accidentally disconnected
+during an attempted implementation of the measures prescribed in the NTL. The accident occurred when an
+employee was attempting to install the lock-out device on the LMRP disconnect switch (button) while the rig was
+running a liner to set across an open hydrocarbon-bearing zone. Riser hydrostatic pressure was lost when mud
+escaped from the bottom of the riser. Surface control of the BOP stack was lost. Additionally, there was no
+remotely operated vehicle (ROV) or other intervention capability to close, at a minimum, the blind shear rams on
+the BOP stack.
+Measures listed in the NTL or other actions that could impair the integrity of the marine riser or BOP system
+should not be taken when the well is vulnerable to flow. Therefore, a risk and consequence analysis should be
+performed prior to making the change. Further, when instituting these necessary changes, communication of
+current activities is critical in performing this operation safely. Time extensions for the implementation of the
+measures prescribed in the NTL may be granted on a case-by-case basis by the appropriate District Supervisor
+to allow for the safe implementation of the lock-out measures.
+The MMS considers a backup BOP actuation system to be an essential component of a deepwater drilling
+system and, therefore, expects OCS operators to have reliable back-up systems for actuating the BOP in the
+event that the marine riser is damaged or accidentally disconnected. District Supervisors will be assessing
+current and future operations for back-up BOP actuation capabilities.
+—GOMR—MMS—
+Visit our Safety Information Website
+Safety Alert No. 186http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_186...
+1 of 12/21/2012 4:28 PM

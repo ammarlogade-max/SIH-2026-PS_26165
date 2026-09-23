@@ -1,0 +1,66 @@
+[
+  {
+    "source_id": "SRC-HSE-0001",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Service lifts in offshore and onshore wind turbines",
+    "url": "https://www.hse.gov.uk/safetybulletins/service-lifts-in-offshore-onshore-turbines.htm"
+  },
+  {
+    "source_id": "SRC-HSE-0002",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Wind turbine generator service lifts: risk of serious injury",
+    "url": "https://www.hse.gov.uk/safetybulletins/wind-turbine-generator-service-lifts.htm"
+  },
+  {
+    "source_id": "SRC-HSE-0003",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Manage risk of damage to grating systems (walkways and deck areas) on offshore installations during rig moves",
+    "url": "https://www.hse.gov.uk/safetybulletins/grating-systems.htm"
+  },
+  {
+    "source_id": "SRC-HSE-0004",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Unsafe bolts on BendPak XPR series two-post vehicle lift",
+    "url": "https://www.hse.gov.uk/safetybulletins/bendpak-vehicle-lifts2.htm"
+  },
+  {
+    "source_id": "SRC-HSE-0005",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "LPG forklift truck fire risk",
+    "url": "https://www.hse.gov.uk/safetybulletins/forklift-fires.htm"
+  },
+  {
+    "source_id": "SRC-HSE-0006",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "High concentration of hydrogen sulfide (H2S) in cargo and slop tanks",
+    "url": "https://www.hse.gov.uk/safetybulletins/hydrogen-sulphide.htm"
+  },
+  {
+    "source_id": "SRC-HSE-0007",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Unsafe use of floor grating systems in oil and gas, and wind generation",
+    "url": "https://www.hse.gov.uk/safetybulletins/floor-grating-systems.htm"
+  },
+  {
+    "source_id": "SRC-HSE-0008",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Mast climbing work platforms: Failure to detect mechanical failure in drive units leading to uncontrolled fall of platforms",
+    "url": "https://www.hse.gov.uk/safetybulletins/mast-climbing-work-platforms-mechanical-failure.htm"
+  }
+]

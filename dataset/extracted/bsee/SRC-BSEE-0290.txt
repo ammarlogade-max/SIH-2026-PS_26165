@@ -1,0 +1,43 @@
+
+
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 229
+4 April 2005
+Contact:Glenn Woltman
+(504) 736-2438
+Inadequate Job Planning Results in Atmospheric Release of Gas
+Failure to isolate the energy source during platform maintenance work allowed gas tomigrate from the
+sales pipeline back through production equipment resulting in the total evacuation ofgas to the
+atmosphere from a 30-inch pipeline.  The incident occurred after pipeline personnel had closed their
+sales and riser valves at the platform and bled the system down for valve maintenancework.  Later
+during the day, production personnel decided to re-pressure the platform system to move condensate
+built up in the vessels down the pipeline.  As the system pressure was increasing, valves off the
+condensate coalescer began to leak.  Gas started blowing back through the dump line and out the flare
+boom while personnel began removing the leaking valves.  Personnel were ordered to evacuate.  Gas
+continued to migrate from the sales pipeline back through the production train, eventually escaping
+through the open-ended piping at the coalescer over the next 32 hours until such timeas the pipeline
+had essentially been bled off.  At that time, pipeline personnel were able to board the platform and
+close the manual sales valve, effectively isolating the energy source.
+MMS concluded that (1) failure to develop a detailed written procedure (JSA) for thework to be
+performed prevented personnel from identifying and properly isolating the energy source, and (2)   the
+lack of communications between pipeline and production personnel, coupled with the failure to utilize
+the company’s stop work authority policy, allowed critical warning signs leading up to the incident to be
+overlooked, and (3) failure to use lock-out/tag-out procedures to properly isolate the production
+equipment and process piping indirectly resulted in the mishap.
+The MMS recommends the following:
+·Supervisors must provide adequate job instructions and planning prior to the work.
+·Hazards must be identified as work proceeds, and a “stop work policy” in place as thejob
+scope changes.
+·Personnel must be familiar with and utilize lock-out and tag-out procedures to isolate equipment
+and process piping during work programs.
+·Simultaneous operations must be clearly communicated to all appropriate parties, detailing all
+site-specific procedures prior to work being implemented.
+An investigation of this incident has been conducted, and the report is available onthe MMS website:
+http://www.gomr.mms.gov/homepg/offshore/safety/acc_repo/districtreports.html
+  —MMS—GOMR—
+www.gomr.mms.gov
+Visit our Safety Information Website
+Inadequate Job Planning Results in Atmospheric Release of Gashttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_229...
+1 of 12/21/2012 4:44 PM

@@ -1,0 +1,86 @@
+
+
+   
+ 
+   
+ 
+ 
+Safety Alert No. 398                             Contact: Jason Mathews 
+October 5, 2020                              Phone: (504) 731-1496 
+ 
+ 
+Lifeboat Failures and Damage Occur During Maintenance 
+ 
+       
+             
+ 
+ 
+In March 2020, two incidents in the Gulf of Mexico involved damage to lifeboats during 
+testing and inspection. Both lifeboats were later secured, and no personnel were injured. 
+The details of each incident are provided below: 
+ 
+• As a life capsule was lowered during a dynamic load test after routine 
+maintenance, the lifeboat reached its required level above the waterline and the 
+brake was applied. However, the brake failed to provide any stopping capability 
+and the life capsule fell into the Gulf of Mexico. The initial attempt to retrieve the 
+lifeboat was unsuccessful because the winch failed to hold the load, but the 
+lifeboat was eventually recovered when a work boat arrived on site.  
+ 
+• Facility personnel were in the process of lowering a lifeboat as part of its regular 
+monthly inspection when the lifeboat swung and contacted the platform. The life 
+capsule’s gripe plate struck the side of the gripe pin, causing the gripe plate to be 
+partially removed from the lifeboat’s    hull. Personnel later assessed the situation 
+and ensured that the lifeboat was secured in its davit. 
+ 
+  
+SAFETY ALERT 
+ 
+ 
+Lifeboat gripe plate after contacting a platform        
+Lifeboat in the water after an inadvertent descent               
+
+   
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+Therefore, BSEE recommends that operators consider the following: 
+ 
+• Conduct routine lifeboat maintenance at frequencies required by the Quality 
+Assurance/Quality Control/Mechanical Integrity programs in place;  
+o Programs should be designed and implemented to fully satisfy all applicable 
+Coast Guard type-approval, maintenance, testing and drilling requirements. 
+They should also include all Original Equipment Manufacturer (OEM) 
+recommended maintenance procedures and timelines. The Coast Guard 
+recommends using Navigation and Vessel Inspection Circular (NVIC) 03-19
+ 
+and its enclosures.  
+ 
+• Review the scope of work carefully with contractors before commencing work and 
+verify that contractors conducting maintenance activities are properly performing 
+their duties safely and are following the agreed work plan; 
+• Ensure compliance of third-party servicing and inspections with all applicable 
+regulations and scrutinize servicing to confirm that service provision supports those 
+requirements. Special consideration should be given to all recommendations 
+resulting from a third-party;  
+• Consider implementing a testing and verification plan after any work is    done on 
+latches and winches and before any personnel are allowed in the capsules;  
+• Thoroughly inspect a lifeboat’s winches, latches, brake pads, and control cables 
+prior to permitting personnel to enter a lifeboat to conduct maintenance;  
+• Consider the use of maintenance pendants to mitigate risk while entering lifeboats 
+for servicing and inspections and consult OEM for guidance on appropriate 
+selections and use of maintenance pendants;  
+• Review load test procedures for accuracy on an interval established in your SEMS 
+program and as required by applicable Coast Guard regulations; 
+• Consider current environmental conditions (i.e. wind speed, wave height, etc.) in 
+the Job Safety Analysis when lowering and/or launching a lifeboat for testing or 
+drills and contact the Coast Guard Eighth District Outer Continental Shelf
+ Officer in 
+Charge, Marine Inspection for further guidance on lifeboat launching requirements 
+and alternatives; 
+•    Replace launch cables, brake pads/shoes, and centrifugal brakes every five years 
+as per typical offshore lifeboat OEM recommended inspection guidelines; and, 
+•    Ensure that any modification to a Coast Guard-approved system (e.g. boat, davit, 
+releasing gear system, winch, etc.) has been approved by the Coast Guard prior to 
+placing the life-saving equipment in service. 

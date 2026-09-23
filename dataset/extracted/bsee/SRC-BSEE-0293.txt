@@ -1,0 +1,40 @@
+
+
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 226
+January 28, 2005
+Contact: Jack Williams
+(504) 731-3012
+Pressure Rise to Surface after Cementing Leads to Burst Casing and Loss of Control
+Recently, intermediate casing was set and cemented across productive zones in an offshore well. After the
+cementing, pressure was observed to be rising on the surface casing annulus, reachingabout
+1,200 psi. After a period of time, the pressure appeared to break and decline slowlyuntil no annulus pressure
+was indicated on the driller’s console gauges. A supervisor then noted that an independent gauge on the choke
+was indicating 3,000 psi on the annulus. This reading was immediately followed by anexplosion as the surface
+casing split below the wellhead, allowing the well to flow uncontrolled.
+The burst casing and loss of control were caused by pressure migration from a shallowreservoir that had been
+pressure-charged during previous operations. This sand was logged, but its productivenature was overlooked
+during analysis and it was left uncovered by the cementing operation. The casing wasfound to have been
+extensively worn during operations, allowing failure at pressures significantly belowrated burst. This wear was
+probably accelerated because of a rig misalignment discovered after the incident. Despite significant metal
+recovery from the ditch magnet, the casing was not tested for over 30 days. The driller’s gauges returned a
+false pressure reading, probably because of a leak in the hydraulic system that allowed the pressure to appear
+to decline when it was actually rising.
+A full investigation of this incident was conducted and the report is available on the MMS website:
+http://www.gomr.mms.gov/homepg/offshore/safety/acc_repo/accindex.html
+The MMS recommends to Operators the following actions:
+Close examination of all logs, especially prior to cementing, is recommended to ensure no unexpected
+shallow zones are productive. Adjustment of the cementing program is recommended if such zones are
+identified.
+Careful attention to rig alignment, monitoring of ditch magnet recoveries, and frequent examination of the
+drilling wear bushing are recommended to identify potentially worn casing. These steps are particularly
+important when extended drilling operations occur within a string of casing.
+It is recommended that the main hydraulic gauges of a rig be routinely checked to ensure the lines are
+full, and that no hydraulic leaks are present.
+  —MMS—GOMR—
+www.gomr.mms.gov
+Visit our Safety Information Website
+Pressure Rise to Surface after Cementing Leads to Burst Casing and L...http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_226...
+1 of 12/21/2012 4:43 PM

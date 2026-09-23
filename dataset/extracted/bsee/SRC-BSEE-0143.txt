@@ -1,0 +1,57 @@
+
+
+ 
+Safety Alert No. 374                              Contact: Jason Mathews 
+December 11, 2019                                          Phone: (504) 731-1496 
+  
+ 
+Air Compressor Flaws Lead to Engine Fire 
+  
+                                                                   
+On July 3, 2019, a fire occurred on a production platform located in the Gulf of Mexico 
+when fluid from an air compressor ignited. No personnel were injured and there was no 
+impact to the environment as a result of the incident.  
+During water blasting and painting operations, smoke began rising from the engine side of 
+the air compressor. The Emergency Shutdown on the compressor was pulled; however, 
+the unit continued to smoke. When the engine compartment door was opened, a small 
+fire was observed. It was quickly extinguished with a nearby fire hose.  
+The inadvertent release of hydraulic fluid and air throughout the engine housing caused 
+the fire. Due to deterioration over time, the diaphragm in the regulator on the 
+compressor’s separator tank ruptured. As a result, the hydraulic fluid regulator seal failed, 
+which rapidly increased the pressure in the unit and subsequently activated the Pressure 
+Safety Valve (PSV). The fluids were released through two separate locations: 
+1.  PSV weep hole (Photo 1) directly onto the air compressor engine; and, 
+2.  PSV relief piping into the compressor skid (Photo 2), which was then drawn up by 
+the compressor engine fan through louvers onto the engine. 
+The fluids accumulated on the engine housing after the PSV was opened. Since the 
+engine exhaust manifold remained hot after the unit was shut down, the fluids ignited. 
+SAFETY ALERT 
+ 
+ 
+Photo 1 – PSV Weep Hole    
+Photo 2 – Relief Line Leading to Skid   
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+Therefore, BSEE recommends that operators consider the following: 
+ 
+•    Examine adding a step in the Job Safety Analysis for assessing the overall condition 
+of the compressor prior to start-up; 
+•    Continuously monitor surrounding equipment during blasting and painting 
+operations;  
+•    Avoid leaving equipment in the immediate vicinity of the work area unattended while 
+operational; 
+•    Consider installing a pressure switch as an additional barrier on the separator tank 
+below the PSV set point in order to shut down the unit if pressure exceeds the 
+operating regulator setting; 
+•    Align the drain piping to a secondary discharge containment pan below the unit to 
+trap any potential hydraulic fluid leaking from the PSV;  
+•    Cover the PSV body with a shroud in order to confine a hydraulic fluid release to a 
+controlled discharge location; 
+•    Include periodic inspections for the pressure regulator diaphragm as part of your 
+preventative maintenance program to confirm an adequate seal is in place; and, 
+•    Verify work orders are completed in accordance with scheduled maintenance if the 
+compressor is a rental unit. 
+--BSEE-- 

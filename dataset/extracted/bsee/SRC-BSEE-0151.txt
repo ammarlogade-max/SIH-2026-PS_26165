@@ -1,0 +1,146 @@
+
+
+Safety Alert No. 366                        Contact: Jason Mathews 
+September 24, 2019                     Phone: (504) 731-1496 
+Dangerous Levels Of H
+2
+S Detected At Offshore Facilities 
+        
+   A typical portable H
+2
+S detector that 
+    can be clipped onto clothing. 
+Over the past year, offshore oil and natural gas industry contractors conducting pipeline 
+and well abandonment operations have experienced releases of hydrogen sulfide (H
+2
+S) 
+into their working areas. H
+2
+S is a poisonous gas found in sour petroleum reservoirs, and 
+also results from microbes in seawater that has accumulated in pipelines and tanks. 
+Thus, elevated levels of H
+2
+S can arise from flushing pipelines containing seawater during 
+decommissioning operations. Below are summaries of recent H
+2
+S release incidents: 
+· During flushing operations, water was transferred from a pipeline to an open-top 
+flow-back tank. After personnel reported a H
+2
+S odor coming from the tank, a gas 
+reading was taken in the area. The concentration of H
+2
+S was 100 parts-per-million 
+(ppm). All operations ceased. Hourly readings were taken and the concentration 
+steadily decreased. No personnel were injured during the incident. 
+· During flushing operations of a pipeline into the gas buster, a portable gas meter 
+detected a reading of 15 ppm of H
+2
+S near the gas buster. An "All-Stop" was called 
+immediately. After taking additional readings and determining the area clear of the 
+hazardous gas, an employee began experiencing H
+2
+S symptoms (i.e., dizziness 
+and nausea). The employee was moved into a safe area with fresh air and was 
+given fluids. His symptoms were monitored until they subsided two hours later. 
+SAFETY ALERT 
+Significant H
+2
+S Levels for 
+Personnel Safety 
+*Recommended  
+Exposure Limit (REL): 
+10 
+ppm 
+*Permissible 
+Exposure Limit (PEL): 
+20 
+ppm 
+Immediately Dangerous to 
+Life and Health (IDLH): 
+100 
+ppm 
+Typical alarm set points for... 
+Stationary detectors: 
+20 
+ppm 
+Portable detectors 
+(handheld/wearable): 
+10 
+ppm 
+*For more information, please refer to NIOSH 
+or OSHA websites for H
+2
+S PEL/REL time 
+limits. 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.
+· During well temporary abandonment operations, the casing was aligned through 
+the choke manifold to the gas buster to take returns. After the choke was open, the 
+H
+2
+S alarm sounded. All personnel mustered. H
+2
+S technicians donned their 
+necessary personal protective equipment and took readings at the gas buster 
+liquid outlet, which indicated a level of approximately 2300 ppm from the retrieved 
+sample. The stationary H
+2
+S sensor directly outside of the vessel measured a peak 
+atmospheric reading of 135 ppm at the time of the incident. The crew periodically 
+took readings and the levels declined. No personnel were injured during the 
+incident. 
+Therefore, BSEE recommends that operators consider the following: 
+· Inform all personnel of potential sources of H
+2
+S on the facility, especially during 
+specialized operations that can produce H
+2
+S as a by-product, such as well 
+stimulations and pipeline abandonment work; 
+· Ensure that personnel understand that H
+2
+S may be present even on non-sour 
+service facilities. The first two incidents described above did not occur on sour 
+service facilities; 
+· Ensure that safe work practices for abandonment work include H
+2
+S preparedness, 
+enhanced personal protective equipment, and procedures for monitoring personnel 
+in hazardous areas with the potential for exposure; 
+· Consider H
+2
+S hazards and mitigations in Job Safety Analyses (JSAs) when 
+conducting abandonment operations; 
+· Verify that Rescue / Emergency Response Plans include the evacuation of an 
+incapacitated person from a H
+2
+S area. Review rescue plans before starting a job 
+where H
+2
+S may be present; 
+· Periodically perform H
+2
+S release drills. Drills should include donning respirators, 
+rescuing an incapacitated person and mustering to a safe area; 
+· Inform personnel who might be involved in attempting rescue of an incapacitated 
+person that they must take precautions to protect themselves. First responders 
+have been injured or killed during gas release rescues; 
+· Implement the use of portable H
+2
+S detectors to continuously monitor the presence 
+of H
+2
+S during operations with the potential for H
+2
+S exposure; 
+· Verify that all portable gas detection devices are calibrated quarterly and bump-
+tested prior to use to confirm accurate readings;
+· Ensure that a suitable liquid seal and back-flow prevention device are engaged 
+prior to taking returns to a gas buster from a pipeline where H
+2
+S could exist; and 
+· Follow H2S guidelines per 30 CFR 250.490 and NTL 2009-G31. 
+--BSEE-- 

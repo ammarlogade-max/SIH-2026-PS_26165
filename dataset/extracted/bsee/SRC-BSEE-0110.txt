@@ -1,0 +1,95 @@
+
+
+Safety Alert No. 407                                Contact: Jason Mathews      
+January 21, 2021                                                Phone: (504) 731-1496 
+Risk-Based Inspections of Subsea Leak Detection 
+Technology Reveals Gaps in System Processes 
+                                                            
+Recent leaks from subsea production equipment have demonstrated the need for 
+improvements in subsea leak detection (SSLD) technology: 
+May 2016 – A crack in a subsea jumper just below the mudline leaked an estimated 
+1,926 bbls of oil. The abnormal flow behavior was initially suspected to be slugging. The 
+field was shut in over 8 hours after the abnormal flow behavior was observed. 
+October 2017 – A fractured subsea wellhead jumper leaked an estimated 16,000 bbls of 
+oil. The leak was not confirmed for over 24 hours and was initially suspected to be a 
+malfunction of the multiphase flow meter upstream of the leak. 
+July 2020 – A damaged pipe elbow on the jumper caused a leak of an estimated 479 
+bbls of oil. The leak was not confirmed until an oil sheen was observed at the surface. 
+The investigations of the 2016 and 2017 leaks concluded that the SSLD capabilities were 
+inadequate, delayed leak detection and increased the volumes of oil discharged. In 
+response, BSEE requested information on the leak detection capabilities of all Gulf of 
+Mexico operators’ subsea wells and conducted risk-based inspections of five operators 
+representing 34% of Gulf of Mexico oil production. 
+SAFETY ALERT 
+May 2016 - The load limiting joint cracked, but the leak 
+was not identified until many hours later. 
+October 2017 - The operators noticed that the rates from the 
+flow meter upstream of the leak did not match the LACT 
+meter but did not initially suspect that a leak was the cause. 
+
+2
+The overall finding of the evaluation was that while all operators had implemented SSLD 
+technology, there were gaps and areas for improvement in the implementation of the 
+personnel procedures and management system processes that are required for these 
+systems to be effective. 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+· Assume that any observed abnormal subsea flow behavior may be a leak and 
+immediately investigate and identify the cause of the behavior to confirm or rule out 
+the existence of a leak; 
+· Establish, document and communicate a clear chain of command and response 
+procedure for SSLD alarms. At minimum, it should include: 
+o Who has the initial responsibility to respond to an SSLD alarm (e.g. control 
+room operator [CRO])? 
+o If it cannot be quickly determined whether an alarm is valid, when and to 
+whom will the response be escalated to (e.g. CRO escalates to Ultimate 
+Work Authority/Offshore Installation Manager within one hour of the alarm)? 
+The contact information for onshore personnel who can provide technical 
+support should also be provided. 
+o Who has the authority to override an SSLD alarm/shutdown timer (e.g. 
+UWA/OIM) once it is confirmed to be a false alarm? 
+o How long before a well automatically shuts in following an SSLD alarm? (e.g. 
+four-hour timer before automatic well shut in) 
+· When an SSLD alarm/shutdown timer is overridden, operators should document 
+the actions taken and why they concluded that the abnormal behavior was not a 
+leak. Review these records periodically since frequent false alarms, or no alarms, 
+may indicate that an SSLD system’s configuration needs to be adjusted; 
+· Design SSLD drills and practice them regularly. Include scenarios for both valid 
+and false SSLD alarms; 
+· Evaluate records of past failures of subsea leak detection systems (e.g. BSEE 
+Panel Reports 2018-001 and 2019-002, which cover the 2016 and 2017 leaks 
+mentioned previously) to determine if your system would have detected them and, 
+if not, implement corrective actions to improve detection of future leaks; 
+· Train (and periodically re-train) personnel in the operation of your subsea leak 
+detection system, the diagnosis and confirmation of potential leaks and the 
+response to SSLD alarms. Use case studies (e.g. BSEE panel reports) to learn 
+from prior events; 
+· Periodically test the SSLD system and the operation of the associated 
+measurement devices. Check for inhibited or bypassed alarms; 
+
+A Safety Alertis a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.
+Category: Subsea,Production
+3
+· If possible, configure your control system to permit startup and shut-in of wells 
+without manually bypassing SSLD alarms; 
+· Integrate the subsea leak detection into the pre-startup review process for new or 
+modified wells (e.g. checking for personnel competency, verifying SEMS 
+documentation, revising procedures, etc.); 
+· Alarm set points may need to be periodically re-evaluated and adjusted as the flow 
+conditions of a well change over time. Use management of change when modifying 
+a SSLD system’s configuration; 
+· Use Remotely Operated Vehicles to conduct surveys of subsea equipment to 
+check for excessive movement, subsidence or burial. Surveys can be conducted at 
+regular intervals, at intervals determined by a risk-based analysis, and following 
+major environmental events (e.g. subsea landslides), and before and after drilling 
+campaigns; 
+· If your facility hosts third-party wells with third-party personnel on-site, coordinate 
+with their management to ensure that personnel meet minimum competency 
+requirements for subsea leak detection and response; and, 
+· Participate in Offshore Operators Committee and/or other industry workgroups to 
+standardize best practices for existing subsea leak detection technologies, as well 
+as research and apply new technologies that may improve industry’s capabilities 
+with respect to SSLD in the Gulf of Mexico. 
+--BSEE-- 

@@ -1,0 +1,131 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+ 
+ 
+BSEE Identifies Maintenance and Certification Issues 
+of Rental Generators 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+During start-up and commissioning, several rental generator incidents occurred on the 
+U.S. Outer Continental Shelf (OCS) in 2021. These incidents involved rental generator 
+failures resulting in fires, arc flashes, and work stoppages. Lack of certifying rental 
+equipment integrity (e.g., inadequately/improperly maintained generator) has been 
+shown to be one of the key indicators leading to these incidents.  
+ 
+Contributing Factors: 
+ 
+A review of the investigation reports for rental generator incidents indicate that many are 
+attributed to the following: 
+ 
+• Lack of quality control commissioning checks to identify risks. 
+ 
+• Crews were unfamiliar with the detailed system specifications, and there 
+were no formal handover processes between construction/installation and 
+operations. 
+ 
+  
+ 
+Safety Alert No. 432 
+March 9, 2022  
+SAFETY ALERT 
+ 
+ 
+Fig. 1. Rental Generator 
+Fig. 2. Burnt Stator Winding of Generator 
+
+• There was worn defective main-stator windings and insulation 
+disintegration.  
+ 
+• Moisture ingress in the windings terminal enclosure resulting in the short-
+circuiting of the rental generator.  
+ 
+• A short-circuit developed into a line-to-ground fault, resulting in a fire and 
+arc flash within the rental generator. 
+ 
+• Corrosion and rust build-up in the generator's internal components caused 
+an electrical short.  
+ 
+Therefore, BSEE recommends that operators consider:  
+ 
+• Checking to confirm that rental generators are recertified for service by 
+reviewing preventive maintenance records and documents before usage.   
+ 
+• Ensuring quality control inspections during installations and commissioning 
+of equipment are sufficient to verify that equipment and components meet 
+approved Original Equipment Manufacturer (OEM) specifications. 
+ 
+• Ensuring equipment suppliers provide adequate documentation, including 
+specifications, drawings, and commissioning procedures. 
+ 
+• Ensuring offshore personnel are engaged early in the project to enhance 
+system familiarization. 
+ 
+• Providing thorough instructions, training, competency assessment, and 
+supervision to equipment operators and maintenance personnel. 
+ 
+• Operations should perform insulation resistance testing on windings before 
+commissioning to ensure windings are free of moisture and be prepared to 
+dry windings if moisture is detected. 
+ 
+• Operations should develop an installation and commissioning checklist that 
+includes steps to ensure consistent, safe operation of rental equipment. 
+ 
+• Establishing and documenting monitoring procedures to identify potential 
+problems associated with moisture ingress/build-up and overheating (e.g., 
+periodic visual inspection, use thermal vision inspections, resistance 
+checks, and cleaning).  
+ 
+• Conducting insulation resistance measurements to verify there are no shorts 
+or deterioration in the insulation (after installation). 
+ 
+
+• Ensuring operation, maintenance, and safety information is readily available 
+before usage. 
+ 
+• Ensuring the knowledge, skills, and experience of electricians and 
+technicians involved with the installation and start-up of the rental generator 
+before the equipment arrives on-site and during the Job Safety Analysis 
+(JSA). 
+ 
+• Ensuring installation practices are documented and meet fundamental 
+electrical safety principles, including protection against overcurrent and 
+ground-fault current per API RP14F & 14FZ. 
+ 
+• Ensuring compliance with 30 CFR 250.867(d) temporary quarters and 
+temporary equipment and 250.842(a)(2) & 250.842(a)(3) - Approval of 
+safety systems design and installation features. 
+ 
+• Ensuring rental generators are suitable for the area classification in which 
+they are installed per API 500 & API 505. 
+ 
+− BSEE − 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Rental Generators  

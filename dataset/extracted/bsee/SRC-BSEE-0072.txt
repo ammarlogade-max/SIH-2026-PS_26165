@@ -1,0 +1,115 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+ 
+ 
+Poor Preparation Prior to Hot Work Leads   to Fires
+ 
+ 
+ 
+ 
+Recently,  several fires occurring during hot work have been reported to BSEE. Hot work 
+is any job with the potential to create an ignition source, such as an open flame, sparks, 
+or high temperatures.  Examples of hot work include welding, using acetylene torches, 
+and grinding and cutting metal. 
+ 
+Incident 1: A s a construction crew removed skid pads with a torch on the top deck, slag 
+and sparks fell through the grating onto the manway cover of the water skimmer below, 
+igniting a fire. The fire self-extinguished shortly thereafter as the fire watch was securing 
+a dry chemical fire. The water skimmer had been cleaned a week prior in preparation for 
+vessel entry but had not been deemed inert, and the oil dump lines were later found to 
+be full of flammable condensate. Although gas was not detected in the area around the 
+skimmer before starting work, an 8% lower explosive limit was detected at the manway 
+cover later. Workers used fire retardant tarps earlier in the job, but when the workers 
+  
+ 
+SAFETY ALERT 
+ 
+ 
+Fire retardant blankets can be used to protect 
+potential hydrocarbon sources if relocation is 
+impractical. 
+Incident 1: Flammable vapors escaped from the 
+manway,  which were ignited by the falling sparks.  
+Safety Alert No. 447 
+July 26, 2022  
+
+moved to a new location above the water skimmer, they did not take the retardant tarps 
+with them. 
+ 
+Incident 2: While cutting grating with an acetylene torch, falling sparks ignited gas 
+leaking from a pinhole on a gas sales riser located 15 feet below the grating. The fire 
+watch noticed and stopped the job. A worker used a 30-pound ABC fire extinguisher to 
+extinguish the flame. Although a gas detector had measured a 0.0% lower explosive 
+limit before the work started, the gas leak occurred in an area not easily accessible for 
+inspection or gas monitoring. 
+ 
+Incident 3: Before a construction crew removed steel bar grating from beneath a 
+building, it was elevated several inches to provide a distance barrier between the 
+subfloor and the torch cutting below. Saltwater was used to saturate the subfloor, and 
+water was re-applied periodically. The crew finished their work,  and the fire watch 
+remained on location for an additional 30 minutes. A fire was noticed on the lower side 
+of the building 15 minutes later, which was extinguished with the saltwater hose. It was 
+found that the distance barrier may not have been sufficient to prevent a fire, and that 
+the combustible surfaces should be saturated with water during the fire watch period as 
+well as during the job. 
+ 
+Therefore, BSEE recommends that operators and contractors consider: 
+ 
+•    Using flameproof tarps or other fire-resistant guards to protect equipment from falling 
+sparks and excessive heat. Scaffolding may be required to cover elevated areas. 
+Refer to 30 CFR § 250.113 for procedures to follow prior to, during, and after welding. 
+   
+•    Covering and sealing nearby deck and skid drains before starting hot work to prevent 
+flammable gases from entering the area. 
+  
+•    Checking skid pans (visually and with a gas detector) for residual flammable liquids 
+and flooding them with water if possible. 
+ 
+•    Designating a fire watch during jobs involving open flames, sparks,  or heat sources. 
+Operators should maintain the fire watch for at least 30 minutes after welding activities 
+end, recognizing that some jobs may require longer periods. 
+ 
+•    Ensuring the fire watch is positioned well to view all hazardous areas near the hot 
+work location.  
+ 
+•    Locating and inspecting the closest fire extinguisher before starting hot work. If an 
+extra fire extinguisher is available, move it near the work area before starting the job. 
+ 
+
+•    Verifying that any nearby vessel previously containing hydrocarbons has been 
+properly flushed and deemed inert before starting hot work. 
+ 
+•    Completing a hot work permit and Job Safety Analysis and reviewing them 
+immediately before starting the job. All personnel involved with the job should 
+participate in this process. 
+ 
+•    Using the facility’s designated safe welding area for hot work when possible, and 
+following your BSEE-approved safe welding and burning permit.  
+ 
+•    Using gas detectors to continuously monitor the area and ensuring that flammable 
+gases are not present before and during hot work. 
+ 
+•    Testing areas where sparks are likely to fall. Remember: gas detectors may be less 
+effective at finding gas leaks   in well-ventilated areas. 
+ 
+•    Calibrating gas detectors regularly,  and bump testing them before each use. 
+ 
+ 
+–   BSEE – 
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Fire  

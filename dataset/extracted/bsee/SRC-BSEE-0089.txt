@@ -1,0 +1,79 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+Flexible Intermediate Bulk Container (FIBC) 
+Parted Straps Result in Near Misses 
+In the latter part of Calendar Year 2021, numerous incidents occurred in the Gulf of 
+Mexico involving  the failure of FIBC
+1
+straps during lifting  operations. The incident 
+details include the following: 
+·September 2021: An FIBC containing blasting operations material was lifted
+out of a cargo basket by the platform crane using its pre-manufactured
+straps. Upon moving the load out and away from the cargo basket, one of the
+straps failed (Figure 2),  transferring the weight of the load to the other strap,
+which subsequently failed due to exceeding its load capacity. The FIBC
+dropped 5 feet onto the deck grating below (Figure 1).
+·September 2021: While a forklift was lifting an FBIC containing lost
+circulation material for drilling operations, tension on the FIBC straps
+caused two of the four straps to part. The FIBC was not dropped from an
+1
+ FIBCs in industry are more commonly known as Bulk Bags or Super Sacks® 
+Figure 2. Broken FIBC Strap 
+Safety Alert No. 428 
+February 17, 2022 
+SAFETY ALERT 
+Figure 1. FIBC Load trav  el    Path from the Cargo Basket to the 
+Drop Zone 17 Feet Away 
+
+elevation as the load never became suspended. However, the accelerated 
+whiplash due to the straps failing resulted in the FIBC spilling a gallon of its 
+dry chemical contents onto the deck. Personnel promptly cleaned up the 
+material in the area. 
+·October 2021: In preparation to trip and lay-out drillpipe, drill floor personnel 
+communicated the need for additional thread protectors. The crane crew 
+rigged up an FIBC containing multiple thread protectors to be transported to 
+the nearby pipe rack area. The crane operator swung the load slightly over 
+the pipe rack when the designated signal person observed the straps 
+breaking and the FIBC ripping apart. Two thread protectors fell out of the 
+FIBC onto the pipe rack six feet below. No crew members were in the drop 
+zone at the time of the incident. 
+The primary contributing factor associated with these failures is the prolonged 
+exposure of the FIBCs to inclement weather and other natural elements, resulting in 
+their rapid degradation and subsequent failures. A recurring conclusion from the 
+incident investigations suggested that the FIBCs were saturated with water and had 
+debris on their outer linings due to Hurricane Ida in early September 2021. 
+Additionally, polypropylene is the primary component used to manufacture FIBCs, 
+which is known to deteriorate over time when exposed to ultraviolet light. The lack of 
+adequate storage potentially compromised the original integrity of the FIBCs. 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+·Confirm the weight limitation of the FIBC before lifting the load. 
+·Establish a Quality Assurance / Quality Control program to ensure FIBCs are 
+adequately stored before transportation to minimize any adverse effects from 
+weather or ultraviolet light. 
+·Ensure FIBCs are kept out of the cold weather (< 32 deg F) when not       
+              in use. Under a heavy load or unevenly distributed load in below freezing      
+              temperatures, the straps can become brittle, which could lead to a loss of the    
+              load when lifted. 
+·Create a mechanism for tracking the transportation process of FIBCs from 
+the shipyard to the facility to confirm they are maintained in a safe condition. 
+·Generate an inspection protocol and remove the FIBC from service before 
+lifting if any degradation is observed in the pre-manufactured straps.. 
+·Emphasize during safety meetings before the job that the force applied to 
+each FIBC strap is equally distributed to prevent overloading. 
+·Update applicable policies and procedures to include alternative lifting 
+methods, such as transferring FIBC material via pre-slung baskets instead of 
+utilizing the pre-manufactured FIBC straps. 
+
+·Ensure a 4-point lifting technique is applied to the FIBC straps to maintain the 
+integrity of the load as designed in place of utilizing a single-point lift. 
+·Confirm the contents in the FIBC are compatible with all FIBC components 
+before offloading to the facility. FIBCs may not be the approved storage 
+device for some materials, as certain products may have an adverse effect on 
+their overall integrity. 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+Category: Cranes/Lifting 

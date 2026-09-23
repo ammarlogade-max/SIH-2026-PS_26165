@@ -1,0 +1,37 @@
+Safety Alert No. 158 - Water-Treating Facility Upset Leads to Fire on... http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_158... 
+U.S.    Department of the Interior  
+Minerals Management Service  
+Gulf of Mexico OCS Region  
+Notice No. 158 
+August 23, 1990 
+Water-Treating Facility Upset Leads to Fire on Production Platform 
+An upset condition in the water-treating facilities caused a fire on a production platform. High- and intermediate-
+pressure separators route produced water to a skimmer tank and then to a flotation cell on the platform. One of 
+the separators experienced a gas blowby condition either because of a malfunctioning level controller or 
+excessive sand or debris preventing closure of the dump valve. As a result, the downstream skimmer tank was 
+subjected to excessive fluids and pressure. As the liquid level in the tank increased, the level safety high sensor 
+activated the inlet shutdown valve (SDV). The SDV (butterfly valve), however, was rated for only 360 psi working 
+pressure and was therefore unable to shut off the flow of produced water and gas. These circumstances led to 
+an overflow condition in the flotation cell, splashing produced water on a 440-volt transformer, shorting it out, 
+and igniting the gas. 
+As the fire progressed, the emergency shutdown system (ESD) was activated. The ESD shut in the wells and 
+activated the fixed water-spray (deluge) system within the well-bay area. In addition, fuel gas for the turbine 
+compressor was vented through a 6-inch vent that was routed down the platform leg, and discharged below the 
+waterline under the ongoing fire at the flotation cell. The vent gas subsequently migrated upward and ignited. 
+The gas burned off, engulfing the entire platform at one point for a short time. 
+The deluge system protected the wells from the fire. As the vent gas depleted, the fire subsided into smaller 
+fires on the platform. These smaller fires were extinguished by platform personnel utilizing handheld and wheeled 
+unit extinguishers. 
+There were no injuries, and property damage was minimal; however, this could have been a major accident. 
+Discharge vents terminating down a platform leg, regardless of submerged depth, are undesirable since the 
+upward migration of gas may pose a threat to the production facility. Therefore, consideration should be given to 
+the installation or modification of all booms used for flaring or venting flammable gases in a vertical, upward 
+configuration or such that they ensure safe discharge away from the production facility. If personnel had been on 
+the platform at the time of the fire, they could have been seriously injured. 
+To prevent recurrence of this type of accident, the operator has taken the following steps: 
+1.  The electrical transformer has been moved outside the production area. 
+2.  The separator, heater treater, skimmer tank and stock tank were cleaned of sand and debris. 
+3.  The inlet shutdown valve to the skimmer tank has been removed. Safety devices have been installed on the 
+skimmer tank and flotation cell to shut in wells. 
+4.  A flare boom will be installed on the facility in a vertical, upward configuration. 
+1 of 1 2/21/2012 4:05 PM

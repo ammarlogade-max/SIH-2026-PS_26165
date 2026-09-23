@@ -1,0 +1,803 @@
+event_id,field_changed,v2_1_value,v2_2_value,change_reason,evidence_reference
+EVT-BSEE-0001,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1021:1036
+EVT-BSEE-0003,iogp_rules,Hot work,Hot work; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_691:699
+EVT-BSEE-0004,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_72:282
+EVT-BSEE-0005,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_3619:3633
+EVT-BSEE-0007,iogp_rules,Safe mechanical lifting,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_72:242
+EVT-BSEE-0008,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_6764:6772
+EVT-BSEE-0010,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1148:1153
+EVT-BSEE-0014,iogp_rules,Energy isolation; Hot work; Work authorization,Hot work,Two-pass semantic re-evaluation with exact character offset validation,char_1659:1668
+EVT-BSEE-0015,iogp_rules,NONE,Energy isolation,Two-pass semantic re-evaluation with exact character offset validation,char_645:787
+EVT-BSEE-0016,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization; Working at height,Work authorization; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_3046:3049
+EVT-BSEE-0017,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_456:593
+EVT-BSEE-0020,iogp_rules,Safe mechanical lifting; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_1444:1461
+EVT-BSEE-0021,iogp_rules,Driving; Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_212:219
+EVT-BSEE-0023,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1450:1455
+EVT-BSEE-0024,iogp_rules,Safe mechanical lifting; Working at height,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_622:633
+EVT-BSEE-0025,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1649:1655
+EVT-BSEE-0028,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1130:1139
+EVT-BSEE-0037,iogp_rules,Hot work; Safe mechanical lifting; Work authorization,Hot work,Two-pass semantic re-evaluation with exact character offset validation,char_1387:1395
+EVT-BSEE-0039,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_417:424
+EVT-BSEE-0040,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1748:1920
+EVT-BSEE-0043,iogp_rules,Work authorization; Working at height,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_0:59
+EVT-BSEE-0044,iogp_rules,Hot work; Safe mechanical lifting,Hot work,Two-pass semantic re-evaluation with exact character offset validation,char_448:576
+EVT-BSEE-0045,iogp_rules,NONE,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2602:2611
+EVT-BSEE-0047,iogp_rules,Energy isolation; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2975:3107
+EVT-BSEE-0049,iogp_rules,Bypassing safety controls; Hot work; Line of fire,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_45:197
+EVT-BSEE-0050,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2109:2117
+EVT-BSEE-0053,iogp_rules,Bypassing safety controls; Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1390:1396
+EVT-BSEE-0055,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:50
+EVT-BSEE-0056,iogp_rules,NONE,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2423:2597
+EVT-BSEE-0057,iogp_rules,Energy isolation; Hot work; Safe mechanical lifting; Working at height,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_1759:1768
+EVT-BSEE-0058,iogp_rules,Hot work; Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_590:597
+EVT-BSEE-0060,iogp_rules,Line of fire; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_507:516
+EVT-BSEE-0062,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_819:830
+EVT-BSEE-0063,iogp_rules,Safe mechanical lifting; Safe mechanical lifting; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_1635:1650
+EVT-BSEE-0064,iogp_rules,Energy isolation; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_3100:3112
+EVT-BSEE-0065,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1141:1155
+EVT-BSEE-0066,iogp_rules,Confined space; Energy isolation; Hot work; Work authorization; Working at height,Hot work; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2086:2095
+EVT-BSEE-0067,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_32:247
+EVT-BSEE-0068,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-BSEE-0070,iogp_rules,Hot work; Work authorization,Hot work,Two-pass semantic re-evaluation with exact character offset validation,char_1154:1160
+EVT-BSEE-0071,iogp_rules,Line of fire; Safe mechanical lifting,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_871:1014
+EVT-BSEE-0072,iogp_rules,Hot work; Working at height,Hot work; Work authorization; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_32:184
+EVT-BSEE-0073,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting; Work authorization; Working at height,Line of fire; Safe mechanical lifting; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2323:2335
+EVT-BSEE-0074,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting; Work authorization,Line of fire; Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_2254:2266
+EVT-BSEE-0075,iogp_rules,Safe mechanical lifting; Energy isolation; Safe mechanical lifting; Work authorization,Energy isolation; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_3018:3030
+EVT-BSEE-0078,iogp_rules,Safe mechanical lifting; Working at height,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_134:371
+EVT-BSEE-0079,iogp_rules,Work authorization; Working at height,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2479:2482
+EVT-BSEE-0084,iogp_rules,Bypassing safety controls; Safe mechanical lifting; Safe mechanical lifting; Work authorization,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_265:394
+EVT-BSEE-0089,iogp_rules,Safe mechanical lifting; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_796:804
+EVT-BSEE-0090,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_555:560
+EVT-BSEE-0091,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization; Working at height,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_438:444
+EVT-BSEE-0093,iogp_rules,Safe mechanical lifting; Working at height,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_53:281
+EVT-BSEE-0094,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:48
+EVT-BSEE-0096,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-BSEE-0097,iogp_rules,Work authorization,Energy isolation; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_1408:1415
+EVT-BSEE-0098,iogp_rules,NONE,Energy isolation,Two-pass semantic re-evaluation with exact character offset validation,char_1408:1544
+EVT-BSEE-0101,iogp_rules,Hot work; Safe mechanical lifting; Working at height,Hot work,Two-pass semantic re-evaluation with exact character offset validation,char_3115:3123
+EVT-BSEE-0104,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_163:412
+EVT-BSEE-0105,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2037:2041
+EVT-BSEE-0106,iogp_rules,NONE,Energy isolation,Two-pass semantic re-evaluation with exact character offset validation,char_1237:1243
+EVT-BSEE-0107,iogp_rules,Hot work; Safe mechanical lifting; Work authorization; Working at height,Hot work; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2331:2339
+EVT-BSEE-0109,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-BSEE-0113,iogp_rules,Safe mechanical lifting; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2247:2252
+EVT-BSEE-0114,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_353:534
+EVT-BSEE-0116,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2602:2608
+EVT-BSEE-0118,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1964:1983
+EVT-BSEE-0123,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1603:1610
+EVT-BSEE-0125,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_678:851
+EVT-BSEE-0126,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_137:142
+EVT-BSEE-0128,iogp_rules,Hot work; Work authorization; Working at height,Hot work; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_3670:3696
+EVT-BSEE-0129,iogp_rules,Confined space; Hot work,Hot work,Two-pass semantic re-evaluation with exact character offset validation,char_2080:2088
+EVT-BSEE-0133,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2254:2502
+EVT-BSEE-0134,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization,Line of fire; Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_624:828
+EVT-BSEE-0138,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_331:338
+EVT-BSEE-0139,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_950:954
+EVT-BSEE-0140,iogp_rules,Bypassing safety controls,Energy isolation; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_95:103
+EVT-BSEE-0142,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_36:263
+EVT-BSEE-0147,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_602:609
+EVT-BSEE-0148,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_445:450
+EVT-BSEE-0150,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_233:240
+EVT-BSEE-0151,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-BSEE-0152,iogp_rules,Safe mechanical lifting; Working at height,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2824:2833
+EVT-BSEE-0153,iogp_rules,Driving; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2033:2040
+EVT-BSEE-0154,iogp_rules,Safe mechanical lifting; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_935:1046
+EVT-BSEE-0155,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting; Work authorization,Safe mechanical lifting; Work authorization; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_1822:1964
+EVT-BSEE-0156,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_80:89
+EVT-BSEE-0158,iogp_rules,Safe mechanical lifting; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_116:121
+EVT-BSEE-0161,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_590:605
+EVT-BSEE-0162,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_749:756
+EVT-BSEE-0164,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_620:627
+EVT-BSEE-0166,iogp_rules,Hot work; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2389:2540
+EVT-BSEE-0169,iogp_rules,Safe mechanical lifting; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1001:1008
+EVT-BSEE-0173,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-BSEE-0175,iogp_rules,Hot work; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_3088:3093
+EVT-BSEE-0176,iogp_rules,Work authorization; Working at height,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_538:544
+EVT-BSEE-0184,iogp_rules,Safe mechanical lifting; Work authorization,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_78:83
+EVT-BSEE-0186,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_371:377
+EVT-BSEE-0187,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2642:2649
+EVT-BSEE-0188,iogp_rules,Hot work; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2477:2485
+EVT-BSEE-0193,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2524:2531
+EVT-BSEE-0195,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_729:734
+EVT-BSEE-0196,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-BSEE-0202,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_898:907
+EVT-BSEE-0209,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_997:1004
+EVT-BSEE-0211,iogp_rules,Hot work; Work authorization; Working at height,Hot work; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2000:2249
+EVT-BSEE-0212,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting; Work authorization,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_911:920
+EVT-BSEE-0214,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_221:227
+EVT-BSEE-0215,iogp_rules,Safe mechanical lifting; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_535:540
+EVT-BSEE-0218,iogp_rules,Safe mechanical lifting; Safe mechanical lifting; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_247:403
+EVT-BSEE-0220,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2491:2497
+EVT-BSEE-0223,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1560:1725
+EVT-BSEE-0224,iogp_rules,Energy isolation; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_981:988
+EVT-BSEE-0225,iogp_rules,Working at height,Energy isolation,Two-pass semantic re-evaluation with exact character offset validation,char_1018:1201
+EVT-BSEE-0228,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2043:2241
+EVT-BSEE-0232,iogp_rules,Safe mechanical lifting,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_1424:1672
+EVT-BSEE-0233,iogp_rules,Safe mechanical lifting; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_180:185
+EVT-BSEE-0234,iogp_rules,Safe mechanical lifting; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_371:376
+EVT-BSEE-0235,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_607:613
+EVT-BSEE-0238,iogp_rules,Safe mechanical lifting; Work authorization,Hot work,Two-pass semantic re-evaluation with exact character offset validation,char_182:313
+EVT-BSEE-0244,iogp_rules,NONE,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2196:2202
+EVT-BSEE-0248,iogp_rules,Hot work; Work authorization; Working at height,Hot work,Two-pass semantic re-evaluation with exact character offset validation,char_1727:1734
+EVT-BSEE-0249,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_796:804
+EVT-BSEE-0253,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_183:188
+EVT-BSEE-0254,iogp_rules,Bypassing safety controls,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_896:904
+EVT-BSEE-0255,iogp_rules,Safe mechanical lifting; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_291:429
+EVT-BSEE-0256,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1136:1142
+EVT-BSEE-0264,iogp_rules,Safe mechanical lifting; Work authorization; Working at height,Confined space; Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_108:268
+EVT-BSEE-0267,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_408:537
+EVT-BSEE-0268,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_274:402
+EVT-BSEE-0269,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_408:537
+EVT-BSEE-0270,iogp_rules,Hot work; Safe mechanical lifting; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_895:904
+EVT-BSEE-0271,iogp_rules,Safe mechanical lifting; Work authorization; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_322:328
+EVT-BSEE-0273,iogp_rules,Safe mechanical lifting; Safe mechanical lifting; Work authorization; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_301:306
+EVT-BSEE-0278,iogp_rules,Hot work; Work authorization; Working at height,Hot work,Two-pass semantic re-evaluation with exact character offset validation,char_1664:1671
+EVT-BSEE-0279,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_291:296
+EVT-BSEE-0287,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1730:1739
+EVT-BSEE-0294,iogp_rules,Hot work; Safe mechanical lifting; Work authorization,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_261:268
+EVT-BSEE-0300,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1586:1593
+EVT-BSEE-0312,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_1175:1181
+EVT-BSEE-0317,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_421:427
+EVT-BSEE-0319,iogp_rules,Bypassing safety controls,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_563:772
+EVT-BSEE-0320,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_611:616
+EVT-BSEE-0323,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_176:181
+EVT-BSEE-0324,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1128:1262
+EVT-BSEE-0325,iogp_rules,Safe mechanical lifting; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1638:1883
+EVT-BSEE-0329,iogp_rules,Safe mechanical lifting; Working at height,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_266:409
+EVT-BSEE-0330,iogp_rules,Hot work; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_517:524
+EVT-BSEE-0331,iogp_rules,Energy isolation; Hot work,Energy isolation; Hot work; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2065:2315
+EVT-BSEE-0333,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1825:1832
+EVT-BSEE-0334,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-BSEE-0336,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1152:1160
+EVT-BSEE-0338,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_109:319
+EVT-BSEE-0343,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_166:300
+EVT-BSEE-0344,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:59
+EVT-BSEE-0345,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-BSEE-0350,iogp_rules,Hot work; Safe mechanical lifting; Working at height,Hot work; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_1267:1275
+EVT-BSEE-0355,iogp_rules,Safe mechanical lifting; Working at height,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_820:946
+EVT-BSEE-0363,iogp_rules,Bypassing safety controls; Hot work; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1366:1374
+EVT-BSEE-0364,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_417:425
+EVT-BSEE-0369,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_269:465
+EVT-BSEE-0381,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:71
+EVT-BSEE-0390,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:47
+EVT-BSEE-0393,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:44
+EVT-BSEE-0394,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:34
+EVT-BSEE-0395,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:56
+EVT-BSEE-0414,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:35
+EVT-BSEE-0415,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:33
+EVT-BSEE-0422,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:31
+EVT-BSEE-0423,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:32
+EVT-BSEE-0424,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:42
+EVT-BSEE-0434,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:59
+EVT-BSEE-0441,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:53
+EVT-BSEE-0455,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:42
+EVT-BSEE-0464,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:42
+EVT-BSEE-0467,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:30
+EVT-BSEE-0479,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:56
+EVT-BSEE-0514,narrative.cleaned_source_text,Sparse text (48 chars),Remediated full text (299 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0516,narrative.cleaned_source_text,Sparse text (33 chars),Remediated full text (1032 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0523,iogp_rules,NONE,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_0:57
+EVT-BSEE-0526,narrative.cleaned_source_text,Sparse text (39 chars),Remediated full text (291 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0535,narrative.cleaned_source_text,Sparse text (45 chars),Remediated full text (334 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0536,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:42
+EVT-BSEE-0538,narrative.cleaned_source_text,Sparse text (45 chars),Remediated full text (366 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0543,narrative.cleaned_source_text,Sparse text (30 chars),Remediated full text (302 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0551,narrative.cleaned_source_text,Sparse text (42 chars),Remediated full text (359 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0554,narrative.cleaned_source_text,Sparse text (33 chars),Remediated full text (350 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0557,narrative.cleaned_source_text,Sparse text (32 chars),Remediated full text (349 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0557,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:60
+EVT-BSEE-0562,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:45
+EVT-BSEE-0563,narrative.cleaned_source_text,Sparse text (36 chars),Remediated full text (339 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0563,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-BSEE-0565,narrative.cleaned_source_text,Sparse text (47 chars),Remediated full text (385 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0567,narrative.cleaned_source_text,Sparse text (25 chars),Remediated full text (653 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0568,narrative.cleaned_source_text,Sparse text (35 chars),Remediated full text (311 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-BSEE-0568,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-BSEE-0575,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:48
+EVT-BSEE-0581,narrative.cleaned_source_text,Sparse text (42 chars),Remediated full text (678 chars),BSEE PDF regulatory text extraction remediation,dataset/extracted/bsee/
+EVT-IMCA-0001,iogp_rules,Energy isolation; Line of fire; Safe mechanical lifting; Work authorization,Line of fire; Safe mechanical lifting; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_362:370
+EVT-IMCA-0010,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:102
+EVT-IMCA-0011,iogp_rules,Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_3144:3151
+EVT-IMCA-0013,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0015,iogp_rules,Line of fire; Safe mechanical lifting,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_0:140
+EVT-IMCA-0016,iogp_rules,Safe mechanical lifting; Work authorization,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_1753:1938
+EVT-IMCA-0017,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_56:63
+EVT-IMCA-0018,iogp_rules,Driving; Safe mechanical lifting; Work authorization; Working at height,Bypassing safety controls; Driving; Safe mechanical lifting; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_2331:2510
+EVT-IMCA-0019,iogp_rules,NONE,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_1837:1998
+EVT-IMCA-0021,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_350:357
+EVT-IMCA-0023,iogp_rules,Energy isolation; Line of fire; Work authorization,Bypassing safety controls; Line of fire; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2792:2966
+EVT-IMCA-0024,iogp_rules,Energy isolation; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_494:502
+EVT-IMCA-0025,iogp_rules,Energy isolation; Hot work,Energy isolation,Two-pass semantic re-evaluation with exact character offset validation,char_2289:2434
+EVT-IMCA-0026,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1047:1056
+EVT-IMCA-0027,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_225:232
+EVT-IMCA-0028,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1796:1806
+EVT-IMCA-0030,iogp_rules,NONE,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_2198:2359
+EVT-IMCA-0031,iogp_rules,Safe mechanical lifting,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_2623:2784
+EVT-IMCA-0032,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0033,iogp_rules,Line of fire; Work authorization,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2236:2245
+EVT-IMCA-0036,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0038,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0039,iogp_rules,Hot work; Line of fire,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_80:328
+EVT-IMCA-0041,iogp_rules,Driving; Line of fire; Safe mechanical lifting; Work authorization,Driving; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2034:2041
+EVT-IMCA-0042,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:142
+EVT-IMCA-0044,iogp_rules,Line of fire; Safe mechanical lifting; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1483:1488
+EVT-IMCA-0045,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0046,iogp_rules,NONE,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_2145:2306
+EVT-IMCA-0047,iogp_rules,Safe mechanical lifting; Work authorization; Working at height,Bypassing safety controls; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_3212:3391
+EVT-IMCA-0048,iogp_rules,Safe mechanical lifting; Safe mechanical lifting; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1421:1565
+EVT-IMCA-0049,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization,Safe mechanical lifting; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2232:2240
+EVT-IMCA-0050,iogp_rules,Driving; Line of fire; Work authorization,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_375:380
+EVT-IMCA-0051,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization,Line of fire; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2489:2501
+EVT-IMCA-0053,iogp_rules,NONE,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_2094:2255
+EVT-IMCA-0054,iogp_rules,Safe mechanical lifting; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_101:229
+EVT-IMCA-0055,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:103
+EVT-IMCA-0058,iogp_rules,Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2272:2444
+EVT-IMCA-0061,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization,Line of fire; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_3216:3225
+EVT-IMCA-0062,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_255:261
+EVT-IMCA-0063,iogp_rules,Line of fire; Working at height,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_1676:1682
+EVT-IMCA-0065,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2687:2696
+EVT-IMCA-0068,iogp_rules,Line of fire; Safe mechanical lifting,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_3964:4220
+EVT-IMCA-0070,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1780:1789
+EVT-IMCA-0071,iogp_rules,Hot work; Line of fire; Work authorization,Hot work; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_1773:1782
+EVT-IMCA-0074,iogp_rules,Safe mechanical lifting; Work authorization,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_459:465
+EVT-IMCA-0078,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,Bypassing safety controls; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_4698:4704
+EVT-IMCA-0079,iogp_rules,Confined space; Line of fire; Work authorization,Confined space; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_1287:1441
+EVT-IMCA-0080,iogp_rules,Safe mechanical lifting; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2481:2490
+EVT-IMCA-0083,iogp_rules,NONE,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_2360:2369
+EVT-IMCA-0084,iogp_rules,Hot work,Driving; Hot work,Two-pass semantic re-evaluation with exact character offset validation,char_2022:2273
+EVT-IMCA-0085,iogp_rules,NONE,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_1668:1827
+EVT-IMCA-0086,iogp_rules,Line of fire; Safe mechanical lifting,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_2043:2057
+EVT-IMCA-0088,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_635:640
+EVT-IMCA-0089,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,Bypassing safety controls; Line of fire; Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_3378:3576
+EVT-IMCA-0091,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0092,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0093,iogp_rules,Work authorization,Bypassing safety controls; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_1550:1711
+EVT-IMCA-0094,iogp_rules,NONE,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_1954:2115
+EVT-IMCA-0095,iogp_rules,Energy isolation; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2601:2610
+EVT-IMCA-0099,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization,Bypassing safety controls; Line of fire; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2336:2534
+EVT-IMCA-0100,iogp_rules,Energy isolation,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_2102:2280
+EVT-IMCA-0101,iogp_rules,Confined space; Work authorization,Confined space,Two-pass semantic re-evaluation with exact character offset validation,char_0:169
+EVT-IMCA-0102,iogp_rules,NONE,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_360:366
+EVT-IMCA-0103,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_816:820
+EVT-IMCA-0105,iogp_rules,Energy isolation; Line of fire; Safe mechanical lifting; Work authorization,Bypassing safety controls; Energy isolation; Line of fire; Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_4306:4521
+EVT-IMCA-0106,iogp_rules,Energy isolation; Work authorization,Energy isolation,Two-pass semantic re-evaluation with exact character offset validation,char_1062:1070
+EVT-IMCA-0108,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_768:782
+EVT-IMCA-0110,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:37
+EVT-IMCA-0111,iogp_rules,Energy isolation; Line of fire; Work authorization,Energy isolation; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2811:2988
+EVT-IMCA-0112,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0113,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization,Line of fire; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2363:2372
+EVT-IMCA-0114,iogp_rules,Line of fire; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_1375:1394
+EVT-IMCA-0115,iogp_rules,Safe mechanical lifting; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_1474:1733
+EVT-IMCA-0116,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1317:1323
+EVT-IMCA-0118,iogp_rules,Line of fire; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1021:1165
+EVT-IMCA-0119,iogp_rules,Driving; Work authorization,Driving,Two-pass semantic re-evaluation with exact character offset validation,char_1249:1254
+EVT-IMCA-0121,iogp_rules,Driving; Line of fire; Safe mechanical lifting,Driving; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_717:724
+EVT-IMCA-0122,iogp_rules,Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_1831:1979
+EVT-IMCA-0123,iogp_rules,Line of fire,Bypassing safety controls; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_1952:2126
+EVT-IMCA-0124,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting; Work authorization,Line of fire; Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_2711:2720
+EVT-IMCA-0127,iogp_rules,Driving; Line of fire; Safe mechanical lifting,Driving,Two-pass semantic re-evaluation with exact character offset validation,char_41:232
+EVT-IMCA-0129,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization; Working at height,Line of fire; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_3142:3149
+EVT-IMCA-0130,iogp_rules,Energy isolation; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_555:561
+EVT-IMCA-0131,iogp_rules,Energy isolation; Safe mechanical lifting,Energy isolation,Two-pass semantic re-evaluation with exact character offset validation,char_674:683
+EVT-IMCA-0134,iogp_rules,Driving; Line of fire; Safe mechanical lifting,Driving; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_1377:1383
+EVT-IMCA-0135,iogp_rules,Driving; Line of fire; Safe mechanical lifting,Driving; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_121:248
+EVT-IMCA-0136,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:135
+EVT-IMCA-0137,iogp_rules,Energy isolation,Bypassing safety controls; Energy isolation,Two-pass semantic re-evaluation with exact character offset validation,char_2691:2699
+EVT-IMCA-0140,iogp_rules,Confined space; Work authorization,Confined space,Two-pass semantic re-evaluation with exact character offset validation,char_0:155
+EVT-IMCA-0141,iogp_rules,Driving; Line of fire; Safe mechanical lifting,Driving,Two-pass semantic re-evaluation with exact character offset validation,char_388:394
+EVT-IMCA-0142,iogp_rules,Line of fire; Work authorization,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_1660:1669
+EVT-IMCA-0145,iogp_rules,Safe mechanical lifting; Safe mechanical lifting; Work authorization,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_0:147
+EVT-IMCA-0147,iogp_rules,Driving; Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1305:1312
+EVT-IMCA-0148,iogp_rules,Line of fire; Safe mechanical lifting,Bypassing safety controls; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_3137:3311
+EVT-IMCA-0149,iogp_rules,Safe mechanical lifting,Bypassing safety controls; Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_2945:3130
+EVT-IMCA-0151,iogp_rules,Confined space; Driving; Line of fire; Work authorization,Bypassing safety controls; Confined space; Driving; Line of fire; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_1960:2157
+EVT-IMCA-0152,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_602:611
+EVT-IMCA-0154,iogp_rules,Work authorization,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_2791:2952
+EVT-IMCA-0156,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_754:760
+EVT-IMCA-0158,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_2262:2447
+EVT-IMCA-0159,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting; Working at height,Bypassing safety controls; Line of fire; Safe mechanical lifting; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_573:824
+EVT-IMCA-0162,iogp_rules,Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_735:868
+EVT-IMCA-0164,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_246:252
+EVT-IMCA-0166,iogp_rules,Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2086:2098
+EVT-IMCA-0167,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization; Working at height,Line of fire; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_675:680
+EVT-IMCA-0168,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1115:1127
+EVT-IMCA-0169,iogp_rules,Confined space; Line of fire,Confined space,Two-pass semantic re-evaluation with exact character offset validation,char_1298:1312
+EVT-IMCA-0171,iogp_rules,Safe mechanical lifting; Work authorization; Working at height,Bypassing safety controls; Work authorization; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_2811:2990
+EVT-IMCA-0172,iogp_rules,Safe mechanical lifting; Working at height,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_609:626
+EVT-IMCA-0175,iogp_rules,Driving; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_419:426
+EVT-IMCA-0181,iogp_rules,Confined space; Driving; Hot work; Line of fire; Safe mechanical lifting; Work authorization; Working at height,Bypassing safety controls; Confined space; Driving; Hot work; Line of fire; Safe mechanical lifting; Work authorization; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_1680:1814
+EVT-IMCA-0182,iogp_rules,Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_757:765
+EVT-IMCA-0183,iogp_rules,Safe mechanical lifting; Work authorization,Bypassing safety controls; Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_2997:3181
+EVT-IMCA-0185,iogp_rules,Work authorization; Working at height,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_3078:3087
+EVT-IMCA-0186,iogp_rules,Line of fire; Work authorization,Bypassing safety controls; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_1761:1935
+EVT-IMCA-0190,iogp_rules,Energy isolation; Hot work; Work authorization; Working at height,Energy isolation; Hot work; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_2898:3149
+EVT-IMCA-0192,iogp_rules,Energy isolation; Line of fire; Work authorization,Bypassing safety controls; Line of fire; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_3945:4155
+EVT-IMCA-0193,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:22
+EVT-IMCA-0195,iogp_rules,Hot work; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1088:1093
+EVT-IMCA-0197,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:131
+EVT-IMCA-0198,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1753:1767
+EVT-IMCA-0200,iogp_rules,Safe mechanical lifting; Safe mechanical lifting; Work authorization; Working at height,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_828:835
+EVT-IMCA-0209,iogp_rules,Work authorization; Working at height,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_355:361
+EVT-IMCA-0210,iogp_rules,NONE,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_2226:2387
+EVT-IMCA-0214,iogp_rules,Safe mechanical lifting; Work authorization,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_907:913
+EVT-IMCA-0215,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0216,iogp_rules,Line of fire; Safe mechanical lifting,Bypassing safety controls; Line of fire; Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_2349:2547
+EVT-IMCA-0217,iogp_rules,Hot work,Bypassing safety controls; Hot work,Two-pass semantic re-evaluation with exact character offset validation,char_3707:3868
+EVT-IMCA-0219,iogp_rules,Work authorization; Working at height,Bypassing safety controls; Work authorization; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_1524:1703
+EVT-IMCA-0220,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2014:2023
+EVT-IMCA-0221,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2874:2884
+EVT-IMCA-0222,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_3218:3230
+EVT-IMCA-0223,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting; Work authorization,Line of fire; Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_2440:2694
+EVT-IMCA-0224,iogp_rules,Confined space; Line of fire; Safe mechanical lifting,Confined space; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2604:2610
+EVT-IMCA-0226,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,Bypassing safety controls; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_1843:2017
+EVT-IMCA-0227,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_319:452
+EVT-IMCA-0230,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1304:1319
+EVT-IMCA-0232,iogp_rules,Line of fire; Safe mechanical lifting,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_0:135
+EVT-IMCA-0236,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_439:447
+EVT-IMCA-0238,iogp_rules,Safe mechanical lifting; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1334:1340
+EVT-IMCA-0240,iogp_rules,Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_1784:1793
+EVT-IMCA-0241,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_42:228
+EVT-IMCA-0242,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_860:866
+EVT-IMCA-0243,iogp_rules,Safe mechanical lifting; Work authorization; Working at height,Bypassing safety controls; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_2532:2693
+EVT-IMCA-0244,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0245,iogp_rules,Safe mechanical lifting; Hot work; Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_0:136
+EVT-IMCA-0246,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1291:1299
+EVT-IMCA-0247,iogp_rules,Confined space; Work authorization,Bypassing safety controls; Confined space; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_3337:3469
+EVT-IMCA-0248,iogp_rules,Driving; Energy isolation; Line of fire; Safe mechanical lifting,Driving; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2584:2589
+EVT-IMCA-0249,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_536:541
+EVT-IMCA-0250,iogp_rules,Work authorization,Bypassing safety controls; Driving; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_5013:5022
+EVT-IMCA-0252,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting; Work authorization,Bypassing safety controls; Line of fire; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_3185:3359
+EVT-IMCA-0253,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2049:2057
+EVT-IMCA-0254,iogp_rules,Line of fire; Work authorization,Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_760:772
+EVT-IMCA-0255,iogp_rules,Line of fire; Safe mechanical lifting,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_733:738
+EVT-IMCA-0256,iogp_rules,Safe mechanical lifting; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:114
+EVT-IMCA-0257,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2074:2084
+EVT-IMCA-0258,iogp_rules,Confined space; Hot work; Work authorization; Working at height,Bypassing safety controls; Confined space; Hot work; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_2895:3065
+EVT-IMCA-0259,iogp_rules,Line of fire; Work authorization,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2191:2339
+EVT-IMCA-0260,iogp_rules,Safe mechanical lifting; Energy isolation; Line of fire; Safe mechanical lifting; Work authorization,Bypassing safety controls; Energy isolation; Line of fire; Work authorization,Two-pass semantic re-evaluation with exact character offset validation,char_3901:4111
+EVT-IMCA-0261,iogp_rules,Line of fire; Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1055:1070
+EVT-IMCA-0262,iogp_rules,Line of fire; Work authorization,Bypassing safety controls; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2664:2838
+EVT-IMCA-0263,iogp_rules,Hot work; Line of fire; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_387:393
+EVT-IMCA-0264,iogp_rules,Energy isolation; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_3387:3396
+EVT-IMCA-0265,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2990:2995
+EVT-IMCA-0266,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2638:2653
+EVT-IMCA-0267,iogp_rules,NONE,Bypassing safety controls,Two-pass semantic re-evaluation with exact character offset validation,char_2393:2554
+EVT-IMCA-0268,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting; Work authorization,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2002:2011
+EVT-IMCA-0272,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2310:2482
+EVT-IMCA-0274,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_998:1007
+EVT-IMCA-0275,iogp_rules,Line of fire; Safe mechanical lifting; Working at height,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_1286:1298
+EVT-IMCA-0278,iogp_rules,Line of fire; Work authorization; Working at height,Work authorization; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_962:1108
+EVT-IMCA-0279,iogp_rules,Safe mechanical lifting; Work authorization,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_2905:2914
+EVT-IMCA-0281,iogp_rules,Work authorization; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_908:917
+EVT-IMCA-0282,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_976:988
+EVT-IMCA-0283,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:125
+EVT-IMCA-0284,iogp_rules,Confined space; Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:79
+EVT-IMCA-0285,iogp_rules,Confined space; Hot work; Work authorization; Working at height,Bypassing safety controls; Confined space; Hot work; Work authorization; Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_2375:2588
+EVT-IMCA-0288,iogp_rules,NONE,Driving,Two-pass semantic re-evaluation with exact character offset validation,char_374:519
+EVT-IMCA-0289,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1626:1634
+EVT-IMCA-0290,iogp_rules,Line of fire,Bypassing safety controls; Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_2817:2978
+EVT-IMCA-0291,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_2437:2443
+EVT-IMCA-0292,iogp_rules,Safe mechanical lifting; Working at height,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_342:591
+EVT-IMCA-0294,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_2103:2109
+EVT-IMCA-0296,iogp_rules,Driving; Line of fire; Safe mechanical lifting; Work authorization,Driving; Safe mechanical lifting,Two-pass semantic re-evaluation with exact character offset validation,char_1940:1945
+EVT-IMCA-0297,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_327:576
+EVT-IMCA-0298,iogp_rules,Energy isolation; Safe mechanical lifting,Energy isolation,Two-pass semantic re-evaluation with exact character offset validation,char_2102:2111
+EVT-IMCA-0299,iogp_rules,Line of fire; Safe mechanical lifting; Work authorization,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_3640:3788
+EVT-IMCA-0300,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1818:1824
+EVT-IMCA-0302,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:124
+EVT-IMCA-0304,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:178
+EVT-IMCA-0306,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:121
+EVT-IMCA-0312,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0319,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:91
+EVT-IMCA-0322,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:119
+EVT-IMCA-0327,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:49
+EVT-IMCA-0333,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:74
+EVT-IMCA-0337,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:37
+EVT-IMCA-0339,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0340,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_11:142
+EVT-IMCA-0342,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:162
+EVT-IMCA-0343,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:99
+EVT-IMCA-0344,iogp_rules,Work authorization; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:145
+EVT-IMCA-0352,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:142
+EVT-IMCA-0353,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:186
+EVT-IMCA-0361,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:119
+EVT-IMCA-0362,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:157
+EVT-IMCA-0366,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:200
+EVT-IMCA-0373,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0376,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:183
+EVT-IMCA-0401,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_305:314
+EVT-IMCA-0413,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:163
+EVT-IMCA-0415,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:122
+EVT-IMCA-0416,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_12:192
+EVT-IMCA-0426,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0427,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:82
+EVT-IMCA-0428,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:106
+EVT-IMCA-0458,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:43
+EVT-IMCA-0460,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:43
+EVT-IMCA-0461,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0462,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:53
+EVT-IMCA-0466,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0473,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:43
+EVT-IMCA-0474,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:54
+EVT-IMCA-0475,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:28
+EVT-IMCA-0498,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:157
+EVT-IMCA-0501,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:92
+EVT-IMCA-0509,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:82
+EVT-IMCA-0510,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:80
+EVT-IMCA-0516,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0524,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:143
+EVT-IMCA-0527,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:49
+EVT-IMCA-0532,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:123
+EVT-IMCA-0540,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_69:216
+EVT-IMCA-0563,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_19:220
+EVT-IMCA-0566,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:128
+EVT-IMCA-0567,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0579,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_16:176
+EVT-IMCA-0588,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_12:159
+EVT-IMCA-0592,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:59
+EVT-IMCA-0600,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:125
+EVT-IMCA-0617,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_17:249
+EVT-IMCA-0618,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_57:171
+EVT-IMCA-0628,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0637,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:188
+EVT-IMCA-0639,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_113:251
+EVT-IMCA-0640,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:130
+EVT-IMCA-0641,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:88
+EVT-IMCA-0642,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_343:349
+EVT-IMCA-0643,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_343:349
+EVT-IMCA-0645,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_138:145
+EVT-IMCA-0651,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_85:91
+EVT-IMCA-0662,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0665,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:175
+EVT-IMCA-0666,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:166
+EVT-IMCA-0677,iogp_rules,Safe mechanical lifting; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:129
+EVT-IMCA-0679,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0680,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_134:148
+EVT-IMCA-0681,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_134:148
+EVT-IMCA-0698,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:145
+EVT-IMCA-0699,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_122:129
+EVT-IMCA-0701,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:120
+EVT-IMCA-0702,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_29:102
+EVT-IMCA-0708,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_159:164
+EVT-IMCA-0713,iogp_rules,Safe mechanical lifting; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:190
+EVT-IMCA-0722,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0724,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_79:166
+EVT-IMCA-0726,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:105
+EVT-IMCA-0730,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0739,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:87
+EVT-IMCA-0743,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:61
+EVT-IMCA-0744,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:66
+EVT-IMCA-0746,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:60
+EVT-IMCA-0757,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:48
+EVT-IMCA-0769,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:176
+EVT-IMCA-0772,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:44
+EVT-IMCA-0774,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0778,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:184
+EVT-IMCA-0779,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_228:242
+EVT-IMCA-0784,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:54
+EVT-IMCA-0785,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:80
+EVT-IMCA-0786,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_155:160
+EVT-IMCA-0787,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_155:160
+EVT-IMCA-0788,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_228:242
+EVT-IMCA-0790,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:39
+EVT-IMCA-0803,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0811,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0812,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0814,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:105
+EVT-IMCA-0820,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:152
+EVT-IMCA-0823,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_107:112
+EVT-IMCA-0831,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:114
+EVT-IMCA-0832,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:136
+EVT-IMCA-0833,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:136
+EVT-IMCA-0834,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:105
+EVT-IMCA-0836,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:217
+EVT-IMCA-0839,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:50
+EVT-IMCA-0840,iogp_rules,NONE,Driving,Two-pass semantic re-evaluation with exact character offset validation,char_132:141
+EVT-IMCA-0848,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_122:130
+EVT-IMCA-0849,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_11:219
+EVT-IMCA-0855,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:114
+EVT-IMCA-0865,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:78
+EVT-IMCA-0866,iogp_rules,Driving; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_3:143
+EVT-IMCA-0873,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:117
+EVT-IMCA-0874,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:117
+EVT-IMCA-0875,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:117
+EVT-IMCA-0876,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:117
+EVT-IMCA-0877,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:134
+EVT-IMCA-0885,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:85
+EVT-IMCA-0891,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0892,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0896,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:139
+EVT-IMCA-0902,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0906,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:155
+EVT-IMCA-0907,iogp_rules,Driving; Safe mechanical lifting,Driving,Two-pass semantic re-evaluation with exact character offset validation,char_160:355
+EVT-IMCA-0925,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:112
+EVT-IMCA-0927,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:128
+EVT-IMCA-0928,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:129
+EVT-IMCA-0935,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:22
+EVT-IMCA-0946,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:42
+EVT-IMCA-0948,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0950,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0951,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0952,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:77
+EVT-IMCA-0953,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:23
+EVT-IMCA-0965,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:68
+EVT-IMCA-0967,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0980,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-0999,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:69
+EVT-IMCA-1009,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:36
+EVT-IMCA-1016,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:51
+EVT-IMCA-1019,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:53
+EVT-IMCA-1023,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:50
+EVT-IMCA-1028,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1029,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:65
+EVT-IMCA-1038,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:47
+EVT-IMCA-1042,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:55
+EVT-IMCA-1046,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1050,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:71
+EVT-IMCA-1069,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1071,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:32
+EVT-IMCA-1072,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:36
+EVT-IMCA-1073,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:55
+EVT-IMCA-1074,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1075,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1082,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:49
+EVT-IMCA-1084,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:48
+EVT-IMCA-1106,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:30
+EVT-IMCA-1115,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:84
+EVT-IMCA-1116,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1117,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1118,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:66
+EVT-IMCA-1123,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:50
+EVT-IMCA-1124,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:58
+EVT-IMCA-1125,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:44
+EVT-IMCA-1126,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:57
+EVT-IMCA-1142,iogp_rules,Driving; Safe mechanical lifting,Driving,Two-pass semantic re-evaluation with exact character offset validation,char_0:81
+EVT-IMCA-1143,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:98
+EVT-IMCA-1144,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:41
+EVT-IMCA-1145,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:56
+EVT-IMCA-1146,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1147,iogp_rules,Hot work; Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:57
+EVT-IMCA-1148,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:61
+EVT-IMCA-1149,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:72
+EVT-IMCA-1151,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1160,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:122
+EVT-IMCA-1164,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_10:138
+EVT-IMCA-1168,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_51:207
+EVT-IMCA-1175,iogp_rules,Work authorization,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_51:207
+EVT-IMCA-1181,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:104
+EVT-IMCA-1195,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:108
+EVT-IMCA-1196,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:108
+EVT-IMCA-1201,iogp_rules,Safe mechanical lifting; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:73
+EVT-IMCA-1202,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:127
+EVT-IMCA-1203,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:127
+EVT-IMCA-1207,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1210,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1213,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1:142
+EVT-IMCA-1217,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:86
+EVT-IMCA-1219,iogp_rules,Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_62:195
+EVT-IMCA-1220,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1244,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:84
+EVT-IMCA-1252,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1253,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:114
+EVT-IMCA-1260,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:104
+EVT-IMCA-1272,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1274,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1275,iogp_rules,Safe mechanical lifting; Safe mechanical lifting; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:181
+EVT-IMCA-1276,iogp_rules,Driving; Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:154
+EVT-IMCA-1277,iogp_rules,Driving; Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:154
+EVT-IMCA-1293,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_92:218
+EVT-IMCA-1302,iogp_rules,Driving; Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:142
+EVT-IMCA-1305,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:137
+EVT-IMCA-1306,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:137
+EVT-IMCA-1313,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:29
+EVT-IMCA-1315,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:36
+EVT-IMCA-1326,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:43
+EVT-IMCA-1328,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:22
+EVT-IMCA-1341,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1342,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:43
+EVT-IMCA-1345,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:24
+EVT-IMCA-1347,iogp_rules,Line of fire; Safe mechanical lifting,Line of fire,Two-pass semantic re-evaluation with exact character offset validation,char_0:57
+EVT-IMCA-1367,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:85
+EVT-IMCA-1368,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:53
+EVT-IMCA-1370,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:40
+EVT-IMCA-1371,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:36
+EVT-IMCA-1373,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:59
+EVT-IMCA-1374,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1376,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:58
+EVT-IMCA-1378,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:42
+EVT-IMCA-1379,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1387,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:77
+EVT-IMCA-1401,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:47
+EVT-IMCA-1407,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:64
+EVT-IMCA-1408,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:39
+EVT-IMCA-1409,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:24
+EVT-IMCA-1412,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1413,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:53
+EVT-IMCA-1417,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:59
+EVT-IMCA-1418,iogp_rules,Driving; Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:67
+EVT-IMCA-1427,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:38
+EVT-IMCA-1432,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:62
+EVT-IMCA-1448,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:53
+EVT-IMCA-1457,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1461,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_93:136
+EVT-IMCA-1462,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:112
+EVT-IMCA-1464,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:98
+EVT-IMCA-1484,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:217
+EVT-IMCA-1486,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:197
+EVT-IMCA-1488,iogp_rules,Confined space; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:36
+EVT-IMCA-1489,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:53
+EVT-IMCA-1490,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:57
+EVT-IMCA-1491,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:33
+EVT-IMCA-1492,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:39
+EVT-IMCA-1493,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:35
+EVT-IMCA-1496,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:108
+EVT-IMCA-1507,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:139
+EVT-IMCA-1508,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:46
+EVT-IMCA-1509,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:69
+EVT-IMCA-1510,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1518,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_40:174
+EVT-IMCA-1535,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:110
+EVT-IMCA-1541,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1544,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1552,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:81
+EVT-IMCA-1553,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:45
+EVT-IMCA-1554,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:31
+EVT-IMCA-1555,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:38
+EVT-IMCA-1556,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:47
+EVT-IMCA-1560,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_314:321
+EVT-IMCA-1561,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:94
+EVT-IMCA-1563,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_18:155
+EVT-IMCA-1567,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:36
+EVT-IMCA-1569,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:65
+EVT-IMCA-1576,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:24
+EVT-IMCA-1578,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:55
+EVT-IMCA-1584,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:23
+EVT-IMCA-1588,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:42
+EVT-IMCA-1589,iogp_rules,Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:92
+EVT-IMCA-1599,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:38
+EVT-IMCA-1601,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:25
+EVT-IMCA-1606,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1607,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:44
+EVT-IMCA-1609,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:33
+EVT-IMCA-1615,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1627,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:32
+EVT-IMCA-1638,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:39
+EVT-IMCA-1641,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1653,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:55
+EVT-IMCA-1657,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1666,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:24
+EVT-IMCA-1673,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:135
+EVT-IMCA-1675,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1687,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:123
+EVT-IMCA-1688,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:76
+EVT-IMCA-1699,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_144:149
+EVT-IMCA-1708,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:106
+EVT-IMCA-1713,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:140
+EVT-IMCA-1716,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_18:231
+EVT-IMCA-1719,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:116
+EVT-IMCA-1723,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_138:143
+EVT-IMCA-1727,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:97
+EVT-IMCA-1732,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:106
+EVT-IMCA-1733,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:106
+EVT-IMCA-1742,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_45:251
+EVT-IMCA-1750,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1755,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1757,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1763,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:25
+EVT-IMCA-1765,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:42
+EVT-IMCA-1766,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:77
+EVT-IMCA-1769,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1779,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1781,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1795,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1796,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1797,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:42
+EVT-IMCA-1800,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:38
+EVT-IMCA-1801,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1803,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1804,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:55
+EVT-IMCA-1809,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:48
+EVT-IMCA-1812,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:43
+EVT-IMCA-1816,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:65
+EVT-IMCA-1824,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1834,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:124
+EVT-IMCA-1837,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:95
+EVT-IMCA-1846,iogp_rules,NONE,Driving,Two-pass semantic re-evaluation with exact character offset validation,char_0:120
+EVT-IMCA-1853,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:128
+EVT-IMCA-1854,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:128
+EVT-IMCA-1862,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:120
+EVT-IMCA-1864,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:160
+EVT-IMCA-1865,iogp_rules,Safe mechanical lifting; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:112
+EVT-IMCA-1869,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:101
+EVT-IMCA-1874,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1875,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1878,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:226
+EVT-IMCA-1892,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_71:228
+EVT-IMCA-1893,iogp_rules,Hot work; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:19
+EVT-IMCA-1902,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:26
+EVT-IMCA-1907,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:74
+EVT-IMCA-1911,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:46
+EVT-IMCA-1915,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:61
+EVT-IMCA-1937,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:191
+EVT-IMCA-1938,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_30:194
+EVT-IMCA-1940,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:174
+EVT-IMCA-1945,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_30:194
+EVT-IMCA-1957,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:118
+EVT-IMCA-1966,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:123
+EVT-IMCA-1968,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_13:154
+EVT-IMCA-1969,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_13:154
+EVT-IMCA-1973,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1975,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:108
+EVT-IMCA-1983,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:196
+EVT-IMCA-1988,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:48
+EVT-IMCA-1991,iogp_rules,Safe mechanical lifting; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:64
+EVT-IMCA-1993,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-1994,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:52
+EVT-IMCA-1995,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2001,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2003,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:56
+EVT-IMCA-2004,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2009,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:46
+EVT-IMCA-2010,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2014,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:55
+EVT-IMCA-2018,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:65
+EVT-IMCA-2022,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:59
+EVT-IMCA-2027,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2040,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:200
+EVT-IMCA-2056,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:122
+EVT-IMCA-2057,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:122
+EVT-IMCA-2063,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:58
+EVT-IMCA-2065,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2067,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2074,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:20
+EVT-IMCA-2075,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:51
+EVT-IMCA-2079,iogp_rules,Energy isolation,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:23
+EVT-IMCA-2084,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2089,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:38
+EVT-IMCA-2090,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:38
+EVT-IMCA-2092,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:44
+EVT-IMCA-2095,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:56
+EVT-IMCA-2105,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:123
+EVT-IMCA-2106,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:123
+EVT-IMCA-2111,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:100
+EVT-IMCA-2115,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:174
+EVT-IMCA-2131,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:90
+EVT-IMCA-2132,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:90
+EVT-IMCA-2139,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2145,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2166,iogp_rules,Safe mechanical lifting; Line of fire; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:66
+EVT-IMCA-2191,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:86
+EVT-IMCA-2193,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:31
+EVT-IMCA-2233,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:22
+EVT-IMCA-2243,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:47
+EVT-IMCA-2253,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2258,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:33
+EVT-IMCA-2269,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:26
+EVT-IMCA-2276,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2290,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:26
+EVT-IMCA-2295,iogp_rules,Line of fire,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:19
+EVT-IMCA-2299,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:58
+EVT-IMCA-2304,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:23
+EVT-IMCA-2315,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:20
+EVT-IMCA-2316,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:45
+EVT-IMCA-2324,iogp_rules,Driving,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:25
+EVT-IMCA-2328,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:20
+EVT-IMCA-2343,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:50
+EVT-IMCA-2346,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2349,iogp_rules,Confined space,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:23
+EVT-IMCA-2357,iogp_rules,Hot work,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:32
+EVT-IMCA-2358,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:28
+EVT-IMCA-2362,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:16
+EVT-IMCA-2367,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:50
+EVT-IMCA-2378,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:21
+EVT-IMCA-2379,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:24
+EVT-IMCA-2393,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,NONE
+EVT-IMCA-2395,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:26
+EVT-IMCA-2400,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:84
+EVT-HSE-0001,iogp_rules,Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1978:1987
+EVT-HSE-0003,iogp_rules,Work authorization; Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_1298:1313
+EVT-HSE-0004,iogp_rules,Driving; Safe mechanical lifting,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:195
+EVT-HSE-0006,iogp_rules,Work authorization,Confined space,Two-pass semantic re-evaluation with exact character offset validation,char_1737:1901
+EVT-HSE-0007,iogp_rules,Working at height,NONE,Two-pass semantic re-evaluation with exact character offset validation,char_0:170
+EVT-HSE-0008,iogp_rules,Safe mechanical lifting; Work authorization; Working at height,Working at height,Two-pass semantic re-evaluation with exact character offset validation,char_0:219

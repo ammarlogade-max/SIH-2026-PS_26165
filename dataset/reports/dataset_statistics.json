@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-09-14T07:49:48.469Z",
+  "total_events": 2970,
+  "raw_events_scanned": 2990,
+  "duplicates_removed": 20,
+  "provenance_verified_rate": "100.0%",
+  "schema_conformance_rate": "100.0%",
+  "breakdown_by_source": {
+    "BSEE": 574,
+    "IMCA": 2388,
+    "UK_HSE": 8
+  },
+  "breakdown_by_event_type": {
+    "NEAR_MISS": 1798,
+    "INCIDENT": 1135,
+    "UA": 13,
+    "UC": 24
+  },
+  "breakdown_by_sif_potential": {
+    "TRUE": 716,
+    "FALSE": 889,
+    "UNKNOWN": 1365
+  },
+  "breakdown_by_sif_label_type": {
+    "EXPLICIT": 398,
+    "DERIVED": 1207,
+    "UNKNOWN": 1365
+  },
+  "breakdown_by_energy_type": {
+    "GRAVITATIONAL": 868,
+    "PRESSURE": 211,
+    "THERMAL": 385,
+    "ELECTRICAL": 52,
+    "KINETIC": 57,
+    "CHEMICAL": 15,
+    "UNKNOWN": 1382
+  },
+  "breakdown_by_dataset_tier": {
+    "GOLD": 519,
+    "SILVER": 474,
+    "BRONZE": 1977
+  },
+  "documents_downloaded_and_verified": 851
+}

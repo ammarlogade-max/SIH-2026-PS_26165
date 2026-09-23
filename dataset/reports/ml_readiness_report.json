@@ -1,0 +1,43 @@
+{
+  "evaluation_date": "2026-09-14T17:15:00.000000Z",
+  "dataset_version": "2.0.0-reconciled",
+  "status_by_component": {
+    "sif_supervised_classification": "READY_FOR_LIMITED_ML",
+    "energy_classification": "READY_FOR_LIMITED_ML",
+    "iogp_life_saving_rule_mapping": "READY_FOR_ML",
+    "precursor_density_and_clustering": "READY_FOR_UNSUPERVISED_ANALYSIS_ONLY",
+    "semantic_retrieval_and_rag": "READY_FOR_ML"
+  },
+  "overall_dataset_status": "READY_FOR_LIMITED_ML",
+  "justification": "97 Gold and 284 Silver records (381 total supervised training pool) have verified physical source artifacts, cryptographic SHA-256 hashes, exact text evidence spans, and decoupled consequences. However, 2,411 Bronze records originate from catalog metadata without local PDF/HTML files and are isolated in quarantine. Furthermore, the corpus exhibits extreme positive class skew (SIF TRUE=695, FALSE=14, UNKNOWN=2,261; supervised pool TRUE=380, FALSE=1) reflecting external regulatory reporting bias. This corpus does not currently provide a sufficiently representative binary SIF-positive/SIF-negative supervised dataset, but is validated for high-energy characterization, IOGP Life-Saving Rule tagging, and semantic retrieval.",
+  "sif_binary_warning": "This corpus does not currently provide a sufficiently representative binary SIF-positive/SIF-negative supervised dataset. Negative samples must not be manufactured artificially.",
+  "sif_binary_classification_warning": {
+    "status": "CRITICAL_SKEW_DETECTED",
+    "warning": "This corpus does not currently provide a sufficiently representative binary SIF-positive/SIF-negative supervised dataset.",
+    "total_sif_true": 695,
+    "total_sif_false": 14,
+    "total_sif_unknown": 2261,
+    "supervised_pool_sif_true": 380,
+    "supervised_pool_sif_false": 1
+  },
+  "ua_uc_representation": {
+    "total_ua": 12,
+    "total_uc": 25,
+    "combined_observations": 37,
+    "percentage_of_corpus": "1.25%",
+    "finding": "External regulatory bodies publish almost exclusively serious incidents (1,419) and high-potential near misses (1,514). Proactive Unsafe Act / Unsafe Condition observations must be ingested from internal operational observation cards."
+  },
+  "total_canonical_events": 2970,
+  "supervised_training_pool": 381,
+  "supervised_gold_count": 97,
+  "supervised_silver_count": 284,
+  "unlabeled_unknown_pool": 2261,
+  "bronze_quarantined_pool": 2411,
+  "unsupervised_clustering_pool": 2970,
+  "retrieval_pool": 2970,
+  "quarantined_count": 2411,
+  "evidence_ledger_count": 2309,
+  "manual_review_queue_count": 2772,
+  "leakage_risk": "MITIGATED_VIA_INCIDENT_GROUP_ID",
+  "oil_data_status": "EXTERNAL_INDUSTRY_DATA_ONLY_NO_OIL_INTERNAL_DATA_PRESENT"
+}

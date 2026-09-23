@@ -1,0 +1,111 @@
+
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 280 Contact:  Manny Gagliano 
+May 13, 2009 (504) 736 2549 
+Worker Fatally Struck by Moving Pipe During Pipelay Operations 
+A bevel machine operator was fatally injured on a pipelay barge when he was struck by moving 
+pipe during pipelay operations.  An MMS investigation revealed that the conveyor system had 
+become inadvertently energized and advanced pipe toward the ready rack where the bevel 
+machine operator was working.  The moving pipe on the conveyor system struck the bevel 
+machine operator in the back and pinned him between it and the end of a stationary pipe joint on 
+the ready rack. 
+The MMS investigation identified the following causes of the accident: 
+1)   Inadequate hazard analyses and failure to adequately implement hazards analyses 
+recommendations.  The recommended physical barriers such as guards or handrails in the 
+pinch point area were not installed prior to the accident.   In addition, although close-circuit 
+television cameras were installed as recommended, they were not working on the day of the 
+accident.  
+2)   Failure to adequately implement and adhere to recommendations of the job safety analysis 
+(JSA).    The JSA recommended that personnel avoid working in pinch points areas and 
+specifically to stand to the side of the pipe while grinding.  The JSA also indicated that 
+personnel should not walk in pinch point areas, although the victim’s hand tools were stored 
+such that he was required to pass through the pinch point to retrieve them from storage. 
+Other contributing causes to the accident included: 
+1.	 The inadequacy of the JSA’s.  Job tasks were often vague rather than specific.  The JSA also 
+did not include important steps in the task sequence, and did not address the  tasks of specific 
+job functions individually or the methods they would use to communicate and coordinate 
+their tasks. 
+2.	 Inadequate supervision.  The investigation found that it was routine for personnel to walk in 
+and work in pinch point areas near the conveyor system.  MMS could find no evidence that 
+supervisors, who routinely monitored the area, requested or required the crew to cease this 
+practice. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+              
+ 
+3.	 Lack of a detailed written job description and formal training for bevel machine operators. 
+The tasks specific to moving and hand grinding pipe were not included in the bevel machine 
+operators’ job description.  There was also no specific training for the bevel machine 
+operators’ other than on-the-job-training. 
+4.	 Failure of the bevel machine operator  to attend safety meetings. There was no evidence that 
+the bevel machine operator attended any of the safety meetings. 
+5.	 Possible inadequate inspection/maintenance of the conveyor system control panel switches.  
+There was no conclusive evidence that proves the condition of a conveyor switch was a 
+contributing factor to the accident.  Third party analysis of the control panel switches after 
+the accident found that a conveyor switch was prone to sticking and had damaged internal 
+components.  This indicated possible lack of inspection and maintenance of the switch. 
+Based on the investigation findings, MMS makes the following recommends to Lessees, 
+Operators, and their contractors during pipelay operations: 
+•	 Safety barriers should be installed and maintained on pipe lay vessel conveyor systems to 
+limit access to pinch point areas.   
+•	 Warning signs should be posted to alert personnel of pinch point areas. 
+•	 Supervisory observations should be conducted more frequently in order to monitor work 
+habits of all personnel in all areas, particularly around pipe conveyor systems. 
+•	 Lessees should review the company’s safety meeting policies with contract personnel and 
+express the importance of conducting safety meetings.  The Lessees should also 
+emphasize that documentation of all meetings and those personnel in attendance is 
+required. 
+•	 Contractors should consider installing CCTV cameras in conveyor system areas to allow 
+for additional supervision of operations. 
+•	 Contractors should provide detailed written job descriptions and implement formal 
+training for specific job duties and responsibilities rather than generalized job 
+descriptions that cover several positions.  
+•	 Inspection and maintenance guidelines should be provided for all safety equipment in 
+place, and this equipment should be inspected for proper operation prior to the 
+commencement of a project.  Any inoperable equipment should be repaired, replaced, 
+and tested immediately.  Proper documentation of safety equipment inspection, 
+maintenance, repairs, and test results should be maintained. 
+--MMS--GOMR--
+www.gomr.mms.gov 

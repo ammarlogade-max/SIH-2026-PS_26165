@@ -1,0 +1,49 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: 800.200.4853 
+  
+  
+ 
+ 
+ 
+ 
+ 
+Auxiliary Line Abrading Causes Rope Guard Failure 
+ 
+  
+         
+ 
+A BSEE investigation found that chronic scraping and rubbing by an auxiliary line created 
+enough damage to the main line idler sheave carrier side plate, pin boos, rope guard, and 
+auxiliary line that it caused the guard of the main load line idler sheave carrier to fail. The rope 
+guard fell approximately 100 feet, landing near personnel working below.  
+ 
+This damage occurs when the auxiliary line is used at high rates of speed, causing the auxiliary 
+line to jump onto the main line idler sheave. This incident involved an American Aero OM 450 
+crane; other cranes with a similar configuration could see the same issue. Additional information 
+is included in the BSEE Accident Investigation Report. 
+ 
+BSEE recommends operators and contractors adhere the following procedures: 
+ 
+• Inspect idler sheaves and wire ropes for wear indicative of friction and abrading when 
+performing pre-use inspections described in API RP 2D. 
+• Replace single main load line idler sheave carriers with a double sheave idler. 
+• Review Safety Alert #426 regarding dropped object hazards. 
+ 
+ 
+Abraded main line carrier sheave side plate 
+and pin boss. 
+Inside abraded main line carrier sheave side 
+plate that is missing rope guard. 
+  
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the circumstances 
+surrounding  a  potential  safety  issue.  It  also  contains  recommendations  that  could  assist  avoiding 
+potential incidents on the Outer Continental Shelf. 
+Category: Crane/Lifting  
+Safety Alert No. 454 
+December 14, 2022  
+SAFETY ALERT 
+ 
+ 

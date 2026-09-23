@@ -1,0 +1,37 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 191
+Contact: Joe Gordon
+December 7,
+2000
+504-736-3249
+Drillship Draw Works Failure
+A deepwater drillship recently encountered a problem that resulted in the loss of 20 joints of marine riser, the lower marine
+riser package, and the subsea blowout preventer stack. During the running of the riser assembly and in preparation of
+trimming the vessel to allow the passage of the floatation riser through the drill floor, the driller set the draw works brakes.
+The brakes failed, allowing the traveling block to fall and strike the drill floor. The impact of the traveling block striking the
+drill floor caused the top drive to separate, allowing the riser running tools and riser assembly to fall to the seafloor.
+The MMS investigation into this incident revealed that the brake failure was the result of (1) an excessive air gap between
+the draw works brake pads and the brake rotors, and (2) contamination of the draw works brake pads and rotors by the
+drill line lubricant. The investigation further revealed (1) an unexplained change in the brake inspection procedures, and (2)
+that a job hazards analysis was not conducted for the subject operation.
+It is therefore recommended that drilling contractors conduct a hazards analysis of the operation and maintenance of their
+draw works system. The purpose of the analysis should be to identify potential failures within the total draw works system.
+Once the potential failures are identified, steps should be taken either to eliminate the failure or to minimize the
+consequences of such failures should they occur. These steps can be accomplished through engineering and/or
+administrative/procedural practices. The drilling contractors should verify the adherence of their operation and maintenance
+programs of their individual draw works systems to those of the system manufacturer. Issues to be considered during the
+above-referenced analysis include, but are not limited to, the following:
+1. The detection, remediation, and prevention of contamination of the braking surfaces;
+2. Inspection and maintenance of braking system to include maximum allowable pad/disc tolerances and proper
+adjustment when necessary;
+3. Manufacturers’ recommendations are completely reviewed and addressed;
+4. Procedures or guidelines for handling loads at or near the load capacity of the draw works; and
+5. Managing changes within the operation and maintenance program to ensure all potential hazards of the changes are
+identified, reviewed, and addressed.
+–GOMR–MMS–
+Visit our Safety Information Website:
+http://www.gomr.mms.gov/homepg/offshore/safety/safety.html
+Drillship Draw Works Failurehttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_191...
+1 of 12/21/2012 4:30 PM

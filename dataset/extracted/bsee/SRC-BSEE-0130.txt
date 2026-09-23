@@ -1,0 +1,49 @@
+
+
+ 
+Safety Alert No. 387                               Contact: Jason Mathews 
+June 1, 2020                                      Phone: (504) 731-1496 
+ 
+ 
+ Chemical Blockage Leads to Fire Extinguisher Failure
+  
+ 
+                                                              
+In  January 2020, a wheeled fire extinguisher failed to operate because of a blockage in the 
+siphon tubing line. This failure resulted in two personnel requiring medical evaluation and 
+led to a delay in extinguishing a fire.  
+       
+                                                                              
+An investigation of the fire extinguisher failure found that the device pressured up as 
+intended, but the moisture disc did not rupture. The siphon tube had become packed with 
+chemical, which prevented the chemical from flowing out of the hose. Records showed 
+that the fire extinguisher was last inspected on December 1, 2019, but it   did not include 
+the manufacturer’s recommendation to clear the siphon tube and check the powder.  
+One contributing factor to the blockage in the siphon tube was the proximity of the fire 
+extinguisher to a compressor. The vibration of a compressor or other vibrating equipment 
+can cause chemical to navigate up a fire extinguisher’s siphon tube and become packed.  
+SAFETY ALERT 
+ 
+ 
+Example of a wheeled fire extinguisher 
+Example of a 
+blockage in a siphon 
+ 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+ 
+•    Follow manufacturer recommendations when performing annual fire extinguisher 
+maintenance;  
+•    Clear a fire extinguisher’s siphon tube of chemical during annual inspection to 
+prevent packing; 
+•    Consider exchanging fire extinguishers when performing annual inspections or 
+maintenance if clearing the siphon tube on the facility is not reasonable due to its 
+humid atmosphere or the possible contamination of the chemical; and, 
+•    Account for equipment vibration when placing fire extinguishers throughout a facility. 
+  
+--BSEE-- 

@@ -1,0 +1,36 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 196
+July 23, 2001
+Contact: Jack Leezy
+504-736-2503
+Cranes
+During routine crane operations on a fixed platform, the platform crane was being used to
+move various pieces of equipment on and off an offshore supply boat when the ballring
+failed. This failure resulted in the crane separating from the pedestal and falling 85 feet to
+the deck of the supply vessel. The crane operator received serious injuries as a result of
+this incident when he also fell 85 feet to the deck of the supply vessel.
+The investigation revealed that the crane operator attempted to pick up a load outside the
+designed safe working limits of the crane. This attempt resulted in the aforementioned
+ballring failure. This ballring design was not in accordance with the current edition of API
+Specification 2C - Specification for Offshore Cranes. Additionally, the control handles
+configuration was also not in accordance with the current 2C specifications.
+Other deficiencies found during the investigation include the following:
+The load chart did not reflect the load line configuration at the time of the
+incident.
+The manufacturer of the crane had not been identified in determining
+maintenance required by the manufacturer.
+It is recommended that lessees inventory their cranes and determine that appropriate
+manufacturer's recommended maintenance is being performed. It is further suggested that
+lessees conduct an analysis to determine if their cranes meet the design specification of the
+current edition of API Specification 2C and assess the risk of any hazards created by those
+cranes that do not meet the current 2C specifications.
+The investigation also revealed that the crane operators assigned to this job felt pressured
+to perform crane operations under questionable circumstances. Therefore, MMS also
+recommends that lessees emphasize to their field personnel the authority of the crane
+operator in his decision to stop any lifting operation that he deems to be unsafe.
+—GOMR—MMS—
+Visit our Safety Information Website
+Safety Alert No. 196 - Craneshttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_196...
+1 of 12/21/2012 4:32 PM

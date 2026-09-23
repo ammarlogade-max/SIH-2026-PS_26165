@@ -1,0 +1,40 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 200
+May 29, 2002
+Contact: Jack Williams
+(504) 731-3012
+Subsea Equipment Failure Leads to Deepwater GOM Pollution
+Recently, an operator conducted an ROV intervention to replace a defective choke in a deepwater,
+subsea oil well. Following the intervention, as the high volume well was being returned to production,
+a PSL alarm and sudden, unusual pressure and data readings were received at the control room
+monitoring screens. Though the boarding valve was subsequently manually closed to protect the
+platform, the wing valve on the subsea tree remained open (its safety system was bypassed for well
+startup operations) while the source of the PSL alarm was investigated. After approximately fifteen
+minutes, the wing valve was closed.
+An MMS investigation determined the reasons for the crude oil/gas discharge were as follows:
+1. The choke was not set in the intended profile but was prematurely set in the tapered guide sleeve,
+allowing the choke to be expelled when faced with full wellhead temperature, pressure, and vibration.
+This failure to fully set in the designed profile was not discovered by ROV visual monitoring.
+2. An unclear emergency chain of command and failure to discuss potential problems at the pre-op
+meeting contributed to the delay in the shut-in of the well. Additionally, the complexity of the monitor
+screens hindered quick evaluation of the safety system status.
+The MMS recommends to the operators:
+1. During the pre-job safety meeting a review of what could go wrong is important. A discussion of
+the chain-of-command and decisionmaking in the event of an emergency should be a part of the
+pre-job meeting, especially when the offshore work environment contains complex reporting
+and organizational relationships.
+2. If possible, for subsea well ROV interventions, the mechanical devices being serviced or
+replaced and the tools so employed should be designed so that effective visual monitoring of the
+operation can be accomplished. If possible, successful performance of the work should be able
+to be confirmed visually by ROV.
+3. When designing control room monitoring systems, consideration should be given to
+incorporating fail-safe hardware or software to limit the need to bypass critical safety systems.
+Further, the design should consider having the display screens be as clear and simple as possible
+so that a person newly arrived at the screen in the midst of an emergency can quickly
+understand the status of the safety systems.
+—GOMR—MMS—
+Visit our Safety Information Website
+Safety Alert No. 199http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_200...
+1 of 12/21/2012 4:34 PM

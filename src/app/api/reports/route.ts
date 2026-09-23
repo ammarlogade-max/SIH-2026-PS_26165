@@ -5,7 +5,7 @@ import { generateLayerAClassification } from "@/lib/layer-a-classifier";
 import { generateReasoningNarrative } from "@/lib/narrative-engine";
 import { appendSafetyRecords, getSafetySnapshot } from "@/lib/safety-store";
 import { detectShiftAndCircadianRisk } from "@/lib/safety-science-engine";
-import type { Classification, Report, ReportWithClassification, ShiftTiming } from "@/lib/types";
+import { inferSafetyEventType, type Classification, type Report, type ReportWithClassification, type ShiftTiming } from "@/lib/types";
 
 export const runtime = "nodejs";
 
@@ -113,9 +113,13 @@ export async function POST(request: NextRequest) {
     const reportedDate = validDate(input.reported_date) ? input.reported_date : new Date().toISOString().slice(0, 10);
     const shiftInfo = detectShiftAndCircadianRisk(reportedDate);
     const shiftTiming = typeof input.shift_timing === "string" ? (input.shift_timing as ShiftTiming) : shiftInfo.shift_timing;
+    const eventType = typeof input.event_type === "string" && input.event_type.trim()
+      ? inferSafetyEventType(input.event_type)
+      : inferSafetyEventType(rawText);
 
     const report: Report = {
       id: reportId,
+      event_type: eventType,
       raw_text: rawText,
       site: cleanOptionalText(input.site, "General Facility"),
       activity: cleanOptionalText(input.activity, "General Operations"),
@@ -127,6 +131,36 @@ export async function POST(request: NextRequest) {
       created_at: new Date().toISOString(),
     };
 
+    const canonicalEvent = {
+      event_id: reportId,
+      source_filename: "manual_entry",
+      source_format: "manual",
+      raw_text: rawText,
+      reported_date: reportedDate,
+      site: report.site === "General Facility" ? null : report.site,
+      facility: null,
+      activity: report.activity === "General Operations" ? null : report.activity,
+      event_type: eventType,
+      source_row_or_page: "manual_form",
+      extraction_method: "manual",
+      extraction_confidence: 1.0,
+      metadata: { submitting_role: report.submitting_role },
+      provenance: [
+        {
+          field: "raw_text",
+          value: rawText.slice(0, 100),
+          source: "Manual Safety Observation Form",
+          confidence: 1.0,
+        },
+      ],
+    };
+
+    (report as any).canonical_event = canonicalEvent;
+    (report as any).provenance = canonicalEvent.provenance;
+    (report as any).source_format = "manual";
+    (report as any).extraction_method = "manual";
+    (report as any).extraction_confidence = 1.0;
+
     const classification = generateLayerAClassification(report.id, report.raw_text, report.reported_date);
     classification.reasoning_narrative = await generateReasoningNarrative({
       text: report.raw_text,
@@ -136,7 +170,7 @@ export async function POST(request: NextRequest) {
     });
 
     const snapshot = await appendSafetyRecords([report], [classification]);
-    const aggregates = computeAggregates(snapshot.reports, snapshot.classifications);
+    const aggregates = computeAggregates(snapshot.reports, snapshot.classifications, snapshot.actions);
 
     return NextResponse.json({
       success: true,

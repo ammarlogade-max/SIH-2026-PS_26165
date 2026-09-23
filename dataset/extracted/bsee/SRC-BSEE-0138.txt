@@ -1,0 +1,39 @@
+
+
+Safety Alert No. 379                             Contact: Stephen Harris 
+February 28, 2020                            Phone: (504) 736-3249 
+Broken Compressor Heat Exchanger Causes Fire 
+                                                            
+In November 2019, a fire occurred on an offshore production platform in the Gulf of 
+Mexico when tubing in a third stage compressor heat exchanger broke away from its 
+manifold block, releasing gas that ignited at the compressor’s engine exhaust. The 
+compressor engine exhaust was located above the heat exchanger where gas could rise 
+toward the exhaust pipe. Personnel successfully extinguished the fire within minutes. 
+BSEE’s investigation team concluded the operator’s inspection and maintenance of the 
+heat exchanger was inadequate to prevent loss of integrity thereby allowing a gas leak to 
+occur. Additionally, the compressor engine exhaust was located above the heat 
+exchanger creating an ignition source. Although the muffler was wrapped with an 
+insulation blanket, the final exhaust pipe was exposed and within the classified area 
+created by the gas tubes within the heat exchangers. 
+A similar incident occurred in October 2017 when a tube in a third stage compressor heat 
+exchanger ruptured, also causing a fire. Locating and fixing small leaks can reduce the 
+possibility of heat exchanger tubes experiencing full disconnects or ruptures. 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+· Establish increased oversight practices for rolled joints on tubing at heat exchanger 
+manifold blocks due to the higher probability of leakage; 
+SAFETY ALERT 
+Broken heat exchanger pipe 
+Ruptured heat exchanger pipe 
+Compressor engine exhaust 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.
+· Consider using an ultrasonic leak detector or infrared camera, or conducting 
+hydrotesting to inspect the condition of heat exchanger pipes rather than by visual 
+inspection alone; and, 
+· Ensure engine exhaust is routed to an unclassified area, as recommended by API 
+Recommended Practice 14F, to prevent a possible ignition source for the heat 
+exchanger. 
+--BSEE-- 

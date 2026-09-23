@@ -1,0 +1,31 @@
+
+
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 228
+March 24, 2005
+Contact: Jack Williams
+(504) 736-1757
+Vent Gas Migrates Through Cable Entrance Hole, Motor Control Center Explodes
+On an offshore platform, the compressor failed to start, resulting in low pressure gas being
+vented into a line common to the skimmer tanks installed below the MCC room. Gas was
+discharged from the atmospheric vents of the skimmer tanks, migrated along the structure
+beams, through an opening, into the Motor Control Center. The gas detector alarmed and
+the door was opened to ventilate the gas. However, the opening of the door created a
+chimney affect. Gas in the MCC was trapped in the electrical panels and the subsequent
+actuation of a pump relay ignited the gas causing an explosion that blew out doors, fixtures,
+and the walls of the building.
+The MMS recommends the following to operators:
+Seal all openings into buildings, living quarters, and MCC rooms, including the
+electric cable inlets, to prevent gas migration. Inspect all buildings and rooms
+periodically to ensure no undocumented openings have been created during
+maintenance work.
+Install flow safety valves in the low-pressure vent line from the skimmer, or pipe
+low-pressure blow-down in such a way as to prevent gas from discharging at the
+atmospheric vents on the skimmer.
+  —MMS—GOMR—
+www.gomr.mms.gov
+Visit our Safety Information Website
+Vent Gas Migrates Through Cable Entrance Hole, Motor Control Cent...http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_228...
+1 of 12/21/2012 4:44 PM

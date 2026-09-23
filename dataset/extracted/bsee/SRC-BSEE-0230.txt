@@ -1,0 +1,62 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 286 	Contact:  Glynn T. Breaux 
+15 December 2009 	(504) 736-2560 
+FIRE INSIDE AC EVAPORATOR ENCLOSURE 
+
+Recently operations personnel discovered a temperature increase inside the climate-controlled 
+Motor Control Center (MCC) building.  Upon further investigation, evidence indicated that a fire 
+had occurred inside one of the air conditioner (AC) evaporator enclosures located on top of the 
+MCC building.  The MCC building is not located in a Classified Area. 
+A Minerals Management Service (MMS) investigation into this incident revealed the following 
+findings: 
+The ¼-inch drain line from the bottom of the fuel gas meter’s 5-way valve manifold was 
+tied-in directly into the AC evaporator enclosure’s drain line which terminates at the 
+main drain line for the fuel gas skid. 
+The fuel gas meter’s 5-way valve manifold was drained regularly to prevent fluid build­
+up in the fuel gas meter. 
+Operations personnel indicated that, on occasion, they would experience a gas/condensate 
+odor in the MCC building but the source of the odor was never investigated. 
+Gas migrated through the AC evaporator enclosure’s drain line and accumulated inside 
+the AC evaporator enclosure prior to ignition.   
+Due to the severity of the damage caused by the fire, the source of ignition could not be 
+determined.   
+Therefore, the MMS recommends the following: 
+Process drain lines (pressure or atmospheric) should not be combined with domestic drain 
+lines. 
+Tubing and/or piping should be traced prior to being tied-in, and the hazards of drain line 
+placement should be evaluated prior to installation.   
+All sources of gas/condensate odors should be investigated if the odor is not considered a 
+normal part of the particular operation or area. 
+The facility should be visually inspected on a regular basis for any indication of an 
+abnormal condition; e.g., odors, leaks, etc. 
+--MMS--GOMR— 
+www.gomr.mms.gov 

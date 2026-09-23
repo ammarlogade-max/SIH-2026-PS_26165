@@ -1,0 +1,122 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+Figure 2. Helideck Rating & Sizing 
+Figure 3. Helideck Safety Labeling  
+  
+ 
+                                                                      
+ 
+ 
+Delay in Publication of Derated Helideck Weight Capacity  
+Leads to Near Miss Incident 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Bureau of Safety and Environmental Enforcement (BSEE) has observed a concerning 
+trend of safety incidents linked to unsafe helideck conditions and improper adherence to 
+established protocols. A recent near-miss incident that occurred during a helicopter flight to an 
+offshore facility that had recently downgraded its helideck weight capacity serves as a 
+precautionary example and underscores the critical need for effective communication and 
+protocol compliance regarding helideck operations and conditions.  
+Incident Details:  
+During pre-flight mission planning, a helicopter pilot ensured the platform’s helideck could 
+support the helicopter’s weight by conducting a thorough review. This included checking the 
+facility's helideck information, consulting the Federal Aviation Administration’s (FAA) Notice to 
+Airmen (NOTAM) system, and verifying any Temporary Flight Restrictions (TFRs). The pilot 
+also confirmed the helideck's published weight rating of 12,000 lbs. with the facility operator 
+before departure. No changes to the weight rating were noted during the standard flight 
+planning process. 
+Upon arrival and prior to landing at the facility,  the pilot observed a freshly painted red-hatched 
+area and a new visible weight rating of 6,000 lbs. (Figure 2) After verbally confirming with the 
+platform operator over the radio that a helideck downgrade had occurred, the pilot deemed it 
+unsafe to land. The pilot informed the flight operations center to revise the flight plan for a safe 
+landing at a nearby facility. 
+  
+ 
+Safety Alert No. 490 
+October 10, 2024 
+Figure 1. Offshore Facility 
+
+ 
+ 
+This incident highlights the risks associated with delaying the publication of accurate helideck 
+conditions. While the pilot’s alertness prevented a potential incident, the event underscores 
+significant gaps in communication and documentation procedures.  
+ 
+BSEE recommends that operators and their contractors, where appropriate, consider 
+doing the following: 
+ 
+• Ensuring all helideck conditions are accurate, validated, and published, including recent 
+updates and/or deratings, through direct communication with facility operators and the 
+FAA. 
+• Verbally confirming helideck weight ratings and conditions before takeoff and just prior 
+to landing, especially for decommissioned or modified structures. 
+• Ensuring operational procedures are updated to include verification with facility 
+personnel before starting a flight to a facility of any recent helideck deratings. 
+• Encouraging crew members to voice concerns and verify information. Effective 
+teamwork is essential for safe operations.  
+• Anticipating the impacts of any changes to facilities, ensure all notifications, required 
+and otherwise, are made and received promptly. 
+• Implementing mandatory checks to confirm helideck capacities and conditions regularly. 
+• Reinforcing clear communication of helideck status changes to all personnel, ensuring 
+updated information is accessible.  
+• Conducting regular training sessions focused on recognizing helideck markings and 
+their safety implications. 
+•    Updating helicopter operation protocols, emphasizing the importance of pre-arrival 
+briefings and toolbox meetings. 
+• Implementing continuous monitoring of helideck conditions and markings and updating 
+operational protocols as needed.  
+BSEE emphasizes the importance of adhering to established safety guidelines while fostering 
+a culture of vigilance and proactive communication. This incident reaffirms the necessity for 
+continuous training, open communication, and rigorous verification processes to mitigate risks 
+associated with helideck operations.  
+ 
+Additionally, BSEE reminds industry of the following information and aids to minimize 
+risks to passengers, helideck crews, and others involved in offshore helideck 
+operations: 
+ 
+•    HSAC RP 163
+ Inspection, Maintenance and Operations of Offshore Helidecks.  
+•    HSAC RP 165 Air Operator Guidelines for Offshore Helicopter Operations – 1
+st
+ Edition. 
+
+ 
+ 
+•    BSEE Safety Alert No. 322 / Helideck Obstructions and Compounding Procedural Errors     
+Contribute to Five Near Misses on OCS. 
+• BSEE Safety Alert No.413 / Hazards Identified in Level I Surveys not Communicated to 
+Affected Personnel 
+• BSEE Safety Alert No. 479 / Lack of Adherence to Helideck Safety Procedures Results 
+in Series of Near Miss Incidents for additional information. 
+• 30 CFR 250.1912 – Criteria for Safety Management System Management of Change. 
+• BSEE Notice to Lessees (NTL), NTL-2021-N03/Helideck Closures and Markings 
+• 30 CFR 250.890 – Records. (c) You must submit to the appropriate District Manager a 
+contact list for all facilities at least annually or when contact information is revised. The 
+contact list must include: (6) Facility helideck rating and size. 
+ 
+– BSEE – 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the circumstances 
+surrounding a potential safety issue. It   also contains recommendations that could assist avoiding potential 
+incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Aviation 

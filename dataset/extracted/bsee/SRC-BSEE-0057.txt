@@ -1,0 +1,79 @@
+
+
+Figure 1: Worksite with flange and scaffolding, where the 
+skillet was being installed. 
+Figure 2: Opposite view of the flange with a chain. hoist. 
+ 
+Safety Alert No. 462                      Contact: bseepublicaffairs@bsee.gov  
+May 12, 2023                    Phone: 800.200.4853 
+ 
+ 
+Process Explosion Causes Medical Evacuation 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Two workers were injured on an offshore platform while installing a skillet, the steel circular joining 
+plate inside a section of piping. The incident occurred while the workers were on scaffolding and 
+unbolting a 10-inch flange (Figure 1). After determining the skillet was the wrong size, the supervisor 
+instructed a third worker to join the initial two workers on the scaffolding to take measurements of the 
+skillet to verify the pipe size.  
+ 
+Upon arrival, the third worker saw that the other two had already unbolted the flange to install the 
+skillet. The third worker instructed them to pass down the gasket so he could verify the pipe size, 
+then exited the scaffolding and relocated to the tool shed to retrieve a fall protection harness.  
+During this time, the two workers on the scaffolding became alarmed when a handheld gas 
+detector signaled the presence of gas. Simultaneously, they heard pressure escaping between the 
+pipe flange opening. The third worker, who was still in the tool shed, heard a rumbling sound and 
+loud noise, and looked in the direction of the noise to see a black plume of smoke. The third 
+worker noticed the other two workers were being exposed to the material being emitted from the 
+gap in the parted flange (Figure 2). The two workers on the scaffolding experienced smoke 
+Bureau of  
+Safety and  
+Environmental 
+Enforcement 
+SAFETY ALERT 
+
+inhalation and described feeling a burning sensation. They were quickly transported to the nearest 
+hospital by air transport for further evaluation. 
+On Sept. 16, 2022, BSEE personnel conducted an on-site investigation and searched for any 
+isolation sources near the verified isolation points. BSEE found no isolated sources or ignition 
+sources in the incident area. BSEE also determined that all equipment was properly installed per 
+the hazardous area classification drawings. BSEE inspected the tools and equipment personnel 
+on board reported using and determined these were correctly rated for the area.  
+The BSEE incident investigation revealed that:  
+• Workers were not aware of the possible hazards within the piping. 
+• No purging or flushing of the piping was done before the work was done. Personnel failed 
+to identify the possibility of pyrophoric materials within the piping. 
+BSEE recommends that operators and contractors consider the following: 
+• Implementing and following a fire and explosion management plan and safe work 
+procedures when working with tanks and vessels where pyrophoric iron may be present. 
+The plan and procedures should address ignition sources, oxygen, and fuel sources. 
+• Identifying possible ignition sources, including pyrophoric materials that can form in both 
+sour and sweet sites, automatic flare stack igniters, electrical discharge from improper 
+bonding/grounding, and lightning. 
+• Determining how oxygen could enter the tank through possible entry points like the thief 
+hatch, extinguished flare stack, open valves, pipes, and hatches.  
+ 
+ 
+ 
+– BSEE – 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Category: Explosion 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It  also contains recommendations that could 
+assist avoiding potential incidents on the Outer Continental Shelf. 

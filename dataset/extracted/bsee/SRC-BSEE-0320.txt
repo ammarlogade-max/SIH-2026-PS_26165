@@ -1,0 +1,38 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 199Contact: Buddy Stewart
+November 15, 2001337-289-5108
+Blowout and Fire
+After a slip-on wellhead (SOW) had been set on a 10¾-inch surface casing, and during the welding of
+theinside of the SOW, gas and liquid were observed escaping from the +10 valve. The +10 valve was
+closed and 8.6-ppg seawater was added to the annulus through a ½-inch gap between the wellhead’s
+24-
+inch base plate and the 10¾-inch casing, in an attempt to kill the well. It should be noted that a
+16-inch scab liner was hung from the drive pipe. The well continued to flow, so the fluid was weighted
+up to 9.2-ppg mud, and then later increased to 16-ppg mud. It became more difficult to maintain a
+steady rate and quantity of mud flow because of the mud’s density and the size of the opening
+between the base plate and the surface casing. As the gas flow increased, the +10 valve was opened in
+order to allow the 16-ppg mud to displace the lighter fluid in the 24-inch x 10¾-inch annulus. With gas
+fl
+ow still increasing, the decision was made to evacuate the rig. The +10 valve was left opened in an
+effort to divert the flow of gas away from the platform and rig. Approximately a day later, fire erupted
+on the platform from an unknown source and caused extensive damage to the platform and drilling rig.
+The MMS investigation of the accident revealed in part that, while the source of the blowout, namely
+shallow gas, was identified through well log data, the cement program was not properly designed for
+the presence of shallow gas. The failure of the operator to communicate the presence of shallow gas to
+the contract cement service company resulted in the improper design of the cement. It was further
+revealed that a pre-spud meeting, in which the presence of known shallow gas could have been
+communicated to all parties involved in the drilling operation, was not conducted.
+It is therefore recommended that operators:
+1. Review their current specific strategies regarding the prevention of gas migration into the
+cement column.
+2. Review their method of communication with contract cement companies regarding shallow-gas
+hazards.
+3. Review their procedures by which well log information indicating shallow gas is used in the
+proper design of their cement program.
+—GOMR—MMS—
+Vi
+sit our Safety Information Website
+Safety Alert No. 199http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_199...
+1 of 12/21/2012 4:34 PM

@@ -1,0 +1,76 @@
+
+
+Safety Alert No. 381                           Contact: Jason Mathews 
+May 7, 2020                              Phone: (504) 731-1496 
+Common Operator Deficiencies Discovered by  
+Safety Environmental Management System (SEMS) Audits 
+In accordance with 30 CFR 250.1920(b)(5), lessees on the Outer Continental Shelf (OCS) 
+are required to have their SEMS programs audited by an accredited Audit Service Provider 
+(ASP) within 2    years of starting operations and every 3    years thereafter. BSEE Gulf of 
+Mexico Region’s Office of Safety Management (OSM) has analyzed all SEMS audit results 
+from 41 operators for the period from 11/16/2016 to 11/15/2019. Below is a list of the most 
+common audit findings for each of the 17 SEMS Elements that were observed by accredited 
+ASPs. 
+1. General – There is no formal documented process established for an internal 
+annual review of the SEMS program to determine that it continues to be suitable, 
+adequate, and effective. 
+2. Safety and Environmental Information – The design basis for relief systems and 
+fire protection systems is not available for review. 
+3. Hazards Analysis – Action items resulting from facility-level Hazard Analyses are 
+not formally reviewed, consistently closed-out, nor verified for effective 
+implementation. 
+4. Management of Change – The Management of Change process is not consistently 
+used for both operating procedure revisions and supervisory personnel changes. 
+5. Operating Procedures – Operating Procedures are not consistently reviewed at the 
+conclusion of specified periods (separate from the Management of Change process) 
+to verify that they reflect current operating practices offshore. 
+6. Safe Work Practices – Safety Data Sheets do not accurately reflect all chemicals 
+listed on the facility inventory sheet. 
+7. Training – Safe Work Practices training for contract personnel, such as hot work, 
+lock-out/tag-out, confined space entry, etc., has not been consistently verified as 
+compliant with internal requirements. 
+8. Mechanical Integrity – The preventative maintenance/inspections/tests for critical 
+equipment are not consistently executed in accordance with the established 
+frequencies required by the Mechanical Integrity program. 
+9. Pre-Startup Review – The Pre-Startup Review Policy does not have clear guidance 
+regarding conditions that trigger a review, regardless of whether there is an 
+associated Management of Change initiated. 
+10. Emergency Response and Control – An analysis and critique of each drill is not 
+consistently completed by facility personnel. When critiques are completed for drills, 
+SAFETY ALERT 
+
+A Safety Alertis a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.
+the critiques do not include actions to take for continuous improvement. 
+11. Incident Investigation – Evidence could not be located to support the proper 
+training qualifications for designated Incident Investigation team members. 
+Additionally, Incident Investigation reports were missing identification of one or more 
+team members associated with the investigation. 
+12. Auditing – The SEMS plan contains obsolete language from the SEMS I Rule or the 
+SEMS plan has not been updated to reflect current SEMS II requirements. 
+13. Recordkeeping and Documentation – SEMS documents, primarily Job Safety 
+Analyses and Operating Procedures, are not kept in an orderly manner nor readily 
+available upon request at the time of the audit. 
+14. Stop Work Authority – Job Safety Analyses are without the required Stop Work 
+Authority procedures and expectations as a standard statement. 
+15. Ultimate Work Authority – The SEMS program does not clearly define the 
+communication expectations for establishing the designated Ultimate Work 
+Authority, including when the responsibility shifts to a different individual. 
+16. Employee Participation Plan – There were no recorded findings in this element 
+during the 3-year period from 11/16/2016 to 11/15/2019. 
+17. Reporting Unsafe Working Conditions – The Reporting Unsafe Working 
+Conditions element should be a separate notice from other facility requirements that 
+are posted throughout a facility (e.g. Stop Work Authority, Ultimate Work Authority, 
+etc.). Additionally, the Reporting Unsafe Working Conditions signage should contain 
+the updated BSEE address (refer to Safety Alert No. 357). 
+Therefore, BSEE recommends that operators and contractors working on the Gulf of 
+Mexico OCS consider the following: 
+· Review your SEMS program to determine if any gaps exist in your management 
+system then initiate and implement appropriate corrective actions; 
+· Share any potential updates to your SEMS program with field personnel (including 
+contractors) for awareness of changes that directly affect their day-to-day duties; 
+· Revise bridging documents to include SEMS program updates as necessary; and, 
+· Request feedback from employees and third-party contractors to ensure effective 
+functionality of the SEMS program as it pertains to your scope of operations. 
+--BSEE-- 

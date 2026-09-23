@@ -1,0 +1,88 @@
+
+
+MMS 
+ 
+ 
+ 
+ 
+ U.S. Department of the Interior 
+ Minerals Management Service 
+ Gulf of Mexico OCS Region 
+        Safety  
+             Alert 
+Safety Alert No. 265  Contact:  Angie Gobert
+9 July 2008 (504) 736-2876
+ 
+Pipeline Ruptures – 870 Barrels of Crude Oil Spilled   
+ 
+Recently a 14-inch interstate crude oil pipeline was severed by a vessel anchor resulting in a spill 
+of approximately 870 barrels. 
+ 
+A Minerals Management Service (MMS) investigation into the circumstances of this spill 
+concluded that: 
+ 
+  1.  Though the pipeline right-of-way (ROW) holder, at a remote location, was alerted by 
+various alarms and significant pressure change information, the holder chose neither to shut in 
+the severed pipeline remotely nor contact the platform operator to manually shut in. 
+  
+2.  The pipeline did not automatically shut in because the pressure safety low (PSL) 
+sensor was set well below the lower limit of the normal operating pressure. 
+ 
+3.  The pressure safety high and low sensor (PSHL) on the departing pipeline, the severed 
+pipeline, was not connected to the shut down valves (SDVs) on the two incoming pipelines. 
+ 
+4.  The SDV’s on the two incoming pipelines would not have shut in the pipelines 
+because they were improperly located on one of the two branches rather than on the pipeline 
+before the branch.  Additionally, these pipeline SDVs were not located immediately upon 
+boarding the platform. 
+ 
+5.  The SDVs on the two incoming pipelines were being used to divert the flow of the 
+product through pig traps.  
+ 
+These multiple factors contributed to an increased volume of oil, approximately 520 barrels, 
+being spilled into the Gulf of Mexico.  Had the severed pipeline been shut in expeditiously, as it 
+could have been if the safety system (including the safety devices) functioned as designed and 
+required, and if appropriate decisions had been made, a smaller volume of approximately 350 
+barrels of oil would have spilled. 
+    
+
+The MMS recommends that pipeline ROW holders and lessees and operators consider 
+establishing agreements and a communication protocol to ensure that on-site personnel are able 
+to respond to pipeline emergencies. 
+   
+The MMS reminds pipeline ROW holders and lessees and operators of the following regulatory 
+requirements: 
+   
+• In accordance with 30 CFR 250.1004(b)(3), departing pipelines receiving production 
+from production facilities shall be protected by high- and low-pressure sensors (PSHL) to 
+directly or indirectly shut in all production facilities.  The PSHL shall be set not to exceed 
+15 percent above and below the normal operating pressure range.  However, high pilots 
+shall not be set above the pipeline’s MAOP. 
+ 
+• In accordance with 30 CFR 250.1004(b)(4), crossing pipelines on production or manned 
+nonproduction platforms which do not receive production from the platform shall be 
+equipped with an SDV immediately upon boarding the platform.  The SDV shall be 
+operated by a PSHL on the departing pipelines and connected to the platform automatic- 
+and remote-emergency shut in systems. 
+ 
+• In accordance with 30 CFR 250.1004(b)(1)(i), all incoming pipelines to a platform shall 
+be equipped with a flow safety valve (FSV).  In accordance with 30 CFR 250.1004(b)(2), 
+incoming pipelines boarding a production platform shall be equipped with an automatic 
+shutdown valve immediately upon boarding the platform.  The SDV shall be connected to 
+the automatic- and remote-emergency shut in systems. 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+—MMS—GOMR— 
+www.gomr.mms.gov
+ 
+ 
+ 
+              
+ 
+ 
+ 

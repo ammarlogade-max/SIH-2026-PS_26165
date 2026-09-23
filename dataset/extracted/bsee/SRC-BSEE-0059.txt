@@ -1,0 +1,174 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+Overhaul Ball Crashes to Deck Resulting in High 
+Potential,  Near-Miss Fatality 
+ 
+While conducting crane operations during a 
+decommissioning/well abandonment  
+activity, a 700-pound crane headache ball fell 
+24 feet,  crashing to the deck less than two feet 
+from one of the riggers. The operator reported 
+this high-potential, near-miss fatality to BSEE 
+on Sept. 20, 2022.  
+Incident details: 
+• A crane was moving a 400-pound well 
+cap (Figure 1) from one well access 
+panel to an adjacent panel when a 
+wedge socket on the auxiliary line 
+snagged on the flange of a C-channel 
+located at the edge of the platform’s rig 
+deck.  
+• The lift required running the crane’s 
+auxiliary line within inches of the edge 
+of the platform rig structure. the wedge 
+socket above the headache ball 
+snagging on the C-channel flange that 
+ran across the length of the edge of the 
+deck (Figure 2).  This snag temporarily 
+held all the weight of the load and 
+rigging, resulting in a false reading on 
+the auxiliary winch. The load cell 
+sending a weight signal to the operator 
+was located below the snagged wedge 
+socket. The crane operator did not 
+detect that the auxiliary winch was no 
+longer holding the weight of the load. 
+  
+ 
+Safety Alert No. 460 
+March 10, 2023 
+Figure 2. 
+WEDGE 
+SOCKET 
+HEADACHE 
+  
+C-CHANNEL  
+FLANGE ON 
+C-   CHANNEL 
+LOAD 
+CELL 
+Figure 1. 
+WELL CAP 
+400 LBS 
+
+ 
+ 
+• (The “ blind lift,” was being directed by a rigger using radio communications. The 
+rigger was standing on the pipe deck and had a clear view of the load, line, 
+pedestal crane, and crane operator. His location put him approximately 30 feet 
+from  
+the load line.) 
+• The rigger did not realize that the line had snagged on the C-channel and 
+continued giving directions to keep lowering the well cap. As the load cell (which 
+work by converting a specific type of mechanical force — typically tension, 
+torque, compression, or pressure — into an output signal. This output signal is 
+then transmitted via a load cable to the scale's indicator where the precise weight 
+can be measured and read by the crane operator) was positioned below the 
+snag, there was no change in the load signal, even though the weight of the load 
+was now being supported by the C-channel and not the auxiliary winch.   
+• The rigger, not seeing any movement, repeated a request to lower the load. 
+Because the crane operator could not see the winch drum behind the crane cab, 
+he did not see that the load was not moving and responded that he was still 
+lowering the load.  As the crane operator continued to unwind the auxiliary line at 
+the winch drum, the wedge socket slipped off the flange of the C-channel, 
+releasing the snag (Figure 2).  The 700-pound headache ball fell 24 feet (Figure 
+3), striking the deck less than two feet from one of the riggers guiding the load. 
+(Figure 4).  After the incident, a third party inspected the crane, replaced a small 
+three-inch pin for the hook latch, and the crane was placed back in service. 
+ 
+ 
+WELL 
+CAP  
+400 LBS 
+HEADACHE 
+BALL 700 LBS  
+Figure 3 
+Figure 4 
+CRANE 
+OPERATOR 
+RIGGERS GUIDING 
+THE LOAD 
+HEADACHE 
+BALL 700 LBS  
+WELL CAP 
+400 LBS 
+SNAG 
+POINT 
+
+ 
+ 
+Contributing Factors:  
+ 
+• The rigger and crane operator should have noticed the auxiliary winch was no 
+longer detecting the weight of the load.  
+• The engineering controls (i.e., weight indicator) provided an inaccurate 
+representation to the crane operator of weight on the winch due to wedge socket 
+snagging on the flange of the C-   channel above the load cell.  
+• The crane operator and rigger failed to recognize something was wrong after 
+repeated requests asking to lower the load and receiving the response that the 
+line was being lowered and not seeing any movement in the load position. 
+ 
+• The rigger did not check the path of the auxiliary line for potential snags. 
+• The work team should have noticed the potential hazards of working close to the 
+C-   channel at the edge of the platform rig. The work team should have recognized 
+the potential snag points. 
+• No formal risk assessment was conducted. However, a review of the task was 
+performed.  
+ 
+Therefore, BSEE recommends operators and contractors consider  the following: 
+ 
+• Ensure a secondary device (e.g., weight indicator, camera) is accessible to 
+detect any slack on the load line.  
+ 
+• Identify all potential wireline contact points and include them in worksite 
+instructions, risk assessments, and toolbox talks. 
+ 
+• When working close to  the equipment, and facility structures, identify potential 
+contact and snag points and incorporate appropriate mitigation actions, including 
+placing additional spotters at potential contact or snag points. 
+ 
+• Discuss what key controls are in place to remove yourself and your team 
+members from the potential “line of fire” (i.e., The zone within a work area where 
+there is a risk of (serious) injury from machinery or equipment). 
+ 
+• Ensure all operations and contract personnel involved in “lifting operations” 
+attend and participate in a pre-job meeting/toolbox talk and document. 
+ 
+
+ 
+ 
+o All workers should review the Job Safety Analysis (JSA) and ensure all 
+hazards are acknowledged and policies /procedures, guidelines, 
+contingencies, and communications are understood. 
+ 
+• Incorporate load movement verification communications from rigger to crane 
+operator (e.g., “down one foot,” “north one foot,” etc.) to ensure load line 
+movement is confirmed throughout the lift and especially blind lifts.  
+ 
+o Do a step-by-step visualization of the move to identify snag points,  
+           mitigations, and critical communications, especially when tight clearance  
+           cannot be avoided. 
+ 
+• Conduct proper planning before lifts, such as reviewing the drop zones and 
+identifying safe zones during the lift(s).  
+ 
+ 
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Lifting  

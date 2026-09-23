@@ -1,0 +1,134 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+ 
+ 
+ 
+BSEE Risk Based Inspection Identifies  
+Welding and Burning Hazards 
+In September 2023, the Bureau of Safety and Environmental Enforcement (BSEE) 
+carried out Performance-Based Risk Inspections (PBRIs) f  or 22 production and well 
+operation sites in the Gulf of Mexico. An analysis of compliance and incident data since 
+2022 uncovered multiple high potential fires associated with welding and burning 
+operations leading to these on-site targeted inspections of 13 production facilities and 
+nine well operation facilities operated by 11 distinct operators. An evaluation of those 
+inspections identified several critical issues requiring attention to ensure the safety and 
+integrity of ongoing operations.   
+ 
+The PBRIs   revealed instances where fire protection barriers (e.g., tarps, curtains, and 
+blankets)  were either inadequately placed or damaged, posing a risk to the safety of 
+welding and burning operations.  
+ 
+In one incident,  evidence suggests hot slag from a cutting torch pierced the underside 
+blanket barrier of the living quarters building. The residual heat likely caused the wood 
+subfloor to ignite (Figure).  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Safety Alert No. 482 
+April 4, 2024 
+Figure: Fire spread to the living quarters following 
+the removal of the heliport substructural frame 
+using cutting torches.  
+
+ 
+ 
+The PBRIs identified the following concerns:  
+• Hot work was being conducted in areas located within 35 feet of equipment 
+containing hydrocarbons. 
+• Inadequate housekeeping practices were observed, with flammable sources like 
+cardboard boxes found within 35 feet of hot work areas, posing an additional risk 
+to safety.   
+• Tools for prevention, such as fire extinguishers and portable gas detectors, were 
+not properly identified as necessary. 
+• Operations were taking place without an approved Safe Welding Plan, indicating 
+a need for comprehensive safety measures and planning.    
+• Offshore personnel were not following safe welding and hot work procedures. For 
+example, one procedure requires the designated person-in-charge to    personally 
+verify the individual performing the burning had been trained to safely operate the 
+oxygen/acetylene burning equipment. BSEE found at least one instance of this 
+not having occurred.  
+• Frequency of training for hot work and/or welding was inconsistent. BSEE was 
+unable to determine from the Safe Welding Plans or Safety and Environmental 
+Management System (SEMS) Training Element if   operators required individuals 
+serving as welders to be trained and qualified to the appropriate industry 
+standards and codes (e.g., American National Standards Institute, American 
+Welding Society, American Society of Mechanical Engineers etc.), relative to the 
+specific type of hot work tasks being performed. 
+• Hot work permits and Job Safety Analyses (JSAs)   listed the same person to 
+perform fire watch and perform the hot work.  
+ 
+BSEE recommends that operators and their contractors, where appropriate, 
+consider doing the following: 
+• Taking all necessary precautions to control, remove, or otherwise correct any 
+hazardous oil and gas accumulation or other safety, health, or fire hazard.   
+• Inspecting the rating, current condition, and placement of fire protection 
+barriers to mitigate the potential risk caused by hot work, including personal 
+protective equipment. 
+• Reviewing and mitigating any hazards associated with welding and burning 
+operations, which warrant a heightened level of planning specific to the task’s 
+risk. 
+• Reviewing training and competency requirements for hot work, ensuring 
+these meet industry standards.  
+
+ 
+ 
+• Ensuring employees can understand and perform their jobs in a safe and 
+environmentally sound manner. 
+• Ensuring all hot work operations are inspected by the person in charge prior 
+to commencement of work and ensuring adequate supervision and fire 
+watches are in place throughout the duration of the work. 
+• Adhering to  all applicable planning and procedures for safe welding and hot 
+work.  
+• Requiring all operations and contract personnel attend and participate in pre-
+job JSA meetings and ensuring the supervisors of all phases of the work 
+know and understand the complete scope of the job. 
+• Ensuring compliance with 30 CFR, Section 250.46, Safe and Workmanlike 
+Operations.  
+ 
+PBRIs are a component of BSEE’s Risk‐Based Inspection (RBI) Program and 
+performed in addition to BSEE’s annual inspection program.  The RBI Program  
+uses a systematic approach, employing both a quantitative risk model as well as 
+subjective performance and risk-related intelligence information, to identify higher‐
+risk facilities on which to focus inspections and resources. For PBRIs, BSEE 
+specialists review key performance indicators, like compliance and incident data, to 
+identify any trends indicating risk associated with widely-employed procedures or 
+equipment that warrant the attention of focused inspections. PBRIs are narrow in 
+focus (for example: gas releases; lifting incidents; compressor fires; etc.), and cover 
+multiple facilities, operators, and districts in a two-to-three-day window. The findings 
+are used to inform the entire industry and thereby have far-reaching effects leading 
+to continuous improvement. 
+ 
+Learn more here: Risk Based Inspection Program | Bureau of Safety and 
+Environmental Enforcement (bsee.gov) 
+ 
+– BSEE – 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Personnel Safety, Fire 

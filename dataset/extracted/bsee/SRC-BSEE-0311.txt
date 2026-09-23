@@ -1,0 +1,33 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 208
+December 19, 2002
+Contact: Cliff Delouche
+(337) 289-5103
+Loss of Well Control
+Recently, a kick was observed during the wash-over of a gravel pack. Observed pressures were 1,100 psig on
+the casing and 1,800 psig on the workstring. Well-control operations were initiated by bull-heading into the well,
+at which time pressure rose to 4,200 psig. The PSV located on the mud pump relieved,allowing a mixture of
+gas, sand, and completion fluid to escape and inundate the area around the drill floor and rig equipment. On at
+least two occasions prior to the incident, the PSV had been subjected to pressures ator near its set pressure of
+5,000 psig during BOP tests.
+It was concluded in an MMS investigation of the incident that the PSV shear pin failed below its set pressure
+because of a possible deformity of the pin resulting from repeated exposure to pressures at or near its set
+pressure during testing. It was further concluded by MMS that an apparent failure toinspect the shear pin
+visually after such pressure exposures would have revealed the aforementioned deformity and thus represents a
+possible contributing cause of the incident.
+It is therefore recommended to operators and contractors that:
+PSV shear pins should be visually inspected for integrity after having been exposed to pressures at or
+near their relief pressures.
+1.
+PSV’s should be maintained in accordance with manufacturer’s recommendations.2.
+PSV discharges should be piped to a safe location so as to minimize interference withoperations.3.
+For details of the accident, seeOCS Report MMS 2002-040. Copies of the report may be obtained from the
+MMS Public Information Office located at 1201 Elmwood Park Boulevard, New Orleans, Louisiana 70123
+(1-800-200-GULF or local 504-736-2519).
+—MMS—GOMR—
+www.gomr.mms.gov
+Visit our Safety Information Website
+Safety Alert No. 208 - Loss of Well Controlhttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_208...
+1 of 12/21/2012 4:37 PM

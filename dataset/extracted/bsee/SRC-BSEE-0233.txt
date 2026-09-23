@@ -1,0 +1,78 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 283 Contact:  Glynn T. Breaux 
+7 December 2009 (504) 736-2560 
+Crane Shock-Loading resulting from Casing Jack’s  
+Hydraulic Hose Fitting Failure  
+During a well Plug and Abandonment (P&A) operation a 3/8-inch Casing Jack’s 
+Hydraulic Hose (CJHH) fitting, connecting the CJHH to the main hydraulic box for jack 
+operation, was damaged while setting the jack’s lower 30-inch slips.  The slips, in 
+making contact with the fitting, damaged the fitting and the hydraulic pressure contained 
+within the hose was released.  This allowed the 271 feet (previously cut) of 30-inch x 16-
+inch x 10-3/4-inch x 7-5/8-inch grouted casing to drop several feet.  The platform crane’s 
+5/8-inch auxiliary line that was fastened to the grouted casing could not be lowered in 
+time to prevent shock loading to the crane.  The load limit on the crane at its 20 degree 
+angle with 55 feet of radius was approximately 4,000 pounds, with an auxiliary line 
+breaking force of 33,600 pounds.  Since the auxiliary line could not be lowered in time, 
+the auxiliary line broke at the wedge socket dropping the headache ball to the deck with 
+shock loading also being applied to the crane.   
+Subsequent to the incident a protection plate was constructed to protect the CJHH 
+assembly and main hydraulic box from accidental contact.  There were no injuries, 
+pollution or other structural damage to the crane resulting from this incident.  
+A Minerals Management Service (MMS) investigation into this incident revealed that: 
+Inadequate 3/8-inch CJHH/fitting protection resulted in failure of the casing jack. 
+The weight of the 271 feet of casing was greater than what the 5/8-inch cable  
+could hold.  
+The Contractor’s Job Safety Analysis (JSA) provided no detailed guidelines and 
+recommendations on the appropriate time to connect the crane and casing string 
+to prevent crane shock-loading (i.e., the crane should have been connected after 
+the casing was cut into smaller sections).  
+The Contractor’s JSA failed to identify the potential 3/8-inch CJHH/fitting crush 
+point hazard. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Therefore, the MMS recommends the following: 
+The Operator and its contractor should consider the installation of a CJHH 
+protection plate / guard to prevent the jack’s slip assembly from striking the 
+CJHH / fittings to prevent loss of the casing jack’s hydraulic pressure.  
+	 The Operator and/or Contractor’s well procedure and JSA should provide detailed 
+guidelines and recommendations on the appropriate time to connect the crane and 
+casing string to prevent this potential hazard. 
+--MMS--GOMR--
+www.gomr.mms.gov 

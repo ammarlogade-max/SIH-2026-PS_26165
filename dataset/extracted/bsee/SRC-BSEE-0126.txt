@@ -1,0 +1,55 @@
+
+
+Safety Alert No. 391                               Contact: Roderick Belson 
+September 17, 2020          Phone: (504) 736-2745 
+Improper Use of Equipment Results in Shock Loaded Crane 
+and Damaged Tension Packer 
+While performing Plug and Abandonment 
+operations, an operator attempted to set a  
+7 5/8” Model MAD-1 Tension Packer on a  
+2 7/8” tubing work string by using the 
+platform crane. After four attempts, the 
+emergency release shear ring on the packer 
+sheared, which caused the crane to be 
+shock loaded. 
+BSEE identified the following causes that led 
+to, or may have contributed to, the incident: 
+1. The crane was used on four separate 
+occasions to apply upward tension to the 
+packer without changing the shear ring after 
+each event. The manufacturer tech sheet 
+states, “The shear ring is designed to only 
+take a tension load once and it is 
+recommended that the shear ring is 
+changed out after each run.” 
+2. The operator did not know the operating rating or tolerance for the shear ring on the 
+packer. 
+3. Risk/Hazard Analysis was not thoroughly performed before the job. The Job Safety 
+Analysis written prior the incident stated that casing jacks would be used for pulling 
+operations; however, a crane was used. 
+4. The platform crane was used to lift a tension packer that was not free to be lifted. API 
+Recommended Practice 2D, Operations and Maintenance of Offshore Cranes 
+(Appendix B.3.2.3) states, “Before starting a lift, the following conditions shall be 
+verified: ...2) The load is free to be lifted.” 
+SAFETY ALERT 
+A Model MAD-1 Tension Packer 
+
+A Safety Alertis a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+· Refer to Original Equipment Manufacturer design specifications when unsure of 
+equipment tolerances; 
+· Consider using a load cell data recording device when making lifts; 
+· Use the dynamic load chart when entering the well bore to mitigate dynamic forces 
+applied to a load that a crane operator may have little to no warning to correct; 
+· Adhere to Standard Operations Procedures/Safe Work Practices prior to performing 
+crane operations; 
+· Determine if a load is free prior to initiating crane operations to lift a work string 
+during a well abandonment; 
+· Refrain from attempting to use a crane to pull/lift a work string or load not free to be 
+lifted; and, 
+· Always review job specific Job Safety Analysis and Hazard Analysis prior to 
+performing work. 
+--BSEE-- 

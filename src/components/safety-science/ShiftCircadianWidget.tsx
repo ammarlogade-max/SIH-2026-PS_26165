@@ -69,6 +69,15 @@ const shiftDetails: Record<
     description: "Biological circadian nadir (02:00-05:00). Reduced cognitive reaction time and micro-sleep precursor frequency peak.",
     color: "#f43f5e",
   },
+  standard: {
+    label: "Standard Operational Window",
+    window: "Standard Operating Hours",
+    icon: Clock,
+    riskTier: "low",
+    multiplier: 1.0,
+    description: "Standard daytime operations with normal baseline alertness and complete supervision coverage.",
+    color: "#0ea5e9",
+  },
 };
 
 export default function ShiftCircadianWidget({

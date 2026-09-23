@@ -1,0 +1,55 @@
+{
+  "evaluation_timestamp": "2026-09-15T22:35:00Z",
+  "dataset_version": "2.2.0",
+  "overall_readiness_status": "READY_FOR_TRAINING_AND_BENCHMARKING",
+  "gates": {
+    "gate_a_sample_volume": {
+      "metric": "gold_plus_silver_count",
+      "value": 1744,
+      "threshold": 1000,
+      "status": "PASS"
+    },
+    "gate_b_leakage_freedom": {
+      "metric": "cross_split_shared_groups",
+      "value": 0,
+      "threshold": 0,
+      "status": "PASS"
+    },
+    "gate_c_taxonomy_representation": {
+      "metric": "min_rule_representation",
+      "value": 67,
+      "threshold": 50,
+      "status": "PASS"
+    },
+    "gate_d_schema_conformance": {
+      "metric": "schema_pass_percentage",
+      "value": 100.0,
+      "threshold": 100.0,
+      "status": "PASS"
+    },
+    "gate_e_provenance_traceability": {
+      "metric": "sha256_hash_integrity",
+      "value": 100.0,
+      "threshold": 100.0,
+      "status": "PASS"
+    },
+    "gate_f_quarantine_isolation": {
+      "metric": "quarantined_record_count",
+      "value": 474,
+      "threshold": ">0 isolated",
+      "status": "PASS"
+    },
+    "gate_g_source_heldout_split": {
+      "metric": "source_heldout_count",
+      "value": 56,
+      "threshold": 30,
+      "status": "PASS"
+    },
+    "gate_h_hard_negatives_benchmark": {
+      "metric": "hard_negatives_count",
+      "value": 126,
+      "threshold": 100,
+      "status": "PASS"
+    }
+  }
+}

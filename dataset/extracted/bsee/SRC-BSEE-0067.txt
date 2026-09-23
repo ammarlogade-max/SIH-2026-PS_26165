@@ -1,0 +1,80 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+Figure 1 
+Figure 4  
+Figure 2 Figure 3 
+  
+ 
+ 
+ 
+ 
+ 
+Commonly Found  
+Ineffective Crane Stinger Hook Pin Installation:  
+High potential for Injury and Equipment Damage  
+                    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A high-potential near-miss recently occurred on a Gulf of Mexico energy facility. 
+While using the platform crane to suspend a wireline lubricator, the pin holding the 
+hook on the crane stinger backed out, resulting in the hook and lubricator falling. The 
+incident caused damage to a section of the lubricator. 
+ 
+The incident investigation found that the cotter pin at the end of the hook pin had 
+sheared (Figure 1), which allowed the washer to fall and the pin to back out. When 
+the pin backed out, it caused the ear on the connection to distort (Figure 2), resulting 
+in the hook failing. The investigation also found there was an inadequate pin 
+configuration design. The pin installed on the hook assembly had a smooth 
+composition (Figure 3). The operator determined that a threaded bolt with nuts and 
+keepers (Figure 4) was the proper pin design for ensuring the stinger remains 
+secure throughout lifting operations.  
+ 
+Following this event, the operator inspected their other facilities and found the same 
+improper arrangement on additional cranes. 
+  
+ 
+SAFETY ALERT 
+ 
+ 
+Safety Alert No. 452 
+December 12, 2022 
+
+ 
+ 
+Therefore, BSEE recommends that operators and contractors do the following:  
+ 
+• Inspect all cranes on the facility and verify that the hook assembly has a threaded 
+pin with nuts and keepers. 
+ 
+• Retro-fit any stingers equipped with an improper stinger hook pin configuration. 
+ 
+• Verify all crane components are in alignment with current manufacturer 
+recommendations. 
+ 
+• Add “assessment of the pin condition” into the pre-use inspection checklist, which 
+should be completed before conducting lifting operations. 
+ 
+ 
+ 
+– BSEE – 
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ Category: Cranes/Lifting  

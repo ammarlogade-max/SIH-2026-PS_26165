@@ -4,7 +4,8 @@ import { computeAggregates } from "@/lib/aggregation-engine";
 import { generateLayerAClassification } from "@/lib/layer-a-classifier";
 import { generateReasoningNarrative } from "@/lib/narrative-engine";
 import { appendSafetyRecords } from "@/lib/safety-store";
-import type { Classification, Report } from "@/lib/types";
+import { detectShiftAndCircadianRisk } from "@/lib/safety-science-engine";
+import { inferSafetyEventType, type Classification, type Report } from "@/lib/types";
 
 export const runtime = "nodejs";
 
@@ -13,7 +14,10 @@ type BulkReportInput = {
   site?: unknown;
   activity?: unknown;
   reported_date?: unknown;
+  created_at?: unknown;
+  timestamp?: unknown;
   submitting_role?: unknown;
+  event_type?: unknown;
 };
 
 const MAX_BATCH_SIZE = 500;
@@ -33,6 +37,28 @@ function cleanText(value: unknown, fallback: string, maximum = 160): string {
 export async function POST(request: NextRequest) {
   try {
     const body: unknown = await request.json();
+    const canonicalEvents = body && typeof body === "object" ? (body as { canonical_events?: unknown }).canonical_events : undefined;
+    if (Array.isArray(canonicalEvents) && canonicalEvents.length > 0) {
+      const { commitCanonicalEventsToPipeline } = await import("@/lib/ingestion/ingestion-pipeline");
+      const commitRes = await commitCanonicalEventsToPipeline(canonicalEvents as any);
+      return NextResponse.json({
+        success: true,
+        batchSummary: {
+          total_processed: commitRes.total_events,
+          totalIngested: commitRes.total_events,
+          sif_count: commitRes.sif_count,
+          sifCount: commitRes.sif_count,
+          non_sif_count: commitRes.non_sif_count,
+          nonSifCount: commitRes.non_sif_count,
+          precursor_density: commitRes.precursor_density,
+          precursorDensity: commitRes.precursor_density,
+          ruleBreakdown: commitRes.rule_distribution,
+          activePatternsDetected: commitRes.active_patterns_count,
+        },
+        processed_files: commitRes.processed_files,
+      }, { status: 201 });
+    }
+
     const items = body && typeof body === "object" ? (body as { reports?: unknown }).reports : undefined;
 
     if (!Array.isArray(items) || !items.length) {
@@ -63,17 +89,37 @@ export async function POST(request: NextRequest) {
         continue;
       }
 
+      const eventType = typeof item.event_type === "string" && item.event_type.trim()
+        ? inferSafetyEventType(item.event_type)
+        : inferSafetyEventType(rawText);
+
+      const reportedDate = validDate(item.reported_date) ? item.reported_date : new Date().toISOString().slice(0, 10);
+
+      let createdAt = new Date().toISOString();
+      if (typeof item.created_at === "string" && !isNaN(new Date(item.created_at).getTime())) {
+        createdAt = new Date(item.created_at).toISOString();
+      } else if (typeof item.timestamp === "string" && !isNaN(new Date(item.timestamp).getTime())) {
+        createdAt = new Date(item.timestamp).toISOString();
+      } else if (validDate(item.reported_date)) {
+        createdAt = new Date(`${item.reported_date}T12:00:00.000Z`).toISOString();
+      }
+
+      const shiftInfo = detectShiftAndCircadianRisk(reportedDate);
+
       const report: Report = {
         id: `rep-${uuidv4()}`,
+        event_type: eventType,
         raw_text: rawText,
         site: cleanText(item.site, "General Facility"),
         activity: cleanText(item.activity, "General Operations"),
-        reported_date: validDate(item.reported_date) ? item.reported_date : new Date().toISOString().slice(0, 10),
+        reported_date: reportedDate,
+        shift_timing: shiftInfo.shift_timing,
+        circadian_risk_tier: shiftInfo.circadian_risk_tier,
         submitting_role: cleanText(item.submitting_role, "Field Observer", 100),
         source: "bulk_upload",
-        created_at: new Date().toISOString(),
+        created_at: createdAt,
       };
-      const classification = generateLayerAClassification(report.id, report.raw_text);
+      const classification = generateLayerAClassification(report.id, report.raw_text, report.reported_date);
       classification.reasoning_narrative = await generateReasoningNarrative({
         text: report.raw_text,
         isSif: classification.is_sif_potential,

@@ -1,0 +1,120 @@
+
+
+ 
+Safety Alert No. 507 
+Date: Sept. 11, 2025 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+Improper Use of Equipment and Tools Increases 
+Risk of Fires and Explosions Offshore 
+The Bureau of Safety and Environmental Enforcement (BSEE) has identified a recurring 
+trend of equipment misuse contributing to fire and explosion hazards during offshore oil 
+and gas operations in the Gulf of America Region (GOAR). These incidents often result from 
+workers using non-rated tools in hazardous areas, deviating from Job Safety Analyses 
+(JSAs), failing to identify unsafe equipment during inspections, and improperly using tools 
+and equipment. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INCIDENT ANALYSIS 
+BSEE investigations revealed multiple safety deficiencies involving proper tool and 
+equipment usage offshore: 
+Figure 3: Non-intrinsically safe tools used in 
+explosive atmosphere. 
+Figure 4: Plumber’s Plug not rated for high-temperature use. 
+Figure 1: Channel locks used for pulling wire 
+leading to an arc event. 
+Figure 2: Under-rated valves used with high-pressure gas 
+cylinders. 
+
+ 
+ 
+CATEGORY: Explosion, Fire, Personnel Safety  
+ 
+• Workers have used tools not rated for electrical work on live circuits (Figure 1) and 
+mismatched hydraulic or pneumatic tools for high-pressure systems (Figure 2). In 
+several cases, non-intrinsically safe hand tools were used in explosive 
+atmospheres, including mudrooms and drilling floors. 
+ 
+• Although JSAs and Hot Work Permits (HWPs) were completed, operator inspections 
+failed to detect these unsafe conditions (Figure 3). 
+ 
+• During welding on a blowdown scrubber, personnel used a plumber’s plug not rated 
+for high-temperature service. The crew lacked awareness of proper isolation 
+procedures for high-pressure and high-temperature systems (Figure 4). These 
+unsafe practices are often observed during emergency or turnaround maintenance 
+activities. 
+BSEE recommends that operators and their contractors implement the following 
+actions to reduce offshore risk: 
+• Conduct formal evaluations to ensure all personnel understand tool limitations and 
+offshore-specific hazards. 
+• Assign qualified technical personnel to review training programs and identify 
+compliance gaps. 
+• Enhance maintenance programs for all tools, including those brought on board by 
+contractors.  
+• Use durable labels to mark all tools with pressure, temperature, and electrical 
+ratings suitable for the offshore environment. 
+• Implement accountability systems to track both facility and personal tools brought 
+offshore. 
+• Confirm that proper design principles and engineering controls are in place before 
+tool use. 
+• Where feasible, complete hazardous tasks in controlled onshore environments or 
+designated safe zones offshore. 
+• Implement a mandatory tool and equipment audit checklist that must be 
+completed and attached to every JSA and HWP. The checklist should be reviewed 
+and signed by both a supervisor and a qualified person prior to the start of any work 
+to ensure all tools and equipment meet safety requirements. 
+• Empower all personnel to report equipment concerns or halt work without fear of 
+retaliation or schedule pressure. 
+ 
+
+ 
+ 
+CATEGORY: Explosion, Fire, Personnel Safety  
+ 
+• Require qualified personnel to inspect tools before use in hazardous areas. 
+ 
+• Require briefings that specifically address tool selection and hazard zone 
+requirements for each work location. 
+ 
+• Per API RP 14F, ensure that any portable electrical tools kept offshore that do not 
+have labels certifying their use in Class I, Group D locations should be distinctly 
+identified and permanently labeled “WARNING—SOURCE OF IGNITION WHEN IN 
+USE.”  
+ 
+ADDITIONAL RESOURCES 
+Personnel are encouraged to review the following: 
+• BSEE Safety Alert 449 - Temporary Equipment as a Potential Source of Ignition on 
+Offshore Facilities | Bureau of Safety and Environmental Enforcement 
+• BSEE Safety Alert 437 - Improper Fan and Other Equipment Used in Hazardous 
+(Classified) Locations During Coiled Tubing Operations | Bureau of Safety and 
+Environmental Enforcement 
+• BSEE Safety Alert 395 - Electrical Equipment in Hazardous Locations Increase Risk 
+of Fire  
+• API RP 14F - Design and Installation of Electrical Systems for Offshore Production 
+Platforms 
+• API RP 500 - Classification of Locations for Electrical Installations at Petroleum 
+Facilities 
+ 
+ 
+– BSEE – 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 

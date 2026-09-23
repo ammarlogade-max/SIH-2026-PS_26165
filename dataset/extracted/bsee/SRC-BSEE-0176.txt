@@ -1,0 +1,55 @@
+
+
+Safety Alert No. 340                                                     Contact: Darron Miller 
+23 August 2018                                                      Phone: (337) 437-4632 
+Caisson Well Surface Safety Valve Actuator Explodes 
+In January 2018, an explosion occurred on an offshore production caisson in the 
+Gulf of Mexico. As a satellite well was being brought online in extremely cold 
+weather, the operator could not get instrument gas to the well on the caisson in 
+order to open a surface safety valve (SSV) because of a frozen supply gas line. As a 
+result, the operator stated that he installed a 3/8-inch stainless steel tubing jumper 
+from a ½-inch needle valve on the top of the well tree (downstream of the closed 
+SSV) to the actuator.  
+                              
+                    Bottom of SSV Actuator                                                         Top Diaphragm Case 
+      
+Capped off fitting in place of pressure relief device                                 Damaged Grating 
+The latest, recorded, shut-in tubing pressure (SITP) on the well was 2,960 pounds 
+per square inch (psi). The pressure indicated on the tree, prior to opening the SSV, 
+was 163 psi. After the operator opened the needle valve, without the use of any type 
+of regulator to step down the upstream pressure, the actuator experienced an 
+SAFETY ALERT 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas 
+industry of the circumstances surrounding an accident or near miss. It also 
+contains recommendations that should help prevent the recurrence of such 
+an incident on the Outer Continental Shelf.
+overpressure. Therefore, the explosion occurred when the SSV opened upon 
+actuator pressurization, which rapidly introduced 2,276 psi (recorded trend pressure) 
+of non-regulated well gas through the tubing jumper and into the SSV actuator, 
+which was designed for a maximum operating pressure of 150 psi. The overpressure 
+caused the fastener bolts to fail, allowing explosive separation of the diaphragm 
+case, top shaft, and diaphragm/diaphragm retainer plate from the lower diaphragm 
+case. The operator reported that no injuries or pollution had occurred; however, 
+nearby grating was damaged along with the SSV. 
+Although the diaphragm actuator design included a ½-inch pressure relief device 
+installed and sized for instrument gas regulator failure, it had been 
+removed/replaced with a capped-off tubing fitting at some prior point in time.  
+The lease operator found that their operating procedures for this caisson did not 
+cover the start-up of the well without the use of the fuel gas system. They also found 
+that the job safety analysis (JSA) did not cover the steps in the actual process used 
+to bring the platform on-line. Additionally, the lease operator’s procedures did not 
+incorporate the practice of running a jumper line from the top of the tree to the 
+actuator, and the operator was unaware of the cause and effects that could occur by 
+doing such. Furthermore, the operator appeared unaware that the equipment had 
+been altered from the original design. 
+Therefore, BSEE recommends that operators consider the following: 
+· Do not alter equipment from original design without fully understanding potential 
+consequences. 
+· Institute operating procedures that account for start-up during all potential 
+conditions. 
+· Initiate stop work for any deviation from safe operations.  
+· Follow Management of Change procedures when confronted with a situation for 
+which there is no published Operating Procedure. 
+· Fully understand cause and effects during all operations. 
+· Safely supply instrument and fuel gas where applicable. 

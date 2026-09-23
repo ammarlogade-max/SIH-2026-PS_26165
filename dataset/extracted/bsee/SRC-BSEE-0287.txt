@@ -1,0 +1,93 @@
+
+
+ Safety Alert No. 231                                       Contact: GlennWoltman   
+31 May 2005                            (504) 736-2438 
+  
+ 
+Human Engineering Factors Result in Increasing Number of Riser Disconnects  
+     
+A significant number of accidental riser disconnects have been experienced in deepwater operations 
+during the last five years.  Each event had the potential for causing serious well-control issues.   
+ 
+After the first incident in 2000, MMS issued a Notice to Lessees and Operators (NTL),  
+No. 2000-G07, which clarified 30 CFR 250.107 (a) and 250.400 (July 2002) and prescribed measures 
+to prevent the accidental disconnect of the lower marine drilling risers from floating drilling rigs.  The 
+NTL addressed ergonomic measures to prevent human error and offered measures focused on 
+technological improvements.      
+ 
+Since the issuance of this NTL, nine accidental drilling riser disconnects and one accidental 
+production riser disconnect have occurred.  Two riser disconnects have occurred thus far in 2005.  
+Investigation results indicate human error as the cause for both incidents.     
+ 
+Human error contributed to over 50 percent of the total number of events.  Failure to implement the 
+written operating procedures to function-test the lower marine riser package (LMRP) and the BOP 
+stack while in the moon pool or prior to water entry has resulted in many of these events.  Historical 
+information is provided in the attached table.   
+ 
+The MMS recommends that you review NTL No. 2000-G07, which states in part the following: 
+ 
+a. Lock out any LMRP disconnect that is not part of a sequential disconnect process before the 
+BOP/LMRP enters the water (ensuring that a well is secured by blind or blind-shear rams 
+before the riser disconnects). 
+b. Ensure that the sequential LMRP disconnect process, including the isolation of the wellbore, 
+is designed so that the LMRP can be disconnected only as the result of a deliberate act. 
+c. Ensure that human engineering measures such as labeling the panel button are clearly 
+distinguishable from other functions, and fit LMRP and wellhead connector functions with 
+securable protective covers.   
+d. Remove confusing metal tags temporarily used to identify functions, as they may have been 
+incorrectly placed.  Rely on stamped receptacle identifications to ensure that the control 
+circuits on the wellhead or LMRP connectors have not been disturbed.  The subsea engineer 
+must first ensure that proper Subsea Function Test Checklist Procedures are in place, and then 
+observe, verify, and document all function testing of the BOP’s in the moon pool.       
+e. During BOP function and pressure testing on the stump, all functions should be operated 
+through the test stinger to confirm the hoses are installed appropriately on both pod 
+receptacles. 
+ 
+ 
+ 
+
+ 
+ 
+ 
+MONTH/YEAR   BLOCK/LEASEEVENT
+1Jan-00MC 822Human Error-Inadvertent Riser Disconnect
+Plan to test blind shear rams, but pushed wrong button, disconnecting LMRP
+2Feb-00MC 538Human Error-Inadvertent LMRP disconnect and blowout event 
+Inadvertent LMRP disconnect from BOP while installing lock-out device
+3Jun-00GC 743Equipment Malfunction-Inadvertent Riser Disconnect while logging
+PLC program card failure in BOP control system resulting in low 24-volt DC power supply 
+Voltage interuption interpretated by PLC and EDS sequence initiated
+4Jan-01EB 599Equipment Failure-Emergency Riser Disconnect  
+Lost power and rig drifted off location; activated emergency
+disconnect of LMRP when riser angle reached 5 deg
+5Jun-01GC 202Human Error-Production riser connector inadvertently released 
+Procedure to retrieve riser running tool unclear.  Adequate details to guide operator through process not available.  
+6Jun-01GC 1001Equipment Failure-Dynamic Position Failure-Drift Off-Emergency Riser Disconnect
+Loose wiring on two of the DP panels; loss of power to thrusters
+7May-03MC 822Equipment Failure-Parted Riser  
+Failure initiated in one of six inserts in female connector of one 
+joint.  Cracks inside shoulder area allowed 
+propagation of hydrogen embrittlement, leading to environmentally assisted cracking and ultimate failure.  
+Failure of first insert transferred loads to ad
+jacent inserts and bolts, which subsequently failed
+Emergency systems activated closing casing shear RAMS and lower shear RAMS
+8Jun-03MC 725Human Error-Controlled Emergency Disconnect-Drift Off 
+Operator error for maintaining current on beam of ship, rather than manuvering heading to bow.  
+ Not following the DP Model System Selected heading caused drift off.
+Insufficient power on rig did not allow operator to correct heading to maintain station. 
+9Apr-04GC 653Weather Related-Emergency Disconnect Procedure Initiated
+Dynamic Position Operator unable to maintain heading, turns difficult due to 60 knot winds fluctuating.  
+Ship drifted off location until Red Dynamic Position watch circle reached at 283 feet off location
+10Mar-05EW 965Human Error-Riser Disconnect-Hydraulic hoses for blue pod latch and unlatch functions cross connected.  
+Blue pod and yellow pod competing with each other during function testings.  
+11Mar-05GC 157Human Error-Inadvertent Riser Disconnect 
+Incorrect hydraulic connections on yellow control pod
+1Weather-Related (Apr 04)
+6Human Engineering (Jan 00, Feb 00, June 01, June 03, Mar 05, Mar 05)
+4Equipment-Related (June 00, Jan 01, June 01, May 03)
+Historical Subsea Riser Disconnects from January 2000 to Present
+Summary of Events By Root Cause
+ 
+ 
+ 
+ 

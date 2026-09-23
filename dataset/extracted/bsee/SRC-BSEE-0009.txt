@@ -1,0 +1,84 @@
+
+
+ 
+ 
+Verify Megger Testing and Termination Prep to 
+Prevent Seawater Pump Motor Fires 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Incident 
+The Bureau of Safety and Environmental Enforcement (BSEE) received a report of a fire 
+involving a seawater source pump motor that was under maintenance. 
+After electricians replaced stress cones and crimped lugs during a motor termination 
+repair, the motor was placed back in service to test the work. The motor tripped offline, 
+and multiple overload alarms were recorded. While troubleshooting, electricians found 
+burned wiring and signs of arcing inside the motor termination box (see Figure 1). The 
+damaged wiring was found below the stress cones, between the line and load conductors 
+(see Figure 2). 
+  
+Figure 1: Evidence of arcing and burned wiring inside 
+the motor termination box.
+Figure 2:  Burned wiring located below the stress 
+cones between the line and load conductors. 
+Safety Alert No. 514 
+Date: Feb. 6, 2026 
+Contact: bseepublicaffairs@bsee.gov  
+Phone: (800) 200-4853  
+
+ 
+ 
+Findings 
+The terminations were megger-tested
+1
+ with a 1,000-volt tester, but the work pack required 
+a 5,000-volt tester. 
+• The recorded insulation resistance to ground was 200,000 ohms, which did not 
+meet the work pack requirement of 100,000,000 ohms (100 megaohms). 
+• The semiconductor layer was not prepared as specified in the maintenance work 
+pack. 
+Corrective Action 
+The operator’s corrective action was to create slack in the load cables, cut out damaged 
+phase conductors, and reterminate the conductors in accordance with engineering 
+guidance. 
+The semiconductor layer was not prepared like prescribed in the maintenance work pack. 
+The operator’s corrective action was to find slack on load cables and cut damaged phase 
+conductors/re-terminate per engineering guidance. 
+To help prevent similar incidents in the future, the Bureau of Safety and Environmental 
+Enforcement recommends that operator and contractor supervisors, where 
+appropriate, consider the following: 
+• Follow the manufacturer’s instructions and the approved work pack for repairs. 
+• Verify test setup and results before restoring equipment to service. 
+• Use test equipment with the correct voltage rating for the job. 
+• Ensure workers understand unit prefixes (ohms, kilo-ohms, megaohms) and the 
+magnitude differences. 
+ 
+–   BSEE – 
+ 
+ 
+1
+ “meggered" refers to testing electrical insulation resistance using a megohmmeter (commonly called a "Megger," 
+after the Megger Group brand name). This test applies a high DC voltage to measure the resistance between 
+conductors and ground, helping identify insulation breakdown or moisture ingress that could lead to electrical 
+faults. For example, a reading of 100 MΩ indicates good insulation, while lower readings, such as 200 kΩ, may 
+indicate a problem.
+ 
+
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by the Bureau of Safety and Environmental Enforcement to inform the 
+offshore oil and gas industry of the circumstances surrounding a potential safety issue. It also 
+contains recommendations that could assist avoiding potential incidents on the Outer Continental 
+Shelf. 
+ 
+ 
+CATEGORY:  Electrical Safety; Maintenance/Testing 

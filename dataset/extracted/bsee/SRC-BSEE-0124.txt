@@ -1,0 +1,75 @@
+
+
+   
+ 
+   
+ 
+ 
+Safety Alert No. 393                               Contact: Jason Mathews       
+September 23, 2020                             Phone: (504) 731-1496 
+ 
+ 
+Adverse Weather and Sea Conditions Complicate Dynamic Lifts
+  
+                                                           
+An uptick of incidents in the Gulf of Mexico have occurred involving offloading/backloading 
+cargo to  and  from  offshore  facilities,  work  boats,  marine vessels  (M/Vs),  and offshore 
+supply vessels. For many operators, these dynamic lifts are classified within the category 
+of  critical  lifts,  which  require  additional  hazards,  such  as  deck  height,  wind  speed,  wave  
+height, and worker positioning, to be considered when conducting a task. Several incidents 
+in  April  2020,  as  detailed  below,  emphasize  the  importance  of  considering  all  potential  
+hazards when preparing for a dynamic lift: 
+ 
+ 
+1.  While backloading a nitrogen bottle rack to a M/V, the crane operator set the bottle 
+rack on the boat’s deck. When a worker on the M/V deck began to remove the 
+stinger from the bottle rack, a sudden ocean swell shifted the load, causing the 
+stinger to  inadvertently lift the bottle rack slightly above the M/V deck. When the 
+swell subsided, the rack landed on the worker's left foot, causing injury. 
+ 
+2.  While backloading a supply box onto a M/V, the load struck the boat's gangway, 
+breaking one of the pipe supports. The crane operator was able to land the load 
+safely following the impact. After the event, the crane operator said he miscalculated 
+how high the load was off the deck when he was attempting to set it down. 
+SAFETY ALERT 
+ 
+ 
+      A nitrogen bottle rack on a marine vessel, as referenced in incident 1. 
+
+   
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+3.  A platform crane operator lowered a stinger to hook up to a work basket to continue 
+offloading supplies from a M/V when a wave caused the vessel to  shift downward. 
+As a result, the hook of the stinger caught the inside of the basket and slid it, pinning 
+a M/V worker against the rail of the boat. The crane operator was able to move the 
+basket enough for the worker to get out from behind the load, but the worker 
+sustained a bruise to his left leg. 
+Therefore, BSEE recommends that operators and contractors consider the following: 
+• Consider adding a specific dynamic lift checklist to the Job Safety Analysis prior to 
+making lifts to and from a M/V. Factors to include in the checklist should include, 
+but not be limited to, wind speed, wind direction, sea state, visibility, and load 
+characteristics;  
+• Re-evaluate the current environmental conditions immediately before starting a lift 
+and adjust operations accordingly; 
+• Emphasize the use, right, and responsibility of Stop Work Authority to all crew 
+members, especially those involved with dynamic lifts, regardless of rank or level 
+of participation during the lifting operation; 
+• Consider inspecting the load and slings for adequate working condition;  
+• Verify up-to-date certifications (i.e. weights, dimensions, etc.) prior to a lift    and 
+ensure the information is accurately captured on the manifest before commencing 
+transportation; 
+• Ensure supervision of a lift focuses on worker positioning and deck spacing as it 
+pertains to the motion and final destination of the load; 
+• Thoroughly review this Safety Alert in conjunction with Safety Alert No. 383
+, which 
+addresses recent tote tank lifting incidents; and, 
+• Verify a crane’s minimum hook speed is sufficient to avoid a load hitting a M/V 
+when a wave crests, as summarized in Table B.4.3.3
+ in API Specification 2C. 
+ 
+--BSEE-- 

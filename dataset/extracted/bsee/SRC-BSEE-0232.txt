@@ -1,0 +1,130 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 284 Contact:  Glynn T. Breaux 
+15 December 2009 (504) 736-2560 
+Diverter Flow Event 
+Recently a semi-submersible rig’s completion operation resulted in a diverter flow event when formation 
+gas that was most likely trapped under the Blowout Preventer Upper Annular (BOPUA) rapidly expanded 
+as it entered the riser.  The well had been perforated, reverse circulated and the work string packer 
+unseated with the well monitored in a static condition.  Within minutes of rigging down surface lines a 10 
+bbl trip tank gain was observed.  Approximately half of the riser’s 800 bbl capacity was discharged 
+through both 12-inch diverter lines within 20 minutes of the BOPUA closure.  Rig personnel described 
+the diverter flow noise and vibration as increasing to a “deafening roar.”  A hot tapping operation was 
+performed to relieve 3,000 psi on the pressure-locked TIW Valve.  Bullheading and riser booster 
+operations were then utilized to kill the well while preventing riser collapse.   
+Although the MMS investigation identified several opportunities for formation gas influx/migration in the 
+wellbore, no clear and specific cause could be identified for the gas bubble to have traveled into the riser 
+prior to the first surface observed trip tank gain and closure of the subsea BOP.  Possible causes and 
+possible contributing causes that may have prompted the event include: 
+Possible Causes 
+(1)  Unintentional momentary opening of the packer’s bypass valve and/or sealing elements 
+subsequent to perforating:  The reverse shock wave created by 86 feet of 7 inch hollow carrier 
+perforating guns could have been great enough to allow communication to the annulus above the 
+packer from momentary opening of the packer’s bypass valve and/or relaxation of the packer’s 
+sealing elements. 
+(2)  Intentional elimination of the second reverse circulation step subsequent to unseating the packer: 
+The completion’s procedure proposed a second reverse circulation step subsequent to unseating 
+the packer in order to remove any influx that was trapped under the packer following the 
+perforating operation.  When the well went on vacuum after perforating, in addition to 
+determining that the well was static subsequent to opening the packer’s bypass valve and 
+unseating the packer, the operator eliminated the second reverse circulation operation.  
+Elimination of this step could have complicated the well kill operation through possible 
+additional gas influx/migration. 
+
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Possible Contributing Causes 
+(1)  Lack of a high-viscosity pill contingency prior to perforating:  The open-hole zone being 
+perforated was drilled with approximately 230 bbl loss of synthetic base mud.  Lost circulation 
+material sweeps were necessary during open-hole drilling of the zone in order to control mud 
+loss.  Completion fluid loss was experienced subsequent to perforating when the well went on 
+vacuum, thus allowing for the possibility of formation gas/completion fluid swap-out as a result 
+of the decrease in hydrostatic head.  
+(2)  Pit monitoring difficulty as a result of the Driller’s Screen’s Log scale range:	 The wide Pit-
+Volume-Totalizer (PVT) scale range utilized on the Driller’s screen (-10 to +600 barrels) was of a 
+magnitude that made it difficult to detect subtle surface fluid system gains/losses.   
+(3)  Lack of a consistently “closed” surface fluid system and undocumented trip tank piping 
+arrangement: Surface system fluid monitoring became confusing as a result of the lack of a 
+consistently “closed” surface fluid system resulting from fluid being continuously moved 
+throughout the system (to a filter tank, cementing tank, filling/draining surface lines, general 
+semi-submersible motion, etc.).  Also, there was no documentation on how the surface fluid 
+system piping was arranged during the different phases of the operation to assist the crew in being 
+aware of flow direction. 
+Based on the investigation findings, MMS recommends that Operators and/or Lessees: 
+Spot a high-viscosity completion brine pill utilizing bridging agents across the proposed  
+completion zones that experience open-hole drilling fluid losses.  
+Monitor work string and annular pressures closely for any anomalies, in order to isolate any 
+possible work string-to-annular communication prior to proceeding with the proposed operation.  
+When testing the work string packer, the work string might remain open in order to detect fluid 
+from any work string leak(s).  This arrangement might also allow the test pressure to bleed off, 
+thereby resulting in a more easily identified pressure decline.   
+Sweep the subsea BOP on subsea wells when formation fluids are expected or known to have 
+entered the wellbore and/or when the subsea BOP has been activated for any purpose other than 
+testing.  Sweeping is usually followed by circulating through the gas buster upon opening the 
+subsea BOP to remove any remaining formation fluid (especially gas) trapped in the subsea BOP 
+“dead space” cavity. 
+Consider a second reverse circulation or bullheading after unseating the work string packer 
+subsequent to perforating in order to control any formation fluid influx below the packer.   
+Give special attention to the down-hole perforating forces and the possibility of these forces 
+opening a packer’s bypass valve and/or relaxing the sealing elements to allow formation fluids 
+into the annulus above the packer. 
+Maintain the surface fluid system as “closed” as possible, since fluid being moved throughout the 
+surface system (to other equipment tanks, filling/draining surface lines, general semi-submersible 
+rig movement, etc.) makes subtle trip tank/pit gains/losses more difficult to accurately monitor.  
+Also, document the surface fluid system piping arrangement during the different phases of the 
+operation to assist rig personnel in being cognizant of the flow path in order to more accurately 
+analyze well flow data while possibly providing more efficient well kill procedures. 
+Ensure that the scale range used on the Driller’s P-V-T screen is of a magnitude that can be used 
+to readily observe subtle surface fluid system gains/losses.     
+--MMS--GOMR--
+www.gomr.mms.gov 

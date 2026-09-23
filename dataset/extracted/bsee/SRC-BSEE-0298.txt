@@ -1,0 +1,54 @@
+Safety Alert No. 221 - Hanger Failure and Ejection Lead to Well Cont...  http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_221...
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 221Contact: Jack Williams
+June 24, 2004(504) 731-3012
+Hanger Failure and Ejection Lead to Well Control Incident
+During a workover, a possible casing failure allowed high pressure from an alternate zone
+unexpectedly to invade the tubing string, which was parted at a shallow depth. This event
+caused the tubing hanger to become the last barrier to loss of control. Because the tubing
+was parted, the weight on the tubing hanger was negligible, and because the tree had
+been replaced by a BOP stack, only the hanger hold-down pins were acting to hold the
+hanger in place.
+Although the Cameron tubing hanger was rated to withstand 15,000 psi, the hold-down
+pins sheared when pressure reached 6,150 psi. When the pins sheared, the hanger,
+followed by the SCSSV and 600 ft of 2 7/8-inch production tubing, was blown out of the
+well, almost to the crown block. As the BOP stack had no shear rams, the well flowed
+uncontrolled for a period of time.
+An investigation concluded the hanger pins sheared because of a design flaw that failed to
+allow the pins fully to engage the hanger energizing ring. The hanger manufacturer,
+Cameron, has issued Safety Alert #014086, notifying customers of record of the design
+flaw, and the MMS has published a complete report on the accident which is available on
+the web, seeOCS Report MMS 2004-048.
+According to Cameron, the products at risk include the following:
+Type C Tubing Spools/Housings:API 6A Top ConnectionSize: 7 1/16-inch Nominal;
+Pressure Rating:2,000 psi to 15,000 psi;Styles:Type C.
+Tubing Hangers: API 6A nominalSize: 7 1/16-inch;Styles:T-40, T-40CL; CXS, CT.
+In a letter, Cameron also stated,“...most hangers and spools installed prior to 1998 will
+likely fall into the affected category. These spools in many cases can be identified as a
+Cactus product via part numbers...Ingram Cactus...using a 13-digit part number stamped in
+a ‘XX-XXX-XXX-XXX-XX’ manner.  After the purchase of Ingram by Cameron in 1996,
+these parts were later changed to a part number prefixed with a ‘Y’ in the following format:
+‘YXXXXX-XXXXXXX’.  Positive field identification of part numbers is often difficult.  In
+addition the well may have been worked over or [have] alternative tubing suspension
+equipment installed by Cameron or other equipment suppliers. In the absence of positive
+identification of the hanger and spool, the precautions discussed in the Safety Alert
+[#014086] are to be followed.”
+1 of 22/21/2012 4:41 PM
+
+Cameron has redesigned the hanger to allow full engagement of the hold-down pins. The
+MMS recommends the use of multiple barriers to loss of control and extreme care when
+working over or recompleting wells with the unmodified hangers. The MMS recommends
+contacting the manufacturer if in doubt about the pressure-holding capabilities of specific
+tubing hangers.
+The MMS also recommends the following: (1) Operators should consider installing shear
+rams in their BOP stacks when working over wells that present unusual control problems;
+(2) when planning workovers or recompletions in wells that penetrate sands with high
+pressure differentials in alternate zones, operators should explicitly prepare for the potential
+worst-case control problems that may be encountered.
+  —MMS—GOMR—
+www.gomr.mms.gov
+Visit our Safety Information Website
+Safety Alert No. 221 - Hanger Failure and Ejection Lead to Well Cont...  http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_221...
+2 of 22/21/2012 4:41 PM

@@ -1,0 +1,94 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: 800.200.4853 
+  
+ 
+ 
+ 
+Fingerboard Locking Bolt Failure Leads to Near Miss 
+Incident 
+The Bureau of Safety and Environmental Enforcement (BSEE) recently investigated a 
+high potential near miss incident that took place on a drilling rig during cement line 
+pressure testing. Six stands of 6 5/8-inch pipe fell from the finger row and landed on the 
+starboard side deck of the derrick (pictures below). Weather conditions at the time of the 
+incident were 40 knot winds, heavy rain, and 8-10-foot seas. There were no personnel 
+on the rig floor at the time of the incident. 
+                               
+ 
+BSEE investigators determined the adverse weather conditions and the poor design of 
+the casing fingerboard system to be main causes of the incident. The flip over beam 
+locking bolt was not secure, and loosened during the adverse weather (see Figure 1 
+below). With new locking bolt arrangements with improved functionality, operators can 
+adjust the width of the row by flip-over beams that consist of a hinged square hollow 
+steel profile, or a steel plate. The adjustments can be made remotely or manually.  
+Safety Alert No. 480 
+January 25, 2024 
+Frontal view of stands of 6 5/8-inch pipe 
+dislodged from finger row. 
+Side view of dislodged stands of 6 5/8-
+inch pipe. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+In October 2023, a manufacturer product improvement notification was distributed to 
+inform offshore personnel about the availability of new locking bolt arrangements with 
+improved functionality. The previous locking bolt design shown in Figure 2 underwent a 
+redesign and enhancement to ensure improved and effective bolt locking. The 
+enhanced locking bolt arrangement displayed in Figure 3 consists of a bolt, locking clip, 
+and safety pin, which, when installed, prevents the bolt from unscrewing.  
+ 
+                                 
+ 
+   Figure 2 – Current locking bolt design.      Figure 3 – Enhanced locking bolt design. 
+ 
+BSEE recommends that operators and their contractors, where appropriate, 
+consider doing the following: 
+• Inspecting the condition of all casing fingerboard beam locking bolts. 
+• Reviewing fingerboard design and ensuring the best available locking 
+mechanism is implemented. Contact vendor and/or manufacturer to confirm. 
+• Inspecting and checking the pressure applied by air cylinders to ensure 
+proper pressure is being applied to the flip over beam. 
+• Ensuring all racked casing and pipe are properly secured and cannot fall out 
+of the fingerboard during adverse weather. 
+Figure 1 – Typical adjustable fingerboard 
+with flip over locking bolt. 
+
+ 
+ 
+• Subscribing to and reviewing all original equipment manufacturer product 
+bulletins and alerts. 
+• Adhering to Red Zone
+1
+ Management when required. 
+• Reviewing the following BSEE publications related to pipe handling and 
+racking systems for additional information and recommendations: 
+o Safety Alert 324 – regarding four pipe racking system incidents 
+o Safety Bulletin 2 and Panel Report 2017-001 – regarding a fatality 
+following a fingerboard latch malfunction during pipe handling 
+ 
+– BSEE – 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1
+ A Red Zone is a designated high-risk area, where personnel must secure permission to enter. 
+It is to minimize the impact of drops incidents or moving equipment on personnel. 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Pipe Handling, Personnel Safety, Lifting 

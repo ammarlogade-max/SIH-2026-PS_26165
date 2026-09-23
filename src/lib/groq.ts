@@ -80,7 +80,7 @@ async function callUnifiedAI(params: CompletionParams): Promise<CompletionRespon
       const prompt = systemMsg ? `[System Instructions]\n${systemMsg}\n\n${userMsgs}` : userMsgs;
 
       const response = await geminiClient.models.generateContent({
-        model: "gemini-2.5-flash",
+        model: "gemini-3.5-flash",
         contents: prompt,
       });
 

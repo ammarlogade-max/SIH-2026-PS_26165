@@ -1,0 +1,70 @@
+
+
+   
+ 
+   
+ 
+ 
+Safety Alert 405                                        Contact: Jason Mathews 
+November 27, 2020                               Phone: (504) 731-1496 
+ 
+ 
+Blind Shear Rams Damaged after Inadvertently Closing  
+on a Tool String 
+ 
+                                               
+          
+ Figure 1. Actual Blind Shear Ram test setup (left)                   Figure 2. Damage to test tool assembly from BSR   
+        
+   and planned blind shear ram test setup (right)                           
+ 
+In  June  2020,  an  operator,  along  with  its  drilling  contractor,  were  conducting  completion  
+operations  on  a  well  in  the  Gulf  of  Mexico when  the  blind  shear  rams  (BSRs)  were  
+damaged. As part of routine operations and regulatory compliance, a test of the BSRs   was 
+performed in which a blowout preventer (BOP) test tool was run. During this test, the drill 
+pipe was inadvertently backed off at a connection above the test assembly as the drill pipe 
+was rotated to release the test tool. When the BSRs   were closed, the gallon count showed 
+an abnormality, indicating an object was in its path. Upon recovery of the object, damage 
+was found on the test tool as a result of an impact by the BSRs.    
+ 
+The incident should have been reported to BSEE’s district office immediately after the BSR 
+test, as required by 30 CFR 250.738(i)
+, but operations continued. Days later, the operator 
+notified BSEE of the incident and said that the test was not reported earlier because the 
+BSRs did not shear the pipe.  
+ 
+ 
+SAFETY ALERT 
+ 
+ 
+
+   
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+Category: Equipment 
+ 
+Figure 3. Damage to Blind Shear Ram after closing on the test tool 
+ 
+ 
+Therefore, BSEE recommends that Operators consider the following: 
+ 
+•    Report all tests of BSRs to BSEE immediately when it   impacts an object or fails to 
+close completely on activation;   
+ 
+• In the event of a Blind Shear closure command that results in the Ram Block 
+Blades contacting shearables and/or non-shearables, immediately plan to pull the 
+stack in order to inspect the ram block and associated blades and fasteners; 
+• Review and confirm all conditions prior to testing any components of the BOP, and 
+consider a checklist to organize the verification of parameters;   
+ 
+•    Note an incident as a significant event in a Well Activity Report (WAR) submitted to 
+BSEE if the BSR impacts an object at any time; and, 
+ 
+• Confirm all independent,  third-party requirements under 30 CFR § 250.732
+ are met 
+after the initial closing of a BSR, including,  but not limited to, 250.732 (a)(1)(i). 
+ 
+--BSEE-- 
+ 

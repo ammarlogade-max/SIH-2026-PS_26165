@@ -1,0 +1,36 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Notice No. 179
+February 24, 1999
+CONTACT: Frank Pausina
+(504) 736-2560
+Drilling Accident Results in One Fatality
+A fatal accident occurred during reaming operations on an offshore rig as a driller was in the process of
+breaking out a portable top drive from drill pipe at the rig floor. The spring loaded/hydraulically released pin
+(hydraulic pin) which, when engaged, prevents the entire pipehandler assembly from rotating during break-out or
+make-up activities, was not engaged. After having set the speed and rotation controlsand after having activated
+the torque arrestors, the driller began to increase torque. As torque was increased,the elevator links, which
+were tilted out as a result of the position of the top drive unit, began to rotate counterclockwise. The driller, in
+attempting to stop the rotation of the elevator links, overcompensated by turning therotation control knob past
+the neutral setting to the clockwise position. As a result, the elevator links and attached elevator reversed
+direction, struck the driller, and fatally pinned the driller as well as the drillingconsole against the draw works.
+Therefore, from this information, it is clear that caution must be exercised when operators use the type of top
+drive for which it is possible for the elevator links to rotate when the torque arrestors are activated and the top
+drive shaft is being made up to or broken out of the drill pipe. Specific recommendations are as follows:
+1. Operations personnel be made aware of the ability of elevator links to rotate whenthe torque arrestor is
+activated and torque is applied.
+2. A safety procedure for stopping the rotation of tilted elevator links, should sucha rotation be undesirable
+and/or unintentional, be incorporated into a prescribed operational procedures statement and be made
+incumbent upon operations personnel.
+3. Every practical precaution be taken to shield the drilling control panel from tilted rotating elevator links.
+4. Consideration be given to the incorporation of an indicator into the driller’s control panel that would
+conspicuously signal the disengagement of the hydraulic pin or, in general, the ability of the elevator links to
+rotate should torque be applied.
+For details of the accident, see OCS Report MMS 97-0034. Copies of the report may beobtained from the
+MMS Public Information Office located at 1201 Elmwood Park Blouevard, New Orleans, Louisiana 70123
+(1-800-200-GULF or local 504-736-2519).
+—GOMR—MMS—
+MMS Internet Homepage: http://www.gomr.mms.gov
+Drilling Accident Results in One Fatalityhttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/sa_179...
+1 of 12/21/2012 4:15 PM

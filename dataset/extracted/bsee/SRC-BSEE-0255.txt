@@ -1,0 +1,90 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 260 Contact:  Jack Williams 
+24 April 2008 (504) 736-1757 
+Guide Post Fails Catastrophically, Causes Fatality 
+In a recent incident on a drilling rig a floor crew rigged a block and tackle assembly to the top of one of 
+the V-door guide posts and used the air hoist to attempt to rotate a 48-inch drive pipe string. 
+The string could not be rotated fully into position and when one of the floormen went to check the 
+connection, the V-door guide post suddenly broke off from its weld.  Propelled by the cable tension, the 
+V-door post jumped across the floor fatally striking the floorman.  A full account is available at: 
+http://www.gomr.mms.gov/homepg/offshore/safety/acc_repo/accindex.html 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+An MMS investigation found the following as the cause of the accident:   
+1. Floor supervisors and rig managers did not review the methodology used to turn the drive pipe.   
+o	 The V-door guide posts are usually thin walled, tack-welded pipe that is not suitable for 
+bearing loads.  The post that failed had several pad eyes attached to it which facilitated 
+its use as a base for supporting loads. 
+o	 Hooking up to the top of the V-door post multiplied the forces applied to the bottom of the 
+post and the weld by a very large factor. 
+o	 The routing of the cable did not allow enough of an angle to turn the drive pipe when the 
+pad eye neared the stops.  Applying further force simple pulled a bind rather than 
+applying torque. 
+o	 Other methods of rotating the drive pipe such as using the cat head chain or looping the 
+cable around the drive pipe were ignored.   
+2.	 The rig contractor had no method of marking non-load bearing members of the rig such as the V-
+door guide post.  The rig contractor had no standardized method of attempting the rotation of the 
+drive pipe in their operation manual nor had they provided training to their employees.   
+3.	 The JSA meeting held prior to the job did not discuss the rotation of the drive pipe.  
+
+  
+  
+ 
+ 
+The MMS recommends to the operators that they consider the following actions: 
+1. Supervisors and rig managers should be vigilant and explicitly review the methods employed to 
+accomplish common tasks that are not routine, especially those that move loads using power and 
+block and tackle rig ups. 
+2.  Mark non-load bearing structural components of the rig that might be used for anchoring heavy 
+loads and insure that all crew members understand what “non load bearing” means. Do not use V-
+door guide posts as a base of support for significant loads unless they are specifically designed for it.   
+3.  The Operators should review their planning process to ensure a detailed review of every element 
+by fully experienced personnel is covered in the Job Safety Analysis meeting.   
+4.  The Contractors should have a fully thought out approved method for accomplishing common but 
+not routine tasks that involve using power and block and tackle rig ups.  The employees should be fully 
+trained in this method, and the dangers of ad hoc hook ups should be taught.     
+MMS--GOMR--
+www.gomr.mms.gov 

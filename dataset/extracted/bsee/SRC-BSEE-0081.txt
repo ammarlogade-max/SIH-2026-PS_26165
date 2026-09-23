@@ -1,0 +1,74 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+Arc Flash Injury During Generator Hookup 
+In Dec. 2021, an operator was using the natural gas-powered generator for main power 
+and a rental generator for backup power, as the regular diesel backup generator was 
+down for repairs. Once repairs to the diesel backup generator were completed, plans 
+were made to disconnect from the rental generator and connect to the diesel backup 
+generator. The Person in Charge (PIC) and electrician walked down the job, verified the 
+breaker’s proper open position, and conducted Lock-Out/Tag-Out (LO/TO) on the rental 
+Safety Alert No. 436 
+April 1, 2022 
+SAFETY ALERT 
+
+generator. The PIC and electrician verified that the engine control switch on the diesel 
+backup was in the proper position and verified the diesel backup breaker was also in the 
+proper open position. The electrician checked all sides and contact surfaces on the bus 
+to verify voltage to ensure that the job was safe to commence. 
+The electrician disconnected the rental generator cables and installed the first cable of 
+the diesel backup generator. He then connected the next cable of the diesel backup to 
+the bus. When the cable touched the attachment lug, an arc flash event occurred, which 
+caused the main natural gas generator to shut down. Arc flash is a phenomenon where a 
+flashover of electric current leaves its intended path and travels through the air from one 
+conductor to another or to ground. As a result of the arc flash, the electrician received a 
+second-degree burn to his arm. The job was stopped, and the electrician received 
+treatment for his injury. 
+The investigation of the incident revealed that: 
+· The electrician completed a Job Safety Analysis (JSA) for Daily Electrical Repairs 
+but did not detail the work steps and hazards associated with disconnecting and 
+reconnecting generator leads to a live bus. 
+· The potential hazard of an arc flash was not addressed; therefore, proper 
+Personal Protective Equipment (PPE) to protect personnel from arc flash was not 
+donned. 
+· The electrical cabinets where the cables connect did not have any markings to 
+indicate an arc flash possibility. 
+· The LO/TO documents failed to indicate specific equipment that was being 
+locked out. 
+The breaker for the diesel generator was a central safety element. This breaker is 
+essential to allowing work to happen on a live bus. A third party analyzed the breaker as 
+part of the investigation and their initial finding showed the following: 
+· Main trip unit failed primary injection test 
+· Damaged arc chutes 
+· High resistance in current path 
+· Damaged wiring 
+· Loose and missing hardware 
+· Breaker had a crack in pole base that could allow voltage to leak to ground. 
+The breaker could not be isolated as the primary cause of the arc flash event, but it was 
+a contributing cause to this incident. 
+Therefore, BSEE recommends that operators and contractors consider the following: 
+· Conducting proper JSA review and hazard assessment prior to commencing jobs 
+that involve voltages greater than 50V. An independent hazard review with 
+engineering should be considered for electrical work that is conducted infrequently. 
+· Including arc flash as a safety topic and encouraging personnel participation by 
+asking questions linked to identifying these hazards. 
+
+· Conducting an arc flash assessment at least annually to ensure that proper 
+hazards are understood by all personnel that may work on or near an arc flash 
+hazard. The arc flash assessment should review hazard potential, signage, and 
+PPE requirements. The assessment should also trigger specific steps to include in 
+all supporting documents including LO/TO and JSA. 
+· Reviewing OSHA CFR 29 §1910.269 App E - Protection From Flames and Electric 
+Arcs., and NFPA 70E – Standard for Electrical Safety in the Workplace, and 
+making appropriate adjustments. 
+· Reviewing and verifying qualifications of all personnel working on equipment with 
+exposed voltage to ensure competency in arc flash prevention and protection. 
+· Reviewing all breakers’ age and condition, especially before work that involves 
+disconnecting and reconnecting leads of higher voltage equipment. The breakers 
+are often run-to-failure elements, but the failure has dire consequences. 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of 
+the circumstances surrounding a potential safety issue. It also contains 
+recommendations that could assist avoiding potential incidents on the Outer 
+Continental Shelf. 
+Category: Arc Flash 

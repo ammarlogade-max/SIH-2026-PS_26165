@@ -96,6 +96,13 @@ const statusStyles: Record<
     border: "border-emerald-500/40",
     icon: CheckCircle2,
   },
+  unknown: {
+    label: "Barrier Unknown",
+    bg: "bg-slate-500/15",
+    text: "text-slate-400",
+    border: "border-slate-500/40",
+    icon: HelpCircle,
+  },
 };
 
 export default function BarrierHierarchyScorecard({

@@ -1,0 +1,74 @@
+
+
+ 
+Safety Alert No. 371                             Contact: Jason Mathews 
+December 5, 2019                              Phone: (504) 731-1496 
+ 
+ 
+Conductor Failures Put Workers’ Safety  
+and the Environment at Risk 
+ 
+         
+ 
+ 
+ 
+ 
+BSEE has observed several 
+conductor failures in recent 
+inspections by BSEE inspectors and 
+incident reports submitted by 
+industry. Failure to maintain the 
+integrity of the conductor can lead to 
+parting of the conductor, external and 
+internal corrosion, well and structural 
+damage, collapse, and other negative 
+affects like well blowouts.  
+ 
+Corrosion of the inner wall may occur 
+if water and air enter the annular 
+space inside a conductor. This 
+corrosion may not be observable until 
+the conductor develops through-
+thickness holes or fractures, which 
+can further corrode the structure and 
+other well components. 
+SAFETY ALERT 
+ 
+ 
+The conductor is severed near the water line, affecting the 
+structural integrity of the well.   
+The  conductor  has  a  fracture  and  is  leaning  to  the  side,  
+causing stress on the associated equipment. 
+The conductor (Drive Pipe) is parted below the bell guide. 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents   on the Outer Continental Shelf.  
+ 
+Therefore, BSEE recommends that operators consider the following: 
+ 
+•    Prevent water and air from entering the conductor-casing annular space, and 
+between the conductor and casing; 
+ 
+•    Ensure any supports or clamps that are attached to a conductor do not accumulate 
+water; 
+•    Conductors should be properly supported and maintained for lateral loading. Do not 
+use ropes or chains as a long-term solution to prevent movement; 
+•    Maintain cathodic protection, verify that anodes are actively providing protection 
+within performance requirements, and confirm voltage measurements are within 
+acceptable range; and,  
+•    Complete inspection testing on a recurring basis (e.g. ultrasonic/UT, laser, etc.) to 
+determine the extent of metal loss and repair as needed. 
+ 
+    
+ 
+ 
+ 
+--BSEE-- 
+ 
+The lack of lateral stabilization and conductor-casing annulus 
+cover may reduce structural support of the conductor. 
+The original support / framing collar at the top of this 
+conductor is missing, exposing the insider. A new collar was 
+welded to the top, but it is not connected to the Wellhead 
+and does not fully cover the opening. 

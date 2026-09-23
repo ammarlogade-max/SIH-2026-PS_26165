@@ -1,0 +1,42 @@
+{
+  "dataset_version": "2.2.1",
+  "patch_timestamp": "2026-09-17T10:00:00Z",
+  "frozen_baseline": "v2.2.0 (dataset/v2_2/ immutable)",
+  "total_records": 3019,
+  "v2_1_records_audited": 2970,
+  "v2_1_records_preserved": 2970,
+  "iogp_assignments_audited": 2111,
+  "iogp_status_distribution": {
+    "DERIVED": 577,
+    "SUPPORTED": 564,
+    "UNSUPPORTED": 267,
+    "AMBIGUOUS": 703
+  },
+  "repaired_offsets_verified": 1844,
+  "unsupported_iogp_removed_from_supervised": 970,
+  "barrier_evaluations": 900,
+  "generic_barriers_downgraded": 886,
+  "grounded_barriers_verified": 14,
+  "hse_records_audited": 41,
+  "hse_provenance_verified": 8,
+  "hse_provenance_limited": 33,
+  "hard_negatives_verified": 126,
+  "ml_eligibility_distribution": {
+    "ML_ELIGIBLE": 1083,
+    "ML_LIMITED": 1148,
+    "QUARANTINED": 764,
+    "REFERENCE_ONLY": 24
+  },
+  "split_counts": {
+    "TRAIN": 1168,
+    "VALIDATION": 266,
+    "TEST": 254,
+    "SOURCE_HELDOUT_TEST": 56
+  },
+  "leakage_verification": {
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "val_test_overlap": 0,
+    "train_heldout_overlap": 0
+  }
+}

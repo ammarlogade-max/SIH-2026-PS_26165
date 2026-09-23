@@ -1,0 +1,48 @@
+
+
+Safety Alert No. 368 Contact: Jason Mathews 
+October 4, 2019    Phone:      (504) 731-1496 
+In advertent Opening of Valve Under Pressure Causes Injury 
+The lower left quarter of this photograph shows the twisted 
+drain line tubing after the pressure release occurred. The red 
+arrow indicates the pre-incident orientation of the drain line. 
+On May 20, 2019, an offshore oil and gas worker was conducting daily rounds, which 
+included checking for fluid in the gas lift fluid slug catcher. The worker noticed that the 
+drain line to the associated containment pan was leaking. The worker attempted to close 
+a ½-inch ball valve that drains to the catcher containment pan, but instead of closing it, 
+the worker inadvertently opened the valve, releasing approximately 1200 pounds per 
+square inch (psi) of pressure. This pressure release caused the drain tubing to dislodge 
+from the containment pan and strike the worker, fracturing the worker’s
+ nose. 
+BSEE determined that four main factors led to the incident: 
+1.
+A dump valve system was installed six months prior, making the drain line tubing
+and ball valves unnecessary; however, these components had not been removed
+and capped.
+SAFETY ALERT 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It alsocontains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.
+2. The Job Safety Analysis (JSA) did not specifically identify and address hazards 
+associated with working with pressurized equipment. 
+3. The injured worker opened the valve instead of closing the valve; 
+4. The drain line tubing was only supported by a zip tie, which offered little resistance 
+when pressurized. 
+Therefore, BSEE recommends that operators consider the following: 
+· Use a manual control valve (e.g., needle valve) that allows for flow in place of 
+valves (e.g. ball valves) that don’t allow for a regulated pressure drop if 
+sampling/bleeding operations are required; 
+· Verify that JSAs identify potential hazards and mitigate those hazards for the task 
+being performed; 
+· Ensure that, when changes are made to equipment, all hazards are identified and 
+mitigated through the Management of Change (MOC) process. Update facility 
+information and inform all personnel affected by the change(s); 
+· Install tubing lines used for draining/bleeding process equipment with a minimum 
+amount of bends/angles to eliminate pressure resistance; 
+· Do not use drain tubing longer than necessary; 
+· If extended lengths of tubing are necessary, secure tubing drain lines with 
+appropriately designed materials and techniques to prevent potential movement. 
+· Verify current platform conditions are reflected on piping and instrumentation 
+diagrams (P&IDs). 
+--BSEE-- 

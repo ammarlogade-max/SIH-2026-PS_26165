@@ -1,0 +1,133 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+`   
+ 
+ 
+ 
+BSEE Identifies Bypassed Safety Device Deficiencies   
+during Risk-Based Inspections 
+Members of the Bureau of Safety and Environmental Enforcement (BSEE) Gulf of 
+America Region (GOAR) identified a potential risk associated with bypassed safety 
+devices and inconsistent interpretation of regulations after multiple incidents of 
+noncompliance were issued associated with the operator’s failure to comply with 30 
+CFR 250.869 and 30 CFR 250.870 in 2025. 
+The BSEE Performance-Based Risk Inspection (PBRI) covered five assets (all 
+production platforms) in the GOAR, which five separate operators operated. 
+What BSEE’s PBRI Found: 
+• Multiple facilities and operators had internal policies to flag/tag temporarily out-of-
+service safety devices and track bypasses; however, inspections revealed that 
+facility personnel were not adequately documenting these bypasses 
+electronically or in hard copy. 
+ 
+• BSEE inspection teams observed several facilities’ data historians to be non-
+operational. A data historian is a software application that collects, stores, and 
+retrieves time-series data from various sources, allowing operators to analyze 
+  
+ 
+Safety Alert No. 501 
+June 9, 2025 
+Figure 1: An example image of electronic monitoring system. 
+
+ 
+ 
+historical data related to alarms, control actions, and other operational events. 
+ 
+• BSEE found that operators commonly utilized a “maintenance bypass” whenever 
+they needed a bypass. A “maintenance bypass” offers more robustness than a 
+standard bypass. With a standard bypass, an operator can choose a specific 
+function to bypass for a particular device. In contrast, a “maintenance bypass” 
+stops the device from triggering the safety system across the entire 4-20 mA 
+range and beyond, even if the device experiences a fault or loses power. 
+ 
+• “Maintenance bypasses” are popular because operators can use the same 
+bypass function for startup, maintenance, and testing, thereby preventing 
+nuisance trips. However, during startup, a "maintenance bypass" may be 
+selected for a pressure transmitter that provides both pressure safety high (PSH) 
+and pressure safety low (PSL) functions. In this case, the PSH and PSL are 
+disabled, rather than just bypassing the PSL. BSEE has found that in some 
+startup situations, it is unnecessary to bypass the PSH. In these cases, this 
+practice fails to meet the "minimum" number of devices that can be bypassed 
+according to 30 CFR 250.869, which increases operational risk by disabling 
+primary pressure protection. 
+• BSEE found that some platforms had actions entitled “group bypass selectors.” 
+This option bypasses several devices at once and is useful for some applicable 
+operations. In most scenarios, control room operators and their competency were 
+the only barrier to ensuring the minimum number of devices in bypass. For 
+example, the operator did not have a preset list of minimum bypasses that are 
+needed for common operations on the facility. 
+ 
+• BSEE found that some operators kept devices in bypass for longer durations. 
+Operators cited nuisance trips and alarms, such as sea state and weather, for 
+reasons associated with bypasses for extended periods on sumps and 
+emergency shutdown devices (ESDs) at the boat landing. One operator had 
+examples of allowable bypasses extending for 12 hours and only requiring a 
+conversation with a control room operator and the offshore installation manager. 
+ 
+• During the inspection, multiple operators indicated that they were allowed to 
+place devices in bypass for “repair” and “troubleshooting.” Multiple operators had 
+different interpretations of 30 CFR 250.869A, which states, “Surface or 
+subsurface safety devices must not be bypassed or blocked out of service unless 
+they are temporarily out of service for startup, maintenance, or testing.” 
+Specifically, “maintenance” was not well defined within operator procedures. 
+ 
+• Multiple operators had safety system bypass procedures requiring certain 
+personnel to review adherence to the operator’s procedure by conducting an 
+audit. The audit’s results and actions were also required to be documented and 
+shared with relevant personnel. Unfortunately, the operator did not provide audits 
+
+ 
+ 
+of this nature or scope were not provided by the operator for the subject facilities 
+to BSEE during the PBRI. 
+ 
+• BSEE found one instance where an operator had mistakenly bypassed the entire 
+safety system while the facility was producing. In this case, a project team altered 
+ladder logic to bypass groups of devices that were needed for the construction 
+process while the facility was offline. However, when the facility went back online, 
+these ladder logic changes were not reverted, and entire groups of devices were 
+unknowingly in bypass.  
+As a result of these findings, BSEE recommends: 
+• Operators should document all authorized safety system bypasses, inhibits, or 
+overrides in logs that capture identification tags, equipment identification, 
+reasons, applications, and removal details. If data historians cannot capture this 
+data, a written process should document all bypasses. 
+ 
+• Operators should document any changes to the ladder logic needed for 
+construction and ensure that these changes are reverted before the project's 
+completion. 
+ 
+• Operators should evaluate their offshore data historian and determine if they can 
+record and store electronic data records when operator interventions occur. 
+ 
+• Industry should ensure that a computer-based system's human-machine 
+interface (HMI) can display all bypassed safety devices and operational 
+conditions. 
+ 
+• Industry should review and document bypasses associated with “repair” and 
+“troubleshooting.” Any bypass should include the date and time of the installation 
+and removal of the bypass and the reason. Also, if the bypass is associated with 
+any “repairs” or “troubleshooting,” supporting documentation should be included 
+within the bypass log to capture the associated work activity. Operators should 
+consider referencing API RP 14C 8
+th
+ edition for bypass applications regarding 
+“maintenance” activities: Maintenance bypasses allow repairing a failed or failing 
+safety function device without a process upset.  
+ 
+• Operators should develop systems to verify compliance with their safety system 
+bypass procedures. 
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Process Safety, Personnel Safety  

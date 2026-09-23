@@ -1,0 +1,75 @@
+
+
+ 
+Safety Alert No. 416                                 Contact: Jason Mathews 
+March 11, 2021                         Phone: (504) 731-1496 
+ 
+ 
+Investigation into Grating Failure Fatality Reveals Deficiencies 
+in Hazard Identification and Communication with Barriers and 
+Barricades 
+ 
+Figure 1: Un-barricaded hazardous grating located within another hazardous work zone regularly accessed by personnel 
+ 
+On May 29,
+ 
+2019, a night operator went missing on a production platform while 
+performing routine assigned work. The operator was never located. Of the findings and 
+probable causes discovered during this investigation; installation of a barricade and 
+hazard communication were identified to be essential elements that could have prevented 
+this fatality if executed.   
+ 
+The investigation showed there was a communication breakdown.  Although the hazard 
+of the weak grating had been known by supervisory personnel, a supervisor decided to 
+delay the repair until other work was complete after placing two strands of red danger 
+tape in the area.  Supervisory personnel failed to share the information regarding the 
+weak grating with the operators and construction crew.  
+ 
+Additionally, the hazardous grating was not barricaded with a rigid structure. The 
+operating company conflated the definition barricade and barrier to include caution tape 
+and fixed or hard structures.  The method chosen did not impede personnel from 
+accessing the hazardous area. Furthermore, the area was saturated with more red 
+SAFETY ALERT 
+ 
+ 
+
+ Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the circumstances 
+surrounding an accident or near miss. It also contains recommendations that should help prevent the 
+recurrence of such an incident on the Outer Continental Shelf.  
+2 
+   Categories: General; Grating/Open Holes 
+danger tape in close proximity to the hazardous grating for hot work operations on the 
+deck above. Various witnesses reported being in the area of the hazardous grating during 
+the hot work operations and did not notice the red danger tape that was placed to call 
+attention to the hazardous grating.   
+                                                                                  
+Therefore, BSEE recommends that operators consider the following:  
+ 
+• Review Safety Alert 353 in conjunction with this Safety Alert. 
+• Review internal Safe Work Practices and contractor Safe Work Practices and 
+ensure that operations personnel understand the requirements/expectations of 
+barricades.  Effective hard barricades include rigid structures that cannot be moved 
+and present an impedance to traversing an area of concern.  Operators should re-
+emphasize the need to use hard barricades over caution tape.  The tape will not 
+always stop personnel from entering an area with hazards. 
+• Review and apply 30 CFR 250.1909 (h): Ensure that management of safety 
+hazards and environmental impacts is an integral part of the design, construction, 
+maintenance, operation, and monitoring of each facility. 
+• Review and apply 30 CFR 250.1914 (f): You must inform your contractors of any 
+known hazards at the facility they are working on including, but not limited to fires, 
+explosions, slips, trips, falls, other injuries, and hazards associated with lifting 
+operations. 
+• Review bridging agreements at least annually and recognize any gaps in Safe 
+Work Practices between contractor and operator.  
+• Conduct a review of your facility to identify any open holes or surfaces that are not 
+capable of supporting personnel and, if such an area or open hole is identified, 
+ensure that it has been properly barricaded and/or covered.  
+• Identify and mitigate additional hazards created from modified work zones during 
+construction and other activities to ensure individuals do not miss or ignore barriers 
+and barricades preventing access to hazardous work areas. 
+• Review internal Safe Work Practices to ensure that the method to communicate 
+physical hazards and hazards due to ongoing operations are not the same. For 
+example, using red danger tape to mark a location with heavy corrosion while also 
+using red danger tape as area access control for a task.  
+• Provide signage on barricades to note if fall protection is required before entering 
+and identify the known hazard(s).  

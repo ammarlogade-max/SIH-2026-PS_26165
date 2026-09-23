@@ -1,0 +1,15 @@
+field,sample_count,supported,ambiguous,not_supported,unknown,precision_pct,evidence_valid_rate_pct
+event_type,225,223,0,2,0,99.11,99.11
+location_facility,225,87,0,3,135,96.67,98.67
+location_region,225,225,0,0,0,100.0,100.0
+context_activity,225,127,98,0,0,56.44,100.0
+context_equipment,225,26,0,199,0,11.56,11.56
+energy,225,115,0,13,97,89.84,94.22
+barrier,225,36,0,17,172,67.92,92.44
+barrier_state,225,0,36,17,172,0.0,92.44
+barrier_failure,225,0,0,17,208,0.0,92.44
+exposure,225,0,0,0,225,100.0,100.0
+actual_consequence,225,216,0,9,0,96.0,96.0
+potential_consequence,225,225,0,0,0,100.0,100.0
+SIF,225,86,4,0,135,95.56,100.0
+IOGP_mapping,225,89,0,22,114,80.18,90.22

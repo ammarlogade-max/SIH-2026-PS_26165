@@ -1,12 +1,14 @@
 {
-  "name": "indusmind-ai",
-  "version": "0.1.0",
+  "name": "sif-sentinel",
+  "version": "1.0.0",
+  "description": "SIF Sentinel — AI/NLP Engine for Serious Injury & Fatality (SIF) Precursor Detection for Oil India Limited (SIH26165)",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000 -H 0.0.0.0",
     "build": "next build",
     "start": "next start -p 3000 -H 0.0.0.0",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "tsx --test tests/**/*.test.ts"
   },
   "dependencies": {
     "@google/genai": "^2.18.0",
@@ -19,14 +21,18 @@
     "multer": "^1.4.5-lts.1",
     "next": "^15.5.24",
     "openai": "^4.57.0",
+    "pdf-lib": "^1.17.1",
     "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^6.3.289",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-dropzone": "^14.2.3",
     "react-markdown": "^9.0.1",
     "remark-gfm": "^4.0.0",
     "tailwind-merge": "^2.5.2",
-    "uuid": "^10.0.0"
+    "tesseract.js": "^7.0.0",
+    "uuid": "^10.0.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/formidable": "^3.4.5",
@@ -41,6 +47,7 @@
     "eslint-config-next": "15.0.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.23.13",
     "typescript": "^5"
   }
 }

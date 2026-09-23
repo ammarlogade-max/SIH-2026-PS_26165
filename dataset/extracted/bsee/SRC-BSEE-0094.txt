@@ -1,0 +1,89 @@
+
+
+View of the loose grating from the well bay deck. 
+ 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+View of the loose grating from below the well bay deck.         
+  
+ 
+ 
+ 
+ 
+ 
+ BSEE Inspector Nearly Falls Through Unsecure Grating  
+ 
+In early 2021, a BSEE inspector was performing the regulatory-required annual 
+inspection of a production facility on the Gulf of Mexico Outer Continental Shelf when he 
+nearly fell through unsecure grating. While witnessing a field operator perform a 
+downhole safety valve test, the BSEE inspector proceeded to access the well bay deck 
+to document the shut-in tubing pressure on a well. When he stepped onto the grating of 
+the well access platform, the grating below him gave way, resulting in the inspector 
+falling to knee-level before catching himself on nearby equipment. The inspector was 
+able to raise himself to safety and sustained minor abrasions. 
+ 
+   
+ 
+As a result of the event, BSEE requested the lessee to provide an engineering 
+assessment of the wellhead access platform. Based on the review of that assessment, 
+BSEE concluded that the deck was not suitable for service due to the following factors 
+(including, but not limited to): 
+ 
+•  Pre-punched galvanized angle with bolted and/or clipped connectors were used 
+for the construction of the permanent deck and support columns, which is not 
+typical and not recommended. 
+• Due to vibration and movement, some of the connecting bolts became loose and 
+some had completely backed out of the connections leaving framing members 
+loose and/or unconnected. 
+  
+ 
+Safety Alert No. 423 
+August 11, 2021  
+SAFETY ALERT 
+ 
+ 
+
+Additionally, based on the review of the assessment, BSEE concluded that the 
+structural engineering analysis was ineffective due to the following factors (including, 
+but not limited to): 
+ 
+• No lateral loads were applied in the analysis. Due to the size and location of this 
+deck, coupled with the field observations of damage caused by “vibration and 
+movement,” the analysis should have included wind loading in accordance with 
+API RP 2A-WSD. 
+• A 50 pounds per square foot (psf) live load was applied across the entire 
+elevated area in the analysis. The typical design load for walkways and areas 
+that are intended for personnel access is 100 psf – refer to ASCE 7. 
+Furthermore, deficiencies like the items previously listed were identified on the 2019 
+Level I Survey and were not addressed. 
+ 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+ 
+• Verify proper construction materials and design parameters are utilized when 
+fabricating and installing access platforms, walkways, ladders, handrails, etc. 
+• Install barricades to prevent personnel from entering an unsafe area if 
+deficiencies are identified. 
+• Remove all wellhead access platforms erected with pre-punched galvanized 
+angle iron from the platform in lieu of attempting salvage repairs. 
+• Ensure all wellhead access platforms as well as any structural decks constructed 
+for offshore platforms are designed by licensed civil or structural engineers and 
+meet the following OSHA and API standards for safety: 
+• 29 CFR 1910.29(f)(7) 
+• 29 CFR 1910.29(g)(1) 
+• 29 CFR 1910.29(f)(3) 
+• API RP 2A-WSD 
+• 29 CFR 1910 Subpart D – Walking-Working Surfaces 
+• Review this Safety Alert in conjunction with Safety Alert No. 413: Hazards 
+Identified in Level I Surveys not Communicated to Affected Personnel.  
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of 
+the circumstances surrounding a potential safety issue. It also contains 
+recommendations that could assist avoiding potential incidents on the Outer 
+Continental Shelf. 
+ 
+ 
+Category: Structural, Grating/Open Holes  

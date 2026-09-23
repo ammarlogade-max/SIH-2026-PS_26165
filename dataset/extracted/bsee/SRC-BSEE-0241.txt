@@ -1,0 +1,93 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 274 	Contact:  Glynn T. Breaux 
+(504) 736 2560 8 December 2008 	
+Wireline BOP and Lubricator Ejection into GOM  
+Recently, a Wireline (W/L) Blowout Preventer (BOP) and Lubricator were ejected from the wellhead into 
+the Gulf of Mexico (GOM) during an attempt to retrieve a W/L DX plug from the production tubing. The 
+accident resulted in severe facial injuries to the W/L Operator.  
+A Minerals Management Service (MMS) investigation into this accident revealed that its root cause was 
+two fold: (1) Failure to comply with 30 CFR 250.618(c), which requires testing the lubricator prior to 
+running-in-the-hole, and (2) Standard Operating Procedures (SOP) were not followed when pressure was 
+not applied above the W/L DX plug in order to equalize the tubing above the plug with pressure from 
+below the plug prior to attempting to pull the plug out of the wellbore. Additional investigatory findings 
+include the following: 
+•	 Failure to follow the MMS approved Application for Permit to Modify (APM) by not beginning 
+each day/tower meeting with a Job Safety Analysis (JSA) for the task at hand.  
+•	 The standard W/L tool used for pulling the DX plug out of the wellbore did not function to 
+equalize the pressure across the plug as a result of a modified DX plug being set in the wellbore. 
+The modified DX plug required a W/L pulling tool with a longer equalizing prong to safely 
+perform the plug pulling operation. Failure to review and analyze previous well histories, W/L 
+tickets, etc., resulted in utilization of the incorrect plug pulling tool. 
+•	 Failure to exercise Stop Work Authority (SWA) procedures allowed critical warning signs 
+leading up to the accident to be overlooked. Prior to the job, requests from the W/L Operator to 
+the Third Party Company Representative were denied for a W/L Helper to assist the W/L 
+Operator, in addition to acquiring a pump to test the W/L Lubricator and pressure the production 
+tubing above the DX plug prior to attempting to pull the plug. 
+•	 Management of Change (MOC) procedures were not implemented when the operation deviated 
+from the APM when lines/Lubricator were not tested, SOP were not followed when pressure to 
+the production tubing was not applied above the DX plug prior to attempting to pull the plug, and 
+when the W/L Operator was unable to equalize the DX plug secondary to utilizing the wrong 
+equalizing/pulling tool.  
+•	 No pump or other means of testing the lines/Lubricator or pressuring up to equalize the tubing 
+was available on the location. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+       
+Therefore, the MMS recommends the following: 
+•	 All applicable personnel involved with well intervention activities review and adhere to approved 
+applications. 
+•	 Proper methods are utilized to equalize down hole W/L plugs prior to pulling the plug.  
+•	 A complete review and analysis of historical well file data, W/L tickets, etc., should be conducted 
+prior to commencing W/L activities. 
+•	 Lessees should remind all workers of the Lessee’s philosophy and policies with respect to SWA 
+and MOC. Company SWA and MOC policies and procedures should be exercised by all parties 
+involved in the task at hand.  
+•	 Lessees are reminded that site-specific pre-job planning (JSAs, safety meetings, etc.) and open 
+communications are critical elements for the successful outcome of all job tasks. 
+•	 Lessees should consider having a pump on location for testing lines/Lubricator and pressuring up 
+to equalize the tubing prior to pulling the plug when other means of testing/pressuring are not 
+available or other means are available but not utilized. 
+--MMS--GOMR--
+www.gomr.mms.gov 

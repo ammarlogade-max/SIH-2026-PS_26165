@@ -1,0 +1,85 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+Investigation of Subsea Leak Identifies the Use of Materials 
+Susceptible to Hydrogen Embrittlement 
+ 
+ 
+ 
+ 
+In July 2020, approximately 479 barrels of oil released into the Gulf of Mexico (GOM) 
+from a subsea jumper.  A BSEE investigation identified the incident resulted from a 
+failed flange connection on the jumper, between the multiphase flowmeter (MPFM) and 
+Blind Tee (see Figure).   
+The investigation found that the failure was due to the fracture of four of the eight 
+fasteners (studs) at the flange connection, which was attributable to hydrogen 
+embrittlement (HE).  The fractured studs were composed of the corrosion-resistant 
+nickel-based alloy (Inconel 718) which is not alloy steel. Inconel 718 fasteners installed 
+in    subsea environments with cathodic protection are susceptible to HE and should 
+comply with the following American Petroleum Institute (API) standards to mitigate the 
+embrittlement risks: 
+  
+ 
+Safety Alert No. 458 
+March 7, 2023 
+Subsea Jumper Connection Failure Picture 
+
+ 
+ 
+• API STD 6ACRA, 1st Edition, August 2015 - Age-hardened Nickel-based 
+Alloys for Oil and Gas Drilling and Production Equipment. 
+• API SPEC 20F, 2nd Edition, May 2018 - Corrosion-resistant Bolting for Use in 
+the Petroleum and Natural Gas Industries. 
+The investigation identified the following causes of the incident:   
+• Failure to install API 6ACRA compliant studs in the jumper flange 
+connection. 
+• Engineering documentation used for procurement did not specify API 
+6ACRA compliance for subsea flange fasteners (studs and nuts). 
+• Gap in the quality assurance/quality control (QA/QC) process allowed for non-
+API 6ACRA-compliant subsea flange fastener installation.  
+• Management of change (MOC) process was not followed. 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+• Review BSEE GC40 Panel Report. 
+• Utilize an industry-knowledgeable metallurgist to evaluate all current and 
+future subsea fasteners to verify fasteners are fit for service and not prone to 
+Hydrogen Embrittlement (HE) or any other environmental cracking failures. 
+For future installations, ensure the metallurgical evaluation is performed 
+during the engineering technical review phase before releasing the 
+engineering design for construction. 
+• Share Subsea Leak Detection (SSLD) system learnings with industry. 
+• Emphasize that company, contract, and sub-contract personnel enact MOC 
+when there are modifications associated with equipment, operating 
+procedures, personnel changes, materials, and operating conditions. 
+• Validate and document flange fastener make-up torque values. 
+• Ensure SSLD notification system alarms are appropriately set with effective 
+alerts and properly monitored during shut-in, transient and steady state 
+production operating conditions.  
+• Consider the subsea leak potential while investigating significant subsea 
+flowline pressure drops even when the pressure trends are above the 
+ambient pressure of the sea. 
+
+ 
+ 
+The Panel encourages industry to develop a standard means for determining shear 
+and torsional capacities of API flange connections. 
+ 
+ 
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Spill/Pollution 

@@ -1,0 +1,46 @@
+Safety Alert No. 174 - Accumulation of Gas in Living Quarters Result... http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/sa_174
+U.S.    Department of the Interior  
+Minerals Management Service  
+Gulf of Mexico OCS Region  
+Notice No. 174 
+November 26, 1997 
+CONTACT: Chuck Schoennagel, Jr. 
+(504) 736-2923 
+Accumulation of Gas in Living Quarters 
+Results in Explosion, Fire, and Injuries 
+Three personnel were severely burned while a well was being unloaded through the low-pressure vent scrubber 
+(LPVS) to the platform vent system. After they had rerouted the well flow from the test separator to the LPVS 
+for unloading, the three workers proceeded to the living quarters. While they were in the living quarters the 25% 
+Lower Explosive Limit (LEL) gas alarm sounded and, within seconds, an explosion and fire occurred. Emergency 
+shutdown (ESD) stations were activated to shut in the platform as the employees escaped to the lower decks. 
+The living quarters, heliport, and all communication equipment were destroyed. The employees were stranded 
+on the platform from late evening until a crew-change helicopter arrived the next morning. 
+It should be noted that the 25% LEL gas alarm had sounded during prior unloadings of the well. In addition, the 
+automatic liquid dump valve was out of service, the manual liquid dump valve was open, and the pressure relief 
+line was blind flanged from a previous PSE rupture on the LPVS. With the manual liquid dump valve open, gas 
+blowby to the sump was very probable. Deck drain piping was tied into the liquid dump line piping from the LPVS 
+before entering the sump. A P-trap was the only protection for preventing gas migration to deck drain piping. 
+The living quarters building was positioned over deck drains with many openings in the building through which 
+gas could migrate. 
+Therefore, from this information, the following are recommended: 
+1.  When gas sensor heads detect a 25% LEL in the living quarters, lessees and operators should 
+consider shutting down operations until they establish the reason for the alarm by locating and eliminating the 
+source of the gas or by identifying and correcting any problem with the gas detection system. 
+2.  Lessees and operators should repair malfunctioning equipment in lieu of using alternative methods such as 
+opening a manual liquid dump valve when the automatic liquid dump valve fails or blind flanging off a pressure 
+relief line when a PSE ruptures. 
+3.  Lessees and operators should review platform piping to ensure that deck drains have an adequate trap 
+mechanism to prevent gases from migrating through them, that deck drains are not piped to a pressure line 
+before entering a sump tank, and that piping for produced water does not tie into the piping for the wastewater 
+from the living quarters. 
+4.  Lessees and operators should review their gas detection system to ensure that the locations of 
+gas detector sensing heads provide adequate protection and that all heads are tested. 
+5.  Lessees and operators should review flare boom lines to ensure that they are designed of proper length, 
+height, and oriented in the proper position according to prevailing winds to minimize the migration of gas back to 
+1 of 2 2/21/2012 4:13 PM 
+
+Safety Alert No. 174 - Accumulation of Gas in Living Quarters Result... http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/sa_174... 
+the living quarters. 
+6.  Lessees and operators should consider equipping manned platforms with some type of emergency position-
+indicating radio beacon. 
+2 of 2 2/21/2012 4:13 PM

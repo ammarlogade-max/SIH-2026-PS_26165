@@ -1,0 +1,75 @@
+
+
+ 
+Safety Alert No. 377                          Contact: Jason Mathews  
+February 20, 2020                   Phone: (504) 731-1496 
+ 
+Improperly Bypassed Safety Device Poses Work and Environmental 
+Hazards 
+ 
+ 
+ 
+ 
+ 
+On December 30, 2019, BSEE Inspectors working offshore discovered that a level safety high had 
+been improperly deactivated  with  a  zip  tie,  resulting  in  the  issuance  of  a  P-103 incident  of  
+noncompliance  (INC). There  have  been  multiple  instances  across  the  Gulf  of  Mexico  in  which  
+operators  have  failed  to  bypass  or  block  out-of-service devices  in  accordance  with the  Code  of  
+Federal Regulations (CFR), specifically 30 CFR 250.869(a).  
+ 
+Per 30 CFR 250.841, all platforms must have a surface safety system in accordance with American 
+Petroleum  Institute  (API)   Recommend  Practice  (RP)  14C.  The  safety  analysis  outline  in  the  RP  
+states that the safety system should provide two levels of protection. It further explains that when 
+bypassing a safety device improperly, the safety system is compromised and presents hazards to 
+personnel and the environment. 
+ 
+In  the  past  three  years,  over  40 P-103  INCs  have  been  issued. Reflective  of  the  severity  of  the 
+safety hazard related to this incident, an operator who receives a P-103 violation can face a civil 
+penalty fine of up to $44,675 per day. In addition, BSEE has the option to escalate willful violations 
+into criminal investigations at the individual or company level. 
+ 
+Therefore, BSEE recommends that operators and contractors consider the following: 
+ 
+• Review  and  fully  understand  conditions  for  bypassing  safety  devices  as  prescribed  in  
+30 
+CFR 250.869(a) and ensure personnel follow proper procedures; 
+SAFETY ALERT 
+ 
+ 
+A level safety high deactivated with a zip tie. 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents   on the Outer Continental Shelf.  
+ 
+ 
+• Emphasize with  personnel  that  they  should  not bypass  or  block  devices  unless  (1)  the  
+device  is  being  monitored  and  (2)  the  equipment  is  undergoing  start-up,  testing,  or  
+maintenance;  
+ 
+• Ensure only the minimum number of safety devices are bypassed;  
+ 
+• Highlight the  importance  of  Stop  Work  Authority  (SWA) and  encourage personnel to feel 
+empowered to initiate SWA procedures without fear of reprisal; 
+ 
+• Monitor work orders and ensure that requested repairs or replacements are being made in 
+a timely manner to ensure proper function of equipment; 
+ 
+• Confirm that appropriate bypass flags are available and legible; 
+ 
+• Conduct  and  document  bypassed  safety  device  hunts  and/or  audit  the lockout/tagout 
+system on an established reoccurring frequency;  
+ 
+• Ensure your SEMS program has established procedures for investigating all incidents with 
+the  potential  for  serious  safety  and/or  environmental  consequences  and  that  it properly 
+addresses contributing factors of the incident and its escalation or control; and, 
+ 
+• Assess your evaluation programs to determine if employees feel pressured to bypass safety 
+devices; 
+ 
+• Encourage personnel to review Safety Alert 357
+ and report hazardous or unsafe working 
+conditions, which can be made anonymously, to the BSEE Toll-free Safety Hotline at 1-877-
+440-0173.  
+--BSEE-- 
+ 

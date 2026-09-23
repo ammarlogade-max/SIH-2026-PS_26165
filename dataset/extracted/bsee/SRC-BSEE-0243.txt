@@ -1,0 +1,62 @@
+
+
+ 
+ 
+ 
+ 
+ 
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 272 	Contact:  Jason Mathews 
+12 November 2008 	(203) 891-7770 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Corroded Ring Gasket Causes Loss of Well Control 
+Recently, contract personnel were performing routine scaling operations in an attempt to repair a 
+leaking  Surface  Controlled  Subsurface  Safety  Valve  (SCSSV).  After  several  unsuccessful  
+attempts to remove the scale with a wireline unit, the operator decided to perform an acid job to 
+reduce the amount of scale around the SCSSV. The following day, after the acid job, the operator 
+reentered the well to perform more scraping. A seal ring on the bottom flange below the master 
+valve  began  to  leak  and  dry  gas  was  released  into  the  atmosphere.  Since  the  SCSSV  was  not  
+operable  and  the  leak  was  below  the  master  valve,  the  operator  was  not  able  to  prevent  the  
+escape of natural gas. The platform was evacuated shortly after the loss of well control without 
+injury. 
+A Minerals Management Service (MMS) investigation concluded that the causes of the incident 
+were a severely corroded ring gasket, the performance of an acid job which possibly accelerated 
+the failure of the ring gasket, and a leaking SCSSV. 
+Therefore, the MMS recommends the following: 
+•	 Lessees  and  designated  operators  should  review  their  policies  regarding  the  performing  
+of acid operations within a well especially if an SCSSV is not functioning properly. 
+•	 Lessees and designated operators should review their platform specific emergency plans 
+to reduce further injuries or accidents when an incident occurs. 
+•	 Lessees and designated operators should be able to trace the history of ring gaskets in the 
+field  regardless  of  previous  ownership,  and/or  determine  the  condition  of  said  ring  
+gaskets prior to the performance of future operations. 
+--MMS--GOMR--
+www.gomr.mms.gov 

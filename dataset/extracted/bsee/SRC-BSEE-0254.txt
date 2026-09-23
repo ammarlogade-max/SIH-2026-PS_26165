@@ -1,0 +1,59 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+	
+	
+	 
+	 
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 261 	Contact:  Randall Josey 
+30 April 2008 	(504) 736 2409 
+Manually Operated Drains 
+Recently a pollution event occurred in the OCS waters when a cleaning crew inadvertently 
+bumped open one of the drain valves on the heater treater, allowing approximately one barrel 
+(bbl) of oil to drain to the overboard line and into the Gulf of Mexico (GOM).  The investigation 
+revealed the heater treater had been improperly installed after the water polishing unit was taken 
+out of service.  The heater treater was equipped with manually operated drains that were used to 
+drain water and sand from the bottom of the vessel.  The drains had individual 2” manual valves 
+and were manifolded together. A single line from the drain manifold was piped directly to the 
+skimmer’s overboard line and it bypassed all upstream water treating equipment.  One of the 
+drains was inadvertently bumped open allowing oil to drain to the overboard line and into the 
+GOM. 
+The MMS recommends the following: 
+•	 Manual drains used to drain the bottom of pressure vessels should be piped to water/sand 
+treating equipment prior to discharge to an open ended sump or overboard.  Title 30 CFR 
+250.300(a) states, in part, the following: “*** the lessee shall take measures to prevent 
+unauthorized discharge of pollutants into the offshore waters.  The lessee shall not create 
+conditions that will pose unreasonable risk to public health, life, property, aquatic life, 
+wildlife, recreation, navigation, commercial fishing, or other uses of the ocean.***”- 
+•	 When making modifications to surface production equipment on an offshore platform, 
+operators should implement a management-of-change (MOC) program.  A thorough 
+MOC program would establish procedures to identify and control all hazards associated 
+with process changes and maintain the accuracy of safety information.  In this case, the 
+use of a MOC process may have identified the introduction  of the possible hazard of 
+pollution when the water polishing unit was taken out of service.  This in turn may have 
+prevented the heater treater drain line from being piped directly overboard.  
+--MMS--GOMR--
+www.gomr.mms.gov 

@@ -1,0 +1,4 @@
+source_organization,sample_count,overall_supported_rate_pct,overall_error_rate_pct,critical_field_precision_pct,sif_precision_pct,consequence_precision_pct,barrier_precision_pct,evidence_valid_rate_pct
+Bureau of Safety and Environmental Enforcement (BSEE),80,80.88,19.12,86.42,100.0,92.5,81.82,90.7
+Health and Safety Executive (UK HSE),8,77.66,22.34,80.0,100.0,100.0,0.0,85.94
+International Marine Contractors Association (IMCA),137,79.46,20.54,87.84,91.11,97.81,52.94,92.2

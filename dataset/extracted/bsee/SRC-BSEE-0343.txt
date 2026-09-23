@@ -1,0 +1,45 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Notice No. 176
+July 22, 1998
+CONTACT: Chuck Schoennagel, Jr.
+(504) 736-2923
+Mud Logging Unit Explosion and Fire
+Recently, an explosion and fire occurred in a mud logging unit during the final phase of rigging it up. Gas
+analyzers had been calibrated and the flame ionization detection (FID) and total hydrocarbon analyzer (THA)
+modules were left in operation so that they could stabilize. The mud logging personnel were hooking up the
+outside sample points and drains when the explosion and fire occurred.
+The mud logging unit used FID instrumentation that required hydrogen gas to be piped into the unit to serve as
+the fuel for the flame within the instrumentation. It must be noted that the piping and hose connections used to
+pipe the hydrogen gas to the unit were neither pressure tested nor checked for leaks; the unit had no gas
+detection equipment installed to detect either hydrogen or test/sample gas, nor did the hydrogen bottle have any
+shutdown equipment installed to prevent flow should a leak occur. In addition, the inside connection was piped to
+the detection modules with polyurethane hose, which was either blown loose or burned off the connector in the
+initial explosion and fire. This development allowed the hydrogen to continue to flow and feed the fire in the mud
+logging unit.
+Therefore, from this information, we recommend the following:
+1. Lessees, operators, and contractors shall consider equipping compressed hydrogen and other
+flammable gas bottles or generators that supply gas to mud logging units with automatic shut-off
+systems.
+2. Lessees, operators, and contractors shall consider equipping mud logging units that use FID
+instruments with a gas detection system that provides an audible alarm and shuts in the gas supply
+when the ambient air reaches the lower explosive limit.
+3. Lessees, operators, and contractors shall consider equipping FID instrument systems with
+automatic shut-off systems to shut down both the gas supply and the instrument itself should a
+flame failure occur.
+4. Lessees, operators, and contractors shall consider equipping mud logging units with a positive
+purge system that sounds an audible alarm and shuts down the unit when the purge pressure falls
+below a minimum level.
+5. Lessees, operators, and contractors shall review the piping supplying combustible gases to mud
+logging units to ensure that the piping is constructed of appropriate material.
+6. Lessees, operators, and contractors shall check the piping supplying combustible gases to mud
+logging units to ensure that there are no leaks after installation of the piping.
+—GOMR—MMS—
+Mu
+d Logging Unit Explosion and Firehttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/sa_176...
+1 of 22/21/2012 4:14 PM
+
+Mud Logging Unit Explosion and Fire http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/sa_176... 
+MMS Internet Homepage: http://www.gomr.mms.gov 
+2 of 2 2/21/2012 4:14 PM

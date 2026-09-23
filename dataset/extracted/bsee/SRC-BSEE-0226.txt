@@ -1,0 +1,84 @@
+
+
+ 
+ 
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BOEM 
+U.S. Department of the Interior 
+Bureau of Ocean Energy Management, 
+Regulation, and  Enforcement 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 290 Contact:  Glynn T. Breaux 
+14 October 2010 (504) 736-2560 
+PLUGGED FLAME ARRESTOR RESULTS IN RUPTURE OF OIL STORAGE TANKS 
+During torch cutting activities on the deck above, but within approximately 12 lateral feet of oil 
+storage tanks, an explosion with no fire ruptured two oil storage tanks.  The rupture resulted in 
+approximately $500,000 of damage to the tanks and associated equipment.  An estimated 29 
+barrels of crude oil were spilled overboard. 
+A BOEM investigation into this incident revealed that the tanks were not protected with flame-
+proofed covers, rendered inert, or shielded with metal or fire-resistant guards or curtains.  The 
+probable cause of the explosion was the ignition of combustible tank vapors escaping from thief 
+hatches on the tanks during the torch cutting operation.  Gas escaping from the thief hatch was 
+exacerbated by the flame arrestor being plugged with corrosion deposits.  The flame arrestor was 
+equipped with a placard that read, “This device must be periodically serviced for continued safe 
+operation”; however, the Lessee had never serviced the flame arrestor.  The flame arrestor was 
+installed on the end of the flare boom section with no easy access for maintenance or inspection.   
+
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The volatile vapor/air mixture most likely resulted from the “breathing” of the tanks through the 
+thief hatch.  This breathing allowed gas to escape during hot daytime hours and allowed air to 
+enter the tanks during the cooler nighttime hours. 
+Therefore, BOEM recommends the following: 
+Flame arrestors and similar devices should be periodically inspected as per the 
+manufacturer’s recommendations, since such devices are prone to fouling due to potential 
+plugging from pipe scale and/or residues associated with the production process. 
+Proper placement of the flame arrestor should be considered during the design phase in 
+order to facilitate inspection of the safety device.   
+Operators are reminded that 30 CFR 250.113(a) requires equipment containing 
+hydrocarbons or other flammable surfaces be located at minimum 35 feet horizontally 
+from the welding/hotwork area, or from the point of impact where slag, sparks, or other 
+burning materials could fall.  If moving equipment (i.e., tanks) is impractical, the 
+equipment must be protected with flame-proofed covers, rendering the flammable 
+substances inert, or shielding equipment with metal or fire resistant guards or curtains.     
+--BOEM--GOMR--
+www.gomr.mms.gov 

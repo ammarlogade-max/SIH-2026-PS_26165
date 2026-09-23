@@ -1,0 +1,64 @@
+
+
+ 
+ 
+ 
+ 
+ 
+U.S. Department of the Interior 
+Minerals Management Service 
+Gulf of M
+exico OCS Region
+o. 266 	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+   
+ 
+ 
+                                                             
+       
+    
+ 
+MMS 
+ Safety 
+Alert 
+Safety Alert NContact:  Glynn T. Breaux 
+23 September 2008 	(504) 736 2560 
+Trouble Shooting Production Platform Upset Problems 
+Recently, a small flash fire occurred when condensate carried over into a platform’s flare scrubber due to 
+a  malfunction  of  the  Low  Pressure  Separator  Level  Safety  High  (LSH).  Operating  personnel  were 
+attempting to restore production, but were unable to do so when they could not locate the appropriate 
+production vessel’s first out indicator to correct the problem. The platform was shut-in by a LSH on the 
+wet oil tank. A hydrocarbon mist was observed coming from the flare scrubber vent, and the wind blew 
+the  mist  back  to  the  generator’s  hot  exhaust  piping  igniting  the  mist.  The  flash  fire  was  quickly 
+extinguished utilizing one handheld fire extinguisher. No personnel were injured, no pollution occurred, 
+and the only damage resulted in scorched paint on the top of the generator. 
+The investigation revealed that a malfunction of the Low Pressure Separator LSH allowed condensate to 
+carry over into the flare scrubber. The flare scrubber filled with fluid and the discharged hydrocarbon was 
+wind-blown to the generator’s hot exhaust piping resulting in a flash fire. 
+Therefore, MMS recommends the following: 
+•	 When restoring platform production, trouble-shoot possible LSH set point problems on upstream 
+production vessels.   
+•	 Clean the sight glasses on all vessels in order to clearly verify fluid levels. 
+•	 When  trouble  shooting  upset  problems  on  production  platforms,  closely  monitor  fluid 
+accumulation in the flare scrubber. Fluid levels can be confirmed with use of an effective sight 
+glass. 
+•	 Relocation of flare piping may be required in order to vent away from ignition sources. 
+•	 Operators are to be reminded that only the minimum number of safety devices shall be taken out 
+of service when returning the platform to production following an upset. 
+--MMS--GOMR--
+www.gomr.mms.gov 

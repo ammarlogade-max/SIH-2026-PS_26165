@@ -1,0 +1,90 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+ 
+ 
+Improper Fan and Other Equipment Used in 
+Hazardous (Classified) Locations During Coiled 
+Tubing Operations 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Safety Alert No. 437 
+April 4, 2022  
+SAFETY ALERT 
+ 
+ 
+Figure 2: Fan motor with hazard sticker. The sticker 
+reads “Do not operate this unit in explosive or flammable 
+type atmospheres.” 
+Figure 1: See arrow for fan location 
+ 
+
+Recently, Bureau for Safety and Environmental Enforcement (BSEE) inspectors noticed 
+a fan located next to a gas buster during coiled tubing operations. The inspectors 
+looked at the fan and saw that the fan was not rated for Class 1 Division 2 location as 
+required for the area. The fan plug had been changed to a Class 1 Division 2 rated plug, 
+but the fan itself was still rated for an unclassified area. Also, the extension cord used to 
+power the fan was not adequately rated for the Class 1 Division 2 area. 
+ 
+BSEE recommends that operators and contractors consider the following: 
+ 
+• Reviewing Safety Alert 395 issued in September 2020. 
+• Reviewing the electrical hazard classification drawings as part of a hazards 
+review when planning work. 
+• Before installing any new equipment, confirming it meets appropriate 
+standards (e.g., API 500, 505, 14F, and 14FZ) for electrical hazard 
+classification in the area where work will occur.  
+o Markings should be present on the enclosures of electrical equipment 
+and/or motors indicating that the equipment is approved for operation 
+in hazardous (classified) locations
+1
+ or warning against use in areas 
+where flammable or combustible gases and vapors are present. 
+o Equipment rated for Class 1 Division 2 locations are used in areas 
+where flammable gases and vapors may sometimes be present. They 
+should not be used in areas where flammable or combustible gases 
+and vapors are present during normal operations. The rating required 
+may also depend on the flammable gases present (e.g., natural gas 
+vs. hydrogen).  
+o Refer to National Electrical Code (NEC), in Article 500, for more 
+information on hazardous (classified) locations. 
+o Check enclosures, wiring, and electrical connections for damage or 
+improper modification. 
+ 
+ 
+1
+ A hazardous (classified) location is an area where the possibility of fire or explosion can be created by the presence 
+of flammable or combustible gases or vapors. Electric arcs, sparks, and/or heated surfaces can be a source of 
+ignition in such environments. 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Electrical Classification  

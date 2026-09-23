@@ -7,7 +7,7 @@ export const runtime = "nodejs";
 export async function GET() {
   try {
     const snapshot = await getSafetySnapshot();
-    const aggregates = computeAggregates(snapshot.reports, snapshot.classifications);
+    const aggregates = computeAggregates(snapshot.reports, snapshot.classifications, snapshot.actions);
     return NextResponse.json({
       success: true,
       total: aggregates.patternCallouts.length,

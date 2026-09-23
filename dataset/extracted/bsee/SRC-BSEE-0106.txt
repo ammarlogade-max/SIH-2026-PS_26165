@@ -1,0 +1,135 @@
+
+
+         Damaged transformer  
+Damaged Bus Bar Bolts 
+Damaged Bus 
+ 
+Safety Alert No. 411                            Contact: David Nedorostek 
+February 9, 2021                                   Phone: (703) 787-1029 
+ 
+Electrical Fire Damages Equipment in Motor Control Center  
+ 
+An electrical fire occurred in the Motor Control Center (MCC) on an offshore production 
+platform when an electrician engaged the circuit breaker for a Pipeline Pump motor. 
+While checking the operation of motor #3, the electrician engaged the breaker and 
+immediately heard crackling inside the MCC breaker cabinet
+1
+. The electrician went to 
+disengage the breaker and heard a pop inside the cabinet as he turned it off, resulting in 
+a platform power shutdown.  
+  
+As the electrician opened the MCC breaker cabinet, he smelled smoke and saw a ½” 
+flame under the control transformer. He immediately used a fire extinguisher to 
+extinguish the flame and instinctively removed the breaker cabinet's   fuses and resistors 
+to prevent any other possible flare-up and to eliminate all possible connectivity within 
+the MCC breaker cabinet. He also performed a Lockout/Tagout by placing a lock on the 
+breaker arm
+ to ensure no power could circulate.   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1
+ Motor Control Center (MCC) cabinets are metal enclosures that house components such as variable frequency 
+drives, motor starters, resistors, contactors, circuit breakers, fuses, disconnect switches, and overload relays. They 
+play a very important role in the industrial power control and distribution systems.  
+SAFETY ALERT 
+ 
+ 
+
+2 
+Analysis of the Incident 
+ 
+• Three bolts/nuts on the bus bar
+2
+ connecting the breaker to the bus straps were 
+either loose or damaged prior to energizing the circuit. This resulted in the bus bar 
+heating up the circuit and causing an overload of current on the transformer. 
+Additionally, the bolts/nuts had not been inspected recently to determine if they had 
+been properly torqued or damaged prior to operation.
+  
+ 
+• Insulation on the bus bar behind the breaker showed signs of significant dust build-
+up as evidenced by visible electrical surface track
+3
+ marks. This dust likely caused an 
+electric arc.  
+ 
+• Insulation was damaged on two wire connections that travel from the breaker/bus 
+bar to the control voltage transformer. 
+ 
+ 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+ 
+• Establish inspection and maintenance policies/procedures to include:
+4
+ 
+o Scheduling the examination of electrical systems; 
+ 
+o Conducting an infrared or thermographic inspection
+5
+ in accordance with 
+manufacturer’s recommendations, and document this inspection;  
+ 
+o Measuring insulation resistance and testing polarization index before an MCC 
+is re-energized (after installation or regular maintenance);  
+ 
+o Examining all barriers/insulators and replace any that show signs of arcing 
+damage, tracking, excessive heat, or cracking; 
+  
+o Inspecting all power and control wiring, replacing any wire that has worn 
+insulation or shows signs of overheating or cracking; 
+ 
+ 
+2
+ A bus bar is a metallic strip or bar (typically copper, brass or aluminum) that conducts electricity within a 
+switchboard, distribution board, substation, battery bank, or other electrical apparatus. Its main purpose is to 
+conduct a substantial current of electricity, and not to function as a structural member.  
+3
+ Electrical surface tracking is a phenomenon where an electric current burns the top layer of an insulation 
+material and allows the current to migrate across the insulation and ultimately cause damage. Electrical surface 
+tracking is defined as the number of seconds that a material resists the formation of a surface conducting path 
+when subjected to an intermittent arc of high voltage and low current characteristics. 
+4
+ Per API 14F, Annex A which describes inspection intervals for equipment; and 2
+nd
+ Tier reference document NFPA 
+70B, titled, Recommended Practice for Electrical Equipment Maintenance. 
+5
+Infrared or Thermographic inspections are beneficial in reducing electrical failures by identifying potentially 
+dangerous conditions such as, loose or dirty connections, overloaded or imbalanced circuits, or improperly 
+installed equipment. By measuring the heat imbalance relative to the environment and surrounding 
+equipment, abnormal or adverse conditions can be uncovered that if left unattended would worsen to the 
+point of failure. 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+Categories: Arc Flash; Fire; Power Outage  
+3 
+• Develop a quality control policy/procedure that provides guidance for 
+inspection/maintenance that specifically addresses potential electrical issues, 
+including dust accumulation on the bus bar; 
+        
+• Ensure bolts/nuts are properly torqued to the Original Equipment Manufacturer 
+specifications and inspect them for damage prior to energizing the circuit; 
+ 
+• Document all repair and/or replacement of electrical components. When 
+changes are made to the electrical distribution system, update and distribute all 
+applicable drawings and maintenance schedules to reflect the changes; and,  
+ 
+• Examine all bus bars and connectors, and replace any parts that are badly 
+discolored, corroded, pitted, etc. Establish a replacement schedule for parts 
+subjected to excessive temperatures.  
+ 
+--BSEE--  
+ 

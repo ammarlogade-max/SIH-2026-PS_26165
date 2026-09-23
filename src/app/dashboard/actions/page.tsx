@@ -185,7 +185,11 @@ export default function CorrectiveActionsPage() {
 
   const filteredActions = useMemo(() => {
     return actions.filter((act) => {
-      if (statusFilter !== "all" && act.status !== statusFilter) return false;
+      if (statusFilter === "recurred") {
+        if (!act.recurrence_detected && act.effectiveness_status !== "recurred_post_closure") return false;
+      } else if (statusFilter !== "all" && act.status !== statusFilter) {
+        return false;
+      }
       if (priorityFilter !== "all" && act.priority !== priorityFilter) return false;
       if (siteFilter !== "all" && act.site.toLowerCase() !== siteFilter.toLowerCase()) return false;
       if (searchQuery.trim()) {
@@ -216,6 +220,7 @@ export default function CorrectiveActionsPage() {
       overdue: actions.filter((a) => a.status === "overdue").length,
       completed: actions.filter((a) => a.status === "completed").length,
       verified: actions.filter((a) => a.status === "verified").length,
+      recurred: actions.filter((a) => a.recurrence_detected || a.effectiveness_status === "recurred_post_closure").length,
     };
   }, [actions]);
 
@@ -290,7 +295,7 @@ export default function CorrectiveActionsPage() {
       </div>
 
       {/* KPI Cards */}
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-7">
         <button
           onClick={() => setStatusFilter("all")}
           className={clsx(
@@ -367,6 +372,19 @@ export default function CorrectiveActionsPage() {
         >
           <span className="text-[11px] font-semibold text-violet-400">Verified by HSE</span>
           <span className="font-display text-2xl font-bold text-violet-400">{counts.verified}</span>
+        </button>
+
+        <button
+          onClick={() => setStatusFilter("recurred")}
+          className={clsx(
+            "flex flex-col justify-between rounded-2xl border p-4 text-left transition",
+            statusFilter === "recurred"
+              ? "border-rose-400/50 bg-rose-500/[0.12] shadow-sm"
+              : "border-surface-border bg-surface-card/75 hover:bg-surface-card"
+          )}
+        >
+          <span className="text-[11px] font-semibold text-rose-400">Recurred Post-Close</span>
+          <span className="font-display text-2xl font-bold text-rose-400">{counts.recurred}</span>
         </button>
       </div>
 
@@ -511,6 +529,17 @@ export default function CorrectiveActionsPage() {
                       {action.description && (
                         <p className="text-xs leading-relaxed text-slate-300">{action.description}</p>
                       )}
+
+                      {/* Post-Closure Recurrence Alert */}
+                      {(action.recurrence_detected || action.effectiveness_status === "recurred_post_closure") && (
+                        <div className="mt-2 flex items-start gap-2 rounded-xl border border-rose-500/40 bg-rose-500/15 p-2.5 text-xs text-rose-200">
+                          <AlertTriangle className="h-4 w-4 shrink-0 text-rose-400 mt-0.5" />
+                          <div className="flex-1">
+                            <span className="font-bold text-rose-300">Post-Closure Recurrence Detected:</span>{" "}
+                            A subsequent precursor matching {action.life_saving_rule} was observed at {action.site} after barrier sign-off. Barrier effectiveness compromised; flagged for immediate supervisor re-investigation.
+                          </div>
+                        </div>
+                      )}
                     </div>
 
                     {/* Meta & Assignee */}
@@ -598,6 +627,16 @@ export default function CorrectiveActionsPage() {
                           <CheckCircle2 className="h-3.5 w-3.5" />
                           Barrier Restored &amp; Closed
                         </span>
+                      )}
+
+                      {(action.recurrence_detected || action.effectiveness_status === "recurred_post_closure") && (
+                        <button
+                          onClick={() => handleStatusUpdate(action.id, "in_progress")}
+                          disabled={updateSubmitting}
+                          className="rounded-lg border border-rose-500/40 bg-rose-500/20 px-2.5 py-1 text-xs font-semibold text-rose-200 transition hover:bg-rose-500/30"
+                        >
+                          Re-Open for Re-Investigation
+                        </button>
                       )}
                     </div>
                   </div>

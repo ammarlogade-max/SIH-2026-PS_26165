@@ -1,0 +1,171 @@
+
+
+ 
+ 
+BSEE Contact: 
+bseepublicaffairs@bsee.gov 
+ 
+USCG Contact: 
+HQS-SMB-CG-INV@uscg.mil
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+BSEE & USCG Identify Delayed T-Time Execution, Poor 
+Operational Decisions, and Equipment Breakdowns  
+as Contributors to a Drillship’s Unsuccessful Attempt  
+to Avoid Hurricane Ida  
+ 
+This Joint Safety Alert addresses an extreme weather event involving a Mobile Offshore 
+Drilling Unit (MODU) conducting well operations in the Gulf of Mexico. The MODU, with 
+115 personnel onboard, lost 11 marine riser joints and a lower marine riser package 
+(LMRP) and polluted the Gulf of Mexico with 88 barrels of miscellaneous fluids in its 
+failed attempt to evacuate the area and evade Hurricane Ida.  
+ 
+The Bureau of Safety and Environmental Enforcement (BSEE) Gulf of Mexico Region 
+and the United States Coast Guard 8th District Outer Continental Shelf Officer in 
+Charge, Marine Inspection (D8 OCS OCMI) initiated separate investigations into this 
+event.  
+ 
+The BSEE investigation concluded that the operator and contractor representatives 
+failed to promptly start the Temporary Abandonment (TA) procedures. The T-
+Time[1]
+ calculations were in the red level when the operator and contractor made a 
+“joint decision” to suspend well operations. For several hours the TA was delayed as the 
+operator and contractor jointly decided to conduct a crew change during an operation 
+and reduced staffing and time constraints. Over-torqued bolts and equipment 
+breakdowns prevented the drill crew from retrieving the marine riser and LMRP, causing 
+further delays. In his duty as Ultimate Work Authority, the MODU’s Captain  
+ 
+____________________________________________________________________ 
+[1] T-time is the time needed to secure well safely, pull riser, prepare the ship for transit, and evacuate/evade the 
+weather event. 
+  
+ 
+May 16, 2022 
+ 
+BSEE Safety Alert No. 441 
+USCG Safety Alert No. 05-22
+  
+ 
+SAFETY ALERT 
+ 
+ 
+
+ 
+ 
+ 
+stopped work so the crew could make storm preparations, such as placing covers on 
+riser hatches. The captain and marine crew maneuvered the MODU with 12 riser joints 
+and LMRP still hanging under the moonpool at speeds between 1 and 3.5 knots. Still, 
+they could not evade Category 2+ hurricane-force wind and high/rough seas. The riser 
+subsequently broke just below the rotary sending 11 riser joints and LMRP to the 
+seafloor. 
+ 
+The Coast Guard and BSEE are issuing this Safety Alert jointly because they share 
+jurisdiction on the Outer Continental Shelf and wish to highlight the importance of risk-
+based operational planning and preparation when addressing extreme weather events.  
+ 
+Therefore, the USCG and BSEE strongly recommend that operators and 
+contractors consider:  
+ 
+• Evaluating all considerations and associated risks and not set well operational T-
+Times under “optimal” conditions. These should be documented and discussed 
+with the operations team. 
+ 
+• Determining the “decision time” to safely secure should start with the potential of 
+an extreme weather event. The decision to continue well operations should not 
+depend on a forecast track to the asset location. Don’t wait on a definitive 
+weather forecast to react.  
+  
+• Documenting contingencies for when MODUs cannot evade/evacuate extreme 
+weather conditions. Ensure contingencies are documented in Hurricane Plans or 
+Extreme Weather Plans. Identify search and rescue assets available to conduct a 
+mass evacuation of personnel.  
+  
+• Reviewing all approved Bridging Documents and Extreme Weather Plans before 
+hurricane season to verify which plan takes precedence and reflects actual 
+company operations and practices. Also, discuss documents with involved 
+personnel, and identify and correct any training gaps.  
+ 
+• Reporting any challenges during attempts to evade and not follow an Extreme 
+Weather Plan to evacuate non-essential personnel to the United States Coast 
+Guard 8th District Command Center at D8CCwatch@uscg.mil
+ and 
+OCScorrespondence@uscg.mil. Or call 1-855-485-3727 (1-855-GULFSAR) per 
+Marine Safety Information Bulletin (MSIB) 21-02. The MSIB is updated annually 
+at the beginning of hurricane season. Industry should review the updated MSIB 
+each year for current guidance. 
+  
+• Identifying non-essential personnel and communicating that the intent is not to 
+evacuate during extreme weather conditions. 
+  
+• Suspending all well operations and crew changes safely when Hurricane or 
+Extreme Weather Plans have been initiated.  
+  
+
+ 
+ 
+ 
+• Contacting BSEE as instructed in NTL 2021-G01 Incident, Oil Spill, and Permit 
+Request Notification Instructions. (BSEE does not consider calls to personnel 
+outside of the directions of this guidance document as notification.) 
+  
+• Meeting with peer operators and contractors and developing best practices for 
+MODUs to safely suspend well operations with extreme weather conditions, 
+including consistent procedures to evacuate/evade. Share procedures with all 
+personnel to promote conversations around this matter.  
+  
+• Documenting all Stop Work Authority actions on Well Activity Reports Significant 
+Events submitted in eWell per 30 Code of Federal Regulations (CFR) 250.743. 
+ 
+• Reviewing BSEE Safety Alert #415, “Inadequate Preparations in Advance of 
+Inclement Weather Results in Excessive Rig Damage and Risk to Personnel.” 
+  
+• Reviewing MSIB 21-02, “Hurricane Season and Reporting Requirements,” 
+and USCG Safety Alert 07-21, titled “Unexpected Heavy Weather Dangers: 
+Weather Will Change, Whether You Are Ready Or Not!” 
+  
+  
+### 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BSEE: This Safety Alert is a tool used to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Weather, Personnel Safety  
+USCG: This Safety Alert is provided for informational purposes only and does not relieve 
+any domestic or international safety, operational, or material requirements. The Office of 
+Investigations and Analysis distributes it. 
+ 
+ 

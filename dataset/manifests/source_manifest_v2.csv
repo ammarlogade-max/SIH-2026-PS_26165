@@ -1,0 +1,4 @@
+source_id,organization,jurisdiction,source_tier,domain,verified_documents_on_disk,total_cataloged,data_origin,is_oil_internal
+SRC-BSEE,Bureau of Safety and Environmental Enforcement (BSEE),United States Federal Outer Continental Shelf,TIER_A_AUTHORITATIVE,"Offshore Oil & Gas Exploration, Drilling, and Production",288,581,EXTERNAL_GOVERNMENT_REGULATORY,False
+SRC-IMCA,International Marine Contractors Association (IMCA),Global Marine & Offshore Contracting Industry,TIER_B_INDUSTRY,"Marine Contracting, Diving, Dynamic Positioning, Rigging & Lifting",269,2401,EXTERNAL_INDUSTRY_ASSOCIATION,False
+SRC-HSE,Health and Safety Executive (UK HSE),United Kingdom Offshore & Petrochemical Regulatory Framework,TIER_A_AUTHORITATIVE,"Offshore Energy, Petrochemical, and Industrial Safety Bulletins",7,8,EXTERNAL_GOVERNMENT_REGULATORY,False

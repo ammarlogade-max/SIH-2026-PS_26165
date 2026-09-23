@@ -1,0 +1,93 @@
+
+
+ 
+Safety Alert No. 506 
+Date: Sept. 30, 2025 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+Arc Flash Incident Highlights Critical Need for Voltage Verification 
+During Offshore Electrical Maintenance  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Incident: On March 21, 2025, a contract electrical crew was installing a three-conductor cable 
+from a transformer to a motor control center (MCC) during a platform upgrade. The job required 
+coordination among crew members at the MCC, below the MCC, and at the cable spool. 
+During the first attempt, the crew found the cable was too short. They withdrew it, stripped more 
+insulation, and prepared to try again. On the second attempt, the electrician below the MCC 
+pushed the cable into the penetration before making contact with the receiving team inside the 
+energized MCC cabinet. The cable end was routed behind a protective barrier near a live bus bar. 
+An electrician inside the MCC tried to reposition the cable using non-insulated pliers. That action 
+caused an arc flash between the exposed ground wire and the energized bus bar. The electrician 
+received a minor thermal burn (Figure 1), and the MCC panel showed charring and damage 
+(Figure 2). 
+Fig 1. Second-degree burn to technician’s hand 
+Fig 2. Charred MCC Panel 
+
+ 
+ 
+CATEGORY: Electrical Safety, Arc Flash, Personnel Safety  
+ 
+An “all stop” was called, and the MCC was safely de-energized to remove the damaged cable. 
+Findings:  An investigation found that a procedural gap and communication failures were the 
+primary causes. The Job Safety and Environmental Analysis (JSEA) did not recognize, or control 
+energized electrical hazards. It did not call for electrically rated personal protective equipment 
+(PPE) or insulated tools. Work proceeded on energized equipment without effective, documented 
+communication between the separated work locations. 
+Contributing Factors: 
+• The JSEA described routing the cable into the panel but did not identify arc flash hazards, 
+required PPE, or the need for insulated hand tools.  
+• Personnel below the MCC pushed the cable before those inside the MCC were ready to 
+receive it — there was no enforced readback “ready/clear” confirmation or reliable radio 
+backup.  
+• The electrician inside the MCC was not wearing arc-rated PPE appropriate to the task and 
+used non-insulated pliers; the tool in use was not electrically rated for exposure to 
+energized conductors.  
+• The cable was pushed too far into the penetration and migrated behind the protective 
+barrier, bringing exposed conductor(s) into proximity with the live bus bar.  
+• Limited visibility/line-of-sight between operators, premature action by the cable-puller, 
+and insufficient situational awareness during cable manipulation.  
+To prevent similar incidents, BSEE recommends that operators and contractors, where 
+appropriate, take the following actions: 
+• Perform electrical work on de-energized equipment whenever technically feasible. Only 
+perform energized work with documented risk justification and management approval. 
+• Require JSEAs to identify electrical hazards, arc-flash categories, required PPE, and the 
+use of insulated tools. JSEAs should explicitly cover multi-location tasks and 
+communication protocols. 
+• Require arc-rated PPE suited to the calculated incident energy. Prohibit non-insulated 
+tools near live parts. 
+• Mandate verbal confirmation, read-back, and “ready/clear” signals before advancing 
+cables or components into energized spaces. Provide radio backup when line of sight is 
+not possible. 
+
+ 
+ 
+CATEGORY: Electrical Safety, Arc Flash, Personnel Safety  
+ 
+• Provide refresher training on electrical hazards, arc-flash awareness, and Safety and 
+Environmental Management Systems (SEMS). Verify contractor qualifications and set 
+competency standards for energized work. 
+• Audit permits, JSEAs, and field work to confirm compliance with API RP 14F or API 14FZ, 
+SEMS, and company electrical safety procedures. 
+• Reinforce Stop Work Authority when conditions deviate from approved procedures or 
+when hazards are not fully controlled. 
+– BSEE – 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 

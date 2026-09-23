@@ -1,0 +1,67 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+             
+ 
+BOEMRE 
+U.S. Department of the Interior 
+Bureau of Ocean Energy Management, 
+Regulation and Enforcement 
+Gulf of Mexico OCS Region 
+Safety 
+Alert 
+Safety Alert No. 293 Contact:  Glynn T. Breaux 
+21 March 2011 (504) 736-2560 
+Platform RTU Battery Charger Fire  
+On a platform’s leased space, a Third Party installed a new battery charger in the Third Party’s Remote 
+Terminal Unit (RTU).  The breaker for the original battery charger was turned off; however, the original 
+charger was not removed and left hooked up to the original bank of batteries.  Several months later, 
+platform personnel discovered a fire originating from the original battery charger.  The fire melted the 
+battery casings, scorched the battery charger and immediate inside surroundings of the RTU.  The fire 
+activated the platform’s gas detector alarms, shutting in the platform.  Platform personnel extinguished 
+the fire using hand-held carbon dioxide and dry-chemical extinguishers.   
+A BOEMRE investigation revealed the following: 
+The original charger’s old nickel cadmium batteries internally shorted resulting in melting of the 
+battery casings and ignition of the released battery fluids. 
+The original battery charger’s breaker was found in the “on” position. 
+No determination could be made on when the breaker was turned back on, but platform personnel 
+indicated it may have occurred during the last meter proving operation by the Third Party.  This 
+operation was not documented in the platform’s maintenance log. 
+BOEMRE recommends the following to Lessees and its contractors: 
+When an electrical device is determined to be inoperative, battery chargers in particular, a 
+competent person must ensure the proper method of isolation and discharge of the stored energy.    
+Batteries currently in use should be inspected to ensure they are in good condition and being 
+maintained as per the manufacturer recommendations.   
+Remove old batteries no longer in use from the platform, and store spare batteries in protective 
+enclosures. 
+Any Third Party work performed on a facility’s leased space should be discussed between the 
+Third Party and the operator’s personnel, in order for the operator’s designated representative to 
+verify that all tasks were performed in accordance with both the platform operator and Third 
+Party requirements.       
+--BOEMRE--GOMR--
+www.gomr.boemre.gov 
+A Safety Alert is a tool used by BOEMRE to inform the offshore oil and gas 
+industry of the circumstances surrounding an accident or a near miss.  It also 
+contains recommendations that should help prevent the recurrence of such an 
+incident on the Outer Continental Shelf. 

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSafetySnapshot } from "@/lib/safety-store";
+import { getSafetySnapshot, verifyAuditLedger } from "@/lib/safety-store";
 
 export async function GET(request: NextRequest) {
   try {
@@ -30,6 +30,23 @@ export async function GET(request: NextRequest) {
     console.error("Failed to fetch audit trail:", error);
     return NextResponse.json(
       { error: error instanceof Error ? error.message : "Failed to load audit trail" },
+      { status: 500 }
+    );
+  }
+}
+
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json().catch(() => ({}));
+    if (body.action === "verify_integrity") {
+      const result = await verifyAuditLedger();
+      return NextResponse.json(result);
+    }
+    return NextResponse.json({ error: "Invalid action" }, { status: 400 });
+  } catch (error) {
+    console.error("Failed to verify audit ledger:", error);
+    return NextResponse.json(
+      { error: error instanceof Error ? error.message : "Verification failed" },
       { status: 500 }
     );
   }

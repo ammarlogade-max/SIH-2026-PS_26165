@@ -1,0 +1,56 @@
+
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.  
+ 
+                                                         Category: Spill/Pollution 
+ 
+ 
+Safety Alert No. 412                    Contact: Andrew Gros 
+February 24, 2021             Phone: (504) 736-3221 
+ 
+ 
+Failure to Follow Procedures Result in Pollution 
+Incidents 
+ 
+On July 9, 2020, a pollution incident occurred during well workover operations. A BSEE 
+investigation found that a total of 57 barrels of synthetic oil base for drilling fluids   spilled 
+into the Gulf of Mexico (GOM) during riser displacement. The standpipe gate valve and 
+bleed-off valve were left in the open position during the pump operation. The valves’ 
+status was considered to be normally closed by personnel and assumed to be in the 
+closed position. Personnel did not physically check these valves during line-up verification 
+prior to startup.  
+ 
+On November 16, 2020, a pollution incident occurred during fluid transfer operations. 
+After abandonment operations, personnel cleaned the mud pits and left the reserve pit, 
+desander, desilter, and degasser valves in the open position. After tour change, and 
+without checking valve status, the crew started to transfer Synthetic Based Mud (SBM) 
+from an offshore Supply Vessel to the mud pits. Approximately 458 barrels of SBM 
+inadvertently discharged into the GOM due to the open valves. This incident is currently 
+under investigation, but preliminary information shows operations procedures were not 
+followed. 
+ 
+Therefore, the BSEE recommends that operators and contractors:  
+ 
+    Ensure the flow path of the fluid transfer systems   are thoroughly understood by 
+personnel when conducting pipe/valve verification. 
+    Physically label fluid transfer system valves to    help identify if they are in the correct 
+position prior to startup.  
+    Ensure the proper procedures are followed, while including duties and 
+responsibilities of the personnel involved. 
+    Follow Lock Out/Tag Out (LOTO) policy to establish physical barriers for overboard 
+specific mud system components. 
+    Review Safety Alert 224  and  Safety Alert 292
+  that also discussed similar 
+incidents. 
+ 
+SAFETY ALERT 
+ 
+ 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.  
+ 
+--BSEE-- 

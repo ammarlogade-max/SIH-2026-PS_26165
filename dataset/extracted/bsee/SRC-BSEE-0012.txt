@@ -1,0 +1,105 @@
+
+
+Safety Alert No. 509 
+Contact: bseepublicaffairs@bsee.gov 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date: Dec. 3, 2025 
+Phone: (800) 200-4853 
+Miscommunication and Trapped Pressure Causes 
+Injury During Valve Maintenance 
+ 
+Figure 1: Trapped Pressure on Control Valve being repaired. 
+ 
+Background: 
+ 
+A contract worker was injured and evacuated after a gas release incident on an offshore facility in the Gulf of 
+America. The incident occurred while a contract employee was performing maintenance on an E-body 
+control valve on a six-inch gas line. BSEE’s investigation found that residual pressure estimated at 128 psi 
+inside the six-inch gas line was released during disassembly and replacement of the valve’s trim and seat. 
+The sudden release caused the valve’s bonnet flange, weighing approximately 50 pounds, to be forcefully 
+ejected. The flange struck the worker in the chest and abdomen, knocking the worker backward onto the 
+elevated scaffold platform. The worker was evacuated for treatment and evaluation. Injuries included 
+bruising and abrasions to the left abdomen wall and chest, a laceration behind the left ear, and abrasions to 
+the left knee. 
+ 
+ 
+ 
+ 
+ 
+
+CATEGORY: Equipment Maintenance, Gas Release, Personal Safety, PPE 
+ 
+Incident Findings: 
+ 
+• Incomplete job safety analysis (JSA): The JSA was not reviewed or signed by the platform's 
+person in charge (PIC), as per policy. 
+ 
+• Inexperience and procedural gaps: The worker had less than two years of field experience 
+under mentorship and was unfamiliar with key procedural requirements, including verifying the 
+gas line’s condition through proper isolation checks and ensuring all necessary approvals and 
+safety documentation were complete before starting work. 
+ 
+• Miscommunication: The worker began work without PIC approval and without notifying the PIC. 
+Additionally, the worker had not assigned an operator familiar with the production process to assist. 
+There was no clear discussion of the scope of work or hazards. The worker assumed the gas line and 
+control valve were fully depressurized, based on comments made earlier that morning. 
+ 
+• Unauthorized use of scaffolding: The worker used a scaffold tagged "do not use" due to a 
+missing ladder and kick plates. The worker was also working more than six feet above the main 
+deck without fall protection such as a full-body harness and retractable lifeline. 
+ 
+• Failure to verify zero energy state: An energy isolation permit, required to confirm the gas line 
+was fully depressurized, was not completed. The worker began the task without verifying the line 
+was free of trapped pressure. 
+ 
+• Failure to follow procedures: Original equipment manufacturer (OEM) guidance requires at least 
+four nuts should be left on the studs and partially backed off during bonnet flange maintenance 
+and disassembly. This precaution prevents the flange from being forced upward if trapped 
+pressure is present. In this case, the worker did not keep the safety nuts on the studs. 
+ 
+ 
+ 
+ 
+To help prevent similar incidents in the future, BSEE recommends that operators and their contractors, 
+where appropriate, consider the following: 
+ 
+• Regularly review incidents and share learnings with all relevant personnel to raise awareness of 
+hazards and contributing factors. 
+
+CATEGORY: Equipment Maintenance, Gas Release, Personal Safety, PPE 
+ 
+ 
+• Ensure that all JSAs are collaboratively developed and discussed to identify and mitigate possible 
+hazards associated with the task and have proper documentation and authorization before work 
+begins.  
+ 
+• Ensure clear communication between PIC, the operators, and all third-party contract workers.  
+ 
+• Third-party service personnel working on pressurized systems or valves should be accompanied 
+by a qualified operations member to verify safety measures are acknowledged and completed 
+prior to work commencement. 
+ 
+• Implement additional safety barriers, such as caution tape, around unsafe scaffolding until it 
+is approved for use by a competent and authorized person. Adhere to fall protection 
+requirements above six feet.  
+ 
+• Always confirm zero energy state using double-block and bleed or equivalent methods before 
+disassembling pressurized equipment.   
+ 
+• Adhere to OEM procedures for valve maintenance, disassembly, and reassembly. 
+ 
+• Close energy isolation permits daily and validate before resuming work. 
+ 
+– BSEE – 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 

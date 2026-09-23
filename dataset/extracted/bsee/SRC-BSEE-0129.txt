@@ -1,0 +1,81 @@
+
+
+Safety Alert No. 388                           Contact: Jason Mathews 
+June 03, 2020                               Phone: (504) 731-1496 
+Malfunctioning Storage Batteries Cause Fires and Explosions 
+       
+Heat and pressure built up inside the battery casing before 
+exploding. 
+This battery may have exploded because it was charged with a 
+second battery that had a malfunction, causing this battery to 
+overcharge. 
+  
+Recently, there have been several incidents related to lead-acid storage batteries, including 
+fires and explosions. Examples of these incidents include: 
+· When lead-acid storage batteries powering a compressor control panel exploded in a 
+battery box. The heat and pressure inside the battery blew off the top of the battery. 
+· A starter-booster unit that caused the onboard battery circuitry to electrically short due to 
+age-related wear and tear. Heat built up to a combustion temperature and caused a fire. 
+· A fire caused by a battery with an internal short that was stored in a very hot area. The 
+heat melted plastic on the battery, creating a chemical reaction with the lead inside the 
+battery. This fire ultimately shut down the platform. 
+Therefore, BSEE recommends that operators and contractors consider the following: 
+· Write the purchase date and service start date on all batteries; 
+· Avoid mixing old and new batteries; 
+· If specific manufacturer guidance on battery shelf life is not available, consider adopting 
+policies to replace batteries; 
+· Periodically inspect batteries for signs of leakage, swelling or damage; 
+· Check battery chargers and connectors for signs of damage or electrical faults; 
+SAFETY ALERT 
+
+A Safety Alertis a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding apotential safety issue. It alsocontains recommendations 
+thatcould assist avoiding potentialincidentson the Outer Continental Shelf.
+· Ventilate battery enclosures and 
+buildings to prevent gas accumulation. 
+Charging batteries can release small 
+amounts of explosive hydrogen gas 
+that may not be detectable by gas 
+detectors; 
+· Ventilate any unventilated enclosures 
+thoroughly before performing hot work 
+nearby; 
+· Avoid storing batteries close together or 
+in confined spaces; 
+· Store batteries in a cool place and 
+protect them from damage when not in 
+use; 
+· Use proper PPE when cleaning up 
+battery leaks; 
+· Uninterruptable Power Supplies (UPS) 
+may use storage batteries and can 
+have similar hazards and maintenance 
+requirements. As a result, UPS failures 
+have led to several blackouts and 
+facility evacuations. Refer to BSEE 
+Safety Alert 333 for more information; 
+· Ensure the use of the correct battery 
+type for its application. Different battery 
+types may be very similar in 
+appearance and can be inadvertently 
+swapped; 
+· Dispose of batteries properly and 
+separate from other waste. Disposing 
+batteries in trash compactors has 
+caused fires offshore; 
+· Batteries that are designed to be 
+charged by solar powered battery 
+chargers may not be compatible with 
+chargers using generator/mains power; 
+and, 
+· Ensure that the charger is set to the 
+correct type and voltage before use. 
+Some chargers can charge multiple 
+battery types. 
+--BSEE-- 
+This battery charger has a switch to select different battery 
+types: Lead Acid/AGM or Gel Cell 
+A typical battery enclosure is shown above. The service 
+start dates have been written on the batteries. 
+This battery charger has a switch to select different battery 
+types: Lead Acid/AGM or Gel Cell 

@@ -1,0 +1,98 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+Crane Anti-Two Block Weight Pulled into Boom Tip 
+Causing Damages to Auxiliary Cable and Sheave 
+         
+              
+                        
+                                       
+                                       
+On Dec.
+ 
+31, 2021, while lifting a 4,500-pound tote tank from a boat, a platform crane operator 
+observed the crane’s Anti-two Block (A2B) weight fall on top of the auxiliary line ball after the 
+A2B system alarmed and was subsequently bypassed. With the A2B system still in bypass, the 
+platform crane operator positioned the crane boom over the helideck where it could be 
+inspected. A certified crane mechanic determined the cable holding the A2B weight and the 
+eyelet on the wireless A2B sensor was broken. A spare wireless A2B sensor was found at 
+another facility and installed that same day to get the crane back in service. 
+While the crane was being used later the same day, the crane operator watched the A2B weight 
+fall again and the A2B system alarmed. Once again, the crane operator placed the A2B system 
+Safety Alert No. 433 
+March 16, 2022 
+SAFETY ALERT 
+Damaged auxiliary line on drum 
+Damaged auxiliary line boom tip sheave 
+Auxiliary line protruding wire and A2B sensor 
+weight 
+Damaged auxiliary line 
+
+Picture of cable installation 
+Illustration of chain installation 
+in bypass, hoisted the auxiliary line up without a load attached, and placed the crane boom over 
+the heliport for another inspection by the crane mechanic. It was discovered that the A2B weight 
+was carried into the boom tip and damaged the sheave and auxiliary cable. The crane was 
+subsequently placed out of service. 
+An investigation by the Operator concluded a protruding broken strand carried the A2B weight 
+on the auxiliary cable and into the boom tip sheave. The Operator reported the A2B alarm was 
+bypassed during both lifting incidents. 
+Almost a year prior, on a nearby facility managed by the same Operator, a platform crane was 
+being used to lift a toolbox weighing approximately 3,400 pounds, at which time the 10.6-pound 
+wireless A2B sensor for the auxiliary line fell off the crane boom. The A2B weight slid down the 
+auxiliary line cable and landed on the ball. The 14-inch section of chain that supports the A2B 
+weight from the wireless A2B sensor fell and struck the level safety high switch on a separator 
+that tripped and shut down the facility. 
+As a corrective action to this incident, the Operator removed chains and installed retention 
+cables from the wireless A2B sensor to the weight. This change was also implemented on other 
+platform cranes where chains were installed. The annual crane inspection conducted several 
+months before the Dec. 31, 2021, incident revealed the A2B system worked but after the chains 
+were removed and cables installed, the wireless A2B sensor would trip when mostly loading and 
+unloading boats. This finding was noted as a recommendation instead of deficiency and was not 
+corrected prior to the incident. 
+             
+                                                                       
+An Anti-two Block (as defined by API SPEC 2C 6
+th
+ Edition) protects hoist ropes, structural 
+components and machinery from damage that may occur when two sheave groups such as the 
+load block and boom tip, come into contact as the hoist cable is drawn in. 
+The recent incidents are still under investigation by BSEE District Personnel. 
+
+Although this incident is still under investigation, BSEE recommends that 
+operators and contractors consider the following: 
+· Listing malfunctioning safety devices as an unsafe condition on inspection reports. 
+· Conducting a thorough crane inspection of all components before bypassing any crane 
+safety system due to an alarm. 
+· Carefully monitoring all components when safety devices are in bypass for inspection, 
+testing and maintenance. 
+· Taking the crane out of service, or restrict its operations, to eliminate an unsafe condition 
+if deficiencies are known. 
+· Consulting and following manufacturer recommendations prior to changing or replacing 
+crane components that differ from the original design. 
+· Ensuring a Management of Change (MOC) (i.e., 30 CFR 250.1912) is conducted and the 
+impacts to operability are understood and mitigated when changing components on the 
+crane and other material-handling equipment. 
+· Ensuring the crane, its boom, and other components are inspected visually before each 
+use. Methods include but are not limited to physical inspections, binoculars, cameras etc., 
+in addition to annual crane inspections. 
+· Ensuring compliance with the requirements listed in 30 CFR 250.108 - cranes and other 
+material-handling equipment. 
+· Ensuring during lifting operations that safety devices and systems on cranes and other 
+material-handling equipment are not intentionally bypassed or overridden without 
+appropriate authorization, communication, and oversight. 
+· Promoting the topic of crane safety during Health, Safety and Environment (HSE) 
+meetings. 
+· Updating the crane manuals, and procedures to reflect the use of cables instead of 
+chains. Adjust inspection and maintenance procedures if appropriate to account for the 
+use of cables. 
+· Training personnel in crane risk assessments and change management or offer 
+refresher courses on the topic; and 
+· Reviewing Safety Alert 332 for recommendations regarding crane hazards identified by 
+BSEE in Risk Based Inspections. 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of 
+the circumstances surrounding a potential safety issue. It also contains 
+recommendations that could assist avoiding potential incidents on the Outer 
+Continental Shelf. 
+Category: Crane/Lifting 

@@ -1,0 +1,184 @@
+
+
+Figure 1: Ballast tank in which H
+2
+S was detected. 
+ 
+  
+ 
+ 
+Safety Alert No. 464                                                                                              Contact: bseepublicaffairs@bsee.gov 
+May 22, 2023                                                                                                                                       Phone: (800) 200-4853 
+ 
+Unexpected H
+2
+S Detection at Offshore Facilities 
+    
+ 
+Over the previous two years, offshore oil and 
+natural gas operators have unexpectedly 
+encountered dangerous concentrations of 
+hydrogen sulfide (H
+2
+S) in both process and 
+non-process areas. These all occurred on 
+facilities producing from fields determined to 
+be “H
+2
+S   absent;”  therefore, the offshore 
+energy facilities did not have H
+2
+S   contingency 
+plans in place. Although H
+2
+S   is    mostly 
+associated with production from sour 
+petroleum reservoirs, H
+2
+S   can also form in 
+low-oxygen environments from microbial 
+activity during the decomposition of organic 
+material, or by microbial reduction of sulfates. 
+As a result, H
+2
+S   production may occur 
+unexpectedly in areas such as bilges, storage 
+tanks, ballast tanks (Figure 1), chemical totes, 
+and out-of-service process equipment. 
+ 
+ 
+Below are summaries of recent unexpected 
+H
+2
+S   incidents:  
+• During normal production operations, 
+personnel reported a H
+2
+S   odor downwind 
+of the floatation cell. Using a portable 
+multi-gas detector, a reading of 124  
+parts-per-million (ppm) H
+2
+S   was observed 
+at the vacuum breaker. Readings taken 5 
+feet away were observed at 10 ppm, and 
+at 10 feet the level dropped to 0 ppm. The 
+team isolated the block valve, barricaded 
+the area, and introduced biocide 
+treatments to kill the bacteria and 
+eliminate the presence of H
+2
+S.   
+ 
+SAFETY ALERT 
+ 
+H
+2
+S Levels impacting  
+Personnel Safety 
+Immediately Dangerous to 
+Life and Health (IDLH): 
+100 ppm 
+*Permissible  
+Exposure Limit (PEL): 
+20 ppm 
+*Recommended  
+Exposure Limit (REL): 
+10 ppm 
+Typical alarm set points for... 
+Stationary detectors: 20 ppm 
+Portable detectors 
+(handheld/wearable): 
+10 ppm 
+*For more information, please refer to NIOSH or OSHA 
+websites for H
+2
+S PEL/REL time limits. 
+
+• During routine samplings, operators encountered a reading of 40 ppm H
+2
+S in the process stream 
+via Draeger Tube measurements. The following day a reading of 250 ppm was found in the cargo 
+tanks. Through investigations, it was determined that the source of the H
+2
+S was bacterial activity 
+and not from the wells. The operator took immediate action to remediate the H
+2
+S in both the liquid 
+and gas phase. 
+• During a transfer of a defoamer between day tanks, workers recognized a sour/rotten egg odor. A 
+reading of 136 ppm H
+2
+S was taken near the tank’s opening using a 4-gas monitor. The tank was 
+quickly secured, and exposed personnel were sent in for evaluation as a precautionary measure.  
+• After observing an initial H
+2
+S reading of 0 ppm, a worker entered a ballast tank for cleaning. After 
+agitating the sludge layer, the 4-gas monitor began alarming with H
+2
+S readings as high as 
+128ppm. The worker immediately exited the tank and work was suspended until an entry plan 
+could be developed to include H
+2
+S mitigating procedures.  
+  
+Therefore, BSEE recommends operators and contractors consider the following: 
+• Ensuring personnel understand that H
+2
+S may be encountered as a by-product of non-hazardous 
+materials even in non-sour service facilities. 
+• Conducting periodic inspections of stagnant holding tanks to ensure no H
+2
+S presence. 
+• Periodically including crew drills focused on unexpected H
+2
+S encounters, even on non-sour 
+facilities. 
+• Staying upwind when opening chemical tanks and utilizing a multi-gas detector with H
+2
+S 
+capabilities to survey for the presence of H
+2
+S. 
+• Assessing the presence of H
+2
+S at the bottom of the tank when personnel are planning to enter it 
+and agitate any sludge that may be present. 
+• Ensuring operating procedures include routine sampling where oil compositions present an 
+increased potential for souring in the production system. 
+• Ensuring robust risk assessments when conducting facility level hazards analysis to adequately 
+assess the threat of H
+2
+S production in vessels, tanks, or other areas that may routinely hold 
+stagnant liquids with low oxygen levels. 
+• Ensuring the Job Safety Analysis includes a discussion of unexpected encounters of H
+2
+S and any 
+mitigation necessary when conducting work in areas that have a higher threat of bacterial-
+generated H
+2
+S production (i.e., ballast tanks). 
+• Reviewing Safety Alert 366 “Dangerous Levels of H
+2
+S Detected at Offshore Facilities.” 
+• Following H
+2
+S guidelines per 30 CFR 250.490 and NTL 2009-G31. 
+ 
+– BSEE – 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: H2S, Personnel Safety  

@@ -1,0 +1,106 @@
+
+
+Safety Alert No. 403                            Contact: Jason Mathews 
+October 21, 2020                                       Phone: (504) 731-1496 
+Findings from Pandemic Management Risk Based Inspections 
+As a result of the COVID-19 pandemic, BSEE completed a performance-based risk 
+inspection (PBRI) of the pandemic management plans of select Outer Continental Shelf 
+(OCS) operators. BSEE reviewed the results supplied by the operators and drew multiple 
+conclusions and recommendations on pandemic mitigation barriers, screening methods, 
+isolating personnel who may have contracted the disease, etc. 
+As of October 20, 2020, 413 individuals were confirmed to have COVID-19 on facilities in 
+the Gulf of Mexico and more were quarantined and/or evacuated due to symptoms. 
+Disclaimer: The information submitted by operators is tied to a specific date of 
+acquisition by BSEE. Industry’s response to COVID-19 remains very dynamic and best 
+practices are still evolving as more is learned about COVID-19. 
+The following summarizes findings from BSEE’s Pandemic Management PBRI: 
+·
+By the time of this PBRI, operators were highly engaged in providing and 
+implementing effective barriers on their offshore assets to prevent the transmission 
+By the time of the evaluation, many operators had developed plans specific to 
+COVID-19 and actively revise them to address continuously changing conditions.   
+· 
+of COVID-19 between personnel; however, there was some noted lack of 
+awareness on the effectiveness of personnel protective equipment(PPE).
+·Each operator utilized a system to aid in mitigating the risk of infection to offshore 
+personnel. While some of the operators’ screenings were inclusive of temperature 
+checks and questionnaires by medical professionals, other operators included 
+onshore isolation and quarantine protocols or COVID-19 test screenings (PCR 
+testing and POS Antibody testing). 
+·Response plans in place at the time of this PBRI were inclusive of isolation, contact 
+SAFETY ALERT 
+
+2
+tracing, medical treatment of symptoms and, in some cases, evacuation. 
+·
+Most operators prolonged hitches by seven to 14 days to reduce the number of 
+times potentially infected personnel boarded a facility. 
+Most of the plans reviewed during this PBRI did not specifically address the 
+minimum number of workers needed to ensure continued safe operations.  
+· 
+Operators also limited non
+Most operators had no specific protocol to provide additional barriers for critical 
+facility roles. Additionally, essential employees were treated the same as non-
+essential employees in terms of at-home procedures and guidance. 
+-
+Even though operators requested departures and extensions through normal 
+processes, there was no evidence that operators experienced delays with regulatory 
+testing due to limited personnel at facilities. 
+essential activities to 
+Unclear guidance caused uncertainty among operators regarding a 14-day pre-
+travel quarantine requirement. 
+limit 
+Half of the operators evaluated were not familiar with API Guidance Document 
+1180, “Pandemic Planning Guide,” which provides a useful framework for creating 
+a pandemic response policy. 
+additional personnel from visiting or working on facilities.
+·
+·
+·
+·
+·Due to medical privacy rules, most operators relied on employees to self-identify 
+as high risk for severe illness from COVID-19. 
+·Most operators did not conduct pandemic drills or evacuation procedures based on 
+realistic scenarios to exercise elements contained in their pandemic management 
+plans. 
+Therefore, BSEE recommends that operators should consider the following: 
+·Develop and implement a broad pandemic management plan that covers general 
+infection and communicable diseases; 
+·Include in plans, at minimum, measures to identify, prevent, and control contagious 
+communicable diseases, periodic training on the plan, and authority of appropriate 
+persons to initiate emergency response and control of contagious diseases; 
+·Ensure plans include guidance on personal protective equipment and associated 
+medical precautions and requirements, cleaning and decontamination protocols, 
+procedures to reduce personnel interactions and to observe social distancing, self-
+isolation practices, protocols for travel to and from a facility, health monitoring 
+protocols, and other pertinent guidance from sources such as the Center of 
+Disease Control and Prevention (CDC); 
+·Evaluate the effectiveness of personal protective equipment and other mitigation 
+strategies, including barriers; 
+·Review the latest edition of the Offshore Operator Committee’s “COVID-19 
+
+A Safety Alertis a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.
+3
+Categories: Personnel Safety; PPE
+Screening and Status Codes for Offshore Energy Operations” to identify and 
+implement an effective framework to screen personnel traveling to offshore assets; 
+·Assess existing strategies for managing personnel who may have contracted an 
+infectious disease, including isolation planning, protocol to prevent ill or potentially 
+infected personnel from walking throughout a facility, clear communication to 
+offshore personnel, sanitization procedures, case management processes, and 
+return to work protocol; 
+·Identify the scope of work at specific facilities and make an assessment on the 
+minimum number of personnel or positions required to continue operations safely; 
+·Review personnel on-board requirements and evaluate the potential benefit of 
+extending hitches, single asset crew change days, and/or reducing work to 
+essential activity only; 
+·Evaluate the mental health or retention of focus of personnel if offshore schedules 
+are extended to reduce exposure to COVID-19; 
+·Verify that personnel are knowledgeable of social distancing practices, are aware 
+of disease symptoms to monitor, and understand eligibility to travel if they exhibit 
+symptoms or are in close contact with infected individuals; 
+·Incorporate pandemic response and evacuation procedures drills into existing 
+Emergency Response and Control drills, as referenced in 30 CFR 250.1918(c). 
+--BSEE-- 

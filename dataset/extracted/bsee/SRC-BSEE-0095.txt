@@ -1,0 +1,76 @@
+
+
+Load with incorrect weight recorded on manifest and wire rope with damage. 
+ 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+ 
+ 
+Miscommunication of Load Weight Leads to a High Potential 
+Lifting Near Miss 
+ 
+A crane offloading cargo struggled with the weight of a load being lifted from a supply 
+vessel. The supply vessel had already pulled away, leaving the operator no option but 
+to complete the lift and set the basket down the platform deck. The crane was shut 
+down. Upon inspection, it was discovered that the wire rope was damaged in two spots. 
+The manifest listed the load weight of 4,300 pounds, but the load was approximately 
+8,500 pounds. The load chart showed the crane was rated for 6,650 pounds at any 
+angle. Further investigation found that the dock had mistakenly labeled the load as 
+4,300 pounds due to miscommunication over an intercom. Additionally, the basket 
+weight tag was not changed and included the weight for an empty basket.   
+ 
+      
+ 
+  
+ 
+Safety Alert No. 422 
+August 10, 2021  
+SAFETY ALERT 
+ 
+ 
+
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+• Audit the logistics and coordination of shipments and loading from the shore 
+base. 
+• Request and review cargo manifests to the affected offshore facility prior to 
+shipment, showing both the loads and their weights (if over 5,000 pounds). 
+Communicate this information to the crane operator so that he/she may prepare 
+for the lift(s).   
+• Verify loads exceeding 5,000 pounds are clearly marked on both the load and the 
+cargo manifest before placing the load on the boat.  
+• Consider color and shape marking labels of certain weights, and where possible, 
+ensure the markings are visible from the crane.  
+• Verify that an assessment of the condition of the slings and rigging is included in 
+pre-use / pre-lift inspections, since loads of equipment that are pre-slung from 
+rental companies are not always checked by the transport company dock crew or 
+boat crew.  
+• Check the load weight indicator to verify the load does not exceed the cranes 
+recommended load weight and ensure the basket weight tag reflects the weight 
+of a loaded basket. 
+• Cranes that have exceeded their rated capacity should be removed from service, 
+inspected, and tested by certified crane mechanics to verify that the crane was 
+not damaged. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of 
+the circumstances surrounding a potential safety issue. It   also contains 
+recommendations that could assist avoiding potential incidents on the Outer 
+Continental Shelf. 
+ 
+ 
+Category: Lifting  

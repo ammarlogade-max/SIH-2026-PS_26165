@@ -1,0 +1,85 @@
+
+
+ 
+ 
+        Safety  
+ 
+ 
+             Alert 
+ U.S. Department of the Interior 
+MMS 
+ Minerals Management Service 
+ Gulf of Mexico OCS Region 
+Safety Alert No. 278            Contact:  Jack Williams
+7 April 2009 (504) 736-1757
+ 
+ 
+One Killed when Oil Pollution Pan Falls 
+ 
+In a recent incident on a drilling rig a casing crew was rigging up to run 60-inch over-drive pipe.  Two 
+welders were cutting a hole in the pollution pan beneath the rotary when the pan suddenly dropped out 
+from beneath them and fell 50-ft to the Texas deck.  One of the welders fell with the pan and was killed.    
+ 
+   
+ 
+ 
+An investigation discovered that the oil pollution pan was only attached to the rig by 3-inch metal straps, 
+not hard-welded or bolted to the rig sub-structure.  These straps were cut by the welders in the course of 
+their work, which allowed the pan to fall out from beneath them.    
+ 
+Immediately prior to the accident, one of the welders attempted to initiate a “stop-work” but was unable to 
+make himself understood.    Previously, rig floor personnel had unsuccessfully told the casing crew to
+ 
+
+cease cutting the pan.  However they did not talk to the casing crew supervisor (they were unable to 
+identify him) and they did not explain the danger.  A full account is available at the following web site:
+ 
+ 
+http://www.gomr.mms.gov/homepg/offshore/safety/acc_repo/accindex.html
+ 
+ 
+An MMS investigation found the following as the cause of the accident:   
+1. The casing crew did not know how the oil pan was attached.  They assumed (but did not check) 
+that the pollution pan was directly welded or bolted.  As a result, no fall protection was used.  
+2. Planning was inadequate.  No comprehensive JSA meeting that included all parties was held as 
+required by company policy, to discuss the job.    
+3. Partly as a result of the failure to hold a comprehensive JSA meeting, the assignment of 
+responsibilities unclear.  The rig’s floor personnel thought they, not the casing crew, were 
+supposed to remove the pollution pan at a later time.  
+4. No easy method of initiating “stop-work,” such as a hand signal, was a part of the standard 
+operating procedure of any of the companies involved. 
+5. Supervision was inadequate at all levels.  Communication between OIM, rig floor supervisors, 
+casing crew was confusing, contradictory, and incomplete.    As a result of this confusion:  
+o The rig floor personnel did not know who the casing supervisor was.  When they wanted 
+the casing crew to cease cutting the pan, they approached the wrong person.   
+o The rig personnel failed to communicate the danger to the casing crew. Their use of only 
+directive instruction did not convey the imperative to stop cutting the pan.     
+o The rig’s OIM failed to define job responsibilities and chain of command on the rig floor. 
+o The casing supervisor did not coordinate his plan with the rig floor personnel.  He did not 
+comprehend or act when one of his welders wanted to “stop-work.” 
+   
+The MMS recommends to the operators that they consider the following actions:  
+1.  Rig OIMs and supervisors should review how oil pollution pans are attached to their rig
+. Contract 
+supervisors should conduct a thorough review of the parameters of their tasks prior to starting work. 
+2.  The supervisors should always hold a fully attended, comprehensive JSA meeting
+ prior to major 
+operations.  These meetings should address all the steps in the upcoming operation, not just the major 
+elements.  All supervisors have the responsibility of communicating and understanding the 
+unambiguous chain of command
+ during upcoming operations. 
+3.  Companies should develop a clear method of initiating “stop-work
+” that is effective under 
+emergency work conditions.  Preferably this will include an easily understood visual signal.   
+.4.   The Operators, rig companies, service companies, and contractors should consider emphasizing 
+in their training that inadequate, incomplete communications
+ remain one of the most common causes 
+of major accidents.  
+ 
+ 
+ 
+ 
+ 
+ 
+--MMS--GOMR-- 
+www.gomr.mms.gov 

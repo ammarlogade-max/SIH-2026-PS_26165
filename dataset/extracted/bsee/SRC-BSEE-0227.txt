@@ -1,0 +1,76 @@
+
+
+ 
+ 
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BOEM 
+U.S. Department of the Interior 
+Bureau of Ocean Energy Management, 
+Regulation, and  Enforcement 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 289 	
+27 September 2010 	
+Contact:  Glynn T. Breaux 
+(504) 736-2560 
+Failure to Follow Lock-Out/Tag-Out Procedures 
+Results in Gas Release
+ 
+
+ 
+
+
+Recently, construction contractors were involved in the removal and overhaul of two turbine compressors 
+located on a production platform.  The platform is also equipped with a reciprocating compressor which 
+remained in-service.  As outlined in the Job Safety Analysis (JSA), the construction crew utilized 
+plumber’s plugs to isolate the production process piping’s open flanges, unaware that the suction piping 
+was common between the two turbines and reciprocating compressor.  When the reciprocating 
+compressor shut down due to a process upset, flow continued from the low pressure oil wells.  Pressure 
+then increased on the low pressure system and migrated through the #1 turbine suction shut-down valve, 
+dislodging the plumber’s plug from the suction piping.  Gas escaped inside the compressor building and 
+activated a near-by gas detector, resulting in a total platform shut-in.    
+A BOEM investigation into the incident revealed the following findings: 
+The Operator’s Lock-Out and Tag-Out (LOTO) policy states that “when isolating pressurized 
+systems, a positive method of isolation such as double block and bleed or blinding is required”.  
+The JSA recommended eliminating or reducing hazards by using “blind flanges or plumber’s 
+plug to close the line”. 
+There was a lack of Operator oversight in enforcing the Operator’s LOTO policy.  
+Therefore, the BOEM recommends the following: 
+Identify common tubing and/or piping with their respective hazards prior to performing the JSA 
+(see Safety Alert No. 276 – Job Safety Analysis).  Safety Alert No. 276 discusses a systemic 
+approach to identifying those tasks having potential severe or fatal consequences, and conducting 
+the necessary Job Hazard Analysis (JHA) and/or JSA to identify those hazards. It eliminates the 
+hazard or reduces the severity of the consequence through the use of design engineering, 
+administrative controls, or written procedures and/or guidelines. 
+Utilize a positive method of isolation such as a double block and bleed or blinding when isolating 
+a pressurized system.    
+All personnel involved in any type of LOTO should familiarize themselves with the Operator’s 
+LOTO policy.  Operators are reminded that BOEM considers a failure to follow company LOTO 
+procedures to be a violation of 30 CFR 250.107(a), since you must protect health, safety, property 
+and the environment by performing all operations in a safe and workmanlike manner. 
+--BOEM--GOMR--

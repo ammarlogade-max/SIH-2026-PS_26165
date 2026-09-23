@@ -1,0 +1,10 @@
+rule_id,rule_name,supported_count,percentage_of_events
+IOGP-01,Bypassing safety controls,83,2.75%
+IOGP-02,Confined space,67,2.22%
+IOGP-03,Driving,114,3.78%
+IOGP-04,Energy isolation,101,3.35%
+IOGP-05,Hot work,165,5.47%
+IOGP-06,Line of fire,261,8.65%
+IOGP-07,Safe mechanical lifting,614,20.34%
+IOGP-08,Work authorization,208,6.89%
+IOGP-09,Working at height,139,4.60%

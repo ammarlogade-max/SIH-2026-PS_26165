@@ -1,0 +1,55 @@
+
+
+                        
+       
+  
+ 
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+       
+ 
+ 
+ 
+ 
+ 
+ Safety Alert No. 236 Contact:  Jack Williams
+ February 3, 2006 (504) 736-1757 
+Fatality Caused by Snagged Stabbing Board 
+Recently, as a casing crew was laying down casing, a prototype mobile hydraulic stabbing board 
+(HSB), operated by the casing crew “stabber,” was caught on the ascending top drive.  The personnel 
+bucket was flipped, pinning the “stabber” against the HSB arm, causing his death.  A complete 
+account of the accident is available on the MMS website at 
+http://www.gomr.mms.gov/homepg/offshore/safety/acc_repo/accindex.html 
+The MMS investigation concluded that the HSB exhibited a significant “delay” before reacting to 
+the controls, and the “stabber” attempted to shorten the work cycle by timing the passage of the block 
+and top drive.  The “stabber” activated the controls too early, driving the personnel bucket into the 
+ascending top drive. 
+It was also concluded the delayed control reaction was caused primarily by improper maintenance 
+or setup.  The delay in control reaction had been recognized but not repaired, because all field 
+personnel believed the delay was a designed safety element of the system. In fact, no hydraulic 
+control delay was designed into the HSB and the delayed reaction was likely caused by common 
+hydraulic issues.   
+The MMS recommends the Operators ensure the following: 
+•	 Operators should conduct a hazard analysis prior to deploying new equipment. 
+•	 Field personnel should have formal training and a full understanding of operation, 
+maintenance, and trouble-shooting of any new or prototype equipment. 
+•	 Written procedures for the operation, maintenance, and monitoring of new or prototype 
+equipment should be in place and in use before new or prototype equipment are used. 
+•	 When using new or prototype equipment, field personnel should have a formal method for 
+reporting unusual or anomalous operating characteristics and receiving timely support. 
+•	 New or prototype equipment should be formally inspected when it is initially installed, and 
+should be confirmed to be operating to design specifications before being used. 
+—MMS—GOMR— 
+www.gomr.mms.gov 

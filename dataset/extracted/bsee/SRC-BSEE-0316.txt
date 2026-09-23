@@ -1,0 +1,47 @@
+Safety Alert No. 203 -- Job Safety Analysis (JSA)http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_203...
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 203Contact: David Dykes
+August 22, 2002(504) 731-3249
+Job Safety Analysis (JSA)
+Recent investigations of fatal accidents in the Outer Continental Shelf (OCS) have revealed
+that the fatalities occurred during the performance of day-to-day tasks. MMS found that, in
+each of the accidents, a lack of written, procedural guidelines for the performance of these
+routine tasks was identified as a cause of the accidents. Further, as a result of the latest
+annual performance reviews, MMS has found that there is a lack of a clear understanding
+by many operators of what constitutes a Job Safety Analysis (JSA), and most operators do
+not have a formal review process for determining which jobs require a JSA. It appears that
+most operators conduct a JSA on routine tasks where most accidents are occurring.
+However, operators are not considering routine tasks that have the potential for severe
+consequences even though no accidents have occurred as yet.
+JSA’s can be regarded as one form of hazard analysis. Hazard analysis is an analysis
+performed to identify and evaluate hazards for the purpose of their elimination or control.
+Job Hazards Analysis (JHA) is used to review the scope of work to be performed on a broad
+scale and can uncover hazards overlooked in the original design, mock-up, or setup of a
+particular process, operation, or task. A JSA, on the other hand, is a process used to review
+site-specific detailed job steps and uncover hazards associated with the specific job
+undertaken.
+When the hazards have been identified and their severity evaluated, a strategy must then
+be developed to eliminate or reduce these hazards. This strategy may include the
+development of operating procedures, safe work practices, operating guidelines, or a
+combination of all three. These procedures, practices, and/or guidelines must be made
+available to the employee performing the tasks. This process of mitigating hazards is
+commonly used in industry for situations in which the inherent risks are recognizably high.
+Unfortunately, this process is not used as frequently in the more day-to-day tasks. It is
+therefore recommended that;
+Operators develop a systemic approach for evaluating all tasks to identify those tasks
+that have potential severe or fatal consequences should an accident occur;
+Once those tasks have been identified, operators should conduct the necessary JHA
+and/or JSA to identify those hazards that could lead to potentially severe or fatal
+consequences; and
+The operator should then eliminate the hazard or reduce the severity of the
+consequences through the use of design engineering, administrative controls, or
+written procedures and/or guidelines.
+1 of 22/21/2012 4:35 PM
+
+—MMS—GOMR—
+www.gomr.mms.gov
+Visit our Safety Information Website
+Safety Alert No. 203 -- Job Safety Analysis (JSA)http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_203...
+2 of 22/21/2012 4:35 PM

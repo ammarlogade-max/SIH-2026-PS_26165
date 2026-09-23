@@ -1,244 +1,163 @@
 <div align="center">
 
-# IndusMind AI
-### Industrial Decision Intelligence Platform
+# SIF Sentinel
+### Critical Barrier Intelligence for Serious-Injury & Fatality (SIF) Prevention
 
-**ET AI Hackathon 2.0 — Problem Statement 8**
+**Smart India Hackathon 2026 — Problem Statement ID: 26165**  
+**Organization:** Oil India Limited (OIL) | **Category:** Software | **Theme:** Smart Automation
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square)](https://typescriptlang.org)
-[![Groq](https://img.shields.io/badge/Groq-LLaMA_3.3_70B-orange?style=flat-square)](https://groq.com)
-[![Supabase](https://img.shields.io/badge/Supabase-pgvector-green?style=flat-square)](https://supabase.com)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8?style=flat-square)](https://tailwindcss.com)
+[![IOGP Life-Saving Rules](https://img.shields.io/badge/IOGP-Report_459-green?style=flat-square)](https://www.iogp.org)
 
-> *IndusMind AI doesn't just retrieve industrial knowledge — it understands it, connects it, explains it, predicts operational failures, and helps organizations make safer and better decisions.*
+> *"We don't predict accidents. We detect when the critical barriers preventing them are failing."*
 
 </div>
 
 ---
 
-## The Problem
-
-Industrial organizations store critical knowledge across thousands of documents — equipment manuals, SOPs, maintenance records, inspection reports, incident histories. This knowledge is:
-
-- **Fragmented** across disconnected systems
-- **Inaccessible** when engineers need it most  
-- **Dependent** on individual expertise that retires with people
-- **Reactive** — failures are discovered after they happen
-
-**Result:** 35% of engineer time lost searching for information. 22% of downtime caused by knowledge fragmentation.
+> [!NOTE]
+> **Dataset Status:** The current embedded benchmark dataset contains ~180 curated development records (~50% SIF / 50% non-SIF) for pipeline verification. It is a **synthetic/curated development fixture**, NOT production Oil India Limited historical data. Real-world SIF precursor prevalence typically ranges between 2% and 8%. Full model calibration and blind holdout validation will occur upon ingestion of the external operational dataset.
 
 ---
 
-## The Solution
+## 1. Problem Statement Overview (SIH26165)
 
-IndusMind AI answers the four questions every industrial operation needs:
+Oil India Limited (OIL) collects large volumes of Unsafe-Act / Unsafe-Condition (UA/UC) observations, near-miss reports, and incident logs through its HSSE reporting mechanisms. Currently, these reports are triaged manually after arbitrary intervals (monthly, quarterly), which delays critical intervention.
 
-| Question | Feature |
-|---|---|
-| **What happened?** | Incident Intelligence + Asset Timeline |
-| **Why did it happen?** | Root Cause Analysis + AI Investigation Mode |
-| **What will happen next?** | Failure Prediction Engine + Risk Intelligence |
-| **What should we do?** | Decision Center + Operational Briefings |
+Industry best practice (Campbell Institute, EEI SCL, IOGP) establishes that **low-severity incidents do not share the same root causes as fatalities**. Minor slips and trips are common, but fatalities occur when **high-energy hazards meet compromised critical barriers**.
+
+### Mandatory SIH26165 Requirements Satisfied:
+1. **Ingestion of free-text safety reports:** Unsafe Acts (UA), Unsafe Conditions (UC), Near-Misses, and Historical Incidents.
+2. **Automated SIF-Potential Classification:** High-recall binary classification separating high-energy fatal precursors from routine housekeeping noise.
+3. **IOGP Life-Saving Rule Mapping:** Automated multi-label mapping to the 9 global IOGP Life-Saving Rules (Report 459).
+4. **Multi-Dimensional Recurring Precursor Detection:** Pattern clustering across **activity**, **location**, **barrier failure**, and **time window**.
+5. **Interactive Safety Dashboard:** Real-time visibility into high-hazard operational zones.
+6. **Site & Activity SIF-Precursor Density Ranking:** Transparent mathematical density ranking: $\frac{\text{SIF Precursors}}{\text{Total Reports}} \times 100\%$.
+7. **HSE Intervention Prioritization:** Actionable closed-loop Corrective Action (CAPA) tracking with post-closure recurrence monitoring.
 
 ---
 
-## Architecture
+## 2. Core Architecture: SIF Sentinel
 
 ```
-Industrial Documents (PDF, DOCX, TXT)
-            │
-            ▼
-┌─────────────────────────────────────┐
-│      Knowledge Ingestion Engine     │
-│  Parse → Chunk → Embed → Extract   │
-│  Assets / Risks / Maintenance /     │
-│  Incidents / Compliance / Entities  │
-└────────────────┬────────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────────┐
-│      Supabase PostgreSQL            │
-│   pgvector (1536-dim embeddings)    │
-│   Relational knowledge graph        │
-└────────────────┬────────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────────┐
-│   Decision Intelligence Layer       │
-│  RAG Copilot · Failure Prediction  │
-│  Root Cause Analysis · Decisions   │
-│  Investigation · Brief · Scenario  │
-└────────────────┬────────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────────┐
-│    Executive Command Center         │
-│  Plant Health Index (A-F score)    │
-│  Digital Twin · Knowledge Graph    │
-└─────────────────────────────────────┘
+                      OIL SAFETY OBSERVATIONS
+              (UA / UC / Near-Miss / Historical Incidents)
+                                 │
+                                 ▼
+                     CANONICAL EVENT INGESTION
+             - Preserves Raw Text (Immutable Source)
+             - Generates Normalized Text
+             - Preserves Historical Event Timestamps
+                                 │
+                                 ▼
+            ┌────────────────────┼────────────────────┐
+            ▼                    ▼                    ▼
+     [ SIF CLASSIFIER ]   [ IOGP MAPPER ]   [ ENTITY EXTRACTION ]
+     - Calibrated Prob.   - 9 IOGP Rules    - Energy Category
+     - Review Zone Gate   - Multi-Label     - Barrier State
+     - N-gram Evidence    - Evidence Span   - Worker Exposure
+            │                    │                    │
+            └────────────────────┼────────────────────┘
+                                 ▼
+                      SIF PATHWAY ENGINE
+            Hazard → Energy → Critical Barrier → Exposure → SIF
+                                 │
+                                 ▼
+                 TEMPORAL PRECURSOR ENGINE
+       - Clusters: Site + Activity + Barrier + Time Window
+       - Trajectory: Isolated | Recurring | Escalating
+       - Recurrence Monitoring: Post-CAPA Surveillance
+                                 │
+                                 ▼
+                 HSE RISK PRIORITIZATION
+       - Site SIF Precursor Density Ranking
+       - Activity SIF Precursor Density Ranking
+       - Closed-Loop CAPA with Hierarchy of Controls
+       - Tamper-Evident SHA-256 Chained Audit Ledger
 ```
 
 ---
 
-## Features
+## 3. Key Functional Innovations
 
-| Feature | Description |
-|---|---|
-| 🧠 **Plant Health Index** | Weighted operational health score (A-F) across 5 dimensions |
-| 🎯 **Decision Center** | AI-prioritized operational decisions with evidence and business impact |
-| 🔍 **Investigation Mode** | Full AI expert report — reads all asset data, outputs root causes |
-| ⚡ **Failure Prediction** | AI predicts failure probability with traceable evidence |
-| 🔬 **Root Cause Analysis** | Multi-source reasoning across incidents and maintenance history |
-| 💡 **AI Copilot** | RAG chat with source citations from your documents |
-| 📋 **Operational Briefings** | Morning Brief, Weekly Report, Executive Summary, Critical Risk Report |
-| 🌐 **Scenario Analysis** | "What if Boiler A shuts down?" — estimates operational impact |
-| 🕸️ **Knowledge Graph** | Auto-extracted entity relationship visualization |
-| 🏭 **Digital Twin** | Interactive asset hierarchy with complete operational profiles |
+### A. Independent Critical Barrier Intelligence
+Conventional tools assume that SIF classification automatically implies barrier failure. SIF Sentinel decouples the two:
+- **Hazard & Energy Analysis:** 10 energy categories (CSRA Energy Wheel) evaluated with high-energy thresholding.
+- **Barrier Condition Evaluation:** Independent extraction of barrier status (`EFFECTIVE`, `DEGRADED`, `FAILED`, `MISSING`, `UNKNOWN`).
+- **Exposure State:** Verifies whether personnel intersected the lethal release envelope or line-of-fire.
 
----
+### B. Multi-Dimensional Precursor Pattern Detection
+Instead of naive `site + rule >= 2` clustering, SIF Sentinel groups observations across:
+- **Facility / Asset** (e.g., Duliajan Rig 7)
+- **Operational Activity** (e.g., Rig Mast Maintenance)
+- **Specific Location** (e.g., Elevated Grating at 12m)
+- **Compromised Critical Barrier** (e.g., Fall Arrest Inertia Reel)
+- **Rolling Time Window** (14-day and 30-day temporal windows)
 
-## Tech Stack
+### C. Closed-Loop CAPA & Post-Closure Recurrence
+When an action is closed, SIF Sentinel begins an automated 30-day surveillance window. If a matching precursor recurs at that location or activity, the CAPA is flagged as **"Ineffective — Post-Closure Recurrence Detected"**, alerting HSE leadership.
 
-| Layer | Technology |
-|---|---|
-| Frontend + API | Next.js 15, TypeScript, Tailwind CSS |
-| LLM Inference | Groq API (LLaMA 3.3 70B) — 10x faster than GPT-4 |
-| Embeddings | OpenAI text-embedding-3-small (1536-dim) |
-| Vector Store | Supabase pgvector (cosine similarity) |
-| Database | Supabase PostgreSQL |
-| Deployment | Vercel |
+### D. Tamper-Evident Chained Audit Ledger
+Every report ingestion, AI classification, HSE override, and CAPA state transition is sealed in a cryptographic hash chain ($\text{Hash}_n = \text{SHA256}(\text{Record}_n + \text{Hash}_{n-1})$). Any retroactive tampering invalidates the verification chain.
 
 ---
 
-## Quick Start
+## 4. Getting Started
 
-### 1. Clone and Install
+### Prerequisites
+- Node.js 20+
+- npm 10+
 
+### Installation
 ```bash
-git clone https://github.com/YOUR_USERNAME/indusmind-ai
-cd indusmind-ai
+git clone <repo-url>
+cd sif-sentinel
 npm install
 ```
 
-### 2. Set Up Supabase
-
-1. Create a project at [supabase.com](https://supabase.com)
-2. Enable pgvector extension: Database → Extensions → search "vector" → enable
-3. Open SQL Editor and run **in order**:
-   - `supabase/schema.sql`
-   - `supabase/schema_v2.sql`
-   - `supabase/schema_v3.sql`
-
-### 3. Configure Environment
-
-```bash
-cp .env.local.example .env.local
-```
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=https://xxxx.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
-SUPABASE_SERVICE_ROLE_KEY=eyJ...
-GROQ_API_KEY=gsk_...       # Free at console.groq.com
-OPENAI_API_KEY=sk-...      # For embeddings only (~₹2 per 1M tokens)
-```
-
-### 4. Run
-
+### Running Locally
 ```bash
 npm run dev
-# Open http://localhost:3000
 ```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 5. First Steps
-
-1. Go to **Upload Docs** → upload any industrial PDF (boiler manual, safety SOP)
-2. Wait 30-90 seconds for processing
-3. Open **Command Center** → see Plant Health Index populate
-4. Click **Investigate** → select an asset → watch AI analyze it
-5. Try **Scenario Analysis** → "What happens if the boiler shuts down?"
+### Production Build
+```bash
+npm run build
+npm run start
+```
 
 ---
 
-## Project Structure
+## 5. Directory Structure
 
 ```
 src/
 ├── app/
-│   ├── dashboard/
-│   │   ├── page.tsx              # Command Center
-│   │   ├── investigate/          # AI Investigation Mode
-│   │   ├── brief/                # Operational Briefings
-│   │   ├── twin/                 # Digital Twin
-│   │   ├── chat/                 # AI Copilot
-│   │   ├── assets/               # Asset Intelligence
-│   │   ├── risks/                # Risk Intelligence + RCA
-│   │   ├── maintenance/          # Maintenance Intelligence
-│   │   ├── incidents/            # Incident Intelligence
-│   │   ├── compliance/           # Compliance Intelligence
-│   │   ├── insights/             # AI Insights Feed
-│   │   ├── graph/                # Knowledge Graph
-│   │   └── documents/            # Document Management
-│   ├── upload/                   # Document Upload
-│   └── api/                      # 19 API route handlers
+│   ├── api/             # API routes (reports, aggregates, patterns, actions, audit, pathways)
+│   ├── dashboard/       # Interactive Next.js Dashboard pages
+│   │   ├── density/     # Site & Activity Precursor Density ranking
+│   │   ├── patterns/    # Multi-dimensional precursor pattern explorer
+│   │   ├── pathways/    # SIF pathway graph visualizer
+│   │   ├── reports/     # Raw report intelligence & HSE review
+│   │   ├── actions/     # Closed-loop CAPA register
+│   │   ├── rules/       # IOGP Life-Saving Rules breakdown
+│   │   ├── models/      # Transparent model evaluation suite
+│   │   └── audit/       # Tamper-evident chained audit ledger
+├── components/          # Reusable UI & Safety-science visualizers
 └── lib/
-    ├── decision-engine.ts         # Plant Health, Decisions, Investigation, Scenario
-    ├── intelligence.ts            # Entity/Asset/Risk/Incident/Compliance extraction
-    ├── rag.ts                     # RAG retrieval pipeline
-    ├── embeddings.ts              # OpenAI embeddings + text chunking
-    ├── groq.ts                    # Groq client + entity extraction
-    ├── parser.ts                  # PDF/DOCX/TXT text extraction
-    ├── supabase.ts                # DB client + TypeScript types
-    └── ai-types.ts                # Shared AI response type definitions
+    ├── types.ts                 # Canonical domain models & interfaces
+    ├── layer-a-classifier.ts    # Deterministic TF-IDF + LogReg classifier
+    ├── safety-science-engine.ts # Decoupled Energy & Barrier analysis
+    ├── aggregation-engine.ts    # Density ranking & temporal clustering
+    ├── safety-store.ts          # In-memory + local file / Supabase store
+    └── benchmark-seeder.ts      # Curated development benchmark fixture
 ```
 
 ---
 
-## How It Differs From Generic RAG
-
-| Capability | Generic RAG / ChatGPT | IndusMind AI |
-|---|---|---|
-| Answer questions about documents | ✅ | ✅ |
-| Extract structured entities | ❌ | ✅ |
-| Asset-risk-incident relationship graph | ❌ | ✅ |
-| Failure probability prediction | ❌ | ✅ |
-| Evidence-grounded prioritized decisions | ❌ | ✅ |
-| Plant-wide health scoring | ❌ | ✅ |
-| What-if scenario simulation | ❌ | ✅ |
-| Full AI investigation reports | ❌ | ✅ |
-
----
-
-## Known Limitations
-
-1. **No authentication** — demo-scope deployment; enterprise version requires auth layer
-2. **Vercel 60s timeout** — very large PDFs (50+ pages) may timeout on free tier; use 10-20 page documents for demo
-3. **Knowledge graph edges** — entity relationship edges require manual linking; auto-population planned
-4. **Scanned PDFs** — text extraction requires selectable text; OCR not included
-5. **Groq rate limits** — free tier is 30 req/min; demo should avoid simultaneous uploads
-
----
-
-## Future Scope
-
-- Multi-tenant authentication (Clerk/Auth.js)
-- Real-time IoT sensor integration via WebSockets
-- OCR for scanned legacy documents
-- Automated compliance gap report generation
-- Mobile app for field engineers
-- Export to CMMS systems (SAP PM, IBM Maximo)
-- Multi-language support (Hindi, regional languages)
-- Voice interface for hands-free operations
-
----
-
-## License
-
-MIT License — built for ET AI Hackathon 2.0
-
----
-
-<div align="center">
-Built by <strong>Ammar Logade</strong> — M.H. Saboo Siddik College of Engineering, Mumbai<br>
-B.E. Computer Science (AI & ML)
-</div>
+## 6. License & Disclaimer
+Built for the **Smart India Hackathon 2026** for **Oil India Limited (OIL)** under Problem Statement 26165.  
+*All safety terminology aligns with IOGP Report 459, Campbell Institute SIF research, and OISD safety standards.*

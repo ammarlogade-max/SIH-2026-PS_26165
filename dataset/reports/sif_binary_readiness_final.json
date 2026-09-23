@@ -1,0 +1,37 @@
+{
+  "dataset_version": "v2.1",
+  "audit_name": "Final SIF Negative-Label Recovery Audit",
+  "audit_date": "2026-09-14",
+  "standard": "Campbell Institute & IOGP SIF Precursor Framework",
+  "total_events_in_corpus": 2970,
+  "pre_audit_counts": {
+    "TRUE": 695,
+    "FALSE": 14,
+    "UNKNOWN": 2261
+  },
+  "audited_candidates_count": 169,
+  "audit_decision_counts": {
+    "VERIFIED_TRUE": 135,
+    "VERIFIED_FALSE": 6,
+    "NEEDS_HUMAN_REVIEW": 27,
+    "REMAIN_UNKNOWN": 1
+  },
+  "recovered_false_count": 6,
+  "verified_true_count": 830,
+  "class_imbalance_ratio": "138.3:1",
+  "binary_ml_candidates_count": 836,
+  "group_metrics": {
+    "total_candidate_groups": 835,
+    "false_candidate_groups": 6,
+    "total_candidate_sources": 836,
+    "false_candidate_sources": 6
+  },
+  "binary_sif_status": "LIMITED",
+  "scientific_justification": "6 genuine SIF-negative records were successfully recovered using strict positive evidence criteria (manual hand tool lacerations, shallow deck drain trip at zero elevation, and administrative non-incident alerts). However, the resulting ratio of 830:6 (~138:1) remains severely imbalanced and unrepresentative of general industrial operations, due to structural regulatory publishing bias (BSEE and IMCA only publish high-severity alerts). Therefore, standard binary classification is restricted to LIMITED status: binary modeling may be conducted for experimental and diagnostic benchmarking only, but is strictly prohibited from safety-critical production gating.",
+  "recommended_production_alternatives": [
+    "Conformal Prediction with bounded False Negative Rate",
+    "Precursor Retrieval & Analogous Case Matching",
+    "Multi-task Physical Energy & Barrier Integrity Detection",
+    "Positive-Unlabeled (PU) / One-Class Precursor Density Estimation"
+  ]
+}

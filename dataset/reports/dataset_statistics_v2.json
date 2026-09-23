@@ -1,0 +1,62 @@
+{
+  "audit_timestamp": "2026-09-14T16:49:25.763044Z",
+  "dataset_version": "2.0.0-audited",
+  "total_events": 2970,
+  "provenance_summary": {
+    "total_manifest_documents": 852,
+    "verified_physical_files": 564,
+    "missing_artifacts": 288,
+    "hash_match_rate": "100.00%",
+    "unmanifested_files_recovered": 1
+  },
+  "source_distribution": {
+    "BSEE": 574,
+    "IMCA": 2388,
+    "UK_HSE": 8
+  },
+  "event_types": {
+    "INCIDENT": 1419,
+    "NEAR_MISS": 1514,
+    "UC": 25,
+    "UA": 12
+  },
+  "sif_potential_distribution": {
+    "TRUE": 695,
+    "UNKNOWN": 2261,
+    "FALSE": 14
+  },
+  "sif_label_type_distribution": {
+    "DERIVED": 435,
+    "UNKNOWN": 2261,
+    "EXPLICIT": 274
+  },
+  "energy_distribution": {
+    "THERMAL": 366,
+    "PRESSURE": 420,
+    "UNKNOWN": 1756,
+    "GRAVITATIONAL": 282,
+    "KINETIC": 88,
+    "ELECTRICAL": 45,
+    "CHEMICAL": 13
+  },
+  "quality_tier_distribution": {
+    "SILVER": 284,
+    "BRONZE": 2589,
+    "GOLD": 97
+  },
+  "ml_subsets": {
+    "training_gold": 97,
+    "training_silver": 284,
+    "unlabeled_unknown": 2261,
+    "reference_only": 8,
+    "quarantined_records": 2411
+  },
+  "remediation_actions_performed": [
+    "Fixed event type misclassifications (injury/damage events reclassified from UA/UC to INCIDENT)",
+    "Purged hardcoded generic facility defaults; marked UNKNOWN where text lacks named facility",
+    "Cleared energy classifications lacking physical text evidence",
+    "Enforced evidence-span verification for all explicit labels",
+    "Cleaned IMCA HTML extractions of webpage navigation, cookies, and boilerplate",
+    "Separated verifiable gold/silver records from unverified catalog metadata"
+  ]
+}

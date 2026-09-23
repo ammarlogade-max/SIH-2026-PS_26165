@@ -1,0 +1,50 @@
+
+
+ 
+      
+         
+ 
+     
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Safety Alert No. 252 Contact:  Randy Josey 
+July 30, 2007 (504) 736-2409 
+Retrieving Storm Packers 
+Recently, rig personnel were in the process of retrieving a storm packer set at 500 feet measured 
+depth in 7 5/8” casing with 4000 feet of drill pipe hanging below the packer to provide weight 
+for setting purposes. The well had open perforations below the packer. When the storm packer 
+was unseated, the well unloaded the annulus of calcium chloride workover fluid, forcing the 
+rotary bushings out of the rotary table. One of the rotary bushings fell on the drill floor injuring 
+one person while the second rotary bushing fell into the Gulf waters. Additionally, two personnel 
+were splashed with the workover fluid. 
+The investigation revealed that a gas bubble had formed under the packer and was undetected by 
+the rig crew.  Although the exact cause of the gas buildup has not been determined, the resultant 
+gas escape may have been avoided if the annular preventer had been closed prior to unseating the 
+storm packer.  The investigation further revealed that the crew thought the well was dead 
+because the work string, with the weighted fluid, went on a vacuum when the tool was opened. 
+Based on these findings, MMS recommends that operators: 
+•	 Have a detailed procedure covering the retrieval of storm packers. 
+•	 It is recommended that a safety valve be installed on the retrieval string to prepare to 
+handle pressure on the drill pipe when opening the equalizing sub. 
+•	 Before setting the storm packer, ensure that the well is full of kill weight fluid. 
+•	 Be aware that the weep hole on the storm packer could be plugged, giving a false 
+
+pressure reading below the packer. 
+
+•	 Always have the annular preventer closed prior to unseating storm packers. 
+•	 Only essential personnel should be on the rig floor during these operations. 
+--MMS--GOMR--
+www.gomr.mms.gov 

@@ -1,0 +1,60 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+Pipe Bond Failure on Firefighting System Investigated and 
+Repaired 
+ 
+Figure 1: FRP pipes separated from flanges. 
+BSEE received notification of an incident involving the separation of a section of fiber 
+reinforced plastic pipe (FRP) from its flange. As a safety precaution, production was 
+immediately halted to investigate the situation. During the inspection, the team 
+discovered that a segment of 10-inch FRP piping had disengaged from its attached 
+flange, resulting in a 4-inch pipe also becoming detached due to the movement of the 
+10-inch pipe (see image above).   
+To address the issue, the affected fire loop main was promptly isolated from the rest of 
+the system, allowing the remainder of the system to resume normal operation. Repairs 
+were swiftly carried out on the fire main, and once the necessary repairs were 
+completed, production at the facility resumed.  
+  
+ 
+Safety Alert No. 471 
+Oct. 26, 2023 
+
+ 
+ 
+The operator identified a bond failure as a potential cause of the separation, which was 
+subsequently addressed to prevent any reoccurrence. 
+Therefore, BSEE recommends operators and contractors consider the following: 
+ 
+• Reviewing preventative maintenance records and ensuring adequate inspection 
+and routine checks of firefighting equipment.  
+• Providing instructions, training, competency assessments,   and proper 
+supervision to operators and maintenance personnel.  
+• Testing, if possible, the connection between the FRP pipe and flange to ensure 
+an adequate seal.  
+• Visually checking for leaks while the mains are pressurized during routine 
+firewater system tests. According to regulations for fire water systems (as per 
+API RP 14G 4th Edition, Section 5.2), it is essential to maintain sufficient 
+pressure (a minimum of 75 psig) when hose streams are flowing, unless the 
+nozzle manufacturer specifies higher pressure requirements. Even a fire water 
+system with small leaks may initially meet the pressure requirement, but 
+addressing smaller leaks promptly can prevent more significant failures from 
+occurring.  
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It   also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Component Failure, Pipe Handling, Well Operations, Structural, Fire 

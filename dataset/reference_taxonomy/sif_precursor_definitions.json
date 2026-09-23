@@ -1,0 +1,35 @@
+{
+  "framework": "Serious Injury & Fatality (SIF) Precursor Identification Framework",
+  "authoritative_sources": [
+    "Campbell Institute / National Safety Council: SIF Prevention",
+    "Construction Safety Research Alliance (CSRA): High-Energy Control Assessment Project (HECAT)",
+    "Dekra / BST: Serious Injury and Fatality Prevention",
+    "IOGP Report 590: Life-Saving Rules"
+  ],
+  "sif_definition": "A high-severity workplace event that resulted in a fatal or life-altering, permanent disabling injury, OR a high-potential precursor event where high energy was present in the absence of an effective, direct control barrier, credibly leading to a fatal or life-altering outcome had the circumstances slightly varied.",
+  "sif_potential_criteria": {
+    "required_conditions": [
+      "Condition 1: High Energy Present or Released (CSRA Energy Wheel definition)",
+      "Condition 2: Line of Fire or Direct Exposure of Human Target",
+      "Condition 3: Compromised, Missing, or Ineffective Critical Direct Barrier"
+    ],
+    "energy_thresholds": {
+      "GRAVITATIONAL": "Fall from height >= 1.8m (6ft), dropped object with impact energy >= 40 Joules (~2kg dropped from 2m or heavy rigging/pipe)",
+      "PRESSURE": "Hydraulic or pneumatic pressure >= 100 psi (0.7 MPa) or pressurized system volume capable of rapid catastrophic release",
+      "THERMAL": "Open flame, temperature > 60°C liquid contact or > 200°C surface contact capable of 2nd/3rd degree burns, cryogenic release",
+      "ELECTRICAL": "Alternating current voltage >= 50V AC or direct current >= 100V DC capable of ventricular fibrillation or arc flash",
+      "KINETIC": "Heavy vehicle in motion, high-speed rotating equipment, tensioned mooring line / winch under load, parted line snapback zone",
+      "CHEMICAL": "Toxic gas release (H2S >= 10 ppm, CO >= 35 ppm), flammable hydrocarbon vapor cloud (LEL >= 10%), strong acids/caustics"
+    }
+  },
+  "precursor_vs_non_precursor": {
+    "sif_precursor": "An observable unsafe act, unsafe condition, near-miss, or minor event that contains both high energy and compromised barrier elements, requiring only minor situational variation to cause a fatality or permanent disability.",
+    "non_sif_event": "Low-energy physical event (e.g. minor slip/trip on flat deck, pinch point without high force, small hand tool abrasion) or an event where reliable engineered barriers remained fully intact and successfully arrested the energy."
+  },
+  "label_taxonomy": {
+    "EXPLICIT": "Event narrative or source document explicitly uses definitive regulatory classification (e.g. 'fatality', 'high potential', 'HiPo', 'serious injury potential').",
+    "DERIVED": "Objective presence of high energy + compromised barrier + worker in line-of-fire verified from narrative text.",
+    "WEAKLY_DERIVED": "Plausible exposure but missing either exact worker proximity or exact barrier state.",
+    "UNKNOWN": "Insufficient information in narrative to determine whether high energy was uncontrolled or whether barriers were active."
+  }
+}

@@ -1,0 +1,141 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+`   
+ 
+ 
+ 
+BSEE Investigates Three Incidents Caused by  
+Inadequately Maintained Electrical Connections and 
+Compromised Wiring Integrity 
+ 
+The Bureau of Safety and Environmental Enforcement (BSEE) has observed a trend of 
+safety issues linked to inadequately maintained electrical connections that compromise 
+wiring integrity. This pattern has given rise to safety incidents, such as fires and arc 
+flashes, underscoring the vital importance of averting these electrical hazards. Poor 
+electrical connections pose a common and significant fire hazard, as they have the 
+potential to generate substantial heat without significantly impeding electric current flow. 
+This renders fuses and circuit breakers ineffective, allowing for escalation of the hazard. 
+It is crucial to address these issues promptly and comprehensively to maintain a safe 
+working environment. 
+ 
+Incident 1: Generator Cable Melting  
+ 
+This incident involved a complete power loss of a 
+temporary generator within the production facility. Upon 
+investigation, the platform electrician identified that the 
+480-volt alternating current (VAC) #2 phase cable had 
+melted off at the generator bus connection (refer to 
+figure 1 & 2). This was attributed to a loose cable 
+connection at the cable lug. In response to the situation, 
+power was switched over to the platform’s emergency 
+generator. Fortunately, no injuries or damage beyond 
+the wiring were reported. The root cause of the incident 
+was traced back to the faulty cable connection at the 
+cable lug, leading to excessive heat generation and 
+subsequent cable melting. 
+ 
+ 
+  
+ 
+Safety Alert No. 478 
+Dec. 14, 2023 
+Fig.1 - Melted Cable Lug on Generator. 
+Fig.2 - #2 phase cable melted off lug 
+connection. 
+
+ 
+ 
+ 
+Incident 2: Smoke and Cable Break 
+ 
+This incident unfolded during a routine nighttime 
+equipment check at a production facility. Crew 
+members detected smoke emerging from a gap 
+in the insulation near the inlet flange on the 
+second flanged section of a fuel gas line run 
+(refer to figure 3). An electrician was alerted and 
+was able to take immediate action by turning off 
+the breaker in the junction box, which supplied 
+power to the heat trace section,
+1
+ ensuring a 
+termination of all power. To prevent smoldering, the 
+crew soaked the insulation with water. 
+ 
+Upon subsequent investigations, a break in the heat trace cable insulation on the inlet 
+flange of the gas volume bottle was found. The root cause of this incident was traced 
+back to the failure of the breaker to terminate power to the heat trace, attributed to 
+improper grounding. This failure resulted in excessive heat and smoldering of insulation. 
+ 
+Incident 3: Arcing at Generator Junction Box  
+ 
+Personnel conducting daily checks during a rainstorm 
+heard a sudden popping sound, which prompted 
+immediate investigations and revealed wires arcing at the 
+junction box (400 Automatic Transfer Switch (ATS); refer to 
+figure 4) for the gas generator. Personnel promptly initiated 
+an emergency shutdown for the gas generator, activating 
+the emergency diesel generator to supply power to the 
+facility. Personnel strictly followed Lockout/Tagout (LO/TO) 
+procedures as part of the emergency shutdown protocol. 
+All valves to vessels on the facility were isolated and stop 
+work authority
+2
+ was invoked to ensure immediate safety.   
+ 
+Personnel discovered that the top cable on the ATS from the platform diesel generator 
+lacked a traditional drip loop. This absence allowed rainwater to flow onto the live power 
+cable below, leading to its failure. Although designed to withstand weather, the 
+improperly installed cable, exposed to constant sun and rain without adequate 
+ 
+1
+ A heat trace system is an electrical system used to maintain or raise the temperature of pipes and vessels. Heating 
+is achieved by utilizing a resistant element that is run alongside the piping or vessel. 
+2
+ Stop work authority gives workers and contractors the authority and responsibility to stop work if they observe 
+unsafe conditions or behaviors on the jobsite. 
+Fig. 4 - Junction Box (400 Automatic 
+Transfer Switch). 
+Fig 3 - Damaged insulation on heat 
+trace cable routed along the top of the 
+inlet flange. 
+
+ 
+ 
+protection, developed small fractures in its casing. Over an undetermined number of 
+years, rainwater seeped into the cable, causing material fatigue, and ultimately resulting 
+in the cable’s failure during a thunderstorm.  
+ 
+Therefore, BSEE recommends, where appropriate, that operators and their 
+contractors, consider the following: 
+ 
+• Implementing a routine inspection and maintenance schedule for cable 
+connections to ensure secure and correct function.  
+• Ensuring that personnel involved in cable connections and maintenance receive 
+proper training and understand the importance of secure and reliable 
+connections. 
+• Communicating and rehearsing emergency response procedures, such as 
+switching over to emergency generators, in case of power-related incidents. 
+• Reviewing and enhancing existing procedures for connecting and securing 
+cables. 
+• Reviewing and reinforcing LO/TO procedures to ensure the safe and secure 
+isolation of electrical components during maintenance and investigations. 
+• Conducting periodic thermographic inspections using a forward-looking infrared 
+(FLIR) camera to identify any signs of overheating or loose connections. 
+• Utilizing locking type connections in areas where fouling of electrical lines due to 
+water ingress is a risk. 
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Electrical Safety  

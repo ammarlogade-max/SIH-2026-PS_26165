@@ -1,0 +1,93 @@
+
+
+ 
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+ 
+ 
+Fatigue Cracking of ¾-Inch Pipe Nipple  
+Results in Gas Release 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+The Bureau of Safety and Environmental Enforcement (BSEE) has investigated a 
+recent offshore gas release incident resulting from the failure of a ¾-inch pipe nipple 
+connected to a compressor suction scrubber (Figure 1). The failure led to an immediate 
+platform shut-in and a full muster of personnel onboard. 
+ 
+The released gas posed a significant safety risk, particularly due to its proximity—within 
+10 feet—to hot compressor surfaces, increasing the potential for fire or explosion. 
+Fortunately, there were no injuries or significant equipment damage; however, the event 
+highlights how minor component failures can escalate into serious safety threats under 
+slightly altered conditions. 
+ 
+Incident Findings: 
+ 
+Post-incident inspection revealed that the threaded ¾-inch pipe nipple failed due to 
+fatigue cracking, which had likely developed progressively over time (Figure 2). The 
+fatigue cracking was consistent with long-term exposure to mechanical stress and 
+cyclical loading in a high-vibration environment. Threaded connections of this size are 
+especially vulnerable to fatigue when installed on vibrating equipment such as 
+compressors. 
+ 
+Safety Alert No. 502 
+June 10, 2025 
+Figure 2-Photo shows 3/4-inch unsupported  
+pipe nipple on suction scrubber. 
+Figure 1-Photo shows damaged 3/4-inch pipe  
+after incident. 
+
+ 
+ 
+ 
+Contributing Factors: 
+ 
+• Over-tightening: Excessive torque during installation may have introduced 
+stress concentrations, weakening the pipe. 
+• Vibration: Continuous vibration from compressor operations likely accelerated 
+fatigue. 
+• Unsupported Weight: The nipple also supported a sight glass level bridle, 
+potentially adding stress to the connection. 
+• Component Loosening: Vibration may have contributed to the loosening of the 
+connection over time, compounding mechanical stress. 
+ 
+To help prevent similar incidents in the future, BSEE recommends that operators 
+and their contractors, where appropriate, consider the following: 
+ 
+• Add structural support for sight glass level bridles attached to compressor suction 
+scrubbers to reduce weight and vibration loads on small-diameter pipe nipples. 
+• Apply proper tightening techniques to avoid over-stressing threaded connections 
+during installation. 
+• Regularly inspect critical components—including pipe nipples, fittings, and 
+supports—for signs of fatigue, corrosion, wear, or loosening. Initiate timely 
+corrective actions as needed. 
+• Implement vibration monitoring on compressor packages to detect and manage 
+vibration levels that may affect connected piping and equipment. 
+• Ensure vibration dampers are properly installed and maintained to reduce the 
+transmission of vibration from compressor units to piping components. 
+ 
+ 
+– BSEE – 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+ 
+Category: Gas Release, Personnel Safety 

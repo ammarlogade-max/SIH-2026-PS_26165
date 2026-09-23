@@ -1,0 +1,188 @@
+{
+  "total_events_in_v2": 2970,
+  "sample_audited_count": 225,
+  "sample_breakdown": {
+    "BSEE": 80,
+    "IMCA": 137,
+    "UK_HSE": 8
+  },
+  "ua_uc_audited_count": 37,
+  "consequence_contradictions_found": 37,
+  "field_precision": [
+    {
+      "field": "event_type",
+      "sample_count": 225,
+      "supported": 223,
+      "ambiguous": 0,
+      "not_supported": 2,
+      "unknown": 0,
+      "precision_pct": 99.11,
+      "evidence_valid_rate_pct": 99.11
+    },
+    {
+      "field": "location_facility",
+      "sample_count": 225,
+      "supported": 87,
+      "ambiguous": 0,
+      "not_supported": 3,
+      "unknown": 135,
+      "precision_pct": 96.67,
+      "evidence_valid_rate_pct": 98.67
+    },
+    {
+      "field": "location_region",
+      "sample_count": 225,
+      "supported": 225,
+      "ambiguous": 0,
+      "not_supported": 0,
+      "unknown": 0,
+      "precision_pct": 100.0,
+      "evidence_valid_rate_pct": 100.0
+    },
+    {
+      "field": "context_activity",
+      "sample_count": 225,
+      "supported": 127,
+      "ambiguous": 98,
+      "not_supported": 0,
+      "unknown": 0,
+      "precision_pct": 56.44,
+      "evidence_valid_rate_pct": 100.0
+    },
+    {
+      "field": "context_equipment",
+      "sample_count": 225,
+      "supported": 26,
+      "ambiguous": 0,
+      "not_supported": 199,
+      "unknown": 0,
+      "precision_pct": 11.56,
+      "evidence_valid_rate_pct": 11.56
+    },
+    {
+      "field": "energy",
+      "sample_count": 225,
+      "supported": 115,
+      "ambiguous": 0,
+      "not_supported": 13,
+      "unknown": 97,
+      "precision_pct": 89.84,
+      "evidence_valid_rate_pct": 94.22
+    },
+    {
+      "field": "barrier",
+      "sample_count": 225,
+      "supported": 36,
+      "ambiguous": 0,
+      "not_supported": 17,
+      "unknown": 172,
+      "precision_pct": 67.92,
+      "evidence_valid_rate_pct": 92.44
+    },
+    {
+      "field": "barrier_state",
+      "sample_count": 225,
+      "supported": 0,
+      "ambiguous": 36,
+      "not_supported": 17,
+      "unknown": 172,
+      "precision_pct": 0.0,
+      "evidence_valid_rate_pct": 92.44
+    },
+    {
+      "field": "barrier_failure",
+      "sample_count": 225,
+      "supported": 0,
+      "ambiguous": 0,
+      "not_supported": 17,
+      "unknown": 208,
+      "precision_pct": 0.0,
+      "evidence_valid_rate_pct": 92.44
+    },
+    {
+      "field": "exposure",
+      "sample_count": 225,
+      "supported": 0,
+      "ambiguous": 0,
+      "not_supported": 0,
+      "unknown": 225,
+      "precision_pct": 100.0,
+      "evidence_valid_rate_pct": 100.0
+    },
+    {
+      "field": "actual_consequence",
+      "sample_count": 225,
+      "supported": 216,
+      "ambiguous": 0,
+      "not_supported": 9,
+      "unknown": 0,
+      "precision_pct": 96.0,
+      "evidence_valid_rate_pct": 96.0
+    },
+    {
+      "field": "potential_consequence",
+      "sample_count": 225,
+      "supported": 225,
+      "ambiguous": 0,
+      "not_supported": 0,
+      "unknown": 0,
+      "precision_pct": 100.0,
+      "evidence_valid_rate_pct": 100.0
+    },
+    {
+      "field": "SIF",
+      "sample_count": 225,
+      "supported": 86,
+      "ambiguous": 4,
+      "not_supported": 0,
+      "unknown": 135,
+      "precision_pct": 95.56,
+      "evidence_valid_rate_pct": 100.0
+    },
+    {
+      "field": "IOGP_mapping",
+      "sample_count": 225,
+      "supported": 89,
+      "ambiguous": 0,
+      "not_supported": 22,
+      "unknown": 114,
+      "precision_pct": 80.18,
+      "evidence_valid_rate_pct": 90.22
+    }
+  ],
+  "source_quality": [
+    {
+      "source_organization": "Bureau of Safety and Environmental Enforcement (BSEE)",
+      "sample_count": 80,
+      "overall_supported_rate_pct": 80.88,
+      "overall_error_rate_pct": 19.12,
+      "critical_field_precision_pct": 86.42,
+      "sif_precision_pct": 100.0,
+      "consequence_precision_pct": 92.5,
+      "barrier_precision_pct": 81.82,
+      "evidence_valid_rate_pct": 90.7
+    },
+    {
+      "source_organization": "Health and Safety Executive (UK HSE)",
+      "sample_count": 8,
+      "overall_supported_rate_pct": 77.66,
+      "overall_error_rate_pct": 22.34,
+      "critical_field_precision_pct": 80.0,
+      "sif_precision_pct": 100.0,
+      "consequence_precision_pct": 100.0,
+      "barrier_precision_pct": 0.0,
+      "evidence_valid_rate_pct": 85.94
+    },
+    {
+      "source_organization": "International Marine Contractors Association (IMCA)",
+      "sample_count": 137,
+      "overall_supported_rate_pct": 79.46,
+      "overall_error_rate_pct": 20.54,
+      "critical_field_precision_pct": 87.84,
+      "sif_precision_pct": 91.11,
+      "consequence_precision_pct": 97.81,
+      "barrier_precision_pct": 52.94,
+      "evidence_valid_rate_pct": 92.2
+    }
+  ]
+}

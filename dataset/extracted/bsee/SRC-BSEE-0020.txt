@@ -1,0 +1,118 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+ 
+ 
+ 
+Dropped Steel Plate Due to Defective Lifting Device 
+and Inadequate Hazard Analysis 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Bureau of Safety and Environmental Enforcement (BSEE) recently investigated an 
+incident involving a dropped steel plate during drilling operations, which injured two 
+personnel. The incident occurred while transferring a partial 3/8-inch steel plate sheet 
+using a magnetic lifting device. During the lift, the steel plate unexpectedly detached 
+from the magnet and fell approximately 47 inches, landing on top of both individuals’ left 
+feet. Both personnel reported bruising and swelling and were evacuated for medical 
+evaluation. 
+ 
+The investigation revealed that the magnetic lifting device was ineffective due  to wear 
+and tear. Manufacturer tests indicated that wear damage to the lifting device could 
+create air gaps, preventing it from functioning effectively. Additionally, the job safety 
+analysis (JSA) conducted before the operation did not adequately address the specific 
+Safety Alert No. 500 
+June 6, 2025 
+Figure 1: A magnetic lifting device. 
+Figure 2: Steel sheet and incident area. 
+
+ 
+ 
+hazards associated with the lifting equipment. While the JSA noted general hazards, it 
+failed to identify the risk of the plate prematurely releasing from the lifting device.  
+ 
+A critical factor in this incident was the personnel’s failure to stop work and review the 
+JSA before proceeding with the lifting operation. This judgment lapse reflects a safety 
+culture where crew members did not feel empowered to halt operations to reassess 
+potential hazards. Furthermore, there was a perception of haste among the personnel, 
+which may have contributed to their decision to proceed without thoroughly discussing 
+the risks associated with the lifting operation. This urgency to complete tasks 
+underscores the need for improved communication and adherence to safety protocols. 
+ 
+BSEE recommends that operators and their contractors, where appropriate, do 
+the following: 
+ 
+• Revise job plans to ensure that the team adequately addresses specific hazards 
+associated with lifting gear and suspended loads.. 
+ 
+• Conduct thorough JSAs that include a comprehensive hazard assessment for all 
+lifting operations. 
+ 
+• Foster a culture of safety that encourages personnel to stop work and discuss 
+potential hazards whenever uncertainties arise. 
+ 
+• Train all personnel on the proper use of lifting equipment and the importance of 
+confirming that all safety mechanisms are engaged before lifting operations 
+commence. 
+ 
+• Implement a robust inspection program for lifting devices to ensure they are 
+maintained in safe working condition and regularly evaluated for wear and tear. 
+ 
+• Establish a reporting mechanism for any observed defects or safety concerns 
+related to lifting equipment. 
+ 
+• Operators should know that even brief power spikes can disable electromagnets, 
+leading to dropped loads. To prevent sudden loss of magnetization, implement 
+procedures to monitor power stability and ensure that backup systems are in 
+
+ 
+ 
+place. 
+ 
+• Set guidelines to prevent coils from burning out by limiting how long operators 
+power on electromagnets. Train operators to turn off the magnets when they are 
+not in use, especially if the magnets are not designed for continuous duty cycles.. 
+ 
+• Look into the implementing industry-standard pre-use inspection and load testing 
+procedures for magnetic lifting devices. ASME B.30.20-3 provides guidelines for 
+marking, construction, operation, and specific pre-use protocols, such as 
+thorough inspections to ensure that the lifting surface is clean and free from 
+debris, oil, paint, or rust, which can interfere with the magnet’s contact and 
+reduce lifting capacity. Visual inspections should be supplemented with functional 
+tests to verify lifting capabilities. 
+ 
+• Encourage open communication among crew members regarding safety 
+practices and adhering to established protocols. 
+ 
+ 
+ 
+– BSEE – 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+ 
+Category: Personnel Safety, Lifting, Component Failures 

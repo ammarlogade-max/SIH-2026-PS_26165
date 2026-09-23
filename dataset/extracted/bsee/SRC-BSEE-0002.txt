@@ -1,0 +1,157 @@
+
+
+ 
+   
+ 
+ 
+ 
+ 
+Improvements Needed in Verify Production Safety System 
+Training Competency   
+ 
+Figure 1: Example of Marine Minerals Administration Production Safety System Training 
+Written Test Question 
+Background:  
+During recent Subpart O audits, the Marine Minerals Administration’s Gulf of America Region 
+identified potential concerns with Production Safety System Training, or  PSST, on the Outer 
+Continental Shelf.  
+The Marine Minerals Administration found offshore personnel with limited documented 
+knowledge during competency assessments, computer-based training that was not monitored, 
+requests to extend Production Safety System Training frequency timeframes, operators’ failures 
+to evaluate contractor training, and limited procedures for verifying employee and contractor 
+training needs. 
+Safety Alert No. 524 
+Date: August 19, 2026 
+Contact: engagement@bsee.gov 
+Phone: (800) 200-4853 
+
+   
+ 
+CATEGORY: Personnel Safety, Training 
+ 
+In response, the Marine Minerals Administration conducted a Performance-Based Risk 
+Inspection covering 16 assets operated by 11 unique operators. During the Performance-Based 
+Risk Inspection, Marine Minerals Administration inspection teams administered 53 written 
+tests; evaluated corrosion associated with production safety systems, skids and containment 
+systems; and conducted a fire drill involving an uncontrollable fire and platform abandonment 
+when operations and time allowed. The 95-question test included nine true or false questions, 
+14 definition questions with a word bank, 30 device-labeling questions (Fig. 1), five practical 
+questions with minimal calculations, and 37 multiple choice questions. 
+As a result of the Marine Minerals Administration Performance-Based Risk Inspection, the 
+Marine Minerals Administration identified several key findings: 
+• Although the Performance-Based Risk Inspection covered    a limited sample of Outer 
+Continental Shelf facilities and operators, the Marine Minerals Administration identified 
+qualification deficiencies among personnel who   install, inspect, test, and routinely 
+maintain surface and subsurface devices used to ensure safety and prevent pollution 
+during offshore    oil and gas production. 
+o The average test score was 80.34, with a range of 63.1 to 91.6. 
+o Twenty individuals tested, or 38% of those tested, scored below 80%. 
+o Five individuals tested, or 9% of those tested, scored below 70%. 
+ 
+• Analysis of the 53 tests highlighted competency gaps in the following topics: 
+o Timeframe / requirements of using pressure recording devices to create new 
+operating ranges. 
+o Contents and purpose of a Safety Analysis Function Evaluation Chart. 
+o Surface-Controlled Subsurface Safety Valve closure times. 
+o Required devices on incoming pipelines. 
+o Flowline Safety Valve test tolerance. 
+o Requirements of a Boarding Shutdown Valve. 
+o Secondary protection from gas blowby. 
+o Surface-Controlled Subsurface Safety Valve test documentation. 
+o Tubing plug leakage test intervals. 
+o Flowline requirements when Shut-In Tubing Pressure well exceeds Maximum 
+Allowable Working Pressure. 
+o Flowline Pressure Safety High setting requirements. 
+
+   
+ 
+CATEGORY: Personnel Safety, Training 
+ 
+o Definition of Detectable Abnormal Operating Condition. 
+o Definition of Abnormal Operating Condition. 
+o Set point of PSH with Pressure Safety Valve value and operating range high point 
+given  . 
+o Set point of Pressure Safety Low with lowest point of operating range given. 
+o With  Maximum Allowable Working Pressure and operating pressure range given 
+on separator: 
+ Determine maximum allowable pressure the Pressure Safety Valve can be 
+set. 
+ Determine highest pressure at which the flowline Pressure Safety High 
+can activate and trip to avoid receiving an incident of noncompliance for 
+being out of tolerance. 
+ Determine the lowest pressure at which the Pressure Safety Low can 
+activate and trip to avoid receiving an incident of noncompliance for 
+being out of tolerance. 
+ Determine highest acceptable set pressure on Pressure Safety High – if 
+Pressure Safety Valve has been reset to a defined pressure. 
+o Gas detection alarm system requirements. 
+ 
+• During the Performance-Based Risk Inspection, Marine Minerals Administration 
+inspection teams observed the following: 
+o A production operator with less than three years of experience who had taken 
+only Production Safety System refresher training and had never   completed a full 
+course  . 
+o A production operator with an expired    Production Safety System Training 
+certification. 
+o Refresher training that consisted of a limited knowledge quiz and observation 
+assessment because in-person training was limited during the COVID 19 
+pandemic). 
+o Industry training providers who offered training test scores showed OCS 
+employees who averaged 95.49 on their tests; however, the same offshore 
+employees averaged 80.8 on the Marine Minerals Administration administered 
+test. 
+ 
+
+   
+ 
+CATEGORY: Personnel Safety, Training 
+ 
+• On those facilities Marine Minerals Administration was able to conduct a fire drill, the 
+inspection teams identified the following: 
+o Individuals who were not familiar with deploying the facilities inflatable life raft. 
+o Delayed response time at an offshore facility because personnel could not hear 
+the fire alarm. 
+o Loudspeakers are not loud enough to be heard over compressors and other 
+machinery noise. 
+o Fire drill records that often did not include facility abandonment, realistic 
+uncontrollable fire scenarios   ; or analysis and critique of each drill. 
+  
+Therefore, the Marine Minerals Administration recommends that operators and their 
+contractors, where appropriate, consider the following: 
+• Review their internal procedures to ensure employees and contractors maintain 
+understanding of, and competency in, production safety practices.   
+• Confirm personnel meet Subpart O plan requirements for  Production Safety System 
+Training certification and that training records document adequate retention of the 
+knowledge and skills needed to perform production safety duties. 
+• Evaluate    Production Safety System Training frequency and ensure it aligns with the 
+three-year  industry standard. Additionally, all Subpart O plans must specify the type, 
+method(s), length, and content of the training and the method(s) used to    verify 
+employee understanding and performance. 
+• Review recent evaluations, such as course audits or assessments, of their    Production 
+Safety System Training providers   . Assess instructor qualifications and training practices. 
+• Ensure contractor training programs include periodic training and verification of 
+production safety knowledge and skills. 
+• Train personnel on the lifesaving equipment used on the Outer Continental Shelf facility, 
+including inflatable life rafts, to  support effective emergency response and control. 
+• Confirm emergency alarms, including fire, man overboard, and hydrogen sulfide alarms 
+are operational, effective, and can be heard throughout the facility. 
+• Review recent fire drills on Outer Continental Shelf facilities and ensure they meet 30 
+CFR 250.1918 (c) and the requirements of the operator’s Safety and Environmental 
+Management Systems program. 
+ 
+
+   
+ 
+CATEGORY: Personnel Safety, Training 
+ 
+- MMA -  
+A Safety Alert is a tool used by the Marine Minerals Administration to inform the offshore oil and 
+gas industry of the circumstances surrounding a potential safety issue. It also contains 
+recommendations that could assist in avoiding potential incidents on the Outer Continental 
+Shelf. 
+As of July 10, 2026, the Department of Interior has reunified the Bureau of Ocean Energy 
+Management and the Bureau of Safety and Environmental Enforcement into the Marine 
+Minerals Administration, which will oversee the responsible development of the nation’s 
+offshore energy and marine mineral resources with an integrated focus on safety, 
+environmental protection and efficient oversight. For more information, visit  
+Transition to the Marine Minerals Administration | U.S. Department of the Interior. 

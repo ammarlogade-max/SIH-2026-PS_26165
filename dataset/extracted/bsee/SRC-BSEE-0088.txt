@@ -1,0 +1,109 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+On 24 April 2021, while a lift boat (L/B) was performing plugging and abandonment work next 
+to a fixed facility, the L/B crane operator notified the contract supervisor that the L/B needed to 
+be raised because of rough seas. After a toolbox talk with all personnel, the crane operator 
+started slacking off a few feet of the L/B crane’s load line because it was attached to a 
+wellhead via 4.1-ton dual slings. A well service operator and a helper stayed on the platform to 
+disconnect chain binders securing the gangway to the platform during the lifting operation. The 
+crane operator then informed the first mate that it was okay to change the hydraulic system 
+over to operate the legs of the L/B
+[1]
+. At this time, the crane operator exited the crane cab and 
+went to help the contract supervisor on deck, leaving no one to monitor the crane’s load line 
+and slings. The L/B rose approximately two feet when it is suspected the slings caught on the 
+wellhead hanger pins and snapped, striking, and injuring the well service operator.    
+ 
+[1]
+ According to the Incident report, the L/B’s crane has no hydraulic pressure during the lifting/lowering 
+operations, which renders the hydraulic controls systems inoperable, preventing any adjustments to the 
+crane’s position or load lines.  
+  
+ 
+Safety Alert No. 429 
+February 25, 2022  
+SAFETY ALERT 
+ 
+ 
+Jacking Up Lift Boat During Crane Operations  
+Causes Injury 
+ 
+
+Therefore, BSEE recommends that operators consider:  
+ 
+• Disconnecting all platform L/B interface connections during L/B jacking 
+operations, including crane load line(s) and gangways. 
+ 
+• Ensuring the connected rigging hardware is free and clear when the crane’s load 
+line is attached to component and before changing elevations. 
+ 
+• Reminding crane operators that they need to remain attentive, in control, and in 
+the crane cab while attached to a load to ensure a safe and successful crane 
+operation.  
+ 
+• Adopting a Standard Operating Procedure for L/B elevation adjustments during 
+operations.  
+ 
+• Developing policy/procedure to require a Job Safety Analysis to be conducted for 
+when a L/B needs to be raised or lowered during well work or construction 
+activities.  
+ 
+• Ensuring all hazards are identified and addressed in JSA before and during the 
+operation, especially L/B and platform/well interconnect and interface hazards.  
+ 
+• Removing the gangway before raising or lowering a L/B.  
+• Ensuring L/B cranes are operating within crane manufacturer’s parameters with 
+all systems functioning properly.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Cranes/Lifting, Personnel Safety  

@@ -1,0 +1,109 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 259 Contact:  Lance Labiche
+ 
+16 January 2008 (504) 736-2433 
+
+Catastrophic Failures in Mooring Systems 
+
+Possibly Put Floating Structures at Risk
+ 
+The U. S. Coast Guard, 8
+th
+ District and the MMS have agreed to issue this joint Safety Alert 
+In two separate incidents, a catastrophic failure occurred in a 
+portion of an anchoring system.  One component failed on a 
+system in the Gulf of Mexico.  The other was found during 
+installation to be defective after a similar component failed 
+overseas. 
+Incident No. 1: A one-ton, 8+ inch-diameter shackle connecting a 
+mooring system to anchoring pilings failed on an overseas floating 
+production facility.  Subsequently, an identical shackle scheduled 
+to be used in a deepwater GOM production facility also failed 
+catastrophically under test loads below specifications.  Operator 
+reviews of the manufacturing and testing procedure and additional 
+material testing indicated that all of 
+the shackles were possibly 
+defective. 
+Because anchor pilings with 
+shackles attached had already been driven, the GOM test failure 
+required new shackles to be manufactured, new pilings installed, 
+and the replacement of portions of the mooring systems that 
+could not be recovered.  Production start-up of the facility has 
+been delayed by at least one year. 
+Incident No. 2: Two sockets in a mooring system for a MODU 
+failed under moderate loading.  Testing of the remaining sockets 
+found that others were also defective and a number of them failed 
+Failed Mooring Socket 
+catastrophically at less than specification loading. 
+Example: Mooring Shackle 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The MMS and the U.S.C.G., 8
+th
+ District, concluded the following: 
+•	 In both cases the manufacturing procedures are thought to have been defective. Heat 
+treating after casting apparently resulted in a metal unable to meet “Charpy” standards for 
+material “toughness.” 
+•	 In both cases, the operator’s and/or manufacturer’s specifications for the items were 
+either out of date or inadequate. 
+•	 In both cases the Operator’s material testing requirements were either not followed, or 
+were not adequate to insure specifications were met. 
+•	 Material handling during installation may have exposed the equipment to potential 
+critical damage. 
+The MMS recommends the following: 
+•	 Operators should review their specifications requirements to insure testing and 
+
+manufacturing produces a product that will meet the usage demands.   
+
+•	 Operators should include sufficient Charpy testing requirements in the specifications to 
+insure the materials and manufacturing process will produce a product of sufficient 
+toughness. 
+•	 Operators should review their requirements for both destructive and non-destructive 
+testing of critical elements.  Operators should insure their test coupons are properly 
+representative. 
+•	 Operators should review their requirements for equipment inspection and handling to 
+insure no damaging techniques are employed in transportation or installation. 
+--MMS--GOMR--
+www.gomr.mms.gov 

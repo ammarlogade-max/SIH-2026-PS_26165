@@ -85,6 +85,7 @@ export default function PrecursorDensityPage() {
           <span className="px-2.5 py-1 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">&ge;35% Critical</span>
           <span className="px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">20-34% Elevated</span>
           <span className="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">&lt;20% Controlled</span>
+          <span className="text-[10px] text-slate-500 italic ml-1">(Configurable demo thresholds)</span>
         </div>
       </div>
 

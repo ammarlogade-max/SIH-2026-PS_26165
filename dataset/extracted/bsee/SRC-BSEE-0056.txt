@@ -1,0 +1,97 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+Adaptation and Modification of Tool Results in Injury 
+A worker was recently 
+injured while attempting 
+to install a hydraulic 
+line on a pipe handling 
+machine during 
+offshore energy 
+operations. The worker 
+determined the 
+combination wrench on 
+hand was too long for 
+this particular use and 
+attempted to alter the 
+tool by placing the 
+wrench into a vice to 
+manually shorten the length by using hacksaw. During the wrench alteration process, 
+the worker cut a gloved hand with the sharp edge of the altered wrench handle, 
+resulting in a laceration requiring sutures. 
+ 
+Upon investigating the incident, the operator’s Incident Investigation Team identified the 
+following causal factors: 
+ 
+• The worker did not pause or stop work to consult with a supervisor when the job 
+scope changed and/or the proper tool was unavailable. The decision to modify the 
+combination wrench was not discussed with the supervisor before modifying the tool.  
+ 
+• The worker did not explore the potential for other avenues and/or options for locating 
+the proper tools (i.e., checking with other work groups). 
+ 
+• A proper wrench that would fit in the tight area was not readily available on the rig 
+floor. 
+• When the worker decided to alter the hand tool, the the worker chose a readily 
+available hand saw versus a more appropriate/potentially safer method, i.e. a 
+bandsaw. 
+ 
+After the incident, the operator and rig manager implemented corrective actions to 
+prevent similar incidents from happening in the future. The actions include: 
+ 
+• Rig    managers will order close radius hand tools. 
+  
+ 
+Safety Alert No. 463 
+May 16, 2023 
+Wrench in vise with hacksaw. 
+Modified wrench. 
+
+ 
+ 
+• Rig managers will conduct a high-level overview of the incident with all 
+crewmembers onboard to emphasize the importance of proper pre-job planning 
+and hazard assessment. 
+ 
+• Rig managers will stress the importance of any lone worker applying the option to 
+ask for assistance when reviewing a hazard identification and mitigation card / 
+compass card. 
+ 
+• Rig managers will set expectations to all crew members that the alteration of 
+Original Equipment Manufaturer (OEM) tools, equipment, etc. is unacceptable 
+and discuss potential consequences. 
+ 
+BSEE Review:  
+The operator’s incident report stated that prior to modifying the hand tool, the worker 
+reviewed a hazard identification and mitigation card / compass card. However, there 
+was no apparent findings that the worker potentially used the compass card to 
+circumvent the requirement of modifying the Job Safety Analysis when the scope of the 
+job changed.   
+Therefore, BSEE recommends that operators and their contractors consider the 
+following (where appropriate): 
+• Reviewing safety alerts   with all relevant employees. 
+ 
+• Reviewing the corrective actions implemented by the operator. 
+ 
+• Ensuring proper tools are available. 
+ 
+• Reviewing all Hazard Analysis policies and procedures to ensure hazard 
+identification and mitigation card / compass card is utilized and understood and 
+used to circumvent the regulatory requirements of 30 CFR 250.1911. 
+– BSEE – 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It   also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Personnel Safety, Hand Injuries, PPE  

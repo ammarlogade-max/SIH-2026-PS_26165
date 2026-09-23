@@ -32,20 +32,53 @@ export default function AuditTrailPage() {
   const [roleFilter, setRoleFilter] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
 
+  const [verificationResult, setVerificationResult] = useState<{
+    verified: boolean;
+    total: number;
+    details: string;
+  } | null>(null);
+  const [verifying, setVerifying] = useState(false);
+
   const fetchLogs = async (showRefresh = false) => {
     if (showRefresh) setRefreshing(true);
     else setLoading(true);
     setError(null);
     try {
-      const res = await fetch("/api/audit?limit=200");
+      const res = await fetch("/api/audit");
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed to load audit trail");
-      setLogs(data.logs || []);
+      setLogs(data.auditLogs || data.logs || []);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error fetching audit logs");
     } finally {
       setLoading(false);
       setRefreshing(false);
+    }
+  };
+
+  const handleVerifyLedger = async () => {
+    setVerifying(true);
+    try {
+      const res = await fetch("/api/audit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "verify_integrity" }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Verification failed");
+      setVerificationResult({
+        verified: data.valid,
+        total: data.totalEntries,
+        details: data.details,
+      });
+    } catch (err) {
+      setVerificationResult({
+        verified: false,
+        total: 0,
+        details: err instanceof Error ? err.message : "Verification error",
+      });
+    } finally {
+      setVerifying(false);
     }
   };
 
@@ -105,6 +138,20 @@ export default function AuditTrailPage() {
 
   const getActionBadge = (action: string) => {
     const act = (action || "").toLowerCase();
+    if (act.includes("recurrence")) {
+      return {
+        label: "Post-Closure Recurrence",
+        icon: AlertTriangle,
+        className: "bg-rose-500/20 text-rose-300 border-rose-500/40",
+      };
+    }
+    if (act.includes("review") || act.includes("override")) {
+      return {
+        label: "HSE Review Override",
+        icon: ShieldCheck,
+        className: "bg-amber-500/20 text-amber-300 border-amber-500/40",
+      };
+    }
     if (act.includes("verif")) {
       return {
         label: "CAPA Verified",
@@ -171,14 +218,22 @@ export default function AuditTrailPage() {
             Regulatory Compliance &amp; Governance
           </div>
           <h1 className="font-display text-2xl font-bold tracking-tight text-slate-100 sm:text-3xl">
-            Immutable Audit Trail
+            Cryptographic Audit Trail
           </h1>
           <p className="mt-1 text-xs text-slate-400">
-            Complete cryptographic event ledger of observations, classification changes, CAPA updates, and HSE sign-offs.
+            Append-only, SHA-256 tamper-evident event ledger of observations, classification changes, CAPA updates, and HSE sign-offs.
           </p>
         </div>
 
         <div className="flex items-center gap-2.5">
+          <button
+            onClick={handleVerifyLedger}
+            disabled={verifying}
+            className="inline-flex h-9 items-center gap-1.5 rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-3 text-xs font-semibold text-emerald-300 transition hover:bg-emerald-500/20 hover:text-emerald-200"
+          >
+            <ShieldCheck className={clsx("h-3.5 w-3.5", verifying && "animate-spin")} />
+            {verifying ? "Verifying SHA-256..." : "Verify Chain Integrity"}
+          </button>
           <button
             onClick={() => fetchLogs(true)}
             disabled={refreshing}
@@ -196,6 +251,50 @@ export default function AuditTrailPage() {
           </button>
         </div>
       </div>
+
+      {/* Cryptographic Ledger Status Banner */}
+      {verificationResult ? (
+        <div
+          className={clsx(
+            "flex items-start gap-3 rounded-2xl border p-4 text-xs",
+            verificationResult.verified
+              ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-200"
+              : "border-rose-500/30 bg-rose-500/10 text-rose-200"
+          )}
+        >
+          {verificationResult.verified ? (
+            <CheckCircle2 className="h-5 w-5 shrink-0 text-emerald-400 mt-0.5" />
+          ) : (
+            <AlertTriangle className="h-5 w-5 shrink-0 text-rose-400 mt-0.5" />
+          )}
+          <div className="flex-1">
+            <div className="font-semibold text-sm">
+              {verificationResult.verified
+                ? "Cryptographic SHA-256 Chain Verification PASSED"
+                : "Tampering or Integrity Warning Detected"}
+            </div>
+            <p className="mt-0.5 text-xs opacity-90">{verificationResult.details}</p>
+          </div>
+          <button
+            onClick={() => setVerificationResult(null)}
+            className="text-slate-400 hover:text-slate-200"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+      ) : (
+        <div className="flex items-center justify-between rounded-2xl border border-surface-border bg-surface-card/60 px-4 py-3 text-xs text-slate-400">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="h-4 w-4 text-emerald-400" />
+            <span>
+              Tamper-evident audit ledger: all records chained sequentially via cryptographic SHA-256 hashes.
+            </span>
+          </div>
+          <span className="font-mono text-[11px] text-slate-500">
+            Genesis: 0000000000000000...
+          </span>
+        </div>
+      )}
 
       {/* Filter Bar */}
       <div className="flex flex-col gap-3 rounded-2xl border border-surface-border bg-surface-card/85 p-4 sm:flex-row sm:items-center sm:justify-between">
@@ -230,6 +329,8 @@ export default function AuditTrailPage() {
             <option value="capa_created">CAPA Created</option>
             <option value="capa_updated">CAPA Updated</option>
             <option value="observation_ingested">Observation Ingested</option>
+            <option value="review">HSE Review Override</option>
+            <option value="recurrence">Post-Closure Recurrence</option>
             <option value="pattern_flagged">Pattern Flagged</option>
             <option value="system_reset">System Reset</option>
           </select>
@@ -267,9 +368,11 @@ export default function AuditTrailPage() {
             <table className="w-full text-left text-xs">
               <thead className="border-b border-surface-border bg-surface/60 text-[10px] font-bold uppercase tracking-wider text-slate-400">
                 <tr>
-                  <th className="py-3.5 pl-5 pr-3">Timestamp (UTC)</th>
+                  <th className="py-3.5 pl-4 pr-2">#Seq</th>
+                  <th className="py-3.5 px-3">Timestamp (UTC)</th>
                   <th className="px-3 py-3.5">Event Action</th>
                   <th className="px-3 py-3.5">Actor &amp; Role</th>
+                  <th className="px-3 py-3.5">SHA-256 Block Hash</th>
                   <th className="px-3 py-3.5">Target Entity</th>
                   <th className="py-3.5 pl-3 pr-5">Event Details &amp; Payload</th>
                 </tr>
@@ -281,8 +384,13 @@ export default function AuditTrailPage() {
 
                   return (
                     <tr key={log.id} className="hover:bg-surface-hover/50 transition-colors">
+                      {/* Seq */}
+                      <td className="whitespace-nowrap py-3.5 pl-4 pr-2 font-mono text-[11px] text-amber-400/90 font-semibold">
+                        {log.sequence_number ? `#${log.sequence_number}` : "—"}
+                      </td>
+
                       {/* Timestamp */}
-                      <td className="whitespace-nowrap py-3.5 pl-5 pr-3 font-mono text-[11px] text-slate-400">
+                      <td className="whitespace-nowrap py-3.5 px-3 font-mono text-[11px] text-slate-400">
                         {new Date(log.timestamp).toLocaleString()}
                       </td>
 
@@ -305,6 +413,22 @@ export default function AuditTrailPage() {
                           <span className="font-semibold text-slate-200">{log.actor_name}</span>
                           <span className="text-[10px] text-slate-500">{log.actor_role}</span>
                         </div>
+                      </td>
+
+                      {/* Cryptographic Hash */}
+                      <td className="whitespace-nowrap px-3 py-3.5">
+                        {log.current_hash ? (
+                          <div className="flex flex-col font-mono text-[10px]">
+                            <span className="text-emerald-400 font-medium">
+                              curr: {log.current_hash.slice(0, 10)}...
+                            </span>
+                            <span className="text-slate-500">
+                              prev: {log.previous_hash ? log.previous_hash.slice(0, 10) + "..." : "genesis"}
+                            </span>
+                          </div>
+                        ) : (
+                          <span className="text-slate-500 font-mono text-[10px]">legacy</span>
+                        )}
                       </td>
 
                       {/* Target */}

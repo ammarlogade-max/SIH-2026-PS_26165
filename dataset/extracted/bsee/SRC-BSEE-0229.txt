@@ -1,0 +1,62 @@
+
+
+ 
+ 
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BOEM 
+U.S. Department of the Interior 
+Bureau of Ocean Energy Management, 
+Regulation, and  Enforcement 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 287 	Contact:  Glynn T. Breaux 
+06 June 2010 	(504) 736-2560 
+Hot Bolting Fire 
+Hot bolting, the practice of removing and replacing or freeing and re-tightening bolts on live 
+piping and equipment, was being performed on a contact tower’s inlet valve flange when the 
+operator inadvertently struck and broke a grease fitting with a hammer.  The fitting released high 
+pressure gas into the direction of the line heater located approximately 10 feet from the contact 
+tower’s inlet valve.  The gas ignited and was eventually extinguished using dry chemical.  No 
+injuries were associated with the incident. 
+A BOEM (formerly MMS) investigation into this incident revealed that although a task-specific 
+Job Safety Analysis (JSA) was conducted prior to initiating the hot bolting project, the following 
+critical hazards and mitigating measures were not identified:   
+The fired component of the line heater was not shut-in prior to initiating the project.      
+The close proximity of the grease fitting was not identified as being a potential hazard.   
+Although hot bolting is a common practice in the Gulf of Mexico, each case should be evaluated 
+for feasibility.  In a situation where there is a heat source in the immediate area with the 
+possibility of flammable contents being released, hot bolting is not advised.  A safer option 
+would be to shut-in the effected equipment and bleed off all pressure before commencing the 
+bolting operation.  Should hot bolting be performed, BOEM recommends the following: 
+A JSA should be conducted to identify all potential hazards, the potential consequences, 
+with necessary mitigations and/or precautions.  Specific consideration should be given to 
+potential sources of release and ignition points. 
+
+The JSA process should be used to review site-specific detailed job steps and uncover 
+hazards associated with the specific job undertaken. 
+Refer to Safety Alert #276 for 
+additional information regarding JSAs. 
+Operators should use only non-sparking tools when conducting hot bolting operations. 
+Contingency plans (including communication and emergency equipment) should be in 
+place prior to the start of the job. 
+--BOEM--GOMR--

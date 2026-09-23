@@ -1,0 +1,64 @@
+
+
+ 
+ 
+Safety Alert No. 367                          Contact: Stephen Harris 
+October 2, 2019                       Phone: (504) 736-3249 
+ 
+ 
+ 
+Saturated Glycol Handling Leads to Fire 
+ 
+ 
+Fire damage was caused when an unattended glycol reboiler was starting up. The glycol 
+and hydrogen condensate ignited. 
+ 
+In January 2019, a fire occurred on a production platform resulting in damage to a glycol 
+reboiler unit and compressor building.  
+ 
+Prior to the fire, and after an extended shut-in,    platform personnel began the platform start-
+up process. The field foreman ignited the glycol reboiler and set the temperature to 200º F. 
+The foreman continued the start up by increasing the temperature to 250º F, but did not 
+initiate circulating the reboiler fluid contents. The field foreman left the glycol reboiler 
+unattended to  handle a compressor shutdown and other duties as the temperature 
+increased. Less than 90 minutes later, a mechanic observed a large flame on the side of 
+the platform where the glycol reboiler unit is located. 
+ 
+BSEE’s investigation revealed that the operator’s start-up procedure did not provide specifics 
+on the rate of temperature increase when starting the reboiler after an extended shut-in, nor 
+did the procedure note that the reboiler should not be left unattended during start-up.  
+ 
+ 
+SAFETY ALERT 
+ 
+ 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+The fluid in the glycol reboiler had approximately 21% water content at the time of startup, 
+possibly due to the extended shut-in. During normal operations, the typical water content of 
+the reboiler should be less than 6%.  
+ 
+BSEE determined the cause of the fire to be high water content combined with a rapid 
+increase in temperature, which flooded the still column; the flooded still column expelled 
+glycol and hydrocarbon condensate onto the reboiler stack, where it ignited.  
+ 
+Therefore, BSEE recommends that operators consider the following: 
+ 
+•    Provide advanced training to personnel who work with glycol units to address 
+handling saturated glycol safely; 
+ 
+•    Ensure that procedures specify that glycol system start-up should be a manned 
+operation; 
+ 
+•    Ensure that procedures specify circulation time before increasing boiler temperature; 
+and 
+ 
+•    Review reboiler stack installations and consider adding insulation to mitigate the 
+stack as an ignition source. 
+ 
+For more information on this incident, see the incident report here
+ or at the following url: 
+https://on.doi.gov/2nPJGr7 
+ 

@@ -1,0 +1,63 @@
+
+
+ 
+Safety Alert No. 380                               Contact: Jason Mathews 
+March 31, 2020                                       Phone: (504) 731-1496 
+ 
+ 
+ Subsea Jumper Failure Leads to Leak
+  
+ 
+                                                              
+In  October  2017,  a  subsea  leak  that  went  undetected  for  over  24  hours  resulted  in  an 
+estimated  16,000  barrels  of  oil  released into  the  Gulf  of  Mexico.  BSEE  investigated  the  
+incident to determine the causes and prevent future occurrences.  
+ 
+ 
+A BSEE investigation panel recently concluded that the leak resulted from a failed jumper 
+that connected the wellhead to the Pipeline End Termination (PLET). This failure resulted 
+from internal corrosion within the jumper and movement of the PLET and pipeline, which 
+added mechanical stress to the jumper.  
+The panel also found that while a Pressure Safety Low was installed, it was set below 
+hydrostatic pressure for the flowline operated in this range; therefore, the operator did not 
+have any sensors that would trigger an alarm due to a suspected leak. Lack of training 
+was also cited because the operator relied on the Control Room Operators’ experience 
+and they were not trained to shut in wells for unexplained pressure fluctuations or 
+metering discrepancies.  
+  
+SAFETY ALERT 
+ 
+ 
+Crack downstream of a multi-phase flow meter flange 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+Therefore, BSEE recommends that operators and contractors consider the following: 
+ 
+•    Review BSEE Panel Report 2019-002
+; 
+• Incorporate subsea leak detection into the Safety and Environmental Management 
+System (SEMS) with increased focus on training, mechanical integrity, operating 
+procedures, and pre-startup review;  
+• Provide training to Control Room Operators to increase awareness of the 
+possibility of flowline integrity loss to a higher consideration when undergoing 
+startup operations;  
+• Consider improving subsea leak detection methods by employing conditional rate 
+of change, mass in mass out, or other advanced monitoring technologies;  
+• Evaluate and enhance pressure trend analysis for leak detection where possible; 
+• Assess designs of applicable components for their tolerance under increased loads 
+due to thermal expansion or other movement; 
+• Review the use and placement of sleepers or other components that mitigate 
+pipeline buckling; 
+• Evaluate the construction of flowline components to ensure that materials have 
+adequate corrosion mitigation properties; 
+• Consider the use of different surveying methods such as Light Detection and 
+Ranging (LIDAR) to confirm that pipeline systems remain within their design 
+tolerances throughout their service life; and, 
+• As an industry, consider revising API Recommended Practice 17V
+ to include 
+subsea leak detection. 
+ 
+--BSEE-- 

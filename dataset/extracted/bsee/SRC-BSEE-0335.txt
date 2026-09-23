@@ -1,0 +1,42 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 184
+November 19, 1999
+Contact: Frank Pausina
+504-736-2560
+Fire with Fatality and Injuries
+An operator, in attempting to return to production a well that had been automaticallyshut in by an upset on
+another platform, opened the well’s manual wing valve. The operator was unaware that the valve was opened
+against a closed boarding shutdown valve on another platform. This caused the pressure in a flowline segment
+on the platform to increase to a value that exceeded the segment’s working pressure. As a result, a flow safety
+valve and a pig launcher located in the flowline segment failed, allowing gas, whichwas later ignited by an
+unknown source, to escape. In attempting to escape the resultant fire, one operator jumped from a height of 52
+feet and a pilot and another operator jumped from a height of 72 feet into the Gulf.One operator and the pilot
+received various injuries, while the other operator was unable to be resuscitated after his retrieval from the Gulf.
+Although written procedures existed for other types of operations for which unchanging specific steps were
+required, there existed no written procedures for those operations, such as returninga well to production, for
+which the steps to be followed could and/or must vary with location.
+Therefore, from this information and information contained in the MMS report on the subject accident, the
+following are recommended for operators:
+1. Analyze all potentially dangerous operations for which specific procedural guidelines have not
+been included in a safety/procedural document.
+2. Formulate a set of required procedures for those operations and include such in a
+safety/procedural document.
+3. For an operation, such as bringing a well back on production, for which the procedural steps do
+vary by well or location,
+a. Formulate a set of procedures that address basic safety concerns that are
+independent of well characteristics and/or location, such as observing pressure
+gauges and being aware of flowline working pressures and valve status, and include
+such in a safety/procedural document, and/or
+b. Formulate a complete set of procedures for each well and/or location and include
+such in a safety/procedural document.
+4. Refer to API Recommended Practice 75, Second Edition, July 1998, in the implementation of
+the above recommendations.
+For details of the accident, see OCS Report MMS 99-0067. Copies of the report may beobtained from the
+MMS Public Information Office, located at 1201 Elmwood Park Boulevard, New Orleans, Louisiana 70123
+(1-800-200-GULF or local 504-736-2519).
+—GOMR—MMS—
+Visit our Safety Information Website
+Safety Alert No. 184http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_184...
+1 of 12/21/2012 4:17 PM

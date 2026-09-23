@@ -1,0 +1,104 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: 800-200-4853 
+  
+   
+ 
+ 
+ 
+ 
+Improper Use and Application of High-Pressure Hoses  
+Can Cause Injuries  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+During a recent offshore inspection, a BSEE inspector observed operator personnel installing a 
+100-foot high-pressure hose, with a Maximum Working Pressure (MWP) of 5000 psi, to test 
+pressure safety valves on pipeline pumps. The hose used was designed for hydraulic fluid and 
+not suitable for high-pressure nitrogen; when nitrogen gas at 2500 psi was injected into the 
+hydraulic hose, the hose blistered, allowing nitrogen gas to leak.  
+ 
+BSEE recommends operators and their contractors, where appropriate, consider: 
+• Selecting hoses based on size, temperature, application, material to be conveyed, 
+pressure, ends or couplings, and delivery. 
+ 
+• Sizing the inside diameter (I.D.) and outside diameter (O.D.) appropriately to minimize 
+pressure loss and reduce heat generation.  
+ 
+• Choosing the appropriate hose size to match the new hose I.D. and O.D. with the 
+layline (information listed on the side of the hose) or referencing the original equipment 
+manufacturer (OEM) for specifications of the equipment requiring the hose.  
+ 
+• Ensuring the operating temperature of the hose is similar in temperature to the fluid and 
+ambient temperatures. Both high and low temperatures can have a significant effect on 
+the efficiency, performance, and safety of the hose. Also, check for hot surfaces or hot 
+exhaust in the area where the hose will be installed and consider rerouting the hose if a 
+heat shield cannot be installed.  
+  
+ 
+Safety Alert No. 465 
+June 29, 2023 
+Incompatible hydraulic hose blistered during use. 
+Hose layline with application information. 
+
+ 
+ 
+ 
+• Reviewing the safety data sheet (SDS) for the proper fluid type to be conveyed.  
+ 
+• Checking for compatibility between the fluid and the hose materials, along with 
+connections, couplings, and O-rings.  
+ 
+• Following manufacturer recommendations for hose inspection and replacement 
+intervals. Frequent fluctuations in pressure and poor storage conditions may reduce 
+hose life; consider these variations when determining replacement intervals for 
+preventative maintenance programs. 
+ 
+• Immediately stopping usage or replacing hoses when they become damaged, cracked, 
+cut, abraded, blistered, soft, kinked, crushed, flattened, or twisted.  
+ 
+• Always properly marking discontinued service hoses for disposal and storing them 
+separately from new service hoses.  
+ 
+• Ensuring work permits and job safety analyses address the risks involved in working 
+closely with pressurized hoses.  
+ 
+• Notifying personnel of the hazards of working around pressurized hoses and installing 
+warnings and barriers.  
+ 
+• Reviewing BSEE Safety Alert 442 for additional recommendations concerning personal 
+protective equipment (PPE), depressurizing lines, use of whip checks, valve positioning, 
+and use of Stop Work Authority around hoses.  
+ 
+• Reviewing BSEE District Investigation 05-19-2022 for recommendations concerning 
+failures in the general work permit and hazard identification processes, insufficient hose 
+inspection and maintenance programs, and insufficient communication of hazards 
+involving hoses.  
+ 
+– BSEE – 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Personnel Safety, Hand Injuries, PPE  

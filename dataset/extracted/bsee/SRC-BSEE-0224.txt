@@ -1,0 +1,58 @@
+
+
+BOEMRE 
+ 
+ 
+U.S. Department of the Interior 
+Bureau of Ocean Energy Management, 
+Regulation and Enforcement 
+Gulf of Mexico OCS Region 
+Safety
+Alert 
+Safety Alert No. 292 
+22 February 2011 
+Contact:  Glynn T. Breaux
+(504) 736-2560
+ 
+ 
+Synthetic Base Mud (SBM) Inadvertently Discharged Overboard 
+During mud removal operations to clean out the active mud pits in preparation for upcoming completion 
+operations, the Driller noticed an abnormal fluid loss and shut down operations.  It was discovered that 98 
+bbl of SBM was inadvertently discharged overboard into Gulf waters.  All valves in the low pressure 
+system were then shut-in to stop the unintended overboard discharge. 
+ 
+A BOEMRE investigation revealed the following: 
+ 
+ The transfer line had been added subsequent to initial rig construction, but the associated mud 
+system schematic had not been revised to reflect this modification.  Certain circulatory valves 
+were also improperly labeled and identified. 
+ The drilling crew was unaware that the mud pit return line was aligned into the open overboard 
+dump line from the reserve pits to the active pits. 
+ Drilling supervisory personnel did not assign anyone to trace the mud system lines to ensure that 
+the proper mud cleaning flow path existed prior to initiating operations. 
+ Although a Job Safety Analysis (JSA) existed, the JSA was generic in format and did not cover 
+personnel duties and responsibilities during the pit cleaning operations. 
+ No Lock-Out/Tag-Out (LOTO) policy existed for the mud handling system. 
+ 
+Therefore, the BOEMRE recommends Lessees and its contractors:   
+ 
+ Conduct a piping verification audit and labeling of the rig’s mud system to ensure the mud system 
+schematic is accurate.    
+ Ensure that the pit cleaning JSA covers all aspects of the operation (including tracing the mud 
+system lines/valves to ensure the proper procedures are followed), while including duties and 
+responsibilities of the personnel involved. 
+ Consider the need for a LOTO policy covering overboard specific mud system components; e.g., 
+shunt valve, reserve pit and transfer line valves, etc., while reviewing the need for rig-based mud 
+system and pit cleaning operational training. 
+ Review Safety Alert No. 224 (a 165 bbl SBM dump valve release) that also discussed the need to 
+correct plumbing and schematics. 
+ 
+--BOEMRE--GOMR-- 
+www.gomr.boemre.gov 
+ 
+ 
+            
+A Safety Alert is a tool used by BOEMRE to inform the offshore oil and 
+gas industry of the circumstances surrounding an accident or a near miss.  It 
+also contains recommendations that should help prevent the recurrence of 
+such an incident on the Outer Continental Shelf. 

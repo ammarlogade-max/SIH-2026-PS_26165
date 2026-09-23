@@ -1,0 +1,95 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+  
+ 
+ 
+BOEMRE 
+U.S. Department of the Interior 
+Bureau of Ocean Energy Management, 
+Regulation and Enforcement 
+Gulf of Mexico OCS Region 
+Safety 
+Alert 
+Safety Alert 295 Contact:  Glynn T. Breaux 
+6 April 2011 (504) 736-2560 
+Compressor Fire Resulting from Separated Fuel Line Coupling 
+Recently a compressor fire occurred on a Clark VRA20 compressor, when the fuel gas line feeding the #5 
+L/B cylinder came apart, allowing the gas to ignite.  The operators immediately activated the platform’s 
+ESD system and shut-in the platform.  A 30-pound handheld fire extinguisher was used to extinguish the 
+fire.  Damage consisted of burned compressor spark plug wires and four feet of burned compressor 
+building wall insulation.   
+A BOEMRE investigation revealed the following: 
+The intake fuel valve may have stuck in the open position allowing hot exhaust gas to mix with 
+the fresh fuel. 
+The fuel line coupling separated at the union due to excessive heat and vibration, resulting in 
+ignition of the fuel line contents. 
+The fuel line consisted of hard piping in lieu of a flexible steel hose. 
+The intake fuel line was not equipped with a high temperature shut-down for each cylinder. 
+Fuel Line Coupling 
+Separated at the Union 
+
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ www.gomr.boemre.gov 
+ 
+ 
+             
+ 
+ 
+Therefore, the BOEMRE recommends Lessees and its contractors: 
+Consider designing piping such that induced heat and vibrations are damped out at the 
+source and not transmitted through the piping system. 
+Perform periodic maintenance inspections of piping systems for identifying and possibly 
+eliminating piping vibrations that could result in piping and coupling separation. 
+Consider replacing hard piping with a flexible hose to account for vibrations as 
+
+appropriate. 
+
+Consider installing a fuel valve temperature monitoring system that will shut down the 
+compressor if the fuel valve’s temperature reaches a designated temperature. 
+Review Safety Alert No. 003 (vibration induced thread cracks of glycol return line) that 
+also discusses the need to account for vibrations in piping design, performing periodic 
+maintenance inspections of piping systems and eliminating piping vibrations when 
+possible. 
+--BOEMRE--GOMR--
+A Safety Alert is a tool used by BOEMRE to inform the offshore oil and 
+gas industry of the circumstances surrounding an accident or a near miss.  It 
+also contains recommendations that should help prevent the recurrence of 
+such an incident on the Outer Continental Shelf. 

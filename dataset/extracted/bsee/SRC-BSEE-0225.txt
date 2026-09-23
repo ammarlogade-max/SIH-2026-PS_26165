@@ -1,0 +1,55 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+             
+ 
+ 
+BOEMRE 
+U.S. Department of the Interior 
+Bureau of Ocean Energy Management, 
+Regulation and Enforcement 
+Gulf of Mexico OCS Region 
+Safety 
+Alert 
+Safety Alert No. 291 Contact:  Glynn T. Breaux 
+10 January 2011 (504) 736-2560 
+Cutting into Process Piping Results in Pollution Event 
+Recently a pollution incident occurred when a contract construction worker, who was replacing 
+corroded process piping on a production platform, cut into a 1-inch dump line which contained 
+liquid hydrocarbons. The line was located over the water and the construction worker was using 
+an electric band saw to make the cut.  Although no injury or fire was associated with this 
+incident, the cut released liquid hydrocarbons onto the worker and into gulf waters.   
+The BOEMRE investigation revealed the following:    
+The Operator failed to recognize the hazard that the line contained hydrocarbons; and the 
+drain valve, located approximately 45 feet from the cut, where the liquids could have 
+been drained thus rendering the line free of hydrocarbons.     
+The Operator failed to follow the company Lockout/Tagout procedures that require the 
+use of blind flanges and skillets for isolating process piping prior to beginning work on 
+the piping. 
+The construction worker was working at an elevated height over water and was wearing a 
+fall arrest apparatus; however, the Operator and contractor had no measures or 
+procedures in place to rescue injured persons working at elevated heights over water. 
+BOEMRE has reviewed this incident and compared it with other incidents and has determined 
+that Safety Alerts #188 and #276 are applicable in this case.  Therefore, BOEMRE recommends 
+that operators review these safety alerts prior to conducting similar operations in order to prevent 
+potential injury/fatalities and pollution incidents.    
+--BOEMRE--GOMR--
+www.gomr.boemre.gov 
+A Safety Alert is a tool used by BOEMRE to inform the offshore oil and 
+gas industry of the circumstances surrounding an accident or a near miss.  It 
+also contains recommendations that should help prevent the recurrence of 
+such an incident on the Outer Continental Shelf. 

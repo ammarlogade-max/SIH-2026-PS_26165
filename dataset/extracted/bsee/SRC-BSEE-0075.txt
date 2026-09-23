@@ -1,0 +1,100 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+Safety Alert No. 442  
+June 1, 2022 
+ 
+ 
+ 
+Unsecured Pressurized Hoses Result in Hand Injuries 
+ 
+ 
+ 
+ 
+In 2022, BSEE observed two hand injuries in the Gulf of Mexico from pressurized hoses 
+during coil tubing operations. In both cases, the injured parties were not wearing proper 
+impact gloves to help reduce the severity of a hand injury. Moreover, in neither incident 
+was the appropriate safety device/equipment installed to keep the pressurized hose 
+secured correctly in the event of a mechanical failure. 
+ 
+Incident 1: A flexi coil hose was filled with 5.5 bbls of saltwater during a pressure test 
+and tested to 10,000 psi for 10 minutes. The pressure was bled to 6,000 psi through a 
+needle valve at the pump’s discharge following the successful test. Once the pressure 
+was bled to 6,000 psi, the contractor began releasing pressure from a ball valve on the 
+  
+ 
+SAFETY ALERT 
+ 
+ 
+Incident 2: Failed Hose Connection on Bottle Rack. 
+Incident 1: The spot where the contractor’s 
+right thumb was pinched between the ball 
+valve and the horse head.  
+
+upstream end of the flexi coil hose. While doing so, the flexi coil hose backlashed and 
+pulled the valve from the contractor’s hand, causing the ball valve to contact the coil reel 
+of the unit. The ball valve came apart when it hit the unit, and the handle contacted his 
+right thumb, causing a laceration. The injured contractor stated he was wearing latex 
+gloves at the time of the incident. Right before opening the valve handle, he had been 
+handling hydraulic oil. 
+ 
+Incident 2: Crewmembers were in the process of rigging up three nitrogen bottle 
+racks to blowdown and purge the reel during rigging down operations. The job safety 
+analysis (JSA) did not address the procedure for blowing down the reel dry and other 
+associated hazards. After a successful connection to the reel, the injured crewmember 
+opened the three nitrogen bottle racks to pressurize the line. He then instructed another 
+crew member to open the valve at the reel to begin purging the reel. The crewmember 
+partially opened the reel valve, equalizing the pressure across the valve, then opened 
+the reel valve fully. After opening the reel valve, the nitrogen hose connecting the 
+second bottle rack failed at the brass fitting, sending the pressurized hose whipping 
+around. The injured employee was struck in the hand, resulting in two broken fingers 
+and multiple lacerations. The hose then struck a second employee in the arm, causing 
+bruising and swelling of the forearm. A crewmember then closed the reel valve to de-
+energize the nitrogen hose to remove the hazard. The injured crew member was not 
+wearing impact gloves at the time of the incident.  
+ 
+ 
+Therefore, BSEE recommends that operators and contractors consider:  
+ 
+• Emphasizing the use of properly fitting gloves (e.g., impact, chemical, or a dual glove) 
+in the JSA to reduce or eliminate the severity of sustained hand injuries.  
+• Establishing a policy/procedure to require employees to depress the line entirely or 
+depressurize to a much lower pressure before an employee manipulates valves under 
+pressure to avoid situations where a valve doesn’t cut out or is forced open when 
+under stress. 
+• Ensuring that during pressure testing, hoses are secured to prevent them from 
+moving. Avoid stressing small threaded connections by properly supporting hoses and 
+tubing. 
+• Using a whip check across a pressurized hose connection to mitigate uncontrolled 
+movement in the event of connection failure. 
+• Ensuring work involving hoses, piping (a.k.a. chiksan), or lines under pressure should  
+either have whip checks installed and tied to the deck or a block of wood connected to 
+the deck to keep minimal movement when under pressure. 
+ 
+• Verifying that all valves are in the correct position before pressurizing equipment. 
+
+• Reviewing MSDS/SDS and the manufacturer’s recommendations to determine the 
+correct PPE before handling chemicals. The materials used in some protective gloves 
+may provide excellent protection against specific chemicals but may be ineffective 
+against others 
+• Reviewing the importance of discussing every job task and associated hazards during 
+the creation of the JSA. 
+• Encouraging personnel to use Stop Work Authority when equipment is unsafe or 
+they discover hazards not covered in the JSA. 
+• Maintaining an inventory of spare PPE for personnel who arrive at your facility with 
+missing or inadequate PPE. 
+– BSEE – 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Hand Injuries/PPE  

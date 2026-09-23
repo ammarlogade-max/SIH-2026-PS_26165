@@ -1,0 +1,128 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+BSEE Issues Recommendations for Safely Approaching, 
+Entering and Exiting a   Helicopter on Offshore Helidecks 
+ 
+  
+A recent incident occurring on an offshore facility’s helideck during a routine crew 
+change brought to light critical safety concerns regarding safe procedures for 
+approaching, entering, and exiting helicopters. The management of helideck crews and 
+passengers is a safety-critical operation that could lead to severe injuries or fatalities if 
+not executed correctly. 
+ 
+The incident resulted from a combination of procedural lapses and behavioral failures 
+that had the potential for catastrophic consequences. In this alarming near-miss event, 
+a helicopter was stationed on the facility’s helideck and a crew member approached the 
+aircraft from the rear, entering the rotor arc area before the rotor blades had come to a 
+complete stop. This unsafe action posed a significant threat to the safety of all 
+personnel involved. A n offshore helideck assistant repeated the unsafe behavior by 
+approaching the helicopter from the rear, entering the vicinity of the tail rotor, and 
+positioning themselves within the main rotor’s danger zone immediately after the 
+helicopter had landed on the facility’s helideck. These incidents occurred while the 
+  
+ 
+Safety Alert No. 474 
+Nov.9, 2023 
+Figure 1: Offshore facility with helideck  
+Figure 2: Helicopter Safe Zones (Not aircraft specific)
+ 
+
+ 
+ 
+helicopter’s rotors were still in motion and before the pilot had signaled clearance for 
+personnel to approach. 
+ 
+Upon recognizing the incursion, the helicopter’s air crew took immediate action by 
+alerting the pilot, who was already in the process of engaging the rotor brakes.  
+Subsequently, the air crew invoked “Stop Work Authority”
+1
+ and took proactive steps to 
+ensure the helideck crew fully understood the correct procedure for entering and exiting 
+the helideck and safely approaching or departing from helicopters. 
+ 
+The   incident underscores the importance of adhering to established safety protocols 
+during helicopter operations on offshore facilities. Please refer to the recommendations 
+and references provided below for comprehensive guidance on ensuring the safety of 
+all personnel involved in offshore helicopter operations. (Reference: U.S. Department of 
+the Interior Safety Communique (SAFECOM) 23-0234, 
+https://www.safecom.gov/safecom/23-0234
+). 
+ 
+Therefore, BSEE recommends that operators and their contractors, where 
+appropriate, consider the following:     
+ 
+• Not entering the helideck until the helicopter blades have completely 
+stopped, the anti-collision lights have been turned off, and/or a 
+"thumbs-up" signal has been received by the pilot. 
+ 
+• Receiving clear confirmation from the pilot, either through hand signals 
+or radio communications, prior to approaching the helicopter or 
+installing handrails (if the facility is so equipped). 
+  
+• Ensuring helideck crew members use the designated safe entry zones 
+corresponding to the specific helicopter type during crew access and 
+egress. These zones are established for safety reasons, considering 
+the unique characteristics of each aircraft. 
+  
+• Ensuring personnel are familiar with and understand helicopter loading 
+and unloading policies and procedures to prevent incidents from 
+occurring on the helideck. 
+ 
+1
+ Stop work authority (SWA) is a Bureau of Safety and Environmental Enforcement (BSEE) program (30 
+CFR 250.1930) that gives workers and contractors the authority and responsibility to stop work if they 
+observe unsafe conditions or behaviors on the jobsite. 
+ 
+
+ 
+ 
+• Ensuring safety critical operations are well planned and proper controls 
+are in place to ensure flawless execution of the plan. 
+ 
+• Reviewing the policy guidelines in the company Health, Safety and 
+Environment (HSE) manual and including area specific regulatory 
+requirements and recommended practices. 
+ 
+• Critiquing operations for signs of weakness or noncompliance, and if 
+any are identified, implementing specific actions to correct them. 
+ 
+• Not leaving safety to chance by ensuring the development and 
+implementation of a facility specific helicopter operations procedure.   
+ 
+ 
+Additionally, BSEE reminds industry of the following information and aids to 
+minimize risks to passengers, helideck crews, and others involved in offshore 
+helideck operations: 
+ 
+• International Association of Drilling Contractors (IADC) Safety Alert 
+2005-26 Safe Helicopter Operations. 
+• HSAC RP 165 Air Operator Guidelines for Offshore Helicopter 
+Operations – 1st Edition. See section15. Passenger Control.  
+• HSAC RP 1988-1 Passenger Management on and About Heliport 
+Facilities. 
+• Video: Helideck Management (From BP per OPITO Helideck 
+Operations Training Standards). 
+• Video: Offshore Helideck Operations example of pilot signal. 
+• Recommended training: OPITO Helicopter Operations Initial Training 
+(HOIT) (7040). This course is designed for offshore personnel who are 
+to be appointed to the role of an Offshore Helicopter Landing Officer 
+(HLO) and/or Offshore Helideck Assistant (HDA). 
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a    potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Component Failure, Pipe Handling, Well Operations, Structural, Fire 

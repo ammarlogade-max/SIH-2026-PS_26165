@@ -1,0 +1,106 @@
+
+
+ 
+                               
+                                           
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     
+   
+  
+  
+ 
+    
+                            
+   
+SAFETYALERT 
+Safety Alert No. 410      Contact: Tony Richardson 
+February 8, 2021    Phone: (571)-353-4122 
+ Damaged Electric Cord Results in Arc Flash  
+A worker observed an arc flash while performing construction activities that required 
+additional lighting in the work area. Construction personnel ran an extension cord from a 
+welding machine to portable lights that were needed in a different location, but when the 
+machine was turned on, the electrical welding lead cable
+1
+ arced and glowed. A nearby 
+worker immediately pulled the lead cable away from a self-retracting lanyard (SRL) 
+cable
+2
+, breaking the SRL cable. No fire occurred and no personnel were injured.   
+Upon immediate investigation, it was discovered that the rubber protective coating on the 
+electrical welding lead cable was worn down by the continuous movement of steel SRL 
+cable rubbing against it, which resulted in exposed welding lead cable wires. When the 
+welding machine was turned on, the steel cable on the SRL made metal-to-metal contact 
+with the welding lead cable wires and triggered the arc flash. This caused damage to both 
+the welding lead cable and SRL cable.  
+A frayed SRL cable that made contact with metal grading. 
+The SRL cable rubbed and wore 
+down the outer coating of the 
+welding lead when the cable 
+moved up and down through a 
+deck penetration hole. 
+When the welding machine was 
+turned on, the exposed lead 
+arced on the SRL cable and 
+broke the cable at the arc point. 
+1 
+Electrical welding lead cable is a specially designed metal rod for use in electric arc-welding machines to power an 
+electrode that conducts a charge. The charge carried by the electrode is needed to produce an electric arc—the heat 
+source—between the electrode and the metals, or other materials, being welded. 
+2 
+A self-retracting lanyard (SRL) is a vertical lifeline that is used as part of a complete fall arrest system. The lifeline, 
+much like the seat and shoulder belt in a car, pulls out and retracts easily. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Therefore, BSEE recommends that operators and contractors consider the following: 
+ Confirm proper separation of electrical energy sources, such as electrical cords and 
+welding leads, from rigging, fall arrest equipment or any other identified equipment 
+on a work site that could cause physical damage; 
+ Ensure that welding leads and SRL cables are separated during hot work activities 
+and avoid putting them through the same deck penetration plate; 
+ Inspect welding leads and SRL cable before use to ensure they are in good working 
+condition; 
+ Ensure safe routing of electrical equipment cords, cables, etc., to prevent abrasion 
+and abnormal wear of their protective sheathes/coatings; 
+ Before work begins, check the final worksite to ensure all safety provisions/systems 
+are in place and all hazards are controlled and risks are reduced to as low as 
+reasonably possible; and,  
+ Ensure all Permit to Work and Job Safety Analysis documents and reviews include 
+inspection and assessment of the electrical hazards prior to the start of a job. 
+--BSEE-- 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+Category: Arc Flash 

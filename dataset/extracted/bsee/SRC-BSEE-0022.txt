@@ -1,0 +1,116 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+ 
+ 
+ 
+Explosion and Fire on Liftboat Injure Workers – BSEE Calls 
+for Enhanced Safety Measures and Emergency Preparedness 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Bureau of Safety and Environmental Enforcement (BSEE) recently investigated an 
+explosion and subsequent fire that occurred on a liftboat during well cleanup and testing 
+operations. Two contract workers suffered second-degree burns. This event 
+underscores critical shortcomings in procedural controls, equipment readiness, and 
+emergency response during offshore oil and gas operations. 
+ 
+The explosion was caused by a gas accumulation on the liftboat deck during the 
+draining of fluids from a test separator into a 500-barrel tank (Figure 1). The night 
+supervisor initiated the draining process, and five minutes later, a surge in the generator 
+engine (Figure 2) triggered the explosion and multiple fires. Two contract workers were 
+injured, suffering burns to their faces, necks, and hands. The liftboat's fire suppression 
+system extinguished the fire within 15 minutes. 
+ 
+However, the evacuation of the injured workers faced logistical delays,  resulting in their 
+arrival at a medical facility nearly five hours after the incident. This delay underscores 
+Safety Alert No. 498 
+April 3, 2025 
+Figure 1. Test separator and 500-barrel tank. 
+Figure 2. Generator.  
+
+ 
+ 
+the importance of having robust personnel evacuation and medical response plans in 
+place. 
+ 
+Contributing Factors 
+An investigation by BSEE identified several procedural and equipment deficiencies:  
+•    No formal procedures existed for draining fluids from separators or preparing the 
+500-barrel tank for testing.  
+• Workers relied on hydrogen sulfide (H
+2
+S)-specific gas detectors, which could not 
+detect explosive gas mixtures. 
+• The generator’s air intake shutoff valve control module failed to function, allowing 
+gas infiltration.  
+• Improperly latched hatches on the tank allowed gas to escape.  
+• Night shift safety meetings lacked oversight by company representatives, reducing 
+communication effectiveness.  
+• Workers reported holding level controllers open until gas blow-by was detected, 
+increasing risk to personnel safety and operations. 
+• Loose hatch bolts on the tank, caused during transport, were not adequately 
+inspected upon arrival.  
+To prevent similar incidents, BSEE recommends that operators and their 
+contractors, where appropriate, consider the following actions: 
+• Establish comprehensive written procedures for all critical operations, including 
+draining fluids from separators and preparing tanks for well tests. Regularly review 
+and update standard operating and safety procedures to align with industry best 
+practices.  
+• Equip workers with multi-gas detectors capable of identifying a wide range of 
+hazardous gases,  not just H
+2
+S. 
+• Install fixed multi-gas detection systems on liftboats and work decks for continuous 
+monitoring. 
+• Conduct a thorough inspection of vessel hatches to ensure a proper seal.  
+• Conduct thorough inspections of tanks, generators, and flame arrestors before and 
+after transport to ensure proper function and secure fittings.  
+• Test the automatic air intake shutoff valve before starting operations, ensuring it 
+functions properly. 
+• Require operator representatives to participate in all safety meetings to enhance 
+communication and adherence to protocols.  
+
+ 
+ 
+• Conduct comprehensive hazard analyses for all operations, particularly gas handling 
+and fluid transfer. Job Safety Analyses should explicitly address potential gas 
+release scenarios. 
+• Include emergency response plans in all safety briefings, with an emphasis on safety 
+and medical evacuation logistics and coordination with emergency services. Review 
+BSEE Safety Alert 469 “BSEE Identifies Medical Evacuation and Emergency 
+Hazards During Risk-Based Inspections.”  
+•    Train workers on gas accumulation hazards, safe operating procedures, and correct 
+use of safety equipment.  
+• Establish contingency plans to ensure access to multiple transport options for rapid 
+emergency medical care. 
+• Establish a process for reviewing incidents and near-misses to continuously identify 
+lessons learned and improve safety practices.  
+• Ensure sufficient, current emergency medical supplies are available for immediate 
+use. 
+ 
+ 
+ 
+                                           
+– BSEE – 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+ 
+Category: Explosion, Fire, Personnel Safety 

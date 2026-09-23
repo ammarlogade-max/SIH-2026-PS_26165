@@ -1,0 +1,65 @@
+
+
+SAFETY ALERT 
+Safety Alert No. 406                                                              Contact: Nicholas Fraiche 
+December 1, 2020                                                                        Phone: (504) 736-7631 
+Labeling, Removing, Storing and Installing Hatch Covers 
+                              View of a deck on a Gulf of Mexico facility that resulted in a fatality. 
+A fatality occurred on a Gulf of Mexico facility when a slickline Operator and slickline 
+Helper mistakenly picked up the wrong well hatch cover. While doing so, the 
+slickline Helper fell through the newly exposed hole and descended approximately 
+90 feet to a lower deck, suffering fatal injuries. 
+The slickline crew recently completed operations on one well and were in the 
+process of rigging up equipment on a second well. While walking to the second well, 
+the two slickline employees initiated a task not covered in the pre-job discussions by 
+attempting to cover the well hatch to the first well. The employees mistakenly picked 
+up the wrong hatch cover from inside the Well Bay Area – one that was already 
+covering a hatch opening. 
+
+2
+A BSEE investigation concluded this incident occurred due to the following probable 
+causes: lack of situational awareness while picking up the hatch cover; no physical 
+barrier installed to prevent the removal of the hatch covers; performing activities 
+outside the scope of work without an effective hazard analysis; and lack of clear 
+labeling to indicate hatch cover to hatch placement. 
+The investigation concluded the contributing causes of the incident were a lack of 
+adequate written job procedures and the well hatch design. Additionally, the BSEE 
+investigation identified a lack of job task focus as a contributing factor. Additional 
+information about this incident can be found here: https://www.bsee.gov/what-we-
+do/incident-investigations/offshore-incident-investigations/panel-investigation-
+reports. 
+BSEE makes the following recommendations to strengthen implementation of 
+existing safety and environmental management systems: 
+· Incorporate a facility-specific detailed procedure for the removal and installation of well 
+hatch covers, as well as for the storage of well hatch covers when removed from the 
+well hatch; 
+· Incorporate a general lifting procedure requirement to maintain a complete visual of 
+walking path when lifting and transporting objects. Incorporate a “Don’t step where you 
+can’t see” requirement; 
+· Incorporate at least one physical barrier for removal of the hatch covers such as a lock-
+out/ tag-out safety program and/ or additional hatch cover weight to prevent 
+maneuverability by personal without mechanical assistance; 
+· Ensure all hatch covers are clearly labeled with the corresponding well identification; 
+o Ensure labels are installed on the deck that correspond to the hatch cover labels; 
+o Maintain consistent terminology for all well hatch locations in documents and 
+diagrams; 
+· Ensure employees receive practical training in the removal and installation of well hatch 
+covers, as well as for the storage of well hatch covers when removed from the well 
+hatch; 
+· When removing or installing a well hatch cover, consider using a crane or other material 
+handling method that limits the potential for personnel to be close to open holes; 
+· Ensure contractor personnel are specifically familiarized to the area where they will 
+work and are aware of any existing or potential open hole hazards that could be 
+created; 
+
+A Safety Alertis a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf.
+Category: Equipment Installations
+3
+· Encourage personnel to stop work and evaluate hazards with all personnel involved in 
+the job safety analysis (JSA) before considering activities outside the scope of work; 
+and, 
+· Incorporate a hatch cover design that allows personnel to clearly identify a hatch cover 
+in a well hatch, as opposed to one laying on the deck. 
+--BSEE-- 

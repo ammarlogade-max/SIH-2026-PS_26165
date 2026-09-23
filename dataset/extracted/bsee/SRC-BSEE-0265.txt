@@ -1,0 +1,81 @@
+
+
+ 
+      
+            
+                      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Safety Alert No. 250 
+June 12, 2007 
+Contact:  David Dykes 
+(504) 736-3249 
+Plug and Abandonment Operations Lead to Fatality and Brief Loss of Well Control 
+Recently, an
+ accident that resulted in one fatality and a brief loss of well control occurred during 
+a rig-less plug and abandonment operation.  The tubing was being stripped out of the hole by 
+using a hydraulic rig (casing jacks) when the tubing became stuck.  An attempt was made by the 
+operator representative to pull the tubing when the tubing parted.  The parted tubing was forced 
+upward, causing the top slips to be ejected from the top bowl of the casing jacks.  The ejected 
+slips fatally struck the operator representative as he attempted to evacuate the immediate area.  
+The well was then secured by closing the BOP’s from the accumulator control unit.   
+It was concluded, in part, in an MMS investigation of the incident that: 
+(1) the operator representative exceeded the yield strength of the tubing when he pulled 
+approximately 135,000 pounds on the tubing, causing it to part; 
+(2) the operator representative did not calculate enough of a safety factor when he 
+
+determined maximum amount of pull for the grade of pipe; 
+
+(3) the lack of appropriate equipment (snubbing unit) and appropriately trained personnel 
+contributed to this incident; 
+(4) poor judgment and decision-making by the operator representative and the contractor’s 
+field supervisors on the platform contributed to this incident; and  
+(5) ineffective management and supervision of the operation by the designated operator and 
+contractor (offsite) contributed to this incident.   
+The designated operator relied entirely on consultants to supervise the operation onsite and 
+offsite and failed to provide direct oversight and control of the operation. 
+MMS, therefore, recommends to operators that: 
+•	 When conducting this type of operation, operators should maintain adequate oversight of 
+the contractors to ensure that all industry-accepted practices are being followed and no 
+unnecessary shortcuts are being taken. 
+•	 Operators should conduct a pre-job meeting with all involved parties.  The purpose of the 
+meeting should be to outline the scope of work to be conducted and the manpower 
+requirements, identify lines of authority and responsibility, identify potential hazards and 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+mitigations, outline the process for managing changes in the job, and stress the 
+importance of “Stop Work” authority and reporting unsafe acts and conditions. 
+•	 When using consultants as the operator representative, operators should require a site 
+inspection by an operator representative employed by the operator prior to the 
+commencement of work to verify that the equipment is rigged up according to approved 
+plans and methods. 
+•	 Operators should require the contractors to provide detailed activity logs of the work 
+being performed. 
+For details of the accident, see OCS Report MMS 2007-037. Copies of the report may be 
+obtained from the MMS Public Information Office located at 1201 Elmwood Park Boulevard, 
+New Orleans, Louisiana 70123 (1-800-200-GULF or local 504-736-2519).  The full report is 
+also available on the MMS Gulf of Mexico OCS Region website. 
+—MMS—GOMR— 
+www.gomr.mms.gov 
+Visit our Safety Information Website 

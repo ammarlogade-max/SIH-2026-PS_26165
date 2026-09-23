@@ -1,0 +1,10 @@
+{
+  "validation_timestamp": "2026-09-14T07:49:48.457Z",
+  "schema_id": "https://sif-sentinel.oilindia.in/schemas/safety_event.schema.json",
+  "schema_title": "SIF Sentinel Canonical Safety Event",
+  "total_records_evaluated": 2970,
+  "valid_records": 2970,
+  "invalid_records": 0,
+  "schema_conformance_rate": "100.00%",
+  "errors": []
+}

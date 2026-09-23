@@ -1,0 +1,77 @@
+
+
+Safety Alert No. 518 
+Date: July 1, 2026 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853  
+ 
+Figure 1: Damaged Lease Automatic Custody Transfer charge  
+pump, electric motor and coupling. 
+ 
+ 
+ 
+ 
+ 
+Mechanical Failure of LACT Pump Caused Fire 
+Verify Pump Alignment After Motor Replacement to Prevent Fires 
+ 
+ 
+ 
+ 
+Incident: 
+The Bureau of Safety and Environmental Enforcement recently investigated a fire at an 
+offshore production facility in the Gulf of America. The fire occurred after motor-to-pump 
+misalignment on a Lease Automatic Custody Transfer, or LACT, charge pump caused the 
+pump to fail mechanically (Figure 1). 
+The misalignment loosened the pump casing fasteners and allowed oil to leak onto the skid. 
+Platform personnel extinguished the fire using handheld fire extinguishers and a fire hose. No 
+injuries were reported. The incident damaged the pump, electric motor and coupling. Most of 
+the oil remained in containment; however, an estimated 0.001 gallons of oil was released into 
+the Gulf of America.  
+  
+
+Findings: 
+The electric motor had been replaced recently and had been in operation for 10 days at the 
+time of the incident. Facility personnel did not observe abnormal conditions during daily 
+rounds before the incident.  
+The investigation found that proper installation procedures were not followed when the 
+electric motor and coupling were installed. A straightedge was used to align the motor 
+horizontally and vertically, but angular alignment was not performed. The coupling bolts 
+were not installed to the proper torque, the motor was installed without shims, and the 
+motor mounting bolts were not torqued to proper specifications.  
+Disassembly and inspection of the motor confirmed the following sequence of failure: 
+During normal operations, the motor operated at approximately 3,600 rpm. The motor-to-
+pump coupling misalignment, combined with the high operating speed, caused excessive 
+vibration. The vibration loosened the pump casing fasteners, which allowed oil to leak from 
+the pump casing. The coupling eventually failed, causing additional damage to the pump 
+and the electric motor. These failures and the associated leak led to ignition of oil on the 
+skid. 
+Therefore, BSEE recommends that operators and their contractors, where appropriate, 
+do the following: 
+• Install equipment according to original equipment manufacturer specifications and 
+approved maintenance procedures.  
+• Ensure that proper installation procedures and all required tools are available before 
+work begins. 
+• Ensure that all personnel are properly trained on installation procedures, proper tool 
+use, and post-installation function checks for equipment prior to performing work. 
+• Evaluate maintenance procedures to determine if post-installation surveillance of 
+equipment needs improvement, such as increased frequency of operator rounds 
+and/or multiple-day monitoring of equipment. 
+• Investigate vibration alarms, equipment faults, and other signs of abnormal 
+operation. Vibration alarms may be triggered by nearby equipment if that equipment 
+is mechanically connected or coupled.  
+ 
+-BSEE- 
+ 
+ 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of 
+the circumstances surrounding a potential safety issue. It also contains 
+recommendations that could assist avoiding potential incidents on the Outer 
+Continental Shelf.
+ 
+ 
+ 
+ 
+ 
+Category:  Fire, Equipment Installation 

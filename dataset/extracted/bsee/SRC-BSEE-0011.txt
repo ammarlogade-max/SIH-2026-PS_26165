@@ -1,0 +1,83 @@
+
+
+Safety Alert No. 512 
+Date: Feb. 4, 2026 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853  
+ 
+  
+ 
+ 
+ 
+ 
+Crane Incident During Well Abandonment Operations 
+Injures Worker, Reveals Safety Gaps 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Background:                                                                      
+The Bureau of Safety and Environmental Enforcement investigated a crane incident that 
+caused a worker injury during well abandonment operations. A crew was using a lift boat 
+crane and rigging to pull a seven-inch casing from the well. They drilled holes in the casing, 
+inserted a lifting pin, and attached it to the crane’s auxiliary hoist line with a two-part sling 
+and D-rings. The crane lifted the casing until it got stuck. After setting the slips, the crew cut 
+and removed a section, drilled new holes, and reinserted the lifting pin for another lift. They 
+then used the crane’s main hoist to try to pull the stuck casing. The lifting pin was attached to 
+the main block, and two workers stood next to the casing, ready to remove the slips when the 
+casing moved upward. When the crane operator raised the casing, the lifting pin failed, bent 
+upward, and struck one worker in the face, causing him to fall. He suffered a subdural 
+hematoma, facial trauma, an open skull fracture, and several facial bone fractures. 
+  
+ Reenactment of position of injured person  
+and other worker at time of incident. 
+ Proper condition of pin. 
+
+Incident Findings: 
+• Human errors led to the lifting pin failure and the worker’s injury. 
+• The crew installed a spool riser with an 11-inch inside diameter onto the wellhead, 
+on top of a seal ring that was 11.44 inches in diameter. This stopped the casing 
+from being pulled out. 
+• The crane operator lifted more than the approved safe lifting plan’s 24,255-pound 
+limit and exceeded the lifting pin’s 60,000-pound safe working load. Tests suggest 
+up to 102,000 pounds may have been applied to the pin during the incident. 
+• The crew did not place the D-rings of the sling right next to the casing; they were 
+about 2 inches away. Procedures require the pull linkages to be as close as 
+possible to reduce bending on the pin. 
+• The procedure used was meant for a drilling rig with a top drive and bails, not for a 
+crane on a liftboat. It also wrongly listed the lifting pin’s capacity as 67,000 
+pounds, when the safe limit is 60,000 pounds. 
+To help prevent similar incidents in the future, the Bureau of Safety and Environmental 
+Enforcement recommends that operators and their contractors, where appropriate, do 
+the following: 
+• Operators should always check that the load is free before starting crane 
+operations to lift a work string during well abandonment. Never use a crane to pull 
+or lift a load that is not free. 
+• Make sure the equipment used is clearly identified in procedures. Do not change 
+procedures if they do not match the situation or equipment. 
+• Ensure the right equipment is available and installed during well abandonment. 
+The lifting pin should be the correct length, since a pin that is too long can bend 
+and fail early. 
+• Encourage workers to use stop work authority if they see or suspect unsafe 
+conditions. 
+• Make sure proper rigging is used for all lifts and that it is installed as described in 
+the lifting plan. 
+
+• Make sure that procedures for lifting operations properly cite safe working loads 
+for all rigging and devices. 
+• Make sure everyone is aware of hazards and keeps a safe distance from 
+equipment during lifts. 
+ 
+ 
+ 
+Category: Cranes/Lifting, Personnel Safety, Other 
+A Safety Alert is a tool used by the Bureua of Safety and Envrionmental Enformcement to inform the 
+offshore oil and gas industry of the circumstances surrounding a potential safety issue. It also contains 
+recommendations that could assist avoiding potential incidents on the Outer Continental Shelf. 

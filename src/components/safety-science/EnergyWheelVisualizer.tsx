@@ -16,6 +16,7 @@ import {
   CheckCircle2,
   ShieldAlert,
   Info,
+  HelpCircle,
 } from "lucide-react";
 import { CSRA_ENERGY_WHEEL, EnergyCategory } from "@/lib/types";
 
@@ -43,6 +44,7 @@ const categoryIcons: Record<EnergyCategory, React.ComponentType<{ className?: st
   Sound: Volume2,
   Radiation: Radio,
   Biological: Biohazard,
+  UNKNOWN: HelpCircle,
 };
 
 export default function EnergyWheelVisualizer({

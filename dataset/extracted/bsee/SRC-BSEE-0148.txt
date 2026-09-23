@@ -1,0 +1,78 @@
+
+
+ 
+Safety Alert No. 369                             Contact: Jason Mathews 
+October 25, 2019                         Phone:    (504) 731-1496 
+ 
+ 
+Non-OEM Parts Were Significant Causal Factors in Two 
+Recent Loss of Control of Traveling Block Incidents
+  
+ 
+   
+Driller’s side drum brake band assembly at the time of the September 11, 2019 incident. 
+                                                                 
+  
+On September 11, 2019, a drill crew was lowering a 7.625” casing joint.  The driller was 
+unable to apply enough brake power necessary to stop the full descent of the top drive.  
+The Operator’s incident investigation revealed that the set pin of the drum brake 
+assembly broke/snapped off allowing the roll pin to back out of the brake assembly which 
+prevented the drum-break from being engaged.  This failure caused the top drive and 
+casing joint to slowly lower into the joint located in the slips.  The top drive descended 
+until the traveling block rested on the casing stabbing board due to lost brake tension.  
+The offside brake stayed engaged and slowed the descent, which helped prevent harm to 
+personnel and limited damage to equipment. 
+On July 20, 2017, in a separate incident, an operator reported a dropped object incident 
+while conducting drilling operations.  The incident involved drill line that unspooled and 
+SAFETY ALERT 
+ 
+ 
+Backed out drum 
+brake assembly 
+set roll pin 
+  
+ 
+Main brake pin 
+no longer 
+secured by 
+retainer pin 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+detached from the drawworks drum, causing the traveling block and approximately 123 
+feet of drill line to descend to the rig floor.  The investigation report indicated improperly 
+sized drill line drum clamp and clamp bolts were installed on the drawworks drum.   
+ 
+View of traveling block and 
+unspooled cable drill line on rig 
+floor following the July 20, 2017 
+incident.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Incident investigations for both of the above events revealed incorrect, non-original 
+equipment manufacturer parts were significant causal factors. 
+Therefore, BSEE recommends that operators consider the following: 
+ 
+• Inspect drawworks systems to ensure that original equipment manufacturer (OEM) 
+parts are installed correctly;  
+• Inspect the drum brake and cable retention systems as part of the six-month and 
+5-year periodic inspections; 
+• Conduct maintenance according to frequencies recommended by the manufacturer 
+and by API RP 8B;  
+• Identify additional equipment where retaining pins should be inspected for 
+deficiencies;  
+• Consider reviewing and verifying all dimensions and material properties of critical 
+components; and 
+• Consider reviewing the use of non-OEM parts as a Management of Change (MOC) 
+process. 
+ 
+--BSEE-- 

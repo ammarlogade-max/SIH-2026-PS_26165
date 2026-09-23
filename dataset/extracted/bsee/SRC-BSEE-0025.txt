@@ -1,0 +1,77 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+Figure 1: Looking up at the silencer. Figure 2: Perforated steel section. 
+Figure 3: Fall distance. 
+  
+ 
+ 
+ 
+BSEE Alerts Offshore Workers to  Potential Risks of           
+Turbine Generator Exhaust Silencer Failure  
+The Bureau of Safety and Environmental Enforcement (BSEE) received notification of an 
+incident highlighting the potential dangers of turbine generator exhaust silencer failures in 
+offshore industrial environments. The incident occurred after a turbine generator shut down, 
+scattering pieces of perforated steel from inside the turbine silencer onto the deck. The lack 
+of proper maintenance and safety precautions could potentially have led to severe injuries or 
+fatalities had personnel been present at the time the debris fell.  
+Incident Overview: 
+During offshore energy production operations, personnel reported an unusual sound and 
+noticed the exhaust expansion joint pulsing on turbine generator No. 3 (TGen3). Operators 
+initiated troubleshooting procedures, and mechanics recommended shutting down TGen3 
+using standard protocols. Emergency stop procedures were avoided over concerns that rapid 
+unloading could cause catastrophic turbine engine failure or a power blackout. 
+After TGen3 was shut down, a walkdown revealed pieces of perforated steel from inside the 
+silencer (Figure 1) scattered on the deck (Figure 2), some weighing as much as 44 pounds. 
+The steel had failed around the supporting struts and was ejected from the silencer exhaust 
+tip  approximately 110 feet above the deck (Figure 3). 
+ 
+  
+  
+ 
+Safety Alert No. 495 
+January 27, 2025 
+
+ 
+ 
+The silencer was supported by eight struts, welded on both sides without backing support. 
+Visual inspections showed no weld failures. No alarms or performance issues were noted in 
+the control room, and no personnel were in the area at the time. 
+The offshore facility is powered by three LM2500 turbine generators (TGens), typically 
+requiring two to operate simultaneously. Unlike TGen1 and TGen2, which have Waste Heat 
+Recovery Units and limited silencer use, TGen3 operates in a simple cycle, routing all 
+exhaust through the silencer. 
+The TGen3 silencer, which has been in continuous service for 18 years, features an 82-inch 
+inlet and outlet and is designed to reduce exhaust noise to 85 decibels at three feet. The 
+incident occurred after the silencer had undergone 1,872 thermal cycles, with temperatures 
+ranging from ambient to 1,000 degrees Fahrenheit. Maintenance records showed that 
+silencers were not considered serviceable components, and inspections had been limited to 
+the exhaust plenum discharge flange. 
+Where appropriate, BSEE recommends that operators and their contractors consider 
+the following: 
+• Define and implement comprehensive inspection and maintenance strategies for 
+turbine engine exhaust components, including silencers, for new and existing 
+equipment. 
+• Ensure regular inspections go beyond the exhaust plenum discharge flange to include 
+the entire silencer assembly. 
+• Incorporate robust design specifications and quality assurance measures, including 
+manufacturer documentation for new silencers. 
+• Establish and maintain strict dropped object prevention measures, especially in areas 
+where personnel, hazardous materials, or equipment are at risk. These measures are 
+critical to protect workers and prevent injuries or damage. 
+By taking these precautions, operators can enhance safety and prevent similar incidents in 
+the future. 
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It   also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Rotating Equipment 

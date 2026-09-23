@@ -1,0 +1,68 @@
+
+
+ 
+Safety Alert No. 385                                Contact: Quoc Dang 
+May 15, 2020              Phone: (504) 736-7535 
+ 
+ 
+Improper Installation of Safety Devices on Heater Treaters 
+ 
+          
+                     
+  
+ 
+ 
+ 
+In September 2019, a production process alarm on a heater treater activated when the 
+burner went offline. Workers relit the burner in attempt to reestablish the temperature and 
+continue operations but later recorded readings of over 1,000° Fahrenheit and noticed the 
+stack glowing red. The foreman manually shut-in the treater and all production after 
+seeing its   condition. Investigations into this incident revealed multiple contributing factors 
+with the installation of safety devices that were common in other heater treater incidents, 
+such as: 
+• Inadequate length of Temperature Safety High (TSH) safety device thermowells: 
+The thermowells often did not extend into the media, leading to inaccurate 
+temperature readings and the TSH not functioning as desired.  
+SAFETY ALERT 
+ 
+ 
+The TSH is not extended far enough into the heat 
+media. As a result, the Temperature Indicator (TI) is 
+unable to register a proper temperature. 
+A Temperature Safety High (TSH) with Teflon tape on 
+the threads. Teflon tape reduces the heat sink effect. 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the circumstances 
+surrounding a potential safety issue. It also contains recommendations that could assist avoiding potential 
+incidents on the Outer Continental Shelf.  
+ 
+• Improper installation of TSH safety devices, such as the use of Teflon tape during 
+installation of a media device: The threads on the TSH are part of the heat sink 
+process and Teflon tape reduces heat sink. 
+• Inadequate length of a media Temperature Indicator (TI): When a TI remains inside 
+a vessel’s nozzle and does not extend into the media, it   can lead to inaccurate 
+temperature readings. 
+• Partially plugged Flame and Stack Arrestors did not allow proper airflow or heat to 
+escape. 
+Therefore, BSEE recommends that operators and contractors consider the 
+following:  
+• Ensure the thermowells for the liquid media’s TSH and temperature 
+indicator/gauges extend far enough past the vessel’s nozzle and into the media to 
+get correct temperature readings; 
+• Confirm that all safety devices and critical indicators are installed correctly prior to 
+initial start-up; 
+• Ensure safety devices, such as TSHs, are installed in accordance with 
+manufacture recommendations and not with Teflon tape; 
+• Verify that scheduled maintenance and inspections on safety devices are 
+performed as required;   
+• Consider inspecting flame arrestors and stack arrestor devices periodically and 
+replacing them when damaged; and,   
+• Consider inspecting and replacing TSH devices periodically to ensure proper 
+temperature safety management of fired vessels. Note: This device generally 
+cannot be field tested.  
+--BSEE-- 
+ 
+ 
+ 
+ 
+  

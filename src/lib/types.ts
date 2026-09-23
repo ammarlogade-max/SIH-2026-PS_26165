@@ -95,7 +95,18 @@ export type EnergyCategory =
   | "Chemical"
   | "Radiation"
   | "Sound"
-  | "Biological";
+  | "Biological"
+  | "UNKNOWN";
+
+export interface EnergyAnalysisResult {
+  energy_detected: boolean;
+  category: EnergyCategory;
+  magnitude: "High-Energy" | "Low-Energy" | "UNKNOWN";
+  sourceDetails: string;
+  thresholdExceeded: boolean;
+  confidence: number;
+  energy_evidence: string | null;
+}
 
 export interface EnergyWheelItem {
   id: EnergyCategory;
@@ -201,6 +212,166 @@ export const CSRA_ENERGY_WHEEL: EnergyWheelItem[] = [
   }
 ];
 
+// ─── Mandatory SIH26165 Safety Event Types ─────────────────────────────────
+
+export type SafetyEventType =
+  | "Unsafe Act"
+  | "Unsafe Condition"
+  | "Near-Miss"
+  | "Incident"
+  | "Unknown";
+
+/**
+ * Controlled normalization for safety event types.
+ * Avoids broad substring matches that trigger false positives on normal words (e.g. "act" matching "activity" or "contact").
+ * Fallback is explicitly "Unknown" unless specified otherwise.
+ */
+export function normalizeSafetyEventType(input?: string | null, fallback: SafetyEventType = "Unknown"): SafetyEventType {
+  if (!input) return fallback;
+  const trimmed = input.trim();
+  const lower = trimmed.toLowerCase();
+
+  // Controlled exact or standard token comparisons
+  if (
+    lower === "ua" ||
+    lower === "unsafe act" ||
+    lower === "unsafe-act" ||
+    lower === "unsafe_act" ||
+    lower === "unsafe action"
+  ) {
+    return "Unsafe Act";
+  }
+
+  if (
+    lower === "uc" ||
+    lower === "unsafe condition" ||
+    lower === "unsafe-condition" ||
+    lower === "unsafe_condition"
+  ) {
+    return "Unsafe Condition";
+  }
+
+  if (
+    lower === "near miss" ||
+    lower === "near-miss" ||
+    lower === "near_miss" ||
+    lower === "nearmiss" ||
+    lower === "nm"
+  ) {
+    return "Near-Miss";
+  }
+
+  if (
+    lower === "incident" ||
+    lower === "accident" ||
+    lower === "incident report" ||
+    lower === "incident_report" ||
+    lower === "actual incident"
+  ) {
+    return "Incident";
+  }
+
+  // Word-boundary phrase checks for narrative fallback inference
+  if (/\b(unsafe[\s_-]?act|bypassed safety|failed to wear|unauthorized operation|tampered with)\b/i.test(trimmed)) {
+    return "Unsafe Act";
+  }
+  if (/\b(unsafe[\s_-]?condition|corroded pipe|spill on floor|missing handrail|fume leak|defective valve)\b/i.test(trimmed)) {
+    return "Unsafe Condition";
+  }
+  if (/\b(near[\s_-]?miss|narrowly missed|almost hit|dropped object caught|close call)\b/i.test(trimmed)) {
+    return "Near-Miss";
+  }
+  if (/\b(incident|accident|injury|first aid|medical treatment|lost time|rupture occurred|fire erupted)\b/i.test(trimmed)) {
+    return "Incident";
+  }
+
+  return fallback;
+}
+
+export const inferSafetyEventType = normalizeSafetyEventType;
+
+// ─── Critical Barrier State Model ──────────────────────────────────────────
+
+export type BarrierState =
+  | "EFFECTIVE"
+  | "DEGRADED"
+  | "FAILED"
+  | "MISSING"
+  | "UNKNOWN"
+  | "NOT_APPLICABLE";
+
+// ─── Precursor Trajectory & Convergence ────────────────────────────────────
+
+export type PrecursorTrajectory =
+  | "ISOLATED"
+  | "RECURRING"
+  | "ESCALATING"
+  | "PERSISTENT"
+  | "POST_CAPA_RECURRENCE";
+
+// ─── Temporal Direction & Recurrence Status ────────────────────────────────
+export type TemporalDirection = "INCREASING" | "STABLE" | "DECREASING" | "INSUFFICIENT_DATA";
+
+export type RecurrenceStatus = "NONE" | "POSSIBLE" | "CONFIRMED" | "POST_CAPA_RECURRENCE";
+
+// ─── CAPA Effectiveness States ─────────────────────────────────────────────
+
+export type CAPAEffectiveness =
+  | "PROPOSED"
+  | "IMPLEMENTED"
+  | "VERIFIED_CLOSED"
+  | "MONITORING"
+  | "EFFECTIVE"
+  | "INEFFECTIVE_RECURRENCE_DETECTED"
+  | "pending_verification"
+  | "monitoring"
+  | "effective"
+  | "verified_effective"
+  | "ineffective"
+  | "verified_ineffective"
+  | "recurred_post_closure";
+
+// ─── Multi-Label IOGP Rule Mapping Model ───────────────────────────────────
+
+export interface IOGPRuleMapping {
+  rule: LifeSavingRule;
+  score: number;
+  confidence_tier: "high" | "moderate" | "low";
+  evidence_terms: string[];
+  evidence_span?: string | null;
+  mapping_method: "keyword" | "centroid" | "hybrid" | "manual";
+  mapping_version: string;
+}
+
+// ─── Structured SIF Pathway Model ──────────────────────────────────────────
+
+export type PathwayStageStatus = "SUPPORTED" | "INFERRED" | "UNKNOWN";
+
+export interface SIFPathwayStage {
+  stage?: string;
+  value: string | null;
+  evidence: string | null;
+  evidence_span?: string | null;
+  status: PathwayStageStatus;
+}
+
+export interface SIFPathway {
+  hazard: SIFPathwayStage;
+  energy: SIFPathwayStage;
+  critical_barrier: SIFPathwayStage;
+  barrier_state: SIFPathwayStage;
+  worker_exposure: SIFPathwayStage;
+  potential_consequence: SIFPathwayStage;
+  credible_sif_scenario?: string | null;
+  evidence_text?: string | null;
+  // Top-level values for backwards-compatible views
+  hazard_val?: string;
+  energy_category?: EnergyCategory;
+  energy_magnitude?: "High-Energy" | "Low-Energy" | "UNKNOWN";
+  critical_barrier_val?: string;
+  barrier_state_val?: BarrierState;
+}
+
 // ─── Hierarchy of Controls & Direct Barrier Assessment ───────────────────────
 
 export type ControlHierarchyLevel =
@@ -210,78 +381,206 @@ export type ControlHierarchyLevel =
   | "Administrative"
   | "PPE";
 
-export type DirectControlStatus = "absent" | "failed" | "bypassed" | "intact";
+export type DirectControlStatus = "absent" | "failed" | "bypassed" | "intact" | "unknown";
 
 export interface BarrierAssessment {
   compromised_level: ControlHierarchyLevel;
   direct_control_status: DirectControlStatus;
+  barrier_state?: BarrierState;
   barrier_description: string;
-  identified_barrier?: string;
+  identified_barrier?: string | null;
   reliability_score: number; // 0 to 100
   control_reliability?: number;
   hierarchy_rank: number; // 1 (best: Elimination) to 5 (weakest: PPE)
   weak_control_flag?: boolean;
   recommended_direct_control?: string;
+  evidence_span?: string | null;
+  evidence_status?: "SUPPORTED" | "INFERRED" | "UNKNOWN";
 }
 
-// ─── Campbell Institute 3-Gate SIF Decision Model ───────────────────────────
+// ─── SIF Decision Gates (Energy–Barrier–Exposure Diagnostic) ──────────────────
 
-export interface CampbellGateEvaluation {
+export interface SIFDecisionGateEvaluation {
   gate1_high_energy: boolean;
+  gate1_status: "SUPPORTED" | "INFERRED" | "NOT_FOUND" | "UNKNOWN";
+  gate1_evidence: string | null;
   gate1_details: string;
+  gate2_direct_control?: boolean;
   gate2_direct_control_compromised: boolean;
+  gate2_status: "SUPPORTED" | "INFERRED" | "NOT_FOUND" | "UNKNOWN";
+  gate2_evidence: string | null;
   gate2_details: string;
   gate3_line_of_fire_intersected: boolean;
+  gate3_status: "SUPPORTED" | "INFERRED" | "NOT_FOUND" | "UNKNOWN";
+  gate3_evidence: string | null;
   gate3_details: string;
-  decision_verdict: "Non-SIF" | "SIF Precursor" | "Actual SIF / Major Event";
+  is_sif_potential?: boolean;
+  decision_verdict: "Diagnostic: Non-SIF Precursor" | "Diagnostic: SIF Precursor" | "Diagnostic: High Exposure / Major Event";
   diagnostic_confidence?: number;
 }
 
+/**
+ * Backward-compatibility alias for legacy code referencing CampbellGateEvaluation.
+ */
+export type CampbellGateEvaluation = SIFDecisionGateEvaluation;
+
 // ─── Shift Handover & Circadian Fatigue Risk ────────────────────────────────
 
-export type ShiftTiming = "morning_handover" | "day_shift" | "evening_handover" | "night_shift";
+export type ShiftTiming = "morning_handover" | "day_shift" | "evening_handover" | "night_shift" | "standard";
 export type CircadianRiskTier = "circadian_low" | "handover_window" | "standard";
 
 export interface Report {
   id: string;
+  event_type: SafetyEventType;
+  source_id?: string;
   raw_text: string;
+  normalized_text?: string;
   site: string;
+  facility?: string;
+  area?: string;
+  specific_location?: string;
   activity: string;
+  task?: string;
+  equipment?: string;
+  work_type?: string;
   reported_date: string;
+  occurred_at?: string;
+  observed_at?: string;
   shift_timing?: ShiftTiming;
   circadian_risk_tier?: CircadianRiskTier;
   submitting_role: string | null;
-  source: "manual" | "bulk_upload";
+  source: "manual" | "bulk_upload" | "historical_import";
   embedding?: number[];
   created_at: string;
+  updated_at?: string;
 }
+
+export type SafetyEvent = Report; // Canonical alias
 
 export interface Classification {
   id: string;
   report_id: string;
   layer: "A" | "B";
   is_sif_potential: boolean;
-  confidence: number; // 0 to 100
+  sif_prediction: "SIF_POTENTIAL" | "NON_SIF_POTENTIAL" | "REVIEW_REQUIRED";
+  sif_probability: number; // Raw float [0.0 - 1.0]
+  ml_sif_probability?: number;
+  ml_prediction?: "SIF_POTENTIAL" | "NON_SIF_POTENTIAL" | "REVIEW_REQUIRED";
+  calibration_status?: "uncalibrated_model_probability" | "calibrated";
+  review_required: boolean;
+  review_reason?: string;
+  review_status?: "AUTO_CLASSIFIED" | "REVIEW_REQUIRED" | "CONFIRMED_SIF" | "CONFIRMED_NON_SIF" | "OVERRIDDEN";
+  confidence: number; // Percentage [0 to 100] (un-clamped)
+  operational_priority?: "CRITICAL" | "HIGH" | "MEDIUM" | "LOW";
+  safety_science_assessment?: {
+    energy_category: EnergyCategory;
+    energy_magnitude: "High-Energy" | "Low-Energy" | "UNKNOWN";
+    barrier_state: BarrierState;
+    decision_verdict: string;
+  };
   life_saving_rule: LifeSavingRule | null;
+  all_rules?: any;
+  rule_mappings?: IOGPRuleMapping[];
   reasoning_terms: { term: string; weight: number; positive: boolean }[];
   reasoning_narrative?: string | null;
+  model_name?: string;
   model_version: string;
+  feature_version?: string;
   created_at: string;
   // Research-backed features:
+  barrier_status?: any;
   energy_category?: EnergyCategory | null;
-  energy_magnitude?: "High-Energy" | "Low-Energy";
+  energy_magnitude?: "High-Energy" | "Low-Energy" | "UNKNOWN";
+  energy_detected?: boolean;
+  energy_evidence?: string | null;
   energy_source_details?: string;
   barrier_assessment?: BarrierAssessment;
+  sif_pathway?: SIFPathway | any;
+  sif_decision_gates?: SIFDecisionGateEvaluation;
+  /** @deprecated Use sif_decision_gates */
   campbell_gates?: CampbellGateEvaluation;
   shift_risk_multiplier?: number;
+  human_reviewed?: boolean;
+  reviewed_by?: string;
+  reviewed_at?: string;
+  review_notes?: string;
+  override_reason?: string;
+  review_version?: number;
+  review_history?: HumanReviewRecord[];
+  evidence_span?: string;
+  machine_evaluation?: {
+    is_sif_potential: boolean;
+    sif_prediction: "SIF_POTENTIAL" | "NON_SIF_POTENTIAL" | "REVIEW_REQUIRED";
+    sif_probability?: number;
+    life_saving_rule?: LifeSavingRule | null;
+    rule_mappings?: IOGPRuleMapping[];
+  };
+  human_evaluation?: {
+    is_sif_potential: boolean;
+    sif_prediction: "SIF_POTENTIAL" | "NON_SIF_POTENTIAL" | "REVIEW_REQUIRED";
+    life_saving_rule?: LifeSavingRule | null;
+    override_reason?: string;
+    review_notes?: string;
+  };
+  original_sif_prediction?: "SIF_POTENTIAL" | "NON_SIF_POTENTIAL" | "REVIEW_REQUIRED";
+  original_sif_probability?: number;
+  original_is_sif?: boolean;
+  original_rule?: LifeSavingRule | null;
+  original_model_version?: string;
+  original_rule_mappings?: IOGPRuleMapping[];
+}
+
+export interface HumanReviewRecord {
+  id: string;
+  report_id: string;
+  classification_id: string;
+  review_version: number;
+  reviewer_id?: string;
+  reviewer_name: string;
+  reviewer_role: UserRole;
+  original_prediction: "SIF_POTENTIAL" | "NON_SIF_POTENTIAL" | "REVIEW_REQUIRED";
+  reviewed_prediction: "SIF_POTENTIAL" | "NON_SIF_POTENTIAL" | "REVIEW_REQUIRED";
+  original_probability?: number;
+  original_sif_probability?: number;
+  original_rule: LifeSavingRule | null;
+  reviewed_rule: LifeSavingRule | null;
+  original_is_sif: boolean;
+  reviewed_is_sif: boolean;
+  override_flag?: boolean;
+  original_model_version?: string;
+  original_iogp_mappings?: IOGPRuleMapping[];
+  original_rule_mappings?: IOGPRuleMapping[];
+  original_reasoning?: string | null;
+  final_decision?: "SIF_POTENTIAL" | "NON_SIF_POTENTIAL" | "REVIEW_REQUIRED";
+  rationale: string;
+  review_reason?: string;
+  review_notes?: string;
+  review_timestamp?: string;
+  machine_evaluation?: {
+    is_sif_potential: boolean;
+    sif_prediction: "SIF_POTENTIAL" | "NON_SIF_POTENTIAL" | "REVIEW_REQUIRED";
+    sif_probability?: number;
+    life_saving_rule?: LifeSavingRule | null;
+  };
+  human_evaluation?: {
+    is_sif_potential: boolean;
+    sif_prediction: "SIF_POTENTIAL" | "NON_SIF_POTENTIAL" | "REVIEW_REQUIRED";
+    life_saving_rule?: LifeSavingRule | null;
+    override_reason?: string;
+  };
+  status: "ACCEPTED" | "OVERRIDDEN" | "ESCALATED";
+  created_at: string;
 }
 
 export interface HumanReview {
   status: "Pending" | "Confirmed" | "Overridden";
+  decision?: "AI_ACCEPTED" | "AI_OVERRIDDEN" | "MANUAL_CLASSIFICATION" | "NEEDS_MORE_INFORMATION";
   reviewed_by?: string;
   reviewer_name?: string;
   reviewed_at?: string;
   notes?: string;
+  original_ai_sif?: boolean;
+  original_ai_rule?: LifeSavingRule | null;
   override_sif?: boolean;
   override_rule?: LifeSavingRule | null;
 }
@@ -309,13 +608,28 @@ export interface SiteActivityAggregate {
 export interface PatternCallout {
   id: string;
   site: string;
+  facility?: string;
+  activity?: string;
+  specific_location?: string;
+  barrier_compromised?: string;
+  barrier_state?: BarrierState;
   life_saving_rule: LifeSavingRule;
+  event_types?: SafetyEventType[];
   report_ids: string[];
   detected_at: string;
+  first_observed_at?: string;
+  last_observed_at?: string;
+  time_window_days?: number;
   narrative: string;
   count: number;
+  sif_count?: number;
   activity_summary: string;
   severity: "critical" | "high" | "medium";
+  trajectory?: PrecursorTrajectory;
+  temporal_trend?: string;
+  recommended_intervention?: string;
+  linked_capa_id?: string;
+  has_recurrence_alert?: boolean;
 }
 
 export type UserRole =
@@ -330,13 +644,15 @@ export interface CorrectiveAction {
   report_id?: string;
   pattern_id?: string;
   site: string;
+  activity?: string;
+  barrier_compromised?: string;
   life_saving_rule: LifeSavingRule;
   title: string;
   description: string;
   assigned_to: string;
   assigned_role: UserRole;
   priority: "immediate" | "high" | "medium" | "low";
-  status: "open" | "in_progress" | "overdue" | "completed" | "verified";
+  status: "open" | "in_progress" | "overdue" | "closed_pending_verification" | "completed" | "verified";
   due_date: string;
   created_at: string;
   completed_at?: string;
@@ -345,21 +661,37 @@ export interface CorrectiveAction {
   evidence_notes?: string;
   // Research-backed control hierarchy & barrier engineering:
   control_hierarchy?: ControlHierarchyLevel;
+  hierarchy_level?: ControlHierarchyLevel;
   control_rank?: number;
   direct_control_type?: string;
   weak_control_warning?: boolean; // Set to true if SIF precursor is assigned weak Level 4/5 Administrative or PPE control
+  // Post-closure recurrence tracking:
+  monitoring_window_days?: number;
+  post_closure_monitoring_active?: boolean;
+  effectiveness_status?: CAPAEffectiveness;
+  effectiveness_evidence?: string;
+  effectiveness_reviewed_by?: string;
+  effectiveness_reviewed_at?: string;
+  recurrence_detected?: boolean;
+  recurrence_detected_at?: string;
+  recurrence_report_id?: string;
+  post_closure_event_count?: number;
 }
 
 export interface AuditLogEntry {
   id: string;
+  sequence_number?: number;
   timestamp: string;
   actor_name: string;
   actor_role: UserRole;
   action: string;
-  entity_type: "observation" | "classification" | "pattern" | "action" | "system" | "model";
+  entity_type: "observation" | "classification" | "pattern" | "action" | "system" | "model" | "review";
   entity_id: string;
   details: string;
   status: "success" | "warning" | "error";
+  previous_hash?: string;
+  current_hash?: string;
+  model_version?: string;
 }
 
 export interface FacilitySummary {
@@ -376,7 +708,8 @@ export interface FacilitySummary {
   open_actions_count: number;
   safety_score: number; // 0 - 100
   risk_level: "critical" | "elevated" | "controlled";
-  trend_direction: "increasing" | "stable" | "decreasing";
+  trend_direction: "increasing" | "stable" | "decreasing" | "insufficient_data";
+  is_development_fixture?: boolean;
   // Research-backed Cumulative Exposure Index (CEI - EPRI model):
   cumulative_exposure_index: number; // 0 to 100 CEI score
   cei?: number;

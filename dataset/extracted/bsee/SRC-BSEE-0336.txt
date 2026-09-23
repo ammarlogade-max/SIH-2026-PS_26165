@@ -1,0 +1,22 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 183
+November 16, 1999
+Contact: Jack Leezy
+504-736-2503
+Electrical Shock Hazard
+Recent MMS inspections have revealed that some portable electrical steam cleaning pressure-washing units are
+not wired as prescribed by the National Electrical Code. An electrical hazard exists in these 3-phase, 440-volt
+units if they are not provided with a separate external ground. This separate external ground must be in addition
+to the ground used inside the extension cord (power cord) supplying electrical power to the unit. Failure to attach
+a separate ground to the unit poses a potential threat of electrical shock to the user.
+Operators are advised to review the installation of all portable electrical units to ensure that they are installed in
+accordance with the National Electrical Code and that they are operated according to the manufacturer’s
+recommended safe-operating procedures. Consideration should be given to the location of these steam
+pressure-washing units relative to the proximity of production process equipment, as these units present an
+ignition source and may not be suitable for service in classified areas.
+—GOMR—MMS—
+Visit our Safety Information Website
+Safety Alert No. 183http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_183...
+1 of 12/21/2012 4:16 PM

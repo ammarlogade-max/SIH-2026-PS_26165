@@ -1,0 +1,74 @@
+
+
+ 
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+Exterior Walkway Separates from Temporary Living 
+Quarters, Putting Workers at Risk 
+                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Bureau of Safety and Environmental Enforcement’s Gulf of America Region investigated an 
+incident involving a third-floor walkway outside temporary living quarters on an offshore platform.  
+Incident: Three workers were standing on an external third-floor walkway outside of their room 
+located on the platform’s temporary living quarters when the walkway detached from the 
+structure. Two of the workers were able to open the door and returned inside their room. The third 
+worker moved away from the detached section while remaining on the walkway. After the crew 
+confirmed all workers were safe, personnel secured the stairway and walkway with chain bindings 
+to prevent dropped objects and further movement. 
+Findings: The operator installed the living quarters as a temporary structure designed for removal 
+or dismantling. (The quarters remained in service for 23 years.)  As such, the operator’s 
+inspections did not account for the structure’s age or the offshore environment. Inspection 
+criteria did not address corrosion, fatigue or age-related deterioration of welds. 
+Walkway separated outward from temporary 
+living quarters, exposing a significant gap. 
+View from below of walkway shifted outward from 
+temporary living quarters, revealing a significant gap. 
+Safety Alert No. 513 
+Date: Feb. 5, 2026 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853  
+
+ 
+ 
+ 
+Contributing Factors:  
+• Design not intended for long-term service: The living quarters were built as temporary 
+housing for overflow workers but remained in place for 23 years. 
+• Inspections were not adequate: The operator relied on visual inspections only. Those 
+inspections did not verify the condition of the tab welds connecting the walkway to the 
+living quarters. 
+• Insufficient structural support: The welded tabs at the walkway connection points did 
+not provide enough welded surface for support. The stairway’s south side lacked support, 
+which may have increased stress and contributed to the failure. 
+• Marine environment and aging: Corrosion and age-related fatigue affected the tab welds 
+over time. 
+• Inspection management weaknesses: The operator used inspection criteria based on 
+the structure’s original “temporary” intent. Visual inspections did not identify hazards 
+related to structural support of the living quarters and walkways. 
+ 
+To help prevent similar incidents in the future, BSEE recommends that operators and their 
+contractors, where appropriate, consider the following:   
+• Design and build temporary structures with potential long-term use in mind.  
+• Update inspection programs for temporary living quarters and similar installations to 
+address marine corrosion, fatigue, weld condition and structural integrity. 
+• Use non-destructive testing with visual inspections, such as ultrasonic testing, to evaluate 
+weld thickness and detect structural degradation.  
+ 
+– BSEE – 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+                                                                                                                 CATEGORY: Personnel Safety; Living Quarters  

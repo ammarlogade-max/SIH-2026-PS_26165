@@ -1,0 +1,108 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+ 
+ 
+Breakdowns in Communication and Preparation Lead 
+to Failure of Synthetic Slings  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In May 2021, an incident occurred when a contract crane operator and two contract 
+mechanics demobilized the facility’s gantry crane in preparation for the arrival of a platform 
+rig package.  
+ 
+After holding a morning safety meeting, the crew proceeded to prepare for the 
+demobilization. To remove the gantry by use of a rental crane, the lift required the 
+application of two synthetic (i.e., polyester) slings on the rental crane auxiliary line in 
+combination with a two-part wire rope sling on the rental crane main line. The two polyester 
+slings were tied to the bottom section of the gantry to assist with the orientation of the load. 
+When attempting to lift and rotate a section of the gantry, one of the polyester slings failed, 
+which caused the weight to shift to the remaining polyester sling. As a result of this 
+additional weight, the secondary polyester sling subsequently failed (Figure 1). With the 
+slings compromised, the load fell approximately six feet to the deck, striking a handrail and 
+a portion of the facility’s cable tray containing electrical wiring (Figure 2). There were no 
+injuries associated with this event. 
+ 
+Multiple incident findings were identified through the operator’s formal investigation:  
+  
+ 
+Safety Alert No. 435 
+March 31, 2022  
+SAFETY ALERT 
+ 
+ 
+Figure  2. Gantry  Contacting  and  Damaging the 
+Cable Tray and Bending the Main Deck Handrail  
+ 
+Figure 1. One of the Two Frayed / Parted Synthetic 
+Slings from the Incident 
+ 
+
+• There was no safe lifting plan created for the non-routine lift.  
+• Management failed to make available operational procedures to the crew for the 
+disassembly of the gantry crane.   
+• The Job Safety Analysis (JSA) completed for the operation was a pre-completed 
+template version that did not contain details for safely rotating the load. 
+• Despite personnel anticipating the weight of the load to be 9,000 pounds, the actual 
+reading was more than 15,000 pounds once the load was set on the main block. The 
+initial calculations failed to consider additional crane components, such as the winch, 
+ladder, and ropes. 
+• Personnel improperly rigged the slings using a choker configuration. This sling 
+arrangement did not have the capacity to safely lift the original 9,000-pound 
+anticipated weight. 
+• The crane operator failed to initiate Stop Work Authority (SWA) when observing the 
+increased recorded weight on the load cell in conjunction with the slings being utilized 
+for the lift. The crane operator was hesitant to question the expertise of the lead 
+mechanic. 
+ 
+Therefore, BSEE recommends that operators and contractors consider the following: 
+ 
+• Developing and following specific safe lifting plans based on the scope of crane 
+operations (e.g., heavy lifts, blind lifts, etc.). 
+• Ensuring applicable personnel have access to the necessary operating 
+procedures and understand them prior to performing work. 
+• Confirming all communication is established and agreed upon between 
+applicable personnel prior to commencing tasks. 
+• Reviewing JSAs for high-risk operations and verifying they include job-specific 
+instructions and associated mitigations for potential hazards. 
+• Incorporating an additional verification measure for confirming the accuracy of 
+load weight calculations prior to commencing operations. Reviewing calculations 
+when discussing operational procedures could help to verify the information. 
+• Ensuring slings are rigged in the most advantageous configuration to secure the 
+load through the entirety of the lift. 
+• Initiating SWA and reassessing the job scope if any activity is observed to be 
+unsafe or unforeseen, despite positional ranking, years of experience, or 
+seniority level. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that could 
+assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Crane / Lifting  

@@ -1,0 +1,93 @@
+
+
+ 
+Safety Alert No. 517 
+Date: June 6, 2026 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+Poorly Maintained Crane Components Result in 
+Multiple Injured During Personnel Transfers 
+  
+  
+ 
+Background: 
+The Bureau of Safety and Environmental Enforcement investigated two incidents involving 
+injuries to offshore personnel during basket transfers. In both incidents, a crane’s auxiliary 
+line descended unexpectedly while personnel were being transferred between an offshore 
+facility and a motor vessel.  The incidents show the importance of timely maintenance, 
+correcting known deficiencies, using stop-work authority, communicating clearly during 
+transfers, and planning for medical evacuations before work begins.  
+Incident 1: During a personnel transfer, a crane operator was lowering a worker in a rigid-type 
+personnel basket
+ (Figure 1) to the deck of a motor vessel when the crane’s auxiliary line 
+suddenly and uncontrollably dropped 6 to15 feet before coming to an abrupt stop 
+approximately 25 feet above the water. The worker remained in the basket but suffered 
+injuries to his back and leg.  
+Figure 1: (Incident 1) Crane and personnel basket type involved in incident.  
+Figure 2: (Incident 1) Scarring observed on the anti-two 
+block.  
+
+The injured worker needed medical evacuation by rescue stretcher/litter. Several attempts to 
+evacuate the worker by helicopter failed because of miscommunication about the type of 
+aircraft operating in the field and whether it could accommodate a stretcher/litter. The injured 
+worker was carried to the platform helideck before personnel determined the helicopter could 
+not accommodate the rescue stretcher/litter. The worker then had to be carried to the boat 
+landing and transferred over water to the motor vessel. Personnel from a nearby facility were 
+transported to assist with the evacuation. The evacuation by motor vessel occurred several 
+hours after the incident.  
+BSEE’s investigation found multiple contributing factors, including improper maintenance of 
+previously identified and uncorrected deficiencies of the auxiliary boom tip sheave and 
+bearing assembly; possible fouling of the auxiliary wire rope’s dead-end loop on the anti-two 
+block (ATB) device (Figure 2); failure to properly document and correct previously identified 
+crane deficiencies; and inadequate emergency planning and procedures.  
+Incident 2: During another personnel transfer using a platform crane and personnel basket, 
+three workers were injured when the crane experienced repeated uncontrolled, rapid 
+descents. As the basket cleared the handrail, it suddenly dropped approximately 1 foot. 
+Personnel inside the basket noticed the abnormal movement, and one passenger lost his 
+footing. Personnel in the basket tried to signal the concern to the crane operator, but the 
+crane operator continued lowering the basket to the motor vessel below.  
+As the personnel basket approached the deck of the motor vessel, the crane operator could 
+not control the descent. The basket rapidly dropped another 6 to 7 feet and landed abruptly on 
+the motor vessel deck, injuring personnel. After the incident, the crane was not immediately 
+taken out of service. The crane operator later attempted to use the crane’s auxiliary line for 
+diesel filling operations. The auxiliary brake slipped again, causing the diesel tote tank to 
+descend uncontrollably. The crane operator then took the crane out of service.  
+BSEE’s investigation found that the uncontrolled descent was caused by a loss of braking 
+control on the auxiliary line because the auxiliary hoist braking system needed adjustment. 
+The loose brake band allowed the hoist drum to rotate under load, resulting in the 
+uncontrolled descent of the personnel basket and diesel tote tank. Facility personnel did not 
+invoke Stop Work Authority (SWA) after the first uncontrolled descent. 
+To help prevent similar incidents, the Bureau of Safety and Environmental Enforcement 
+recommends that operators and their contractors, as appropriate, consider the 
+following: 
+• Follow all manufacturers recommended maintenance intervals and complete repairs 
+identified by certified maintenance technicians without delay.  
+• Correct previously identified crane deficiencies promptly and ensure maintenance and 
+inspection records accurately reflect repair status. 
+
+• Increase awareness of aging, worn, or neglected crane components during 
+inspections, especially brake systems, sheaves, bearings, and wire ropes.  
+• Train personnel to recognize brake band slippage, including early warning signs, 
+periodic maintenance requirements and proper tightening practices.  
+• Conduct thorough pre-use inspections before personnel transfers, including 
+verification that brakes respond properly under load. 
+• Verify during pre-use inspections that the auxiliary wire rope's dead-end loop is not 
+fouling on the anti-two-block device. Consider installing a striker plate on the auxiliary 
+line above the dead-end loop to help prevent fouling and damage to the anti-two-block 
+device or wedge socket. Reinforce stop-work authority. Stop operations immediately 
+after any uncontrolled or abnormal crane movement, and resume lifts only after 
+qualified personnel inspect the crane and correct any deficiencies.  
+• Strengthen communication protocols during personnel transfers by using designated 
+channels, call and response confirmations, and pre-job briefings. Ensure personnel 
+understand the importance of properly responding to signals given by personnel.  
+• Verify medical evacuation capabilities and transportation resources before operations 
+begin, including aircraft type, availability, landing restrictions, vessel support and 
+stretcher/litter limitations  
+• Conduct periodic emergency response drills so personnel are prepared for helicopter, 
+vessel, and platform-based evacuations. 
+ 
+ 
+Category: Personnel Safey, Personnel Transfers, Cranes/Lifting, Equipment Maintenance 
+A   Safety Alert is a tool used by BSEE to inform the offshore oil    and gas industry of the circumstances 
+surrounding a potential safety issue. It also contains recommendations that could assist avoiding 
+potential incidents on the Outer Continental Shelf. 

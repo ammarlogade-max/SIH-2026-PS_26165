@@ -1,0 +1,141 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BSEE Identifies Compressed Gas Cylinder Hazards During                             
+Risk-Based Inspections 
+ 
+Markings and Labels on Compressed Gas Cylinder on Drilling Rig During BSEE RBI 
+ 
+The Bureau of Safety and Environmental Enforcement’s Gulf of America Region identified a potential risk 
+involving compressed gas cylinders across the Outer Continental Shelf in 2024 and 2025. During this 
+period, multiple explosions were reported to the bureau and were linked to cylinder failures. Several of 
+the explosions were severe, causing injuries and damage to facilities. 
+In response, the bureau conducted a performance-based risk inspection, of 20 assets, including 
+production platforms and well operations across the Gulf region. These assets were operated by 13 
+unique operators. 
+BSEE identified several key findings: 
+• Although the inspection covered a limited sample of facilities and operators on the Outer 
+Continental Shelf, industry showed an overreliance on offsite, third-party contractors to ensure 
+adequate integrity of compressed gas cylinders. The inspection also found a limited 
+understanding of cylinder inspection programs and recharging processes.  In many cases, 
+offshore personnel were not familiar with cylinder markings. 
+ 
+Safety Alert No. 516 
+Date: April 28, 2026 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853  
+
+• Many facilities and offshore personnel were unaware of recent safety alerts published by the 
+bureau and the International Association of Drilling Contractors on the risks and the 
+recommendations to lower the risks associated with compressed gas cylinders. Inspectors also 
+noted that some operators followed good practices documenting the review of safety alerts by 
+offshore personnel and developing preventative maintenance requirements to address the 
+recommendations shared by the bureau and the association.   
+ 
+• Bureau inspection teams found facilities without compressed gas cylinder inspection programs. 
+They also found cylinders containing the same gases stored together and secured, but cylinders 
+with different pressure ratings stored in the same areas without adequate consideration. Some 
+cylinders could not be inspected, and some had no markings or showed corrosion. Inspectors 
+also identified good practices at some facilities, including inspection programs and post-
+inspection actions such as moving or rotating cylinders to allow inspection. 
+ 
+• It was uncommon for offshore personnel to understand cylinder markings, recertification dates, 
+the requirements of 49 CFR Part 173 Subpart G, or the shelf life of compressed gas contents. 
+Inspection teams also found multiple compressed gas cylinders with no markings or information 
+about their contents. No platform inspected used gas detectors to ensure cylinder integrity over 
+time. 
+ 
+• Most locations inspected had no compressed gas cylinder maintenance plans and relied solely 
+on third-party inspections. Most operators said they had an initial acceptance visual inspection 
+and a pre-use inspection; however, none of those inspections were documented or required. 
+Bureau inspectors identified only a few facilities with established maintenance plans based on 
+the last inspection date or a risk-based approach for fixed compresses gas cylinders.  
+ 
+• Most operators said they did not refill compressed gas cylinders on location. Recharging 
+appeared to be more common at well operations than at production facilities.  Where recharging 
+took place offshore, operators used caution tape, rigid storage racks, or predetermined locations 
+with a single person used as a barrier. Operators also used morning safety meetings and job 
+safety analysis to communicate hazards to offshore personnel during recharging operations. 
+ 
+• The majority the operators inspected did not have a recharging system, requirements or 
+responsibility on location. Operators said they relied on third-party vendors to recharge their 
+cylinders onshore or offshore. At facilities where recharging operations took place, they 
+implemented systems that could not charge at a higher pressure of their cylinders; pressure 
+safety valves are inspected and tested every 30 months; and pressure safety valves are set below 
+the maximum allowable working pressure of the compressed gas cylinders. 
+ 
+• Operators were generally unaware of Department of Transportation special permits, and largely 
+assumed their third-party vendors were compliant with Department of Transportation standards. 
+ 
+• Inspection teams found multiple cylinder racks in unprotected areas that did not allow for proper 
+drainage, increasing long-term exposure to corrosive elements. 
+ 
+• Operator and contract personnel were not trained on how to inspect compressed gas cylinders, 
+the risk associated with them, or best practices to prevent rupture incidents 
+
+Therefore, to help prevent similar incidents in the future, the Bureau of Safety and Environmental 
+Enforcement recommends that operators and their contractors, where appropriate, consider the 
+following:  
+• Review internal procedures for sharing safety alerts with offshore personnel and take corrective 
+action on recommendations from the bureau to prevent the recurrence of similar incidents on the 
+Outer Continental Shelf.   
+• Ensure all compressed gas cylinders are stored by contents and pressure; be easily inspectable; 
+have valve caps on when not in use and secured within a rack with chains, straps, or secured to a 
+wall or support. 
+ 
+• Inspect all cylinders on their platform and validate that every compressed gas cylinder is properly 
+labeled with clear, durable content identification via stenciling or labels. Every cylinder should 
+have marking requirements that include legible content names, hazard warnings, and Department 
+of Transportation info. Damaged labels should be marked as "Contents Unknown". Operators 
+should ensure their offshore personnel have a full understanding of cylinder labels, markings and 
+recertification dates. 
+• Working with third party vendors and establish the best inspection criteria for compressed gas 
+cylinders while they are located on shelf facilities. These inspections should be conducted by 
+qualified personnel and documented. Documentation should include the date of the inspection or 
+test; include the name and position, and the signature of the person who performed the inspection 
+or test; include the serial number or other identifier of the equipment on which the inspection or 
+test was performed; include a description of the inspection or test performed; and the results of 
+the inspection test. 
+• If any recharging operations take place offshore, develop written procedures to ensure safe 
+operations. Operators should not allow one person to perform recharging alone. Personnel should 
+use the correct personal protective equipment, open valves slowly, secure cylinders, keep ignition 
+sources away, conduct leak checks, and ensure all fittings are compatible with the gas being used 
+to prevent explosions, leaks and injuries from high-pressure gas. 
+• Before any pre-charge operations on an offshore facility, operators should confirm overpressure 
+protection on a pump for gas cylinders, visually inspect the pressure relief valve for damage, test 
+its function by letting the pump build pressure until the relief value opens, and check that the 
+pressure switch setting is lower than the relief vale’s set point, ensuring a multi-layered safety 
+system with proper settings below the tank's maximum limits. 
+ 
+• Work with their third-party vendors to ensure all racks that are sent to the offshore facilities meet 
+the requirements of the Department of Transportation and have all required special permits when 
+applicable. 
+ 
+• Review all cylinder racks on their facilities and determine if all cylinders are on a free draining base 
+to minimize corrosion. If a rack is identified to not be drainage free, operators and contractors 
+should find ways to mitigate corrosion to the cylinder through frequent inspections or moving the 
+racks to covered areas. 
+ 
+
+• Review Safety and Environmental Management System training element and ensure it addresses 
+compressed gas cylinder training regulations, especially those tied to  Occupational Safety and 
+Health Administration’s 29 CFR 1910.101, which mandates that employers train all personnel on 
+safe handling, storage, and use to mitigate hazards like explosions, fires, and toxic exposures, 
+covering proper personal protective equipment, valve handling, leak testing, and cylinder securing, 
+with specific training needed for different gas types. 
+ 
+ 
+– BSEE – 
+A Safety Alert is a tool used by the Bureau of Safety and Environmental Enforcement to inform the 
+offshore oil and gas industry of the circumstances surrounding a potential safety issue. It also 
+contains recommendations that could assist in avoiding potential incidents on the Outer 
+Continental Shelf.  
+CATEGORY: Personnel Safety, Explosion 

@@ -1,0 +1,87 @@
+
+
+ 
+Safety Alert No. 504 
+Date: August 1, 2025 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+Malfunction of Rental Generator’s Engine Air 
+Shutoff System Led to Fire 
+          
+ 
+ 
+ 
+ 
+ 
+Background: The Bureau of Safety and Environmental Enforcement (BSEE) recently 
+investigated a fire on an offshore platform in the Gulf of America involving a rental 
+generator. The incident stemmed from a malfunction in the engine's air shutoff system. 
+Initial investigation findings indicated that the oil fill cap was absent, and both exhaust 
+gases and oil venting from the open fill neck were potential ignition sources. Further 
+inspection revealed significant fuel leakage into the engine, leading to the accumulation of 
+unburnt diesel fuel. 
+The primary cause of the incident was determined to be improper operation of the engine’s 
+right bank air shutoff valve (air flap). The emergency air flap remained closed, restricting 
+adequate airflow to the engine and preventing proper fuel combustion. As a result, unburnt 
+diesel fuel and excess oil that had leaked past the piston rings accumulated. This 
+accumulation, combined with heat generated from the operational left bank, ignited the 
+fire. 
+ 
+Figure 1: Active Codes Reported on Generator. 
+Figure 2: Generator Error Codes. 
+
+ 
+ 
+Contributing Factors:  
+• The right bank air flap failed to fully engage with its microswitch
+1
+, preventing the 
+activation of a critical alarm that could have alerted personnel to the issue. 
+• The malfunction of the air shutoff valves during maintenance indicates that existing 
+procedures or verification checks were insufficient to ensure that all components 
+functioned properly before the engine was returned to service. 
+• The accumulation of unburnt diesel fuel and excessive oil levels suggests that 
+inadequate monitoring or maintenance practices may have failed to detect and 
+address fuel leakage past the piston rings. 
+• The absence of the oil fill cap may have contributed to the excessive oil levels and 
+leakage, indicating a potential lapse in routine maintenance or post-maintenance 
+inspection procedures. 
+To help prevent similar incidents in the future, BSEE recommends that operators and 
+their contractors, where appropriate, consider the following:   
+• Enhance inspection protocols for air shutoff valves and related alarm systems 
+during routine maintenance to ensure proper functionality and early detection of 
+potential failures. 
+• Conduct training sessions for personnel on monitoring engine performance, 
+identifying abnormal conditions, and verifying the functionality of critical alarm 
+systems to enhance operational awareness and response readiness. 
+• Review and update maintenance procedures to include comprehensive checks for 
+potential fuel and oil leaks, especially following maintenance activities to confirm 
+system integrity before returning equipment to service. 
+• Ensure diesel engine air intake shutdown devices are installed and fully operational 
+in compliance with 30 CFR 250.856. Air intake systems should be functionally 
+tested according to manufacturer instructions or prior to use. 
+ 
+ 
+1
+ A microswitch is a small, sensitive electrical switch used to detect the physical position of a component—in 
+this case, the engine’s air shutoff valve (air flap). When properly engaged, the microswitch confirms the 
+valve’s open or closed position and triggers alarms or interlocks if the valve fails to operate as intended. This 
+ensures early detection of malfunctions that could lead to unsafe engine conditions. 
+ 
+
+ 
+ 
+• Incorporate requirements into rental generator procurement processes to include 
+documentation of safety device functionality, engine maintenance history, and 
+verification of critical operating functions. This recommendation addresses the 
+contributing factors identified in this alert. Specifically, if an engine has more than 
+one emergency air flap, each must be tested independently during the third-party 
+inspection prior to commissioning, and each should be capable of shutting down 
+the unit independently. 
+ 
+–   BSEE – 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+Category: Fire, Personnel Safety 

@@ -1,0 +1,38 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 205
+October 31, 2002
+Contact: John McCarroll
+(985) 853-5892
+Blowout Results in Fatality and Injuries
+Recently a well started to flow up the drill pipe after the floorhands had set the slips, unscrewed the kelly, and
+made the kelly up to the next joint of drill pipe in the mouse hole. A float valve had been removed from the
+bottomhole assembly (BHA) prior to drilling out below the surface casing. The rig floor safety valve was
+stabbed; however, the valve could not be closed, with two men receiving burns from hot mud in the attempt. The
+valve was removed but the mud flow was too strong to stab the drill pipe. When the gas and mud flow began to
+reach the top of the derrick, the rig was abandoned. One man was lost during the evacuation and is presumed
+dead. The well ceased to flow without intervention.
+An MMS investigation concluded the following to be causes of the incident:
+1. The rig floor safety valve was frozen open and had not been actuated daily, and there was no back-up rig
+floor safety valve.
+2. The driller failed to recognize indications that the well was flowing at the time the kelly was broken,
+possibly because of poor illumination of the trough. Further, the driller failed to recognize that the PDC
+(polycrystalline diamond compact) bit had a reverse drilling break and that he had already cut a gas zone.
+3. No pre-spud meeting was conducted.
+4. The absence of a drill pipe float permitted fluids to flow up the drill pipe, and there were no shear rams in
+the blowout preventer (BOP) stack.
+Therefore, MMS recommends the following to operators and contractors:
+1. Maintain a second rig floor safety valve for use during cementing, wire line, and other routine operations,
+with the primary valve being used for well control purposes only.
+2. Actuate and pressure-test both valves as part of the BOP tests.
+3. Review existing policies regarding the use of float valves in the BHA, pre-spud meetings, and night
+operation illumination.
+For details of the accident, seeOCS Report MMS 2002-062. Copies of the report may be obtained from the
+MMS Public Information Office located at 1201 Elmwood Park Boulevard, New Orleans, Louisiana 70123
+(1-800-200-GULF or local 504-736-2519).
+—MMS—GOMR—
+www.gomr.mms.gov
+Visit our Safety Information Website
+Safety Alert No. 205 -- Blowout Results in Fatality and Injurieshttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_205...
+1 of 12/21/2012 4:36 PM

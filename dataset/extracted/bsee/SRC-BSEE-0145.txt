@@ -1,0 +1,76 @@
+
+
+ 
+Safety Alert No. 372                     Contact: Nicholas Fraiche 
+December 5, 2019                      Phone: (504) 736-7631 
+ 
+ 
+Improper Use of Equipment Causes Blasting Cap Misfire 
+ 
+ 
+                                                Improper meter is  used to test unshielded blasting cap.  
+ 
+On September 22, 2019, an electric line operator was injured when a “Green Detonator” 
+blasting cap ignited while he performed a continuity test using a megohmmeter. The 
+incident occurred at an offshore facility while preparing for tubing cutting operations.  
+ 
+The operator performed continuity tests on a wireline shock sub tool using a 
+megohmmeter then attempted to test the “Green Detonator” blasting cap with the same 
+meter. The operator did not follow standard operational protocol and did not use the 
+proper tool to test the detonator. In addition, the blasting cap was not placed inside a 
+safety loading tube prior to testing.
+ 
+ 
+American Petroleum Institute (API) Recommended Practice 67 states, “only instruments 
+recommended for use when testing electrical detonators and detonator circuits are those 
+specifically designed and/or qualified for checking explosives and explosives circuits. The 
+test current from the meter used to perform resistance checks shall not exceed 25 
+milliamperes or 10% of the no-fire rating of the detonator in the circuit, whichever is less.” 
+ 
+ 
+  
+SAFETY ALERT 
+ 
+ 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.  
+ 
+Therefore, BSEE recommends operators and contractors consider the following:  
+ 
+•    During explosive operations, personnel must follow operating procedures and use 
+the correct tools and equipment for the task. 
+ 
+•    Ensure field personnel have completed appropriate explosive training; 
+ 
+•    Consider a two-person sign off requirement of safe operating procedures prior to 
+initiating all explosive operations; 
+ 
+•    Discuss explosive hazards during pre-job safety meetings;  
+ 
+•    Ensure a detailed procedure is    available for reference during an explosive 
+operation;  
+ 
+•    Label megohmmeters and other electrical testing equipment with a warning not to 
+use for testing explosive caps; 
+ 
+•    Review and update operational procedures as necessary to maintain its accuracy 
+and encourage compliance; and, 
+ 
+•    Provide regular training (both in-classroom and hands-on) on explosive usage and 
+proper equipment identification and labeling.  
+ 
+Due to the frequency of similar testing across the industry, BSEE is issuing this Safety Alert 
+prior to the conclusion of an ongoing investigation. If BSEE’s investigation reveals 
+additional pertinent information, another Safety Alert will be issued. 
+ 
+--BSEE-- 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

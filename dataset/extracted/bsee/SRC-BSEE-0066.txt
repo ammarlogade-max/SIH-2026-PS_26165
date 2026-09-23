@@ -1,0 +1,169 @@
+
+
+ 
+ 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: 800.200.4853 
+  
+  
+ 
+ 
+ 
+ 
+ 
+Fires During Decommissioning Cause Injuries 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Recently, a contractor was injured by a severe flash fire while performing “hot work”
+1
+ on a 
+pipeline skid during decommissioning activities. While cutting a section of 12-inch pipe using a 
+five-foot cutting torch, a flash fire struck the contractor on the right side of his face. Fire watch 
+personnel quickly extinguished the fire, and the contractor was immediately transported to shore 
+to treat his burns.  
+ 
+Six months before this incident, the pipe was flushed, filled with seawater, and inspected by 
+opening several needle valves. Clear salt water was discharged before the hot work activity 
+commenced. However, releasing the salt water did not eliminate the trapped hydrocarbons from 
+the pipe. The first cut was made on the lower end of the pipe without incident, suggesting that 
+ 
+1
+ Hot work includes all work operations which make use of or create sources of ignition. Examples of sources of 
+ignition include welding, hot tapping of pipes and tanks, use of open flame(s), use of cutting torches and grinding, 
+electric heat guns, sandblasting, electrical hand tools, megger testing, soldering, flash cameras, nail guns and other 
+non-explosion proof electrical equipment. 
+  
+ 
+Safety Alert No. 453 
+December 13, 2022 
+SAFETY ALERT 
+ 
+ 
+Figure 1.  Contractor employee conducting hot work 
+ 
+
+ 
+ 
+the line did not contain flammable vapors or liquids. When the contractor made the second cut 
+on the upper end of the pipe, the gas ignited, causing the flash fire (see figure 1, above). 
+ 
+Contributing Factors included the following: 
+• Insufficient identification of hazards: The Job Safety Analysis (JSA)
+2
+ covered the pipe-
+cutting operation and several other decommissioning activities. It addressed common 
+hazards for this job but only briefly mentioned testing for flammable gas. 
+ 
+• Inadequate work planning: A detailed work procedure specific to cutting and removing 
+piping was not developed, and the entire decommissioning project did not have a work 
+plan. 
+ 
+• Deficient work-permitting system: There was no isolation verification (e.g., mechanical 
+barrier) nor pre-job validation that the pipe contained no flammable gas; the pipe was 
+presumed safe and ready for demolition.  
+ 
+• Insufficient policies and procedures: The hot work permit and JSA were unclear about 
+gas detection requirements for the Lower Explosive Limit (LEL)
+3
+. 
+ 
+Therefore, BSEE recommends operators and contractors do the following:  
+ 
+• Always assume that all piping and vessels that previously contained flammable liquids 
+or vapors may still contain these flammable gasses until it has been positively verified 
+that there is no longer hazardous. Piping or vessels isolated from potential hydrocarbon 
+sources using only a single barrier (e.g., a closed ball valve) should also be assumed to 
+contain flammable hydrocarbons. 
+• Understand that gravity draining a vessel or pipe and opening them to the atmosphere 
+may not be sufficient to remove all flammable liquids and vapors. 
+• Plan and conduct multi-disciplinary pre-job risk assessment.  
+• Develop job-specific procedures for:  
+ Determining no hydrocarbons are present inside vessels or piping before 
+cutting or breaking containment.
+4
+  
+ Removing hydrocarbons if they are present.  
+ 
+2
+ Job Safety Analysis (JSA) is a systematic procedure that breaks each job/task into key training sequences, 
+identifies safety elements of each job/task step and coaches the employee on how to avoid potential safety 
+hazards. 
+3
+ Lower Explosive Limit (LEL) is defined as the lowest concentration (by percentage) of a flammable gas or vapor in 
+air that can produce a flash of fire in presence of an ignition source (arc, flame, heat, etc.). At concentrations lower 
+than the LEL, the mixture is too “lean” to burn. 
+4
+ Breaking Containment is the act of breaking the integrity of process piping or equipment that may contain toxic 
+or hazardous products. It is a planned loss of containment where there is potential for trapped pressure, or 
+exposure to a toxic commodity or unknown material. 
+
+ 
+ 
+ Ensuring hydrocarbons will not enter piping or vessels during the job (e.g., 
+closing and locking valves, installing pipe plugs, etc.). 
+• Develop and follow hot work policy/procedures
+5
+ for tasks involving special hazards 
+(e.g., welding, flame cutting, removing barriers separating hydrocarbons from work 
+areas (breaking containment), working at heights, working in confined spaces, etc.). 
+• Ensure all contractors use proper work permits and comply with requirements. 
+• Ensure all operations and contract personnel attend and participate in a pre-job JSA 
+meeting to evaluate the specific job tasks, hazards, and necessary control measures for 
+all hot work and ensure that the supervisors of all phases of the work know and 
+understand the complete job scope. 
+• Ensure all operations and contract personnel involved in hot work attend and participate 
+in a pre-job meeting/toolbox talk.
+6
+  
+ All workers should review the JSA and should ensure that all hazards are 
+acknowledged, and that policies/procedures, guidelines, contingencies, and 
+communications are understood. 
+ Verify that the gas detector’s audible alarms (e.g., high %LEL reading) will be 
+heard in the work area and the individuals know how to respond to the alarm. 
+• Consider splitting larger jobs with multiple tasks into organized respective units via JSAs 
+and work permits.  
+• Ensure operator, contractor, and service company employees recognize and understand 
+that inadequate communication is one of the most common causes of major accidents, 
+especially when performing hot work. 
+• Always ensure that all individuals involved in the task wear proper Personal Protective 
+Equipment (PPE).  
+ 
+– BSEE –  
+ 
+ 
+ 
+ 
+5
+ Hot work policies/procedures should establish the minimum safe working guidelines for the operation on 
+cutting, welding, brazing, grinding, and soldering or any other similar operation. 
+6
+ Toolbox talks allow you and your workers to explore the risks of specific health and safety issues on your site and 
+think about ways to deal with them. Toolbox talks should focus on safety topics and be held regularly for greatest 
+impact. Toolbox Talks should focus on techniques that keep workers safe and reinforce that we should never 
+sacrifice safety for increased productivity. 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Fire, Decommissioning   

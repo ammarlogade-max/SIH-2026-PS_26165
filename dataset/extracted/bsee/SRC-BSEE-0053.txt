@@ -1,0 +1,170 @@
+
+
+ 
+SAFETY ALERT 
+`   
+ 
+ 
+ 
+ 
+ 
+Lack of Maintenance to Uninterruptible Power 
+Supply Systems Leads to Failures 
+BSEE has become aware of a series of failures on industrial uninterruptible power supply 
+(UPS) systems, resulting in significant power loss to industrial control systems, emergency 
+shutdown systems, and emergency mitigation systems. These incidents have also led to 
+failures of capacitors and batteries, compromising the reliability and effectiveness of critical 
+systems.    
+ 
+INCIDENTS 
+ 
+Incident 1: UPS Failure Releases Smoke, Setting off Smoke Detectors 
+ 
+An offshore production facility experienced a shutdown due to failed components in the UPS 
+system, and as a result the emergency generator was activated to provide temporary power.  
+However, the UPS system encountered further issues when the power shunt circuit breaker
+1
+ 
+tripped, leading to smoke and electrical arcing/sparks emanating from the power transformer 
+case within the UPS inverter section.   
+To address this situation the fire team was assembled to handle the potential fire hazard.  
+Once the energy released and arcing subsided, the breakers supplying power to the UPS were 
+safely opened and locked out from all power sources. This precautionary measure aimed to 
+protect the technicians from any unintended release of electrical energy, which could pose a 
+risk or injury.   
+After isolating the failed components, the UPS was placed in safe bypass mode. This mode 
+allows for the system to be temporarily bypassed, ensuring uninterrupted power supply to 
+critical equipment while technicians can conduct a thorough inspection. During the inspection, 
+they discovered damage in the inverter section of the UPS.     
+ 
+ 
+1
+ Shunt circuit breakers are optional devices that allow electrician/technician the ability to trip the breaker 
+remotely. 
+ 
+  
+ 
+Safety Alert No. 466 
+Month Day, 2023 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+ 
+
+ 
+ 
+Incident 2: UPS Did Not Supply Backup Power After a Shut-in  
+ 
+During testing activities on an offshore production facility, an emergency safety system was 
+activated, causing a loss of power generation and subsequent shutdown. As a result, a full 
+deluge of all zones was initiated, and the abandon platform alarm sounded, indicating an 
+immediate evacuation protocol.  
+Unfortunately, in this situation, the emergency generator failed to start, and UPS did not 
+provide backup power as expected. This double failure further exacerbated the power loss 
+issue, leaving the facility without any reliable source of electricity.   
+The consequences of the power loss were significant. One of the major impacts was on the 
+communication system, making it difficult for the operator to maintain effective communication 
+among themselves and with other personnel. Without proper communication channels, it 
+became challenging to coordinate critical operations and respond to emergencies promptly.   
+Additionally, the control system visualization was affected, hindering the operator’s ability to 
+monitor and control crucial processes within the facility. This disruption not only posed risks to 
+personnel safety but also had the potential to compromise the overall integrity of the facility.   
+Incident 3: UPS Failure Due to Overcharging 
+ 
+During an incident on an offshore production facility, a full evacuation of personnel was 
+necessary due to an extended electrical power loss. This incident shed light on critical issues 
+with the offshore facility’s UPS system, specifically with UPS system B, as UPS system A was 
+undergoing a replacement project at the time. 
+In this incident, the facility was relying on emergency power supplied by UPS system B.  
+However, despite being in static bypass mode
+2
+, the inverter of UPS B had failed.  
+Unfortunately, this failure went unnoticed, and the rectifier
+3
+ of UPS B continued to charge 
+batteries at an elevated voltage. The elevated voltage was a direct consequence of the failure 
+of the voltage indicator, which failed to trip the emergency circuit breaker and stop the power 
+supply. This oversight resulted in the batteries being subjected to overcharging, leading to their 
+failure and subsequent loss of power supplied from UPS B. The failure of UPS B compromised 
+the availability of backup power, which is crucial for maintaining critical operations and 
+ensuring personnel safety on the offshore production facility.    
+Without a reliable backup power source, the facility could face difficulties in maintaining vital 
+systems, such as communication, control, and emergency equipment.  
+ 
+2
+ A static bypass switch automatically and instantaneously transfers the load to the primary power source when 
+there is an internal fault or failure with the UPS System. 
+3
+ A UPS rectifier performs two important roles: converting the main power source from AC (alternating current) to 
+DC (Direct Current), and recharging the batteries while DC power routes to the inverter. Then the inverter 
+converts DC power from the rectifier (or batteries) back into AC power for load use. 
+
+ 
+ 
+Contributing Factors 
+BSEE investigators found that: 
+• UPS systems and maintenance guidelines did not provide adequate information to allow 
+the continued safe and reliable operation of the industrial UPS systems. Specifically, the 
+operating and maintenance instructions did not direct the needed replacement of all 
+relevant components within the UPS system with parts time-limited to less than the 
+design life. Some component examples are batteries, filter capacitors, cooling fans, 
+internal random access memory batteries, power cards, and control cards.  
+• Self-healing polypropylene capacitors located in the inverter section of the UPS were 
+exposed to excessive current, which caused the capacitors to fail resulting in bulging 
+and discoloration. (Incident 1)  
+• The lack of updated hardcopy electrical drawings caused confusion and impacted the 
+ability of technicians to address issues quickly and accurately. (Incident 2)  
+• The UPS system had clogged air filters, limiting air flow, and causing exposure to 
+excessive heat. The excess heat eventually started to evaporate the solution inside the 
+capacitor, which produced unsafe pressure causing the capacitor to fail. (Incident 3) 
+Therefore, BSEE recommends operators and contractors consider: 
+ 
+• Conducting training sessions and raising awareness among personnel regarding 
+emergency response protocols, including the appropriate actions to take during power 
+loss events and communication system failures. 
+ 
+• Evaluating the feasibility of introducing redundancy measures to critical systems, such 
+as backup power generation and uninterruptable power supply, to minimize the risk of 
+future disruptions. 
+ 
+• Evaluating communication and control system visualization infrastructure to enhance 
+real-time monitoring and alarming capabilities.  
+ 
+• Considering implementing advanced monitoring technologies, redundant 
+communication channels, and backup visualization systems to minimize the impact of 
+power loss on critical operations. 
+ 
+• Reviewing emergency response protocols and procedures to ensure they adequately 
+address power loss scenarios and including specific guidelines on communication 
+system redundancy and backup measures.  
+ 
+
+ 
+ 
+• Training personnel on emergency response procedures and reinforcing the importance 
+of timely communication during critical situations. 
+ 
+• Developing a comprehensive testing and maintenance program for all emergency 
+systems, including power generation and control systems. Regularly reviewing and 
+testing the emergency power systems to verify their functionality and performance and 
+addressing any identified issues promptly. 
+ 
+• Ensuring maintenance personnel establish and conduct an approved periodic 
+examination of the UPS alternating current and direct current capacitors. Examinations 
+should be thorough and include capacitance testing, visual inspections for bulging and 
+discoloration, and thermal scanning to detect and track potential problems.  
+ 
+• Ensuring all electrical one-line diagrams required by 30 CFR 250.842 are up-to-date 
+and available to personnel working on electrical equipment. 
+ 
+• Ensuring equipment suppliers provide adequate documentation, including 
+specifications, drawings, and installation, commissioning, and decommissioning 
+procedures. 
+ 
+ 
+– BSEE – 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Power Outage, Electrical  

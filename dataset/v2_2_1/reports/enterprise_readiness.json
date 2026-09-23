@@ -1,0 +1,16 @@
+{
+  "dataset_name": "SIF Sentinel Canonical Dataset",
+  "version": "2.2.1",
+  "license": "Open Government & Public Safety Regulatory Data",
+  "provenance_standard": "SHA-256 cryptographic verification of source artifacts",
+  "data_protection": "No PII, personnel names redacted, operational safety public record",
+  "intended_use": "High-risk oil and gas industrial SIF precursor identification and risk triage",
+  "out_of_scope_use": "Autonomous disciplinary punitive actions against workers",
+  "security_classification": "Enterprise Audited Safety Intelligence",
+  "compliance": {
+    "iogp_report_459": true,
+    "zero_leakage_splits": true,
+    "zero_fabricated_narratives": true,
+    "exact_evidence_grounding": true
+  }
+}

@@ -1,0 +1,39 @@
+
+
+ 
+       
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Safety Alert No. 235                            Contact:      David Dykes 
+ December 15, 2005 (504) 736-3249 
+Multiple Cable Transit Failures 
+Following the passage of Hurricane Dennis, personnel returned to the Thunder Horse facility to find it listing at 
+approximately 20 degrees with the top deck in the water on the port side. This incident is currently under 
+investigation and the exact source/cause of the water influx/listing has not been determined at this time; however, 
+information has been discovered that needs to be shared with industry. 
+Preliminary findings from the investigation indicate that water movement among the access spaces occurred through 
+failed multiple cable transits (MCT’s).  MCT’s are the points in the watertight bulkheads where cables that carry 
+electrical power and instrument signals pass through the watertight bulkheads.  Essentially, MCT’s are molded 
+blocks of plastic that seal around each cable.  Failure occurred in the spaces filled with blank blocks.  Specifically, 
+the findings indicate that either the MCT’s may not have been installed properly, may have been installed using the 
+wrong procedures, or may not have been properly pressure rated for the configurations being used. 
+Until the investigation is completed and the findings verified, the MMS recommends that all operators and 
+contractors should 
+•	 Review their facilities to determine if they have these types of MCT’s.   
+•	 Determine if the MCT’s were properly installed and properly pressure rated for the configurations being 
+used. 
+Following the conclusion of this investigation, the MMS will issue an updated Safety Alert.   
+—MMS—GOMR— 
+www.gomr.mms.gov 

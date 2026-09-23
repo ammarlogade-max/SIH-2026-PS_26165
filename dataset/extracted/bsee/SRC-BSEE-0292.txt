@@ -1,0 +1,36 @@
+
+
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 227
+March 8, 2005
+Contact:Glenn Woltman
+(504) 736-2438
+Explosion and Fire on Platform Caused by Improper Welding and Burning Practice
+Recently, scheduled maintenance work was performed on process equipment on an offshore
+production platform.  The scope of the repair work for this pressure vessel includedthe use of a
+“cold-cut” saw to remove manageable pieces of a segment of bad piping extending from near the
+process system.  When the “cold-cut” saw blade became dull before commencing the lastcut, a
+decision was made to use a cutting torch to make the final piping cut.  This procedure had not been
+addressed in the Job Safety Analysis (JSA), and no provisions had been made for the hot work to
+include the installation of a fire blanket over the vessel, or to render the contentsof the vessel inert.
+Shortly thereafter, an explosion was heard and a small fire ensued.
+MMS concluded that an air/hydrocarbon fuel mixture inside the vessel was ignited by sparks from the
+cutting torch, as a result of a small hydrocarbon vapor leak from around one of the vessel’s hatch cover
+gaskets.  MMS further concluded that the causes of the accident in part are the operator’s failure to
+follow his Welding and Burning Safe Practices Plan and the regulatory requirements regarding hot work
+procedures.
+The MMS recommends the following:
+·Supervisors must provide adequate job preparation, instructions, and job planning prior
+to undertaking work.  Hazards must be identified as work proceeds, and action plans
+taken to change the JSA as the job steps change.
+·Crewsmust follow approvedWelding and Burning Safe Practices Plans.
+·Immovable equipment should be protected with flame-proofed covers, shielded with
+metal or fire-resistant guards or curtains, or have its flammable substances rendered
+inert.
+  —MMS—GOMR—
+www.gomr.mms.gov
+Visit our Safety Information Website
+Explosion and Fire on Platform Caused by Improper Welding and Bur...http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_227...
+1 of 12/21/2012 4:44 PM

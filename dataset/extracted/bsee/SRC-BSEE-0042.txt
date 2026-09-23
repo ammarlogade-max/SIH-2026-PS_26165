@@ -1,0 +1,123 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+BSEE Investigates Incidents Related to Working in Confined 
+Spaces 
+       
+  
+ 
+In recent months, the Bureau of Safety and Environmental Enforcement (BSEE) has 
+observed a trend of safety incidents that occurred while personnel conducted tank 
+cleaning operations in confined spaces.  
+Incident 1: Required CPR 
+The first incident occurred while a worker was vacuuming, and the nozzle became stuck 
+inside the tank. To free the nozzle, the worker—who was wearing a respirator with 
+organic filters specifically used for working outside the tank—fully entered the tank, 
+where he fell ill. Coworkers found the worker inside the tank lying under the fluid. 
+Cardiopulmonary Resuscitation (CPR) was administered to revive the worker. 
+A comprehensive investigation revealed: 
+• Stop Work Authority (SWA)
+1
+ was not invoked, which is a deviation from standard 
+safety protocols.  
+ 
+1
+ SWA gives workers and contractors the authority and responsibility to stop work if they observe unsafe 
+conditions or behaviors on the jobsite. 
+  
+ 
+Safety Alert No. 477 
+Dec. 13, 2023 
+Figure 1. Heater-Treater Injured Party Entered. 
+Figure 2. Tank Injured Party Entered. 
+
+ 
+ 
+• There was non-compliance with the company’s confined space entry policies.  
+In addition to procedural lapses, a significant contributing factor to the incident was 
+human behavior. Specifically, it was noted that an employee felt compelled to rush, 
+leading to hasty and ill-informed decisions. This haste ultimately led to unauthorized 
+and unplanned entry into the tank, further exacerbating the situation. 
+Corrective actions to be implemented include:  
+• Providing additional refresher training for confined space rescue.  
+• Invoking safety stand downs.  
+• Installing X-Brace on manways for personnel barrier. 
+• Ensuring management meets with supervisors to go over policies and 
+procedures before every job.  
+Incident 2: Experience Near-S yncope 
+In another incident, a worker began to feel ill while conducting tank cleaning operations 
+and attempted to exit the tank. While exiting, the worker experienced a near-syncope 
+episode (Near-syncope is feeling like one is going to pass out but without actual loss of 
+consciousness).   The worker initially appeared alert but was slow to answer questions, 
+was sweating profusely,  and then collapsed. A coworker revived the worker using CPR. 
+The worker was flown to shore, and medical evaluation showed the worker had non-
+stress-induced cardiac arrythmia that may have contributed to the near-syncope 
+episode.  
+OSHA Requirements 
+The Occupational Safety and Health Administration (OSHA) website lists the hazards 
+associated with oil and gas storage tanks, including: 
+• Fire 
+• Asphyxiation 
+• Falls 
+• Death/injury  
+•    Entrapment 
+OSHA provides requirements for working in confined spaces under 29 CFR § 1910.146. 
+The American Petroleum Institute and the National Fire Protection Association have 
+developed standards for tank cleaning operations.  
+
+ 
+ 
+BSEE recommends that operators and their contractors, where appropriate, 
+consider: 
+• Ensuring all personnel understand what constitutes a confined space and 
+confined space entry. Ensuring personnel are aware that confined spaces may 
+be hazardous even if part of the body remains outside of the space. 
+• Ensuring a Job Safety Analysis (JSA) is in place and is discussed prior to starting 
+work. Completing, if required, a confined space entry work permit, which should 
+explain the hazards and mitigations common to confined space work. 
+• Stopping the job and discussing/analyzing any potential safety and 
+environmental hazards, and renewing approval before proceeding when 
+deviating from the JSA and/or permit. 
+• Ensuring the proper personal protective equipment (PPE) is worn.  
+• Ensuring others know of your planned activities and the duration of the planned 
+activities prior to entering a confined space.  
+ 
+• Ensuring personnel inside the confined space have means to communicate with 
+personnel outside. Regular communication can be used to detect if the personnel 
+inside have become impaired. 
+ 
+• Ensuring proper ventilation prior to entering a confined space. If proper 
+ventilation cannot be achieved, utilizing the necessary breathing apparatus.  
+• Developing a rescue plan for extracting personnel who are unable to exit a 
+confined space due to injury or incapacitation. Identifying the personnel who will 
+execute the rescue plan and the equipment that will be used. 
+ 
+• Ensuring employees and/or contractors have the proper training to clean in an 
+enclosed space. Also ensuring the training is current and up to date.  
+• Clearly marking the storage tanks regarding the substance contained and any 
+associated hazards (flammability, reactivity, health hazards, etc.).  
+• Keeping Material Safety Data Sheets (MSDS) for all substances found on 
+location in an easily accessible area, including chemicals in the storage tanks. 
+
+ 
+ 
+• Ensuring all personnel are made aware of their duty and responsibility of utilizing 
+SWA with the full support of their supervisor and management. 
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Personnel Safety  

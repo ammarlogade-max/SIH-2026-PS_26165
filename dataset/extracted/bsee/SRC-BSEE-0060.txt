@@ -1,0 +1,80 @@
+
+
+  
+ 
+ 
+Safety Alert No. 459 
+March 8, 2023 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+ 
+Lack of   training with Hydraulic Torque Wrench contributes to fatality 
+aboard the drillship 
+ 
+ 
+ 
+Figure 1. Floorhand Bolt Removal Figure 2. Riser Bolt and Telescopic Riser Joint 
+ 
+ 
+During well operations, a    fatality occurred on a drillship in the Gulf of Mexico. 
+ 
+While unlatching the lower Marine Riser Package from the Blowout Preventor in 
+preparation for ship relocation, a crewmember was lifted into the air after being struck 
+by a Hydraulic Torque Wrench (HTW), hitting a riser clamp approximately six feet 
+above the elevated work deck before falling to the rig floor. The crewmember was given 
+first aid and transported to the drillship’s hospital, where he was later pronounced 
+deceased. 
+ 
+The incident investigation found that the rig crew was using a HTW  to extract the bolts 
+from a telescopic riser joint (TJ) flange. During the operation, the HTW socket became 
+stuck between the bolt head and the tapered edge of the TJ. After failing to manually 
+dislodge the HTW using physical exertion, the rig crew utilized a Hydraulic Utility Winch 
+(HUW) to supply upward force and applied tension to free the HTW. 
+ 
+SAFETY ALERT 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It   also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+After applying the upward force, the HTW became unstuck under tension and shot 
+upwards leading to the crewmember being struck. 
+ 
+Additional information is included in the BSEE Panel Investigation Report. 
+ 
+ 
+ 
+Contributing Factors included the following: 
+ 
+• Lack of recognizing the stuck-HTW potential on the TJ beveled edge. 
+• Lack of comprehensive understanding of the Task Risk Assessments associated 
+with the riser pull. 
+• Failure to effectively communicate all learnings from the previous riser pulls. 
+• Lack of formalized training for the utilization of the HTW and HUW. 
+• Adverse designs of the HTW and the HUW. 
+• Contributing Causes: 
+o Failure to initiate Stop Work Authority. 
+o Discrepancies with the Drill Floor Observer roles and responsibilities. 
+ 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+ 
+• Ensure the Job Safety Analysis captures the limitations of the HTW when in use. 
+• Verify all employees understand the Job Safety Analysis and have been formally 
+trained on operating both the HTW and HUW. 
+• Emphasize the initiation of Stop Work Authority if an imminent danger is 
+observed. 
+• Expand the Drill Floor Observer's responsibilities to monitor all aspects of 
+jobs occurring on the rig floor. 
+• Consider utilizing a HTW with a compatible design that corresponds with the 
+beveled edge of the TJ. 
+• Explore options for employing a load indicator or a similar design mechanism 
+onto the HUW package. 
+• Ensure pre-job reviews, and promote the sharing of feedback from 
+previous experiences. 
+ 
+ 
+– BSEE – 
+ 
+ 
+ 
+Category: Personnel Safety/Process Safety 

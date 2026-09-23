@@ -1,0 +1,92 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+              
+MMS 
+ 
+ 
+ 
+ 
+ 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 281 Contact:  Glynn T. Breaux 
+23 July 2009 (504) 736-2560 
+Drilling Rig Air-Operated Hoist Operation Fatality 
+Recently an accident resulted in one fatality and injury on a jack-up rig during use of air-
+operated hoist (air tugger) to lift 50 feet of 2-inch rubber hose, approximately 400 pounds, for 
+testing the well’s 13-3/8 inch x 9-7/8 inch casing annulus in preparation of sidetracking the well.  
+A WECO Figure1502 hammer union had previously been modified to include the addition of a 
+welded bale that would be used as the lifting connection (see Figure 1).  When the hose 
+assembly was lifted approximately 30 feet into the derrick above the rig floor, the modified 
+union failed just above the weld on one end of the bale.  The first Floor Hand (FH-1), standing 
+near the center of the rig floor but not directly under the assembly, received life threatening 
+injuries (unresponsive but breathing) subsequent to being struck on the top of his hardhat by the 
+modified hammer union.  FH-1 was pronounced deceased approximately 2 hours later in the 
+hospital’s emergency room.  The second Floor Hand (FH-2), standing next to the hand railing on 
+the rig floor and manipulating the hose to protect the load from snagging, was initially knocked 
+down by the hose, arose to move away from the railing when he was knocked down a second 
+time by the air tugger’s wire rope that back-lashed subsequent to the loss of load weight.  FH-2 
+sustained superficial injuries. 
+Failed bale 
+above weld 
+Figure 1: Modified WECO Figure 1502 hammer union with failed welded bale 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+              
+ 
+ 
+ 
+A Minerals Management Service (MMS) Panel investigation into this accident revealed that the 
+direct cause of the accident was the use and failure of the modified WECO Figure 1502 hammer 
+union with welded bale being used as the lifting connection.  This lifting connection was being 
+used in spite of the Contractor’s Health, Safety and Environmental (HSE) policy stating that 
+homemade or modified lifting equipment shall never be used. 
+Therefore, the MMS recommends the following: 
+•	 Non-approved/non-certified (homemade/field manufactured) lifting equipment should be 
+immediately removed (discarded) and immediately brought to management’s attention. 
+•	 In order for lift equipment inspection/maintenance programs to be effective, Operators 
+and their Contractors should: 
+o	 Include visual inspections prior to use.  
+o	 Properly clean, grease and/or oil equipment after each use. 
+o	 Ensure that any lifting component is used only in accordance with the 
+manufacturer’s specifications and instructions for use.  
+o	 Replace the equipment when it exceeds the manufacturer’s recommended use.  
+--MMS--GOMR--
+www.gomr.mms.gov 

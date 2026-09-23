@@ -1,0 +1,115 @@
+
+
+ 
+Safety Alert No. 505 
+Date: Aug. 11, 2025 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+BSEE Risk-Based Inspections Reveal Increase in 
+Slip-Trip-Fall Hazards on Offshore Facilities 
+ 
+          
+ 
+ 
+ 
+ 
+ 
+Background: The Bureau of Safety and Environmental Enforcement (BSEE) Gulf of America 
+Region (GOAR) identified a potential risk associated with slips, trips and falls (STFs) across 
+the Outer Continental Shelf (OCS) between May 2024 and April 2025. During this period, 
+22% of all injuries reported to BSEE were attributed to STFs, surpassing lifting-related 
+injuries for the first time in recent years. These STF injuries were often severe, resulting in 
+major injuries defined as three or more days away from work, restricted work, or job 
+transfer. 
+In response to the rise in operator and contractor injuries, BSEE initiated a Performance-
+Based Risk Inspection (PBRI). The inspection covered 19 assets, including production 
+platforms and well operations, across the Gulf. These assets were operated by 17 unique 
+operators. 
+Incident Findings  
+Figure 1: An example of tripping hazards aboard an offshore facility. 
+
+ 
+ 
+CATEGORY: Personnel Safety 
+ 
+• Training – While a few operators and contractors provided limited computer-based 
+training associated with STFs, most of the operators and contractors associated 
+with the inspected facilities had no formal training requirements or program for the 
+prevention of STFs. 
+ 
+• Hazard Identification / Hunts – Throughout the inspection, offshore personnel 
+indicated they had a regular work schedule to clear paths and ensure walkways 
+were free from obstructions, which they considered part of their daily operations. 
+However, only one Operator provided evidence of a “Start Work Check" that requires 
+employees to clear paths and floorways before lifting, pumping, tubular handling 
+and high-pressure testing operations.  
+ 
+• Unguarded or Sharp Edges – BSEE inspection teams identified unguarded and sharp 
+edges on multiple inspections. These edges could cause severe injuries like cuts, 
+lacerations, punctures, and even amputations during STF incidents. 
+ 
+• Mental Focus – Investigation teams reviewed non-reportable incidents from 
+operator logs and found that a common cause in multiple STF incidents was the 
+lack of attention while walking. An example was walking forward and looking 
+upward at the same time. 
+ 
+• Simultaneous Operations – On facilities where simultaneous operations were 
+underway, such as construction and well-related activities, working surfaces and 
+walkways were inundated with hazards. Inspectors found wet floors with loose, 
+flakey rust; hoses and tubing on the ground in front of an egress route and life vest 
+box; areas with uneven grating; temporary electrical lines without proper tagging; 
+scaffolding and a ladder in the path of an egress route; and metal pipe and tubing on 
+the deck floor that was not anchored down or properly stored. BSEE inspectors 
+identified all these hazards, not contract or operator personnel, during pre-job 
+hazard hunts, toolbox talks, or in job-specific Job Safety Analysis (JSA). 
+ 
+• Safety Boots – The inspection confirmed most operators and contractors had safety 
+boot policies in place that covered ANSI Z41-1999 and ASTM F2413 
+recommendations. However, little evidence was provided on boot inspection 
+programs implemented on the OCS to ensure the boots were in safe working order. 
+ 
+• Marking of Obstructions / Contrast and Visibility - Contrasting colors and surface 
+markings were used where applicable; however, BSEE inspectors identified areas 
+
+ 
+ 
+CATEGORY: Personnel Safety 
+ 
+that needed improvement, which the operator corrected. A recent 20-foot fall down 
+stairs and a trip over a deck penetration were also attributed to faded paint on the 
+grating, and a lack of contrasting colors to help identify the hazard. 
+To help prevent similar incidents in the future, BSEE recommends that operators and 
+their contractors, where appropriate, consider the following:   
+• Emphasize the importance of offshore workers remaining alert, especially in high-
+risk areas like stairwells, decks, and worksite exits. While on OCS facilities, 
+individuals should take a moment to scan their path for potential hazards. Some 
+operators presented information on their “20-20-20 rule” – Every 20 minutes, take 20 
+seconds to look 20 feet around you, actively searching for any hazards. 
+ 
+• Ensure that high-traffic areas are kept clear of obstruction and maintained in a safe 
+condition. Consider utilizing IOGP’s Start Work Checks to ensure safeguards are 
+implemented to prevent STFs by workers at the job location before work 
+commences. 
+   
+• Evaluate OSHA’s regulations (29 CFR 1910 Subpart D) for walking and working 
+surfaces and consider developing formalized training requirements that address the 
+causes of slips, trips and falls and how to avoid them. 
+ 
+• Require all offshore personnel to wear appropriate foot protection and have 
+programs in place to ensure they inspect and maintain the soles to achieve firm 
+traction. Operators should follow 33 CFR 142.33 and ensure foot protection for 
+personnel is adequate for their duties. 
+ 
+• Review the work activities on all OCS facilities and bring awareness to walkways 
+with a larger equipment presence (generators, pumps, scaffolding, hoses, etc.). 
+Additionally, operators on fixed and floating offshore facilities should review United 
+States Coast Guard Regulations 33 CFR Part 142 - Workplace Safety and Health. 
+ 
+• Complete walk-downs of their platforms and identify all sharp or unguarded edges. 
+If any are identified, mitigation measures should be implemented to reduce the risk 
+of cuts or lacerations during a STF event. 
+– BSEE – 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 

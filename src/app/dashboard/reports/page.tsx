@@ -41,7 +41,7 @@ import {
   ShiftTiming,
 } from "@/lib/types";
 import EnergyWheelVisualizer from "@/components/safety-science/EnergyWheelVisualizer";
-import CampbellDecisionTree from "@/components/safety-science/CampbellDecisionTree";
+import SIFDecisionTree from "@/components/safety-science/SIFDecisionTree";
 import BarrierHierarchyScorecard from "@/components/safety-science/BarrierHierarchyScorecard";
 import ShiftCircadianWidget from "@/components/safety-science/ShiftCircadianWidget";
 
@@ -123,18 +123,43 @@ function ReportsTriagePageContent() {
     fetchReports();
   };
 
-  const handleUpdateReview = (status: "Confirmed" | "Overridden", overrideSif?: boolean) => {
+  const handleUpdateReview = async (status: "Confirmed" | "Overridden", overrideSif?: boolean) => {
     if (!selectedReport) return;
-    const rev: HumanReview = {
-      status,
-      reviewer_name: "Lead HSE Auditor",
-      notes: reviewNoteInput,
-      reviewed_at: new Date().toISOString(),
-      override_sif: overrideSif,
-    };
-    setReviews((prev) => ({ ...prev, [selectedReport.id]: rev }));
-    setReviewSavedMsg(true);
-    setTimeout(() => setReviewSavedMsg(false), 3000);
+    try {
+      const rev: HumanReview = {
+        status,
+        reviewer_name: "Pooja Saikia (Lead HSE Auditor)",
+        notes: reviewNoteInput,
+        reviewed_at: new Date().toISOString(),
+        override_sif: overrideSif,
+      };
+
+      const res = await fetch(`/api/reports/${selectedReport.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          status,
+          reviewer_name: "Pooja Saikia",
+          reviewer_role: "HSE Officer",
+          notes: reviewNoteInput,
+          override_sif: overrideSif,
+        }),
+      });
+
+      if (!res.ok) throw new Error("Failed to record review on server");
+
+      setReviews((prev) => ({ ...prev, [selectedReport.id]: rev }));
+      setSelectedReport((prev) => (prev ? { ...prev, human_review: rev } : null));
+      setReports((prev) =>
+        prev.map((r) => (r.id === selectedReport.id ? { ...r, human_review: rev } : r))
+      );
+
+      setReviewSavedMsg(true);
+      setTimeout(() => setReviewSavedMsg(false), 3000);
+    } catch (err) {
+      console.error("Error saving review:", err);
+      alert("Failed to record review to audit trail.");
+    }
   };
 
   const getRuleDetails = (ruleName: string | null | undefined) => {
@@ -193,7 +218,7 @@ function ReportsTriagePageContent() {
             Safety Observations & Research-Grade SIF Triage
           </h1>
           <p className="text-xs text-slate-400 mt-0.5">
-            Real-time inspection with CSRA Energy Wheel mapping, Campbell 3-Gate decision tree, and Hierarchy of Controls barrier scoring.
+            Real-time inspection with CSRA Energy Wheel mapping, SIF 3-Gate decision tree, and Hierarchy of Controls barrier scoring.
           </p>
         </div>
 
@@ -581,9 +606,9 @@ function ReportsTriagePageContent() {
               </div>
             </div>
 
-            {/* SECTION 2: CAMPBELL 3-GATE DECISION TREE */}
+            {/* SECTION 2: SIF 3-GATE DECISION TREE */}
             <div>
-              <CampbellDecisionTree evaluation={selectedReport.classification?.campbell_gates} />
+              <SIFDecisionTree evaluation={selectedReport.classification?.sif_decision_gates || selectedReport.classification?.campbell_gates} />
             </div>
 
             {/* SECTION 3: CSRA ENERGY WHEEL HAZARD PROFILE */}

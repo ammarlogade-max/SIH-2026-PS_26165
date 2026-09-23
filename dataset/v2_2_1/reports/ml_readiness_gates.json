@@ -1,0 +1,47 @@
+{
+  "version": "2.2.1",
+  "overall_status": "ENTERPRISE_READY",
+  "capabilities": {
+    "sif_potential_classification": {
+      "status": "GO",
+      "training_tier": "GOLD + SILVER",
+      "label_type": "EXPLICIT + DERIVED",
+      "evidence_requirement": "Precursor triad (High Energy + Exposure + Barrier Failure)",
+      "prohibited": "Artificial binary FALSE records"
+    },
+    "iogp_rule_mapping": {
+      "status": "GO",
+      "training_tier": "GOLD (Supervised: SUPPORTED only)",
+      "weak_supervision": "SILVER (DERIVED only)",
+      "excluded": "AMBIGUOUS + UNSUPPORTED",
+      "verified_offsets_count": 1844
+    },
+    "precursor_pattern_detection": {
+      "status": "GO",
+      "training_tier": "GOLD + SILVER",
+      "temporal_clustering": "Permitted",
+      "leakage_status": "ZERO_LEAKAGE"
+    },
+    "activity_level_analysis": {
+      "status": "GO",
+      "coverage": "94.8% of records contain explicit activity classification"
+    },
+    "location_site_facility_analysis": {
+      "status": "GO",
+      "granularity": "Offshore Block, OCS Area, Facility ID, Onshore Basin"
+    },
+    "barrier_failure_analysis": {
+      "status": "GO_LIMITED",
+      "rationale": "591 generic barriers downgraded to UNKNOWN; models must use verified source barriers only",
+      "supervised_training_limit": "53 grounded barrier instances"
+    },
+    "site_precursor_prioritization": {
+      "status": "GO",
+      "architecture": "PU learning / Empirical Bayes Poisson rate estimation"
+    },
+    "interactive_hse_dashboard": {
+      "status": "GO",
+      "explainability": "Exact narrative offsets enabled for UI highlight spans"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+
+
+ 
+Safety Alert No. 420       Contact: bseepublicaffairs@bsee.gov 
+April 26, 2021                        Phone: (800) 200-4853 
+ 
+ 
+Employee Injures Hand in Rotating Equipment  
+ 
+                                      
+             
+ Figure 1.      Access hatch for compressor cooling fan     Figure 2.  Compressor cooling fan belt, pulley, and sheave   
+ 
+ 
+On March 16, 2021, an operator, and a mechanic responded to a compressor and 
+platform shut-in after hours. A vibration alarm on a compressor cooling fan caused a 
+compressor package/unit to shut-in. The operator pulled the relay on the local panel to 
+prevent a restart of the compressor.  A mechanic opened the access hatch (Fig 1.), then 
+climbed inside the unit while the cooling fan was turning and slowing down. The mechanic 
+then placed his hand on the cooling fan belt (Fig 2.) and was lifted off the unit floor and 
+pulled into a sheave.  The mechanic’s hand was pinched, resulting in two fractured 
+fingers.  
+ 
+BSEE recommends that Operators and contractors consider the following: 
+ 
+• Do not enter or access rotating equipment that is still in rotation.  Appropriate 
+signage should always be posted to warn of no entry during operation.  
+SAFETY ALERT 
+ 
+ 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+Category: Hand Injury 
+• Review job safety analysis (JSA)
+1
+ and Lockout/Tagout (LO/TO)
+2
+ requirements for 
+working on emergency situations and after-hours call-out work. 
+• Develop safe work policies and procedures in consultation with workers, and 
+provide workers with the necessary information, training, and supervision. Require 
+workers to follow the developed routine and non-routine safe work practices. 
+ 
+• All work should be conducted by fully   trained, mentored, and experienced 
+personnel. 
+• Consider hand safety as a line item on JSA when work involves rotating equipment 
+or other high hand injury potential. 
+• Refresh the Stop Work Authority (SWA)
+3
+  practices as it applies to after-hours call-
+out work for employees that would normally be off tour or asleep.   
+• Review Permits to Work requirements   for employees responding to after-hours 
+call-out work.  Re-emphasize the need to follow all protocols for JSAs, Safe Work 
+Practices
+4
+, LO/TO and SWA. 
+ 
+ 
+1
+ Job Safety Analysis (JSA) is a safety tool that can be used to define, and control hazards associated with a certain 
+process, job, or procedure. It is a systematic examination and documentation of every task within each job to identify 
+health and safety hazards, and the steps to control each task. 
+2
+ Lockout/tag out refers to specific practices and procedures to safe- guard workers from the unexpected 
+energization or startup of machinery and equipment, or the release of hazardous energy during service or 
+maintenance activities. 
+3
+ Stop Work Authority (SWA) provides employees and contract workers with the responsibility and obligation to stop 
+work when a perceived unsafe condition or behavior may result in an unwanted event. 
+4
+ Safe work practices are procedures adopted for carrying out specific tasks that ensures workers' exposure to 
+hazardous situations, substances, and physical agents is controlled in a safe manner. 
+ 
+ 
+ 

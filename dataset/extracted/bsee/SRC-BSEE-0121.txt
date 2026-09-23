@@ -1,0 +1,97 @@
+
+
+ 
+Safety Alert No. 396                                 Contact: David Nedorostek 
+September 30, 2020                           Phone: (703) 787-1029 
+ 
+Risk of Fires from Adjustable Speed Drives (ASDs) 
+In 2019, several fire incidents on the Outer Continental Shelf involved adjustable speed 
+drives (ASDs), also known as variable frequency drives. These incidents included 1) 
+overheating due to the effects of harmonic electrical currents, 2) short-circuit faults, and 
+3) moisture in the ASD cabinet, and all resulted in fire and arcing. 
+An ASD is a device used in electromechanical drives to control the speed and torque of 
+an AC motor by adjusting the motor’s input frequency and voltage. ASDs are often used 
+to control the speed of compressors and pumps to adjust the flow through pipelines. 
+ 
+ 
+ 
+   
+      
+ 
+ 
+ 
+ 
+                             
+ 
+Causes and Contributing Factors 
+A review of the investigation reports for ASD incidents indicate that many are attributed 
+to the following: 
+• A short-circuit developing into a line-to-ground fault. The resulting thermal stress 
+caused a fire and arc flash within the ASD;  
+• 
+Overheating, which caused failure of electrical distribution equipment, cables, 
+transformers, standby generators, etc., because of harmonic currents introduced 
+by ASDs; and,  
+• 
+Moisture ingress resulted in the loss of the ASD.  
+Therefore, BSEE recommends operators and contractors consider the following: 
+• Establish and document monitoring procedures to identify potential problems 
+associated with water ingress and overheating (e.g., periodic visual inspection 
+and cleaning);      
+SAFETY ALERT 
+ 
+         Short circuit fault in the ASD                Arc damage to components 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+• Develop, document, implement, and maintain competency-based training 
+systems, to include follow-up, so workers are continuously aware of the critical 
+tasks involved with verification of the electrical installation and maintenance; 
+• Ensure installation practices are documented and meet fundamental electrical 
+safety principles, including protection against overcurrent and earth fault current 
+in accordance with API RP14F
+1
+ & 14FZ
+2
+; 
+• Ensure ASDs are installed in a protective environment, free from dust and other 
+abrasive materials, corrosive gases and vapors, flammable gases and liquids, 
+and high levels of atmospheric moisture; 
+• Verify that short circuit and thermal protection systems   are installed and 
+maintained according to OEM instructions (ground fault relays, fuses and circuit 
+breakers) to protect power cable, motors and input rectifier bridge; 
+• Ensure active or passive harmonic filters are installed to reduce or mitigate 
+harmonics to tolerable levels as defined by IEEE-519
+3
+, IEEE1531
+4
+, API RP 14F 
+and 14FZ, as determined by the power system documented analyses (i.e. 
+harmonics analysis) or power quality monitoring; 
+• Use K-rated or Harmonic Mitigating Transformer (HMT) dry-type transformers in 
+applications where most of the load is non-linear (e.g. ASDs, LED lighting, 
+computers, UPS, etc.);  
+• Ensure all ASD metallic parts, both internal and chassis, are bonded together 
+and grounded to earth to confirm safe touch voltage potentials exist in ground-
+fault conditions; and, 
+• Ensure the Safety and Environmental Management Systems   (SEMS) tool is 
+available to personnel and up to date, as required by 30 CFR 250.1900.  
+All the above recommendations should be supported by documentation of 
+policies and procedures and frequency checks. 
+ 
+--BSEE-- 
+ 
+1
+ API RP 14F “Recommended Practice for Design, Installation, and Maintenance of Electrical Systems for Fixed and Floating 
+Offshore Petroleum Facilities for Unclassified and Class 1, Division 1and Division 2 Locations” 
+2
+ API RP 14FZ “Recommended Practice for Design, Installation, and Maintenance of Electrical Systems for Fixed and Floating 
+Offshore Petroleum Facilities for Unclassified and Class I, Zone 0, Zone 1, and Zone 2 Locations 
+3
+ IEEE-519 “Recommended Practice and Requirements for Harmonic Control in Electric Power Systems” defines harmonic limits 
+within a power distribution system to assure proper equipment operation through its “Standard Practices and Requirements for 
+Harmonic Control in Electrical Power Systems” 
+4
+ IEEE-1531- “Guide for Application and Specification of Harmonic Filters” 

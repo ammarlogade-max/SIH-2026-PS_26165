@@ -1,0 +1,22 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Notice No. 168
+August 19, 1996
+Twisted Valve Stem and Ineffective Level Safety High Result in Oil Spill
+Recently, after a cleaning operation on a high-pressure separator, a manual ball valve on the drain line of the
+separator was thought to have been closed when the valve handle was turned to a position perpendicular to the
+valve body. However, because of a twisted valve stem, the valve was in fact left slightly open. High-pressure
+production then flowed through the drain line to an atmospheric sump tank. The tank was protected by a level
+safety high (LSH) located near the top of the tank. The LSH tubing inlet was locatednear the bottom of the tank.
+As oil entered the tank, water already present in the LSH tubing could not be forcedhigh enough to actuate the
+LSH due to the difference between the specific gravity of the water in the tubing andthe composite specific
+gravity of the oil, water, and probable emulsion in the tank. As a result, oil spilled from the tank without the
+actuation of the LSH.
+Therefore, from consideration of this information, the following are recommended:
+1. When it is operationally feasible, opportunities should be taken to check all manual valves periodically for
+holding capabilities.
+2. LSH configurations on atmospheric tanks should be reviewed for effectiveness in the case of an upset
+condition as described above.
+Safety Alert No. 168 - Twisted Valve Stem and Ineffective Level Safe...http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_168...
+1 of 12/21/2012 4:10 PM

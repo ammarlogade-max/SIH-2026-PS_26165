@@ -1,0 +1,52 @@
+
+
+Safety Alert No. 344                Contact: Neil Matthews 
+6 December 2018               Phone: 337-437-4645 
+Chemical Release due to Containment Failure 
+On August 12, 2018, an operator reported, via the National Response Center, “a 
+release of 70 gallons of emulsion breaker into the Gulf of Mexico due to equipment 
+failure of a tank” from its unmanned platform.  This chemical is nominally 
+composed of 40% xylene, which equates to 196 lbs. by weight and meets the 
+reporting requirements in 30 CFR 254.46. The chemical had been stored in a 
+polyethylene tote. 
+Location of storage tank (tank on left) at the time of the incident (left photo) and external view of the crack (right photo) 
+BSEE investigated the spill and found: 
+· The discharge was due to a crack along bottom area of the polyethylene 
+tote (see photos). 
+· The interior of the tote’s walls showed dimples and reduced wall thickness 
+throughout the fluid contact area. 
+· The tote was improperly labelled as containing “Corrosive” versus 
+“Flammable” contents per the Safety Data Sheet. 
+· The secondary containment pan had filled with rain water and was 
+incapable of retaining the totes contents. 
+SAFETY ALERT 
+
+A Safety Alertis a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding an accident or near miss. It alsocontains recommendations 
+that should help prevent the recurrence of such an incident on the Outer Continental 
+Shelf.
+· The chemical provider states that this emulsion breaker is shipped in 
+304/316 stainless steel totes and only should be contained in same or 
+polyvinylidene fluoride or polyvinylidene difluoride (PVDF) totes.  
+Conclusions: 
+· The chemical was stored in an improper container, as polyethylene totes 
+are incompatible with xylene. The degree of degradation/damage caused 
+by improperly storing the emulsion breaker in the polyethylene tote and its 
+role in the tote’s failure of primary containment is not known, but is 
+considered a contributing cause. 
+· The tote was exposed to sun/weather and had been in service for over five 
+years.  The exposure to UV/elements may have contributed to the tank’s 
+failure. 
+· There should be a means for removing rainwater from the secondary 
+containment, allowing room to contain any chemical spillage. 
+· The tote was improperly labeled which could increase risks to personnel 
+and the environment. 
+Therefore, BSEE recommends that operators: 
+· Ensure the compatibility of storage totes with the chemicals they are 
+designated to store, in accordance with the safety data sheet (SDS); 
+· Properly label all chemical storage containers; 
+· Ensure all personnel are properly trained and fully understand the 
+implications of the chemicals used on their facilities; 
+· Evaluate and inspect all chemical storage containers and supporting 
+structures to ensure they are fit for continued service. 
+-- BSEE -- 

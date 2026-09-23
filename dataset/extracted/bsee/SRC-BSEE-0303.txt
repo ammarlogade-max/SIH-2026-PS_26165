@@ -1,0 +1,84 @@
+
+
+Safety Alert No. 215 - Diving Fatality http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_216... 
+1 of 2 2/21/2012 4:40 PM 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Safety Alert No. 216 
+October 22, 2003 
+ 
+ 
+ 
+ 
+ 
+U.S. Department of the Interior 
+Minerals Management Service 
+Gulf of   Mexico OCS Region 
+ 
+ 
+ 
+Contact: Jack Williamsl 
+(504) 736-3012 
+ 
+LOSS OF WELL CONTROL:  ANNULAR FLOW AFTER CEMENTING 
+ 
+Recently, a drilling rig  had completed cementing surface casing.   Shortly after the surface/conductor casing
+ 
+annulus was washed, the annulus began flowing.   Rather than release the flow into the diverter system, the crew 
+attempted use the diverter to hold pressure to allow time for the cement to heal.   To hold pressure, the diverter 
+was placed into the “test” mode, which allowed both the diverter packer element and v ent-line valves to be  
+closed simultaneously and immediately. 
+ 
+The diverter in use featured a telescopic riser with seals bracketing the vent-line housing.   When the diverter 
+was closed, the pressure rapidly increased until seals began leaking, forcing abandonment of the rig  floor.   It 
+was then discovered that the “test” mode disabled the ability to control the diverter system from the remote 
+location.   The seal pressure could not be increased to contain the surface leak; the diverter valves could not be 
+opened to relieve the pressure.   With gas on the rig  and pressure rising on the untested conductor casing shoe, 
+the rig  and adjacent platform were evacuated. 
+ 
+Several factors contributed to the potential severity of the event, including an erroneous chain of decisions, 
+inadequate training of  personnel or  knowledge of  the  diverter  system,  and inadequate planning.  For  a full 
+report, see MMS panel report 2003-068. 
+ 
+MMS Safety Alert No. 165, issued in April 1995 identified 20 diverter incidents in the Gulf of Mexico from 1973 
+to 1995 related to well kicks after cementing surface casing.   Another 13 similar incidents have occurred since 
+1995, with the most serious consequences being broaching the surface, cratering, well loss, and rig  and 
+platform destruction by fire.  Annular flow related to cementing surface casing has been identified as one of the 
+most frequent causes of loss of control incidents in the Gulf of Mexico. 
+ 
+The MMS recommends to the operators and drilling contractors the following: 
+ 
+1.   For each well, the operators and contractors should conduct a review of the contingency procedures to 
+be followed in the event of annular flow after cementing.   Before using the diverter to hold back pressure 
+after cementing, detailed planning is recommended, including identification of maximum pressure to be 
+held, method of monitoring and measuring pressure, and how that pressure will be diverted if necessary. 
+ 
+ 
+2.   The operators and contractors should ensure the contingency procedures are clearly disseminated to all 
+rig  supervisors and any personnel who could be involved in emergency decisionmaking. 
+ 
+ 
+3.   The operators and drilling contractors should ensure all supervisory personnel are fully trained in diverter 
+operations specific to each rig, including pressure limits and control mechanisms, under all circumstances. 
+ 
+ 
+4.   The operators should review cementing practices and procedures for shallow casing strings and adopt 
+best cementing practices that provide the most protection from annular flow after cementing. 
+ 
+—MMS—GOMR— 
+www.gomr.mms.gov
+ 
+
+Safety Alert No. 215 - Diving Fatality http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_216... 
+2 of 2 2/21/2012 4:40 PM 
+ 
+ 
+ 
+ 
+Visit our Safety Information Website 

@@ -1,0 +1,130 @@
+{
+  "standard": "IOGP Report 590: Life-Saving Rules (2018 revision)",
+  "publisher": "International Association of Oil & Gas Producers (IOGP)",
+  "purpose": "Authoritative safety taxonomy for high-hazard oil & gas activities and critical barrier verification",
+  "rules": [
+    {
+      "rule_id": "IOGP-01",
+      "name": "Bypassing safety controls",
+      "icon": "bypassing-safety-controls",
+      "guidance": "Obtain authorisation before overriding or disabling safety controls",
+      "verification_questions": [
+        "I understand and use safety-critical equipment and procedures which apply to my task",
+        "I obtain authorisation before: disabling or overriding safety equipment, deviating from procedures, or crossing a barrier"
+      ],
+      "associated_hazards": ["overriding interlocks", "bypassed trip switches", "suppressed alarms", "disabled gas detectors", "overridden PSV"],
+      "control_type": "PROCEDURAL_AND_ENGINEERED"
+    },
+    {
+      "rule_id": "IOGP-02",
+      "name": "Confined space",
+      "icon": "confined-space",
+      "guidance": "Obtain authorisation before entering a confined space",
+      "verification_questions": [
+        "I confirm energy sources are isolated",
+        "I confirm the atmosphere has been tested and is monitored",
+        "I check and use my breathing apparatus when required",
+        "I confirm there is an attendant who can summon rescue",
+        "I confirm an emergency rescue plan is in place"
+      ],
+      "associated_hazards": ["oxygen deficiency", "toxic gas accumulation", "engulfment", "hazardous atmosphere", "enclosed vessel"],
+      "control_type": "PHYSICAL_AND_PROCEDURAL"
+    },
+    {
+      "rule_id": "IOGP-03",
+      "name": "Driving",
+      "icon": "driving",
+      "guidance": "Follow safe driving rules",
+      "verification_questions": [
+        "I always wear a seatbelt",
+        "I do not exceed the speed limit, and reduce speed for road conditions",
+        "I do not use phones or operate devices while driving",
+        "I am fit, rested and fully alert while driving",
+        "I follow journey management requirements"
+      ],
+      "associated_hazards": ["vehicle rollover", "collision", "fatigue driving", "road transport accident", "unsecured cargo"],
+      "control_type": "HUMAN_AND_PROCEDURAL"
+    },
+    {
+      "rule_id": "IOGP-04",
+      "name": "Energy isolation",
+      "icon": "energy-isolation",
+      "guidance": "Verify isolation and zero energy before work begins",
+      "verification_questions": [
+        "I have identified all energy sources",
+        "I confirm that hazardous energy sources have been isolated, locked and tagged",
+        "I have checked there is zero energy and tested for residual or stored energy"
+      ],
+      "associated_hazards": ["pressurized hydrocarbons", "electrical energization", "stored mechanical spring", "hydraulic pressure release", "toxic fluid flow"],
+      "control_type": "ENGINEERED_AND_PROCEDURAL"
+    },
+    {
+      "rule_id": "IOGP-05",
+      "name": "Hot work",
+      "icon": "hot-work",
+      "guidance": "Control flammables and ignition sources",
+      "verification_questions": [
+        "I identify and control potential flammables and ignition sources",
+        "Before starting any hot work, I confirm work area is free of flammable materials and atmosphere has been tested",
+        "I stop work if flammable vapors or gases are detected"
+      ],
+      "associated_hazards": ["hydrocarbon fire", "vapor cloud explosion", "welding spark", "cutting torch", "grinding sparks in hazardous zone"],
+      "control_type": "PHYSICAL_AND_PROCEDURAL"
+    },
+    {
+      "rule_id": "IOGP-06",
+      "name": "Line of fire",
+      "icon": "line-of-fire",
+      "guidance": "Keep yourself and others out of the line of fire",
+      "verification_questions": [
+        "I position myself to avoid: moving objects, vehicles, pressure releases, dropped objects",
+        "I establish and obey barriers and exclusion zones",
+        "I take action to secure loose objects and report potential dropped objects"
+      ],
+      "associated_hazards": ["dropped objects", "tensioned line snapback", "rotating equipment", "high-pressure release trajectory", "suspended load travel"],
+      "control_type": "PHYSICAL_AND_HUMAN"
+    },
+    {
+      "rule_id": "IOGP-07",
+      "name": "Safe mechanical lifting",
+      "icon": "safe-mechanical-lifting",
+      "guidance": "Plan lifting operations and control the area",
+      "verification_questions": [
+        "I confirm that the equipment and load have been inspected and are fit for purpose",
+        "I only operate equipment that I am trained and competent to use",
+        "I establish and obey exclusion zones",
+        "I never walk under a suspended load"
+      ],
+      "associated_hazards": ["crane collapse", "rigging failure", "dropped cargo", "overload", "parted wire rope", "tagline entanglement"],
+      "control_type": "ENGINEERED_AND_PHYSICAL"
+    },
+    {
+      "rule_id": "IOGP-08",
+      "name": "Work authorization",
+      "icon": "work-authorization",
+      "guidance": "Work with a valid permit when required",
+      "verification_questions": [
+        "I have confirmed whether a permit is required",
+        "I am authorised to perform the work",
+        "I understand the permit, the hazards, and the controls",
+        "I confirm that hazards are controlled and it is safe to start",
+        "I stop work if conditions change"
+      ],
+      "associated_hazards": ["unauthorized hot work", "unplanned SIMOPS", "uncontrolled high-hazard task", "absence of JSA/PTW", "scope creep"],
+      "control_type": "PROCEDURAL"
+    },
+    {
+      "rule_id": "IOGP-09",
+      "name": "Working at height",
+      "icon": "working-at-height",
+      "guidance": "Protect yourself against a fall when working at height",
+      "verification_questions": [
+        "I inspect my fall protection equipment before use",
+        "I secure tools and work materials to prevent dropped objects",
+        "I tie off 100% to approved anchor points while outside a protected area"
+      ],
+      "associated_hazards": ["fall from height", "corroded grating failure", "open deck hole", "unanchored harness", "scaffolding collapse"],
+      "control_type": "PHYSICAL_AND_ENGINEERED"
+    }
+  ]
+}

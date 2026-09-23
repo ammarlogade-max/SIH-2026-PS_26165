@@ -1,0 +1,60 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+ 
+  
+  
+ 
+  
+   
+ 
+ 
+ 
+  
+ 
+  
+   
+ 
+ 
+ 
+ 
+      
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 273 	Contact:  Glynn T. Breaux 
+23 October 2008 	(504) 736 2560 
+Drilling Rig Generator Electrical Equipment Fire 
+Recently,  an  electrical  arc  occurred  between  three  main  bus  bars  and  ground  on  a  600  volt  alternating  
+current,  3-phase  main  generator’s  Silicon  Control  Rectifier  (SCR)  Panel  during  jack-up  drilling  rig  
+operations.  The  electrical  arcing  resulted  in  a  fire  and  $200,000  of  damage  to  the  SCR  equipment  and  
+surrounding area, with no report of personnel injury or environmental pollution. 
+A  Minerals  Management  Service  (MMS)  investigation  into  this  incident  revealed  that  the  root  cause  of  
+the  electrical  arcing  was  the  lack  of  a  proper  Rig  Contractor’s  inspection  and  maintenance  program  as  
+follows: 
+•	 Soot and/or other contaminates were allowed to build up on the Rig’s SCR Panel’s main bus bars, 
+thus allowing a conductive path for the electrical arcing and shorting to occur. 
+•	 According  to  the  Rig  Contractor  personnel,  an  annual  maintenance  program  that  included  
+cleaning of the main bus bars could have prevented the incident. 
+Therefore, the MMS recommends the following: 
+•	 Rig  SCR  Panels  should  be  inspected  on  a  regular  basis  and  a  maintenance  program  developed  
+based on the results of the inspections. The maintenance program would ensure that internal parts 
+of electrical equipment, including bus bars, wiring terminals, insulators, and other surfaces, may 
+not be damaged or contaminated by foreign materials such as paint, plaster, cleaners, abrasives, or 
+corrosive  residues.  Such  a  program  may  assist  in  eliminating  any  conductive  path  for  the  
+electrical arcing and shorting to occur between the SCR Panel bus bars as a result of soot and/or 
+other contaminate build up. 
+--MMS--GOMR--
+www.gomr.mms.gov 

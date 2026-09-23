@@ -1,0 +1,89 @@
+
+
+ 
+ 
+ 
+Segregate Pyrotechnics and Verify Flare Type  
+Before Emergency Drills
+ 
+ 
+ 
+ 
+Figure 1: Parachute Flare 
+ 
+Background 
+The Marine Minerals Administration Gulf of America Region recently investigated an 
+incident in which a worker sustained second-degree burns during a Fast Rescue Craft (FRC) 
+training exercise. 
+During the exercise, a participant mistakenly activated a parachute flare (Fig. 1) instead of 
+a handheld flare. The parachute flare was oriented toward individual when it was 
+activated, resulting in burn injuries. The parachute flare was being used during the drill as 
+part of an offshore expending activity. 
+ 
+ 
+Safety Alert No. 525 
+Date: August 19, 2026 
+Contact: engagement@bsee.gov 
+Phone: (800) 200-4853 
+
+ 
+ 
+Findings 
+The Marine Minerals Administration found that several factors contributed to the incident: 
+• Inadequate hazard identification: The pre-job planning focused on fast rescue craft 
+operations and did not fully address the hazards associated with handling, selecting 
+and activating pyrotechnic devices. 
+• Inadequate risk assessment: The activity did not include a formal, task-specific risk 
+assessment for offshore flare deployment or expending pyrotechnics. 
+• Improper storage or segregation: Different types of pyrotechnic devices were 
+mixed, which increased the likelihood of selecting the wrong device. 
+• Failure to follow procedures: Procedures and instructions were available but were 
+not followed before and during the exercise. 
+• Insufficient training or experience: The injured individual had limited experience 
+with the task and did not receive required pre-task training before participating. 
+To help prevent similar incidents, the Marine Minerals Administration recommends that 
+operators and their contractors, as appropriate, consider the following: 
+• Due to onshore disposal requirements, identify methods or processes to eliminate 
+offshore expending of pyrotechnics.  
+• Seek alternatives to pyrotechnics at fixed facilities that offer enhanced safety to 
+personnel without the reduction in life safety equipment requirements such as 
+already available installed alternatives such as VHF radios; emergency position-
+indicating radio beacons, or EPIRBs; search and rescue transponders, or SARTS; etc.  
+• Evaluate the utility of pyrotechnic devices given floating offshore facilities are in 
+well-known locations that are quickly and readily accessible to rescue resources. 
+• Determine if high-intensity, short-duration homing capability of a traditional 
+pyrotechnic device are redundant when compared to the persistent signaling and 
+precision of modern digital systems like emergency position-indicating radio 
+beacons, or EPIRBs; search and rescue transponders, or SARTS; automatic 
+identification system, or AIS; and VHF radios with digital selective calling, or VHF-
+DSCs; that are already provided on these facilities. 
+• Strengthen risk assessment and task-specific controls during emergency drills for all 
+steps involved in performing a specific task. 
+• Ensure proper labeling exists on any flares to limit the likelihood of an individual 
+firing in the wrong direction. 
+• Ensure instruction(s) and procedure(s) are clear and acknowledged by all 
+participants before starting an exercise or drill. 
+
+ 
+ 
+• At offshore locations, improve training, procedural adherence, and pyrotechnic 
+segregation practices. 
+ 
+-   MMA – 
+ 
+A Safety Alert is a tool used by the Marine Minerals Administration to inform the 
+offshore oil and gas industry of the circumstances surrounding a potential safety issue. 
+It also contains recommendations that could assist in avoiding potential incidents on 
+the Outer Continental Shelf.  
+ 
+As of July 10, 2026, the Department of Interior has reunified the Bureau of Ocean 
+Energy Management and the Bureau of Safety and Environmental Enforcement into the 
+Marine Minerals Administration, which will oversee the responsible development of 
+the nation’s offshore energy and marine mineral resources with an integrated focus on 
+safety, environmental protection and efficient oversight. For more information, visit   
+Transition to the Marine Minerals Administration | U.S. Department of the Interior.  
+ 
+ 
+ 
+ 
+Category: Personnel Safey, Emergency Preparedness 

@@ -1,0 +1,113 @@
+
+
+ 
+Safety Alert No. 365                          Contact: Jason Mathews 
+September 13, 2019                      Phone:    (504) 731-1496 
+ 
+ 
+BSEE Identified Grating and Open Hole Hazards  
+During Risk Based Inspections 
+ 
+ 
+ 
+A BSEE inspector conducts a grating and open hole hazards inspection. 
+ 
+BSEE inspected 42 facilities in the Gulf of Mexico Region over a multiday period in July 
+2019 due to recent incidents associated with grating and open holes on offshore oil and 
+natural gas facilities. This risk-based inspection was conducted to help reduce the 
+likelihood of future grating and open hole incidents on the U.S. Outer Continental Shelf.  
+ 
+At the completion of the inspections, BSEE reviewed the results and conducted additional 
+reviews of  Safety and Environmental Management System specific items (e.g., standard 
+operating procedures, emergency drills and hazard communication). As a result of the 
+risk-based inspection, BSEE issued incidents of noncompliance (INCs) associated with 
+workplace safety conditions to 22 of the 42 inspected facilities (52%). The following items 
+are a summary of BSEE’s findings related to grating and open hole issues and associated 
+factors: 
+  
+•    The overwhelming majority of the facility orientations did not address known 
+hazards at the facility associated with grating and open holes;  
+SAFETY ALERT 
+ 
+ 
+
+• The majority of the 42 inspected facilities did not have standard operating 
+procedures for opening or removing hatch covers. Additionally, BSEE identified 
+multiple well hatch covers that were not labeled, labeled incorrectly, or not secured 
+to prevent personnel from accessing the covers inadvertently;  
+• The majority of the inspected facilities had access to hard barricades; however, 
+inspection teams found temporary barricades made of caution tape, ratchet straps 
+and cable. Some hard barricades were not properly secured. The temporary 
+barricades did not comply with facility open hole policies; 
+• Outside of Level I inspections, the majority of operators that were part of the Risk 
+Based Inspection did not have implemented grating inspection programs 
+conducted by a qualified/certified inspector that focused on integrity, fasteners, and 
+supporting structural members;  
+• Work orders related to grating and open hole issues were being generated at the 
+facility level; however, for the majority of the work orders there was no process to 
+prioritize the work and some work orders were open for over 12 months.  
+• The majority of inspected facilities did not provide training on critical, injury-related 
+incident response equipment, such as stokes litters. Inspectors also found 
+unusable emergency equipment;  
+• Check-in programs had inconsistent or undocumented periodic personnel 
+communication. Further, BSEE did not identify any consistent technology or 
+practice in place to track, or locate, personnel who fall from the platform into the 
+water;   
+• Stop Work Authority (SWA) and Ultimate Work Authority (UWA) were implemented 
+at every facility inspected; however, there is an opportunity for improvement by 
+ensuring that (1) personnel are aware of that fact that they have no fear of reprisal 
+when utilizing SWA and (2) the person with UWA is clearly identified during 
+orientation and on signs at the facility; and 
+• Some “Reporting Unsafe Work Condition” signs did not conform with 
+recommendations provided in BSEE Safety Alert 357. 
+ 
+Therefore, BSEE recommends that operators consider the following: 
+ 
+• Review facility orientation policy and ensure all potential grating and open hole  
+hazards are communicated to personnel boarding the facility; 
+• Review the inventory of well hatch covers and develop standard operating 
+procedures for opening, removing, identifying and securing hatches; 
+• Review the open hole policy and ensure that, at a minimum, barricades (1) have a 
+middle and top rail; (2) are at least 42-inches in height; and (3) are capable of 
+withstanding a load of 200 pounds;  
+ 
+ 
+
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+• Conduct an inventory of hard barricades available at facilities. If hard barricades 
+are not available, procedures should be developed and implemented that (1) 
+require that an open hole attendant is positioned at open holes, (2) communicate 
+known open hole/grating risks   to facility personnel, and (3) verify that any 
+temporary barricades will prevent the flow of personnel into a hazardous area until 
+a hard barricade is available; 
+• Develop a regular frequency of operator inspections focused on the integrity of 
+decks, grating, and structural and support beams on your facility. If an area of 
+marginal or suspect strength is identified, ensure that it is clearly marked, 
+appropriate mitigation actions are taken, and employees are informed of those 
+zones; 
+• Evaluate open work orders associated with grating and prioritize those that are 
+critical to the safety of offshore personnel. If work orders cannot be addressed in 
+the near future due to construction crew or vessel availability, operators should 
+ensure the area of concern is appropriately barricaded; 
+• Review BSEE Safety Bulletin No. 18, published on July 8, 2019, which discusses 
+hoisting issues. Also, develop and implement an inspection protocol for emergency 
+response and control measures equipment. 
+• Develop and implement check-in    procedures for employees, contractors and 
+subcontractors working alone on offshore facilities. Additionally, evaluate 
+technologies that can aid in the detection and location of people in distress. 
+• Review BSEE Safety Alert No. 357, published on July 1, 2019, which  describes 
+proper posting of signage for employees wishing to report unsafe work conditions 
+to BSEE; 
+• Consider informing offshore personnel of the BSEE!Safe Initiative to ensure 
+offshore workers are informed when BSEE releases safety information; and 
+• Consider adding a “no fear” clause regarding Stop Work Authority to Job Safety 
+Analysis forms and ensure that every orientation identifies the person with Ultimate 
+Work Authority. 
+ 
+ 
+ 
+--BSEE-- 
+ 

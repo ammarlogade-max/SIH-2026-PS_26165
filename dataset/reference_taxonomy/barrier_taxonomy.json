@@ -1,0 +1,37 @@
+{
+  "framework": "Bowtie Barrier Taxonomy & Control Hierarchy for Oil & Gas Operations",
+  "authoritative_sources": [
+    "IOGP Report 544: Standardization of barrier definitions",
+    "Center for Chemical Process Safety (CCPS): Guidelines for Initiating Events and Independent Protection Layers in LOPA",
+    "ISO 17776: Petroleum and natural gas industries - Offshore production installations"
+  ],
+  "barrier_types": {
+    "ENGINEERED": {
+      "definition": "Automated physical or electrical systems that detect an abnormal condition and actuate without human intervention to arrest hazardous energy.",
+      "examples": ["Pressure Safety Valves (PSV)", "Emergency Shutdown Valves (ESDV)", "Anti-Two-Block (A2B) crane limiters", "Burner Management Systems", "Automatic Deluge Systems"],
+      "reliability_tier": "HIGH"
+    },
+    "PHYSICAL": {
+      "definition": "Passive structural impediments that physically segregate personnel from hazard trajectories or prevent physical drops/falls.",
+      "examples": ["Hard barricades", "Safety nets", "Secondary retention wire / safety slings", "Guardrails and toe boards", "Blast walls", "Catch pans"],
+      "reliability_tier": "MEDIUM_HIGH"
+    },
+    "PROCEDURAL": {
+      "definition": "Administrative workflows, rules, and permits that specify sequence and requirements for safe execution.",
+      "examples": ["Permit to Work (PTW)", "Job Safety Analysis (JSA)", "Lockout / Tagout (LOTO) procedures", "SIMOPS protocol", "Confined Space Entry Authorization"],
+      "reliability_tier": "LOW_MEDIUM"
+    },
+    "HUMAN": {
+      "definition": "Direct cognitive decisions, observations, or physical actions by an individual to arrest or avoid energy.",
+      "examples": ["Banksman / Spotter signaling", "Visual inspection", "Stop Work Authority (SWA)", "Dual-person verification"],
+      "reliability_tier": "LOW"
+    }
+  },
+  "barrier_states": {
+    "INTACT": "Verified effective and active, successfully containing or isolating the energy.",
+    "DEGRADED": "Present and functional but with reduced capacity, delayed response, partial bypass, or incomplete coverage.",
+    "FAILED": "Present but ruptured, parted, overridden, bypassed, or completely ineffective during the event.",
+    "ABSENT": "Required barrier was missing, omitted, never installed, or not established prior to initiating hazardous task.",
+    "UNKNOWN": "Source narrative does not document the state, condition, or presence of this specific barrier."
+  }
+}

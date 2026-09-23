@@ -1,0 +1,66 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+   
+ 
+ 
+MMS 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Gulf of Mexico OCS Region
+ Safety 
+Alert 
+Safety Alert No. 270 	
+15 October 2008 	
+Contact:  Glynn T. Breaux 
+(504) 736 2560 
+Dresser-Rand D-VIP Compressor Cylinder Head 
+
+Replacement for Acorn Nut Part Number TEVM0001
+ 
+
+ 
+Recently,  a  Field  Gas  Compressor  (FGC)  suffered  a  fracture  and  ejection  of  the  3
+rd
+  stage  
+compressor  cylinder  head.  The  ejected  head  struck  an  adjacent  gas  turbine  air  inlet  housing  
+approximately 35 feet away, with no report of personnel injury or environmental pollution. The 
+FGC was immediately secured and locked-out of service.  
+A MMS investigation into the incident revealed the following: 
+•	 Chloride  corrosion  and  pitting  of  the  acorn  nut  on  the  FGC’s  3
+rd
+  stage  compressor  
+cylinder  head,  believed  to  be  caused  by  salt  water  entrained  in  the  ambient  air  or  in  the  
+process gas stream, resulted in failure and ejection of the acorn nut; 
+•	 When  corrosion  inside  the  cylinder  head  was  noted  during  a  compressor  overhaul  in  
+February  2008,  corrosion  on  the  interior  surface  of  the  acorn  nut  was  machined  and  a  
+layer  of  chrome  was  applied  to  the  machined  surface.  The  post-incident  examination  
+revealed  that  all  of  the  corrosion  had  not  been  removed  from  acorn  nut  bore  during  the  
+repair process. Had the repair procedure been properly executed, the incident may have 
+been averted. 
+•	 Dresser-Rand issued a Product Safety Warning notifying customers of reported instances 
+of  corrosion  leading  to  the  separation  of  the  “acorn  nut”  of  the  Variable  Volume  
+Clearance Pocket Assembly. This assembly was utilized in production between 1997 and 
+2000.  A  naked  eye  visual  inspection  of  the  acorn  nut  will  not  reveal  to  what  extent  
+corrosion has occurred. 
+Therefore, the MMS recommends the following: 
+•	 All  operators  possessing  Dresser-Rand  D-VIP  compressors  should  consult  with  their  
+maintenance  personnel  and  manufacturer’s  representative  to  determine  any  action  to  be  
+taken. 
+--MMS--GOMR--
+www.gomr.mms.gov 

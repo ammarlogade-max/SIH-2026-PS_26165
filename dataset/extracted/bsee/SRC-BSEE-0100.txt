@@ -1,0 +1,67 @@
+
+
+Safety Alert No. 417                                                 Contact: David Nedorostek 
+March 25, 2021                                                              Phone: 703-787-1029 
+Inadequate Operation of Circuit Breakers 
+An incident took place onboard a production facility where a critical circuit breaker was 
+disengaged. During an annual inspection, a maintenance worker was instructed to 
+check the compressor #2 breaker's status in the Motor Control Center (MCC) building. 
+In reviewing the #2 compressor breaker status, the individual pressed the switchboard 
+command buttons that disengage the circuit breaker that supplies power to the 
+compressor.  This action resulted in the main circuit breaker losing power, causing the 
+Public /General and Emergency Alarms activation. This incident caused no injuries or 
+equipment damage but resulted in a significant loss in facility downtime and project 
+delays. 
+Observations/Analysis: 
+· The individual went beyond checking the status and disengaged the breaker. 
+· Labels explaining the function of the breaker command buttons (i.e., open/reset) on 
+the switchboard were not self-explanatory and were free to interpretation. 
+· The indicator lights on the outside of the cabinet showed "yellowish-brown" (see 
+picture) as the normal operating condition. The indicator lights' position could have 
+been potentially confusing due to the lack of a policy/procedure addressing the color 
+scheme for the breaker's operation status. 
+· There was no procedure or work instruction to control entry to the MCC building or 
+operation of the breakers. 
+Figure 1 - Compressor #2 breaker Figure 2 -  Switchboard open/reset command 
+buttons 
+
+· Changes to the electrical system were not addressed/documented in maintenance 
+procedures or included on the equipment drawings. 
+· The operator did not follow the company's management of change procedures which 
+identify equipment alterations. 
+· Indications are the job safety analysis (JSA)
+[1]
+did not reflect the switchboard's 
+labeling/ breaker command buttons. 
+BSEE recommends that operators and contractors, for those individuals 
+working in or around the MCC building, consider ensuring: 
+                                                         
+· Personnel (electrical or general) are trained to recognize and understand the 
+equipment's operation within the MCC building and on the switchboards. 
+· Those working on electrical equipment and on unrelated tasks (e.g., maintenance), 
+but in the proximity to electrical equipment, are trained on electrical safety, and the 
+training is documented. 
+· Necessary/appropriate personnel are knowledgeable and familiar with the meaning 
+of various indicator lights on electrical equipment. 
+· Electrical maintenance policies/ procedures are current, dated, and reflect all 
+changes made to the electrical systems. 
+· Instruction/operation manuals and documentation are current, available, and 
+pertinent (e.g., circuit breaker diagrams) and is clearly posted on circuit breaker 
+cabinets. 
+· All electrical one-line diagrams are 30 CFR 250.842 compliant and available to 
+personnel working on electrical equipment. 
+· All personnel who have access to the MCC building (e.g., maintenance) are familiar 
+with the electrical panels. 
+· An in-depth pre-job safety meeting involving working in, or in the vicinity of, the MCC 
+is conducted and documented, and, if determined appropriate, a field review of the 
+worksite should be included. 
+· Installation of protective hinged coverings to prevent accidental activation of critical 
+electrical command buttons. 
+[1]
+ Job Safety Analysis (JSA) is a safety tool that can be used to define, and control hazards associated with a certain 
+process, job, or procedure. It is a systematic examination and documentation of every task within each job to 
+identify health and safety hazards, and the steps to control each task. 
+Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the circumstances 
+surrounding an accident or near miss. It also contains recommendations that should help prevent the 
+recurrence of such an incident on the Outer Continental Shelf. 
+Categories: Electrical 

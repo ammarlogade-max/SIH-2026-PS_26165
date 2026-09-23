@@ -1,0 +1,33 @@
+Safety Alert No. 167 - Retrieval of Back-Pressure Valve Results in Lo... http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_167... 
+U.S. Department of the Interior
+ 
+Minerals Management Service
+ 
+Gulf of Mexico OCS Region
+ 
+Notice No. 167 
+June 17, 1996 
+Retrieval of Back-Pressure Valve Results 
+in Loss of Well Control 
+In the process of retrieving a back-pressure valve during a workover operation, a loss of well control occurred 
+as pressure was released from the wellbore. The release of pressure expelled fluids from the wellbore and also 
+caused the rotary bushing inserts to be blown onto the drill floor. The accident resulted in one fatality and two 
+injuries. 
+A subsequent inspection of the back-pressure valve found that the relief groove, which is designed to detect 
+pressure below the valve and allow communication between the wellbore and the tubing hanger, was full of 
+debris. The inspection also revealed that the poppet, which forms the pressure seal between the wellbore and 
+the tubing hanger, was free to move. Subsequent testing of the surface-controlled subsurface safety valve 
+indicated a minor leakage rate. 
+Therefore, from this information the following are recommended: 
+1. Lessees, drilling contractors, and all appropriate service personnel should ensure that: 
+a. A well is killed before initiating the installation and removal of a back-pressure valve. 
+b. All equipment is functioning properly before initiating installation of a back-pressure valve. 
+c.   The rotary bushings inserts are locked down when inserted in the rotary table. 
+2. Lessees, drilling contractors, and all appropriate service personnel should attempt to determine if pressure is 
+trapped below a back-pressure valve prior to initiating the removal of the valve. 
+MMS is the Federal Agency that manages the Nation's natural gas, oil and other mineral resources on the Outer 
+Continental Shelf, and collects, accounts for, and disburses about $4 billion yearly in revenues from mineral 
+leases on Federal and Indian lands. 
+-MMS-GOMR­
+http://www.gomr.mms.gov/ 
+1 of 1 2/21/2012 4:10 PM

@@ -1,0 +1,47 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Contact: John McCarroll
+(985) 853-5892
+Safety Alert No. 215
+October 6, 2003
+Diving Fatality
+During a recent well plugging and abandonment operation, a diver was fatally injured when an explosion
+occurred during the cutting of a section of casing with a torch. The MMS investigation of the accident,
+conducted in conjunction with the U. S. Coast Guard, revealed, in part, the following:
+The operator of the lease gave the diving contractor, who was responsible for the well stub removal, a pre-job
+schematic of the well stub configuration that differed from the actual configuration. The well casings were
+fitted with a wellhead adaptor which, although it contained two vent holes, allowed gases produced during
+burning operations to accumulate in a space above the holes. Further, gas was noted to be coming from the vent
+holes immediately prior to and during the removal operation. Although the configuration discrepancy and gas
+vent
+ing were observed and raised initial concerns on the part of the contractor prior to the removal operation,
+subsequent discussion between the operator’s onsite representative and the contractor’s onsite supervisors
+resulted in no prescribed procedure to determine if gas could accumulate above the vent holes. It was also
+revealed that at least one diving crew employee, while recognizing the possibility, not probability, of gas
+accumulation, believed the torch to be distant enough from any gas accumulation to be a potential ignition
+source. No Job Safety Analysis (JSA) was conducted for the immediate mechanical aspects of the well removal
+with respect to cutting and burning.
+MMS concluded that hydrogen gas from the burning operation accumulated above the referenced vent holes and
+was ignited during burning operation by a cinder that floated to the gas in an air bubble. MMS further concluded
+that multiple causes of the accident ranged from having no JSA for the immediate task of well stub removal to a
+failure on the part of operator and contract onsite personnel to react appropriately to onsite conditions other than
+those expected.
+Therefore, on the basis of its investigative conclusions, MMS recommends that in the matter of diving
+operations, especially those involving well head removals, lessees and operators review their policies and
+procedures regarding
+1.The transfer to contractors of technical information pertinent to the contracted tasks (information
+transfer).
+2.The onsite responsibilities of lessee and operator representatives with respect to unexpected conditions
+and resultant enforced termination or modification of contractor operations (management of change).
+3.The required use by contractors of JSA’s for any contracted task involving hazards (job planning and
+haz
+ard avoidance).
+  —MMS—GOMR—
+www.gomr.mms.gov
+Safety Alert No. 215 - Diving Fatalityhttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_215...
+1 of 22/ 21/2012 4:39 PM
+
+Safety Alert No. 215 - Diving Fatality http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_215... 
+Visit our Safety Information Website 
+2 of 2 2/21/2012 4:39 PM

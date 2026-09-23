@@ -1,0 +1,90 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+Figure 1: ROV Dropping into Water Due to Umbilical Failure During Recovery. 
+  
+ 
+ 
+ 
+Umbilical Termination Failure Leads to Dropped 
+Remotely Operated Vehicle (ROV) 
+ 
+ 
+Incident Overview: An incident occurred at   a Gulf of America facility involving a 
+remotely operated vehicle (ROV) that resulted in the ROV dropping into the water and 
+descending to the seafloor (Figure 1). The ROV operator had completed an inspection 
+dive of the drilling riser and Blow Out Preventor (BOP) and was in the process of 
+recovering the unit from the water.  
+After the ROV was nested in the Launch and Recovery System (LARS)  cursor, the unit 
+cleared the surface and traveled the vessel cursor rails up to the cursor transition point. 
+At the transition point, the operator stopped hauling in the umbilical winch and cursor 
+assist tuggers to switch the umbilical winch to low-tension mode.  
+As the ROV reached the cursor rail transition point, the umbilical parted, causing the 
+ROV to drop to the seafloor. The ROV was subsequently located and recovered using 
+its transponder. No damage to any seabed assets or harm to personnel occurred. 
+Cause: The incident was traced back to a flaw in the initial umbilical attachment. A resin 
+was used to secure the umbilical to the ROV, but the resin case was faulty, and the 
+armored strands were improperly centered and distributed during the attachment 
+process (Figure 2). Despite passing a previous pull test, the defects led to the failure.  
+ 
+ 
+  
+ 
+Safety Alert No. 499 
+April 4, 2025 
+
+ 
+ 
+Figure 2: Inverted Resin Fill Cone and Armor Strands. 
+Actual Failed Termination of the ROV Umbilical and Example of Correct Strand Centering Distribution. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Resin Cast Examples. 
+
+ 
+ 
+Therefore, BSEE recommends that operators and their contractors, where 
+appropriate, do the following: 
+ 
+• Develop and implement an umbilical termination inspection procedure and 
+training program to ensure proper inspection of resin condition and the 
+assessment of armored strand separation. The program should also include 
+training on re-termination of umbilicals. 
+• Incorporate umbilical inspections into pre-job checks and maintenance 
+procedures to ensure the integrity of the connection is verified prior to use. 
+ 
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Dropped Object 

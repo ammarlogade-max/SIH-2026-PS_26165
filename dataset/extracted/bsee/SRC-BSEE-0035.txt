@@ -1,0 +1,80 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+Improperly Depressurizing Piping  
+to Remove a Hydrate Causes Injury 
+                   
+ 
+Figure 1: Location of Injured Person (IP) and valve assembly 
+The following incident serves as a precautionary example of the potential hazards 
+associated with improperly depressurizing piping to remove a hydrate. 
+During production operations, a control room operator observed a decrease in gas lift 
+pressure that was supplied through a pipeline to a remote well location. The control 
+room operator notified the onboard platform operators of the pressure drop and the 
+possibility of a hydrate forming inside of the 3-inch gas lift piping. To remove the 
+possible hydrate, the control room operator and platform operators planned to isolate 
+and bleed the pressure. From his station, the control room operator closed the pipeline 
+shutdown valve (SDV) upstream of the manual flow control valve. Additionally, the 
+platform operators physically closed the manual isolation valve upstream of the SDV, 
+assumed hydrate location, and departing pipeline. The platform operators then started 
+to relieve the pressure downstream of the hydrate location to atmospheric pressure, 
+  
+ 
+Safety Alert No. 484 
+April 16, 2024 
+Valve assembly 
+IP 
+
+ 
+ 
+without properly isolating the pipeline from the bleed point, through a ball valve 
+assembly attached to the 3-inch gas lift piping. The ball valve assembly consisted of a 
+threadolet, threaded steel pipe nipples, two 1-inch ball valves inline, and a 90-degree 
+elbow that pointed upward. With approximately 900 psi trapped behind the valve, the 
+assembly separated from the threadolet, striking one of the platform operators under the 
+left arm pit area, causing bruising and swelling. The injured offshore worker was sent for 
+medical treatment and was later released to full duty. The valve assembly could not be 
+found and is suspected to have fallen overboard after striking the worker. 
+Hydrates can form inside a pipe from a concentration of impurities, natural gas, flow 
+conditions, high pressure, and low temperature. At the time of the incident, the 
+operators onboard the facility were injecting methanol at a rate of 5 quarts per day to 
+prevent hydrate formation. A Job Safety Analysis (JSA) was not performed, so the 
+hazards of relieving pressure to remove a hydrate were never discussed. The cause of 
+the dislodged valve assembly is still under investigation. 
+BSEE recommends that operators and their contractors, where appropriate, 
+consider doing the following: 
+• Isolating all energy sources; then bleeding pressure upstream and downstream 
+of the hydrate simultaneously, maintaining the same amount of pressure so that 
+the hydrate does not move and cause a pressure surge, which could damage 
+associated piping. 
+• Verifying that JSAs identify potential hazards and mitigating those hazards for the 
+task being performed. 
+ 
+• Ensuring that when changes to equipment are made all hazards are identified 
+and mitigated through the Management of Change process, and updating facility 
+information and informing all personnel affected by the change(s). 
+ 
+• Using gas dehydration systems to remove water vapors to reduce the risk of 
+hydrate formation inside of piping. 
+ 
+• Verifying current platform configurations are reflected on piping and 
+instrumentation diagrams. 
+ 
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Process piping 

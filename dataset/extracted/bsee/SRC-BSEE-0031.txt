@@ -1,0 +1,151 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+BSEE Alerts Offshore Workers to the Potential  
+Risk of Flash Fires During Welding Operations  
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+The Bureau of Safety and Environmental Enforcement (BSEE) was recently notified of 
+an incident that highlights the potential risk of flash fires in offshore industrial 
+environments, which can often result in severe injuries or fatalities if proper safety 
+precautions are not followed.  
+ 
+The incident occurred during a welding operation with a fit -up nozzle (Figure 1). As the 
+welder was completing the first tack weld and commencing the second, vapors inside 
+the tank ignited, triggering a flash fire and a subsequent blast that propelled the welder 
+against a rail. The welder was properly tied off, so did not sustain injuries.  
+ 
+Incident Details: 
+ 
+Preparations preceding the incident involved cutting a nozzle off the top of a pressure 
+vessel
+1
+ (Figure 2), with supervisor approval to proceed. After cutting and grinding the 
+bevel, operations were paused until the necessary spool piece arrived. Once the spool 
+ 
+1
+ Pressure vessels are specially designed containers whose purpose is to contain liquids, vapors, and 
+gasses under pressure that is different from ambient pressure (14.7 pounds per square inch (PSI)). 
+Pressure vessels are typically designed to operate at pressures above 15 PSI. They are built to withstand 
+the internal pressure exerted by the contents they hold. Pressure vessels are not the same as s torage 
+tanks, which are designed to operate at atmospheric pressure or at very low pressures. 
+  
+ 
+Safety Alert No. 488 
+September 4, 2024 
+Figure 1. Installation of new nozzle.  
+Figure 2. Nozzle removed from top of vessel. 
+
+ 
+ 
+piece was received the following afternoon, cutting and beveling of the spool 
+commenced. Initial readings indicated a 0% lower explosive limit (LEL)
+2
+ after cutting all 
+nozzles off. Despite the installation of a new nozzle and the successful tacking of one 
+side, the occurrence of the flash fire during the second tack weld underscores the 
+importance of vigilance and thorough safety checks. Subsequent LEL sequence checks 
+yielded readings ranging from 0 to 70%, emphasizing the unpredictable nature of these 
+types of operations and the necessity for stringent safety protocols. 
+ 
+Personnel outside the immediate area where the incident occurred, including those in 
+the office, were startled by the blast.  Subsequent checks confirmed the vessel was filled 
+with water and equipped with the appropriate inlet and outlet skillets, ensuring its safety. 
+Hot work was being conducted on the fuel gas scrubber, with preliminary checks for 
+LEL and water levels in the scrubber conducted prior to welding. However, during the 
+welding process, an unexpected blowback of white smoke occurred. This indicated a 
+sudden ignition event. The presence of water in the tank suggests   that the flash fire 
+might have been caused by residual flammable gases or vapors trapped in pockets 
+within the vessel or in the scrubber system. The heat or sparks from the welding 
+process ignited these gases, leading to the blowback and the resulting blast. This 
+incident demonstrates the importance of thorough ventilation and gas detection 
+processes,  even in seemingly safe environments. 
+ 
+Contributing Causes for Flash Fire Include:  
+• The initial successful tack weld likely disturbed the vapors inside the tank, setting off 
+the ignition when the second tack weld was attempted. 
+ 
+ 
+• Despite being properly tied off, the blast from the ignited vapors propelled the welder 
+against the rail, indicating inadequate safety precautions or insufficient distance from 
+the potential hazard zone. 
+ 
+• Although the LEL was initially checked and found to be 0%,  after cutting and 
+grinding the bevel,  subsequent checks revealed LEL readings ranging from 0 to 
+70%. This discrepancy suggests a failure to adequately assess and monitor the 
+presence of flammable vapors. 
+ 
+ 
+• The occurrence of blowback with white smoke during the welding process suggests 
+a potential flaw in the welding procedure or technique, which may have contributed 
+to the ignition of vapors or other safety hazards. 
+ 
+2
+ The Lower Explosive Limit (LEL) is the lowest concentration of a gas or vapor in the air that can produce 
+a fire or explosion if ignited. Below this concentration, the mixture is too "lean" to burn. 
+
+ 
+ 
+BSEE recommends that operators and their contractors, where appropriate, 
+consider doing the following: 
+• Conduct thorough checks for potential hazards p rior to any welding or hot work 
+activity, including vapor presence and explosive limits. Verify the integrity of 
+equipment such as fuel gas scrubbers and vessels to ensure they are properly 
+sealed and filled with inert substances like water. 
+ 
+• Establish clear protocols for performing hot work, including welding, cutting, and 
+grinding. This should include obtaining appropriate permissions and conducting 
+necessary safety assessments, such as checking for flammable vapors and 
+ensuring adequate ventilation. 
+ 
+• Improve   communication between workers involved in hot work activities. Ensure 
+everyone understands their roles and responsibilities, including the need for 
+continuous monitoring and coordination during critical tasks like nozzle fitting and 
+welding. 
+ 
+• Ensure   all personnel involved in hot work activities receive comprehensive 
+training on safety procedures, hazard recognition, and emergency response 
+protocols. This should include specific training on handling flammable 
+substances and recognizing signs of potential ignition. 
+ 
+• Increase   supervision during critical phases of hot work, such as nozzle fitting and 
+initial tack welding. Supervisors should monitor work progress closely and 
+intervene if any deviations from safety protocols are observed. 
+ 
+• Implement engineering controls to minimize the risk of flash fires, such as 
+installing flame arrestors or inert gas purging systems in areas where hot work is 
+conducted on potentially flammable equipment. 
+ 
+• Ensure   that all workers involved in hot work activities are equipped with 
+appropriate personnel protective equipment. This includes flame-resistant 
+clothing, welding helmets with appropriate shades, and proper fall protection to 
+mitigate the impact of any potential flash fires. 
+ 
+• Schedule   periodic safety audits and reviews to identify potential gaps in safety 
+procedures and address any shortcomings. Encourage a culture of continuous 
+improvement by soliciting feedback from workers and incorporating lessons 
+learned from past incidents into safety protocols. 
+                                                       
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Hot Work  

@@ -1,0 +1,108 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+Risk of Exposure to Elevated Carbon Monoxide Found in 
+Offshore Environments 
+             
+ 
+Recent inspections conducted by the Bureau of Safety and Environmental Enforcement 
+(BSEE) found concerning carbon monoxide (CO) exposure risks associated with gas-
+powered machinery on offshore facilities. These risks are notably prevalent during calm 
+weather conditions with light winds, enabling CO to ascend from lower decks. There is a 
+potential for CO to accumulate in isolated areas, corridors, and even enter 
+environmental control intakes, putting personnel at risk of critical CO exposure. 
+Several inspections conducted during calm weather events revealed alarmingly 
+elevated CO levels within living quarters, control rooms, galley areas, and other spaces 
+across various offshore facilities. Exposure to high levels of CO can lead to symptoms 
+mirroring those illustrated in the image above, with severe exposure cases having the 
+potential to be fatal.   
+Some of the commonly used stationary CO gas detection devices on offshore facilities 
+have alarm thresholds set at a minimum of 70 parts-per-million (ppm)
+1
+ for over an hour 
+and 150 ppm for 10-50 minutes before triggering an alarm. This poses a significant risk 
+of prolonged exposure to CO well beyond allowable limits, potentially resulting in severe 
+ 
+1
+ PPM or Parts Per Million is a unit used to describe very small concentrations of a substance in a larger 
+solution. PPM means 1 per every 1,000,000 or 1/1,000,000. 
+  
+ 
+Safety Alert No. 473 
+Nov. 14, 2023 
+Figure 1: A carbon monoxide warning sign. 
+Figure 2: Symptoms of carbon monoxide sickness. 
+
+ 
+ 
+health consequences. Regularly calibrated portable/personal four-way gas detectors are 
+considered the most reliable means of detecting CO accumulations, especially in areas 
+that might otherwise go undetected. 
+In light of these recent findings, necessary actions must be taken to mitigate such 
+exposure events. It is    imperative to conduct assessments of various machinery emitting 
+CO to identify potential exposure risks. Additionally, it is essential for individuals to 
+familiarize themselves with exposure limits and recognize potentially harmful exposure 
+incidents.  
+Furthermore, it is crucial to adhere to the exposure standards established by the 
+National Institute for Occupational Safety and Health (NIOSH) and the Occupational 
+Safety and Health Administration (OSHA). These standards include: 
+• NIOSH time-weighted average (TWA) limits of 35 ppm with an upper limit of 200 
+ppm.  
+• OSHA sets the TWA at 50 ppm. 
+• OSHA Permissible Exposure Limit (PEL) for CO, also set at 50 ppm. 
+• OSHA standards that prohibit worker exposure to more than 50 ppm during an  
+8-hour period. 
+• The 8-hour PEL for CO in maritime operations is also 50 ppm. 
+• Additionally, maritime workers must be removed from exposure if the ambient 
+CO concentration exceeds 100 ppm.  
+ 
+In accordance with 29 CFR 1926. 55 (a)-(b), employee exposure must be limited, 
+and engineering controls methods should be implemented to mitigate exposure 
+to hazardous substances, including CO. Therefore, it is advisable to follow the 
+procedures outlined in 29 CFR 1926.57 (a)-(d)(2) for CO emissions, with specific 
+attention to 29 CFR 1926.57(f)(1)(viii) as a guide for effective ventilation practices to 
+mitigate exposure to harmful substances. 
+In addition to the above, BSEE recommends that operators and their contractors, 
+where appropriate, consider doing the following: 
+• Ensuring ventilation is properly functioning and backup sources of ventilation are 
+available. Ventilation should move the CO away from heavily trafficked areas, 
+living quarters, and offices, preferably to a higher area to minimize the risk of 
+exposure. 
+
+ 
+ 
+• Regularly verifying the integrity of exhaust piping to ensure it is correctly 
+configured, free from obstructions, and well-maintained. Routinely inspecting this 
+configuration to confirm the absence of corrosion, holes, or any other damage.  
+• Ensuring personnel are aware of CO poisoning and illnesses, can recognize the 
+symptoms, and know the treatments.  
+• Using signage or other clearly identifiable means to call attention to the areas 
+prone to create CO, such as generators, gas-powered equipment, etc.  
+• Planning and placement of CO-exhausting machinery should be carefully 
+considered so that CO cannot accumulate in high traffic or living areas directly 
+above machinery. If unable to change the configuration, pipe the CO away from 
+these areas.  
+• Ensuring that any gas detection equipment is regularly inspected, maintained, 
+calibrated, and properly worn by all personnel aboard the offshore facility.  
+•    Regularly reviewing NIOSH and OSHA CO occupational exposure information 
+found in the NIOSH Workplace CO Exposure and OSHA CO Fact Sheet
+. 
+  
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a    potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Gas Release, Living Quarters, Chemical Exposure, Personnel Safety 

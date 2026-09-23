@@ -1,0 +1,88 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+ 
+Unsafe Working Practices Result in Crane Injury 
+ 
+In May 2022, a lead mechanic suffered a severe leg injury while performing a boom tip 
+changeout on an offshore pedestal crane. The injured person (IP) and his assistant 
+deviated from the planned scope of work, failed to rig up the mid-section to the bridle 
+(Figure 1) prior to removing the mid-section to boom tip connector pins (Figure 2), and 
+failed to use boom connector safety pins (Figure 3). After removing the bottom right pin, 
+both employees assumed the bottom left pin would be difficult to remove since it was 
+bearing the weight of the boom section. When the IP struck the remaining connector 
+pin, it unexpectedly ejected, causing the boom to drop and pinning the IP’s leg against a 
+sledgehammer and grating (Figure 4), and fracturing the IP’s tibia.  
+ 
+Facility personnel used a pallet jack, a piece of two-inch pipe, and a two-by-four piece of 
+wood to lift the boom tip and pull the IP from under the boom tip. They then applied a 
+tourniquet to the IP to help stop the bleeding from the compound fracture. 
+  
+ 
+Safety Alert No. 446 
+July 20, 2022  
+SAFETY ALERT 
+ 
+ 
+Figure 1 – Example of how mid-section 
+should have been rigged 
+ 
+Figure 3 – Boom connector safety pin 
+Figure 2 – Boom connector pin 
+Figure 4 – Boom section on injured 
+person’s (IP) leg 
+
+The response of the facility personnel was critical in providing the IP lifesaving 
+interventions until treatment could be provided at the hospital on shore. 
+ 
+The company’s incident investigation found that the root causes were: 
+A. The Job Safety Analysis (JSA) was only completed by one employee and did not 
+include rigging up the mid-section to the bridle prior to removing pins or the use 
+of safety boom connector pins. In addition, the IP signed off on the JSA without 
+reviewing it.  
+ 
+B. There was no requirement for onshore management or the crew to review the 
+JSA before commencing work. 
+ 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+ 
+• Reviewing their Safety and Environmental Management System (SEMS) policies 
+and procedures and ensuring compliance with the JSA requirements. 
+• Reinforcing the use of Stop Work Authority (SWA) when the scope of work 
+changes. 
+• Ensuring that employees understand the importance of staying out of the line of 
+fire when working near heavy equipment and consider all pinch points when 
+walking down the job. 
+• Verifying all safety equipment is available and in place prior to the job start. 
+• Providing specific written procedures to individuals disassembling cranes. 
+• Re-emphasizing that all individuals involved in a task should thoroughly review the 
+JSA to verify all potential hazards have been addressed, including immediately 
+before the job begins (e.g., during a toolbox talk). 
+• Ensuring specialized contractors create and maintain written procedures and 
+checklists for common jobs that can be referenced during the JSA/hazard 
+analysis process. 
+• Conducting drills based on realistic injury and first-aid scenarios and inspect 
+medical supplies and kits at the facility level. 
+• Reviewing BSEE’s District Investigation (once complete) at 
+https://www.bsee.gov/what-we-do/incident-investigations/offshore-incident-
+investigations/district-investigation-reports. 
+ 
+
+– BSEE –  
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Cranes, Personnel Safety 

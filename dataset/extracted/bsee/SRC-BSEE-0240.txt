@@ -1,0 +1,60 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MMS 
+ Gulf of Mexico OCS Region
+ 
+ 
+ 
+ 
+U.S. Department of the Interior 
+Minerals Management Service 
+ Safety 
+Alert 
+Safety Alert No. 275 Contact:  Glynn T. Breaux 
+28 January 2009 (504) 736-2560 
+Wellhead Damage Caused by Hurricane 
+Subsequent to Hurricane Ike, several wells on a platform were leaking from the flanged wellhead 
+connections. Several attempts were made to isolate wellhead pressure through utilization of Surface 
+Controlled Subsurface Safety Valves (SCSSVs), but an uncontrolled gas leak from one well resulted 
+when the well’s SCSSV would not fully close to isolate the wellhead from downhole pressures. The well 
+was flared several hours before the SCSSV fully closed to seal and isolate the wellhead. Wellhead repairs 
+were made the following day with no report of personnel injury or environmental pollution.  
+A Minerals Management Service (MMS) investigation into this incident revealed that the root cause of 
+the wellhead damage resulted from the large hurricane forces acting on the wellhead flange studs, 
+resulting in the loss of seal integrity. These forces were also evident from several flowline u-bolts and 
+caisson stabilizers that also failed/broke during the hurricane. The stabilizers are support gussets that 
+attach the well’s caisson to the bell guide, and are used to minimize movement of the caissons relative to 
+the platform structure. The failed stabilizers and u-bolts could have allowed the hurricane forces to impart 
+enough moment force to the wellhead studs to stretch them to fatigue.  
+Operators are reminded that a Level I survey should be conducted after direct exposure to a significant 
+environmental event (e.g., hurricane) in accordance with subsection 14.3.1 of API RP 2A-WSD (Refer to 
+NTL No. 2005-G20 and NTL No. 2008-G18 for additional information regarding this requirement). 
+Subsequent to severe weather events, collisions, etc., MMS recommends that operators visually inspect 
+wellhead studs, flowline u-bolts, and caisson stabilizers prior to returning the wells to flow.  If the 
+inspections indicate that the wellhead studs, flowline u-bolts, and/or stabilizers may have been subjected 
+to forces greater than design limitations, the following action is recommended to prevent possible loss of 
+well control: 
+•   Verify zero pressure on the SCSSV control line. 
+•   Isolate the SCSSV control line from the wellhead. 
+•   Isolate wellbore pressure from the damaged equipment. 
+•   Repair/replace all damaged equipment. 
+•   Test the wellhead to the maximum anticipated surface pressure prior to opening the SCSSV. 
+--MMS--GOMR--
+www.gomr.mms.gov 

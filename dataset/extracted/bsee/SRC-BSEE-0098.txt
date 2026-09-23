@@ -1,0 +1,45 @@
+
+
+Safety Alert No. 419        Contact: bseepublicaffairs@bsee.gov      
+April 23, 2021                     Phone: (800) 200-4853 
+Failed Seal on Subsea Safety Valve Causes Leak 
+                                                            
+This is a simplified, not-to-scale drawing of the SCSSV (left) and the hydraulic lines that actuate it. The failure of 
+the seal allowed well and hydraulic fluids to flow through the return line even though the SCSSV was closed. 
+While restarting after an Emergency Shut Down, operators on a floating production platform 
+in the Gulf of Mexico noticed a loss of hydraulic fluid at one of their subsea wells. The loss 
+was observed as a drop in volume in the hydraulic reservoir. Shortly after this incident, the 
+platform was evacuated due to an approaching hurricane. 
+Workers discovered later that the rod piston seals of the Surface Controlled Subsurface 
+Safety Valve had failed, allowing oil and gas to enter the hydraulic lines and discharge 
+through the hydraulic vent. An estimated three to 50 barrels of hydraulic fluid and oil were 
+released into the Gulf of Mexico. The tubing pressure above the SCSSV was not bled down 
+before the evacuation, which may have increased the discharge volume. 
+SAFETY ALERT 
+
+A Safety Alertis a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf.
+Category: Subsea, Pollution
+An ROV was used to take samples of the discharge fluid and close the valve on the subsea 
+tree, which isolated the leak. The samples collected by the ROV confirmed that the 
+discharged fluid contained both hydraulic fluid and hydrocarbons. Tests initiated by the 
+operator revealed the SCSSV failed to open when hydraulic pressure was applied. 
+BSEE recommends that operators and contractors consider the following: 
+· Control room operators should watch for abnormal behavior in the hydraulic 
+system, especially when opening or closing subsea valves. Abnormal behavior 
+may include: 
+o Low liquid level in the hydraulic reservoir. 
+o Hydraulic pumps cycling more frequently than normal. 
+o Valves with hydraulic actuation not responding when commanded (e.g. a fail-
+closed valve not opening when hydraulic pressure is applied). 
+o Abnormal pressure in the hydraulic system. 
+· Configure process alarms to alert operators to abnormal changes in hydraulic 
+pressure, reservoir volume or pump cycle frequency. Verify that existing process 
+alarms have been configured correctly to detect these abnormal conditions. 
+· When responding to a leak on the rod piston of a subsea safety valve, maintain 
+hydraulic pressure to the valve if possible. This should keep production fluids 
+contained until the leak can be isolated from the vent. 
+· When evacuating a platform (e.g. due to an approaching hurricane), bleed down 
+the tubing pressure of wells to sub-ambient (below hydrostatic pressure). 
+--BSEE-- 

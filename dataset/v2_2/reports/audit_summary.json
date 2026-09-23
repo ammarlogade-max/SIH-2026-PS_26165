@@ -1,0 +1,52 @@
+{
+  "dataset_version": "2.2",
+  "release_timestamp": "2026-09-15T22:30:00Z",
+  "total_records": 3019,
+  "unique_incident_groups": 2917,
+  "source_counts": {
+    "Bureau of Safety and Environmental Enforcement (BSEE)": 574,
+    "International Marine Contractors Association (IMCA)": 2388,
+    "Health and Safety Executive (UK HSE)": 8,
+    "U.S. Chemical Safety Board (CSB)": 16,
+    "Health and Safety Executive (HSE)": 33
+  },
+  "event_type_counts": {
+    "INCIDENT": 1438,
+    "NEAR_MISS": 1524,
+    "UC": 33,
+    "UA": 24
+  },
+  "sif_distribution": {
+    "TRUE": 1097,
+    "UNKNOWN": 1922
+  },
+  "iogp_supported_distribution": {
+    "Work authorization": 208,
+    "Hot work": 165,
+    "Safe mechanical lifting": 614,
+    "Line of fire": 261,
+    "Energy isolation": 101,
+    "Working at height": 139,
+    "Bypassing safety controls": 83,
+    "Driving": 114,
+    "Confined space": 67
+  },
+  "tier_distribution": {
+    "GOLD": 586,
+    "SILVER": 1158,
+    "UNLABELED": 801,
+    "QUARANTINED": 474
+  },
+  "split_counts": {
+    "TRAIN": 1168,
+    "VALIDATION": 266,
+    "TEST": 254,
+    "SOURCE_HELDOUT_TEST": 56
+  },
+  "hard_negatives_count": 126,
+  "leakage_audit": {
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "val_test_overlap": 0
+  }
+}

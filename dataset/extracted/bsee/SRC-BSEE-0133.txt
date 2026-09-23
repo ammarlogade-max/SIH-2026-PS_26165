@@ -1,0 +1,98 @@
+
+
+1
+SAFETY ALERT 
+Safety Alert No. 384                                                           Contact: David Nedorostek 
+May 13, 2020                                                                              Phone: (703) 787-1029 
+Preventing Static Discharge 
+In recent years, offshore operators on the Outer Continental Shelf have reported 
+multiple flash-fire incidents that resulted in injuries and damage to facilities. 
+Investigations found that static discharge was a contributing factor in each of the 
+incidents. Flash-fire incidents occurred during multiple types of operations, including 
+maintenance on a control panel when natural gas was being vented, or when flammable 
+fluids were drained into a bucket or as flammable liquids were transferred between 
+containers. 
+A static discharge can occur when an electrical charge accumulates on the surfaces of 
+two materials, one with a positive charge and the other with a negative charge, that 
+make contact and are separated. A static discharge can occur between two solids, a 
+solid and a liquid, or between two non-mixable liquids. The heat generated from a static 
+discharge is somewhere between 3,000
+o
+F and 6,000
+o
+F and can create enough energy 
+to start a fire regardless of the flashpoint of hydrocarbon-based fluids. 
+Safely discharging the accumulation of static electricity requires bonding and grounding 
+of any conductive equipment with the potential to produce electricity. 
+· Bonding involves connecting all components in a system using a conductive 
+material, usually stranded copper wire or a conductive strap, with a minimum 
+diameter of American Wire Gauge No. 6. This helps to keep the bonded objects 
+at the same level of potential energy, which can reduce or eliminate the risk of 
+static electricity or sparks. 
+· Grounding involves connecting the bonded system to earth. The conductive 
+path to earth discharges the built-up static electricity to safely ground. 
+  
+  
+Bonding and grounding a metal 
+container and drums. 
+Anti-static wires for use in 
+bonding and grounding. 
+A metal container is incorrectly bonded to 
+a plastic bucket. 
+
+2
+Preparedness and extreme caution must be used wherever static discharge, static 
+electricity or sparks may occur on an offshore facility. Examples include: 
+· Temporary tanks that contain or have previously contained flammable or 
+combustible fluids 
+· Temporary vessels or process skids that have no electrical power associated 
+· Skid-mounted equipment with no electrical connection to a facility’s power 
+system 
+· Engine-driven skid-mounted equipment (not including generators) with no 
+electrical connection to a facility’s power system 
+· Non-conductive plastic buckets used for transferring flammable or combustible 
+liquids 
+· Pressure washers and steamers used for tank and vessel cleaning 
+· Aircraft refueling operations 
+· Conductive equipment and operations including, but not limited to, tank and 
+container filling, splash filling, tank cleaning, sampling, gauging, switch loading, 
+flow back tanks, pumping units, pits, and boilers 
+· Loading or unloading flammable materials, such as crude oil or liquid petroleum 
+gas portable hand carried containers, such as sample bottles 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+· Ensure that bonding and grounding is conducted to prevent the potential 
+accumulation of electrostatic charge by using any of the following connection 
+means:  bolted, alligator clips, beam clamps and spring-type clamps; 
+· Clamps should have points or teeth to penetrate through paint and bolted, 
+clamped, or spring-type clamps should not be stepped on, kicked or otherwise 
+exposed to adverse conditions; 
+· Ensure that the mating surface for the grounding connection is cleaned of all 
+non-conductive materials (e.g. grease, oil, and paint); 
+· Consider training offshore workers in grounding and bonding all equipment to 
+understand how and why to bond and ground their equipment to ensure safe 
+operation; 
+· Avoid bonding to a plastic bucket since there is greater difficulty in dissipating 
+charges from a plastic container and a conductive bond wire attached to the 
+outside of the container will not remove this charge; 
+· Follow the equipment manufacturer’s instructions and operator’s written safe 
+work procedures for bonding and grounding and using the equipment; 
+· Conduct assessments to identify potential hazards such as lower flammable 
+limits (LFLs); 
+· Identify all potential sources of LFLs on Safety Data Sheets for the products 
+present in the atmosphere; 
+
+3
+· Ensure that only metal buckets with metal handles are used for collecting 
+hydrocarbons or other flammable/combustible liquids; 
+· Confirm that metal buckets have direct metal contact using a bonding cable to 
+the nozzle or fill pipe from which a liquid is discharged. The nozzle and fill pipe 
+should also be metal, and liquid should be discharged slowly to maintain a low 
+velocity and minimize the amount of static electricity generated; 
+· Ensure that all metal storage tanks are grounded; and, 
+· Recommend that all personnel ground their bodies by touching a grounded metal 
+surface, such as a steel walkway, before opening a gauge hatch on a tank. 
+--BSEE-- 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations 
+that could assist avoiding potential incidents on the Outer Continental Shelf. 

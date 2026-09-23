@@ -1,0 +1,72 @@
+
+
+ 
+ 
+ 
+Control Portable Electronic Device Use  
+to Prevent Ignition Hazards Offshore 
+ 
+Background:  
+Recent Marine Minerals Administration inspections identified unsafe use of portable 
+electronic devices (PEDs) – including pagers, cell phones, cameras, video equipment, and 
+radios – in hazardous areas offshore.  
+During one inspection, MMA observed a wireline operator using a cellphone on a mobile 
+offshore drilling unit during active wireline operations. This use violated facility safety 
+procedures and resulted in an Incident of Non-Compliance.   
+In another inspection, MMA observed portable electronic devices that were not rated for 
+hazardous locations in a Class 1, Division 2 hazardous area, and no hot work permit had 
+been issued.  
+MMA emphasizes the importance of not using cell phones and other portable electronic 
+devices during active operations unless their use is authorized and controlled. Portable 
+electronic devices that are not properly rated for hazardous locations can create ignition 
+hazards and should not be used without proper safeguards.  
+Therefore, MMA recommends that operators and their contractors, where appropriate, 
+consider the following:  
+• Prohibit portable electronic device use in hazardous areas unless devices are 
+certified as intrinsically safe
+1
+ for the applicable class and division.   
+• Reinforce adherence to portable electronic device policies during facility 
+orientations, and prior to safety-critical operations.  
+ 
+1
+ Intrinsically Safe: A method of protection in which electrical equipment is designed so that any spark or thermal effect produced under normal 
+or fault conditions is incapable of igniting a specified flammable gas or vapor mixture. Intrinsically safe equipment is evaluated and certified for 
+use in specific hazardous (classified) locations based on the applicable Class, Division, and Gas Group, in accordance with ANSI/UL 913 and the 
+National Electrical Code (NEC) Article 504. For offshore applications, refer to API RP 14F for guidance on the selection and installation of 
+electrical equipment in classified areas. 
+Safety Alert No. 521 
+Date: August 12, 2026 
+Contact: Engagement@bsee.gov 
+Phone: (800) 200-4853 
+
+CAT EG O RY:   Dynamic Positioning 
+ 
+• Require Hot Work Permits when portable electronic device use cannot be 
+avoided in hazardous areas, consistent with API RP 14F (§12.3 and §12.9) and 
+API 500.  
+• Review company policies for portable electronic device usage and ensure they 
+comply with 30 CFR 250.114 and API 14F standards. 
+• Ensure offshore installation managers and company representatives understand 
+hazardous area classification, portable electronic device ignition hazards, and 
+proper installation and operating permit requirements.  
+–   MMA – 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+As of July 10, 2026, the Department of Interior has reunified the Bureau of Ocean Energy 
+Management and the Bureau of Safety and Environmental Enforcement into the Marine 
+Minerals Administration, which will oversee the responsible development of the nation’s   
+offshore energy and marine mineral resources with an integrated focus on safety, 
+environmental protection and efficient oversight. For more information, visit  
+Transition to the Marine Minerals Administration | U.S. Department of the Interior. 
+ 
+ A Safety Alert is a tool used by MMA to inform the offshore oil and gas industry of the circumstances 
+surrounding a potential safety issue. It also contains recommendations that could assist in avoiding potential 
+incidents on the Outer Continental Shelf.  

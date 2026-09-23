@@ -1,0 +1,56 @@
+
+
+SAFETYALERT 
+Safety Alert No. 418                                      Contact:  bseepublicaffairs@bsee.gov 
+   April 22, 2021  Phone: (800) 200-4853 
+Inadequate Job Planning and Change Management 
+Leads to Injury 
+Figure 1: Location where handrail injury occurred 
+On Feb. 12, 2021, a crew was removing a heater tube from a heat exchanger. 
+Before removing the heater tube, a job safety analysis (JSA) was performed to 
+ensure crew members understood the sequence of planned steps and associated 
+hazards involved in the task. After work began, the crew determined that removing 
+a handrail was necessary to create enough space to access the heater tube 
+successfully. Crew members were aware that removing the handrail was not part of 
+the original job scope; but began removing the handrail anyway without revising the 
+JSA or conducting a toolbox discussion of the additional work requirements and 
+potential hazards. 
+To free the last leg of the handrail from its socket, a crane equipped with a nylon 
+sling attachment was used to apply upward tension while the crew used a 5-foot 
+prybar leveraged underneath the kickplate. When the handrail suddenly broke free, 
+the force of tension caused it to strike a crew member, knocking him to the ground 
+and fracturing his nose and orbital socket. The crew member was transported to 
+shore for medical evaluation, where doctors determined that surgery was required. 
+
+The company’s incident investigation process determined the causal factors of this 
+incident to be: 
+1. Inadequate work planning - the job steps did not cover the entire 
+process to successfully remove the heater tube from the heat exchanger. 
+The JSA should have been revised to include the job steps from the 
+additional work that was added, including control measures to safely 
+identify and mitigate all hazards involved with the task of removing the 
+handrail. 
+2. Inadequate training - three of the five crew members were found to be 
+deficient in their formal “company-specific” JSA training. 
+3. Noncompliance with company policies - none of the employees 
+involved followed company policy to stop the job when the crew deviated 
+from the tasks identified in the original JSA. 
+    
+Therefore, BSEE recommends that operators consider the following: 
+1. Assess, develop, and implement Leadership/Supervisory training and 
+evaluation programs with periodic refresher training to ensure 
+commitment and understanding of company SEMS policies and 
+expectations. 
+2. Assess, develop, and implement in-house JSA and Stop Work Authority 
+training and evaluation programs with periodic refresher training specific 
+to company SEMS policies and expectations. 
+3. Ensure personnel discuss additional duties and hazards that come up 
+with a change in work assignment. Use Stop Work Authority if hazards 
+are not identified, or equipment is not adequate for the job. 
+– BSEE – 
+
+2 
+Categories: Safe Work Practices 
+Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the circumstances 
+surrounding an accident or near miss. It also contains recommendations that should help prevent the 
+recurrence of such an incident on the Outer Continental Shelf. 

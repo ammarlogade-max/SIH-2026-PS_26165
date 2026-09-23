@@ -1,0 +1,71 @@
+
+
+MMS 
+ 
+ 
+ 
+ 
+ U.S. Department of the Interior 
+ Minerals Management Service 
+ Gulf of Mexico OCS Region 
+        Safety  
+             Alert 
+Safety Alert No. 282 
+23 July 2009 
+Contact:  Glynn T. Breaux
+(504) 736-2560
+ 
+Job Safety Analysis (JSA)  
+ 
+MMS has revised and is re-issuing Safety Alert No. 276 (SA 276) as the result of a fatality and 
+injury during a recent hose lifting operation utilizing an air-operated hoist.  SA 276 was 
+originally issued August 22, 2002 and revised on February 17, 2009.  SA 276 outlines the use of 
+a Job Hazard Analysis (JHA) to review the scope of work being performed to uncover hazards 
+overlooked in the original design, mock-up, or setup of a particular process, operation or task.  It 
+also describes that a JSA, on the other hand, is a process used to review site-specific detailed job 
+steps and uncover hazards associated with the specific job undertaken.  SA 276 was previously 
+revised to include considering inclement weather as a potential hazard for both routine and non-
+routine operations.  Once the hazards are identified, a strategy for eliminating or reducing the 
+hazards should include the development of operating procedures, safe work practices, operating 
+guidelines, or a combination of all three.  SA 276 recommends a systemic approach to identify 
+those tasks having potential severe or fatal consequences, conduct the necessary JHA and/or JSA 
+to identify those hazards leading to potentially sever or fatal consequences, then eliminate the 
+hazard or reduce the severity of the consequence through the use of design engineering, 
+administrative controls, or written procedures and/or guidelines. 
+ 
+A Minerals Management Service (MMS) Panel investigation into the recent air-operated hoist 
+hose lift fatality and injury revealed that although a verbal pre-job lift safety meeting was 
+conducted by the drilling crew, the written JSA Form was not completed and signed by all 
+parties until post-accident.  As per the Drilling Contractor’s Health, Safety and Environmental 
+(HSE) policy, a pre-job written JSA Form was not completed since the lifting operation was 
+deemed by the Driller as not involving known hazards with a “possible or probable” likelihood 
+of causing an incident or has the potential to cause an incident of high severity.  The Operator’s 
+HSE policy, however, required the need for a written JSA and pre-job safety meeting before a 
+new job, at the beginning of each workday and in the event of a significant operational change. 
+The Operator’s HSE policy also states that when the Operator and Contractor procedures 
+conflict, the more stringent rule should be followed.  The absence of a formal JSA prior to the 
+lifting accident implies: (a) an absence of the Contractor’s commitment to the Operator JSA 
+policy and (b) the apparent failure on the part of the Operator to provide the necessary oversight 
+to ensure that a formal JSA protocol be followed for the hoist lifting operation.  
+ 
+ 
+ 
+
+ 
+Therefore, the MMS recommends SA 276 be revised and re-issued to include the following: 
+ 
+• Operator’s and their Contractors review and communicate their respective HSE policies 
+to determine if a formal written JSA and safety meeting for lifting or other operations is 
+required. 
+• Workers understand that not performing formal written JSA safety meetings provides 
+another opportunity of higher levels of risk associated with operational tasks rather than 
+the tasks being reduced to As Low as Reasonably Practicable (ALARP). 
+• Workers understand that is not the JSA Form alone that will keep them safe on the job 
+but rather the process the JSA represents.  It is of little value to identify hazards and 
+devise proper controls if the controls are not put in place. 
+ 
+ 
+--MMS—GOMR-- 
+www.gomr.mms.gov
+       
+   

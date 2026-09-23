@@ -1,0 +1,62 @@
+
+
+ 
+Safety Alert No. 520 
+Date: July 1, 2026 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+ 
+Inspect A2B Systems and Wire Rope Terminations to Prevent Crane 
+Hazards 
+  
+ 
+Background: 
+The Bureau of Safety and Environmental Enforcement Gulf of America Region recently 
+investigated a crane incident aboard a lift boat conducting decommissioning and diving 
+operations at an offshore platform.
+  
+During lifting operations, the lift boat crane’s anti–two-block, or A2B, weight detached from its 
+anchor point at the boom tip. The weight slid down the fast line cable and struck the fast line ball’s 
+wedge socket, causing the fast line wire rope to fail at the socket entry. The fast line ball and 
+detached weight fell approximately 12 feet to the vessel deck.
+  
+A diver working nearby saw the falling components and attempted to move away from the hazard. 
+As the diver turned away, the recoiling wire rope struck the diver on the right side of their torso. 
+Operations were immediately halted, and personnel secured the area. The diver sustained minor 
+injuries and did not seek medical attention.  
+Figure 1-Damaged A2B pulley with bent bolt caused the 
+cable to ride on the frame instead of the pulley wheel. 
+Figure 2-A2B cable failure resulted in the weight falling 
+directly onto the deck. 
+
+Findings: 
+The bureau’s investigation determined that the fast line wire rope failed because of internal 
+corrosion at the wedge socket. The corrosion developed after the annually required cut and-   -slip 
+maintenance was not performed in accordance with company policy. Investigators also found 
+that a bent bolt caused the A2B cable to run off track and abrade, allowing the A2B weight to 
+detach and fall.  
+The impact of the falling weight on the wedge socket generated a sudden, high intensity-   force 
+that exceeded the remaining strength of the weakened wire rope, causing it to part. Inadequate 
+inspections contributed to the incident because they did not identify the bent pulley bolt, 
+misaligned pulley, abnormal cable wear, or the deteriorated A2B wire rope before the incident. 
+Therefore, the Bureau of Safety and Environmental Enforcement recommends that operators 
+and their contractors, where appropriate, consider the following: 
+• Ensure personnel follow API RP 2D required “cut, slip, and inspect” procedure for all wire 
+rope terminations, especially those exposed to saltwater intrusion, so that internal 
+corrosion and strand deterioration may be detected and corrected before rope failure. 
+• Conduct pre-use and periodic crane inspections to verify proper A2B pulley alignment, bolt 
+integrity, and unrestricted sheave rotation. Remove cranes from service when inspections 
+identify chafing, binding, or misalignment or other unsafe conditions. 
+• Consider increasing inspection frequency and shortening wire rope replacement intervals 
+for cranes operating in corrosive marine environments, consistent with API RP 2D guidance 
+on corrosion, abrasion, and wire rope retirement criteria. 
+• Ensure certified crane mechanics, inspectors, and operators are trained and competent 
+per API RP 2D requirements and company policies. Refresher training should emphasize 
+how to identify internal corrosion, mechanical wear, and A2B system vulnerability. 
+ 
+–   BSEE – 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that could 
+assist avoiding potential incidents on the Outer Continental Shelf. 
+CATEG O RY:    Cranes/Lifting, Personnel Safety 

@@ -1,0 +1,80 @@
+
+
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+ 
+ 
+Toppled Hydraulic Workover Unit Results in Fatality 
+ 
+ 
+Hydraulic Workover Unit Before(left) and After (right) Fatal Incident 
+Recently, a hydraulic workover unit (HWU) toppled while being erected on a caisson 
+located in 35-feet of water in the Gulf of Mexico, resulting in a contractor employee 
+falling into the water. The HWU, consisting of a blowout preventer (BOP) and pipe 
+jack assembly weighing approximately 120,000 lbs., was installed on the wellhead 
+and attached to a 20-inch structural casing. Preliminary observations indicate a 
+break in the casing at the production tree or just below the drive pipe which resulted 
+in the HWU and tree falling over. At the time of the toppling, one contractor 
+employee was elevated on the HWU and tied off with a safety harness for fall 
+protection but fell into the water with part of the HWU. 
+ 
+The exact cause(s) of the incident is under investigation. Because the factors 
+involved in this incident potentially are common to non-rig   well interventions in the 
+Gulf of Mexico, BSEE recommends all operators and well-operation contractors 
+review their facilities’ fall protection procedures, safe work practices, results of the 
+  
+ 
+Safety Alert No. 439 
+April 25, 2022  
+SAFETY ALERT 
+ 
+ 
+
+latest Level I surveys, and load capacities of wells and platforms before installing 
+equipment.  
+ 
+While this is a preliminary safety alert, BSEE recommends that operators and 
+contractors consider the following: 
+ 
+• Increasing awareness of the dangers inherent in rigging up HWU, or non-rig 
+units, with work environments that make it difficult to tie-off when fall 
+protection is used. 
+• Reviewing the fall protection design and determining whether quick release of 
+emergency cut-away mechanisms may be used without compromising overall 
+safety or creating new risk. 
+• Ensuring a reliable means of support exists whenever a HWU, or non-rig unit, 
+is being unhooked from the crane. 
+• Ensuring your facility and connection points can support the installed 
+equipment and the max pull capacity available during workover operations. 
+• Reviewing the planning process to ensure a detailed review if unique or 
+unusual operations are contemplated. And if incorporated, including the new 
+processes as part of the agenda for safety meetings and training. 
+• Ensuring onsite supervision is fully qualified for the planned operations.  
+• Ensuring the details of all plans are fully communicated and understood. 
+• Placing special emphasis on the Job Safety Analysis process and shift hand-
+off meetings to ensure that all personnel and supervisors are involved in the 
+process. 
+• Considering seasonal weather patterns when installing means of support for 
+HWU or non-rig units. 
+• If structural damage is found in Level I, II, or III surveys, completing a 
+structural analysis and performing any repairs before connecting equipment 
+such as BOPs, workover, and snubbing, coil tubing units, etc. 
+• Reviewing Panel Report 2007-045 and Safety Alerts 310 and 251. 
+• Offering training refreshers for all personnel involved in this type of operation 
+and including this incident as a study case to promote discussion and 
+understanding of the risks. 
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Component Failures, General  

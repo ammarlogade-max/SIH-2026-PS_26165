@@ -1,0 +1,46 @@
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Safety Alert No. 241 
+Contact: Glenn Woltman
+July 6, 2006 
+(504) 736-2438 
+Shallow-Gas Blowout and Rig Evacuation 
+While drilling below drive pipe in open water in the South Timbalier area, the operator experienced an 
+unexpected gas flow at surface, causing the well to be put into the diverter system.  The uncontrolled flow 
+resulted in the short-term rig evacuation of non-essential personnel.  The interval at 1,318 feet had not 
+been identified as a shallow-gas hazard, although a higher interval just below the drive pipe shoe had 
+been identified.  Closer attention to background gas recordings, mud weight properties in returns, or other 
+drilling anomalies might have allowed precautionary actions that could have prevented this loss of well 
+control event. 
+ To prevent a recurrence of this type of incident, the MMS recommends that operators consider 
+incorporating the following into their pre-spud well plan: 
+1.	 Review of shallow-gas hazard studies prepared for new wells from previously drilled surface 
+locations or in open water should include a study of the old logs, if available, as well as any 
+geophysical data.  Drilling personnel should be explicitly warned of shallow-gas deposits 
+identified in previously drilled wells.  The potential risks of any drilling project should be fully 
+assessed, more so when information is sketchy or data limited, and pilot holes should be 
+considered prior to undertaking the drilling of the new well.  Adequate kill weight mud should be 
+available in reserve pits at all times during drilling through known or suspected shallow gas 
+intervals. 
+2.	 Conductor casing or surface casing should be set above all known shallow gas hazard zones.  
+Drilling operations should cease immediately upon noting gas shows, appropriate weighted mud 
+should be circulated until the gas is out of the hole, and a flow check taken upon each connection.  
+If drilling operations continue, flow checks should be made on all connections and mud weight 
+in/out measurements noted until the shallow gas intervals are drilled through. 
+3.	 Mud weight should be increased slightly through the shallow intervals to enhance well control, 
+unless tight margins prevail between pore pressure and fracture pressure.  Personnel should 
+monitor and control drilling rate and drilling mud properties.  
+—MMS—GOMR— 
+Visit our Safety Information Website 
+A complete account of the accident is available on the MMS website at 
+http://www.gomr.mms.gov/homepg/offshore/safety/acc_repo/accindex.html 

@@ -1,0 +1,46 @@
+Safety Alert No. 193http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_193...
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 193Contact: Frank Pausina
+February 28, 2001504-736-2560
+Fall Results in Fatality
+Safety Alert No. 190, issued on September 22, 2000, referenced an incident in which a contract
+drilling company employee who, while being lifted to the derrick’s stabbing board, fell approximately
+80 feet to his death when both of his body harness D-rings became detached from the hoisting
+system’s hook. The hook involved contained an outward opening, self-locking latch and a latch
+release trigger. The body harness was a dual D-ring harness with a boatswain’s chair. Because of the
+above facts and MMS’s concern regarding the potential for similar occurrences, Safety Alert No. 190
+was issued during MMS’s investigation of the incident and prior to the investigation’s subsequent
+official report.
+The recommendations listed in Safety Alert No. 190 with respect to personnel lifting operations were
+as follows:
+All personnel lifting hooks should be a snaphook design with an inward moving, self-closing,
+and self-locking keeper (latch or gate), that is, the keeper remains closed and locked until
+unlocked and pressed open for connection or disconnection,
+An employee on a single-point suspension-lifting device (as described above) should be
+protected by a personal fall-arrest system. The anchorages involved in such a fall-arrest system
+should be independent of the lifting device’s suspension. For example, in the above described
+accident, the personal fall-arrest system should consist of either a lanyard from the person to an
+independent lifeline, that is, not to any part of the lifting suspension line, or an independent
+self-retracting lifeline connected to the person.
+All operators should review their personnel lifting operations for safety considerations. To aid in
+that review, your attention is directed to OSHA regulations 29 CFR 1926 Subpart L
+(Parts 1926.450 – 926.454) – Scaffolds and 29 CFR 1926 Subpart M (Parts 1926.500 –
+1926.503) – Fall Protection.
+While MMS considers the above-referenced recommendations as still being appropriate, it is further
+recommended that the operation of lifting an employee on a single-point suspension-lifting device be
+subjected to a Job Safety Analysis (JSA). The JSA should identify all feasible fall-arrest systems for
+possible use. It is also recommended that the fall-arrest system chosen for a particular situation be
+subjected to a JSA for its use in that particular situation.
+It should be noted that industry is currently reviewing the difficulties associated with lifting personnel
+with a hoisting device. The IADC HSE committee is currently working on developing a recommended
+practice for operations where workers are lifted by a hoisting device (winch) more than six feet and
+1 of 22/21/2012 4:31 PM
+
+suspended at the work location.
+—GOMR—MMS—
+Vi
+sit our Safety Information Website
+Safety Alert No. 193http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_193...
+2 of 22/21/2012 4:31 PM

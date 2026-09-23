@@ -1,0 +1,107 @@
+
+
+ 
+SAFETY ALERT 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+Figure 1 – Temporarily installed air dryer with bull hose connections. 
+Original whip check position (Left Circle) and the location of the injured 
+persons hand placement on the air supply valve (Right Circle). 
+  
+ 
+ 
+ 
+Person Injured When Safety Mechanisms Failed 
+ 
+                            
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A third-party contract operator sandblasting on an offshore facility in the Gulf of Mexico 
+was injured when a temporary air dryer used for sandblasting operations recoiled and 
+broke the safety cable.  
+Based on their inspection at the facility, BSEE inspectors identified the following details: 
+• A worker was refilling the sand pot with an abrasive material to continue 
+sandblasting operations.  
+• After confirming the air supply valve from the temporary air dryer to the sand pot 
+was shut-in, the worker attempted to disconnect the air supply valve (Figure 1 – 
+Right Circle) from the air dryer.  
+• As the worker tried to access this coupling, he loosened the T-connection. The T-
+connection blew off and broke the braided steel cable (i.e., whip check or safety 
+cable) designed to suppress the hose recoil when a pressurized release occurs.  
+• The whip check ends were looped between the hose and the coupling 
+connection.  (Figure 1 – Left Circle).    
+  
+ 
+Safety Alert No. 455 
+Feb. 17, 2023 
+Figure 2 - Broken whip check from the incident. 
+
+ 
+ 
+• The T-  connection and broken whip check (see Figure 2) caused multiple cuts 
+and abrasions to the worker’s  head and shoulders. 
+BSEE inspectors identified the following contributing factors: 
+• The baling wire involved in the 
+incident (Figure 3) was slightly 
+corroded, potentially diminishing 
+its overall integrity. Baling wire is 
+used as an additional safety 
+measure to ensure couplings are 
+securely connected. It is often 
+used in place of a cotter pin on 
+crowfoot couplings.  
+• The failed whip check cable was 
+improperly crimped. Crimping the 
+whip check cable before placing it 
+into service allows it to function 
+correctly at its full rated capacity.  
+• The bull hose configuration on the air inlet valve from the platform air compressor 
+was installed in a horizontal position. This added weight caused the T-connection 
+to be off-center at the time of operation, adding stress on the associated 
+couplings and baling wire. The added weight, combined with the worker’s force 
+when manipulating the air supply valve to the sand pot, resulted in air escaping 
+the inlet valve from the platform compressor, likely causing the connection to 
+come loose. 
+Therefore, BSEE recommends that operators and contractors do the following:  
+ 
+•    Conduct a pre-job hazard assessment 
+with all affected personnel, including 
+facility leadership, to confirm all aspects 
+and associated mitigations of the task 
+are understood. 
+•    Install stainless steel tie wires in addition 
+to whip checks on bull hoses to reduce 
+the risk of disconnection. 
+•    Install 90-degree fittings (Figure 4) to 
+eliminate the horizontal orientation of the 
+supply hose, reducing the stress at each 
+connection. 
+Figure 3 – Baling wire on coupling that released.    
+ 
+Figure 4 – 90-Degree fitting recommendation. 
+ 
+ 
+
+ 
+ 
+•    Depressurize equipment prior to adjusting valves when practical. 
+•    Inspect all equipment and parts pre-job to ensure they are in adequate condition. 
+ 
+ 
+ 
+– BSEE – 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding a potential safety issue. It also contains recommendations that 
+could assist avoiding potential incidents on the Outer Continental Shelf. 
+ 
+ 
+Category: Cranes/Lifting  

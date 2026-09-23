@@ -1,0 +1,24 @@
+Safety Alert No. 155 - Fire on Glycol Reboiler Due to Carry-over an... http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_155... 
+U.S.    Department of the Interior  
+Minerals Management Service  
+Gulf of Mexico OCS Region  
+Notice No. 155 
+June 14, 1988 
+Fire on Glycol Reboiler Due to Carry-over 
+and Uninsulated Compressor Exhaust 
+Two separate fires occurred on the same glycol reboiler on a production platform. The ignition source for both 
+was an uninsulated compressor exhaust. 
+The first fire occurred when glycol and condensate carry-over leaked onto an uninsulated compressor exhaust 
+from a loose flange connecting the reboiler and reflux column. The unit was shut in, the fire was extinguished in a 
+short time with dry chemical, and the leaking flange bolts were tightened. 
+The second fire occurred when the reboiler was placed back into service and a surge of cold glycol flashed in 
+the reboiler, vented through the reflux column, and was ignited by the uninsulated compressor exhaust. A fusible 
+plug reacted to the fire and shut in the platform. The fire was extinguished with the water system in 
+approximately 10 minutes. 
+There were no personnel injuries. Property damage, confined to electrical wiring and insulation, was estimated 
+at $1,000. 
+To prevent a recurrence of this type of incident, the reflux column vent was relocated away from the compressor 
+exhaust, the leaking flange bolts were tightened (after the first fire), and the dump valve on the glycol tower was 
+adjusted to prevent surges of glycol and condensate from causing carry-over in the reboiler, and the compressor 
+exhaust was insulated. 
+1 of 1 2/21/2012 4:04 PM

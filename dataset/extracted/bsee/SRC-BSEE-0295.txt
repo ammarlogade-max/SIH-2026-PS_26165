@@ -1,0 +1,37 @@
+
+
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 224
+December 29, 2004
+Contact: Jack Williams
+(504) 736-1757
+Erroneous Activation of Dump Valve Causes Loss of 165 bbls of Oil-Based Mud
+During drilling operations, drilling personnel working the pit room shifted an actuator handle that
+controlled the degasser suction valve, according to the posted line schematic. However, the rig
+immediately began losing mud. After about three minutes, the actuator-controlled valve was shut.
+An investigation discovered that the actuator did not control the degasser suction valve as shown on
+the line schematic, but was connected to the dump valve of the process tank. As a result of the
+incident, 165 barrels of synthetic oil-based drilling fluid and cuttings, including 96 barrels of oil, were lost
+overboard. It was also found that no master dump valve was installed downstream of the individual
+compartment dump valves and manifold.
+The investigation found that the piping/schematic error had been previously discovered during a
+separate incident, but only a hand label, overwriting the integral label of the line schematic, warned that
+the handle controlled the dump valve. The line schematic itself was not corrected. The crews were
+previously instructed that the hand label was correct and they were to ignore the piping diagram shown
+on the line schematic. However, in the course of performing the operation, the drilling personnel
+referred to the faulty line schematic and failed to notice the written hand label correction beside the
+actuator handle.
+The MMS recommends the following to operators:
+Consider installing a master dump valve downstream of the individual lines as a secondary
+barrier to inadvertent fluid dumping. Several recent incidents involving the inadvertent dumping of
+mud would have been prevented by this practice.
+Avoid temporary hookups and hand labeling when line schematic variances are discovered.
+Correct the plumbing and the schematics immediately so as to remove the possibility of
+misinterpretation.
+  —MMS—GOMR—
+www.gomr.mms.gov
+Visit our Safety Information Website
+Safety Alert No. 224 - Erroneous Activation of Dump Valve Causes L...  http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_224...
+1 of 12/21/2012 4:43 PM

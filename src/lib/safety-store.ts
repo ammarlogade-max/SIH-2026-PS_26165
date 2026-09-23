@@ -1,7 +1,8 @@
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import os from "node:os";
-import { Classification, Report, CorrectiveAction, AuditLogEntry, UserRole } from "@/lib/types";
+import { createHash } from "node:crypto";
+import { Classification, Report, CorrectiveAction, AuditLogEntry, UserRole, LifeSavingRule, HumanReviewRecord } from "@/lib/types";
 import { isSupabasePersistenceConfigured, supabaseAdmin } from "@/lib/supabase";
 import { buildBenchmarkDataset } from "@/lib/benchmark-seeder";
 import {
@@ -37,6 +38,102 @@ type LocalStoreDocument = {
   actions: CorrectiveAction[];
   auditLogs: AuditLogEntry[];
 };
+
+export const GENESIS_HASH = "0000000000000000000000000000000000000000000000000000000000000000";
+
+export function computeAuditHash(
+  sequence_number: number,
+  previous_hash: string,
+  timestamp: string,
+  actor_name: string,
+  action: string,
+  entity_id: string,
+  details: string
+): string {
+  return createHash("sha256")
+    .update(`${previous_hash}|${sequence_number}|${timestamp}|${actor_name}|${action}|${entity_id}|${details}`)
+    .digest("hex");
+}
+
+export function createChainedEntry(
+  currentAuditLogs: AuditLogEntry[],
+  entryData: {
+    actor_name: string;
+    actor_role: UserRole;
+    action: string;
+    entity_type: AuditLogEntry["entity_type"];
+    entity_id: string;
+    details: string;
+    status: "success" | "warning" | "error";
+  }
+): AuditLogEntry {
+  // Find highest sequence number
+  const maxSeq = currentAuditLogs.reduce((max, e) => Math.max(max, e.sequence_number || 0), 0);
+  const nextSeq = maxSeq + 1;
+  // The immediate predecessor in sequence is the one with sequence_number == maxSeq
+  const prevEntry = currentAuditLogs.find((e) => e.sequence_number === maxSeq);
+  const prevHash = prevEntry?.current_hash || GENESIS_HASH;
+  const timestamp = new Date().toISOString();
+  const currentHash = computeAuditHash(
+    nextSeq,
+    prevHash,
+    timestamp,
+    entryData.actor_name,
+    entryData.action,
+    entryData.entity_id,
+    entryData.details
+  );
+
+  return {
+    id: `aud-${uuidv4().slice(0, 8)}`,
+    sequence_number: nextSeq,
+    previous_hash: prevHash,
+    current_hash: currentHash,
+    timestamp,
+    ...entryData,
+  };
+}
+
+export function verifyAuditChainIntegrity(logs: AuditLogEntry[]): {
+  valid: boolean;
+  total_entries: number;
+  tampered_count: number;
+} {
+  if (!logs || logs.length === 0) {
+    return { valid: true, total_entries: 0, tampered_count: 0 };
+  }
+
+  // Sort by sequence_number ascending (1, 2, 3...)
+  const sorted = [...logs].sort((a, b) => (a.sequence_number || 0) - (b.sequence_number || 0));
+  let tamperedCount = 0;
+
+  for (let i = 0; i < sorted.length; i++) {
+    const entry = sorted[i];
+    const expectedPrevHash = i === 0 ? GENESIS_HASH : sorted[i - 1].current_hash;
+
+    const prevHashMatches = entry.previous_hash === expectedPrevHash;
+    const computedHash = computeAuditHash(
+      entry.sequence_number || 0,
+      entry.previous_hash || "",
+      entry.timestamp,
+      entry.actor_name,
+      entry.action,
+      entry.entity_id,
+      entry.details
+    );
+    const currentHashMatches = entry.current_hash === computedHash;
+
+    if (!prevHashMatches || !currentHashMatches) {
+      tamperedCount++;
+    }
+  }
+
+  return {
+    valid: tamperedCount === 0,
+    total_entries: sorted.length,
+    tampered_count: tamperedCount,
+  };
+}
 
 declare global {
   // eslint-disable-next-line no-var
@@ -189,13 +286,12 @@ function enrichRecordsWithSafetyScience(
     }
 
     if (!barrierAssessment) {
-      barrierAssessment = evaluateBarrierStatus(text, cls.is_sif_potential);
+      barrierAssessment = evaluateBarrierStatus(text, cls.life_saving_rule);
     }
 
     if (!campbellGates) {
       campbellGates = evaluateCampbellGates(
         text,
-        cls.is_sif_potential,
         energyCategory,
         energyMagnitude,
         barrierAssessment
@@ -321,11 +417,52 @@ export async function appendSafetyRecords(
   const pendingWrite = (globalThis.sifLocalStoreWriteQueue || Promise.resolve()).then(async () => {
     const current = await loadLocalDocument();
     
+    // Check each newly ingested report for recurrence against closed/verified CAPAs
+    const updatedActions = [...(current.actions || [])];
     const newAuditLogs: AuditLogEntry[] = [...(current.auditLogs || [])];
+
+    for (const rep of reports) {
+      const cls = classifications.find((c) => c.report_id === rep.id);
+      if (cls?.is_sif_potential && cls.life_saving_rule) {
+        const repTime = new Date(rep.reported_date || rep.created_at).getTime();
+
+        const matchingActionIdx = updatedActions.findIndex((a) => {
+          if (a.site !== rep.site) return false;
+          if (a.life_saving_rule !== cls.life_saving_rule) return false;
+          if (a.report_id === rep.id) return false;
+          if (a.status !== "completed" && a.status !== "verified") return false;
+
+          const closureTime = new Date(a.completed_at || a.verified_at || a.created_at).getTime();
+          return !isNaN(repTime) && !isNaN(closureTime) && repTime >= closureTime;
+        });
+
+        if (matchingActionIdx !== -1) {
+          const existingAct = updatedActions[matchingActionIdx];
+          updatedActions[matchingActionIdx] = {
+            ...existingAct,
+            recurrence_detected: true,
+            recurrence_detected_at: new Date().toISOString(),
+            recurrence_report_id: rep.id,
+            effectiveness_status: "recurred_post_closure",
+            post_closure_event_count: (existingAct.post_closure_event_count || 0) + 1,
+          };
+
+          const recurrenceAudit = createChainedEntry(newAuditLogs, {
+            actor_name: "Post-Closure Surveillance Engine",
+            actor_role: "Admin",
+            action: "CAPA_RECURRENCE_DETECTED",
+            entity_type: "action",
+            entity_id: existingAct.id,
+            details: `Post-closure recurrence detected for CAPA '${existingAct.title}' at ${rep.site}: observation ${rep.id} recurred under ${cls.life_saving_rule}. Action flagged for immediate supervisor re-investigation.`,
+            status: "warning",
+          });
+          newAuditLogs.unshift(recurrenceAudit);
+        }
+      }
+    }
+
     if (auditEvent) {
-      newAuditLogs.unshift({
-        id: `aud-${uuidv4().slice(0, 8)}`,
-        timestamp: new Date().toISOString(),
+      const ingestionAudit = createChainedEntry(newAuditLogs, {
         actor_name: auditEvent.actor_name,
         actor_role: auditEvent.actor_role,
         action: "OBSERVATION_INGESTED",
@@ -334,6 +471,7 @@ export async function appendSafetyRecords(
         details: auditEvent.details,
         status: "success",
       });
+      newAuditLogs.unshift(ingestionAudit);
     }
 
     const next: LocalStoreDocument = {
@@ -341,7 +479,7 @@ export async function appendSafetyRecords(
       updated_at: new Date().toISOString(),
       reports: [...reports, ...current.reports],
       classifications: [...classifications, ...current.classifications],
-      actions: current.actions || [],
+      actions: updatedActions,
       auditLogs: newAuditLogs,
     };
     await writeLocalDocument(next);
@@ -358,11 +496,9 @@ export async function saveCorrectiveAction(
   actor: { name: string; role: UserRole }
 ): Promise<CorrectiveAction> {
   const current = await loadLocalDocument();
-  const nextActions = [action, ...(current.actions || [])];
-  
-  const auditEntry: AuditLogEntry = {
-    id: `aud-${uuidv4().slice(0, 8)}`,
-    timestamp: new Date().toISOString(),
+  const currentAuditLogs = current.auditLogs || [];
+
+  const auditEntry = createChainedEntry(currentAuditLogs, {
     actor_name: actor.name,
     actor_role: actor.role,
     action: "CAPA_CREATED",
@@ -370,13 +506,15 @@ export async function saveCorrectiveAction(
     entity_id: action.id,
     details: `Created CAPA '${action.title}' for ${action.site} (${action.life_saving_rule}, Priority: ${action.priority}). Assigned to ${action.assigned_to}.`,
     status: "success",
-  };
+  });
+
+  const nextActions = [action, ...(current.actions || [])];
 
   const next: LocalStoreDocument = {
     ...current,
     updated_at: new Date().toISOString(),
     actions: nextActions,
-    auditLogs: [auditEntry, ...(current.auditLogs || [])],
+    auditLogs: [auditEntry, ...currentAuditLogs],
   };
 
   await writeLocalDocument(next);
@@ -403,17 +541,26 @@ export async function updateCorrectiveAction(
 
   if (updates.status === "completed" && !updated.completed_at) {
     updated.completed_at = new Date().toISOString();
+    updated.post_closure_monitoring_active = true;
+    if (!updated.effectiveness_status || updated.effectiveness_status === "pending_verification") {
+      updated.effectiveness_status = "monitoring";
+    }
   }
   if (updates.status === "verified") {
     if (!updated.verified_at) updated.verified_at = new Date().toISOString();
     if (!updated.verified_by) updated.verified_by = `${actor.name} (${actor.role})`;
+    updated.post_closure_monitoring_active = true;
+    if (updates.effectiveness_status) {
+      updated.effectiveness_status = updates.effectiveness_status;
+    } else if (!updated.effectiveness_status || updated.effectiveness_status === "pending_verification") {
+      updated.effectiveness_status = "monitoring";
+    }
   }
 
   actions[index] = updated;
 
-  const auditEntry: AuditLogEntry = {
-    id: `aud-${uuidv4().slice(0, 8)}`,
-    timestamp: new Date().toISOString(),
+  const currentAuditLogs = current.auditLogs || [];
+  const auditEntry = createChainedEntry(currentAuditLogs, {
     actor_name: actor.name,
     actor_role: actor.role,
     action: updates.status === "verified" ? "CAPA_VERIFIED" : updates.status === "completed" ? "CAPA_COMPLETED" : "CAPA_UPDATED",
@@ -421,37 +568,206 @@ export async function updateCorrectiveAction(
     entity_id: id,
     details: `Updated action '${updated.title}' to status '${updated.status}'. ${updates.evidence_notes ? `Notes: ${updates.evidence_notes}` : ""}`,
     status: "success",
-  };
+  });
 
   const next: LocalStoreDocument = {
     ...current,
     updated_at: new Date().toISOString(),
     actions: [...actions],
-    auditLogs: [auditEntry, ...(current.auditLogs || [])],
+    auditLogs: [auditEntry, ...currentAuditLogs],
   };
 
   await writeLocalDocument(next);
   return updated;
 }
 
-export async function logAuditEvent(
-  entry: Omit<AuditLogEntry, "id" | "timestamp">
-): Promise<AuditLogEntry> {
+/**
+ * Human-in-the-loop review/override of an AI classification.
+ * Preserves the original ML assessment for complete audit defensibility.
+ */
+export async function saveClassificationReview(
+  reportId: string,
+  reviewData: {
+    is_sif_potential: boolean;
+    life_saving_rule: LifeSavingRule | null;
+    override_reason: string;
+    review_notes?: string;
+  },
+  actor: { name: string; role: UserRole }
+): Promise<Classification> {
   const current = await loadLocalDocument();
-  const newEntry: AuditLogEntry = {
-    ...entry,
-    id: `aud-${uuidv4().slice(0, 8)}`,
-    timestamp: new Date().toISOString(),
+  const clsIndex = current.classifications.findIndex((c) => c.report_id === reportId);
+  if (clsIndex === -1) {
+    throw new Error(`Classification for report '${reportId}' not found.`);
+  }
+
+  const existingCls = current.classifications[clsIndex];
+  const nextVersion = (existingCls.review_version || 0) + 1;
+  const originalPrediction = existingCls.original_sif_prediction || (existingCls.is_sif_potential ? "SIF_POTENTIAL" : "NON_SIF_POTENTIAL");
+  const originalIsSif = existingCls.original_is_sif !== undefined ? existingCls.original_is_sif : existingCls.is_sif_potential;
+  const originalRule = existingCls.original_rule !== undefined ? existingCls.original_rule : existingCls.life_saving_rule;
+
+  const reviewRecord: HumanReviewRecord = {
+    id: `hr-${uuidv4().slice(0, 8)}`,
+    report_id: reportId,
+    classification_id: existingCls.id,
+    review_version: nextVersion,
+    reviewer_name: actor.name,
+    reviewer_role: actor.role,
+    original_prediction: originalPrediction,
+    reviewed_prediction: reviewData.is_sif_potential ? "SIF_POTENTIAL" : "NON_SIF_POTENTIAL",
+    original_rule: originalRule,
+    reviewed_rule: reviewData.life_saving_rule,
+    original_is_sif: originalIsSif,
+    reviewed_is_sif: reviewData.is_sif_potential,
+    rationale: reviewData.override_reason,
+    review_notes: reviewData.review_notes,
+    override_flag:
+      reviewData.is_sif_potential !== originalIsSif ||
+      reviewData.life_saving_rule !== originalRule ||
+      Boolean(reviewData.override_reason && reviewData.override_reason.trim().length > 0),
+    review_timestamp: new Date().toISOString(),
+    status:
+      reviewData.is_sif_potential !== originalIsSif ||
+      reviewData.life_saving_rule !== originalRule ||
+      Boolean(reviewData.override_reason && reviewData.override_reason.trim().length > 0)
+        ? "OVERRIDDEN"
+        : "ACCEPTED",
+    created_at: new Date().toISOString(),
   };
+
+  const updatedCls: Classification = {
+    ...existingCls,
+    is_sif_potential: reviewData.is_sif_potential,
+    life_saving_rule: reviewData.life_saving_rule,
+    sif_prediction: reviewData.is_sif_potential ? "SIF_POTENTIAL" : "NON_SIF_POTENTIAL",
+    human_reviewed: true,
+    reviewed_by: `${actor.name} (${actor.role})`,
+    reviewed_at: new Date().toISOString(),
+    review_notes: reviewData.review_notes || reviewData.override_reason,
+    override_reason: reviewData.override_reason,
+    review_version: nextVersion,
+    review_history: [...(existingCls.review_history || []), reviewRecord],
+    original_sif_prediction: originalPrediction,
+    original_is_sif: originalIsSif,
+    original_rule: originalRule,
+    reasoning_narrative: `[HSE REVIEW OVERRIDE v${nextVersion} by ${actor.name}]: ${reviewData.override_reason}. Original AI model reasoning preserved: ${existingCls.reasoning_narrative}`,
+  };
+
+  current.classifications[clsIndex] = updatedCls;
+
+  const currentAuditLogs = current.auditLogs || [];
+  const auditEntry = createChainedEntry(currentAuditLogs, {
+    actor_name: actor.name,
+    actor_role: actor.role,
+    action: "CLASSIFICATION_REVIEW_OVERRIDE",
+    entity_type: "classification",
+    entity_id: existingCls.id,
+    details: `HSE Review override v${nextVersion} on observation ${reportId}: SIF potential set to ${reviewData.is_sif_potential ? "YES" : "NO"} (${reviewData.life_saving_rule || "None"}). Reason: ${reviewData.override_reason}`,
+    status: "warning",
+  });
 
   const next: LocalStoreDocument = {
     ...current,
     updated_at: new Date().toISOString(),
-    auditLogs: [newEntry, ...(current.auditLogs || [])],
+    classifications: [...current.classifications],
+    auditLogs: [auditEntry, ...currentAuditLogs],
+  };
+
+  await writeLocalDocument(next);
+  return updatedCls;
+}
+
+export async function logAuditEvent(
+  entry: Omit<AuditLogEntry, "id" | "timestamp" | "sequence_number" | "previous_hash" | "current_hash">
+): Promise<AuditLogEntry> {
+  const current = await loadLocalDocument();
+  const currentAuditLogs = current.auditLogs || [];
+  const newEntry = createChainedEntry(currentAuditLogs, entry);
+
+  const next: LocalStoreDocument = {
+    ...current,
+    updated_at: new Date().toISOString(),
+    auditLogs: [newEntry, ...currentAuditLogs],
   };
 
   await writeLocalDocument(next);
   return newEntry;
+}
+
+/**
+ * Validates the cryptographic SHA-256 chain integrity across all audit ledger records.
+ */
+export async function verifyAuditLedger(): Promise<{
+  valid: boolean;
+  totalEntries: number;
+  tamperedEntryId?: string;
+  details: string;
+}> {
+  const current = await loadLocalDocument();
+  const logs = current.auditLogs || [];
+  if (logs.length === 0) {
+    return {
+      valid: true,
+      totalEntries: 0,
+      details: "Audit ledger is empty. Chain is clean.",
+    };
+  }
+
+  // Sort ascending by sequence number
+  const sorted = [...logs].sort((a, b) => (a.sequence_number || 0) - (b.sequence_number || 0));
+
+  let expectedPrevHash = GENESIS_HASH;
+  for (let i = 0; i < sorted.length; i++) {
+    const entry = sorted[i];
+    const expectedSeq = i + 1;
+
+    if (entry.sequence_number !== expectedSeq) {
+      return {
+        valid: false,
+        totalEntries: sorted.length,
+        tamperedEntryId: entry.id,
+        details: `Sequence break detected at block ${entry.id}: expected sequence #${expectedSeq}, got #${entry.sequence_number}.`,
+      };
+    }
+
+    if (entry.previous_hash !== expectedPrevHash) {
+      return {
+        valid: false,
+        totalEntries: sorted.length,
+        tamperedEntryId: entry.id,
+        details: `Broken cryptographic link at block ${entry.id}: previous_hash does not match parent current_hash.`,
+      };
+    }
+
+    // Recompute hash
+    const recomputedHash = computeAuditHash(
+      entry.sequence_number,
+      entry.previous_hash,
+      entry.timestamp,
+      entry.actor_name,
+      entry.action,
+      entry.entity_id,
+      entry.details
+    );
+
+    if (recomputedHash !== entry.current_hash) {
+      return {
+        valid: false,
+        totalEntries: sorted.length,
+        tamperedEntryId: entry.id,
+        details: `Hash mismatch at block ${entry.id}: stored current_hash does not match recomputed SHA-256 payload digest.`,
+      };
+    }
+
+    expectedPrevHash = entry.current_hash;
+  }
+
+  return {
+    valid: true,
+    totalEntries: sorted.length,
+    details: `All ${sorted.length} cryptographic audit ledger blocks verified. SHA-256 chain is tamper-evident and cryptographically linked.`,
+  };
 }
 
 export async function resetSafetyStore(seedBenchmark = true): Promise<SafetySnapshot> {
@@ -464,20 +780,7 @@ export async function resetSafetyStore(seedBenchmark = true): Promise<SafetySnap
       reports: benchmark.reports,
       classifications: benchmark.classifications,
       actions: benchmark.actions,
-      auditLogs: [
-        {
-          id: `aud-${uuidv4().slice(0, 8)}`,
-          timestamp: new Date().toISOString(),
-          actor_name: "Admin User",
-          actor_role: "Admin",
-          action: "BENCHMARK_RESET",
-          entity_type: "system",
-          entity_id: "reset",
-          details: "Restored authentic synthetic industrial safety benchmark dataset (48 observations, 8 CAPA actions).",
-          status: "success",
-        },
-        ...benchmark.auditLogs,
-      ],
+      auditLogs: benchmark.auditLogs,
     };
   } else {
     doc = {
@@ -489,6 +792,17 @@ export async function resetSafetyStore(seedBenchmark = true): Promise<SafetySnap
       auditLogs: [
         {
           id: `aud-${uuidv4().slice(0, 8)}`,
+          sequence_number: 1,
+          previous_hash: GENESIS_HASH,
+          current_hash: computeAuditHash(
+            1,
+            GENESIS_HASH,
+            new Date().toISOString(),
+            "Admin User",
+            "WORKSPACE_CLEARED",
+            "clear",
+            "Cleared all observations and actions. Safety workspace initialized to blank state."
+          ),
           timestamp: new Date().toISOString(),
           actor_name: "Admin User",
           actor_role: "Admin",

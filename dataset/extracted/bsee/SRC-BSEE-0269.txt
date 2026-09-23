@@ -1,0 +1,53 @@
+
+
+                                                
+          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Safety Alert No. 246 Contact: Frank Pausina 
+December 6, 2006 504-736-2560 
+Stainless Steel Tubing-Related Fires 
+In two separate incidents, tubing-related failures resulted in fires that caused damage to their respective 
+facilities. 
+In one incident, the investigation revealed that a ½-inch stainless steel tubing between the glycol pump 
+and the glycol tower parted from a fitting located at the base of the glycol tower and upstream of the 
+tower SDV, resulting in glycol, condensate, and gas spraying onto the glycol reboiler and igniting. Most 
+of the glycol equipment required replacement. PSV’s within the glycol unit’s skid were piped locally and 
+resulted in difficulty extinguishing the fire. The cause of the parting of the tubing from the fitting was 
+concluded to be vibration caused by the glycol pump.  
+In the other incident, the investigation revealed that a 1-inch stainless steel supply tubing to a gas 
+scrubber parted from a swagelock nut and feral. The resultant gas escape was ignited by an unknown 
+ignition source but self-extinguished. Although the exact cause of the separation of the tubing is not 
+known, gas metering pressure charts indicate a period, near the time of the incident, of over-pressure from 
+an unexplained source that is concluded to be a possible cause of the separation. Furthermore, since the 
+skirting of the helideck was damaged during the previous hurricane season, it was concluded that 
+weather-related incidents could have either damaged or at least weakened the tubing at the point of 
+separation. 
+Considering the conclusions from both investigations, MMS makes the following recommendations: 
+	 Safety policy and procedures regarding tubing sizing, configuration, operational stability,  
+maintenance, and inspections should be reviewed for adequacy.   
+	 All such reviews should take into consideration the possibility that facilities with known damages 
+resulting from the recent 2005 hurricanes could have also incurred nominal, undetected damages 
+that to date have worsened and may currently represent a potential safety  hazard. 
+All of the MMS investigation reports on these incidents are available for viewing at the following MMS 
+website: http://www.gomr.mms.gov/homepg/offshore/safety/safety.html 
+—MMS—GOMR— 
+www.gomr.mms.gov 

@@ -1,0 +1,41 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 181
+April 28, 1999
+Contact: Tommy Laurendine
+504-736-5709
+Rig Collapse with Fatalities and Injuries
+During the final stages of rigging-up operations, a platform rig collapsed, resultingin 3 fatalities and 13 injuries.
+The rig, which consisted of an upper, intermediate, and lower substructure, was aligned transversely to the
+platform’s skidding beams and supported by shimming, support, and false capping beams. The aforementioned
+supporting beams did not extend to the end of the lower and intermediate substructures. As the upper
+substructure was skidded, in preparation for the derrick positioning and raising, towithin a foot of its targeted
+position, the underlying substructures tilted and slid to the side to which the skidding was directed. As a result of
+that movement, the upper substructure and other rig components fell into the Gulf, 3employees fell to their
+deaths, and 13 employees were injured.
+During the skidding operation, the upper substructure had reached a point where its center of gravity had moved
+sufficiently past the last support beam so that the moment of the weight of the uppersubstructure acting through
+its center of gravity about the last support beam was greater than the summation of the countering moments of
+the weights of the intermediate and lower substructures about the same support beam.This imbalance
+physically caused the substructures to move as described above. Other causes are listed in the MMS report on
+this accident.
+Therefore, from this information and information contained in the referenced MMS report, the following are
+recommended for those cases where a drilling rig is not using the platform’s skiddingbeams in a traditional
+manner and also in which rig substructures are used with a platform/substructure support beam interface:
+The drilling contractor develop an official written procedural guideline that detailsall engineering-related
+aspects of the installation of the rig,
+a.
+The operator be familiar with the procedural guideline and have onsite during installation a representative
+to ensure compliance with the guideline, and
+b.
+The operator and contractor in conjunction hire an independent consultant to verify the correctness and
+sufficiency of all engineering analyses related to the installation of the rig.
+c.
+For details of the accident, see OCS Report MMS 99-0027. Copies of the report may beobtained from the
+MMS Public Information Office located at 1201 Elmwood Park Boulevard, New Orleans, Louisiana 70123
+(1-800-200-GULF or local 504-736-2519).
+—GOMR—MMS—
+MMS Internet Homepage: http://www.gomr.mms.gov
+Deepwater Gulf of Mexico OCS Currentshttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_181...
+1 of 12/21/2012 4:15 PM

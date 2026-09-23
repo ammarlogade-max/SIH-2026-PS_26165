@@ -1,0 +1,96 @@
+[
+  {
+    "source_id": "SRC-HSE-0001",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Service lifts in offshore and onshore wind turbines",
+    "url": "https://www.hse.gov.uk/safetybulletins/service-lifts-in-offshore-onshore-turbines.htm",
+    "document_hash": "49f34a9a33be3fb2e166a35e2fcb9ed41f0b69789c76bb99ac129a7cc9cb2d6b",
+    "doc_size": 40919,
+    "local_path": "dataset/documents/hse/SRC-HSE-0001.html",
+    "download_status": "DOWNLOADED"
+  },
+  {
+    "source_id": "SRC-HSE-0002",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Wind turbine generator service lifts: risk of serious injury",
+    "url": "https://www.hse.gov.uk/safetybulletins/wind-turbine-generator-service-lifts.htm",
+    "download_status": "ERROR",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "source_id": "SRC-HSE-0003",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Manage risk of damage to grating systems (walkways and deck areas) on offshore installations during rig moves",
+    "url": "https://www.hse.gov.uk/safetybulletins/grating-systems.htm",
+    "document_hash": "61b68a363a60fb101c1e064fd66b83b35391029d25ce7a6c95e4e48e1ad02563",
+    "doc_size": 42949,
+    "local_path": "dataset/documents/hse/SRC-HSE-0003.html",
+    "download_status": "DOWNLOADED"
+  },
+  {
+    "source_id": "SRC-HSE-0004",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Unsafe bolts on BendPak XPR series two-post vehicle lift",
+    "url": "https://www.hse.gov.uk/safetybulletins/bendpak-vehicle-lifts2.htm",
+    "document_hash": "7ff280aa0e3012e539badf7b971696bbf97813991a2cb1daf41e2cb916d52feb",
+    "doc_size": 41225,
+    "local_path": "dataset/documents/hse/SRC-HSE-0004.html",
+    "download_status": "DOWNLOADED"
+  },
+  {
+    "source_id": "SRC-HSE-0005",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "LPG forklift truck fire risk",
+    "url": "https://www.hse.gov.uk/safetybulletins/forklift-fires.htm",
+    "document_hash": "2af28c6d6d064d3afb5185e0a88c9606a2402dd97d919c41eb51c0f8509f0190",
+    "doc_size": 39508,
+    "local_path": "dataset/documents/hse/SRC-HSE-0005.html",
+    "download_status": "DOWNLOADED"
+  },
+  {
+    "source_id": "SRC-HSE-0006",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "High concentration of hydrogen sulfide (H2S) in cargo and slop tanks",
+    "url": "https://www.hse.gov.uk/safetybulletins/hydrogen-sulphide.htm",
+    "document_hash": "ca938ca797d934c3e79573d9313e036a16893b1098bbaee6bd6ef4e3609c71cd",
+    "doc_size": 43065,
+    "local_path": "dataset/documents/hse/SRC-HSE-0006.html",
+    "download_status": "DOWNLOADED"
+  },
+  {
+    "source_id": "SRC-HSE-0007",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Unsafe use of floor grating systems in oil and gas, and wind generation",
+    "url": "https://www.hse.gov.uk/safetybulletins/floor-grating-systems.htm",
+    "document_hash": "bb80489fd8fc00d55edd5ac5f6b5bc536bbc6307d87c0a4cffa635db44009672",
+    "doc_size": 37784,
+    "local_path": "dataset/documents/hse/SRC-HSE-0007.html",
+    "download_status": "DOWNLOADED"
+  },
+  {
+    "source_id": "SRC-HSE-0008",
+    "source_organization": "Health and Safety Executive (UK HSE)",
+    "source_type": "SAFETY_BULLETIN",
+    "source_tier": "TIER_A_AUTHORITATIVE",
+    "title": "Mast climbing work platforms: Failure to detect mechanical failure in drive units leading to uncontrolled fall of platforms",
+    "url": "https://www.hse.gov.uk/safetybulletins/mast-climbing-work-platforms-mechanical-failure.htm",
+    "document_hash": "c7198b46e121bcc4cdedbfcc0cbfe24b9a0738ae4594bc53ba2bcba9ba767d55",
+    "doc_size": 46867,
+    "local_path": "dataset/documents/hse/SRC-HSE-0008.html",
+    "download_status": "DOWNLOADED"
+  }
+]

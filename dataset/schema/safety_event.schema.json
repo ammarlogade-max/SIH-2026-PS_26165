@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sif-sentinel.oilindia.in/schemas/safety_event.schema.json",
+  "title": "SIF Sentinel Canonical Safety Event",
+  "description": "Formal schema for event-level safety observation, near miss, unsafe act, unsafe condition, and incident records in SIF Sentinel (SIH26165)",
+  "type": "object",
+  "required": [
+    "event_id",
+    "event_type",
+    "source",
+    "narrative",
+    "sif",
+    "quality",
+    "provenance"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "pattern": "^EVT-[A-Z0-9_-]+$"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": ["UA", "UC", "NEAR_MISS", "INCIDENT", "UNKNOWN"]
+    },
+    "source": {
+      "type": "object",
+      "required": ["source_id", "source_organization", "document_id", "document_title", "url"],
+      "properties": {
+        "source_id": { "type": "string" },
+        "source_organization": { "type": "string" },
+        "document_id": { "type": "string" },
+        "document_title": { "type": "string" },
+        "url": { "type": "string" },
+        "page": { "type": ["integer", "null"] },
+        "source_tier": {
+          "type": "string",
+          "enum": ["TIER_A_AUTHORITATIVE", "TIER_B_INDUSTRY", "TIER_C_RESEARCH", "TIER_D_SECONDARY"]
+        },
+        "source_type": { "type": "string" }
+      }
+    },
+    "time": {
+      "type": "object",
+      "properties": {
+        "event_date": { "type": ["string", "null"] },
+        "event_time": { "type": ["string", "null"] },
+        "observed_at": { "type": ["string", "null"] },
+        "occurred_at": { "type": ["string", "null"] }
+      }
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "country": { "type": ["string", "null"] },
+        "region": { "type": ["string", "null"] },
+        "site": { "type": ["string", "null"] },
+        "facility": { "type": ["string", "null"] },
+        "unit": { "type": ["string", "null"] },
+        "area": { "type": ["string", "null"] },
+        "specific_location": { "type": ["string", "null"] }
+      }
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "industry": { "type": "string" },
+        "activity": { "type": ["string", "null"] },
+        "task": { "type": ["string", "null"] },
+        "work_type": { "type": ["string", "null"] },
+        "equipment": { "type": ["string", "null"] },
+        "asset": { "type": ["string", "null"] },
+        "operation": { "type": ["string", "null"] }
+      }
+    },
+    "narrative": {
+      "type": "object",
+      "required": ["raw", "normalized", "source_excerpt"],
+      "properties": {
+        "raw": { "type": "string", "minLength": 5 },
+        "normalized": { "type": "string", "minLength": 5 },
+        "source_excerpt": { "type": "string" }
+      }
+    },
+    "people": {
+      "type": "object",
+      "properties": {
+        "worker_involved": { "type": ["boolean", "null"] },
+        "worker_role": { "type": ["string", "null"] },
+        "number_of_people": { "type": ["integer", "null"] },
+        "exposure_type": { "type": ["string", "null"] },
+        "exposure_description": { "type": ["string", "null"] }
+      }
+    },
+    "consequence": {
+      "type": "object",
+      "properties": {
+        "actual": { "type": ["string", "null"] },
+        "potential": { "type": ["string", "null"] },
+        "injury": { "type": ["string", "null"] },
+        "fatality": { "type": ["boolean", "null"] },
+        "property_damage": { "type": ["string", "null"] },
+        "environmental_consequence": { "type": ["string", "null"] }
+      }
+    },
+    "sif": {
+      "type": "object",
+      "required": ["sif_potential", "label_type"],
+      "properties": {
+        "potential": { "type": ["boolean", "null"] },
+        "sif_potential": {
+          "type": "string",
+          "enum": ["TRUE", "FALSE", "UNKNOWN"]
+        },
+        "label_type": {
+          "type": "string",
+          "enum": ["EXPLICIT", "DERIVED", "WEAK", "UNKNOWN"]
+        },
+        "evidence": { "type": ["string", "null"] },
+        "evidence_span": { "type": ["string", "null"] }
+      }
+    },
+    "iogp": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rule_id", "rule_name", "status"],
+        "properties": {
+          "rule_id": { "type": "string" },
+          "rule_name": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["EXPLICIT", "DERIVED", "WEAK", "UNKNOWN"]
+          },
+          "evidence": { "type": ["string", "null"] },
+          "mapping_source": { "type": "string" }
+        }
+      }
+    },
+    "energy": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "KINETIC",
+            "GRAVITATIONAL",
+            "PRESSURE",
+            "ELECTRICAL",
+            "THERMAL",
+            "CHEMICAL",
+            "PNEUMATIC",
+            "HYDRAULIC",
+            "STORED_MECHANICAL",
+            "RADIATION",
+            "OTHER",
+            "UNKNOWN"
+          ]
+        },
+        "source": { "type": ["string", "null"] },
+        "description": { "type": ["string", "null"] },
+        "evidence": { "type": ["string", "null"] }
+      }
+    },
+    "barriers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "observed_state"],
+        "properties": {
+          "barrier_id": { "type": "string" },
+          "type": { "type": "string" },
+          "description": { "type": ["string", "null"] },
+          "expected_state": { "type": ["string", "null"] },
+          "observed_state": {
+            "type": "string",
+            "enum": ["EFFECTIVE", "DEGRADED", "FAILED", "MISSING", "UNKNOWN", "NOT_APPLICABLE"]
+          },
+          "evidence": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "exposure": {
+      "type": "object",
+      "properties": {
+        "present": { "type": ["boolean", "null"] },
+        "type": { "type": ["string", "null"] },
+        "description": { "type": ["string", "null"] },
+        "evidence": { "type": ["string", "null"] }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": ["source_quality", "extraction_quality", "label_quality", "overall_quality", "dataset_tier"],
+      "properties": {
+        "source_quality": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"] },
+        "extraction_quality": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"] },
+        "label_quality": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"] },
+        "overall_quality": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"] },
+        "dataset_tier": { "type": "string", "enum": ["GOLD", "SILVER", "BRONZE"] }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["extraction_method", "document_hash", "source_url", "access_date", "data_origin"],
+      "properties": {
+        "extraction_method": {
+          "type": "string",
+          "enum": ["RULE", "LLM", "REGEX", "TABLE_EXTRACTION", "MANUAL", "HYBRID"]
+        },
+        "document_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "source_url": { "type": "string" },
+        "access_date": { "type": "string" },
+        "data_origin": {
+          "type": "string",
+          "enum": ["OIL_INTERNAL", "PUBLIC_INDUSTRY", "GOVERNMENT", "RESEARCH", "OTHER"]
+        }
+      }
+    },
+    "deduplication": {
+      "type": "object",
+      "properties": {
+        "duplicate_status": {
+          "type": "string",
+          "enum": ["UNIQUE", "DOCUMENT_DUPLICATE", "EVENT_DUPLICATE", "RELATED_SOURCE", "POSSIBLE_DUPLICATE"]
+        },
+        "duplicate_group_id": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

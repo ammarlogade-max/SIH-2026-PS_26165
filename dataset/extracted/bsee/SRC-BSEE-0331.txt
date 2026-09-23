@@ -1,0 +1,44 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 188
+May 2, 2000
+Contact: Frank Pausina
+504-736-2560
+Fire with Fatality and Injury
+As part of the deactivation of a platform’s process drain line system, a constructionemployee was in the
+process of cutting a separator’s drain line with an electric band saw when condensatesprayed from the cut onto
+the employee and was ignited by the saw. The employee died days later from the resultant burns. Another
+employee was injured in his attempts to assist the fatally burned employee. The source of the condensate was
+the platform’s fuel gas scrubber whose drain line’s manual block valve was opened during the referenced
+construction operations. The opening of the valve and the decision of the construction employees to use the saw
+after previous attempts by the same employees to cut the line resulted in the spraying of condensate from the
+cut are considered major causes of the accident. Contributing in part to the accidentwere (1) a lack of
+procedural guidelines for the construction work to be performed, (2) misunderstandings and erroneous
+assumptions regarding the hot work permit, (3) a lack of adequate communication between designated operator
+and contractor personnel and among contractor personnel themselves, and (4) a relative unfamiliarity with the
+platform process equipment on the part of a contractor employee.
+Therefore, from this information and information contained in the MMS report on the subject accident, the
+following are recommended:
+Operators review their established procedure for coordinating proposed multiple workassignments
+for any facility. Operators should establish such a procedure, as described above, ifone does not
+exist.
+1.
+Operators provide general written procedures for all construction projects, includingan emphasis
+on safety issues. The procedures should address all aspects of the job that have beenidentified,
+through the results of a job safety analysis, as being potentially hazardous. For example, in the
+case of construction work to be performed on process piping, the procedures should address, but
+certainly not be limited to, the isolation of all relevant energy sources by, at a minimum, blinding,
+disconnecting, or double block and bleeding, and the purging of all involved lines prior to cutting.
+2.
+Operators review the method by which they monitor their contractors’ adherence to allagreed
+upon safety standards and requisite Federal regulations.
+3.
+For details of the accident, see OCS Report MMS 2000-029. Copies of the report may beobtained from the
+MMS Public Information Office located at 1201 Elmwood Park Boulevard, New Orleans, Louisiana 70123
+(1-800-200-GULF or local 504-736-2519).
+–GOMR–MMS–
+Visit our Safety Information Website:
+http://www.gomr.mms.gov/homepg/offshore/safety/safety.html
+Safety Alert No. 188 - Fire with Fatality and Injuryhttp://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_188...
+1 of 12/21/2012 4:29 PM

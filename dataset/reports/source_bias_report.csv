@@ -1,0 +1,4 @@
+source_organization,total_events,share_of_corpus,verified_physical_artifacts,artifact_verification_rate,incident_count,near_miss_count,ua_count,uc_count,sif_true,sif_false,sif_unknown,sif_precursor_rate,gold_tier,silver_tier,bronze_tier,missing_facility_rate,missing_barrier_rate,primary_domain_bias
+Bureau of Safety and Environmental Enforcement (BSEE),574,19.3%,285,49.7%,380,184,4,6,198,2,374,34.5%,32,79,463,62.2%,74.4%,US Federal Offshore Oil/Gas Drilling & Production
+International Marine Contractors Association (IMCA),2388,80.4%,267,11.2%,1032,1330,7,19,494,12,1882,20.7%,65,202,2121,84.5%,93.6%,Global Commercial Marine & Vessel Operations
+Health and Safety Executive (UK HSE),8,0.3%,7,87.5%,7,0,1,0,3,0,5,37.5%,0,3,5,25.0%,62.5%,UK Industrial Safety

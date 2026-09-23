@@ -1,0 +1,115 @@
+
+
+Page 1 of 3 
+ 
+Contact: bseepublicaffairs@bsee.gov 
+Phone: (800) 200-4853 
+  
+  
+ 
+ 
+ 
+ 
+ 
+Drawworks Parking Brake Failure 
+ 
+ 
+In early 2021, a rig crew unsuccessfully attempted to set the drawworks parking brake. 
+Following the incident, the crew was unable to replicate the failure. As a result, a 
+technician replaced the parking brake actuator valve and successfully tested the brake 
+to verify validity of the repair. The crew then proceeded with well work operations.  
+   
+After operating for approximately three hours, the driller set the drawworks parking 
+brake using the panel actuator knob and released the brake handle. With the saver sub 
+already made up into the stand, the driller then applied torque to the connection, via the 
+top drive control panel. After applying a minimum amount of torque, the parking brake 
+failed again. This failure caused the traveling block to descend 5 feet and damage a 
+stand of drill pipe. The driller quickly reengaged the brake handle stopping the traveling 
+block. 
+ 
+Following the incident, the rig maintenance crew disassembled, inspected, and replaced 
+components within the brake hydraulic power unit. Among the replaced components 
+was a solenoid valve which had minor damage to the spool.  
+  
+ 
+Safety Alert No. 425 
+August 16, 2021  
+SAFETY ALERT 
+ 
+ 
+
+Page 2 of 3 
+ 
+Upon completion of the repairs, the crew tested the system multiple times, completed a 
+commissioning checklist, and received successful test results. The original equipment 
+manufacturer’s engineering department assessed the corrective actions taken. The 
+manufacturer expressed confidence the system had been returned to the original 
+designed intent and was safe for use.  
+ 
+Three days later, the drawworks parking brake failed to engage for the third time. This 
+time, the driller noticed the “Emergency Caliper Pressure” gauge did not drop to zero 
+pressure indicating the parking brake failed to engage. The operation was immediately 
+stopped before damage could occur. The maintenance team inspected the brake circuit 
+and discovered air leaking into the pilot line. 
+ 
+The team was able to simulate the brake failure. The brake would not function as 
+designed with a pilot pressure range of 32-40 psi, when the pilot line should have been 
+zero pressure. The maintenance crew found the following issues: 1). Cut O-ring on a 
+shuttle valve, 2). Internal leaking on the emergency stop piloted valve, 3). Leaking 
+crown-o-matic toggle valve.  (See below.) 
+ 
+ 
+ 
+After replacing the faulty components, the team successfully functioned the brakes 93 
+times and then successfully performed and documented brake endurance testing. 
+  
+Therefore, BSEE recommends that operators consider:  
+ 
+• Confirming drawworks parking brake engagement by observing desired/required 
+pressure on the hydraulic pressure gauge prior to releasing the drawworks 
+service brake handle. 
+• Installing additional parking brake indicators, such as a visual light indicating the 
+brake engagement and/ or an audio alarm indicating failure of the parking brake 
+engagement.  
+
+Page 3 of 3 
+ 
+• Establishing testing and appropriate change-out frequencies for critical circuit 
+components.  
+o Not operating critical circuit components to failure. 
+• Maintaining proper preventative maintenance on critical pneumatic components 
+to ensure the rig air supply system is dry and free of contaminants and 
+particulate matter. 
+o Contaminated and/ or wet air supply is known to cause failure on sealing 
+surfaces inside pneumatically controlled or operated equipment.   
+ 
+--BSEE-- 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A Safety Alert is a tool used by BSEE to inform the offshore oil and gas industry of 
+the circumstances surrounding a potential safety issue. It also contains 
+recommendations that could assist avoiding potential incidents on the Outer 
+Continental Shelf. 
+ 
+ 
+Category: drilling  

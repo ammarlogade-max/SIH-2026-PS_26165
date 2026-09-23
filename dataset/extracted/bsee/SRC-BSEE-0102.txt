@@ -1,0 +1,87 @@
+
+
+*T-Times can be defined as the projected evergreen duration beginning with the identification of a storm
+and ending upon impact. T-Times should be established and constantly monitored throughout the lifecycle 
+of a storm to assist in determining when to safely depart / evacuate the area.
+Safety Alert No. 415                             Contact: Jason Mathews      
+March 8, 2021                               Phone: (504) 731-1496 
+Inadequate Preparations in Advance of Inclement Weather 
+Results in Excessive Rig Damage and Risk to Personnel 
+On Oct. 28, 2020, an active drillship in the Gulf of Mexico (GOM) sustained major damage 
+to various operational components while evacuating the rig from an area impacted by 
+Hurricane Zeta. Although no personnel casualties were reported, the incident presented a 
+potential threat to rig personnel due to delaying the initiation of emergency evacuation 
+procedures by remaining on location as a    result of underestimating the severity of the 
+storm. 
+                           
+On Thursday, Oct. 22, 2020, drillship personnel began monitoring weather disturbances, 
+lower surface pressures and relatively higher amounts of moisture in the Caribbean, 
+indicating potential organized storm development. Tropical storm growth progressed in 
+conjunction with T-Times,* reducing over the course of six days as drilling and associated 
+storm-prep operations continued. Throughout the six days, the drillship personnel were 
+consistently advised by forecasters that “the [rig] location is not expected to see direct, 
+significant impacts.” As the tropical storm began developing on Oct. 22, the well 
+SAFETY ALERT 
+            Figure 1: Riser in contact with the hull after the EDS                            Figure 2: Ruptured Riser Joint 
+
+*Red Watch Circle can be defined as the maximum offset / inclination the riser string and its associated 
+components are designed to withstand when latched to a subsea BOP.
+experienced a kick/influx of formation fluids during operations. After circulating out the 
+kick, the rig pumped a cement squeeze on Oct. 24. As the tropical storm transitioned into 
+a hurricane Oct. 27, a packer was installed and tested as an additional barrier to further 
+stabilize the well. The riser was displaced with seawater, and the work string, including 
+the running tool, was pulled out of the hole in preparation for the hurricane. As Hurricane 
+Zeta’s arrival became imminent on Oct. 28, wind gusts were much higher than anticipated 
+(roughly 100 miles per hour). Due to the hurricane’s intensity, the rig was pushed off 
+location toward the Red Watch Circle,* as the riser approached its maximum allowable 
+angle of deviation. Due to the drillship’s increasing proximity to the Red Watch Circle 
+boundary, the Emergency Disconnect Sequence (EDS) function was activated, unlatching 
+the Lower Marine Riser Package (LMRP) from the blowout preventer, allowing the rig to 
+move off location. 
+After the EDS was initiated, the riser contacted the hull in the moonpool (figure 1) due to 
+the severe swells that formed throughout the storm, causing damage to the riser (figure 
+2). Furthermore, the LMRP endured damage to its frame, piping, and coflex after 
+contacting the seafloor several times. A comprehensive property damage assessment 
+was conducted by the operator and rig owner in the days following Hurricane Zeta. 
+Inspectors determined that the tensioner, flex joint, telescopic joint, LMRP, riser joints, 
+cabling, and other riser-related components had sustained significant damage. 
+Therefore, BSEE recommends that operators and contractors consider the 
+following: 
+· Collectively review the Emergency Evacuation Plan (EEP), including estimated T-
+Times, periodically to ensure all information is accurate, up-to-date, and understood 
+and agreed upon by the impacted workers. 
+· Consider enhancing procedures in the EEP for safely securing wells in anticipation 
+of an approaching storm to include abnormal well conditions, such as ballooning or a 
+kick/influx. 
+· Review bridging documents and consider the delegation of authority regarding 
+emergency response and control to be a joint responsibility between the operator 
+and rig owner. Initiation of this element should invoke a collaborative effort between 
+both parties. 
+· Recognize and differentiate the roles and responsibilities between the Ultimate Work 
+Authority (UWA) in the field and onshore management for determining the course of 
+action when severe weather is approaching. 
+· Maintain constant communication between the shore base and offshore assets 
+throughout the duration of adverse weather. 
+· Before the start of hurricane season, verify the criteria for initiating an EDS is 
+
+A Safety Alertis a tool used by BSEE to inform the offshore oil and gas industry of the 
+circumstances surrounding an accident or near miss. It also contains recommendations 
+that should help prevent the recurrence of such an incident on the Outer Continental 
+Shelf.
+                                                                                                                                                          Category: Weather 
+accurate and consider all factors relevant to deteriorating weather conditions. 
+· Define phases and corresponding actions to be taken regarding emergency 
+evacuation based on the status of forecast risk models and T-Times, such as 
+updating Red Watch Circle parameters. 
+· Analyze and confirm design limitations of risers, tensioners, LMRP, and other 
+critical well operations equipment. 
+· Evaluate the direction of disconnect for potential contacts to the LMRP and 
+associated equipment with the seafloor. 
+· Notify BSEE when rig movements occur, clearly indicating if emergency action was 
+implemented, as well as if any potential damage was encountered. 
+· Review this Safety Alert in conjunction with Safety Alert No. 363 – Injury Occurs 
+when Non-evacuated Personnel Enter Weather-restricted Area as well as Safety 
+Alert No. 401 – BSEE Identifies Improvements to Hurricane Preparedness During 
+Risk Based Inspections to reinforce the proper protocols during inclement weather 
+conditions. 
+--BSEE-- 

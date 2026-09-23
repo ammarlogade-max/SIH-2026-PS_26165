@@ -1,0 +1,53 @@
+U.S. Department of the Interior
+Minerals Management Service
+Gulf of Mexico OCS Region
+Safety Alert No. 187
+April 3, 2000
+Contact: Joe Gordon
+504-736-2923
+Coiled Tubing Incidents
+Two recent coiled tubing operations in the Gulf of Mexico experienced similar operational problems that
+culminated in uncontrolled well flow events. In both situations, coil tubing was being snubbed into the wellbores
+when the coiled tubing strings encountered unknown obstructions, causing the coiled tubing to stop abruptly. The
+abrupt stop and resulting compression of the coiled tubing caused the tubing to part between the injector head
+and the stripper assembly. In both situations, the blowout preventer (BOP) was activated, but BOP intervention
+failed. The tubing was successfully sheared in both cases but could not be pulled because the pipe had parted
+above the stripper assembly, thereby leaving a section of tubing across the blind rams. In addition,
+back-pressure valves were not installed in the coiled tubing strings, thereby allowing flow up the tubing. Attempts
+were made to shut in the wells using the valves on the tree and, in one case, the tubing-retrievable, surface-
+controlled, subsurface safety valve, but with no success. Coiled tubing remained across the valve assemblies.
+Both situations escalated into uncontrolled flow and personnel were forced to evacuate the platforms.
+Safe coiled-tubing operations should begin with planning that includes a job safety analysis (JSA) to identify all
+potential hazards pertinent to the operations (including but not limited to backflow up the coiled tubing,
+obstructions in the wellbore, kinking of the pipe between injector head and stripper assembly, wellbore
+geometry, coiled tubing fatigue history, well conditions).
+Once the hazards are identified, procedures should be developed or altered to remove the hazards or minimize
+the consequence of these hazards. Procedures should include, but are not limited to, the following:
+Setting hydraulic snubbing and pulling force sufficiently below coiled tubing minimum yield to prevent
+buckling or parting of the pipe. These calculations should include, but are not limited to, wellbore
+geometry and running speed. They should be verified by a second party.
+Use of a back-pressure valve to prevent backflow up the coiled tubing. In cases where reverse circulation
+is required, contingencies should be in place to offer the same level of protection such as:
+Use of sealing blind/shear combination rams.
+Use of a manual two-way valve capable of shearing the coiled tubing. (See API RP 5C7 Section
+6.8.14.1 and the U.S Department of Energy publicationCoiled Tubing Safety Manual,by Walter
+Crow, 1999, DOE/SW/41286-1.)
+Critical to any operation is communication between all personnel involved in the operation. As a minimum, the
+following practices should be adhered to:
+1. The supervisory personnel should monitor and verify that operations are being carried out according to
+plans.
+2. Should a personnel change occur during a job, it is imperative to communicate critical information. If
+possible, personnel should be consistent through out the project.
+It is essential that all personnel are trained in coiled tubing and well control procedures and operations. Those
+procedures should be written, site and equipment specific, and readily available to all personnel. As a minimum,
+they should address BOP activation, equipment capabilities and limitations, and kill procedures. Well-control
+drills shall be conducted on a weekly basis (30 CFR 250.616(c)) to ensure that all necessary personnel know
+and fully understand the well-control procedures and the capabilities and limitations of all their equipment.
+Safety Alert No. 187http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_187...
+1 of 22/21/2012 4:28 PM
+
+–GOMR–MMS–
+Visit our Safety Information Website:
+http://www.gomr.mms.gov/homepg/offshore/safety/safety.html
+Safety Alert No. 187http://www.gomr.boemre.gov/homepg/offshore/safety/safealt/SA_187...
+2 of 22/21/2012 4:28 PM
