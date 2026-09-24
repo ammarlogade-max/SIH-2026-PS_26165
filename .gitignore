@@ -19,6 +19,9 @@ build/
 # Temp files
 tmp/
 *.tmp
+*.db
+__pycache__/
+*.pyc
 
 # Logs
 npm-debug.log*
