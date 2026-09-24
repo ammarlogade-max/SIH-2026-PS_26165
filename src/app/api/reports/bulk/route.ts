@@ -149,10 +149,16 @@ export async function POST(request: NextRequest) {
     const aggregates = computeAggregates(snapshot.reports, snapshot.classifications);
     const precursorDensity = Number(((sifCount / insertedReports.length) * 100).toFixed(1));
 
+    const reportsWithClassifications = insertedReports.map((r, i) => ({
+      ...r,
+      classification: insertedClassifications[i],
+    }));
+
     return NextResponse.json({
       success: true,
       storage: snapshot.storage,
       skippedRows,
+      reports: reportsWithClassifications,
       batchSummary: {
         total_processed: insertedReports.length,
         totalIngested: insertedReports.length,

@@ -28,9 +28,10 @@ export async function generateReasoningNarrative(params: {
   const topPositiveTerms = terms.filter((t) => t.positive).map((t) => `"${t.term}" (+${t.weight})`).join(", ");
   const fallbackNarrative = `Classified as SIF-potential precursor under IOGP Life-Saving Rule '${rule}': driven by key risk indicators [${topPositiveTerms || "hazardous condition"}] presenting high fatal consequence probability if barrier fails.`;
 
-  // Try optional Groq phrasing if available
-  if (hasConfiguredAIProvider) try {
-    const prompt = `You are an HSE Safety Officer. Convert these real model classification weights into a concise 1-2 sentence professional explanation. Do NOT change the verdict or rule.
+  // Try optional Groq phrasing if available with fast fallback
+  if (hasConfiguredAIProvider) {
+    try {
+      const prompt = `You are an HSE Safety Officer. Convert these real model classification weights into a concise 1-2 sentence professional explanation. Do NOT change the verdict or rule.
 
 Report text: "${text.slice(0, 300)}"
 Verdict: SIF-Potential Precursor
@@ -39,19 +40,25 @@ Top Model Contributing Features: ${topPositiveTerms}
 
 Write 1-2 factual sentences explaining why this observation is a SIF precursor based on the rule and features above. Return ONLY the sentence.`;
 
-    const res = await groq.chat.completions.create({
-      model: GROQ_FAST_MODEL,
-      messages: [{ role: "user", content: prompt }],
-      temperature: 0.2,
-      max_tokens: 150,
-    });
+      const aiCall = groq.chat.completions.create({
+        model: GROQ_FAST_MODEL,
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0.2,
+        max_tokens: 150,
+      });
 
-    const output = res.choices[0]?.message?.content?.trim();
-    if (output && output.length > 20) {
-      return output;
+      const timeoutPromise = new Promise<null>((resolve) => setTimeout(() => resolve(null), 1200));
+      const res = await Promise.race([aiCall, timeoutPromise]);
+
+      if (res && "choices" in res) {
+        const output = res.choices[0]?.message?.content?.trim();
+        if (output && output.length > 20) {
+          return output;
+        }
+      }
+    } catch {
+      // Fall back gracefully to deterministic explanation
     }
-  } catch {
-    // Fall back gracefully to deterministic explanation
   }
 
   return fallbackNarrative;

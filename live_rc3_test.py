@@ -4,7 +4,7 @@ import urllib.request
 import urllib.parse
 import sys
 
-BASE = 'http://localhost:3000'
+BASE = 'http://127.0.0.1:3000'
 
 def fetch_json(path, method='GET', data=None, headers=None):
     url = BASE + path

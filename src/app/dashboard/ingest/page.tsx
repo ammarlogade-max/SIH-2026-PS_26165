@@ -213,6 +213,49 @@ function IngestPageContent() {
     }
   };
 
+  // Load 40-record bulk model verification test suite directly
+  const handleLoadBulkTestSuite = async () => {
+    setUploadError(null);
+    setCommitResult(null);
+    setParsingFiles(true);
+
+    try {
+      const res = await fetch("/bulk_safety_test_suite_40.csv");
+      if (!res.ok) {
+        throw new Error("Could not fetch bulk model test suite file.");
+      }
+      const blob = await res.blob();
+      const formData = new FormData();
+      formData.append("files", blob, "bulk_safety_test_suite_40.csv");
+
+      const parseRes = await fetch("/api/reports/ingest/parse", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await parseRes.json();
+      if (!parseRes.ok) {
+        throw new Error(data.error || "Failed to parse bulk test suite");
+      }
+
+      setFileResults((prev) => [...prev, ...data.results]);
+    } catch (err: any) {
+      setUploadError(err.message || "Failed to load bulk test suite");
+    } finally {
+      setParsingFiles(false);
+    }
+  };
+
+  // Download 40-record bulk model test suite CSV
+  const downloadBulkTestSuiteCsv = () => {
+    const link = document.createElement("a");
+    link.href = "/bulk_safety_test_suite_40.csv";
+    link.download = "Oil_India_Bulk_Model_Test_Suite_40.csv";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   // Commit all canonical safety events into the pipeline
   const handleCommitCanonicalEvents = async () => {
     if (allCanonicalEvents.length === 0) return;
@@ -318,7 +361,16 @@ function IngestPageContent() {
             </p>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              onClick={handleLoadBulkTestSuite}
+              disabled={parsingFiles}
+              className="px-3.5 py-2 bg-emerald-500/10 border border-emerald-500/30 hover:bg-emerald-500/20 text-emerald-300 rounded-lg text-xs font-semibold transition-colors flex items-center gap-2 disabled:opacity-50"
+              title="Loads the 40-record held-out industrial model verification test suite across OIL sites"
+            >
+              <Cpu className="w-3.5 h-3.5 text-emerald-400" />
+              Load 40-Record Model Test Suite
+            </button>
             <button
               onClick={handleLoadDemoFixtures}
               disabled={parsingFiles}
@@ -379,7 +431,15 @@ function IngestPageContent() {
               </div>
             </div>
 
-            <div className="flex items-center gap-2 flex-shrink-0">
+            <div className="flex flex-wrap items-center gap-2 flex-shrink-0">
+              <button
+                onClick={downloadBulkTestSuiteCsv}
+                className="px-3 py-1.5 bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/20 text-amber-300 hover:text-white rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5"
+                title="Download 40-record held-out model verification CSV"
+              >
+                <Download className="w-3.5 h-3.5 text-amber-400" />
+                Download Bulk Test Suite (40 Reports CSV)
+              </button>
               <button
                 onClick={downloadSampleCsv}
                 className="px-3 py-1.5 bg-surface border border-surface-border hover:bg-surface-hover text-slate-300 hover:text-white rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5"
